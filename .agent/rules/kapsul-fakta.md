@@ -8,7 +8,7 @@
 - Latar bukan polos tapi tenang: gradasi biru tua (#0D1019 -> #0E1632 -> #112551), glow amber redup kiri-atas, glow biru di bawah, partikel kotak piksel kecil melayang pelan.
 - Caption kinetik kata demi kata (menggantikan subtitle): kalimat pengantar miring serif (Lora Italic, #C6CDE4), kata kunci Poppins Bold berwarna + glow. Warna: amber #FDAE1E istilah kunci, cyan #3CE1FE aksi/arah/sudut, hijau #34DC8C berhasil, merah lembut masalah, putih netral.
 - Objek utama di tengah yang berubah mengikuti naskah; kamera miring, mendekat, atau memindai dari sudut berbeda sesuai kalimat (gerak halus, ease-in-out). Chip kecil berlabel di bawah visual.
-- 3D (CSS 3D atau @remotion/three) hanya pada scene yang ditandai butuh 3D atau yang sulit dijelaskan datar. Selebihnya 2D yang rapi.
+- Utamakan visual 3D menggunakan @remotion/three (<ThreeCanvas> + Three.js / React Three Fiber) untuk objek utama, adegan spasial, atau visual yang lebih kuat dalam 3D; gunakan 2D (HTML/CSS/SVG) untuk overlay, UI, atau diagram datar yang memang lebih jelas. Semua animasi 3D wajib digerakkan oleh useCurrentFrame() (dilarang useFrame(); setiap <Sequence> di dalam <ThreeCanvas> wajib layout="none").
 - Font: Lora Italic dan Poppins (via @remotion/google-fonts atau file lokal). Zona aman: konten utama y 150-1500.
 ## Proses (wajib)
 1. Analisis video referensi dengan ekstraksi frame (ffmpeg, contact sheet) dan ukur jeda voiceover (ffmpeg silencedetect); selaraskan batas scene dan caption dengan jeda kalimat.

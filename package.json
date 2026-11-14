@@ -9,27 +9,46 @@
   },
   "private": true,
   "dependencies": {
+    "@react-three/fiber": "^9.8.2",
+    "@remotion/bundler": "4.0.543",
     "@remotion/cli": "4.0.543",
     "@remotion/google-fonts": "4.0.543",
     "@remotion/media": "4.0.543",
+    "@remotion/player": "4.0.543",
+    "@remotion/renderer": "4.0.543",
+    "@remotion/three": "4.0.543",
+    "@vitejs/plugin-react": "^4.7.0",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "lucide-react": "^1.73.0",
     "mediabunny": "1.64.0",
+    "multer": "^2.5.0",
     "react": "19.3.1",
     "react-dom": "19.3.1",
-    "remotion": "4.0.543"
+    "remotion": "4.0.543",
+    "three": "^0.178.0",
+    "vite": "^6.4.6"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.543",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.3.0",
     "@types/react": "19.3.0",
+    "@types/three": "^0.178.1",
     "@types/web": "0.0.166",
+    "concurrently": "^10.0.7",
     "eslint": "10.12.0",
     "prettier": "3.8.1",
+    "tsx": "^4.23.15",
     "typescript": "5.9.3"
   },
   "scripts": {
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "ui": "npm --prefix studio run dev"
   },
   "allowScripts": {
     "esbuild": false
