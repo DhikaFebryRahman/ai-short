@@ -1,0 +1,55 @@
+{
+  "idKomposisi": "KapsulFakta",
+  "seri": "KAPSUL FAKTA",
+  "voiceoverFile": null,
+  "musikFile": null,
+  "musikVolume": 0.14,
+  "fallbackVoiceoverDetik": 6.0,
+  "scenes": [
+    {
+      "id": "scene-01",
+      "judul": "Pembuka Kerangka",
+      "mulai": 0,
+      "selesai": 4.5,
+      "chip": "TEMPLATE SIAP PAKAI",
+      "chipWarna": "amber",
+      "kamera": "zoom-in",
+      "butuh3D": false,
+      "visual": {
+        "tipe": "placeholder",
+        "catatan": "Menunggu naskah dan aset audio dari pengguna"
+      },
+      "caption": [
+        { "kata": "Kerangka", "jenis": "intro", "warna": "muted", "detik": 0.4 },
+        { "kata": "proyek", "jenis": "intro", "warna": "muted", "detik": 0.7 },
+        { "kata": "Kapsul", "jenis": "keyword", "warna": "amber", "detik": 1.1 },
+        { "kata": "Fakta", "jenis": "keyword", "warna": "amber", "detik": 1.5 },
+        { "kata": "siap", "jenis": "intro", "warna": "muted", "detik": 2.0 },
+        { "kata": "dipakai", "jenis": "keyword", "warna": "cyan", "detik": 2.4 }
+      ]
+    },
+    {
+      "id": "scene-02",
+      "judul": "Siap Produksi",
+      "mulai": 4.5,
+      "selesai": 9.0,
+      "chip": "BERBASIS DATA JSON",
+      "chipWarna": "cyan",
+      "kamera": "tilt-scan",
+      "butuh3D": false,
+      "visual": {
+        "tipe": "placeholder",
+        "catatan": "Scene baru tinggal ubah video.json dan visual scene"
+      },
+      "caption": [
+        { "kata": "Ubah", "jenis": "intro", "warna": "muted", "detik": 4.8 },
+        { "kata": "data", "jenis": "keyword", "warna": "cyan", "detik": 5.2 },
+        { "kata": "dan", "jenis": "intro", "warna": "muted", "detik": 5.5 },
+        { "kata": "visual", "jenis": "keyword", "warna": "green", "detik": 5.9 },
+        { "kata": "sesuai", "jenis": "intro", "warna": "muted", "detik": 6.4 },
+        { "kata": "naskah", "jenis": "keyword", "warna": "amber", "detik": 6.9 }
+      ]
+    }
+  ]
+}
+
