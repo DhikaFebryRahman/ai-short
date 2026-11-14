@@ -4,7 +4,6 @@ import {
   AbsoluteFill,
   staticFile,
   useVideoConfig,
-  Interactive,
 } from "remotion";
 import { Background } from "../components/Background";
 import { Scene } from "../components/Scene";
