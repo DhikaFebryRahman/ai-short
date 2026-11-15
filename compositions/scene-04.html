@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 04 — Kesan vs Kesadaran & Ketidakcocokan Sinyal (Full Screen Cerah)</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-04" data-duration="15.15" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            pointer-events: none;
+          }
+
+          .s4-camera {
+            position: absolute;
+            inset: 0;
+            transform-origin: 50% 48%;
+          }
+
+          .s4-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+
+          .s4-bubble-top {
+            position: absolute;
+            top: 392px;
+            left: 332px;
+            width: 536px;
+            padding: 20px 24px;
+            border-radius: 26px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 3px solid #f59e0b;
+            box-shadow: 0 14px 32px rgba(245, 158, 11, 0.2);
+          }
+
+          .s4-bubble-bot {
+            position: absolute;
+            top: 825px;
+            left: 332px;
+            width: 536px;
+            padding: 20px 24px;
+            border-radius: 26px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 3px solid #10b981;
+            box-shadow: 0 14px 32px rgba(16, 185, 129, 0.18);
+            opacity: 0;
+          }
+
+          .s4-kicker {
+            font-size: 28px;
+            font-weight: 700;
+            color: #243b6b;
+          }
+
+          .s4-title--amber {
+            font-size: 32px;
+            font-weight: 800;
+            color: #9a3412;
+          }
+
+          .s4-title--green {
+            font-size: 32px;
+            font-weight: 800;
+            color: #047857;
+          }
+
+          .s4-conflict-pill {
+            position: absolute;
+            top: 635px;
+            left: 356px;
+            width: 488px;
+            padding: 16px 22px;
+            border-radius: 22px;
+            background: rgba(255, 252, 245, 0.97);
+            border: 3px solid #f43f5e;
+            color: #be123c;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-align: center;
+            box-shadow: 0 14px 34px rgba(244, 63, 94, 0.22);
+            opacity: 0;
+          }
+
+          .s4-q-circle {
+            position: absolute;
+            top: 598px;
+            left: 525px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: rgba(255, 252, 245, 0.97);
+            border: 4px solid #0ea5e9;
+            box-shadow: 0 16px 40px rgba(14, 165, 233, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            font-weight: 800;
+            color: #0369a1;
+            opacity: 0;
+          }
+
+          .s4-pill-bar {
+            position: absolute;
+            top: 1066px;
+            left: 118px;
+            width: 750px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .s4-pill {
+            position: absolute;
+            padding: 12px 26px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.94);
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            box-shadow: 0 12px 28px rgba(20, 34, 68, 0.14);
+          }
+
+          .s4-pill--amber { border: 2px solid #f59e0b; color: #9a3412; }
+          .s4-pill--green { border: 2px solid #10b981; color: #047857; opacity: 0; }
+          .s4-pill--red { border: 2px solid #f43f5e; color: #be123c; opacity: 0; }
+          .s4-pill--cyan { border: 2px solid #0ea5e9; color: #0369a1; opacity: 0; }
+        </style>
+
+        <div id="s4-clip" class="clip" data-start="0" data-duration="15.15" data-track-index="0">
+          <div class="s4-camera" id="s4-camera" data-layout-allow-overflow>
+            <svg class="s4-svg" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="s4-bg" x1="540" y1="0" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#FFEAD1" />
+                  <stop offset="0.45" stop-color="#FFF9EE" />
+                  <stop offset="0.7" stop-color="#DCFCE7" />
+                  <stop offset="1" stop-color="#FFF6E5" />
+                </linearGradient>
+              </defs>
+
+              <!-- Full-screen Split Sunny Warm / Mint World -->
+              <rect x="-80" y="-80" width="1240" height="2080" fill="url(#s4-bg)" />
+              <circle cx="870" cy="310" r="120" fill="#FFE082" fill-opacity="0.55" />
+              <path d="M-80 1030 Q290 960 560 1020 T1160 1005 L1160 1120 L-80 1120 Z" fill="#BDF4D4" />
+              <rect x="-80" y="1040" width="1240" height="960" fill="#FFF7E8" fill-opacity="0.72" />
+
+              <!-- Signal Beams colliding on the right column -->
+              <line id="s4-beam-top" x1="600" y1="535" x2="600" y2="650" stroke="#F59E0B" stroke-width="11" stroke-linecap="round" opacity="0" />
+              <line id="s4-beam-bot" x1="600" y1="825" x2="600" y2="700" stroke="#10B981" stroke-width="11" stroke-linecap="round" opacity="0" />
+
+              <circle id="s4-ring-1" cx="600" cy="672" r="42" stroke="#F43F5E" stroke-width="6" opacity="0" />
+              <circle id="s4-ring-2" cx="600" cy="672" r="42" stroke="#0EA5E9" stroke-width="5" opacity="0" />
+
+              <!-- Nara Standing Visibly on Left Side (outer translate protected!) -->
+              <g id="s4-nara-pos" transform="translate(210, 680)">
+                <g id="s4-nara-anim">
+                  <ellipse cx="0" cy="276" rx="58" ry="13" fill="#142244" fill-opacity="0.15" />
+                  <line x1="-16" y1="168" x2="-22" y2="266" stroke="#1E3A8A" stroke-width="24" stroke-linecap="round" />
+                  <line x1="16" y1="168" x2="22" y2="266" stroke="#2563EB" stroke-width="24" stroke-linecap="round" />
+                  <rect x="-40" y="60" width="80" height="128" rx="26" fill="#FF7E67" stroke="#142244" stroke-width="5" />
+                  <path d="M-18 62 L0 88 L18 62 Z" fill="#FFB703" stroke="#142244" stroke-width="3.5" />
+                  <line x1="-38" y1="84" x2="-74" y2="46" stroke="#FF9F8E" stroke-width="20" stroke-linecap="round" />
+                  <line x1="38" y1="84" x2="80" y2="112" stroke="#FF9F8E" stroke-width="20" stroke-linecap="round" />
+                  <circle cx="0" cy="18" r="40" fill="#FAD2B4" stroke="#142244" stroke-width="5" />
+                  <path d="M-40 12 C-40 -26 40 -26 40 12 C20 -2 -20 -2 -40 12 Z" fill="#142244" />
+                  <circle cx="14" cy="18" r="4.5" fill="#142244" />
+                  <circle cx="-10" cy="18" r="4.5" fill="#142244" />
+                  <ellipse cx="4" cy="34" rx="7" ry="5" fill="#142244" />
+                </g>
+              </g>
+            </svg>
+
+            <div class="s4-bubble-top" id="s4-top">
+              <div class="s4-kicker">KESAN OTAK · MEMORI</div>
+              <div class="s4-title--amber">“INI PERNAH TERJADI”</div>
+            </div>
+
+            <div class="s4-conflict-pill" id="s4-conflict">KETIDAKCOCOKAN SINYAL</div>
+            <div class="s4-q-circle" id="s4-q">?</div>
+
+            <div class="s4-bubble-bot" id="s4-bot">
+              <div class="s4-kicker">KESADARAN SEKARANG</div>
+              <div class="s4-title--green">“SITUASI SEBENARNYA BARU”</div>
+            </div>
+          </div>
+
+          <div class="s4-pill-bar">
+            <div class="s4-pill s4-pill--amber" id="s4-pill-1">KESAN: INI PERNAH TERJADI</div>
+            <div class="s4-pill s4-pill--green" id="s4-pill-2">KESADARAN: SITUASI BARU</div>
+            <div class="s4-pill s4-pill--red" id="s4-pill-3">KETIDAKCOCOKAN SINYAL</div>
+            <div class="s4-pill s4-pill--cyan" id="s4-pill-4">BELUM SEPENUHNYA DIPAHAMI</div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var cam = root.querySelector("#s4-camera");
+            var topBubble = root.querySelector("#s4-top");
+            var botBubble = root.querySelector("#s4-bot");
+            var nara = root.querySelector("#s4-nara-anim");
+            var beamTop = root.querySelector("#s4-beam-top");
+            var beamBot = root.querySelector("#s4-beam-bot");
+            var ring1 = root.querySelector("#s4-ring-1");
+            var ring2 = root.querySelector("#s4-ring-2");
+            var conflict = root.querySelector("#s4-conflict");
+            var qCircle = root.querySelector("#s4-q");
+            var pill1 = root.querySelector("#s4-pill-1");
+            var pill2 = root.querySelector("#s4-pill-2");
+            var pill3 = root.querySelector("#s4-pill-3");
+            var pill4 = root.querySelector("#s4-pill-4");
+
+            var tl = gsap.timeline({ paused: true });
+
+            tl.fromTo(cam, { scale: 0.94, opacity: 0.25 }, { scale: 1, opacity: 1, duration: 0.45, ease: "power3.out" }, 0);
+            tl.fromTo(topBubble, { y: -24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.35);
+            tl.fromTo(nara, { x: -36, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: "back.out(1.4)" }, 0.2);
+
+            // Second awareness card enters cleanly at t=3.85s
+            tl.fromTo(botBubble, { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 3.85);
+            tl.to(nara, { y: 12, duration: 0.6, ease: "sine.inOut" }, 3.9);
+
+            // Signal beams shoot and collide at t=7.2s
+            tl.to([beamTop, beamBot], { opacity: 1, duration: 0.45, ease: "power2.out" }, 7.0);
+            tl.fromTo(conflict, { scale: 0.72, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.6)" }, 7.45);
+            tl.fromTo(ring1, { attr: { r: 38 }, opacity: 0.9 }, { attr: { r: 210 }, opacity: 0, duration: 1.5, ease: "power2.out" }, 7.5);
+            tl.fromTo(ring2, { attr: { r: 38 }, opacity: 0.85 }, { attr: { r: 265 }, opacity: 0, duration: 1.6, ease: "power2.out" }, 8.0);
+            tl.to(nara, { y: -12, duration: 0.4, ease: "sine.inOut" }, 7.5);
+
+            // Researchers question mystery phase (t=11.6s)
+            tl.to(conflict, { opacity: 0, scale: 0.85, duration: 0.3, ease: "power2.in" }, 11.45);
+            tl.fromTo(qCircle, { opacity: 0, scale: 0.65 }, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.6)" }, 11.7);
+            tl.to(cam, { scale: 1.04, duration: 2.8, ease: "power1.inOut" }, 11.8);
+
+            // Pill sequence
+            tl.to(pill1, { opacity: 0, duration: 0.2, ease: "power2.in" }, 3.7);
+            tl.fromTo(pill2, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, 3.85);
+            tl.to(pill2, { opacity: 0, duration: 0.2, ease: "power2.in" }, 7.25);
+            tl.fromTo(pill3, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, 7.4);
+            tl.to(pill3, { opacity: 0, duration: 0.2, ease: "power2.in" }, 11.65);
+            tl.fromTo(pill4, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, 11.8);
+
+            tl.to(cam, { scale: 1.18, opacity: 0.14, duration: 0.35, ease: "power3.in" }, 14.8);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-04"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

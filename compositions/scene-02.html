@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 02 — Istilah Déjà Vu & Rasa Akrab (Full Screen Cerah)</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-02" data-duration="10.53" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            pointer-events: none;
+          }
+
+          .s2-camera {
+            position: absolute;
+            inset: 0;
+            transform-origin: 50% 48%;
+          }
+
+          .s2-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+
+          .s2-hero-overlay {
+            position: absolute;
+            top: 375px;
+            left: 118px;
+            width: 750px;
+            text-align: center;
+          }
+
+          .s2-eyebrow {
+            display: inline-block;
+            padding: 8px 24px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.94);
+            border: 2px solid #f59e0b;
+            color: #9a3412;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            margin-bottom: 12px;
+          }
+
+          .s2-title {
+            font-size: 118px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            line-height: 1.02;
+            color: #142244;
+            text-shadow: 0 6px 0 rgba(255, 183, 3, 0.55);
+          }
+
+          .s2-trans {
+            margin-top: 10px;
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            font-size: 44px;
+            font-weight: 700;
+            color: #0369a1;
+            text-shadow: 0 2px 14px rgba(255, 255, 255, 0.95);
+          }
+
+          .s2-scan-badges {
+            position: absolute;
+            top: 392px;
+            left: 128px;
+            width: 730px;
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            opacity: 0;
+          }
+
+          .s2-badge {
+            flex: 1;
+            padding: 10px 18px;
+            border-radius: 18px;
+            background: rgba(255, 252, 245, 0.94);
+            font-size: 28px;
+            font-weight: 800;
+            text-align: center;
+            box-shadow: 0 10px 26px rgba(20, 34, 68, 0.14);
+          }
+
+          .s2-badge--amber {
+            border: 2px solid #f59e0b;
+            color: #9a3412;
+          }
+
+          .s2-badge--cyan {
+            border: 2px solid #0ea5e9;
+            color: #0369a1;
+          }
+
+          .s2-pill-bar {
+            position: absolute;
+            top: 1066px;
+            left: 118px;
+            width: 750px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .s2-pill {
+            position: absolute;
+            padding: 12px 26px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.94);
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            box-shadow: 0 12px 28px rgba(20, 34, 68, 0.14);
+          }
+
+          .s2-pill--amber {
+            border: 2px solid #f59e0b;
+            color: #9a3412;
+          }
+
+          .s2-pill--cyan {
+            border: 2px solid #0ea5e9;
+            color: #0369a1;
+            opacity: 0;
+          }
+        </style>
+
+        <div id="s2-clip" class="clip" data-start="0" data-duration="10.53" data-track-index="0">
+          <div class="s2-camera" id="s2-camera" data-layout-allow-overflow>
+            <svg class="s2-svg" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="s2-sky" x1="540" y1="0" x2="540" y2="1120" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#A7DCFF" />
+                  <stop offset="0.65" stop-color="#E7F6FF" />
+                  <stop offset="1" stop-color="#FFF6E5" />
+                </linearGradient>
+                <linearGradient id="s2-floor" x1="540" y1="1030" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#FCE7C8" />
+                  <stop offset="1" stop-color="#FFF9EF" />
+                </linearGradient>
+              </defs>
+
+              <!-- Full-screen Sunny Sky + Calm Cream Foreground -->
+              <rect x="-80" y="-80" width="1240" height="1140" fill="url(#s2-sky)" />
+              <rect x="-80" y="1030" width="1240" height="970" fill="url(#s2-floor)" />
+              <path d="M-80 1030 Q280 970 560 1020 T1160 1015 L1160 1100 L-80 1100 Z" fill="#BCEFD0" stroke="#142244" stroke-opacity="0.12" stroke-width="3" />
+
+              <!-- Drifting Fluffy Daylight Clouds -->
+              <g id="s2-clouds">
+                <g transform="translate(170, 340)">
+                  <ellipse cx="0" cy="0" rx="86" ry="32" fill="#FFFFFF" fill-opacity="0.92" />
+                  <circle cx="-28" cy="-16" r="34" fill="#FFFFFF" />
+                  <circle cx="24" cy="-22" r="40" fill="#FFFFFF" />
+                </g>
+                <g transform="translate(860, 420)">
+                  <ellipse cx="0" cy="0" rx="92" ry="34" fill="#FFFFFF" fill-opacity="0.92" />
+                  <circle cx="-24" cy="-16" r="36" fill="#FFFFFF" />
+                  <circle cx="28" cy="-14" r="30" fill="#FFFFFF" />
+                </g>
+              </g>
+
+              <!-- Floating Illustrated Memory Polaroids (Shot 1) -->
+              <g id="s2-memories">
+                <g id="s2-mem-1" transform="translate(185, 760)">
+                  <g id="s2-mem-1-anim" transform="rotate(-10)">
+                    <rect x="-74" y="-88" width="148" height="176" rx="18" fill="#FFFFFF" stroke="#142244" stroke-width="4.5" />
+                    <rect x="-56" y="-70" width="112" height="98" rx="10" fill="#B8E8FF" />
+                    <circle cx="-18" cy="-32" r="16" fill="#FFB703" />
+                    <path d="M-56 28 L-14 -14 L24 16 L56 -8 L56 28 Z" fill="#34D399" />
+                    <rect x="-40" y="44" width="80" height="14" rx="7" fill="#CBD5E1" />
+                  </g>
+                </g>
+
+                <g id="s2-mem-2" transform="translate(845, 775)">
+                  <g id="s2-mem-2-anim" transform="rotate(9)">
+                    <rect x="-74" y="-88" width="148" height="176" rx="18" fill="#FFFFFF" stroke="#142244" stroke-width="4.5" />
+                    <rect x="-56" y="-70" width="112" height="98" rx="10" fill="#FFE4D6" />
+                    <rect x="-24" y="-42" width="48" height="54" rx="8" fill="#FF7E67" />
+                    <rect x="-40" y="44" width="80" height="14" rx="7" fill="#CBD5E1" />
+                  </g>
+                </g>
+              </g>
+
+              <!-- Shot 2: Full-Screen Architectural Room + Overlapping Cyan Echo Layer -->
+              <g id="s2-echo-world" opacity="0">
+                <!-- Solid sunny room objects -->
+                <g transform="translate(0, 20)">
+                  <path d="M400 840 L400 620 C400 535 610 535 610 620 L610 840 Z" fill="#A6E3FF" stroke="#142244" stroke-width="5" />
+                  <line x1="505" y1="556" x2="505" y2="840" stroke="#142244" stroke-width="3.5" stroke-opacity="0.35" />
+                  <line x1="400" y1="710" x2="610" y2="710" stroke="#142244" stroke-width="3.5" stroke-opacity="0.35" />
+                  <rect x="640" y="885" width="220" height="22" rx="8" fill="#F4A261" stroke="#142244" stroke-width="4.5" />
+                  <line x1="664" y1="907" x2="664" y2="1008" stroke="#142244" stroke-width="8" stroke-linecap="round" />
+                  <line x1="836" y1="907" x2="836" y2="1008" stroke="#142244" stroke-width="8" stroke-linecap="round" />
+                  <path d="M694 885 L710 830 L776 830 L760 885 Z" fill="#FFFFFF" stroke="#142244" stroke-width="4" />
+                  <rect x="794" y="855" width="28" height="30" rx="6" fill="#FF7E67" stroke="#142244" stroke-width="4" />
+                </g>
+
+                <!-- Overlapping cyan blueprint ghost echo (slides smoothly) -->
+                <g transform="translate(0, 20)">
+                  <g id="s2-echo-ghost">
+                    <path d="M445 820 L445 600 C445 515 655 515 655 600 L655 820 Z" stroke="#0EA5E9" stroke-width="5" stroke-dasharray="14 8" fill="#38BDF8" fill-opacity="0.18" />
+                    <rect x="685" y="865" width="220" height="22" rx="8" stroke="#0EA5E9" stroke-width="4.5" stroke-dasharray="12 7" fill="#38BDF8" fill-opacity="0.14" />
+                    <path d="M739 865 L755 810 L821 810 L805 865 Z" stroke="#0EA5E9" stroke-width="4" stroke-dasharray="10 6" fill="#38BDF8" fill-opacity="0.14" />
+                  </g>
+                </g>
+
+                <!-- Glowing Scan Bar -->
+                <rect id="s2-scanbar" x="150" y="545" width="740" height="8" rx="4" fill="#0EA5E9" />
+              </g>
+
+              <!-- Nara Standing Properly on Ground (outer translate protected from GSAP y reset!) -->
+              <g id="s2-nara-pos" transform="translate(500, 710)">
+                <g id="s2-nara-anim">
+                  <ellipse cx="0" cy="316" rx="64" ry="14" fill="#142244" fill-opacity="0.16" />
+                  <line x1="-16" y1="190" x2="-22" y2="306" stroke="#1E3A8A" stroke-width="24" stroke-linecap="round" />
+                  <line x1="16" y1="190" x2="22" y2="306" stroke="#2563EB" stroke-width="24" stroke-linecap="round" />
+                  <rect x="-40" y="64" width="80" height="140" rx="26" fill="#FF7E67" stroke="#142244" stroke-width="5" />
+                  <path d="M-20 66 L0 92 L20 66 Z" fill="#FFB703" stroke="#142244" stroke-width="3.5" />
+                  <line x1="-36" y1="90" x2="-68" y2="164" stroke="#FF9F8E" stroke-width="20" stroke-linecap="round" />
+                  <line x1="36" y1="90" x2="76" y2="138" stroke="#FF9F8E" stroke-width="20" stroke-linecap="round" />
+                  <!-- Magnifying Lens (Shot 2) -->
+                  <g id="s2-lens" transform="translate(88, 120)" opacity="0">
+                    <circle cx="0" cy="0" r="34" fill="#A6E3FF" fill-opacity="0.72" stroke="#142244" stroke-width="5.5" />
+                    <line x1="-24" y1="24" x2="-42" y2="44" stroke="#142244" stroke-width="8" stroke-linecap="round" />
+                  </g>
+                  <circle cx="0" cy="20" r="42" fill="#FAD2B4" stroke="#142244" stroke-width="5" />
+                  <path d="M-42 14 C-42 -26 42 -26 42 14 C22 0 -22 0 -42 14 Z" fill="#142244" />
+                  <circle cx="-13" cy="18" r="4.5" fill="#142244" />
+                  <circle cx="15" cy="18" r="4.5" fill="#142244" />
+                  <path d="M-8 38 Q2 46 12 38" stroke="#142244" stroke-width="4" stroke-linecap="round" />
+                </g>
+              </g>
+            </svg>
+
+            <!-- Hero Typography Overlay (Shot 1) -->
+            <div class="s2-hero-overlay" id="s2-hero">
+              <div class="s2-eyebrow" id="s2-eyebrow">ISTILAH PRANCIS</div>
+              <div class="s2-title" id="s2-title">DÉJÀ VU</div>
+              <div class="s2-trans" id="s2-trans">“sudah pernah dilihat”</div>
+            </div>
+
+            <!-- Dual Reality vs Mind Badges (Shot 2) -->
+            <div class="s2-scan-badges" id="s2-scan-badges">
+              <div class="s2-badge s2-badge--amber">SITUASI BARU</div>
+              <div class="s2-badge s2-badge--cyan">TERASA AKRAB</div>
+            </div>
+          </div>
+
+          <div class="s2-pill-bar">
+            <div class="s2-pill s2-pill--amber" id="s2-pill-1">DÉJÀ VU · SUDAH PERNAH DILIHAT</div>
+            <div class="s2-pill s2-pill--cyan" id="s2-pill-2">TERASA AKRAB · BELUM TENTU PERNAH</div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var cam = root.querySelector("#s2-camera");
+            var clouds = root.querySelector("#s2-clouds");
+            var mem1 = root.querySelector("#s2-mem-1-anim");
+            var mem2 = root.querySelector("#s2-mem-2-anim");
+            var hero = root.querySelector("#s2-hero");
+            var title = root.querySelector("#s2-title");
+            var trans = root.querySelector("#s2-trans");
+            var naraPos = root.querySelector("#s2-nara-pos");
+            var naraAnim = root.querySelector("#s2-nara-anim");
+            var lens = root.querySelector("#s2-lens");
+            var echoWorld = root.querySelector("#s2-echo-world");
+            var echoGhost = root.querySelector("#s2-echo-ghost");
+            var scanbar = root.querySelector("#s2-scanbar");
+            var scanBadges = root.querySelector("#s2-scan-badges");
+            var pill1 = root.querySelector("#s2-pill-1");
+            var pill2 = root.querySelector("#s2-pill-2");
+
+            var tl = gsap.timeline({ paused: true });
+
+            // Shot 1 (0 -> 4.35s): Sunny sky drift, polaroids float, hero typography punch-in
+            tl.fromTo(cam, { scale: 1.06, opacity: 0.3 }, { scale: 1, opacity: 1, duration: 0.45, ease: "power3.out" }, 0);
+            tl.fromTo(clouds, { x: -24 }, { x: 36, duration: 10.5, ease: "none" }, 0);
+            tl.fromTo(title, { y: 30, opacity: 0, scale: 0.9 }, { y: 0, opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.4)" }, 0.12);
+            tl.fromTo(trans, { y: 16, opacity: 0, filter: "blur(6px)" }, { y: 0, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "power3.out" }, 2.1);
+            tl.fromTo(mem1, { y: 50, opacity: 0 }, { y: -16, opacity: 1, duration: 1.6, ease: "power2.out" }, 0.25);
+            tl.fromTo(mem2, { y: 50, opacity: 0 }, { y: -18, opacity: 1, duration: 1.6, ease: "power2.out" }, 0.45);
+            tl.fromTo(naraAnim, { y: 36, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.1);
+
+            // Morph into Shot 2 (4.35 -> 10.53s): Nara walks smoothly to left (220, 710) while echo room appears
+            tl.to([hero, mem1, mem2], { opacity: 0, y: -26, duration: 0.4, ease: "power2.in" }, 4.25);
+            tl.to(naraPos, { attr: { transform: "translate(230, 710)" }, duration: 0.85, ease: "power2.inOut" }, 4.35);
+            tl.fromTo(echoWorld, { opacity: 0 }, { opacity: 1, duration: 0.55, ease: "power3.out" }, 4.55);
+            tl.fromTo(scanBadges, { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 4.65);
+            tl.fromTo(lens, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 4.8);
+            tl.fromTo(echoGhost, { x: 55, opacity: 0.4 }, { x: -20, opacity: 0.95, duration: 2.8, ease: "power2.inOut" }, 5.1);
+            tl.fromTo(scanbar, { y: 0 }, { y: 420, duration: 2.2, ease: "sine.inOut" }, 5.2);
+            tl.to(scanbar, { y: 40, duration: 2.2, ease: "sine.inOut" }, 7.6);
+            tl.to(cam, { scale: 1.05, duration: 3.5, ease: "power1.inOut" }, 6.2);
+
+            // Pill swap
+            tl.to(pill1, { opacity: 0, duration: 0.22, ease: "power2.in" }, 4.35);
+            tl.fromTo(pill2, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.28, ease: "power3.out" }, 4.55);
+
+            // Smooth transition zoom into Scene 3 mind
+            tl.to(cam, { scale: 1.22, opacity: 0.14, duration: 0.38, ease: "power3.in" }, 10.15);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-02"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

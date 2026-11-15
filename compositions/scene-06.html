@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 06 — Closing Brand Cerah (Full Screen)</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-06" data-duration="2.20" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            pointer-events: none;
+          }
+
+          .s6-svg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+
+          .s6-lockup {
+            position: absolute;
+            top: 470px;
+            left: 108px;
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+
+          .s6-kicker {
+            padding: 10px 28px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 2px solid #0ea5e9;
+            color: #0369a1;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 0.16em;
+            margin-bottom: 24px;
+          }
+
+          .s6-brand {
+            font-size: 82px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            line-height: 1.05;
+            color: #142244;
+            text-shadow: 0 5px 0 rgba(255, 183, 3, 0.55);
+          }
+
+          .s6-bar {
+            width: 240px;
+            height: 10px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #f59e0b, #0ea5e9);
+            margin: 26px 0;
+          }
+
+          .s6-sub {
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            font-size: 38px;
+            font-weight: 700;
+            color: #243b6b;
+          }
+        </style>
+
+        <div id="s6-clip" class="clip" data-start="0" data-duration="2.20" data-hold="true" data-track-index="0">
+          <svg class="s6-svg" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="s6-bg" x1="540" y1="0" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#CBE7FF" />
+                <stop offset="0.55" stop-color="#FFF7E6" />
+                <stop offset="1" stop-color="#FCE7C8" />
+              </linearGradient>
+            </defs>
+
+            <rect x="-80" y="-80" width="1240" height="2080" fill="url(#s6-bg)" />
+
+            <!-- Radiant Sunburst Rays -->
+            <g id="s6-rays" transform="translate(508, 690)" opacity="0.32">
+              <polygon points="0,0 -260,-720 260,-720" fill="#FFE082" />
+              <polygon points="0,0 720,-260 720,260" fill="#A6E3FF" />
+              <polygon points="0,0 260,720 -260,720" fill="#FFE082" />
+              <polygon points="0,0 -720,260 -720,-260" fill="#A7E8BD" />
+            </g>
+
+            <!-- Nara Waving Goodbye at Bottom-Center -->
+            <g id="s6-nara" transform="translate(508, 995)">
+              <ellipse cx="0" cy="255" rx="64" ry="14" fill="#142244" fill-opacity="0.14" />
+              <line x1="-18" y1="160" x2="-22" y2="242" stroke="#1E3A8A" stroke-width="24" stroke-linecap="round" />
+              <line x1="18" y1="160" x2="22" y2="242" stroke="#2563EB" stroke-width="24" stroke-linecap="round" />
+              <rect x="-40" y="60" width="80" height="118" rx="26" fill="#FF7E67" stroke="#142244" stroke-width="5" />
+              <path d="M-18 62 L0 86 L18 62 Z" fill="#FFB703" stroke="#142244" stroke-width="3" />
+              <line x1="-38" y1="84" x2="-70" y2="146" stroke="#FF9F8E" stroke-width="20" stroke-linecap="round" />
+              <!-- Waving arm -->
+              <line id="s6-wave" x1="38" y1="78" x2="92" y2="16" stroke="#FF9F8E" stroke-width="20" stroke-linecap="round" />
+              <circle cx="0" cy="20" r="40" fill="#FAD2B4" stroke="#142244" stroke-width="5" />
+              <path d="M-40 14 C-40 -22 40 -22 40 14 C20 0 -20 0 -40 14 Z" fill="#142244" />
+              <circle cx="-12" cy="18" r="4.5" fill="#142244" />
+              <circle cx="14" cy="18" r="4.5" fill="#142244" />
+              <path d="M-10 34 Q0 46 12 34" stroke="#142244" stroke-width="4" stroke-linecap="round" />
+            </g>
+          </svg>
+
+          <div class="s6-lockup">
+            <div class="s6-kicker" id="s6-kicker">SAINS SINGKAT</div>
+            <div class="s6-brand" id="s6-brand">KAPSUL FAKTA</div>
+            <div class="s6-bar" id="s6-bar"></div>
+            <div class="s6-sub" id="s6-sub">Mengurai rasa familiar lewat logika ilmiah</div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var rays = root.querySelector("#s6-rays");
+            var brand = root.querySelector("#s6-brand");
+            var bar = root.querySelector("#s6-bar");
+            var sub = root.querySelector("#s6-sub");
+            var wave = root.querySelector("#s6-wave");
+
+            var tl = gsap.timeline({ paused: true });
+            tl.fromTo(rays, { rotation: -12, scale: 0.92 }, { rotation: 16, scale: 1.05, duration: 2.2, ease: "none" }, 0);
+            tl.fromTo(brand, { scale: 0.88, opacity: 1 }, { scale: 1, opacity: 1, duration: 0.35, ease: "power4.out" }, 0);
+            tl.fromTo(bar, { scaleX: 0.2 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 0.05);
+            tl.fromTo(sub, { opacity: 0.2, y: 10 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.12);
+            tl.to(wave, { attr: { x2: 104, y2: 32 }, duration: 0.4, yoyo: true, repeat: 4, ease: "sine.inOut" }, 0.1);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-06"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

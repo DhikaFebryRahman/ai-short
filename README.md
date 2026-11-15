@@ -1,54 +1,24 @@
-# Remotion video
+# Kapsul Fakta — HyperFrames Video Project
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.apng">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+Proyek video pendek vertikal (`1080×1920`, `30 fps`) berbasis **HyperFrames** (HTML/SVG/GSAP) yang berjalan langsung di direktori root ini.
 
-Welcome to your Remotion project!
+## Struktur Direktori
+- `index.html` & `hyperframes.json` — komposisi root dan konfigurasi HyperFrames
+- `compositions/` — sub-komposisi (`backdrop.html`, `hud.html`, `captions.html`, `scene-01.html`–`scene-06.html`)
+- `assets/` — aset audio & media aktif (`vo.mp3`, `bgm.wav`)
+- `renders/` — hasil render MP4 HyperFrames (`renders/deja-vu-2d.mp4`)
+- `remotion-draf/` — arsip aset lama (`projects/`, `public/`, `referensi/`)
+- `out/` — arsip hasil render lama (`out/video.mp4`)
+- `studio/` — antarmuka web Studio lokal (`npm run ui`)
 
-## Commands
+## Perintah Utama
+```bash
+# Validasi lint, kontras, layout, audio
+npx hyperframes check --json
 
-**Install Dependencies**
+# Buka Studio Preview di browser
+npx hyperframes preview --background
 
-```console
-npm i --loglevel=error
+# Render video MP4 kualitas delivery
+npx hyperframes render --quality delivery --output renders/deja-vu-2d.mp4
 ```
-
-**Start Preview**
-
-```console
-npm run dev
-```
-
-**Render video**
-
-```console
-npx remotion render
-```
-
-**Upgrade Remotion**
-
-```console
-npx remotion upgrade
-```
-
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).

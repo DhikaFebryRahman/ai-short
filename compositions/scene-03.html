@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 03 — Sistem Memori & Sinyal Familiar (Full Screen Cerah)</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-03" data-duration="8.13" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            pointer-events: none;
+          }
+
+          .s3-camera {
+            position: absolute;
+            inset: 0;
+            transform-origin: 50% 46%;
+          }
+
+          .s3-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+
+          .s3-node {
+            position: absolute;
+            padding: 10px 20px;
+            border-radius: 18px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 2px solid #0ea5e9;
+            font-size: 28px;
+            font-weight: 800;
+            color: #142244;
+            box-shadow: 0 10px 24px rgba(20, 34, 68, 0.14);
+            opacity: 0;
+          }
+
+          .s3-node--amber {
+            border-color: #f59e0b;
+            color: #9a3412;
+          }
+
+          .s3-folders {
+            position: absolute;
+            top: 905px;
+            left: 118px;
+            width: 750px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+          }
+
+          .s3-folder {
+            padding: 16px 12px;
+            border-radius: 20px;
+            background: rgba(255, 252, 245, 0.95);
+            border: 2px solid #f43f5e;
+            text-align: center;
+            color: #be123c;
+            font-size: 28px;
+            font-weight: 800;
+            box-shadow: 0 10px 24px rgba(190, 18, 60, 0.12);
+            opacity: 0;
+          }
+
+          .s3-pill-bar {
+            position: absolute;
+            top: 1066px;
+            left: 118px;
+            width: 750px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .s3-pill {
+            position: absolute;
+            padding: 12px 26px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.94);
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            box-shadow: 0 12px 28px rgba(20, 34, 68, 0.14);
+          }
+
+          .s3-pill--amber { border: 2px solid #f59e0b; color: #9a3412; }
+          .s3-pill--cyan { border: 2px solid #0ea5e9; color: #0369a1; opacity: 0; }
+          .s3-pill--red { border: 2px solid #f43f5e; color: #be123c; opacity: 0; }
+        </style>
+
+        <div id="s3-clip" class="clip" data-start="0" data-duration="8.13" data-track-index="0">
+          <div class="s3-camera" id="s3-camera" data-layout-allow-overflow>
+            <svg class="s3-svg" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="s3-sky" x1="540" y1="0" x2="540" y2="1220" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#D7F4FF" />
+                  <stop offset="0.6" stop-color="#FFF7E6" />
+                  <stop offset="1" stop-color="#FCE7C8" />
+                </linearGradient>
+              </defs>
+
+              <!-- Full-screen Sunny Mint/Sky Mind World -->
+              <rect x="-80" y="-80" width="1240" height="2080" fill="url(#s3-sky)" />
+              <circle cx="540" cy="610" r="360" fill="#FFFFFF" fill-opacity="0.68" />
+
+              <!-- Nara Thinking Profile on Left-Bottom -->
+              <g transform="translate(195, 735)">
+                <ellipse cx="0" cy="175" rx="54" ry="12" fill="#142244" fill-opacity="0.14" />
+                <rect x="-36" y="60" width="72" height="106" rx="24" fill="#FF7E67" stroke="#142244" stroke-width="5" />
+                <path d="M-16 62 L0 84 L16 62 Z" fill="#FFB703" stroke="#142244" stroke-width="3" />
+                <circle cx="0" cy="20" r="38" fill="#FAD2B4" stroke="#142244" stroke-width="5" />
+                <path d="M-38 14 C-38 -24 38 -24 38 14 C18 0 -18 0 -38 14 Z" fill="#142244" />
+                <circle cx="16" cy="20" r="5" fill="#142244" />
+                <circle cx="68" cy="-32" r="13" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="4" />
+                <circle cx="104" cy="-70" r="20" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="4" />
+              </g>
+
+              <!-- Giant Cheerful 2D Brain Illustration -->
+              <g id="s3-brain">
+                <path
+                  d="M400 620 C335 620 304 540 348 486 C336 414 404 360 482 372 C538 342 634 350 686 400 C760 400 810 468 784 538 C824 594 784 684 708 690 C666 740 574 746 516 718 C454 742 374 700 400 620 Z"
+                  fill="#FFD6E0"
+                  stroke="#142244"
+                  stroke-width="6"
+                />
+                <path d="M548 720 L560 820 L618 820 L602 718" fill="#FFC2D1" stroke="#142244" stroke-width="5" />
+                <path d="M398 500 Q482 458 572 492 Q658 526 730 488" stroke="#F43F5E" stroke-opacity="0.45" stroke-width="5" stroke-linecap="round" />
+                <path d="M416 588 Q508 622 602 588 Q678 564 736 598" stroke="#F43F5E" stroke-opacity="0.45" stroke-width="5" stroke-linecap="round" />
+              </g>
+
+              <!-- Neural Signal Tracks & Traveling Spark -->
+              <path id="s3-path-1" d="M235 705 C345 625 425 540 554 548" stroke="#F59E0B" stroke-width="8" stroke-linecap="round" />
+              <path id="s3-path-2" d="M554 548 C652 556 712 518 764 468" stroke="#0EA5E9" stroke-width="8" stroke-linecap="round" />
+              <circle id="s3-pulse" cx="235" cy="705" r="14" fill="#FFB703" stroke="#142244" stroke-width="4" opacity="0" />
+
+              <!-- Familiar Signal Bell Waves -->
+              <g id="s3-waves" transform="translate(554, 548)">
+                <circle id="s3-w1" cx="0" cy="0" r="24" stroke="#FFB703" stroke-width="6" opacity="0" />
+                <circle id="s3-w2" cx="0" cy="0" r="24" stroke="#0EA5E9" stroke-width="5" opacity="0" />
+              </g>
+
+              <!-- Dotted unmatched search lines down to empty folders -->
+              <g id="s3-search-lines" stroke="#F43F5E" stroke-width="4.5" stroke-dasharray="10 8" opacity="0">
+                <line x1="554" y1="575" x2="244" y2="900" />
+                <line x1="554" y1="575" x2="493" y2="900" />
+                <line x1="554" y1="575" x2="742" y2="900" />
+              </g>
+            </svg>
+
+            <div class="s3-node" id="s3-node-1" style="top: 490px; left: 118px">Input Sensorik</div>
+            <div class="s3-node s3-node--amber" id="s3-node-2" style="top: 448px; left: 482px">Sistem Memori</div>
+            <div class="s3-node" id="s3-node-3" style="top: 375px; left: 585px">Sinyal Familiar!</div>
+
+            <div class="s3-folders">
+              <div class="s3-folder" id="s3-f1">Arsip A · ?</div>
+              <div class="s3-folder" id="s3-f2">Arsip B · ?</div>
+              <div class="s3-folder" id="s3-f3">Arsip C · ?</div>
+            </div>
+          </div>
+
+          <div class="s3-pill-bar">
+            <div class="s3-pill s3-pill--amber" id="s3-pill-1">SISTEM PENGENALAN MEMORI</div>
+            <div class="s3-pill s3-pill--cyan" id="s3-pill-2">SINYAL FAMILIAR TERKIRIM</div>
+            <div class="s3-pill s3-pill--red" id="s3-pill-3">SUMBER INGATAN TIDAK DITEMUKAN</div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var cam = root.querySelector("#s3-camera");
+            var path1 = root.querySelector("#s3-path-1");
+            var path2 = root.querySelector("#s3-path-2");
+            var pulse = root.querySelector("#s3-pulse");
+            var w1 = root.querySelector("#s3-w1");
+            var w2 = root.querySelector("#s3-w2");
+            var searchLines = root.querySelector("#s3-search-lines");
+            var node1 = root.querySelector("#s3-node-1");
+            var node2 = root.querySelector("#s3-node-2");
+            var node3 = root.querySelector("#s3-node-3");
+            var f1 = root.querySelector("#s3-f1");
+            var f2 = root.querySelector("#s3-f2");
+            var f3 = root.querySelector("#s3-f3");
+            var pill1 = root.querySelector("#s3-pill-1");
+            var pill2 = root.querySelector("#s3-pill-2");
+            var pill3 = root.querySelector("#s3-pill-3");
+
+            var len1 = path1.getTotalLength();
+            var len2 = path2.getTotalLength();
+            gsap.set(path1, { strokeDasharray: len1, strokeDashoffset: len1 });
+            gsap.set(path2, { strokeDasharray: len2, strokeDashoffset: len2 });
+
+            var sparkState = { p: 0 };
+            function moveSpark1() {
+              var pt = path1.getPointAtLength(sparkState.p * len1);
+              gsap.set(pulse, { attr: { cx: pt.x.toFixed(1), cy: pt.y.toFixed(1) }, opacity: 1 });
+            }
+            var sparkState2 = { p: 0 };
+            function moveSpark2() {
+              var pt = path2.getPointAtLength(sparkState2.p * len2);
+              gsap.set(pulse, { attr: { cx: pt.x.toFixed(1), cy: pt.y.toFixed(1) }, opacity: 1 });
+            }
+
+            var tl = gsap.timeline({ paused: true });
+
+            tl.fromTo(cam, { scale: 0.94, opacity: 0.25 }, { scale: 1, opacity: 1, duration: 0.45, ease: "power3.out" }, 0);
+            tl.fromTo(node1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 0.3);
+            tl.to(path1, { strokeDashoffset: 0, duration: 1.4, ease: "power2.out" }, 0.55);
+            tl.to(sparkState, { p: 1, duration: 1.4, ease: "power2.out", onUpdate: moveSpark1 }, 0.55);
+            tl.fromTo(node2, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)" }, 1.6);
+
+            // Familiar signal rings & fires
+            tl.to(path2, { strokeDashoffset: 0, duration: 1.0, ease: "power2.out" }, 3.2);
+            tl.to(sparkState2, { p: 1, duration: 1.0, ease: "power2.out", onUpdate: moveSpark2 }, 3.2);
+            tl.fromTo(node3, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 3.8);
+            tl.fromTo(w1, { attr: { r: 22 }, opacity: 0.95 }, { attr: { r: 165 }, opacity: 0, duration: 1.25, ease: "power2.out" }, 3.6);
+            tl.fromTo(w2, { attr: { r: 22 }, opacity: 0.9 }, { attr: { r: 210 }, opacity: 0, duration: 1.35, ease: "power2.out" }, 4.0);
+
+            // Unmatched archive search
+            tl.to(searchLines, { opacity: 0.9, duration: 0.45, ease: "power2.out" }, 5.15);
+            tl.fromTo([f1, f2, f3], { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, stagger: 0.14, ease: "back.out(1.5)" }, 5.35);
+            tl.to(cam, { scale: 1.04, y: -10, duration: 2.2, ease: "power1.inOut" }, 5.4);
+
+            // Pill progression
+            tl.to(pill1, { opacity: 0, duration: 0.2, ease: "power2.in" }, 3.4);
+            tl.fromTo(pill2, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, 3.55);
+            tl.to(pill2, { opacity: 0, duration: 0.2, ease: "power2.in" }, 5.2);
+            tl.fromTo(pill3, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, 5.35);
+
+            tl.to(cam, { scale: 1.18, opacity: 0.14, duration: 0.35, ease: "power3.in" }, 7.78);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-03"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

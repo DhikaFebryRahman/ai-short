@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Backdrop Daylight</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="backdrop" data-duration="51" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            background: linear-gradient(180deg, #cbe7ff 0%, #fff6e5 56%, #fce7c8 100%);
+          }
+
+          .bg-layer {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+          }
+
+          .bg-sun-glow {
+            position: absolute;
+            top: -180px;
+            right: -120px;
+            width: 780px;
+            height: 780px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(255, 214, 102, 0.52) 0%,
+              rgba(255, 228, 148, 0.22) 45%,
+              transparent 75%
+            );
+          }
+
+          .bg-sky-glow {
+            position: absolute;
+            bottom: -240px;
+            left: -160px;
+            width: 960px;
+            height: 780px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(116, 208, 255, 0.28) 0%,
+              rgba(167, 232, 189, 0.14) 50%,
+              transparent 76%
+            );
+          }
+
+          .bg-motes {
+            position: absolute;
+            inset: 0;
+          }
+
+          .bg-mote {
+            position: absolute;
+            border-radius: 50%;
+          }
+        </style>
+
+        <div
+          id="backdrop-clip"
+          class="bg-layer clip"
+          data-start="0"
+          data-duration="51"
+          data-layout-ignore
+          data-track-index="0"
+        >
+          <div class="bg-sun-glow" id="bg-sun-glow"></div>
+          <div class="bg-sky-glow" id="bg-sky-glow"></div>
+          <div class="bg-motes" id="bg-motes"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var motesEl = root.querySelector("#bg-motes");
+            var sunGlow = root.querySelector("#bg-sun-glow");
+            var skyGlow = root.querySelector("#bg-sky-glow");
+
+            var colors = ["#FFB703", "#38BDF8", "#34D399", "#FB7185"];
+            var motes = [];
+            for (var i = 0; i < 18; i++) {
+              var s1 = ((i * 73 + 19) % 97) / 97;
+              var s2 = ((i * 41 + 53) % 89) / 89;
+              var s3 = ((i * 29 + 11) % 61) / 61;
+              var size = 6 + (i % 3) * 4;
+              var m = document.createElement("div");
+              m.className = "bg-mote";
+              m.style.left = (8 + s1 * 84).toFixed(2) + "%";
+              m.style.top = (160 + s2 * 1500).toFixed(1) + "px";
+              m.style.width = size + "px";
+              m.style.height = size + "px";
+              m.style.background = colors[i % colors.length];
+              m.style.opacity = (0.16 + s3 * 0.16).toFixed(2);
+              motesEl.appendChild(m);
+              motes.push({ el: m, phase: s2 * Math.PI * 2, speed: 14 + s3 * 18 });
+            }
+
+            var state = { t: 0 };
+            function updateBackdrop() {
+              var t = state.t;
+              gsap.set(sunGlow, { scale: 1 + 0.04 * Math.sin(t * 0.45) });
+              gsap.set(skyGlow, { scale: 1 + 0.04 * Math.cos(t * 0.35) });
+              for (var j = 0; j < motes.length; j++) {
+                var p = motes[j];
+                var driftY = -((t * p.speed) % 360);
+                var driftX = Math.sin(t * 0.55 + p.phase) * 16;
+                gsap.set(p.el, { x: driftX, y: driftY });
+              }
+            }
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(state, { t: 51, duration: 51, ease: "none", onUpdate: updateBackdrop }, 0);
+            updateBackdrop();
+            tl.seek(0);
+
+            window.__timelines = window.__timelines || {};
+            window.__timelines["backdrop"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

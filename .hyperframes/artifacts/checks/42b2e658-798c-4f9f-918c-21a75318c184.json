@@ -1,0 +1,622 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 305 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/dkaary/Documents/Code/ai-short/hf-projects/deja-vu-2d/compositions/captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split this sub-composition further into smaller .html files, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      }
+    ],
+    "filesScanned": 10
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 13,
+    "infoCount": 1,
+    "findings": [
+      {
+        "selector": "div.hud-series",
+        "dataAttributes": {
+          "data-var-text": "series_label"
+        },
+        "sourceFile": "compositions/hud.html",
+        "bbox": {
+          "x": 84,
+          "y": 202,
+          "width": 280.45,
+          "height": 39
+        },
+        "time": 1.8,
+        "rect": {
+          "left": 84,
+          "top": 202,
+          "right": 364.45,
+          "bottom": 241,
+          "width": 280.45,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "KAPSUL FAKTA",
+        "message": "<div> \"KAPSUL FAKTA\" is outside the safe area: TikTok (left and top edges), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.8,
+        "lastSeen": 50,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          1.8,
+          4.2,
+          8.5,
+          13.5,
+          19.5,
+          27.5,
+          33.5,
+          42.5,
+          50
+        ]
+      },
+      {
+        "selector": "#hud-counter",
+        "dataAttributes": {},
+        "sourceFile": "compositions/hud.html",
+        "bbox": {
+          "x": 879.13,
+          "y": 202,
+          "width": 116.87,
+          "height": 39
+        },
+        "time": 1.8,
+        "rect": {
+          "left": 879.13,
+          "top": 202,
+          "right": 996,
+          "bottom": 241,
+          "width": 116.87,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "01 / 06",
+        "message": "<div> \"01 / 06\" is outside the safe area: TikTok (top and right edges), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.8,
+        "lastSeen": 50,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          1.8,
+          4.2,
+          8.5,
+          13.5,
+          19.5,
+          27.5,
+          33.5,
+          42.5,
+          50
+        ]
+      },
+      {
+        "selector": "#captions",
+        "dataAttributes": {
+          "data-composition-file": "compositions/captions.html",
+          "data-composition-id": "captions",
+          "data-track-kind": "captions",
+          "data-track-index": "3",
+          "data-start": "0",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-hf-authored-duration": "51"
+        },
+        "sourceFile": "compositions/captions.html",
+        "bbox": {
+          "x": 200.28,
+          "y": 1219.45,
+          "width": 679.44,
+          "height": 71
+        },
+        "time": 1.8,
+        "rect": {
+          "left": 200.28,
+          "top": 1219.45,
+          "right": 879.72,
+          "bottom": 1290.45,
+          "width": 679.44,
+          "height": 71
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Pernah masuk ke tempat baru,",
+        "message": "<div> \"Pernah masuk ke tempat baru,\" is outside the safe area: TikTok (right and bottom edges), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.8,
+        "lastSeen": 42.5,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          1.8,
+          4.2,
+          8.5,
+          13.5,
+          19.5,
+          27.5,
+          33.5,
+          42.5
+        ]
+      },
+      {
+        "selector": "#s2-pill-1",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 263.05,
+          "y": 1106,
+          "width": 553.9,
+          "height": 39
+        },
+        "time": 8.5,
+        "rect": {
+          "left": 263.05,
+          "top": 1106,
+          "right": 816.95,
+          "bottom": 1145,
+          "width": 553.9,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "DÉJÀ VU · SUDAH PERNAH DILIHAT",
+        "message": "<div> \"DÉJÀ VU · SUDAH PERNAH DILIHAT\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 8.5,
+        "lastSeen": 8.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          8.5
+        ]
+      },
+      {
+        "selector": "#s2-shot2 > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 728.42,
+          "y": 347,
+          "width": 187.58,
+          "height": 39
+        },
+        "time": 13.5,
+        "rect": {
+          "left": 728.42,
+          "top": 347,
+          "right": 916,
+          "bottom": 386,
+          "width": 187.58,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SITUASI BARU",
+        "message": "<div> \"SITUASI BARU\" is outside the safe area: YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 13.5,
+        "lastSeen": 13.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          13.5
+        ]
+      },
+      {
+        "selector": "div.s2-layer-tag.s2-layer-tag--cyan",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 708.56,
+          "y": 845,
+          "width": 207.44,
+          "height": 39
+        },
+        "time": 13.5,
+        "rect": {
+          "left": 708.56,
+          "top": 845,
+          "right": 916,
+          "bottom": 884,
+          "width": 207.44,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TERASA AKRAB",
+        "message": "<div> \"TERASA AKRAB\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 13.5,
+        "lastSeen": 13.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          13.5
+        ]
+      },
+      {
+        "selector": "#s2-echo-4",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 770.61,
+          "y": 930,
+          "width": 114.78,
+          "height": 39
+        },
+        "time": 13.5,
+        "rect": {
+          "left": 770.61,
+          "top": 930,
+          "right": 885.39,
+          "bottom": 969,
+          "width": 114.78,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Jendela",
+        "message": "<div> \"Jendela\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 13.5,
+        "lastSeen": 13.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          13.5
+        ]
+      },
+      {
+        "selector": "#s2-pill-2",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 224.56,
+          "y": 1106,
+          "width": 630.88,
+          "height": 39
+        },
+        "time": 13.5,
+        "rect": {
+          "left": 224.56,
+          "top": 1106,
+          "right": 855.44,
+          "bottom": 1145,
+          "width": 630.88,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TERASA AKRAB · BELUM TENTU PERNAH",
+        "message": "<div> \"TERASA AKRAB · BELUM TENTU PERNAH\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 13.5,
+        "lastSeen": 13.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          13.5
+        ]
+      },
+      {
+        "selector": "#s3-node-2",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 638,
+          "y": 515,
+          "width": 290.52,
+          "height": 39
+        },
+        "time": 19.5,
+        "rect": {
+          "left": 638,
+          "top": 515,
+          "right": 928.52,
+          "bottom": 554,
+          "width": 290.52,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Pengenalan Memori",
+        "message": "<div> \"Pengenalan Memori\" is outside the safe area: YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 19.5,
+        "lastSeen": 19.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.5
+        ]
+      },
+      {
+        "selector": "#s4-card-top > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 872.56,
+          "y": 367,
+          "width": 42.44,
+          "height": 48
+        },
+        "time": 27.5,
+        "rect": {
+          "left": 872.56,
+          "top": 367,
+          "right": 915,
+          "bottom": 415,
+          "width": 42.44,
+          "height": 48
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "⚡",
+        "message": "<div> \"⚡\" is outside the safe area: YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 27.5,
+        "lastSeen": 33.5,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          27.5,
+          33.5
+        ]
+      },
+      {
+        "selector": "#s4-card-bot > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 886.5,
+          "y": 924,
+          "width": 28.5,
+          "height": 48
+        },
+        "time": 33.5,
+        "rect": {
+          "left": 886.5,
+          "top": 924,
+          "right": 915,
+          "bottom": 972,
+          "width": 28.5,
+          "height": 48
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "✓",
+        "message": "<div> \"✓\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 33.5,
+        "lastSeen": 33.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          33.5
+        ]
+      },
+      {
+        "selector": "#s5-calm > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 171,
+          "y": 383,
+          "width": 723.48,
+          "height": 106
+        },
+        "time": 42.5,
+        "rect": {
+          "left": 171,
+          "top": 383,
+          "right": 894.48,
+          "bottom": 489,
+          "width": 723.48,
+          "height": 106
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Umum dialami otak manusia yang sehat",
+        "message": "<div> \"Umum dialami otak manusia yang sehat\" is outside the safe area: YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 42.5,
+        "lastSeen": 42.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          42.5
+        ]
+      },
+      {
+        "selector": "#s6-brand",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-06.html",
+        "bbox": {
+          "x": 152.14,
+          "y": 593.66,
+          "width": 775.7,
+          "height": 132
+        },
+        "time": 50,
+        "rect": {
+          "left": 152.14,
+          "top": 593.66,
+          "right": 927.84,
+          "bottom": 725.66,
+          "width": 775.7,
+          "height": 132
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "KAPSUL FAKTA",
+        "message": "<div> \"KAPSUL FAKTA\" is outside the safe area: YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 50,
+        "lastSeen": 50,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          50
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 1.8,
+        "selector": "#s1-camera",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 85.66,
+          "top": 269.2,
+          "right": 999.93,
+          "bottom": 1070.95,
+          "width": 914.28,
+          "height": 801.75
+        },
+        "containerSelector": "div.s1-stage",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 84,
+          "top": 270,
+          "right": 996,
+          "bottom": 1070,
+          "width": 912,
+          "height": 800
+        },
+        "overflow": {
+          "right": 3.93
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-01.html",
+        "bbox": {
+          "x": 85.66,
+          "y": 269.2,
+          "width": 914.28,
+          "height": 801.75
+        },
+        "firstSeen": 1.8,
+        "lastSeen": 4.2,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          1.8,
+          4.2
+        ]
+      }
+    ],
+    "duration": 51,
+    "samples": [
+      1.8,
+      4.2,
+      8.5,
+      13.5,
+      19.5,
+      27.5,
+      33.5,
+      42.5,
+      50
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 14,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.8,
+      8.5,
+      19.5,
+      33.5,
+      50
+    ],
+    "checked": 48,
+    "passed": 48
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 408
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": true,
+    "files": [
+      ".hyperframes/artifacts/snapshots/d3f78499-113f-4bca-b1a2-dc54c73f5e34/frame-00-at-1.8s.png",
+      ".hyperframes/artifacts/snapshots/d3f78499-113f-4bca-b1a2-dc54c73f5e34/frame-01-at-8.5s.png",
+      ".hyperframes/artifacts/snapshots/d3f78499-113f-4bca-b1a2-dc54c73f5e34/frame-02-at-19.5s.png",
+      ".hyperframes/artifacts/snapshots/d3f78499-113f-4bca-b1a2-dc54c73f5e34/frame-03-at-33.5s.png",
+      ".hyperframes/artifacts/snapshots/d3f78499-113f-4bca-b1a2-dc54c73f5e34/frame-04-at-50.0s.png"
+    ],
+    "times": [
+      1.8,
+      8.5,
+      19.5,
+      33.5,
+      50
+    ],
+    "findingFiles": []
+  }
+}

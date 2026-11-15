@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Captions</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="captions" data-duration="51" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: visible;
+            pointer-events: none;
+            font-family: "Poppins", sans-serif;
+          }
+          .cap-band {
+            position: absolute;
+            top: 1138px;
+            left: 118px;
+            width: 750px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+          }
+          .cap-group {
+            position: absolute;
+            width: 100%;
+            padding: 12px 24px;
+            border-radius: 32px;
+            background: radial-gradient(ellipse at center, rgba(255, 250, 242, 0.9) 0%, rgba(255, 250, 242, 0.68) 65%, transparent 100%);
+            text-align: center;
+            line-height: 1.32;
+            overflow: visible;
+            opacity: 0;
+            visibility: hidden;
+          }
+          .cap-word {
+            display: inline-block;
+            margin: 0 7px;
+            vertical-align: baseline;
+          }
+          .cap-word--intro {
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 40px;
+            color: #243b6b;
+          }
+          .cap-word--keyword {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-size: 44px;
+          }
+          .cap-color--muted { color: #243b6b; text-shadow: 0 2px 12px rgba(255, 252, 246, 0.95); }
+          .cap-color--white { color: #142244; text-shadow: 0 2px 12px rgba(255, 252, 246, 0.95); }
+          .cap-color--amber { color: #b45309; text-shadow: 0 2px 14px rgba(255, 248, 232, 0.96); }
+          .cap-color--cyan { color: #0369a1; text-shadow: 0 2px 14px rgba(255, 252, 248, 0.96); }
+          .cap-color--green { color: #047857; text-shadow: 0 2px 14px rgba(255, 252, 248, 0.96); }
+          .cap-color--red { color: #be123c; text-shadow: 0 2px 14px rgba(255, 252, 248, 0.96); }
+        </style>
+
+        <div id="cap-clip" class="cap-band clip" data-start="0" data-duration="51" data-track-index="0"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var band = root.querySelector("#cap-clip");
+            var groups = [
+              { start: 0.95, end: 2.68, words: [{ k: "Pernah", j: "intro", c: "muted", t: 1.0 }, { k: "masuk", j: "keyword", c: "cyan", t: 1.3 }, { k: "ke", j: "intro", c: "muted", t: 1.61 }, { k: "tempat", j: "keyword", c: "amber", t: 1.91 }, { k: "baru,", j: "keyword", c: "amber", t: 2.22 }] },
+              { start: 2.68, end: 4.4, words: [{ k: "tetapi", j: "intro", c: "muted", t: 2.76 }, { k: "tiba-tiba", j: "intro", c: "muted", t: 3.1 }, { k: "merasa", j: "keyword", c: "cyan", t: 3.44 }, { k: "pernah", j: "keyword", c: "cyan", t: 3.78 }] },
+              { start: 4.4, end: 5.72, words: [{ k: "berada", j: "intro", c: "muted", t: 4.12 }, { k: "di", j: "intro", c: "muted", t: 4.46 }, { k: "sana", j: "intro", c: "muted", t: 4.8 }, { k: "sebelumnya?", j: "intro", c: "muted", t: 5.14 }] },
+              { start: 5.95, end: 8.2, words: [{ k: "Perasaan", j: "intro", c: "muted", t: 6.07 }, { k: "ini", j: "intro", c: "muted", t: 6.44 }, { k: "disebut", j: "intro", c: "muted", t: 6.82 }, { k: "déjà", j: "keyword", c: "amber", t: 7.19 }, { k: "vu,", j: "keyword", c: "amber", t: 7.57 }] },
+              { start: 8.2, end: 10.12, words: [{ k: "istilah", j: "intro", c: "muted", t: 8.32 }, { k: "Prancis", j: "intro", c: "muted", t: 8.79 }, { k: "yang", j: "intro", c: "muted", t: 9.26 }, { k: "berarti", j: "intro", c: "muted", t: 9.73 }] },
+              { start: 10.12, end: 12.02, words: [{ k: '"sudah', j: "keyword", c: "cyan", t: 10.21 }, { k: "pernah", j: "keyword", c: "cyan", t: 10.68 }, { k: 'dilihat".', j: "intro", c: "muted", t: 11.69 }] },
+              { start: 12.02, end: 13.95, words: [{ k: "Kita", j: "intro", c: "muted", t: 12.1 }, { k: "merasa", j: "intro", c: "muted", t: 12.52 }, { k: "situasinya", j: "intro", c: "muted", t: 12.93 }, { k: "akrab,", j: "intro", c: "muted", t: 13.7 }] },
+              { start: 13.95, end: 16.24, words: [{ k: "meski", j: "intro", c: "muted", t: 14.03 }, { k: "sadar", j: "intro", c: "muted", t: 14.36 }, { k: "belum", j: "intro", c: "muted", t: 14.69 }, { k: "tentu", j: "intro", c: "muted", t: 15.02 }, { k: "pernah", j: "intro", c: "muted", t: 15.35 }, { k: "mengalaminya.", j: "intro", c: "muted", t: 15.68 }] },
+              { start: 16.45, end: 18.68, words: [{ k: "Salah", j: "intro", c: "muted", t: 16.58 }, { k: "satu", j: "intro", c: "muted", t: 17.02 }, { k: "penjelasan", j: "intro", c: "muted", t: 17.45 }, { k: "ilmiah", j: "intro", c: "muted", t: 17.89 }, { k: "menyebut", j: "intro", c: "muted", t: 18.33 }] },
+              { start: 18.68, end: 20.85, words: [{ k: "sistem", j: "keyword", c: "amber", t: 18.77 }, { k: "pengenalan", j: "keyword", c: "amber", t: 19.2 }, { k: "memori", j: "keyword", c: "amber", t: 19.64 }, { k: "bisa", j: "intro", c: "muted", t: 20.08 }, { k: "mengirim", j: "intro", c: "muted", t: 20.52 }] },
+              { start: 20.85, end: 24.38, words: [{ k: "sinyal", j: "keyword", c: "cyan", t: 20.95 }, { k: "familiar", j: "keyword", c: "cyan", t: 21.39 }, { k: "tanpa", j: "keyword", c: "red", t: 21.98 }, { k: "menemukan", j: "intro", c: "muted", t: 22.35 }, { k: "sumber", j: "intro", c: "muted", t: 22.72 }, { k: "ingatan", j: "intro", c: "muted", t: 23.09 }, { k: "yang", j: "intro", c: "muted", t: 23.47 }, { k: "jelas.", j: "keyword", c: "red", t: 23.84 }] },
+              { start: 24.55, end: 26.82, words: [{ k: "Akibatnya,", j: "intro", c: "muted", t: 24.65 }, { k: "otak", j: "intro", c: "muted", t: 25.63 }, { k: "memberi", j: "intro", c: "muted", t: 25.99 }, { k: "kesan", j: "intro", c: "muted", t: 26.35 }] },
+              { start: 26.82, end: 28.35, words: [{ k: '"ini', j: "keyword", c: "amber", t: 26.94 }, { k: "pernah", j: "keyword", c: "amber", t: 27.34 }, { k: 'terjadi",', j: "keyword", c: "amber", t: 27.73 }] },
+              { start: 28.35, end: 31.7, words: [{ k: "padahal", j: "intro", c: "muted", t: 28.46 }, { k: "kita", j: "intro", c: "muted", t: 28.95 }, { k: "sadar", j: "intro", c: "muted", t: 29.43 }, { k: "situasinya", j: "intro", c: "muted", t: 29.91 }, { k: "sebenarnya", j: "keyword", c: "green", t: 30.4 }, { k: "baru.", j: "keyword", c: "green", t: 30.89 }] },
+              { start: 31.7, end: 34.4, words: [{ k: "Para", j: "intro", c: "muted", t: 31.87 }, { k: "peneliti", j: "intro", c: "muted", t: 32.31 }, { k: "menduga", j: "intro", c: "muted", t: 32.76 }, { k: "ketidakcocokan", j: "keyword", c: "red", t: 33.2 }, { k: "sinyal", j: "keyword", c: "red", t: 33.65 }] },
+              { start: 34.4, end: 36.55, words: [{ k: "ini", j: "intro", c: "muted", t: 34.09 }, { k: "ikut", j: "intro", c: "muted", t: 34.53 }, { k: "memunculkan", j: "intro", c: "muted", t: 34.98 }, { k: "déjà", j: "intro", c: "muted", t: 35.42 }, { k: "vu,", j: "intro", c: "muted", t: 35.87 }] },
+              { start: 36.55, end: 39.5, words: [{ k: "meski", j: "intro", c: "muted", t: 36.68 }, { k: "penyebab", j: "intro", c: "muted", t: 37.12 }, { k: "pastinya", j: "intro", c: "muted", t: 37.56 }, { k: "belum", j: "intro", c: "muted", t: 38.0 }, { k: "sepenuhnya", j: "intro", c: "muted", t: 38.43 }, { k: "dipahami.", j: "intro", c: "muted", t: 38.87 }] },
+              { start: 39.72, end: 42.8, words: [{ k: "Déjà", j: "intro", c: "muted", t: 39.85 }, { k: "vu", j: "intro", c: "muted", t: 40.24 }, { k: "sesekali", j: "intro", c: "muted", t: 40.63 }, { k: "umum", j: "keyword", c: "green", t: 41.02 }, { k: "dialami", j: "intro", c: "muted", t: 41.4 }, { k: "banyak", j: "intro", c: "muted", t: 41.79 }, { k: "orang.", j: "intro", c: "muted", t: 42.18 }] },
+              { start: 42.8, end: 46.05, words: [{ k: "Jadi,", j: "intro", c: "muted", t: 42.95 }, { k: "bukan", j: "keyword", c: "red", t: 43.24 }, { k: "bukti", j: "keyword", c: "red", t: 43.53 }, { k: "kita", j: "intro", c: "muted", t: 43.82 }, { k: "pernah", j: "intro", c: "muted", t: 44.11 }, { k: "hidup", j: "intro", c: "muted", t: 44.41 }, { k: "di", j: "intro", c: "muted", t: 44.7 }, { k: "momen", j: "intro", c: "muted", t: 44.99 }, { k: "yang", j: "intro", c: "muted", t: 45.28 }, { k: "sama,", j: "intro", c: "muted", t: 45.57 }] },
+              { start: 46.05, end: 48.75, words: [{ k: "melainkan", j: "intro", c: "muted", t: 46.17 }, { k: "pengalaman", j: "intro", c: "muted", t: 46.59 }, { k: "aneh", j: "intro", c: "muted", t: 47.01 }, { k: "dari", j: "intro", c: "muted", t: 47.43 }, { k: "sistem", j: "keyword", c: "amber", t: 47.85 }, { k: "memori.", j: "keyword", c: "amber", t: 48.27 }] },
+            ];
+
+            var tl = gsap.timeline({ paused: true });
+            for (var g = 0; g < groups.length; g++) {
+              var grp = groups[g];
+              var grpEl = document.createElement("div");
+              grpEl.className = "cap-group";
+              grpEl.id = "cap-group-" + g;
+
+              var wordEls = [];
+              for (var w = 0; w < grp.words.length; w++) {
+                var item = grp.words[w];
+                var span = document.createElement("span");
+                span.className = "cap-word cap-word--" + item.j + " cap-color--" + item.c;
+                span.textContent = item.k;
+                grpEl.appendChild(span);
+                wordEls.push({ el: span, t: item.t });
+              }
+              band.appendChild(grpEl);
+
+              tl.set(grpEl, { visibility: "visible", opacity: 1 }, grp.start);
+              for (var k = 0; k < wordEls.length; k++) {
+                var wt = Math.max(grp.start, wordEls[k].t);
+                tl.fromTo(wordEls[k].el, { opacity: 0.18, y: 10 }, { opacity: 1, y: 0, duration: 0.16, ease: "power3.out" }, wt);
+              }
+              tl.to(grpEl, { opacity: 0, duration: 0.12, ease: "power2.in" }, grp.end - 0.12);
+              tl.set(grpEl, { opacity: 0, visibility: "hidden" }, grp.end);
+            }
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["captions"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

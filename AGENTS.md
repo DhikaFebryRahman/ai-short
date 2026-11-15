@@ -1,22 +1,26 @@
-# Aturan proyek video Kapsul Fakta
+# Aturan proyek video Kapsul Fakta (HyperFrames)
 ## Spesifikasi
 - Komposisi 1080x1920, 30 fps. Durasi = durasi voiceover + 1 detik pembuka + 1,5 detik penutup, dibulatkan ke atas ke detik penuh. MAKSIMAL 60 detik; jika lebih, berhenti dan tanya saya. Voiceover mulai di detik 1.0.
 - Jangan memotong, mempercepat, atau mengubah isi narasi. Ejaan teks di layar persis seperti naskah.
-- Animasi hanya fungsi dari frame (useCurrentFrame, interpolate, spring). Dilarang Math.random, Date.now, dan animasi/transition CSS. Warna dan posisi dari satu tempat (data/tema), bukan tersebar.
-## Gaya (dari video referensi di referensi/; ikuti gaya, bukan topik atau urutan adegan)
-- Top bar bersegmen: satu segmen per scene, terisi kuning-amber seiring scene berjalan; label seri huruf besar spasi lebar di kiri; counter "01 / NN" di kanan.
-- Latar bukan polos tapi tenang: gradasi biru tua (#0D1019 -> #0E1632 -> #112551), glow amber redup kiri-atas, glow biru di bawah, partikel kotak piksel kecil melayang pelan.
-- Caption kinetik kata demi kata (menggantikan subtitle): kalimat pengantar miring serif (Lora Italic, #C6CDE4), kata kunci Poppins Bold berwarna + glow. Warna: amber #FDAE1E istilah kunci, cyan #3CE1FE aksi/arah/sudut, hijau #34DC8C berhasil, merah lembut masalah, putih netral.
-- Objek utama di tengah yang berubah mengikuti naskah; kamera miring, mendekat, atau memindai dari sudut berbeda sesuai kalimat (gerak halus, ease-in-out). Chip kecil berlabel di bawah visual.
-- Utamakan visual 3D menggunakan @remotion/three (<ThreeCanvas> + Three.js / React Three Fiber) untuk objek utama, adegan spasial, atau visual yang lebih kuat dalam 3D; gunakan 2D (HTML/CSS/SVG) untuk overlay, UI, atau diagram datar yang memang lebih jelas. Semua animasi 3D wajib digerakkan oleh useCurrentFrame() (dilarang useFrame(); setiap <Sequence> di dalam <ThreeCanvas> wajib layout="none").
-- Font: Lora Italic dan Poppins (via @remotion/google-fonts atau file lokal). Zona aman: konten utama y 150-1500.
+- Seluruh animasi harus deterministik mengikuti timeline HyperFrames (`window.__timelines`, GSAP timeline paused, `data-start`, `data-duration`). Dilarang `Math.random()`, `Date.now()`, fetch jaringan saat runtime, dan animasi/transition CSS yang tidak deterministik.
+- Variabel tema dan warna disatukan di CSS `:root` / `data-composition-variables` agar mudah dirawat.
+## Gaya (2D Full-Screen Cerah)
+- Proyek HyperFrames berada langsung di root workspace ini (`index.html`, `compositions/`, `assets/`, `renders/`).
+- Top bar bersegmen: satu segmen per scene, terisi seiring scene berjalan; label seri huruf besar spasi lebar di kiri; counter "01 / NN" di kanan.
+- Tampilan penuh 1 screen (1080x1920, tanpa kotak pembatas kaku) dengan ilustrasi karakter & lingkungan 2D bergerak yang hidup dan palet warna cerah yang kontras.
+- Caption kinetik kata demi kata (menggantikan subtitle): pengantar serif miring (`Playfair Display` / `Lora Italic`), kata kunci `Poppins` bold beraksen warna dengan kontras tinggi agar jelas di atas ilustrasi penuh.
+- Objek dan karakter utama bergerak halus mengikuti narasi dengan gerakan kamera (pan/zoom) dan chip label kecil di bawah aksi utama.
+- Zona aman platform vertikal: konten teks, HUD, dan caption berada di area aman agar tidak tertutup UI Shorts/Reels/TikTok.
 ## Proses (wajib)
-1. Analisis video referensi dengan ekstraksi frame (ffmpeg, contact sheet) dan ukur jeda voiceover (ffmpeg silencedetect); selaraskan batas scene dan caption dengan jeda kalimat.
-2. Bangun scene pertama saja, tampilkan satu still, TUNGGU persetujuan saya. Lalu bangun sisanya dan biarkan saya cek di Studio.
-3. Render penuh hanya setelah saya setuju: npx remotion render src/index.ts <IdKomposisi> out/video.mp4
-4. Verifikasi dari file hasil dengan ffprobe: durasi, jumlah frame, 1080x1920, 30 fps, H.264 + AAC. Laporkan angka sebenarnya. Jangan menyatakan selesai sebelum itu.
-## Hemat token
-- Pakai komponen dan JSON yang sudah ada; jangan menulis ulang. Jangan mencetak file panjang di chat. Perbaiki hanya bagian yang saya minta.
-## Kejujuran
-- Jika error, tampilkan pesan asli dan jelaskan. Jangan mengklaim hasil "sinematik realistis" bila yang dibuat gaya 2D/3D prosedural. Laporkan keterbatasan (timing per kata perkiraan, klaim fakta yang tampak keliru di naskah).
-
+1. Ukur durasi & jeda voiceover (`ffmpeg` / `ffprobe`); selaraskan batas scene dan caption dengan jeda kalimat.
+2. Bangun atau edit komposisi di `index.html` + `compositions/`, jalankan `npx hyperframes check --json` dan periksa snapshot frame dengan `npx hyperframes snapshot --at ...` sebelum lanjut.
+3. Jalankan Studio Preview (`npx hyperframes preview --background`) untuk review dan tunggu persetujuan saya sebelum render MP4 penuh. Gunakan `npx hyperframes preview --stop` saat review selesai.
+4. Render penuh hanya setelah saya setuju: `npx hyperframes render --quality delivery --output renders/<nama-video>.mp4`.
+5. Verifikasi hasil MP4 dengan `ffprobe`: durasi, jumlah frame, `1080x1920`, `30 fps`, `H.264` + `AAC`. Laporkan angka sebenarnya. Jangan menyatakan selesai sebelum itu.
+## Key Technical Rules (HyperFrames)
+- Setiap elemen bertimed wajib memakai `data-start`, durasi, dan `class="clip"`.
+- Daftarkan satu timeline root paused per komposisi pada `window.__timelines["<composition-id>"] = gsap.timeline({ paused: true })`.
+- Gunakan `data-composition-src="compositions/file.html"` untuk sub-komposisi.
+## Hemat token & Kejujuran
+- Pakai struktur dan pola komponen HyperFrames yang sudah ada; jangan mencetak file panjang di chat.
+- Jika error, tampilkan pesan asli dan jelaskan. Laporkan keterbatasan secara jujur (timing perkiraan, klaim fakta di naskah, atau warning dari `hyperframes check`).
