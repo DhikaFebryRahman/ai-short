@@ -56,35 +56,53 @@ export const syncProjectToRemotion = async (
 
   const totalDurationSeconds = Math.ceil(voiceoverDuration + 1.0 + 1.5);
 
-  const wordCounts = project.scenes.map((s) => {
-    const words = s.narasi.trim() ? s.narasi.trim().split(/\s+/) : [];
-    return Math.max(words.length, 1);
-  });
-  const totalWords = Math.max(
-    wordCounts.reduce((a, b) => a + b, 0),
-    1,
+  const rawWordCounts = project.scenes.map((s) =>
+    s.narasi.trim() ? s.narasi.trim().split(/\s+/).length : 0,
   );
+  const totalSpokenWords = rawWordCounts.reduce((a, b) => a + b, 0);
+  const hasAnySpoken = totalSpokenWords > 0;
+  const hasSilentTrailingOutro =
+    project.scenes.length > 1 &&
+    rawWordCounts[project.scenes.length - 1] === 0 &&
+    hasAnySpoken;
 
   let cursor = 0;
   const mappedScenes = project.scenes.map((scene, idx) => {
-    const share = wordCounts[idx] / totalWords;
     const isFirst = idx === 0;
     const isLast = idx === project.scenes.length - 1;
-
-    const voSlice = voiceoverDuration * share;
-    const startSec = isFirst ? 0 : cursor;
-    const endSec = isLast
-      ? totalDurationSeconds
-      : Number(
-          (
-            startSec +
-            (isFirst ? 1.0 : 0) +
-            voSlice
-          ).toFixed(2),
-        );
-    cursor = endSec;
+    const isLastSpokenBeforeOutro =
+      hasSilentTrailingOutro && idx === project.scenes.length - 2;
 
     const words = scene.narasi.trim() ? scene.narasi.trim().split(/\s+/) : [];
+    const startSec = isFirst ? 0 : cursor;
+
+    let voSlice = 0;
+    let endSec = totalDurationSeconds;
+
+    if (isLast && hasSilentTrailingOutro) {
+      voSlice = 0;
+      endSec = totalDurationSeconds;
+    } else if (hasAnySpoken) {
+      const share = words.length / totalSpokenWords;
+      voSlice = voiceoverDuration * share;
+      if (isLastSpokenBeforeOutro) {
+        endSec = Number((1.0 + voiceoverDuration).toFixed(2));
+      } else if (isLast) {
+        endSec = totalDurationSeconds;
+      } else {
+        endSec = Number(
+          (startSec + (isFirst ? 1.0 : 0) + voSlice).toFixed(2),
+        );
+      }
+    } else {
+      voSlice = voiceoverDuration / Math.max(project.scenes.length, 1);
+      endSec = isLast
+        ? totalDurationSeconds
+        : Number((startSec + (isFirst ? 1.0 : 0) + voSlice).toFixed(2));
+    }
+
+    cursor = endSec;
+
     const speakStart = isFirst ? 1.0 : startSec + 0.1;
     const speakDuration = Math.max(voSlice - 0.15, 0.5);
     const step = words.length > 0 ? speakDuration / words.length : 0.3;

@@ -22,7 +22,7 @@ export const computePipelineStatus = (
 ): ProjectPipelineStatus => {
   const hasNaskah =
     project.scenes.length > 0 &&
-    project.scenes.every((s) => s.narasi.trim().length > 0);
+    project.scenes.some((s) => s.narasi.trim().length > 0);
   const hasVoiceover = Boolean(project.voiceover);
   const allApproved =
     project.scenes.length > 0 &&
@@ -40,10 +40,41 @@ export const computePipelineStatus = (
   };
 };
 
+const splitLegacyRawGptText = (
+  rawGptText?: string,
+): { rawNaskahText: string; rawStoryboardText: string } => {
+  const raw = rawGptText ?? "";
+  if (!raw.trim()) {
+    return { rawNaskahText: "", rawStoryboardText: "" };
+  }
+  const alurMatch = raw.match(
+    /\n[ \t]*(?:(?:#+\s*)?ALUR PENJELASAN\b|(?:#{1,4}\s*SCENE\s+\d+|SCENE\s+\d+[ \t]*(?:[—–:-]|\n|$)))/i,
+  );
+  if (alurMatch && alurMatch.index !== undefined) {
+    return {
+      rawNaskahText: raw.slice(0, alurMatch.index).trim(),
+      rawStoryboardText: raw.slice(alurMatch.index).trim(),
+    };
+  }
+  return { rawNaskahText: raw, rawStoryboardText: "" };
+};
+
 export const readProject = async (slug: string): Promise<ProjectData> => {
   const projectDir = resolveProjectDir(slug);
   const raw = await fs.readFile(path.join(projectDir, PROJECT_FILE), "utf-8");
-  return JSON.parse(raw) as ProjectData;
+  const parsed = JSON.parse(raw) as ProjectData;
+  if (
+    typeof parsed.rawNaskahText === "string" &&
+    typeof parsed.rawStoryboardText === "string"
+  ) {
+    return parsed;
+  }
+  const migrated = splitLegacyRawGptText(parsed.rawGptText);
+  return {
+    ...parsed,
+    rawNaskahText: parsed.rawNaskahText ?? migrated.rawNaskahText,
+    rawStoryboardText: parsed.rawStoryboardText ?? migrated.rawStoryboardText,
+  };
 };
 
 export const writeProject = async (
@@ -125,7 +156,8 @@ export const createProject = async (
     archived: false,
     createdAt: now,
     updatedAt: now,
-    rawGptText: "",
+    rawNaskahText: "",
+    rawStoryboardText: "",
     scenes: [],
     claims: [],
     voiceover: null,

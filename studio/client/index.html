@@ -16,6 +16,9 @@
           if (localStorage.getItem("kapsul-fakta-theme") === "dark") {
             document.documentElement.dataset.theme = "dark";
           }
+          if (localStorage.getItem("kapsul-fakta-glass") === "off") {
+            document.documentElement.dataset.glass = "off";
+          }
         } catch {
           // ignore storage errors
         }

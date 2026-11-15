@@ -215,32 +215,51 @@ const SceneContent: React.FC<
 
   return (
     <AbsoluteFill style={{ opacity: sceneOpacity }}>
-      {/* Visual center stage (strictly inside y 150-1500 safe zone) */}
-      <div
-        style={{
-          position: "absolute",
-          top: LAYOUT.scene.visualTop,
-          left: SAFE_ZONE.horizontalPadding,
-          width: SAFE_ZONE.contentWidth,
-          height: LAYOUT.scene.visualHeight,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      {children ? (
+        <AbsoluteFill>{children}</AbsoluteFill>
+      ) : (
         <div
           style={{
+            position: "absolute",
+            top: LAYOUT.scene.visualTop,
+            left: SAFE_ZONE.horizontalPadding,
+            width: SAFE_ZONE.contentWidth,
+            height: LAYOUT.scene.visualHeight,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            scale: cameraStyle.scale,
-            translate: cameraStyle.translate,
-            rotate: cameraStyle.rotate,
           }}
         >
-          {children ?? <DefaultVisualPlaceholder scene={scene} />}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              scale: cameraStyle.scale,
+              translate: cameraStyle.translate,
+              rotate: cameraStyle.rotate,
+            }}
+          >
+            <DefaultVisualPlaceholder scene={scene} />
+          </div>
         </div>
-      </div>
+      )}
+
+      {/* Soft bottom readability gradient so full-screen 3D visuals never clash with chip/captions */}
+      {children ? (
+        <div
+          style={{
+            position: "absolute",
+            top: 940,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background:
+              "linear-gradient(180deg, rgba(13, 16, 25, 0) 0%, rgba(13, 16, 25, 0.42) 32%, rgba(13, 16, 25, 0.82) 100%)",
+            pointerEvents: "none",
+          }}
+        />
+      ) : null}
 
       {/* Small labeled chip below visual */}
       {scene.chip ? (
@@ -252,6 +271,7 @@ const SceneContent: React.FC<
             width: SAFE_ZONE.contentWidth,
             display: "flex",
             justifyContent: "center",
+            zIndex: 10,
           }}
         >
           <Chip label={scene.chip} warna={scene.chipWarna ?? "amber"} />
@@ -269,6 +289,7 @@ const SceneContent: React.FC<
           display: "flex",
           alignItems: "flex-start",
           justifyContent: "center",
+          zIndex: 10,
         }}
       >
         <KineticCaption

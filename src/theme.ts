@@ -64,9 +64,9 @@ export const LAYOUT = {
   scene: {
     visualTop: 180,
     visualHeight: 740,
-    chipTop: 950,
-    captionTop: 1050,
-    captionMaxHeight: 420,
+    chipTop: 1070,
+    captionTop: 1165,
+    captionMaxHeight: 330,
   },
 } as const;
 

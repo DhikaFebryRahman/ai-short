@@ -23,10 +23,23 @@ export type SceneHighlight = {
   readonly catatan?: string;
 };
 
+export type SceneShot = {
+  readonly id: string;
+  readonly judul: string;
+  readonly timestamp: string;
+  readonly visual3D: string;
+  readonly gerakanKamera: string;
+  readonly animasi: string;
+  readonly teksDiLayar: string;
+  readonly audio: string;
+  readonly transisi: string;
+};
+
 export type ProjectScene = {
   readonly id: string;
   readonly judul: string;
   readonly fungsi: SceneFunction;
+  readonly timestamp?: string;
   readonly narasi: string;
   readonly pemahamanPenonton: string;
   readonly ideVisual: string;
@@ -37,6 +50,7 @@ export type ProjectScene = {
   readonly kamera: CameraPreset;
   readonly status: SceneStatus;
   readonly estimasiDetik?: number;
+  readonly shots?: readonly SceneShot[];
 };
 
 export type ClaimItem = {
@@ -128,7 +142,12 @@ export type ProjectData = {
   readonly archived: boolean;
   readonly createdAt: string;
   readonly updatedAt: string;
-  readonly rawGptText: string;
+  readonly rawNaskahText: string;
+  readonly rawStoryboardText: string;
+  readonly rawGptText?: string;
+  readonly konsepVisualGlobal?: string;
+  readonly catatanVisual?: string;
+  readonly pesanAgent?: string;
   readonly scenes: readonly ProjectScene[];
   readonly claims: readonly ClaimItem[];
   readonly voiceover: VoiceoverAsset | null;

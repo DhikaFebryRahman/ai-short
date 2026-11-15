@@ -63,23 +63,38 @@ export const buildAgentPromptB = (project: ProjectData): string => {
     lines.push(`- Video referensi: Tidak dilampirkan (ikuti gaya standar AGENTS.md).`);
   }
 
+  if (project.konsepVisualGlobal?.trim()) {
+    lines.push("");
+    lines.push(`## 2. KONSEP VISUAL GLOBAL`);
+    lines.push(project.konsepVisualGlobal.trim());
+  }
+
   lines.push("");
-  lines.push(`## 2. NASKAH & ALUR STORYBOARD PER SCENE`);
+  lines.push(
+    `## ${project.konsepVisualGlobal?.trim() ? "3" : "2"}. NASKAH & ALUR STORYBOARD PER SCENE`,
+  );
 
   project.scenes.forEach((scene, index) => {
     lines.push("");
+    const timeSuffix = scene.timestamp ? ` [${scene.timestamp}]` : "";
     lines.push(
-      `### ${scene.id.toUpperCase()} (${index + 1}/${project.scenes.length}) — ${scene.judul}`,
+      `### ${scene.id.toUpperCase()} (${index + 1}/${project.scenes.length}) — ${scene.judul}${timeSuffix}`,
     );
-    lines.push(`- Fungsi: ${scene.fungsi.toUpperCase()} | Status: ${scene.status}`);
-    lines.push(`- Narasi persis: "${scene.narasi}"`);
+    lines.push(
+      `- Fungsi: ${scene.fungsi.toUpperCase()} | Status: ${scene.status}${scene.estimasiDetik ? ` | Durasi: ${scene.estimasiDetik}s` : ""}`,
+    );
+    lines.push(
+      scene.narasi.trim()
+        ? `- Narasi persis: "${scene.narasi}"`
+        : `- Narasi: (kosong / visual-only)`,
+    );
     if (scene.pemahamanPenonton) {
       lines.push(`- Pemahaman penonton: ${scene.pemahamanPenonton}`);
     }
-    if (scene.ideVisual) {
+    if (scene.ideVisual && (!scene.shots || scene.shots.length === 0)) {
       lines.push(`- Ide visual: ${scene.ideVisual}`);
     }
-    lines.push(`- Chip bawah visual: ${scene.chip || "-"}`);
+    lines.push(`- Chip / teks utama di layar: ${scene.chip || "-"}`);
     lines.push(`- Preset kamera: ${scene.kamera}`);
     lines.push(
       `- Kebutuhan 3D: ${scene.butuh3D ? "YA (utamakan @remotion/three)" : "Tidak wajib 3D / boleh 2D atau 3D ringan"}${scene.alasan3D ? ` — Alasan: ${scene.alasan3D}` : ""}`,
@@ -93,21 +108,50 @@ export const buildAgentPromptB = (project: ProjectData): string => {
         .join("; ");
       lines.push(`- Kata sorot: ${highlights}`);
     }
+    if (scene.shots && scene.shots.length > 0) {
+      lines.push(`- Rincian Shot Visual (${scene.shots.length}):`);
+      scene.shots.forEach((shot, sIdx) => {
+        const shotTime = shot.timestamp ? ` (${shot.timestamp})` : "";
+        lines.push(`  - SHOT ${sIdx + 1} — ${shot.judul}${shotTime}`);
+        if (shot.visual3D) lines.push(`    - Visual 3D: ${shot.visual3D}`);
+        if (shot.gerakanKamera) {
+          lines.push(`    - Gerakan kamera: ${shot.gerakanKamera}`);
+        }
+        if (shot.animasi) lines.push(`    - Animasi: ${shot.animasi}`);
+        if (shot.teksDiLayar) {
+          lines.push(`    - Teks di layar: ${shot.teksDiLayar}`);
+        }
+        if (shot.audio) lines.push(`    - Audio: ${shot.audio}`);
+        if (shot.transisi) lines.push(`    - Transisi: ${shot.transisi}`);
+      });
+    }
   });
+
+  if (project.catatanVisual?.trim()) {
+    lines.push("");
+    lines.push(`## CATATAN PENTING UNTUK VISUAL`);
+    lines.push(project.catatanVisual.trim());
+  }
 
   if (project.claims.length > 0) {
     lines.push("");
-    lines.push(`## 3. STATUS VERIFIKASI KLAIM`);
+    lines.push(`## STATUS VERIFIKASI KLAIM`);
     project.claims.forEach((c, idx) => {
       lines.push(`${idx + 1}. [${c.tercentang ? "x" : " "}] ${c.teks}`);
     });
   }
 
+  if (project.pesanAgent?.trim()) {
+    lines.push("");
+    lines.push(`## ARAHAN TAMBAHAN`);
+    lines.push(project.pesanAgent.trim());
+  }
+
   lines.push("");
-  lines.push(`## 4. INSTRUKSI EKSEKUSI`);
+  lines.push(`## INSTRUKSI EKSEKUSI`);
   lines.push(`1. Bangun scene-01 terlebih dahulu, render satu still, dan tunggu persetujuan saya.`);
   lines.push(`2. Selaraskan batas scene dan kata pada caption kinetik dengan jeda voiceover.`);
-  lines.push(`3. Gunakan komponen & tema yang sudah ada di src/, jangan ubah ejaan narasi.`);
+  lines.push(`3. Gunakan komponen & tema yang sudah ada di src/ serta @remotion/three untuk elemen 3D, jangan ubah ejaan narasi.`);
 
   return lines.join("\n");
 };

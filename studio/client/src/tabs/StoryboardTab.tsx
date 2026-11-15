@@ -18,8 +18,9 @@ import type {
   ProjectScene,
   SceneFunction,
   SceneHighlight,
+  SceneShot,
 } from "../../../shared/types";
-import { countWords, parseGptScript } from "../lib/gptParser";
+import { countWords, parseSeparatedGptInputs } from "../lib/gptParser";
 
 type StoryboardTabProps = {
   readonly project: ProjectData;
@@ -60,7 +61,11 @@ export const StoryboardTab: React.FC<StoryboardTabProps> = ({
   onUpdate,
 }) => {
   const [dragIndex, setDragIndex] = useState<number | null>(null);
-  const [parseMessage, setParseMessage] = useState<string | null>(null);
+  const [showGlobalGuide, setShowGlobalGuide] = useState(false);
+  const [parseMessage, setParseMessage] = useState<{
+    readonly ok: boolean;
+    readonly text: string;
+  } | null>(null);
   const [newClaimText, setNewClaimText] = useState("");
   const [newWordByScene, setNewWordByScene] = useState<Record<string, string>>(
     {},
@@ -73,17 +78,35 @@ export const StoryboardTab: React.FC<StoryboardTabProps> = ({
     (sum, s) => sum + countWords(s.narasi),
     0,
   );
-  const estimatedSeconds = totalWords / 2.5;
+  const silentOutroSeconds = project.scenes.reduce((sum, s) => {
+    const w = countWords(s.narasi);
+    return w === 0 ? sum + (s.estimasiDetik ?? 0) : sum;
+  }, 0);
+  const estimatedSeconds = totalWords / 2.5 + silentOutroSeconds;
   const approvedCount = project.scenes.filter(
     (s) => s.status === "disetujui",
   ).length;
+  const rawNaskahWords = countWords(project.rawNaskahText ?? "");
+  const rawStoryboardSceneCount = (
+    (project.rawStoryboardText ?? "").match(
+      /^(?:#{1,4}\s*SCENE\s+\d+|SCENE\s+\d+\s*(?:[—–:-]|$))/gim,
+    ) ?? []
+  ).length;
+  const totalShotCount = project.scenes.reduce(
+    (sum, s) => sum + (s.shots?.length ?? 0),
+    0,
+  );
 
   const handleAutoSplit = () => {
-    const parsed = parseGptScript(project.rawGptText);
+    const parsed = parseSeparatedGptInputs(
+      project.rawNaskahText ?? "",
+      project.rawStoryboardText ?? "",
+    );
     if (parsed.scenes.length === 0) {
-      setParseMessage(
-        "Tidak ada bagian scene yang terbaca. Pastikan teks naskah sudah ditempel.",
-      );
+      setParseMessage({
+        ok: false,
+        text: "Tidak ada bagian scene yang terbaca. Pastikan Naskah atau Storyboard dari GPT sudah ditempel.",
+      });
       return;
     }
 
@@ -91,10 +114,25 @@ export const StoryboardTab: React.FC<StoryboardTabProps> = ({
       title: parsed.title || project.title,
       scenes: parsed.scenes,
       claims: parsed.claims.length > 0 ? parsed.claims : project.claims,
+      konsepVisualGlobal:
+        parsed.konsepVisualGlobal ?? project.konsepVisualGlobal,
+      catatanVisual: parsed.catatanVisual ?? project.catatanVisual,
+      pesanAgent: parsed.pesanAgent ?? project.pesanAgent,
     });
-    setParseMessage(
-      `Berhasil memecah ${parsed.scenes.length} scene dan ${parsed.claims.length} klaim verifikasi.`,
+    const sourceLabel =
+      parsed.source === "gabungan"
+        ? "dari Naskah + Storyboard"
+        : parsed.source === "naskah"
+          ? "dari Naskah saja"
+          : "dari Storyboard saja";
+    const parsedShots = parsed.scenes.reduce(
+      (sum, s) => sum + (s.shots?.length ?? 0),
+      0,
     );
+    setParseMessage({
+      ok: true,
+      text: `Berhasil memecah ${parsed.scenes.length} scene (${parsedShots} shot, ${sourceLabel}) dan ${parsed.claims.length} klaim verifikasi.`,
+    });
   };
 
   const updateScene = (index: number, patch: Partial<ProjectScene>) => {
@@ -102,6 +140,46 @@ export const StoryboardTab: React.FC<StoryboardTabProps> = ({
       i === index ? { ...s, ...patch } : s,
     );
     onUpdate({ scenes: updated });
+  };
+
+  const updateShot = (
+    sceneIndex: number,
+    shotIndex: number,
+    patch: Partial<SceneShot>,
+  ) => {
+    const scene = project.scenes[sceneIndex];
+    const currentShots = scene.shots ?? [];
+    updateScene(sceneIndex, {
+      shots: currentShots.map((sh, i) =>
+        i === shotIndex ? { ...sh, ...patch } : sh,
+      ),
+    });
+  };
+
+  const addShot = (sceneIndex: number) => {
+    const scene = project.scenes[sceneIndex];
+    const currentShots = scene.shots ?? [];
+    const nextNum = currentShots.length + 1;
+    const nextShot: SceneShot = {
+      id: `shot-${sceneIndex + 1}-${nextNum}-${Date.now()}`,
+      judul: `Shot ${nextNum}`,
+      timestamp: "",
+      visual3D: "",
+      gerakanKamera: "",
+      animasi: "",
+      teksDiLayar: "",
+      audio: "",
+      transisi: "",
+    };
+    updateScene(sceneIndex, { shots: [...currentShots, nextShot] });
+  };
+
+  const removeShot = (sceneIndex: number, shotIndex: number) => {
+    const scene = project.scenes[sceneIndex];
+    const currentShots = scene.shots ?? [];
+    updateScene(sceneIndex, {
+      shots: currentShots.filter((_, i) => i !== shotIndex),
+    });
   };
 
   const moveScene = (from: number, to: number) => {
@@ -225,11 +303,17 @@ export const StoryboardTab: React.FC<StoryboardTabProps> = ({
         </div>
       ) : null}
 
-      <div className="card stack-sm">
+      <div className="card stack-md">
         <div className="row-between">
-          <label className="field-label" htmlFor="gpt-raw-input" style={{ margin: 0 }}>
-            Tempel Hasil Naskah & Alur dari GPT
-          </label>
+          <div>
+            <div style={{ fontWeight: 700, fontSize: 15 }}>
+              Tempel Hasil dari GPT (Terpisah)
+            </div>
+            <div style={{ color: "var(--text-secondary)", fontSize: 12 }}>
+              Isi Naskah dan Storyboard/Alur di kolom masing-masing, lalu klik
+              Pecah otomatis. Tetap berjalan meski baru salah satu yang diisi.
+            </div>
+          </div>
           <button
             type="button"
             className="btn btn-primary"
@@ -239,26 +323,151 @@ export const StoryboardTab: React.FC<StoryboardTabProps> = ({
             Pecah otomatis
           </button>
         </div>
-        <textarea
-          id="gpt-raw-input"
-          rows={7}
-          placeholder="Tempel hasil GPT lengkap (# NARASI LENGKAP, # ALUR PENJELASAN, # KLAIM YANG PERLU DIVERIFIKASI) atau blok [Hook] / [Inti] / [Penutup]..."
-          value={project.rawGptText}
-          onChange={(e) => onUpdate({ rawGptText: e.target.value })}
-        />
+
+        <div className="grid-2">
+          <div className="stack-sm" style={{ gap: 6 }}>
+            <div className="row-between">
+              <label
+                className="field-label"
+                htmlFor="gpt-naskah-input"
+                style={{ margin: 0 }}
+              >
+                1. Naskah dari GPT (Narasi Lengkap)
+              </label>
+              <span className="pill tabular">{rawNaskahWords} kata teks</span>
+            </div>
+            <textarea
+              id="gpt-naskah-input"
+              rows={9}
+              placeholder="Tempel bagian # NARASI LENGKAP (termasuk **Judul:**, **[Hook]**, **[Inti]**, **[Penutup]** atau paragraf narasi)..."
+              value={project.rawNaskahText ?? ""}
+              onChange={(e) => onUpdate({ rawNaskahText: e.target.value })}
+            />
+          </div>
+
+          <div className="stack-sm" style={{ gap: 6 }}>
+            <div className="row-between">
+              <label
+                className="field-label"
+                htmlFor="gpt-storyboard-input"
+                style={{ margin: 0 }}
+              >
+                2. Storyboard / Alur dari GPT
+              </label>
+              <span className="pill tabular">
+                {rawStoryboardSceneCount} blok scene
+              </span>
+            </div>
+            <textarea
+              id="gpt-storyboard-input"
+              rows={9}
+              placeholder="Tempel # ALUR PENJELASAN DAN STORYBOARD (# SCENE 1 — ..., ### STORYBOARD VISUAL, **SHOT 1 — ...**, # CATATAN PENTING UNTUK VISUAL, # KLAIM YANG PERLU DIVERIFIKASI)..."
+              value={project.rawStoryboardText ?? ""}
+              onChange={(e) => onUpdate({ rawStoryboardText: e.target.value })}
+            />
+          </div>
+        </div>
+
         {parseMessage ? (
-          <div className="alert alert-success">{parseMessage}</div>
+          <div
+            className={`alert ${
+              parseMessage.ok ? "alert-success" : "alert-warning"
+            }`}
+          >
+            {parseMessage.text}
+          </div>
         ) : null}
       </div>
 
+      {(project.konsepVisualGlobal ||
+        project.catatanVisual ||
+        project.pesanAgent ||
+        showGlobalGuide) ? (
+        <div className="card stack-sm">
+          <div className="row-between">
+            <div style={{ fontWeight: 700, fontSize: 15 }}>
+              Konsep Visual Global & Catatan Produksi
+            </div>
+            <button
+              type="button"
+              className="btn btn-sm"
+              onClick={() => setShowGlobalGuide((v) => !v)}
+            >
+              {showGlobalGuide ? "Sembunyikan" : "Lihat / Ubah"}
+            </button>
+          </div>
+          {!showGlobalGuide ? (
+            <div style={{ color: "var(--text-secondary)", fontSize: 12 }}>
+              {[
+                project.konsepVisualGlobal ? "Konsep visual global terisi" : null,
+                project.catatanVisual ? "Catatan penting visual terisi" : null,
+                project.pesanAgent ? "Arahan tambahan terisi" : null,
+              ]
+                .filter(Boolean)
+                .join(" • ") || "Belum diisi."}
+            </div>
+          ) : (
+            <div className="stack-sm">
+              <div>
+                <label className="field-label">Konsep Visual Global</label>
+                <textarea
+                  rows={4}
+                  value={project.konsepVisualGlobal ?? ""}
+                  onChange={(e) =>
+                    onUpdate({ konsepVisualGlobal: e.target.value })
+                  }
+                />
+              </div>
+              <div>
+                <label className="field-label">
+                  Catatan Penting untuk Visual
+                </label>
+                <textarea
+                  rows={4}
+                  value={project.catatanVisual ?? ""}
+                  onChange={(e) => onUpdate({ catatanVisual: e.target.value })}
+                />
+              </div>
+              <div>
+                <label className="field-label">Arahan Tambahan Agent</label>
+                <textarea
+                  rows={3}
+                  value={project.pesanAgent ?? ""}
+                  onChange={(e) => onUpdate({ pesanAgent: e.target.value })}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      ) : null}
+
       <div className="row-between">
-        <h2 style={{ margin: 0, fontSize: 16 }}>
-          Kartu Scene ({project.scenes.length})
-        </h2>
-        <button type="button" className="btn" onClick={addEmptyScene}>
-          <Plus size={15} />
-          Tambah Scene
-        </button>
+        <div className="row-wrap">
+          <h2 style={{ margin: 0, fontSize: 16 }}>
+            Kartu Scene ({project.scenes.length})
+          </h2>
+          {totalShotCount > 0 ? (
+            <span className="pill tabular">{totalShotCount} total shot</span>
+          ) : null}
+        </div>
+        <div className="row-wrap">
+          {!showGlobalGuide &&
+          !project.konsepVisualGlobal &&
+          !project.catatanVisual &&
+          !project.pesanAgent ? (
+            <button
+              type="button"
+              className="btn btn-sm"
+              onClick={() => setShowGlobalGuide(true)}
+            >
+              + Konsep Visual Global
+            </button>
+          ) : null}
+          <button type="button" className="btn" onClick={addEmptyScene}>
+            <Plus size={15} />
+            Tambah Scene
+          </button>
+        </div>
       </div>
 
       {project.scenes.length === 0 ? (
@@ -270,8 +479,9 @@ export const StoryboardTab: React.FC<StoryboardTabProps> = ({
         <div className="stack-md">
           {project.scenes.map((scene, index) => {
             const words = countWords(scene.narasi);
-            const sceneEst = words / 2.5;
+            const sceneEst = words > 0 ? words / 2.5 : (scene.estimasiDetik ?? 0);
             const approved = scene.status === "disetujui";
+            const shots = scene.shots ?? [];
 
             return (
               <div
@@ -324,6 +534,16 @@ export const StoryboardTab: React.FC<StoryboardTabProps> = ({
                     <span className="pill tabular">
                       {words} kata • ~{sceneEst.toFixed(1)}s
                     </span>
+                    {scene.timestamp ? (
+                      <span className="pill mono tabular">
+                        {scene.timestamp}
+                      </span>
+                    ) : null}
+                    {shots.length > 0 ? (
+                      <span className="pill pill-cyan tabular">
+                        {shots.length} shot
+                      </span>
+                    ) : null}
                   </div>
 
                   <div className="row-wrap">
@@ -545,6 +765,152 @@ export const StoryboardTab: React.FC<StoryboardTabProps> = ({
                       }
                     />
                   </div>
+                </div>
+
+                <div className="stack-sm">
+                  <div className="row-between">
+                    <label className="field-label" style={{ margin: 0 }}>
+                      Rincian Shot Visual ({shots.length})
+                    </label>
+                    <button
+                      type="button"
+                      className="btn btn-sm"
+                      onClick={() => addShot(index)}
+                    >
+                      <Plus size={13} />
+                      Tambah Shot
+                    </button>
+                  </div>
+
+                  {shots.map((shot, sIdx) => (
+                    <div
+                      key={shot.id}
+                      className="stack-sm"
+                      style={{
+                        padding: 12,
+                        borderRadius: "var(--radius-control)",
+                        background: "var(--bg-input)",
+                        border: "1px solid var(--border-subtle)",
+                      }}
+                    >
+                      <div className="row-between">
+                        <div className="row" style={{ flex: 1 }}>
+                          <span
+                            className="mono"
+                            style={{
+                              fontSize: 12,
+                              fontWeight: 700,
+                              color: "var(--cyan)",
+                              whiteSpace: "nowrap",
+                            }}
+                          >
+                            SHOT {sIdx + 1}
+                          </span>
+                          <input
+                            type="text"
+                            placeholder="Judul shot..."
+                            value={shot.judul}
+                            onChange={(e) =>
+                              updateShot(index, sIdx, { judul: e.target.value })
+                            }
+                          />
+                          <input
+                            type="text"
+                            className="mono"
+                            placeholder="00:00–00:02.4"
+                            value={shot.timestamp}
+                            onChange={(e) =>
+                              updateShot(index, sIdx, {
+                                timestamp: e.target.value,
+                              })
+                            }
+                            style={{ maxWidth: 150 }}
+                          />
+                        </div>
+                        <button
+                          type="button"
+                          className="btn btn-sm btn-danger"
+                          onClick={() => removeShot(index, sIdx)}
+                          title="Hapus shot"
+                        >
+                          <Trash2 size={13} />
+                        </button>
+                      </div>
+
+                      <div>
+                        <label className="field-label">Visual 3D</label>
+                        <textarea
+                          rows={2}
+                          value={shot.visual3D}
+                          onChange={(e) =>
+                            updateShot(index, sIdx, { visual3D: e.target.value })
+                          }
+                        />
+                      </div>
+
+                      <div className="grid-2">
+                        <div>
+                          <label className="field-label">Gerakan Kamera</label>
+                          <textarea
+                            rows={2}
+                            value={shot.gerakanKamera}
+                            onChange={(e) =>
+                              updateShot(index, sIdx, {
+                                gerakanKamera: e.target.value,
+                              })
+                            }
+                          />
+                        </div>
+                        <div>
+                          <label className="field-label">Animasi</label>
+                          <textarea
+                            rows={2}
+                            value={shot.animasi}
+                            onChange={(e) =>
+                              updateShot(index, sIdx, { animasi: e.target.value })
+                            }
+                          />
+                        </div>
+                      </div>
+
+                      <div className="grid-3">
+                        <div>
+                          <label className="field-label">Teks di Layar</label>
+                          <input
+                            type="text"
+                            value={shot.teksDiLayar}
+                            onChange={(e) =>
+                              updateShot(index, sIdx, {
+                                teksDiLayar: e.target.value,
+                              })
+                            }
+                          />
+                        </div>
+                        <div>
+                          <label className="field-label">Audio</label>
+                          <input
+                            type="text"
+                            value={shot.audio}
+                            onChange={(e) =>
+                              updateShot(index, sIdx, { audio: e.target.value })
+                            }
+                          />
+                        </div>
+                        <div>
+                          <label className="field-label">Transisi</label>
+                          <input
+                            type="text"
+                            value={shot.transisi}
+                            onChange={(e) =>
+                              updateShot(index, sIdx, {
+                                transisi: e.target.value,
+                              })
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             );

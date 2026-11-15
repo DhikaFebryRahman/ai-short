@@ -1,55 +1,735 @@
 {
   "idKomposisi": "KapsulFakta",
-  "seri": "KAPSUL FAKTA",
-  "voiceoverFile": null,
-  "musikFile": null,
-  "musikVolume": 0.14,
-  "fallbackVoiceoverDetik": 6.0,
+  "seri": "Kapsul Fakta",
+  "voiceoverFile": "audio/active-vo-vo.mp3",
+  "musikFile": "audio/active-music-musik-sintetis.wav",
+  "musikVolume": 0.3,
+  "fallbackVoiceoverDetik": 47.96,
   "scenes": [
     {
       "id": "scene-01",
-      "judul": "Pembuka Kerangka",
+      "judul": "INGATAN YANG TERASA NYATA",
       "mulai": 0,
-      "selesai": 4.5,
-      "chip": "TEMPLATE SIAP PAKAI",
+      "selesai": 5.77,
+      "chip": "TEMPAT BARU",
       "chipWarna": "amber",
-      "kamera": "zoom-in",
-      "butuh3D": false,
+      "kamera": "static",
+      "butuh3D": true,
       "visual": {
-        "tipe": "placeholder",
-        "catatan": "Menunggu naskah dan aset audio dari pengguna"
+        "tipe": "3d-custom",
+        "catatan": "- Memasuki Tempat Baru (00:00–00:02.4): Tampilkan seorang karakter manusia 3D berjalan memasuki sebuah ruangan modern yang belum pernah ia kunjungi.\n\nRuangan memiliki beberapa elemen yang mudah dikenali, seperti:\n\n- Pintu masuk.\n- Meja dan kursi.\n- Jendela besar.\n- Lampu gantung.\n- Beberapa dekorasi ruangan.\n\nBuat karakter berjalan secara natural sambil melihat kondisi ruangan. Animasi: Karakter membuka pintu, melangkah masuk, lalu memperhatikan lingkungan sekitarnya.\n- Perasaan Familiar Muncul (00:02.4–00:05.2): Karakter tiba-tiba berhenti berjalan.\n\nTampilkan close-up wajah karakter yang terlihat sedikit kebingungan.\n\nKemudian, lingkungan di sekitarnya mulai mengalami efek visual déjà vu:\n\n- Bentuk ruangan terlihat memiliki bayangan transparan.\n- Beberapa objek seolah memiliki duplikat samar.\n- Munculkan kilasan visual ruangan yang sama dengan posisi objek yang mirip.\n- Kilasan tersebut muncul sebentar lalu menghilang.\n\nBuat visual ini terasa seperti pengalaman yang sedang terjadi di dalam pikiran karakter, bukan ruangan yang benar-benar berubah. Animasi: Karakter berhenti, melihat sekeliling, lalu ekspresinya berubah menjadi heran."
       },
       "caption": [
-        { "kata": "Kerangka", "jenis": "intro", "warna": "muted", "detik": 0.4 },
-        { "kata": "proyek", "jenis": "intro", "warna": "muted", "detik": 0.7 },
-        { "kata": "Kapsul", "jenis": "keyword", "warna": "amber", "detik": 1.1 },
-        { "kata": "Fakta", "jenis": "keyword", "warna": "amber", "detik": 1.5 },
-        { "kata": "siap", "jenis": "intro", "warna": "muted", "detik": 2.0 },
-        { "kata": "dipakai", "jenis": "keyword", "warna": "cyan", "detik": 2.4 }
+        {
+          "kata": "Pernah",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 1
+        },
+        {
+          "kata": "masuk",
+          "jenis": "keyword",
+          "warna": "cyan",
+          "detik": 1.3
+        },
+        {
+          "kata": "ke",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 1.61
+        },
+        {
+          "kata": "tempat",
+          "jenis": "keyword",
+          "warna": "amber",
+          "detik": 1.91
+        },
+        {
+          "kata": "baru,",
+          "jenis": "keyword",
+          "warna": "amber",
+          "detik": 2.22
+        },
+        {
+          "kata": "tetapi",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 2.76
+        },
+        {
+          "kata": "tiba-tiba",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 3.1
+        },
+        {
+          "kata": "merasa",
+          "jenis": "keyword",
+          "warna": "cyan",
+          "detik": 3.44
+        },
+        {
+          "kata": "pernah",
+          "jenis": "keyword",
+          "warna": "cyan",
+          "detik": 3.78
+        },
+        {
+          "kata": "berada",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 4.12
+        },
+        {
+          "kata": "di",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 4.46
+        },
+        {
+          "kata": "sana",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 4.8
+        },
+        {
+          "kata": "sebelumnya?",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 5.14
+        }
       ]
     },
     {
       "id": "scene-02",
-      "judul": "Siap Produksi",
-      "mulai": 4.5,
-      "selesai": 9.0,
-      "chip": "BERBASIS DATA JSON",
-      "chipWarna": "cyan",
-      "kamera": "tilt-scan",
-      "butuh3D": false,
+      "judul": "APA ITU DÉJÀ VU?",
+      "mulai": 5.77,
+      "selesai": 16.3,
+      "chip": "DÉJÀ VU",
+      "chipWarna": "amber",
+      "kamera": "static",
+      "butuh3D": true,
       "visual": {
-        "tipe": "placeholder",
-        "catatan": "Scene baru tinggal ubah video.json dan visual scene"
+        "tipe": "3d-custom",
+        "catatan": "- Kemunculan Istilah Déjà Vu (00:05.2–00:10.0): Gunakan ruang abstrak tiga dimensi dengan latar berupa kumpulan potongan foto dan fragmen kenangan yang melayang.\n\nDi tengah visual, munculkan tulisan besar:\n\n\"DÉJÀ VU\"\n\nBentuk tulisan dapat dibuat seperti objek 3D yang tersusun dari potongan-potongan gambar memori.\n\nKemudian tampilkan tulisan terjemahan:\n\n\"SUDAH PERNAH DILIHAT\"\n\nBuat beberapa fragmen kenangan bergerak mengitari tulisan utama. Animasi: Fragmen gambar bergerak masuk, menyatu, lalu membentuk tulisan DÉJÀ VU.\n- Situasi Terasa Akrab (00:10.0–00:14.0): Kembali tampilkan karakter dari scene pertama.\n\nKarakter masih berada di ruangan yang sama. Namun sekarang, kamera memperlihatkan ruangan dari sudut yang sedikit berbeda.\n\nTampilkan beberapa objek yang memiliki garis cahaya transparan sehingga terlihat seolah-olah dikenali oleh karakter.\n\nDi sisi lain, tampilkan karakter yang melihat kondisi ruangan dengan ekspresi heran.\n\nBuat dua lapisan visual:\n\n1. Kondisi ruangan yang sebenarnya.\n2. Lapisan transparan yang menggambarkan perasaan familiar di dalam pikirannya. Animasi: Objek di sekitar karakter mendapatkan efek highlight secara berurutan. Lapisan transparan muncul sesaat lalu memudar."
       },
       "caption": [
-        { "kata": "Ubah", "jenis": "intro", "warna": "muted", "detik": 4.8 },
-        { "kata": "data", "jenis": "keyword", "warna": "cyan", "detik": 5.2 },
-        { "kata": "dan", "jenis": "intro", "warna": "muted", "detik": 5.5 },
-        { "kata": "visual", "jenis": "keyword", "warna": "green", "detik": 5.9 },
-        { "kata": "sesuai", "jenis": "intro", "warna": "muted", "detik": 6.4 },
-        { "kata": "naskah", "jenis": "keyword", "warna": "amber", "detik": 6.9 }
+        {
+          "kata": "Perasaan",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 6.07
+        },
+        {
+          "kata": "ini",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 6.44
+        },
+        {
+          "kata": "disebut",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 6.82
+        },
+        {
+          "kata": "déjà",
+          "jenis": "keyword",
+          "warna": "amber",
+          "detik": 7.19
+        },
+        {
+          "kata": "vu,",
+          "jenis": "keyword",
+          "warna": "amber",
+          "detik": 7.57
+        },
+        {
+          "kata": "istilah",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 8.32
+        },
+        {
+          "kata": "Prancis",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 8.79
+        },
+        {
+          "kata": "yang",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 9.26
+        },
+        {
+          "kata": "berarti",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 9.73
+        },
+        {
+          "kata": "\"sudah",
+          "jenis": "keyword",
+          "warna": "cyan",
+          "detik": 10.21
+        },
+        {
+          "kata": "pernah",
+          "jenis": "keyword",
+          "warna": "cyan",
+          "detik": 10.68
+        },
+        {
+          "kata": "dilihat\".",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 11.69
+        },
+        {
+          "kata": "Kita",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 12.1
+        },
+        {
+          "kata": "merasa",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 12.52
+        },
+        {
+          "kata": "situasinya",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 12.93
+        },
+        {
+          "kata": "akrab,",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 13.7
+        },
+        {
+          "kata": "meski",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 14.03
+        },
+        {
+          "kata": "sadar",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 14.36
+        },
+        {
+          "kata": "belum",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 14.69
+        },
+        {
+          "kata": "tentu",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 15.02
+        },
+        {
+          "kata": "pernah",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 15.35
+        },
+        {
+          "kata": "mengalaminya.",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 15.68
+        }
       ]
+    },
+    {
+      "id": "scene-03",
+      "judul": "SINYAL FAMILIAR DARI OTAK",
+      "mulai": 16.3,
+      "selesai": 24.43,
+      "chip": "SISTEM PENGENALAN MEMORI",
+      "chipWarna": "amber",
+      "kamera": "static",
+      "butuh3D": true,
+      "visual": {
+        "tipe": "3d-custom",
+        "catatan": "- Memperlihatkan Otak Manusia (00:14.0–00:17.2): Tampilkan model otak manusia 3D yang melayang di ruang gelap.\n\nMulai dengan tampilan luar otak, kemudian kamera bergerak mendekat untuk memperlihatkan permukaan dan detail strukturnya.\n\nDi sekitar otak terdapat sejumlah partikel cahaya yang mewakili informasi sensorik dari lingkungan.\n\nPartikel tersebut bergerak menuju model otak dan mulai membentuk jalur cahaya di dalam visualisasi. Animasi: Otak berputar perlahan. Partikel cahaya masuk dan bergerak mengikuti jaringan saraf konseptual.\n- Sinyal Familiar (00:17.2–00:18.8): Perlihatkan jalur-jalur cahaya di dalam visualisasi otak.\n\nSalah satu jalur mulai menyala dan mengirimkan pulsa cahaya ke beberapa bagian jaringan.\n\nTampilkan pulsa tersebut menyebar seperti gelombang. Animasi: Pulsa menyebar dari satu titik menuju beberapa cabang jaringan.\n- Tidak Menemukan Sumber Ingatan (00:18.8–00:21.2): Tampilkan sebuah kumpulan fragmen gambar yang melayang di ruang visualisasi memori.\n\nPulsa cahaya sebelumnya bergerak menuju kumpulan tersebut seolah sedang mencari informasi yang cocok.\n\nBeberapa fragmen terlihat samar, tetapi tidak ada satu pun yang membentuk ingatan spesifik.\n\nAkhiri dengan fragmen yang perlahan menghilang. Animasi: Fragmen gambar muncul, bergetar ringan, lalu memudar menjadi partikel kecil."
+      },
+      "caption": [
+        {
+          "kata": "Salah",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 16.58
+        },
+        {
+          "kata": "satu",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 17.02
+        },
+        {
+          "kata": "penjelasan",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 17.45
+        },
+        {
+          "kata": "ilmiah",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 17.89
+        },
+        {
+          "kata": "menyebut",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 18.33
+        },
+        {
+          "kata": "sistem",
+          "jenis": "keyword",
+          "warna": "amber",
+          "detik": 18.77
+        },
+        {
+          "kata": "pengenalan",
+          "jenis": "keyword",
+          "warna": "amber",
+          "detik": 19.2
+        },
+        {
+          "kata": "memori",
+          "jenis": "keyword",
+          "warna": "amber",
+          "detik": 19.64
+        },
+        {
+          "kata": "bisa",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 20.08
+        },
+        {
+          "kata": "mengirim",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 20.52
+        },
+        {
+          "kata": "sinyal",
+          "jenis": "keyword",
+          "warna": "cyan",
+          "detik": 20.95
+        },
+        {
+          "kata": "familiar",
+          "jenis": "keyword",
+          "warna": "cyan",
+          "detik": 21.39
+        },
+        {
+          "kata": "tanpa",
+          "jenis": "keyword",
+          "warna": "red",
+          "detik": 21.98
+        },
+        {
+          "kata": "menemukan",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 22.35
+        },
+        {
+          "kata": "sumber",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 22.72
+        },
+        {
+          "kata": "ingatan",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 23.09
+        },
+        {
+          "kata": "yang",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 23.47
+        },
+        {
+          "kata": "jelas.",
+          "jenis": "keyword",
+          "warna": "red",
+          "detik": 23.84
+        }
+      ]
+    },
+    {
+      "id": "scene-04",
+      "judul": "KETIDAKCOCOKAN SINYAL OTAK",
+      "mulai": 24.43,
+      "selesai": 39.58,
+      "chip": "TERASA PERNAH",
+      "chipWarna": "green",
+      "kamera": "static",
+      "butuh3D": true,
+      "visual": {
+        "tipe": "3d-custom",
+        "catatan": "- Sinyal Mengatakan Pernah Terjadi (00:21.2–00:24.0): Tampilkan kembali gambaran ruangan dari scene pertama.\n\nDi depan ruangan, muncul objek transparan yang merepresentasikan memori atau pengalaman yang terasa familiar.\n\nTampilkan sebuah gelombang cahaya yang menyebar dari objek tersebut menuju representasi otak. Animasi: Pulsa cahaya bergerak masuk ke dalam otak dan memunculkan tulisan:\n\n\"INI PERNAH TERJADI\"\n- Kesadaran Mengatakan Situasi Baru (00:24.0–00:26.4): Buat dua tampilan berdampingan.\n\nBagian pertama menampilkan ruangan dengan objek yang terasa familiar.\n\nBagian kedua memperlihatkan karakter yang menyadari bahwa ia sebenarnya baru pertama kali berada di tempat tersebut.\n\nDi tengah keduanya muncul model otak 3D sebagai penghubung. Animasi: Dua aliran cahaya berbeda muncul secara bersamaan.\n- Dua Sinyal Bertentangan (00:26.4–00:30.4): Tampilkan otak manusia 3D dalam tampilan yang lebih dekat.\n\nDari dua sisi berbeda, muncul dua aliran cahaya:\n\n- Aliran pertama membawa simbol atau tulisan \"FAMILIAR\".\n- Aliran kedua membawa simbol atau tulisan \"SITUASI BARU\".\n\nKeduanya bergerak menuju satu titik yang sama.\n\nKetika bertemu, munculkan efek gelombang cahaya yang saling bertabrakan.\n\nVisualisasikan konflik tersebut melalui partikel yang bergetar dan pulsa cahaya yang saling bertumpuk. Animasi: Kedua aliran cahaya bergerak menuju pusat, bertemu, kemudian menghasilkan gelombang visual.\n- Penyebab Belum Sepenuhnya Dipahami (00:30.4–00:32.8): Setelah kedua sinyal bertemu, tampilkan otak 3D dari kejauhan.\n\nBeberapa jalur cahaya terlihat masih bergerak, tetapi tidak membentuk satu pola yang pasti.\n\nKemudian munculkan tanda tanya 3D di depan model otak. Animasi: Tanda tanya terbentuk dari partikel cahaya, lalu berhenti di depan model otak."
+      },
+      "caption": [
+        {
+          "kata": "Akibatnya,",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 24.65
+        },
+        {
+          "kata": "otak",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 25.63
+        },
+        {
+          "kata": "memberi",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 25.99
+        },
+        {
+          "kata": "kesan",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 26.35
+        },
+        {
+          "kata": "\"ini",
+          "jenis": "keyword",
+          "warna": "amber",
+          "detik": 26.94
+        },
+        {
+          "kata": "pernah",
+          "jenis": "keyword",
+          "warna": "amber",
+          "detik": 27.34
+        },
+        {
+          "kata": "terjadi\",",
+          "jenis": "keyword",
+          "warna": "amber",
+          "detik": 27.73
+        },
+        {
+          "kata": "padahal",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 28.46
+        },
+        {
+          "kata": "kita",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 28.95
+        },
+        {
+          "kata": "sadar",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 29.43
+        },
+        {
+          "kata": "situasinya",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 29.91
+        },
+        {
+          "kata": "sebenarnya",
+          "jenis": "keyword",
+          "warna": "green",
+          "detik": 30.4
+        },
+        {
+          "kata": "baru.",
+          "jenis": "keyword",
+          "warna": "green",
+          "detik": 30.89
+        },
+        {
+          "kata": "Para",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 31.87
+        },
+        {
+          "kata": "peneliti",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 32.31
+        },
+        {
+          "kata": "menduga",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 32.76
+        },
+        {
+          "kata": "ketidakcocokan",
+          "jenis": "keyword",
+          "warna": "red",
+          "detik": 33.2
+        },
+        {
+          "kata": "sinyal",
+          "jenis": "keyword",
+          "warna": "red",
+          "detik": 33.65
+        },
+        {
+          "kata": "ini",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 34.09
+        },
+        {
+          "kata": "ikut",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 34.53
+        },
+        {
+          "kata": "memunculkan",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 34.98
+        },
+        {
+          "kata": "déjà",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 35.42
+        },
+        {
+          "kata": "vu,",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 35.87
+        },
+        {
+          "kata": "meski",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 36.68
+        },
+        {
+          "kata": "penyebab",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 37.12
+        },
+        {
+          "kata": "pastinya",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 37.56
+        },
+        {
+          "kata": "belum",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 38
+        },
+        {
+          "kata": "sepenuhnya",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 38.43
+        },
+        {
+          "kata": "dipahami.",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 38.87
+        }
+      ]
+    },
+    {
+      "id": "scene-05",
+      "judul": "PENUTUP DAN KESIMPULAN",
+      "mulai": 39.58,
+      "selesai": 48.8,
+      "chip": "DÉJÀ VU BISA TERJADI PADA ORANG SEHAT",
+      "chipWarna": "amber",
+      "kamera": "static",
+      "butuh3D": true,
+      "visual": {
+        "tipe": "3d-custom",
+        "catatan": "- Kembali ke Dunia Nyata (00:32.8–00:35.6): Kembali tampilkan karakter yang berada di ruangan pada scene pertama.\n\nEfek transparan dan bayangan ruangan perlahan menghilang.\n\nKarakter terlihat kembali normal dan melanjutkan aktivitasnya. Animasi: Karakter berkedip, melihat sekeliling, kemudian berjalan kembali.\n- Bukan Bukti Perjalanan Waktu (00:35.6–00:39.6): Tampilkan dua gambaran ruangan yang sebelumnya terlihat sama.\n\nAwalnya keduanya saling bertumpuk. Kemudian, salah satunya menghilang dan menyisakan kondisi ruangan yang sebenarnya.\n\nJangan menampilkan portal waktu atau pengulangan kehidupan.\n\nFokuskan visual pada perbedaan antara perasaan familiar dengan kenyataan. Animasi: Gambaran transparan menghilang secara perlahan hingga hanya tersisa lingkungan nyata.\n- Kesimpulan Visual (00:39.6–00:42.0): Tampilkan model otak 3D sekali lagi.\n\nDi sekelilingnya terdapat partikel cahaya dan fragmen memori yang bergerak perlahan.\n\nKemudian, semua elemen visual bergerak menuju satu titik di tengah layar. Animasi: Partikel memori bergerak mengelilingi otak, kemudian mengecil dan menghilang."
+      },
+      "caption": [
+        {
+          "kata": "Déjà",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 39.85
+        },
+        {
+          "kata": "vu",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 40.24
+        },
+        {
+          "kata": "sesekali",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 40.63
+        },
+        {
+          "kata": "umum",
+          "jenis": "keyword",
+          "warna": "green",
+          "detik": 41.02
+        },
+        {
+          "kata": "dialami",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 41.4
+        },
+        {
+          "kata": "banyak",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 41.79
+        },
+        {
+          "kata": "orang.",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 42.18
+        },
+        {
+          "kata": "Jadi,",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 42.95
+        },
+        {
+          "kata": "bukan",
+          "jenis": "keyword",
+          "warna": "red",
+          "detik": 43.24
+        },
+        {
+          "kata": "bukti",
+          "jenis": "keyword",
+          "warna": "red",
+          "detik": 43.53
+        },
+        {
+          "kata": "kita",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 43.82
+        },
+        {
+          "kata": "pernah",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 44.11
+        },
+        {
+          "kata": "hidup",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 44.41
+        },
+        {
+          "kata": "di",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 44.7
+        },
+        {
+          "kata": "momen",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 44.99
+        },
+        {
+          "kata": "yang",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 45.28
+        },
+        {
+          "kata": "sama,",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 45.57
+        },
+        {
+          "kata": "melainkan",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 46.17
+        },
+        {
+          "kata": "pengalaman",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 46.59
+        },
+        {
+          "kata": "aneh",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 47.01
+        },
+        {
+          "kata": "dari",
+          "jenis": "intro",
+          "warna": "muted",
+          "detik": 47.43
+        },
+        {
+          "kata": "sistem",
+          "jenis": "keyword",
+          "warna": "amber",
+          "detik": 47.85
+        },
+        {
+          "kata": "memori.",
+          "jenis": "keyword",
+          "warna": "amber",
+          "detik": 48.27
+        }
+      ]
+    },
+    {
+      "id": "scene-06",
+      "judul": "IDENTITAS CHANNEL",
+      "mulai": 48.8,
+      "selesai": 51,
+      "chip": "KAPSUL FAKTA",
+      "chipWarna": "amber",
+      "kamera": "static",
+      "butuh3D": true,
+      "visual": {
+        "tipe": "3d-custom",
+        "catatan": "- IDENTITAS CHANNEL (00:42.0–00:44.5): Tampilkan tulisan:\n\n**KAPSUL FAKTA**\n\nBuat tulisan sebagai objek 3D dengan kedalaman dan pencahayaan yang sesuai dengan gaya video referensi.\n\nDi belakangnya dapat terlihat partikel kecil yang merupakan kelanjutan visual dari scene sebelumnya. Animasi: Logo terbentuk dari kumpulan partikel dan berhenti dalam posisi final."
+      },
+      "caption": []
     }
   ]
 }
-
