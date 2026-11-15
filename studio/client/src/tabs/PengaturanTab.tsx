@@ -53,7 +53,7 @@ export const PengaturanTab: React.FC = () => {
         <div style={{ fontWeight: 700, fontSize: 15 }}>Status Alat</div>
         {!status && loading ? (
           <div style={{ color: "var(--text-secondary)" }}>
-            Mengecek Node, npm, FFmpeg, ffprobe, dan Remotion...
+            Mengecek Node, npm, FFmpeg, ffprobe, dan HyperFrames CLI...
           </div>
         ) : status ? (
           <div className="stack-sm">
@@ -103,15 +103,15 @@ export const PengaturanTab: React.FC = () => {
           </div>
           <div className="stack-sm">
             <div>
-              <div className="field-label">Root Remotion</div>
+              <div className="field-label">Root Workspace</div>
               <div className="mono" style={{ fontSize: 13 }}>
                 {status.rootDir}
               </div>
             </div>
             <div>
-              <div className="field-label">Direktori Multi-Proyek</div>
+              <div className="field-label">Direktori Episode (HyperFrames)</div>
               <div className="mono" style={{ fontSize: 13 }}>
-                {status.projectsDir}
+                {status.episodesDir}
               </div>
             </div>
           </div>

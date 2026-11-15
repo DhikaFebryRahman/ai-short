@@ -3,7 +3,9 @@ import { useEffect, useRef, useState } from "react";
 import {
   AlertTriangle,
   CheckCircle2,
+  ExternalLink,
   FolderOpen,
+  Image as ImageIcon,
   Lock,
   Play,
   ShieldCheck,
@@ -25,23 +27,27 @@ export const RenderHasilTab: React.FC<RenderHasilTabProps> = ({
   const [logs, setLogs] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [selectedRenderId, setSelectedRenderId] = useState<string | null>(null);
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const eventSourceRef = useRef<EventSource | null>(null);
 
   useEffect(() => {
+    api
+      .previewStatus(project.slug)
+      .then((res) => setPreviewUrl(res.running ? res.url : null))
+      .catch(() => setPreviewUrl(null));
+
     return () => {
       eventSourceRef.current?.close();
     };
-  }, []);
+  }, [project.slug]);
 
-  const allApproved =
-    project.scenes.length > 0 &&
-    project.scenes.every((s) => s.status === "disetujui");
+  const hasComposition = Boolean(project.hasComposition);
   const hasVoiceover = Boolean(project.voiceover);
   const totalSec = project.voiceover
     ? Math.ceil(project.voiceover.durationSeconds + 2.5)
     : 0;
-  const underLimit = totalSec <= 60;
-  const canRender = allApproved && hasVoiceover && underLimit && !rendering;
+  const underLimit = !hasVoiceover || totalSec <= 60;
+  const canRender = hasComposition && underLimit && !rendering;
 
   const activeRecord: RenderRecord | undefined =
     project.renders.find((r) => r.id === selectedRenderId) ?? project.renders[0];
@@ -111,11 +117,14 @@ export const RenderHasilTab: React.FC<RenderHasilTabProps> = ({
     <div className="stack-md">
       <div className="page-header">
         <div>
-          <h1 className="page-title">Render & Hasil</h1>
+          <h1 className="page-title">Render &amp; Hasil</h1>
           <p className="page-subtitle">
-            Eksekusi <span className="mono">npx remotion render</span> dan
-            verifikasi otomatis via <span className="mono">ffprobe</span> &{" "}
-            <span className="mono">ffmpeg</span>.
+            Eksekusi{" "}
+            <span className="mono">
+              npx hyperframes render --quality delivery
+            </span>{" "}
+            dan lihat hasil MP4 serta thumbnail 9:16 di{" "}
+            <span className="mono">episodes/{project.slug}/renders/</span>.
           </p>
         </div>
 
@@ -128,13 +137,24 @@ export const RenderHasilTab: React.FC<RenderHasilTabProps> = ({
             <Lock size={13} />
             30 fps
           </span>
+          {previewUrl ? (
+            <a
+              href={previewUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-sm"
+            >
+              <ExternalLink size={14} />
+              Studio Preview
+            </a>
+          ) : null}
           <button
             type="button"
             className="btn"
-            onClick={() => api.openFolder(project.slug, "out")}
+            onClick={() => api.openFolder(project.slug, "renders")}
           >
             <FolderOpen size={15} />
-            Buka Folder <span className="mono">out/</span>
+            Buka <span className="mono">renders/</span>
           </button>
           <button
             type="button"
@@ -143,27 +163,39 @@ export const RenderHasilTab: React.FC<RenderHasilTabProps> = ({
             onClick={handleStartRender}
           >
             <Play size={15} />
-            {rendering ? `Merender (${progress}%)...` : "Render Video"}
+            {rendering ? `Merender (${progress}%)...` : "Render MP4"}
           </button>
         </div>
       </div>
 
       {/* Pre-render readiness checklist */}
       <div className="card row-wrap">
-        <span className={`pill ${allApproved ? "pill-success" : "pill-warning"}`}>
+        <span
+          className={`pill ${hasComposition ? "pill-success" : "pill-warning"}`}
+        >
           <CheckCircle2 size={13} />
-          Semua scene disetujui ({project.scenes.filter((s) => s.status === "disetujui").length}/
-          {project.scenes.length})
+          Komposisi HyperFrames{" "}
+          {hasComposition ? "siap" : "belum dibuat oleh agent"}
         </span>
-        <span className={`pill ${hasVoiceover ? "pill-success" : "pill-warning"}`}>
+        <span
+          className={`pill ${hasVoiceover ? "pill-success" : "pill-warning"}`}
+        >
           <CheckCircle2 size={13} />
           Voiceover {hasVoiceover ? "tersedia" : "belum ada"}
         </span>
         {hasVoiceover ? (
-          <span className={`pill tabular ${underLimit ? "pill-success" : "pill-danger"}`}>
+          <span
+            className={`pill tabular ${underLimit ? "pill-success" : "pill-danger"}`}
+          >
             Durasi terhitung: {totalSec}s (maks 60s)
           </span>
         ) : null}
+        <span
+          className={`pill ${project.thumbnailPath ? "pill-success" : ""}`}
+        >
+          <ImageIcon size={13} />
+          Thumbnail 9:16 {project.thumbnailPath ? "tersedia" : "belum dibuat"}
+        </span>
       </div>
 
       {error ? (
@@ -176,7 +208,7 @@ export const RenderHasilTab: React.FC<RenderHasilTabProps> = ({
       {rendering || logs.length > 0 ? (
         <div className="card stack-sm">
           <div className="row-between">
-            <span style={{ fontWeight: 600 }}>Progres & Log Render</span>
+            <span style={{ fontWeight: 600 }}>Progres &amp; Log Render</span>
             <span className="mono tabular" style={{ color: "var(--accent)" }}>
               {progress}%
             </span>
@@ -210,14 +242,17 @@ export const RenderHasilTab: React.FC<RenderHasilTabProps> = ({
           <div className="card stack-sm">
             <div className="row-between">
               <span style={{ fontWeight: 700 }}>Pemutar Hasil Render</span>
-              <span className="mono" style={{ fontSize: 12, color: "var(--text-secondary)" }}>
+              <span
+                className="mono"
+                style={{ fontSize: 12, color: "var(--text-secondary)" }}
+              >
                 {activeRecord.fileName}
               </span>
             </div>
             <video
               key={activeRecord.id}
               controls
-              src={`/projects-media/${project.slug}/${activeRecord.relativePath}`}
+              src={`/episodes-media/${project.slug}/${activeRecord.relativePath}?t=${encodeURIComponent(activeRecord.createdAt)}`}
               style={{
                 width: "100%",
                 maxHeight: 540,
@@ -227,96 +262,133 @@ export const RenderHasilTab: React.FC<RenderHasilTabProps> = ({
             />
           </div>
 
-          <div className="card stack-sm">
-            <div className="row-between">
-              <div className="row">
-                <ShieldCheck size={18} color="var(--success)" />
-                <span style={{ fontWeight: 700 }}>
-                  Verifikasi Otomatis (ffprobe & ffmpeg)
-                </span>
-              </div>
-              <span
-                className={`pill ${
-                  activeRecord.verification.passed ? "pill-success" : "pill-danger"
-                }`}
-              >
-                {activeRecord.verification.passed ? "LULUS" : "PERLU CEK"}
-              </span>
-            </div>
-
-            <div className="stack-sm">
+          <div className="stack-md">
+            <div className="card stack-sm">
               <div className="row-between">
-                <span style={{ color: "var(--text-secondary)" }}>Durasi</span>
-                <span className="mono tabular">
-                  {activeRecord.verification.durationSeconds}s
-                </span>
-              </div>
-              <div className="row-between">
-                <span style={{ color: "var(--text-secondary)" }}>Jumlah Frame</span>
-                <span className="mono tabular">
-                  {activeRecord.verification.frameCount}
-                </span>
-              </div>
-              <div className="row-between">
-                <span style={{ color: "var(--text-secondary)" }}>Resolusi & FPS</span>
-                <span className="mono tabular">
-                  {activeRecord.verification.width}×
-                  {activeRecord.verification.height} @{" "}
-                  {activeRecord.verification.fps} fps
-                </span>
-              </div>
-              <div className="row-between">
-                <span style={{ color: "var(--text-secondary)" }}>Codec Video</span>
-                <span className="mono">
-                  {activeRecord.verification.videoCodec}
-                </span>
-              </div>
-              <div className="row-between">
-                <span style={{ color: "var(--text-secondary)" }}>Codec Audio</span>
-                <span className="mono">
-                  {activeRecord.verification.audioCodec}
-                </span>
-              </div>
-              <div className="row-between">
-                <span style={{ color: "var(--text-secondary)" }}>
-                  Level Suara Maksimum
-                </span>
-                <span className="mono tabular">
-                  {activeRecord.verification.maxVolumeDb !== null
-                    ? `${activeRecord.verification.maxVolumeDb} dB`
-                    : "Tidak terbaca"}
-                </span>
-              </div>
-              <div className="row-between">
-                <span style={{ color: "var(--text-secondary)" }}>
-                  Deteksi Layar Hitam
-                </span>
+                <div className="row">
+                  <ShieldCheck size={18} color="var(--success)" />
+                  <span style={{ fontWeight: 700 }}>
+                    Verifikasi Otomatis (ffprobe &amp; ffmpeg)
+                  </span>
+                </div>
                 <span
                   className={`pill ${
-                    activeRecord.verification.blackFramesDetected
-                      ? "pill-danger"
-                      : "pill-success"
+                    activeRecord.verification.passed
+                      ? "pill-success"
+                      : "pill-danger"
                   }`}
                 >
-                  {activeRecord.verification.blackFramesDetected
-                    ? `${activeRecord.verification.blackSegments.length} segmen hitam`
-                    : "Bersih (0 layar hitam)"}
+                  {activeRecord.verification.passed ? "LULUS" : "PERLU CEK"}
                 </span>
               </div>
+
+              <div className="stack-sm">
+                <div className="row-between">
+                  <span style={{ color: "var(--text-secondary)" }}>Durasi</span>
+                  <span className="mono tabular">
+                    {activeRecord.verification.durationSeconds}s
+                  </span>
+                </div>
+                <div className="row-between">
+                  <span style={{ color: "var(--text-secondary)" }}>
+                    Jumlah Frame
+                  </span>
+                  <span className="mono tabular">
+                    {activeRecord.verification.frameCount}
+                  </span>
+                </div>
+                <div className="row-between">
+                  <span style={{ color: "var(--text-secondary)" }}>
+                    Resolusi &amp; FPS
+                  </span>
+                  <span className="mono tabular">
+                    {activeRecord.verification.width}×
+                    {activeRecord.verification.height} @{" "}
+                    {activeRecord.verification.fps} fps
+                  </span>
+                </div>
+                <div className="row-between">
+                  <span style={{ color: "var(--text-secondary)" }}>
+                    Codec Video
+                  </span>
+                  <span className="mono">
+                    {activeRecord.verification.videoCodec}
+                  </span>
+                </div>
+                <div className="row-between">
+                  <span style={{ color: "var(--text-secondary)" }}>
+                    Codec Audio
+                  </span>
+                  <span className="mono">
+                    {activeRecord.verification.audioCodec}
+                  </span>
+                </div>
+                <div className="row-between">
+                  <span style={{ color: "var(--text-secondary)" }}>
+                    Level Suara Maksimum
+                  </span>
+                  <span className="mono tabular">
+                    {activeRecord.verification.maxVolumeDb !== null
+                      ? `${activeRecord.verification.maxVolumeDb} dB`
+                      : "Terdeteksi di render CLI"}
+                  </span>
+                </div>
+                <div className="row-between">
+                  <span style={{ color: "var(--text-secondary)" }}>
+                    Deteksi Layar Hitam
+                  </span>
+                  <span
+                    className={`pill ${
+                      activeRecord.verification.blackFramesDetected
+                        ? "pill-danger"
+                        : "pill-success"
+                    }`}
+                  >
+                    {activeRecord.verification.blackFramesDetected
+                      ? `${activeRecord.verification.blackSegments.length} segmen hitam`
+                      : "Bersih (0 layar hitam)"}
+                  </span>
+                </div>
+              </div>
             </div>
+
+            {project.thumbnailPath ? (
+              <div className="card stack-sm">
+                <div className="row-between">
+                  <span style={{ fontWeight: 700 }}>
+                    Thumbnail YouTube Shorts (9:16)
+                  </span>
+                  <span className="mono" style={{ fontSize: 12 }}>
+                    {project.thumbnailPath}
+                  </span>
+                </div>
+                <img
+                  src={`/episodes-media/${project.slug}/${project.thumbnailPath}?t=${encodeURIComponent(project.updatedAt)}`}
+                  alt="Thumbnail YouTube Shorts 9:16"
+                  style={{
+                    width: "100%",
+                    maxHeight: 380,
+                    objectFit: "contain",
+                    borderRadius: "var(--radius-control)",
+                    border: "1px solid var(--border-subtle)",
+                  }}
+                />
+              </div>
+            ) : null}
           </div>
         </div>
       ) : (
         <div className="card">
-          Belum ada hasil render untuk proyek ini. Setujui seluruh scene dan
-          unggah voiceover untuk mengaktifkan tombol <strong>Render Video</strong>.
+          Belum ada hasil render MP4 untuk episode ini. Pastikan komposisi
+          HyperFrames sudah dibangun agent, lalu klik <strong>Render MP4</strong>{" "}
+          atau minta agent merender penuh.
         </div>
       )}
 
       {project.renders.length > 0 ? (
         <div className="card stack-sm">
           <div style={{ fontWeight: 700, fontSize: 15 }}>
-            Riwayat Versi Render ({project.renders.length})
+            Riwayat Hasil Render ({project.renders.length})
           </div>
           <div className="stack-sm">
             {project.renders.map((rec) => {
@@ -353,4 +425,3 @@ export const RenderHasilTab: React.FC<RenderHasilTabProps> = ({
     </div>
   );
 };
-

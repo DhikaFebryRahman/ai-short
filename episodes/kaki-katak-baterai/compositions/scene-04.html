@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 04 — Lahirnya Tumpukan Volta (3D Berlapis)</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-04" data-duration="14.86" data-fps="30">
+        <style>
+          #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", sans-serif; pointer-events: none; }
+          .s4-stage { position: absolute; inset: 0; perspective: 1200px; }
+          .s4-camera { position: absolute; inset: 0; transform-style: preserve-3d; transform-origin: 540px 880px; }
+          .s4-svg { width: 100%; height: 100%; display: block; }
+          .s4-top-header {
+            position: absolute; top: 430px; left: 60px; width: 960px;
+            display: flex; align-items: center; justify-content: center; gap: 14px; opacity: 0;
+          }
+          .s4-year-pill {
+            padding: 8px 22px; border-radius: 999px; background: rgba(255, 252, 245, 0.96);
+            border: 2.5px solid #f59e0b; color: #9a3412; font-size: 28px; font-weight: 800; letter-spacing: 0.1em;
+          }
+          .s4-title-pill {
+            padding: 8px 24px; border-radius: 999px; background: rgba(255, 252, 245, 0.96);
+            border: 2.5px solid #0ea5e9; color: #0369a1; font-size: 28px; font-weight: 800; letter-spacing: 0.08em;
+          }
+          .s4-pill-bar {
+            position: absolute; top: 1255px; left: 60px; width: 960px; height: 62px;
+            display: flex; align-items: center; justify-content: center;
+          }
+          .s4-pill {
+            display: inline-flex; align-items: center; gap: 12px; padding: 10px 26px; border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96); border: 2.5px solid #10b981; color: #047857;
+            font-size: 28px; font-weight: 800; letter-spacing: 0.1em;
+            box-shadow: 0 12px 28px rgba(16, 185, 129, 0.2); opacity: 0;
+          }
+          .s4-dot { width: 11px; height: 11px; border-radius: 50%; background: currentColor; }
+        </style>
+
+        <div id="s4-clip" class="clip" data-start="0" data-duration="14.86" data-track-index="0">
+          <div class="s4-stage">
+            <div class="s4-camera" id="s4-camera" data-layout-allow-overflow>
+              <svg class="s4-svg" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="s4-wall" x1="540" y1="0" x2="540" y2="1060" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#CFEAFF" />
+                    <stop offset="0.58" stop-color="#FFF7E8" />
+                    <stop offset="1" stop-color="#FCE8CC" />
+                  </linearGradient>
+                  <linearGradient id="s4-bench" x1="540" y1="920" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#D9A36A" />
+                    <stop offset="0.3" stop-color="#F2CE9B" />
+                    <stop offset="1" stop-color="#FCE9CC" />
+                  </linearGradient>
+                  <linearGradient id="s4-zn-side" x1="-110" y1="0" x2="110" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#64748B" />
+                    <stop offset="0.35" stop-color="#CBD5E1" />
+                    <stop offset="0.7" stop-color="#94A3B8" />
+                    <stop offset="1" stop-color="#475569" />
+                  </linearGradient>
+                  <linearGradient id="s4-cu-side" x1="-110" y1="0" x2="110" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#9A3412" />
+                    <stop offset="0.35" stop-color="#FDBA74" />
+                    <stop offset="0.7" stop-color="#EA580C" />
+                    <stop offset="1" stop-color="#7C2D12" />
+                  </linearGradient>
+                  <linearGradient id="s4-pad-side" x1="-102" y1="0" x2="102" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#0369A1" />
+                    <stop offset="0.4" stop-color="#7DD3FC" />
+                    <stop offset="1" stop-color="#0284C7" />
+                  </linearGradient>
+                </defs>
+
+                <rect x="-120" y="-120" width="1320" height="1280" fill="url(#s4-wall)" />
+                <rect x="-120" y="1090" width="1320" height="950" fill="url(#s4-bench)" />
+                <line x1="-120" y1="1090" x2="1200" y2="1090" stroke="#142244" stroke-width="6" />
+
+                <!-- 3D Isometric Voltaic Pile Column -->
+                <g id="s4-pile-rig" transform="translate(395, 1072)">
+                  <ellipse cx="0" cy="48" rx="176" ry="44" fill="#142244" fill-opacity="0.18" />
+                  <path d="M-150 18 L-150 38 A150 38 0 0 0 150 38 L150 18 Z" fill="#92400E" stroke="#142244" stroke-width="5" />
+                  <ellipse cx="0" cy="18" rx="150" ry="38" fill="#D97706" stroke="#142244" stroke-width="5" />
+                  <rect id="s4-rod-l" x="-128" y="-420" width="16" height="436" rx="8" fill="#B45309" stroke="#142244" stroke-width="4" opacity="0" />
+                  <rect id="s4-rod-r" x="112" y="-420" width="16" height="436" rx="8" fill="#B45309" stroke="#142244" stroke-width="4" opacity="0" />
+                  <g id="s4-stack-host"></g>
+                  <g id="s4-top-cap" transform="translate(0, -342)" opacity="0">
+                    <path d="M-136 0 L-136 16 A136 32 0 0 0 136 16 L136 0 Z" fill="#92400E" stroke="#142244" stroke-width="4.5" />
+                    <ellipse cx="0" cy="0" rx="136" ry="32" fill="#D97706" stroke="#142244" stroke-width="4.5" />
+                  </g>
+                </g>
+
+                <!-- 2-Layer Callout Pills with Pinpoint Leaders to Exact Discs -->
+                <g id="s4-callouts" data-layout-allow-overlap>
+                  <g transform="translate(700, 1072)">
+                    <g id="s4-call-zn" opacity="0">
+                      <path d="M-78 0 L-193 0" stroke="#142244" stroke-width="4" stroke-dasharray="6 6" fill="none" />
+                      <circle cx="-193" cy="0" r="6" fill="#475569" stroke="#FFFFFF" stroke-width="2.5" />
+                      <rect x="-78" y="-26" width="160" height="52" rx="26" fill="#F8FAFC" stroke="#475569" stroke-width="4" />
+                      <text x="2" y="10" text-anchor="middle" fill="#1E293B" font-family="Poppins, sans-serif" font-size="28" font-weight="800">SENG</text>
+                    </g>
+                  </g>
+                  <g transform="translate(765, 1000)">
+                    <g id="s4-call-pad" opacity="0">
+                      <path d="M-143 0 L-210 0 L-268 43" stroke="#0369A1" stroke-width="4" stroke-dasharray="6 6" stroke-linejoin="round" fill="none" />
+                      <circle cx="-268" cy="43" r="6" fill="#0284C7" stroke="#FFFFFF" stroke-width="2.5" />
+                      <rect x="-143" y="-26" width="286" height="52" rx="26" fill="#E0F2FE" stroke="#0284C7" stroke-width="4" />
+                      <text x="0" y="10" text-anchor="middle" fill="#0369A1" font-family="Poppins, sans-serif" font-size="28" font-weight="800">KARTON LEMBAP</text>
+                    </g>
+                  </g>
+                  <g transform="translate(715, 928)">
+                    <g id="s4-call-cu" opacity="0">
+                      <path d="M-93 0 L-150 0 L-208 90" stroke="#C2410C" stroke-width="4" stroke-dasharray="6 6" stroke-linejoin="round" fill="none" />
+                      <circle cx="-208" cy="90" r="6" fill="#EA580C" stroke="#FFFFFF" stroke-width="2.5" />
+                      <rect x="-93" y="-26" width="186" height="52" rx="26" fill="#FFF7ED" stroke="#EA580C" stroke-width="4" />
+                      <text x="0" y="10" text-anchor="middle" fill="#9A3412" font-family="Poppins, sans-serif" font-size="28" font-weight="800">TEMBAGA</text>
+                    </g>
+                  </g>
+                </g>
+
+                <!-- Foreground Bench Apron + Spare Zinc/Copper Discs & Brine Beaker (y = 1545..1920) -->
+                <g id="s4-foreground">
+                  <line x1="90" y1="1560" x2="990" y2="1560" stroke="#C58F53" stroke-width="4" opacity="0.38" stroke-linecap="round" />
+                  <rect x="-120" y="1722" width="1320" height="28" fill="#CE9254" stroke="#142244" stroke-width="5" />
+                  <rect x="-120" y="1750" width="1320" height="290" fill="#B87C42" />
+                  <line x1="-120" y1="1750" x2="1200" y2="1750" stroke="#142244" stroke-width="5" />
+                  <rect x="280" y="1784" width="520" height="104" rx="14" fill="#C98D50" stroke="#142244" stroke-width="4.5" />
+                  <circle cx="330" cy="1836" r="9" fill="#EAB308" stroke="#142244" stroke-width="3.5" />
+                  <circle cx="750" cy="1836" r="9" fill="#EAB308" stroke="#142244" stroke-width="3.5" />
+                  <rect x="490" y="1826" width="100" height="20" rx="10" fill="#EAB308" stroke="#142244" stroke-width="4" />
+
+                  <!-- Bottom-Left: Spare Copper & Zinc Discs -->
+                  <g transform="translate(185, 1645)">
+                    <ellipse cx="0" cy="24" rx="90" ry="22" fill="#142244" fill-opacity="0.14" />
+                    <ellipse cx="-24" cy="10" rx="52" ry="16" fill="#EA580C" stroke="#142244" stroke-width="4" />
+                    <ellipse cx="32" cy="16" rx="52" ry="16" fill="#94A3B8" stroke="#142244" stroke-width="4" />
+                    <ellipse cx="6" cy="-4" rx="48" ry="14" fill="#FDBA74" stroke="#142244" stroke-width="4" />
+                  </g>
+
+                  <!-- Bottom-Right: Glass Brine Electrolyte Beaker -->
+                  <g transform="translate(895, 1615)">
+                    <ellipse cx="0" cy="64" rx="56" ry="15" fill="#142244" fill-opacity="0.14" />
+                    <rect x="-42" y="-12" width="84" height="72" rx="12" fill="#F0F9FF" stroke="#142244" stroke-width="4.5" />
+                    <rect x="-35" y="16" width="70" height="37" rx="8" fill="#38BDF8" opacity="0.65" />
+                    <ellipse cx="0" cy="16" rx="35" ry="7" fill="#7DD3FC" stroke="#0284C7" stroke-width="3" />
+                    <ellipse cx="0" cy="-12" rx="44" ry="9" fill="#E0F2FE" stroke="#142244" stroke-width="4" />
+                    <line x1="-22" y1="6" x2="-22" y2="44" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.7" />
+                  </g>
+                </g>
+
+                <!-- Galvanometer & Circuit Wires -->
+                <g id="s4-circuit-group">
+                  <path id="s4-wire-top" d="M395 724 C395 654 715 654 715 764" stroke="#EA580C" stroke-width="10" stroke-linecap="round" fill="none" />
+                  <path id="s4-wire-bot" d="M532 1082 C645 1082 715 1046 715 980" stroke="#0EA5E9" stroke-width="10" stroke-linecap="round" fill="none" />
+                  <path id="s4-flow-loop" d="M395 724 C395 654 715 654 715 764 L715 980 C715 1046 645 1082 532 1082" stroke="none" fill="none" />
+
+                  <!-- Terminal Posts on Pile Top (+) and Base (-) -->
+                  <g id="s4-terminals" opacity="0">
+                    <circle cx="395" cy="724" r="11" fill="#FDBA74" stroke="#142244" stroke-width="4" />
+                    <circle cx="532" cy="1082" r="11" fill="#CBD5E1" stroke="#142244" stroke-width="4" />
+                  </g>
+
+                  <circle id="s4-cur-orb-1" cx="395" cy="724" r="12" fill="#FBBF24" stroke="#FFFFFF" stroke-width="4" opacity="0" />
+                  <circle id="s4-cur-orb-2" cx="395" cy="724" r="12" fill="#38BDF8" stroke="#FFFFFF" stroke-width="4" opacity="0" />
+                  <circle id="s4-cur-orb-3" cx="395" cy="724" r="12" fill="#FBBF24" stroke="#FFFFFF" stroke-width="4" opacity="0" />
+
+                  <g transform="translate(715, 872)">
+                    <g id="s4-meter" opacity="0">
+                      <!-- Terminal Sockets on Meter Top/Bottom -->
+                      <rect x="-14" y="-114" width="28" height="16" rx="6" fill="#EA580C" stroke="#142244" stroke-width="4" />
+                      <rect x="-14" y="98" width="28" height="16" rx="6" fill="#0EA5E9" stroke="#142244" stroke-width="4" />
+                      <!-- Outer Brass Bezel & Dial -->
+                      <circle cx="0" cy="0" r="104" fill="#EAB308" stroke="#142244" stroke-width="6" />
+                      <circle cx="0" cy="0" r="86" fill="#FFFDF7" stroke="#142244" stroke-width="4.5" />
+                      <!-- Live Current LED Indicator -->
+                      <circle id="s4-led-halo" cx="0" cy="-62" r="14" fill="#10B981" opacity="0" />
+                      <circle id="s4-led" cx="0" cy="-62" r="7" fill="#CBD5E1" stroke="#142244" stroke-width="3" />
+                      <!-- Meter Scale Arc & Tick Marks Centered on Pivot (0, 22) -->
+                      <path d="M-50 -16 A62 62 0 0 1 50 -16" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round" fill="none" />
+                      <path id="s4-green-arc" d="M12 -39 A62 62 0 0 1 50 -16" stroke="#10B981" stroke-width="9" stroke-linecap="round" fill="none" />
+                      <line x1="-54" y1="-20" x2="-44" y2="-13" stroke="#64748B" stroke-width="4" stroke-linecap="round" />
+                      <line x1="0" y1="-44" x2="0" y2="-33" stroke="#64748B" stroke-width="4" stroke-linecap="round" />
+                      <line x1="54" y1="-20" x2="44" y2="-13" stroke="#047857" stroke-width="4.5" stroke-linecap="round" />
+                      <!-- Clear Label Below Pivot (Never Collides with Needle) -->
+                      <rect x="-42" y="42" width="84" height="26" rx="13" fill="#ECFDF5" stroke="#10B981" stroke-width="2.5" />
+                      <text x="0" y="60" text-anchor="middle" fill="#047857" font-family="Poppins, sans-serif" font-size="16" font-weight="800" data-layout-ignore>ARUS +</text>
+                      <!-- Needle Pivoting Exactly Around (0, 0) via SVG rotate(deg 0 0) -->
+                      <g transform="translate(0, 22)">
+                        <g id="s4-needle" transform="rotate(-46 0 0)">
+                          <line x1="0" y1="6" x2="0" y2="-62" stroke="#F43F5E" stroke-width="7" stroke-linecap="round" />
+                          <circle cx="0" cy="0" r="11" fill="#142244" />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div class="s4-top-header" id="s4-top-header">
+            <div class="s4-year-pill">1800</div>
+            <div class="s4-title-pill">VOLTAIC PILE</div>
+          </div>
+          <div class="s4-pill-bar">
+            <div class="s4-pill" id="s4-pill-first"><span class="s4-dot"></span><span>BATERAI PERTAMA</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var SVG_NS = "http://www.w3.org/2000/svg";
+            var root = document.getElementById("root");
+            var camera = root.querySelector("#s4-camera");
+            var stackHost = root.querySelector("#s4-stack-host");
+            var rodL = root.querySelector("#s4-rod-l");
+            var rodR = root.querySelector("#s4-rod-r");
+            var topCap = root.querySelector("#s4-top-cap");
+            var callZn = root.querySelector("#s4-call-zn");
+            var callPad = root.querySelector("#s4-call-pad");
+            var callCu = root.querySelector("#s4-call-cu");
+            var wireTop = root.querySelector("#s4-wire-top");
+            var wireBot = root.querySelector("#s4-wire-bot");
+            var flowLoop = root.querySelector("#s4-flow-loop");
+            var orb1 = root.querySelector("#s4-cur-orb-1");
+            var orb2 = root.querySelector("#s4-cur-orb-2");
+            var orb3 = root.querySelector("#s4-cur-orb-3");
+            var meter = root.querySelector("#s4-meter");
+            var led = root.querySelector("#s4-led");
+            var ledHalo = root.querySelector("#s4-led-halo");
+            var terminals = root.querySelector("#s4-terminals");
+            var needle = root.querySelector("#s4-needle");
+            var topHeader = root.querySelector("#s4-top-header");
+            var pillFirst = root.querySelector("#s4-pill-first");
+
+            var spec = [
+              { side: "url(#s4-zn-side)", top: "#E2E8F0", rx: 112, ry: 27, h: 16 },
+              { side: "url(#s4-pad-side)", top: "#7DD3FC", rx: 102, ry: 24, h: 12 },
+              { side: "url(#s4-cu-side)", top: "#FDBA74", rx: 112, ry: 27, h: 16 },
+            ];
+            var discs = [];
+            var yCursor = 0;
+            for (var i = 0; i < 12; i++) {
+              var s = spec[i % 3];
+              var g = document.createElementNS(SVG_NS, "g");
+              var targetY = -yCursor - 8;
+              yCursor += s.h + 11;
+              var pathSide = document.createElementNS(SVG_NS, "path");
+              pathSide.setAttribute("d", "M" + (-s.rx) + " 0 L" + (-s.rx) + " " + s.h + " A" + s.rx + " " + s.ry + " 0 0 0 " + s.rx + " " + s.h + " L" + s.rx + " 0 Z");
+              pathSide.setAttribute("fill", s.side);
+              pathSide.setAttribute("stroke", "#142244");
+              pathSide.setAttribute("stroke-width", "4");
+              var ellTop = document.createElementNS(SVG_NS, "ellipse");
+              ellTop.setAttribute("cx", "0"); ellTop.setAttribute("cy", "0");
+              ellTop.setAttribute("rx", String(s.rx)); ellTop.setAttribute("ry", String(s.ry));
+              ellTop.setAttribute("fill", s.top); ellTop.setAttribute("stroke", "#142244"); ellTop.setAttribute("stroke-width", "4");
+              var bevel = document.createElementNS(SVG_NS, "ellipse");
+              bevel.setAttribute("cx", "-14"); bevel.setAttribute("cy", "-3");
+              bevel.setAttribute("rx", String(Math.round(s.rx * 0.62))); bevel.setAttribute("ry", String(Math.round(s.ry * 0.48)));
+              bevel.setAttribute("fill", "#FFFFFF"); bevel.setAttribute("opacity", "0.35");
+              g.appendChild(pathSide); g.appendChild(ellTop); g.appendChild(bevel);
+              stackHost.appendChild(g);
+              discs.push({ el: g, targetY: targetY });
+              gsap.set(g, { attr: { transform: "translate(0, " + (targetY - 260) + ")" }, opacity: 0 });
+            }
+
+            var wtLen = wireTop.getTotalLength();
+            var wbLen = wireBot.getTotalLength();
+            var loopLen = flowLoop.getTotalLength();
+            gsap.set(wireTop, { strokeDasharray: wtLen, strokeDashoffset: wtLen, opacity: 0 });
+            gsap.set(wireBot, { strokeDasharray: wbLen, strokeDashoffset: wbLen, opacity: 0 });
+            gsap.set(camera, { rotationY: -10, scale: 1.14, x: 28, y: 26 });
+            gsap.set([callZn, callPad, callCu], { x: 28 });
+            gsap.set(meter, { scale: 0.65, transformOrigin: "0px 0px" });
+
+            var needleState = { deg: -46 };
+            function syncNeedle() {
+              needle.setAttribute("transform", "rotate(" + needleState.deg.toFixed(1) + " 0 0)");
+            }
+            syncNeedle();
+
+            var flowState = { p: 0 };
+            function syncFlow() {
+              [orb1, orb2, orb3].forEach(function (orb, idx) {
+                var pt = flowLoop.getPointAtLength(((flowState.p + idx * 0.333) % 1) * loopLen);
+                gsap.set(orb, { attr: { cx: pt.x.toFixed(1), cy: pt.y.toFixed(1) } });
+              });
+            }
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(camera, { rotationY: 6, scale: 1.08, x: 14, y: 12, duration: 2.2, ease: "power1.inOut" }, 0);
+            tl.to(discs[0].el, { opacity: 1, attr: { transform: "translate(0, " + discs[0].targetY + ")" }, duration: 0.6, ease: "back.out(1.4)" }, 2.1);
+            tl.to(callZn, { opacity: 1, x: 0, duration: 0.4, ease: "back.out(1.5)" }, 2.4);
+            tl.to(discs[1].el, { opacity: 1, attr: { transform: "translate(0, " + discs[1].targetY + ")" }, duration: 0.6, ease: "back.out(1.4)" }, 3.4);
+            tl.to(callPad, { opacity: 1, x: 0, duration: 0.4, ease: "back.out(1.5)" }, 3.7);
+            tl.to(discs[2].el, { opacity: 1, attr: { transform: "translate(0, " + discs[2].targetY + ")" }, duration: 0.6, ease: "back.out(1.4)" }, 4.6);
+            tl.to(callCu, { opacity: 1, x: 0, duration: 0.4, ease: "back.out(1.5)" }, 4.9);
+
+            tl.to([callZn, callPad, callCu], { opacity: 0, duration: 0.35, immediateRender: false }, 6.1);
+            tl.to(camera, { rotationY: 0, scale: 1.0, x: 0, y: 0, duration: 1.8, ease: "power2.inOut", immediateRender: false }, 5.9);
+            tl.to([rodL, rodR], { opacity: 1, duration: 0.5 }, 6.1);
+            for (var d = 3; d < discs.length; d++) {
+              tl.to(discs[d].el, { opacity: 1, attr: { transform: "translate(0, " + discs[d].targetY + ")" }, duration: 0.45, ease: "power3.out" }, 6.2 + (d - 3) * 0.25);
+            }
+            tl.to(topCap, { opacity: 1, duration: 0.45 }, 8.65);
+
+            tl.to(topHeader, { opacity: 1, duration: 0.45 }, 8.55);
+            tl.to(terminals, { opacity: 1, duration: 0.25 }, 8.65);
+            tl.set([wireTop, wireBot], { opacity: 1 }, 8.7);
+            tl.to(wireTop, { strokeDashoffset: 0, duration: 0.55, ease: "power2.out" }, 8.7);
+            tl.to(wireBot, { strokeDashoffset: 0, duration: 0.55, ease: "power2.out" }, 8.72);
+            tl.to(meter, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.7)" }, 8.85);
+
+            // By t=9.50s (40.0s global): circuit connected, orbs flowing, LED glowing, needle sweeps to active green!
+            tl.set([orb1, orb2, orb3], { opacity: 1 }, 9.25);
+            tl.to(flowState, { p: 3.6, duration: 5.0, ease: "none", onUpdate: syncFlow }, 9.25);
+            tl.to(led, { attr: { fill: "#10B981" }, duration: 0.2 }, 9.3);
+            tl.to(ledHalo, { opacity: 0.45, duration: 0.3, ease: "power2.out" }, 9.3);
+            tl.to(needleState, { deg: 40, duration: 0.65, ease: "elastic.out(1, 0.55)", onUpdate: syncNeedle }, 9.28)
+              .to(needleState, { deg: 35, duration: 1.1, ease: "sine.inOut", onUpdate: syncNeedle, immediateRender: false }, 10.1)
+              .to(needleState, { deg: 42, duration: 1.1, ease: "sine.inOut", onUpdate: syncNeedle, immediateRender: false }, 11.2)
+              .to(needleState, { deg: 37, duration: 1.1, ease: "sine.inOut", onUpdate: syncNeedle, immediateRender: false }, 12.3);
+            tl.to(pillFirst, { opacity: 1, duration: 0.45 }, 11.1);
+            tl.to(camera, { scale: 1.18, x: 45, y: 14, duration: 0.75, ease: "power2.in", immediateRender: false }, 14.1);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-04"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

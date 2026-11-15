@@ -11,11 +11,11 @@ import {
   probeMedia,
 } from "../lib/ffmpeg";
 import {
-  resolveProjectDir,
+  resolveEpisodeDir,
   validateUploadFilename,
 } from "../lib/pathGuard";
 import {
-  ensureProjectFolders,
+  ensureEpisodeFolders,
   readProject,
   writeProject,
 } from "../lib/projectStore";
@@ -56,9 +56,11 @@ assetsRouter.post(
       }
 
       const project = await readProject(String(req.params.slug));
-      const projectDir = await ensureProjectFolders(project.slug);
-      const relativePath = `audio/${nameCheck.safeName}`;
-      const absPath = path.join(projectDir, relativePath);
+      const episodeDir = await ensureEpisodeFolders(project.slug);
+      const ext = path.extname(nameCheck.safeName).toLowerCase();
+      const targetName = `vo${ext}`;
+      const relativePath = `assets/audio/${targetName}`;
+      const absPath = path.join(episodeDir, relativePath);
 
       await fs.writeFile(absPath, file.buffer);
 
@@ -99,7 +101,9 @@ assetsRouter.post(
     try {
       const file = req.file;
       if (!file) {
-        res.status(400).json({ error: "File video referensi tidak ditemukan." });
+        res
+          .status(400)
+          .json({ error: "File video referensi tidak ditemukan." });
         return;
       }
       if (file.size > MAX_VIDEO_BYTES) {
@@ -116,15 +120,15 @@ assetsRouter.post(
       }
 
       const project = await readProject(String(req.params.slug));
-      const projectDir = await ensureProjectFolders(project.slug);
-      const relativePath = `referensi/${nameCheck.safeName}`;
-      const absPath = path.join(projectDir, relativePath);
+      const episodeDir = await ensureEpisodeFolders(project.slug);
+      const relativePath = `assets/reference/${nameCheck.safeName}`;
+      const absPath = path.join(episodeDir, relativePath);
 
       await fs.writeFile(absPath, file.buffer);
 
       const probe = await probeMedia(absPath);
-      const contactSheetRel = "referensi/contact-sheet.png";
-      const contactSheetAbs = path.join(projectDir, contactSheetRel);
+      const contactSheetRel = "assets/reference/contact-sheet.png";
+      const contactSheetAbs = path.join(episodeDir, contactSheetRel);
       await generateContactSheet(absPath, contactSheetAbs, probe.durationSeconds);
 
       const updated = await writeProject({
@@ -174,9 +178,11 @@ assetsRouter.post(
       }
 
       const project = await readProject(String(req.params.slug));
-      const projectDir = await ensureProjectFolders(project.slug);
-      const relativePath = `audio/${nameCheck.safeName}`;
-      await fs.writeFile(path.join(projectDir, relativePath), file.buffer);
+      const episodeDir = await ensureEpisodeFolders(project.slug);
+      const ext = path.extname(nameCheck.safeName).toLowerCase();
+      const targetName = `bgm${ext}`;
+      const relativePath = `assets/audio/${targetName}`;
+      await fs.writeFile(path.join(episodeDir, relativePath), file.buffer);
 
       const updated = await writeProject({
         ...project,
@@ -201,7 +207,7 @@ assetsRouter.post(
 assetsRouter.post("/:slug/assets/music/synthetic", async (req, res) => {
   try {
     const project = await readProject(req.params.slug);
-    const projectDir = resolveProjectDir(project.slug);
+    const episodeDir = await ensureEpisodeFolders(project.slug);
 
     const targetDuration = project.voiceover
       ? Math.ceil(project.voiceover.durationSeconds + 2.5)
@@ -217,11 +223,11 @@ assetsRouter.post("/:slug/assets/music/synthetic", async (req, res) => {
           10,
         );
 
-    const fileName = "musik-sintetis.wav";
-    const relativePath = `audio/${fileName}`;
+    const fileName = "bgm.wav";
+    const relativePath = `assets/audio/${fileName}`;
     await generateSyntheticAmbientPad(
       targetDuration,
-      path.join(projectDir, relativePath),
+      path.join(episodeDir, relativePath),
     );
 
     const updated = await writeProject({
@@ -254,6 +260,9 @@ assetsRouter.post("/:slug/assets/music/config", async (req, res) => {
       typeof body.volume === "number"
         ? Math.min(1, Math.max(0, body.volume))
         : project.music.volume;
+
+    // Ensure episode dir exists
+    resolveEpisodeDir(project.slug);
 
     const updated = await writeProject({
       ...project,

@@ -5,9 +5,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export const ROOT_DIR = path.resolve(__dirname, "../../..");
-export const PROJECTS_DIR = path.join(ROOT_DIR, "projects");
-export const PUBLIC_AUDIO_DIR = path.join(ROOT_DIR, "public", "audio");
-export const VIDEO_JSON_PATH = path.join(ROOT_DIR, "src", "data", "video.json");
+export const EPISODES_DIR = path.join(ROOT_DIR, "episodes");
 
 /**
  * Convert a project title or raw slug into a safe directory slug.
@@ -18,45 +16,31 @@ export const sanitizeSlug = (raw: string): string => {
     .trim()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
-  return normalized || `proyek-${Date.now()}`;
+  return normalized || `episode-${Date.now()}`;
 };
 
 /**
- * Resolve a project directory safely inside PROJECTS_DIR.
+ * Resolve an episode directory safely inside EPISODES_DIR.
  */
-export const resolveProjectDir = (slug: string): string => {
+export const resolveEpisodeDir = (slug: string): string => {
   if (!/^[a-z0-9][a-z0-9-]*$/.test(slug)) {
-    throw new Error("Slug proyek tidak valid.");
+    throw new Error("Slug episode tidak valid.");
   }
-  const target = path.resolve(PROJECTS_DIR, slug);
-  if (!target.startsWith(PROJECTS_DIR + path.sep)) {
-    throw new Error("Path proyek di luar direktori yang diizinkan.");
+  const target = path.resolve(EPISODES_DIR, slug);
+  if (!target.startsWith(EPISODES_DIR + path.sep)) {
+    throw new Error("Path episode di luar direktori yang diizinkan.");
   }
   return target;
 };
 
 /**
- * Validate uploaded asset filename: extension check, no spaces, safe characters.
+ * Validate and sanitize uploaded asset filename so spaces/unicode never break CLI tools.
  */
 export const validateUploadFilename = (
   originalName: string,
   allowedExtensions: readonly string[],
 ): { readonly ok: boolean; readonly error?: string; readonly safeName: string } => {
   const baseName = path.basename(originalName);
-  if (/\s/.test(baseName)) {
-    return {
-      ok: false,
-      error: `Nama file "${baseName}" mengandung spasi. Ganti nama file tanpa spasi terlebih dahulu.`,
-      safeName: baseName,
-    };
-  }
-  if (!/^[a-zA-Z0-9._-]+$/.test(baseName)) {
-    return {
-      ok: false,
-      error: `Nama file "${baseName}" hanya boleh berisi huruf, angka, titik, garis bawah (_), atau tanda hubung (-).`,
-      safeName: baseName,
-    };
-  }
   const ext = path.extname(baseName).toLowerCase();
   if (!allowedExtensions.includes(ext)) {
     return {
@@ -65,6 +49,11 @@ export const validateUploadFilename = (
       safeName: baseName,
     };
   }
-  return { ok: true, safeName: baseName };
+  const stem = baseName.slice(0, baseName.length - ext.length);
+  const safeStem =
+    stem
+      .toLowerCase()
+      .replace(/[^a-z0-9_-]+/g, "-")
+      .replace(/^-+|-+$/g, "") || `asset-${Date.now()}`;
+  return { ok: true, safeName: `${safeStem}${ext}` };
 };
-

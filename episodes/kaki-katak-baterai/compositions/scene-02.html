@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 02 — Eksperimen Luigi Galvani</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-02" data-duration="13.40" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            pointer-events: none;
+          }
+
+          .s2-camera {
+            position: absolute;
+            inset: 0;
+            transform-origin: 50% 52%;
+          }
+
+          .s2-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+
+          .s2-intro-card {
+            position: absolute;
+            top: 430px;
+            left: 60px;
+            width: 960px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+          }
+
+          .s2-name-badge {
+            padding: 10px 28px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 2.5px solid #1d4ed8;
+            color: #1e3a8a;
+            font-size: 30px;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            box-shadow: 0 10px 24px rgba(20, 34, 68, 0.14);
+          }
+
+          .s2-era-badge {
+            padding: 7px 22px;
+            border-radius: 999px;
+            background: rgba(255, 247, 230, 0.96);
+            border: 2px solid #f59e0b;
+            color: #9a3412;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+          }
+
+          .s2-pill-bar {
+            position: absolute;
+            top: 1255px;
+            left: 60px;
+            width: 960px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .s2-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 28px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 2.5px solid #f43f5e;
+            color: #be123c;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            box-shadow: 0 12px 28px rgba(244, 63, 94, 0.18);
+            opacity: 0;
+          }
+
+          .s2-dot {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: currentColor;
+          }
+        </style>
+
+        <div id="s2-clip" class="clip" data-start="0" data-duration="13.40" data-track-index="0">
+          <div class="s2-camera" id="s2-camera" data-layout-allow-overflow>
+            <svg class="s2-svg" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="s2-wall" x1="540" y1="0" x2="540" y2="960" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#D7EEFF" />
+                  <stop offset="0.52" stop-color="#FFEED6" />
+                  <stop offset="1" stop-color="#FFF8EA" />
+                </linearGradient>
+                <linearGradient id="s2-sky" x1="760" y1="340" x2="760" y2="740" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#7DD3FC" />
+                  <stop offset="1" stop-color="#E0F2FE" />
+                </linearGradient>
+                <linearGradient id="s2-bench" x1="540" y1="860" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#DFAC70" />
+                  <stop offset="0.28" stop-color="#F5D09D" />
+                  <stop offset="1" stop-color="#FCE7C8" />
+                </linearGradient>
+              </defs>
+
+              <!-- Full-screen 18th-century Sunlit Bologna Laboratory -->
+              <rect x="-120" y="-120" width="1320" height="1240" fill="url(#s2-wall)" />
+
+              <!-- Arched Italian Window -->
+              <g opacity="0.9" transform="translate(80, 180)">
+                <path d="M620 750 L620 500 A120 120 0 0 1 860 500 L860 750 Z" fill="url(#s2-sky)" stroke="#142244" stroke-width="5.5" />
+                <!-- Distant Bologna terracotta roofs -->
+                <path d="M624 700 L685 656 L748 692 L808 648 L856 686 L856 746 L624 746 Z" fill="#FB923C" opacity="0.72" />
+                <line x1="740" y1="382" x2="740" y2="750" stroke="#142244" stroke-width="4" />
+                <line x1="620" y1="585" x2="860" y2="585" stroke="#142244" stroke-width="4" />
+              </g>
+
+              <!-- Lab Shelf on Left -->
+              <g transform="translate(30, 180)">
+                <rect x="88" y="540" width="230" height="22" rx="10" fill="#D4A373" stroke="#142244" stroke-width="4.5" />
+                <circle cx="150" cy="500" r="36" fill="#BAE6FD" stroke="#142244" stroke-width="4.5" />
+                <rect x="220" y="458" width="52" height="82" rx="12" fill="#FDE68A" stroke="#142244" stroke-width="4.5" />
+              </g>
+
+              <!-- Luigi Galvani 2D Character Rig (2-layer wrapper) -->
+              <g id="s2-galvani-pos" transform="translate(370, 815)">
+                <g id="s2-galvani-anim">
+                  <!-- Legs behind desk -->
+                  <line x1="-22" y1="215" x2="-28" y2="335" stroke="#1E293B" stroke-width="26" stroke-linecap="round" />
+                  <line x1="22" y1="215" x2="28" y2="335" stroke="#334155" stroke-width="26" stroke-linecap="round" />
+                  <!-- 18th-century Physician Coat (Sapphire Blue + Gold Buttons) -->
+                  <path d="M-54 78 C-58 64 58 64 54 78 L66 238 L-66 238 Z" fill="#2563EB" stroke="#142244" stroke-width="5" stroke-linejoin="round" />
+                  <!-- White Cravat -->
+                  <path d="M-20 74 L0 124 L20 74 Z" fill="#FFFDF9" stroke="#142244" stroke-width="4" />
+                  <circle cx="0" cy="148" r="5" fill="#FBBF24" />
+                  <circle cx="0" cy="176" r="5" fill="#FBBF24" />
+
+                  <!-- Arms -->
+                  <line id="s2-galvani-arm-l" x1="-46" y1="100" x2="-82" y2="176" stroke="#3B82F6" stroke-width="22" stroke-linecap="round" />
+                  <g transform="translate(46, 102)">
+                    <g id="s2-galvani-arm-r-wrap">
+                      <line x1="0" y1="0" x2="72" y2="56" stroke="#3B82F6" stroke-width="22" stroke-linecap="round" />
+                      <!-- Quill pen -->
+                      <path d="M68 54 L106 16 L96 58 Z" fill="#FEF3C7" stroke="#142244" stroke-width="3.5" />
+                    </g>
+                  </g>
+
+                  <!-- Head & Period Silver Wig Curls -->
+                  <circle cx="-36" cy="24" r="18" fill="#E2E8F0" stroke="#142244" stroke-width="4" />
+                  <circle cx="36" cy="24" r="18" fill="#E2E8F0" stroke="#142244" stroke-width="4" />
+                  <circle cx="0" cy="24" r="42" fill="#FAD2B4" stroke="#142244" stroke-width="5" />
+                  <path d="M-42 18 C-44 -22 44 -24 42 16 C22 0 -16 0 -42 18 Z" fill="#E2E8F0" stroke="#142244" stroke-width="4.5" />
+                  <circle id="s2-eye-l" cx="-13" cy="24" r="4.5" fill="#142244" />
+                  <circle id="s2-eye-r" cx="15" cy="24" r="4.5" fill="#142244" />
+                  <path d="M-8 42 Q2 48 12 41" stroke="#142244" stroke-width="4" stroke-linecap="round" />
+                </g>
+              </g>
+
+              <!-- Workbench Foreground -->
+              <rect x="-120" y="1040" width="1320" height="990" fill="url(#s2-bench)" />
+              <line x1="-120" y1="1040" x2="1200" y2="1040" stroke="#142244" stroke-width="6" />
+
+              <!-- Galvani's Notes on Desk Left -->
+              <g transform="translate(185, 1072)">
+                <rect x="0" y="0" width="185" height="110" rx="10" fill="#FFFDF7" stroke="#142244" stroke-width="4" />
+                <line x1="20" y1="32" x2="145" y2="32" stroke="#64748B" stroke-width="4" stroke-linecap="round" />
+                <line x1="20" y1="56" x2="125" y2="56" stroke="#64748B" stroke-width="4" stroke-linecap="round" />
+                <line x1="20" y1="80" x2="155" y2="80" stroke="#0EA5E9" stroke-width="4" stroke-linecap="round" />
+              </g>
+
+              <!-- Specimen Plate on Workbench Right -->
+              <g transform="translate(690, 1102)">
+                <ellipse cx="0" cy="14" rx="180" ry="44" fill="#FFFDF9" stroke="#142244" stroke-width="5" />
+                <path d="M-88 -4 C-46 -32 22 -24 58 6 C26 26 -54 24 -88 -4 Z" fill="#34D399" stroke="#142244" stroke-width="4.5" />
+                <path d="M56 6 C88 -4 128 8 144 26 L104 28 Z" fill="#10B981" stroke="#142244" stroke-width="4" />
+              </g>
+
+              <!-- Workbench Foreground Edge, Drawer Apron & Notes Props (y = 1555..1920) -->
+              <g id="s2-foreground">
+                <line x1="90" y1="1568" x2="990" y2="1568" stroke="#C58F53" stroke-width="4" opacity="0.38" stroke-linecap="round" />
+                <rect x="-120" y="1730" width="1320" height="28" fill="#CE9254" stroke="#142244" stroke-width="5" />
+                <rect x="-120" y="1758" width="1320" height="282" fill="#B87C42" />
+                <line x1="-120" y1="1758" x2="1200" y2="1758" stroke="#142244" stroke-width="5" />
+                <!-- Twin Bologna Lab Drawers -->
+                <rect x="140" y="1788" width="360" height="100" rx="14" fill="#C98D50" stroke="#142244" stroke-width="4.5" />
+                <circle cx="320" cy="1838" r="14" fill="#FBBF24" stroke="#142244" stroke-width="4" />
+                <rect x="580" y="1788" width="360" height="100" rx="14" fill="#C98D50" stroke="#142244" stroke-width="4.5" />
+                <circle cx="760" cy="1838" r="14" fill="#FBBF24" stroke="#142244" stroke-width="4" />
+                <!-- Bottom-Left: Inkpot & Feather Quill -->
+                <g transform="translate(160, 1645)">
+                  <ellipse cx="0" cy="36" rx="56" ry="16" fill="#142244" fill-opacity="0.14" />
+                  <rect x="-26" y="-8" width="52" height="44" rx="14" fill="#1E3A8A" stroke="#142244" stroke-width="4.5" />
+                  <rect x="-16" y="-20" width="32" height="14" rx="5" fill="#EAB308" stroke="#142244" stroke-width="4" />
+                  <path d="M6 -14 L54 -76 C68 -72 62 -46 32 -24 Z" fill="#FFFDF7" stroke="#142244" stroke-width="4" />
+                </g>
+                <!-- Bottom-Right: Rolled Research Scroll -->
+                <g transform="translate(905, 1650) rotate(-8)">
+                  <ellipse cx="0" cy="32" rx="74" ry="16" fill="#142244" fill-opacity="0.14" />
+                  <rect x="-68" y="-12" width="136" height="40" rx="18" fill="#FEF3C7" stroke="#142244" stroke-width="4.5" />
+                  <ellipse cx="-68" cy="8" rx="12" ry="20" fill="#FDE68A" stroke="#142244" stroke-width="4" />
+                  <rect x="-12" y="-14" width="24" height="44" rx="6" fill="#F43F5E" stroke="#142244" stroke-width="3.5" />
+                </g>
+              </g>
+
+              <!-- Phase B: Close-Up Nerve & Muscle Fiber Contraction Lens (Integrated Daylight Magnifier) -->
+              <g id="s2-lens-pos" transform="translate(540, 895)">
+                <g id="s2-lens-anim" opacity="0">
+                  <circle cx="0" cy="0" r="245" fill="#FFFDF7" stroke="#142244" stroke-width="8" />
+                  <circle cx="0" cy="0" r="228" fill="#F0F9FF" stroke="#F59E0B" stroke-width="5" />
+
+                  <!-- Stylized Muscle Spindle Bundle -->
+                  <g transform="translate(46, 28)">
+                    <g id="s2-muscle-bundle">
+                      <path d="M-126 -42 C-70 -84 56 -84 126 -36 C144 -14 144 22 126 42 C56 84 -70 84 -126 42 Z" fill="#FB7185" stroke="#142244" stroke-width="5.5" />
+                      <path d="M-98 -22 Q0 -44 98 -20" stroke="#FFE4E6" stroke-width="7" stroke-linecap="round" fill="none" />
+                      <path d="M-104 4 Q0 -12 104 4" stroke="#FFE4E6" stroke-width="7" stroke-linecap="round" fill="none" />
+                      <path d="M-94 30 Q0 46 94 28" stroke="#FFE4E6" stroke-width="7" stroke-linecap="round" fill="none" />
+                    </g>
+                  </g>
+
+                  <!-- Sciatic Nerve Path into Muscle -->
+                  <path
+                    id="s2-nerve-path"
+                    d="M-192 -56 C-146 -64 -116 -22 -76 -12 C-42 -4 -22 14 2 22"
+                    stroke="#FACC15"
+                    stroke-width="12"
+                    stroke-linecap="round"
+                    fill="none"
+                  />
+                  <path
+                    d="M-192 -56 C-146 -64 -116 -22 -76 -12 C-42 -4 -22 14 2 22"
+                    stroke="#142244"
+                    stroke-width="3.5"
+                    stroke-dasharray="6 8"
+                    fill="none"
+                  />
+                  <path
+                    id="s2-impulse-path"
+                    d="M-192 -56 C-146 -64 -116 -22 -76 -12 C-42 -4 -22 14 2 22"
+                    stroke="#0EA5E9"
+                    stroke-width="9"
+                    stroke-linecap="round"
+                    fill="none"
+                  />
+                  <circle id="s2-impulse-dot" cx="-192" cy="-56" r="14" fill="#0EA5E9" stroke="#FFFFFF" stroke-width="4" opacity="0" />
+
+                  <!-- Two Dissimilar Metal Probes (Copper + Steel) -->
+                  <g transform="translate(-142, -110)">
+                    <g id="s2-probe-copper">
+                      <line x1="-24" y1="-82" x2="-4" y2="34" stroke="#EA580C" stroke-width="14" stroke-linecap="round" />
+                      <circle cx="-4" cy="34" r="7" fill="#FB923C" stroke="#142244" stroke-width="3" />
+                    </g>
+                  </g>
+                  <g transform="translate(-100, -104)">
+                    <g id="s2-probe-iron">
+                      <line x1="48" y1="-84" x2="-4" y2="36" stroke="#64748B" stroke-width="14" stroke-linecap="round" />
+                      <circle cx="-4" cy="36" r="7" fill="#CBD5E1" stroke="#142244" stroke-width="3" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+
+              <!-- Transition Notebook Overlay & Smooth Scene 3 Color Handoff -->
+              <g id="s2-note-pos" transform="translate(540, 885)">
+                <g id="s2-note-anim" opacity="0">
+                  <rect x="-280" y="-340" width="560" height="680" rx="34" fill="#FFFDF7" stroke="#142244" stroke-width="6" />
+                  <rect x="-240" y="-298" width="480" height="84" rx="18" fill="#FEF3C7" stroke="#F59E0B" stroke-width="3.5" />
+                  <line x1="-195" y1="-155" x2="195" y2="-155" stroke="#94A3B8" stroke-width="8" stroke-linecap="round" />
+                  <line x1="-195" y1="-95" x2="155" y2="-95" stroke="#94A3B8" stroke-width="8" stroke-linecap="round" />
+                  <path d="M-155 45 C-80 -35 45 125 155 25" stroke="#0EA5E9" stroke-width="10" stroke-linecap="round" fill="none" />
+                </g>
+              </g>
+              <defs>
+                <linearGradient id="s2-to-s3-wash" x1="0" y1="0" x2="1080" y2="1920" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#FFEAD5" />
+                  <stop offset="0.5" stop-color="#FFF8EC" />
+                  <stop offset="1" stop-color="#DDF3FF" />
+                </linearGradient>
+              </defs>
+              <rect id="s2-handoff-wash" x="-120" y="-120" width="1320" height="2160" fill="url(#s2-to-s3-wash)" opacity="0" />
+            </svg>
+          </div>
+
+          <div class="s2-intro-card" id="s2-intro-card">
+            <div class="s2-name-badge">LUIGI GALVANI</div>
+            <div class="s2-era-badge">ITALIA — 1780-AN</div>
+          </div>
+
+          <div class="s2-pill-bar">
+            <div class="s2-pill" id="s2-pill-contract"><span class="s2-dot"></span><span>KONTRAKSI OTOT</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var camera = root.querySelector("#s2-camera");
+            var introCard = root.querySelector("#s2-intro-card");
+            var galvaniPos = root.querySelector("#s2-galvani-pos");
+            var armR = root.querySelector("#s2-galvani-arm-r-wrap");
+            var eyeL = root.querySelector("#s2-eye-l");
+            var eyeR = root.querySelector("#s2-eye-r");
+            var lensAnim = root.querySelector("#s2-lens-anim");
+            var probeCu = root.querySelector("#s2-probe-copper");
+            var probeFe = root.querySelector("#s2-probe-iron");
+            var impulsePath = root.querySelector("#s2-impulse-path");
+            var impulseDot = root.querySelector("#s2-impulse-dot");
+            var muscleBundle = root.querySelector("#s2-muscle-bundle");
+            var pillContract = root.querySelector("#s2-pill-contract");
+            var noteAnim = root.querySelector("#s2-note-anim");
+            var handoffWash = root.querySelector("#s2-handoff-wash");
+
+            var impLen = impulsePath.getTotalLength();
+            gsap.set(impulsePath, { strokeDasharray: impLen, strokeDashoffset: impLen });
+            gsap.set(lensAnim, { scale: 0.55, transformOrigin: "0px 0px" });
+            gsap.set(probeCu, { x: -46, y: -48 });
+            gsap.set(probeFe, { x: 46, y: -48 });
+            gsap.set(muscleBundle, { scaleX: 1, scaleY: 1, transformOrigin: "0px 0px" });
+            gsap.set(noteAnim, { scale: 0.72, y: 70, transformOrigin: "0px 0px" });
+            gsap.set(introCard, { opacity: 0, y: 18 });
+
+            var impState = { p: 0 };
+            function syncImp() {
+              var pt = impulsePath.getPointAtLength(impState.p * impLen);
+              gsap.set(impulseDot, { attr: { cx: pt.x.toFixed(1), cy: pt.y.toFixed(1) } });
+            }
+
+            var tl = gsap.timeline({ paused: true });
+
+            // Phase A: Lab entry, Galvani observes & writes notes
+            tl.to(camera, { scale: 1.07, x: -20, y: 14, duration: 5.5, ease: "sine.inOut" }, 0);
+            tl.to(introCard, { opacity: 1, y: 0, duration: 0.45, ease: "back.out(1.6)" }, 0.4);
+            tl.to(galvaniPos, { attr: { transform: "translate(405, 815)" }, duration: 4.5, ease: "power1.inOut" }, 0.3);
+            tl.to(armR, { rotation: -12, duration: 0.55, ease: "sine.inOut" }, 1.0)
+              .to(armR, { rotation: 4, duration: 0.55, ease: "sine.inOut", immediateRender: false }, 1.6)
+              .to(armR, { rotation: -8, duration: 0.55, ease: "sine.inOut", immediateRender: false }, 2.2);
+
+            // Deterministic blinks
+            tl.to([eyeL, eyeR], { attr: { r: 0.8 }, duration: 0.06 }, 2.8)
+              .to([eyeL, eyeR], { attr: { r: 4.5 }, duration: 0.08, immediateRender: false }, 2.88)
+              .to([eyeL, eyeR], { attr: { r: 0.8 }, duration: 0.06 }, 5.1)
+              .to([eyeL, eyeR], { attr: { r: 4.5 }, duration: 0.08, immediateRender: false }, 5.18);
+
+            tl.to(introCard, { opacity: 0, y: -12, duration: 0.32, ease: "power2.in", immediateRender: false }, 5.65);
+
+            // Phase B: Magnifier Nerve + Muscle Contraction
+            tl.to(camera, { scale: 1.02, x: 12, y: -16, duration: 1.2, ease: "power2.inOut", immediateRender: false }, 5.85);
+            tl.to(lensAnim, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.5)" }, 6.0);
+
+            // Metal probes touch nerve (~8.2s local = ~13.7s global)
+            tl.to(probeCu, { x: 0, y: 0, duration: 0.9, ease: "power2.out" }, 7.3);
+            tl.to(probeFe, { x: 0, y: 0, duration: 0.9, ease: "power2.out" }, 7.45);
+
+            // Impulse wave & contraction (twice for clarity as narration explains)
+            tl.set(impulseDot, { opacity: 1 }, 8.45);
+            tl.to(impulsePath, { strokeDashoffset: 0, duration: 0.45, ease: "power2.out" }, 8.45);
+            tl.to(impState, { p: 1, duration: 0.45, ease: "power2.out", onUpdate: syncImp }, 8.45);
+            tl.to(muscleBundle, { scaleX: 0.78, scaleY: 1.22, duration: 0.22, ease: "power3.out" }, 8.8);
+            tl.to(muscleBundle, { scaleX: 1, scaleY: 1, duration: 0.65, ease: "elastic.out(1, 0.5)", immediateRender: false }, 9.05);
+            tl.to(pillContract, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.7)" }, 8.75);
+
+            // Second subtle pulse
+            tl.set(impulsePath, { strokeDashoffset: impLen }, 10.2);
+            tl.set(impState, { p: 0 }, 10.2);
+            tl.to(impulsePath, { strokeDashoffset: 0, duration: 0.45, ease: "power2.out" }, 10.25);
+            tl.to(impState, { p: 1, duration: 0.45, ease: "power2.out", onUpdate: syncImp }, 10.25);
+            tl.to(muscleBundle, { scaleX: 0.82, scaleY: 1.18, duration: 0.2, ease: "power3.out", immediateRender: false }, 10.65);
+            tl.to(muscleBundle, { scaleX: 1, scaleY: 1, duration: 0.6, ease: "elastic.out(1, 0.5)", immediateRender: false }, 10.88);
+            tl.to(camera, { scale: 1.1, duration: 1.8, ease: "power1.inOut", immediateRender: false }, 9.2);
+
+            // Smooth notebook handoff + gradient cross-dissolve into Scene 3
+            tl.to(pillContract, { opacity: 0, y: 10, duration: 0.35, ease: "power2.in", immediateRender: false }, 12.0);
+            tl.to(lensAnim, { opacity: 0.15, scale: 0.88, duration: 0.55, ease: "power2.inOut", immediateRender: false }, 12.05);
+            tl.to(noteAnim, { opacity: 1, scale: 1.0, y: 0, duration: 0.6, ease: "power3.out" }, 12.05);
+            tl.to(noteAnim, { scale: 1.14, opacity: 0, duration: 0.6, ease: "power2.inOut", immediateRender: false }, 12.75);
+            tl.to(handoffWash, { opacity: 1, duration: 0.65, ease: "power2.inOut" }, 12.72);
+            tl.to(camera, { scale: 1.0, x: 0, y: 0, duration: 0.8, ease: "power2.out", immediateRender: false }, 12.55);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-02"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>
+

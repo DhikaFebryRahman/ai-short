@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 03 — Perbedaan Pemikiran Galvani dan Volta</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-03" data-duration="11.60" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            pointer-events: none;
+          }
+
+          .s3-camera {
+            position: absolute;
+            inset: 0;
+            transform-origin: 540px 835px;
+          }
+
+          .s3-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+
+          .s3-panels {
+            position: absolute;
+            top: 490px;
+            left: 76px;
+            width: 928px;
+            height: 690px;
+            display: flex;
+            gap: 24px;
+          }
+
+          .s3-panel {
+            flex: 1;
+            border-radius: 32px;
+            padding: 20px 14px 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 18px 42px rgba(20, 34, 68, 0.14);
+          }
+
+          .s3-panel--galvani {
+            background: linear-gradient(180deg, rgba(255, 245, 232, 0.96) 0%, rgba(254, 226, 226, 0.94) 100%);
+            border: 4px solid #fb7185;
+          }
+
+          .s3-panel--volta {
+            background: linear-gradient(180deg, rgba(232, 248, 255, 0.96) 0%, rgba(220, 252, 231, 0.94) 100%);
+            border: 4px solid #0ea5e9;
+          }
+
+          .s3-label-top {
+            text-align: center;
+          }
+
+          .s3-scientist {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 0.03em;
+            line-height: 1.12;
+            color: #142244;
+          }
+
+          .s3-sub-italic {
+            margin-top: 6px;
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 28px;
+            color: #be123c;
+          }
+
+          .s3-sub-bold {
+            margin-top: 6px;
+            padding: 4px 12px;
+            border-radius: 999px;
+            background: rgba(14, 165, 233, 0.14);
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1.15;
+            color: #0369a1;
+          }
+
+          .s3-diagram {
+            width: 100%;
+            height: 410px;
+            display: block;
+          }
+
+          .s3-pill-bar {
+            position: absolute;
+            top: 1255px;
+            left: 60px;
+            width: 960px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .s3-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 22px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 2.5px solid #f59e0b;
+            color: #9a3412;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            box-shadow: 0 12px 28px rgba(20, 34, 68, 0.14);
+            opacity: 0;
+          }
+
+          .s3-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: currentColor;
+          }
+        </style>
+
+        <div id="s3-clip" class="clip" data-start="0" data-duration="11.60" data-track-index="0">
+          <svg class="s3-svg" data-layout-allow-overflow viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="s3-bg" x1="0" y1="0" x2="1080" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#FFEAD5" />
+                <stop offset="0.5" stop-color="#FFF8EC" />
+                <stop offset="1" stop-color="#DDF3FF" />
+              </linearGradient>
+            </defs>
+            <rect x="-80" y="-80" width="1240" height="2080" fill="url(#s3-bg)" />
+            <circle cx="320" cy="835" r="340" fill="#FDA4AF" opacity="0.16" />
+            <circle cx="760" cy="835" r="340" fill="#7DD3FC" opacity="0.2" />
+
+            <!-- Bottom Thematic Dual-Theory Landscape & Circuit Horizon (y = 1560..1920) -->
+            <path d="M-80 1670 C140 1585 360 1610 540 1665 L540 2000 L-80 2000 Z" fill="#FECDD3" opacity="0.55" />
+            <path d="M540 1665 C720 1610 940 1585 1160 1670 L1160 2000 L540 2000 Z" fill="#BAE6FD" opacity="0.58" />
+            <path d="M-80 1765 C220 1715 410 1790 540 1755 C690 1715 880 1785 1160 1745 L1160 2000 L-80 2000 Z" fill="#FFFDF7" opacity="0.6" />
+            <!-- Bio Wave (Left) & Metal Circuit Trace (Right) -->
+            <path d="M70 1705 L165 1705 L200 1668 L235 1742 L270 1682 L305 1726 L345 1705 L470 1705" stroke="#FB7185" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.72" />
+            <path d="M610 1705 L700 1705 L735 1672 L860 1672 L895 1705 L1010 1705" stroke="#0EA5E9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.72" />
+            <circle cx="470" cy="1705" r="9" fill="#FB7185" stroke="#142244" stroke-width="3.5" />
+            <circle cx="540" cy="1705" r="14" fill="#FBBF24" stroke="#142244" stroke-width="4" />
+            <circle cx="610" cy="1705" r="9" fill="#0EA5E9" stroke="#142244" stroke-width="3.5" />
+            <line x1="480" y1="1705" x2="525" y2="1705" stroke="#F59E0B" stroke-width="5" stroke-dasharray="6 6" />
+            <line x1="555" y1="1705" x2="600" y2="1705" stroke="#F59E0B" stroke-width="5" stroke-dasharray="6 6" />
+          </svg>
+
+          <div class="s3-camera" id="s3-camera" data-layout-allow-overflow>
+            <div class="s3-panels">
+              <!-- Panel 1: GALVANI -->
+              <div class="s3-panel s3-panel--galvani" id="s3-panel-galvani">
+                <div class="s3-label-top">
+                  <div class="s3-scientist">GALVANI</div>
+                  <div class="s3-sub-italic">Animal Electricity</div>
+                </div>
+
+                <svg class="s3-diagram" viewBox="0 0 320 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g transform="translate(160, 72)">
+                    <circle cx="0" cy="0" r="48" fill="#FEE2E2" stroke="#142244" stroke-width="4" />
+                    <path d="M-28 42 C-30 22 30 22 28 42 Z" fill="#2563EB" stroke="#142244" stroke-width="3.5" />
+                    <circle cx="-18" cy="-4" r="9" fill="#E2E8F0" stroke="#142244" stroke-width="3" />
+                    <circle cx="18" cy="-4" r="9" fill="#E2E8F0" stroke="#142244" stroke-width="3" />
+                    <circle cx="0" cy="-4" r="20" fill="#FAD2B4" stroke="#142244" stroke-width="3.5" />
+                    <path d="M-20 -6 C-20 -26 20 -26 20 -6 C10 -14 -10 -14 -20 -6 Z" fill="#E2E8F0" stroke="#142244" stroke-width="3" />
+                    <circle cx="-6" cy="-4" r="2.2" fill="#142244" />
+                    <circle cx="7" cy="-4" r="2.2" fill="#142244" />
+                  </g>
+
+                  <g transform="translate(160, 232)">
+                    <ellipse id="s3-bio-aura" cx="0" cy="0" rx="112" ry="74" fill="#FDE047" opacity="0.32" />
+                    <path d="M-76 -12 C-38 -52 28 -44 58 -8 C70 10 56 38 26 38 C-14 40 -52 28 -76 -12 Z" fill="#34D399" stroke="#142244" stroke-width="4.5" />
+                    <path d="M52 -4 C80 -12 104 6 112 28 L76 32 Z" fill="#10B981" stroke="#142244" stroke-width="4.5" />
+                    <path id="s3-bio-spark1" d="M-42 -8 L-18 -24 L-4 -4 L22 -22 L42 0" stroke="#F43F5E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                    <path id="s3-bio-spark2" d="M-28 22 L-4 8 L12 24 L40 6" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Panel 2: ALESSANDRO VOLTA -->
+              <div class="s3-panel s3-panel--volta" id="s3-panel-volta" data-layout-allow-safe-zone>
+                <div class="s3-label-top">
+                  <div class="s3-scientist">ALESSANDRO VOLTA</div>
+                  <div class="s3-sub-bold">PERAN DUA LOGAM</div>
+                </div>
+
+                <svg class="s3-diagram" viewBox="0 0 320 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g transform="translate(160, 72)">
+                    <circle cx="0" cy="0" r="48" fill="#E0F2FE" stroke="#142244" stroke-width="4" />
+                    <path d="M-28 42 C-30 22 30 22 28 42 Z" fill="#0F766E" stroke="#142244" stroke-width="3.5" />
+                    <circle cx="0" cy="-4" r="20" fill="#FAD2B4" stroke="#142244" stroke-width="3.5" />
+                    <path d="M-20 -6 C-20 -26 20 -26 20 -6 C10 -13 -10 -13 -20 -6 Z" fill="#334155" stroke="#142244" stroke-width="3" />
+                    <circle cx="-6" cy="-4" r="2.2" fill="#142244" />
+                    <circle cx="7" cy="-4" r="2.2" fill="#142244" />
+                  </g>
+
+                  <g transform="translate(160, 232)">
+                    <rect id="s3-moist-pad" x="-78" y="16" width="156" height="44" rx="16" fill="#38BDF8" stroke="#142244" stroke-width="4" />
+                    <text x="0" y="45" text-anchor="middle" fill="#082F49" font-family="Poppins, sans-serif" font-size="18" font-weight="800" data-layout-ignore>LEMBAP</text>
+
+                    <g transform="translate(-54, -22)">
+                      <g id="s3-metal-zn">
+                        <rect x="-24" y="-44" width="48" height="84" rx="12" fill="#CBD5E1" stroke="#142244" stroke-width="4.5" />
+                        <text x="0" y="6" text-anchor="middle" fill="#0F172A" font-family="Poppins, sans-serif" font-size="20" font-weight="800" data-layout-ignore>Zn</text>
+                      </g>
+                    </g>
+
+                    <g transform="translate(54, -22)">
+                      <g id="s3-metal-cu">
+                        <rect x="-24" y="-44" width="48" height="84" rx="12" fill="#9A3412" stroke="#142244" stroke-width="4.5" />
+                        <text x="0" y="6" text-anchor="middle" fill="#FFFDF9" font-family="Poppins, sans-serif" font-size="20" font-weight="800" data-layout-ignore>Cu</text>
+                      </g>
+                    </g>
+
+                    <path id="s3-circuit-loop" d="M-54 -66 C-54 -96 54 -96 54 -66 L54 38 L-54 38 Z" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                    <circle id="s3-loop-orb1" cx="-54" cy="-66" r="10" fill="#FBBF24" stroke="#142244" stroke-width="3" opacity="0" />
+                    <circle id="s3-loop-orb2" cx="-54" cy="-66" r="10" fill="#0EA5E9" stroke="#FFFFFF" stroke-width="3" opacity="0" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="s3-pill-bar">
+            <div class="s3-pill" id="s3-pill-compare"><span class="s3-dot"></span><span>DUA PENJELASAN, SATU FENOMENA</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var camera = root.querySelector("#s3-camera");
+            var panelG = root.querySelector("#s3-panel-galvani");
+            var panelV = root.querySelector("#s3-panel-volta");
+            var spark1 = root.querySelector("#s3-bio-spark1");
+            var spark2 = root.querySelector("#s3-bio-spark2");
+            var bioAura = root.querySelector("#s3-bio-aura");
+            var metalZn = root.querySelector("#s3-metal-zn");
+            var metalCu = root.querySelector("#s3-metal-cu");
+            var circuitLoop = root.querySelector("#s3-circuit-loop");
+            var orb1 = root.querySelector("#s3-loop-orb1");
+            var orb2 = root.querySelector("#s3-loop-orb2");
+            var pillCompare = root.querySelector("#s3-pill-compare");
+
+            var s1Len = spark1.getTotalLength();
+            var s2Len = spark2.getTotalLength();
+            var loopLen = circuitLoop.getTotalLength();
+
+            gsap.set(spark1, { strokeDasharray: s1Len, strokeDashoffset: s1Len });
+            gsap.set(spark2, { strokeDasharray: s2Len, strokeDashoffset: s2Len });
+            gsap.set(circuitLoop, { strokeDasharray: loopLen, strokeDashoffset: loopLen });
+            gsap.set(camera, { scale: 1.02, x: 18, y: 6 });
+            gsap.set(panelG, { opacity: 0, y: 34, scale: 0.94 });
+            gsap.set(panelV, { opacity: 0, y: 34, scale: 0.96 });
+            gsap.set(metalZn, { x: 18 });
+            gsap.set(metalCu, { x: -18 });
+
+            var orbState = { p1: 0, p2: 0.5 };
+            function syncOrbs() {
+              var a = circuitLoop.getPointAtLength((orbState.p1 % 1) * loopLen);
+              var b = circuitLoop.getPointAtLength((orbState.p2 % 1) * loopLen);
+              gsap.set(orb1, { attr: { cx: a.x.toFixed(1), cy: a.y.toFixed(1) } });
+              gsap.set(orb2, { attr: { cx: b.x.toFixed(1), cy: b.y.toFixed(1) } });
+            }
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(panelG, { opacity: 1, y: 0, scale: 1, duration: 0.48, ease: "power3.out" }, 0)
+              .to(panelV, { opacity: 0.42, y: 0, scale: 1, duration: 0.52, ease: "power3.out" }, 0.08)
+              .to(camera, { scale: 1.05, x: 24, y: 6, duration: 0.75, ease: "power2.out", immediateRender: false }, 0);
+            tl.to(spark1, { strokeDashoffset: 0, duration: 0.55, ease: "power2.out" }, 0.65);
+            tl.to(spark2, { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" }, 0.95);
+            tl.to(bioAura, { opacity: 0.65, scale: 1.08, transformOrigin: "0px 0px", duration: 0.8, ease: "sine.inOut" }, 0.8)
+              .to(bioAura, { opacity: 0.35, scale: 1, duration: 0.8, ease: "sine.inOut", immediateRender: false }, 1.6);
+
+            tl.to(panelV, { opacity: 1, duration: 0.45, immediateRender: false }, 3.4);
+            tl.to(camera, { x: -24, scale: 1.05, duration: 1.15, ease: "power3.inOut", immediateRender: false }, 3.55);
+
+            tl.to([metalZn, metalCu], { x: 0, duration: 0.7, ease: "back.out(1.5)" }, 5.1);
+            tl.to(camera, { scale: 1.07, y: -6, duration: 1.1, ease: "power2.inOut", immediateRender: false }, 5.6);
+
+            tl.set([orb1, orb2], { opacity: 1 }, 6.1);
+            tl.to(circuitLoop, { strokeDashoffset: 0, duration: 0.75, ease: "power2.out" }, 6.0);
+            tl.to(orbState, { p1: 2.4, p2: 2.9, duration: 4.5, ease: "none", onUpdate: syncOrbs }, 6.1);
+
+            tl.to(camera, { x: 0, y: 0, scale: 1.0, duration: 0.95, ease: "power3.out", immediateRender: false }, 8.15);
+            tl.to(pillCompare, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.7)" }, 8.55);
+
+            tl.to(panelG, { x: -120, opacity: 0, duration: 0.55, ease: "power2.in", immediateRender: false }, 10.85);
+            tl.to(panelV, { x: -232, scale: 1.05, duration: 0.65, ease: "power2.inOut", immediateRender: false }, 10.85);
+            tl.to(pillCompare, { opacity: 0, duration: 0.3, immediateRender: false }, 10.95);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-03"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

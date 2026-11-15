@@ -26,10 +26,11 @@ const PIPELINE_STEPS: readonly {
   readonly key: keyof ProjectPipelineStatus;
   readonly label: string;
 }[] = [
-  { key: "naskah", label: "Naskah" },
+  { key: "naskah", label: "Naskah/Topik" },
   { key: "voiceover", label: "Voiceover" },
-  { key: "sceneDisetujui", label: "Scene disetujui" },
-  { key: "render", label: "Render" },
+  { key: "komposisi", label: "Komposisi" },
+  { key: "render", label: "MP4" },
+  { key: "thumbnail", label: "Thumbnail 9:16" },
   { key: "terverifikasi", label: "Terverifikasi" },
 ];
 
@@ -75,12 +76,13 @@ export const ProyekTab: React.FC<ProyekTabProps> = ({
     <div className="stack-md">
       <div className="page-header">
         <div>
-          <h1 className="page-title">Proyek</h1>
+          <h1 className="page-title">Episode</h1>
           <p className="page-subtitle">
-            Kelola daftar episode, status alur produksi, dan folder otomatis (
-            <span className="mono">audio/</span>,{" "}
-            <span className="mono">referensi/</span>,{" "}
-            <span className="mono">out/</span>).
+            Kelola folder episode HyperFrames terpisah di{" "}
+            <span className="mono">episodes/&lt;slug&gt;/</span> ({" "}
+            <span className="mono">assets/audio/</span>,{" "}
+            <span className="mono">compositions/</span>,{" "}
+            <span className="mono">renders/</span>).
           </p>
         </div>
 
@@ -186,11 +188,25 @@ export const ProyekTab: React.FC<ProyekTabProps> = ({
                       className="row-wrap"
                       style={{ color: "var(--text-muted)", fontSize: 12 }}
                     >
-                      <span className="mono">projects/{project.slug}/</span>
+                      <span className="mono">episodes/{project.slug}/</span>
                       <span>•</span>
                       <span className="tabular">{project.sceneCount} scene</span>
-                      <span>•</span>
-                      <span className="tabular">{project.wordCount} kata</span>
+                      {project.durationSeconds !== null ? (
+                        <>
+                          <span>•</span>
+                          <span className="tabular">
+                            {project.durationSeconds}s
+                          </span>
+                        </>
+                      ) : null}
+                      {project.wordCount > 0 ? (
+                        <>
+                          <span>•</span>
+                          <span className="tabular">
+                            {project.wordCount} kata
+                          </span>
+                        </>
+                      ) : null}
                     </div>
                   </div>
 

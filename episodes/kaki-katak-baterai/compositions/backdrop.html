@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Backdrop Daylight — Kisah Kaki Katak & Baterai Pertama</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="backdrop" data-duration="56" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            background: linear-gradient(180deg, #bbe5ff 0%, #fff6e5 56%, #fce7c8 100%);
+          }
+
+          .bg-layer {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+          }
+
+          .bg-sun-glow {
+            position: absolute;
+            top: -180px;
+            right: -120px;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(255, 214, 102, 0.52) 0%,
+              rgba(255, 228, 148, 0.22) 45%,
+              transparent 75%
+            );
+          }
+
+          .bg-sky-glow {
+            position: absolute;
+            bottom: -240px;
+            left: -160px;
+            width: 960px;
+            height: 780px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(56, 189, 248, 0.28) 0%,
+              rgba(167, 232, 189, 0.16) 50%,
+              transparent 76%
+            );
+          }
+
+          .bg-motes {
+            position: absolute;
+            inset: 0;
+          }
+
+          .bg-mote {
+            position: absolute;
+            border-radius: 50%;
+          }
+        </style>
+
+        <div
+          id="backdrop-clip"
+          class="bg-layer clip"
+          data-start="0"
+          data-duration="56"
+          data-layout-ignore
+          data-track-index="0"
+        >
+          <div class="bg-sun-glow" id="bg-sun-glow"></div>
+          <div class="bg-sky-glow" id="bg-sky-glow"></div>
+          <div class="bg-motes" id="bg-motes"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var motesEl = root.querySelector("#bg-motes");
+            var sunGlow = root.querySelector("#bg-sun-glow");
+            var skyGlow = root.querySelector("#bg-sky-glow");
+
+            var colors = ["#FFB703", "#38BDF8", "#34D399", "#FB7185"];
+            var motes = [];
+            for (var i = 0; i < 18; i++) {
+              var dot = document.createElement("div");
+              dot.className = "bg-mote";
+              var size = 10 + ((i * 7) % 18);
+              dot.style.width = size + "px";
+              dot.style.height = size + "px";
+              dot.style.left = (70 + ((i * 157) % 940)) + "px";
+              dot.style.top = (140 + ((i * 223) % 1580)) + "px";
+              dot.style.background = colors[i % colors.length];
+              dot.style.opacity = String(0.18 + (i % 4) * 0.06);
+              motesEl.appendChild(dot);
+              motes.push(dot);
+            }
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(sunGlow, { x: -70, y: 50, scale: 1.08, duration: 28, ease: "sine.inOut" }, 0)
+              .to(sunGlow, { x: 0, y: 0, scale: 1, duration: 28, ease: "sine.inOut" }, 28)
+              .to(skyGlow, { x: 80, y: -40, scale: 1.06, duration: 28, ease: "sine.inOut" }, 0)
+              .to(skyGlow, { x: 0, y: 0, scale: 1, duration: 28, ease: "sine.inOut" }, 28);
+
+            motes.forEach(function (dot, idx) {
+              var dy = idx % 2 === 0 ? -72 : 66;
+              var dx = ((idx % 3) - 1) * 34;
+              tl.to(dot, { x: dx, y: dy, duration: 28, ease: "sine.inOut" }, 0)
+                .to(dot, { x: 0, y: 0, duration: 28, ease: "sine.inOut" }, 28);
+            });
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["backdrop"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>
+

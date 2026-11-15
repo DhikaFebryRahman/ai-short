@@ -1,0 +1,152 @@
+{
+  "id": "kaki-katak-baterai",
+  "slug": "kaki-katak-baterai",
+  "title": "kaki-katak-baterai",
+  "seri": "KAPSUL FAKTA",
+  "archived": false,
+  "createdAt": "2026-11-15T06:25:52.071Z",
+  "updatedAt": "2026-11-15T08:48:12.324Z",
+  "topicBrief": "alok erbang",
+  "rawNaskahText": "",
+  "rawStoryboardText": "",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "judul": "Scene 01 — Eksperimen yang Tidak Biasa",
+      "fungsi": "hook",
+      "timestamp": "0.0s–5.5s",
+      "narasi": "",
+      "pemahamanPenonton": "",
+      "ideVisual": "",
+      "kataSorot": [],
+      "chip": "",
+      "butuh3D": false,
+      "alasan3D": "",
+      "kamera": "zoom-in",
+      "status": "disetujui",
+      "estimasiDetik": 5.5
+    },
+    {
+      "id": "scene-02",
+      "judul": "Scene 02 — Eksperimen Luigi Galvani",
+      "fungsi": "inti",
+      "timestamp": "5.5s–18.9s",
+      "narasi": "",
+      "pemahamanPenonton": "",
+      "ideVisual": "",
+      "kataSorot": [],
+      "chip": "",
+      "butuh3D": false,
+      "alasan3D": "",
+      "kamera": "zoom-in",
+      "status": "disetujui",
+      "estimasiDetik": 13.4
+    },
+    {
+      "id": "scene-03",
+      "judul": "Scene 03 — Perbedaan Pemikiran Galvani dan Volta",
+      "fungsi": "inti",
+      "timestamp": "18.9s–30.5s",
+      "narasi": "",
+      "pemahamanPenonton": "",
+      "ideVisual": "",
+      "kataSorot": [],
+      "chip": "",
+      "butuh3D": false,
+      "alasan3D": "",
+      "kamera": "zoom-in",
+      "status": "disetujui",
+      "estimasiDetik": 11.6
+    },
+    {
+      "id": "scene-04",
+      "judul": "Scene 04 — Lahirnya Tumpukan Volta (3D Berlapis)",
+      "fungsi": "inti",
+      "timestamp": "30.5s–45.4s",
+      "narasi": "",
+      "pemahamanPenonton": "",
+      "ideVisual": "",
+      "kataSorot": [],
+      "chip": "",
+      "butuh3D": false,
+      "alasan3D": "",
+      "kamera": "zoom-in",
+      "status": "disetujui",
+      "estimasiDetik": 14.86
+    },
+    {
+      "id": "scene-05",
+      "judul": "Scene 05 — Dampaknya terhadap Teknologi Modern",
+      "fungsi": "penutup",
+      "timestamp": "45.4s–56.0s",
+      "narasi": "",
+      "pemahamanPenonton": "",
+      "ideVisual": "",
+      "kataSorot": [],
+      "chip": "",
+      "butuh3D": false,
+      "alasan3D": "",
+      "kamera": "zoom-in",
+      "status": "disetujui",
+      "estimasiDetik": 10.64
+    }
+  ],
+  "claims": [],
+  "revisions": [],
+  "voiceover": {
+    "fileName": "vo.mp3",
+    "relativePath": "assets/audio/vo.mp3",
+    "sizeBytes": 865393,
+    "durationSeconds": 53,
+    "silences": [],
+    "waveformPeaks": []
+  },
+  "reference": null,
+  "music": {
+    "mode": "synthetic",
+    "fileName": "bgm.wav",
+    "relativePath": "assets/audio/bgm.wav",
+    "volume": 0.14
+  },
+  "promptChecklist": {
+    "pesan": false,
+    "alur": false,
+    "voiceover": false,
+    "referensi": false
+  },
+  "hasComposition": true,
+  "thumbnailPath": "renders/kaki-katak-baterai-thumbnail.png",
+  "lastCheck": {
+    "ok": true,
+    "ranAt": "2026-11-15T08:48:12.324Z",
+    "lintErrors": 0,
+    "lintWarnings": 3,
+    "runtimeErrors": 0,
+    "layoutWarnings": 7,
+    "motionErrors": 0,
+    "contrastErrors": 0,
+    "craftWarnings": 1,
+    "audioErrors": 0
+  },
+  "renders": [
+    {
+      "id": "discovered-kaki-katak-baterai.mp4",
+      "fileName": "kaki-katak-baterai.mp4",
+      "relativePath": "renders/kaki-katak-baterai.mp4",
+      "createdAt": "2026-11-15T07:19:45.128Z",
+      "verification": {
+        "durationSeconds": 56,
+        "frameCount": 1680,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "maxVolumeDb": null,
+        "blackFramesDetected": false,
+        "blackSegments": [],
+        "passed": true
+      }
+    }
+  ]
+}

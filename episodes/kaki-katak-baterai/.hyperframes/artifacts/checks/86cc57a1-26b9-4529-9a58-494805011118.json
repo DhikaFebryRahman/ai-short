@@ -1,0 +1,444 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 309 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/dkaary/Documents/Code/ai-short/episodes/kaki-katak-baterai/compositions/scene-01.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split this sub-composition further into smaller .html files, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      },
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 316 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/dkaary/Documents/Code/ai-short/episodes/kaki-katak-baterai/compositions/scene-02.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split this sub-composition further into smaller .html files, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      },
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 307 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/dkaary/Documents/Code/ai-short/episodes/kaki-katak-baterai/compositions/scene-04.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split this sub-composition further into smaller .html files, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      }
+    ],
+    "filesScanned": 9
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 7,
+    "infoCount": 0,
+    "findings": [
+      {
+        "selector": "#s1-pill-1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-01.html",
+        "bbox": {
+          "x": 440.75,
+          "y": 1266,
+          "width": 221.48,
+          "height": 39
+        },
+        "time": 3.111,
+        "rect": {
+          "left": 440.75,
+          "top": 1266,
+          "right": 662.23,
+          "bottom": 1305,
+          "width": 221.48,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "KAKI KATAK?",
+        "message": "<span> \"KAKI KATAK?\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.111,
+        "lastSeen": 3.111,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.111
+        ]
+      },
+      {
+        "selector": "div.hud-series",
+        "dataAttributes": {
+          "data-var-text": "series_label"
+        },
+        "sourceFile": "compositions/hud.html",
+        "bbox": {
+          "x": 36,
+          "y": 85,
+          "width": 209.8,
+          "height": 31
+        },
+        "time": 3.111,
+        "rect": {
+          "left": 36,
+          "top": 85,
+          "right": 245.8,
+          "bottom": 116,
+          "width": 209.8,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "KAPSUL FAKTA",
+        "message": "<div> \"KAPSUL FAKTA\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.111,
+        "lastSeen": 52.889,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          3.111,
+          9.333,
+          15.556,
+          21.778,
+          28,
+          34.222,
+          40.444,
+          46.667,
+          52.889
+        ]
+      },
+      {
+        "selector": "#hud-counter",
+        "dataAttributes": {},
+        "sourceFile": "compositions/hud.html",
+        "bbox": {
+          "x": 955.91,
+          "y": 85,
+          "width": 88.09,
+          "height": 31
+        },
+        "time": 3.111,
+        "rect": {
+          "left": 955.91,
+          "top": 85,
+          "right": 1044,
+          "bottom": 116,
+          "width": 88.09,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "01 / 05",
+        "message": "<div> \"01 / 05\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.111,
+        "lastSeen": 52.889,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          3.111,
+          9.333,
+          15.556,
+          21.778,
+          28,
+          34.222,
+          40.444,
+          46.667,
+          52.889
+        ]
+      },
+      {
+        "selector": "#captions",
+        "dataAttributes": {
+          "data-composition-file": "compositions/captions.html",
+          "data-composition-id": "captions",
+          "data-track-kind": "captions",
+          "data-track-index": "3",
+          "data-start": "0",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-hf-authored-duration": "56"
+        },
+        "sourceFile": "compositions/captions.html",
+        "bbox": {
+          "x": 186.19,
+          "y": 1364.67,
+          "width": 707.61,
+          "height": 121.85
+        },
+        "time": 3.111,
+        "rect": {
+          "left": 186.19,
+          "top": 1364.67,
+          "right": 893.8,
+          "bottom": 1486.52,
+          "width": 707.61,
+          "height": 121.85
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "membantu manusia mengembangkan baterai?",
+        "message": "<div> \"membantu manusia mengembangkan baterai?\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.111,
+        "lastSeen": 46.667,
+        "occurrences": 7,
+        "heldMs": 0,
+        "times": [
+          3.111,
+          9.333,
+          15.556,
+          21.778,
+          28,
+          34.222,
+          46.667
+        ]
+      },
+      {
+        "selector": "#s2-pill-contract > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 406.94,
+          "y": 1266,
+          "width": 289.11,
+          "height": 39
+        },
+        "time": 15.556,
+        "rect": {
+          "left": 406.94,
+          "top": 1266,
+          "right": 696.05,
+          "bottom": 1305,
+          "width": 289.11,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "KONTRAKSI OTOT",
+        "message": "<span> \"KONTRAKSI OTOT\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 15.556,
+        "lastSeen": 15.556,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          15.556
+        ]
+      },
+      {
+        "selector": "#s3-pill-compare > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 283,
+          "y": 1266,
+          "width": 534,
+          "height": 39
+        },
+        "time": 28,
+        "rect": {
+          "left": 283,
+          "top": 1266,
+          "right": 817,
+          "bottom": 1305,
+          "width": 534,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "DUA PENJELASAN, SATU FENOMENA",
+        "message": "<span> \"DUA PENJELASAN, SATU FENOMENA\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 28,
+        "lastSeen": 28,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          28
+        ]
+      },
+      {
+        "selector": "#s5-pill-1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 397,
+          "y": 1266,
+          "width": 306,
+          "height": 39
+        },
+        "time": 46.667,
+        "rect": {
+          "left": 397,
+          "top": 1266,
+          "right": 703,
+          "bottom": 1305,
+          "width": 306,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "DARI EKSPERIMEN...",
+        "message": "<span> \"DARI EKSPERIMEN...\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 46.667,
+        "lastSeen": 46.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          46.667
+        ]
+      }
+    ],
+    "duration": 56,
+    "samples": [
+      3.111,
+      9.333,
+      15.556,
+      21.778,
+      28,
+      34.222,
+      40.444,
+      46.667,
+      52.889
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 7,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      3.111,
+      15.556,
+      28,
+      40.444,
+      52.889
+    ],
+    "checked": 30,
+    "passed": 30
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 2 text elements stay under it for 0.5 s or more, the smallest \"KAPSUL FAKTA\" at 22 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "KAPSUL FAKTA",
+        "selector": "div.hud-series",
+        "dataAttributes": {},
+        "sourceFile": "compositions/hud.html",
+        "bbox": {
+          "x": 36,
+          "y": 85,
+          "width": 209.8,
+          "height": 31
+        },
+        "time": 0,
+        "times": [
+          0,
+          0
+        ],
+        "fontPx": 22,
+        "floorPx": 28,
+        "seconds": 56,
+        "elements": [
+          {
+            "selector": "div.hud-series",
+            "text": "KAPSUL FAKTA",
+            "fontPx": 22,
+            "time": 0,
+            "seconds": 56
+          },
+          {
+            "selector": "#hud-counter",
+            "text": "01 / 05",
+            "fontPx": 22,
+            "time": 0,
+            "seconds": 56
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 448
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

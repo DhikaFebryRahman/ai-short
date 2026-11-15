@@ -59,6 +59,15 @@ export type ClaimItem = {
   readonly tercentang: boolean;
 };
 
+export type RevisionNote = {
+  readonly id: string;
+  readonly target: string;
+  readonly timestamp: string;
+  readonly note: string;
+  readonly resolved: boolean;
+  readonly createdAt: string;
+};
+
 export type SilenceSegment = {
   readonly start: number;
   readonly end: number;
@@ -126,11 +135,25 @@ export type RenderRecord = {
   readonly verification: RenderVerification;
 };
 
+export type HyperframesCheckSummary = {
+  readonly ok: boolean;
+  readonly ranAt: string;
+  readonly lintErrors: number;
+  readonly lintWarnings: number;
+  readonly runtimeErrors: number;
+  readonly layoutWarnings: number;
+  readonly motionErrors: number;
+  readonly contrastErrors: number;
+  readonly craftWarnings: number;
+  readonly audioErrors: number;
+};
+
 export type ProjectPipelineStatus = {
   readonly naskah: boolean;
   readonly voiceover: boolean;
-  readonly sceneDisetujui: boolean;
+  readonly komposisi: boolean;
   readonly render: boolean;
+  readonly thumbnail: boolean;
   readonly terverifikasi: boolean;
 };
 
@@ -142,6 +165,7 @@ export type ProjectData = {
   readonly archived: boolean;
   readonly createdAt: string;
   readonly updatedAt: string;
+  readonly topicBrief?: string;
   readonly rawNaskahText: string;
   readonly rawStoryboardText: string;
   readonly rawGptText?: string;
@@ -150,10 +174,14 @@ export type ProjectData = {
   readonly pesanAgent?: string;
   readonly scenes: readonly ProjectScene[];
   readonly claims: readonly ClaimItem[];
+  readonly revisions?: readonly RevisionNote[];
   readonly voiceover: VoiceoverAsset | null;
   readonly reference: ReferenceAsset | null;
   readonly music: MusicAsset;
   readonly promptChecklist: PromptChecklist;
+  readonly hasComposition?: boolean;
+  readonly thumbnailPath?: string | null;
+  readonly lastCheck?: HyperframesCheckSummary | null;
   readonly renders: readonly RenderRecord[];
 };
 
@@ -165,11 +193,12 @@ export type ProjectSummary = {
   readonly updatedAt: string;
   readonly sceneCount: number;
   readonly wordCount: number;
+  readonly durationSeconds: number | null;
   readonly status: ProjectPipelineStatus;
 };
 
 export type ToolCheckItem = {
-  readonly id: "node" | "npm" | "ffmpeg" | "ffprobe" | "remotion";
+  readonly id: "node" | "npm" | "ffmpeg" | "ffprobe" | "hyperframes";
   readonly name: string;
   readonly ok: boolean;
   readonly version: string | null;
@@ -178,7 +207,13 @@ export type ToolCheckItem = {
 
 export type SettingsStatusResponse = {
   readonly rootDir: string;
-  readonly projectsDir: string;
+  readonly episodesDir: string;
   readonly tools: readonly ToolCheckItem[];
 };
 
+export type PreviewStatusResponse = {
+  readonly running: boolean;
+  readonly url: string | null;
+  readonly port: number | null;
+  readonly message?: string;
+};

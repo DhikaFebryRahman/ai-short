@@ -1,7 +1,7 @@
 {
   "name": "kapsul-fakta",
   "version": "1.0.0",
-  "description": "Kapsul Fakta — HyperFrames Video Project",
+  "description": "Kapsul Fakta — Multi-Episode HyperFrames Video Workspace",
   "repository": {},
   "license": "UNLICENSED",
   "engines": {
@@ -10,10 +10,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "npx --yes hyperframes@0.9.52 preview",
-    "check": "npx --yes hyperframes@0.9.52 check",
-    "render": "npx --yes hyperframes@0.9.52 render",
-    "publish": "npx --yes hyperframes@0.9.52 publish",
     "ui": "npm --prefix studio run dev"
   }
 }

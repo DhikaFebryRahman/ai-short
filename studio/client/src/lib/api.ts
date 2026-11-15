@@ -1,5 +1,7 @@
 import type {
+  HyperframesCheckSummary,
   MusicMode,
+  PreviewStatusResponse,
   ProjectData,
   ProjectSummary,
   SettingsStatusResponse,
@@ -35,7 +37,8 @@ const uploadFile = async (
 };
 
 export const api = {
-  listProjects: () => jsonRequest<{ projects: ProjectSummary[] }>("/api/projects"),
+  listProjects: () =>
+    jsonRequest<{ projects: ProjectSummary[] }>("/api/projects"),
   createProject: (title: string, seri: string) =>
     jsonRequest<{ project: ProjectData }>("/api/projects", {
       method: "POST",
@@ -57,12 +60,25 @@ export const api = {
       method: "POST",
       body: JSON.stringify({ archived }),
     }),
-  syncToRemotion: (slug: string) =>
-    jsonRequest<{ ok: boolean; totalDurationSeconds: number }>(
-      `/api/projects/${slug}/sync`,
+  previewStatus: (slug: string) =>
+    jsonRequest<PreviewStatusResponse>(`/api/projects/${slug}/preview/status`),
+  previewStart: (slug: string) =>
+    jsonRequest<PreviewStatusResponse>(`/api/projects/${slug}/preview/start`, {
+      method: "POST",
+    }),
+  previewStop: (slug: string) =>
+    jsonRequest<PreviewStatusResponse>(`/api/projects/${slug}/preview/stop`, {
+      method: "POST",
+    }),
+  runCheck: (slug: string) =>
+    jsonRequest<{ check: HyperframesCheckSummary; project: ProjectData }>(
+      `/api/projects/${slug}/check`,
       { method: "POST" },
     ),
-  openFolder: (slug: string, subfolder?: "out" | "audio" | "referensi") =>
+  openFolder: (
+    slug: string,
+    subfolder?: "assets" | "audio" | "reference" | "renders" | "compositions",
+  ) =>
     jsonRequest<{ ok: boolean; path: string }>(
       `/api/projects/${slug}/open-folder`,
       {
@@ -97,4 +113,3 @@ export const api = {
   getSettingsStatus: () =>
     jsonRequest<SettingsStatusResponse>("/api/settings/status"),
 };
-

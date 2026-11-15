@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "historyId": "e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "CLAUDE.md": {
+      "hash": "268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/26/268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a"
+    },
+    "assets/audio/vo.mp3": {
+      "hash": "04fff47f7160d089f927b1d9fe45b6c957e95f93963a171bc98170a77fd15692",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/04/04fff47f7160d089f927b1d9fe45b6c957e95f93963a171bc98170a77fd15692"
+    },
+    "compositions/backdrop.html": {
+      "hash": "d9930dcf19d5238f66103498ae0fa97060ee204d1f5de21dfac754aec4e63778",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/d9/d9930dcf19d5238f66103498ae0fa97060ee204d1f5de21dfac754aec4e63778"
+    },
+    "compositions/captions.html": {
+      "hash": "44e30ad34bf605c9af22516e8f3220e9b8cab30fcd4637b7367d2218e5e232bb",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/44/44e30ad34bf605c9af22516e8f3220e9b8cab30fcd4637b7367d2218e5e232bb"
+    },
+    "compositions/components/caption-editorial-emphasis.html": {
+      "hash": "6144571b6c73dbdec282284fe2277d3c958e15cddaf362295ba9cca02e705d1c",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/61/6144571b6c73dbdec282284fe2277d3c958e15cddaf362295ba9cca02e705d1c"
+    },
+    "compositions/components/constellation-hub.html": {
+      "hash": "6ebed16e6f7d2aff53507fc719639e4b9332b1882c4c4b8e3e8ff0b53011805e",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/6e/6ebed16e6f7d2aff53507fc719639e4b9332b1882c4c4b8e3e8ff0b53011805e"
+    },
+    "compositions/components/grain-field.html": {
+      "hash": "2e2e06e1164a413d5625ffb4de2d4aa0e2bfc3175c8c342be735d28b884e451f",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/2e/2e2e06e1164a413d5625ffb4de2d4aa0e2bfc3175c8c342be735d28b884e451f"
+    },
+    "compositions/hud.html": {
+      "hash": "0fd6c6574f80a81af63542a1fc71628e19ea1eefbd4735ee546e3b534366d827",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/0f/0fd6c6574f80a81af63542a1fc71628e19ea1eefbd4735ee546e3b534366d827"
+    },
+    "compositions/scene-01.html": {
+      "hash": "bd4ddb6af36a8e0238954d1c34069c8d97e9dfc47462209bffb8ea5a5f82801c",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/bd/bd4ddb6af36a8e0238954d1c34069c8d97e9dfc47462209bffb8ea5a5f82801c"
+    },
+    "compositions/scene-02.html": {
+      "hash": "25db862219b859ec12c0593b1cd60b3919faa2aa99caa9b337f7c2e670df2f4a",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/25/25db862219b859ec12c0593b1cd60b3919faa2aa99caa9b337f7c2e670df2f4a"
+    },
+    "compositions/scene-03.html": {
+      "hash": "7bdfeaaf753054651ab7693af33e1bbe077c06a4334c6d7df9f234d327002b8e",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/7b/7bdfeaaf753054651ab7693af33e1bbe077c06a4334c6d7df9f234d327002b8e"
+    },
+    "compositions/scene-04.html": {
+      "hash": "4cf2c9f12fb305a139c1b000af3f797fb03839dd0f5b1c339a3eda7f2b1c8108",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/4c/4cf2c9f12fb305a139c1b000af3f797fb03839dd0f5b1c339a3eda7f2b1c8108"
+    },
+    "compositions/scene-05.html": {
+      "hash": "bc034e2acf82d77f241f97cc0311cacfaf499143bed224d2df298a7c15e0e367",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/bc/bc034e2acf82d77f241f97cc0311cacfaf499143bed224d2df298a7c15e0e367"
+    },
+    "compositions/scene-06.html": {
+      "hash": "11e0051b1ec0c4d00330c13a7208aa5e3a8b0f157acfee9c2457444fc328ca19",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/11/11e0051b1ec0c4d00330c13a7208aa5e3a8b0f157acfee9c2457444fc328ca19"
+    },
+    "hyperframes.json": {
+      "hash": "d29f0f4585c0d971a1493de71b9a89b91ae75d000eef7e80c867739cc332fc58",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/d2/d29f0f4585c0d971a1493de71b9a89b91ae75d000eef7e80c867739cc332fc58"
+    },
+    "hyperframes.lock.json": {
+      "hash": "2d4c7612d726a9eadbda8ce9beb96357658249fe56eeba6385830c94c64c0d0d",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/2d/2d4c7612d726a9eadbda8ce9beb96357658249fe56eeba6385830c94c64c0d0d"
+    },
+    "index.html": {
+      "hash": "d0729202e9e4cd2cdf2a802d18d176b240921d3291e5b0da372d917675468482",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/d0/d0729202e9e4cd2cdf2a802d18d176b240921d3291e5b0da372d917675468482"
+    },
+    "meta.json": {
+      "hash": "351064796421f69e0fe01710865b9e2285d3ac7575148d939feafc38e04ad560",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/35/351064796421f69e0fe01710865b9e2285d3ac7575148d939feafc38e04ad560"
+    },
+    "package.json": {
+      "hash": "eb88effea960db45be46e15c6fb36142c47a8757470df4609d6844e2cc3ab68f",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/eb/eb88effea960db45be46e15c6fb36142c47a8757470df4609d6844e2cc3ab68f"
+    },
+    "assets/audio/bgm.wav": {
+      "hash": "239303ccf37216fafcfb6a0a6b51284ee7c55dbeda756d3ebfd0ee5119ed54ec",
+      "content": "/home/dkaary/.cache/hyperframes/history/e73661a7-ca05-4cd6-a6ed-1d9d7d472ce2/blobs/23/239303ccf37216fafcfb6a0a6b51284ee7c55dbeda756d3ebfd0ee5119ed54ec"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "bc9be4b2-9164-4a0c-89a9-102d5a2c73aa"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "bc9be4b2-9164-4a0c-89a9-102d5a2c73aa",
+        "scope": "project",
+        "report": "/home/dkaary/Documents/Code/ai-short/episodes/deja-vu-2d/.hyperframes/artifacts/checks/bc9be4b2-9164-4a0c-89a9-102d5a2c73aa.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "safeZones": [
+              "tiktok",
+              "reels",
+              "shorts"
+            ],
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1794723299980,
+        "contentHash": "a4e479b54ebf59bb875bf87414f7b4c8da225a2871cc3ad13fdb744921e4cbee",
+        "revision": null,
+        "inputFingerprint": "9bd62ded5376f6b0361ffbe2e8138400ccc48a451c1dbea76b01630f413e3cc9",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "cb65504b-e922-46e5-8d37-cd263f57c553",
+      "completedAt": 1794720099316,
+      "output": "/home/dkaary/Documents/Code/ai-short/hf-projects/deja-vu-2d/renders/deja-vu-2d.mp4",
+      "status": "completed",
+      "revision": "d5d175f5-b72f-4010-9936-dc67577b4dfd"
+    },
+    "retainedRevisions": [
+      "d5d175f5-b72f-4010-9936-dc67577b4dfd"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

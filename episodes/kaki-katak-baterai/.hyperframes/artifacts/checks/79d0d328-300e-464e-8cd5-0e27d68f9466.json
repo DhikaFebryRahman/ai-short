@@ -1,0 +1,839 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 308 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/dkaary/Documents/Code/ai-short/episodes/kaki-katak-baterai/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      },
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 307 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/dkaary/Documents/Code/ai-short/episodes/kaki-katak-baterai/compositions/scene-04.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split this sub-composition further into smaller .html files, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      }
+    ],
+    "filesScanned": 10
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 11,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 21.778,
+        "selector": "svg.s3-svg > rect:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -80,
+          "top": -80,
+          "right": 1160,
+          "bottom": 2000,
+          "width": 1240,
+          "height": 2080
+        },
+        "containerSelector": "svg.s3-svg",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 80,
+          "right": 80,
+          "top": 80,
+          "bottom": 80
+        },
+        "dataAttributes": {
+          "data-hf-svg-reference-aliases": "[{\"name\":\"fill\",\"localName\":\"fill\",\"namespaceURI\":null,\"before\":\"url(#s3-bg)\",\"after\":\"url(#s3-bg)\"}]"
+        },
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": -80,
+          "y": -80,
+          "width": 1240,
+          "height": 2080
+        },
+        "firstSeen": 21.778,
+        "lastSeen": 28,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          21.778,
+          28
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 21.778,
+        "selector": "svg.s3-svg > circle:nth-of-type(2)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 400,
+          "top": 280,
+          "right": 1120,
+          "bottom": 1000,
+          "width": 720,
+          "height": 720
+        },
+        "containerSelector": "svg.s3-svg",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 40
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 400,
+          "y": 280,
+          "width": 720,
+          "height": 720
+        },
+        "firstSeen": 21.778,
+        "lastSeen": 28,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          21.778,
+          28
+        ]
+      },
+      {
+        "selector": "div.hud-series",
+        "dataAttributes": {
+          "data-var-text": "series_label"
+        },
+        "sourceFile": "compositions/hud.html",
+        "bbox": {
+          "x": 119,
+          "y": 288,
+          "width": 260.3,
+          "height": 39
+        },
+        "time": 3.111,
+        "rect": {
+          "left": 119,
+          "top": 288,
+          "right": 379.3,
+          "bottom": 327,
+          "width": 260.3,
+          "height": 39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "KAPSUL FAKTA",
+        "message": "<div> \"KAPSUL FAKTA\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.111,
+        "lastSeen": 52.889,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          3.111,
+          9.333,
+          15.556,
+          21.778,
+          28,
+          34.222,
+          40.444,
+          46.667,
+          52.889
+        ]
+      },
+      {
+        "selector": "#captions",
+        "dataAttributes": {
+          "data-composition-file": "compositions/captions.html",
+          "data-composition-id": "captions",
+          "data-track-kind": "captions",
+          "data-track-index": "3",
+          "data-start": "0",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-hf-authored-duration": "56"
+        },
+        "sourceFile": "compositions/captions.html",
+        "bbox": {
+          "x": 126.94,
+          "y": 1161.44,
+          "width": 646.12,
+          "height": 115.92
+        },
+        "time": 3.111,
+        "rect": {
+          "left": 126.94,
+          "top": 1161.44,
+          "right": 773.06,
+          "bottom": 1277.36,
+          "width": 646.12,
+          "height": 115.92
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "membantu manusia mengembangkan baterai?",
+        "message": "<div> \"membantu manusia mengembangkan baterai?\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.111,
+        "lastSeen": 52.889,
+        "occurrences": 7,
+        "heldMs": 0,
+        "times": [
+          3.111,
+          9.333,
+          15.556,
+          21.778,
+          28,
+          46.667,
+          52.889
+        ]
+      },
+      {
+        "selector": "#s3-panel-volta > div:nth-of-type(1) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 821.05,
+          "y": 347.54,
+          "width": 299.94,
+          "height": 118.26
+        },
+        "time": 21.778,
+        "rect": {
+          "left": 821.05,
+          "top": 347.54,
+          "right": 1120.99,
+          "bottom": 465.8,
+          "width": 299.94,
+          "height": 118.26
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "ALESSANDRO VOLTA",
+        "message": "<div> \"ALESSANDRO VOLTA\" is outside the safe area: TikTok (right edge), Instagram Reels (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 21.778,
+        "lastSeen": 21.778,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          21.778
+        ]
+      },
+      {
+        "selector": "div.s3-sub-bold",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 801.18,
+          "y": 484.78,
+          "width": 339.66,
+          "height": 45.26
+        },
+        "time": 21.778,
+        "rect": {
+          "left": 801.18,
+          "top": 484.78,
+          "right": 1140.84,
+          "bottom": 530.04,
+          "width": 339.66,
+          "height": 45.26
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "PERAN DUA LOGAM",
+        "message": "<div> \"PERAN DUA LOGAM\" is outside the safe area: TikTok (right edge), Instagram Reels (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 21.778,
+        "lastSeen": 21.778,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          21.778
+        ]
+      },
+      {
+        "selector": "svg.s3-diagram > g:nth-of-type(2) > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 844.1,
+          "y": 981.91,
+          "width": 253.84,
+          "height": 32.53
+        },
+        "time": 21.778,
+        "rect": {
+          "left": 844.1,
+          "top": 981.91,
+          "right": 1097.94,
+          "bottom": 1014.44,
+          "width": 253.84,
+          "height": 32.53
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "PENGHANTAR LEMBAP",
+        "message": "<text> \"PENGHANTAR LEMBAP\" is outside the safe area: TikTok (right edge), Instagram Reels (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 21.778,
+        "lastSeen": 21.778,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          21.778
+        ]
+      },
+      {
+        "selector": "#s3-metal-zn > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 906.39,
+          "y": 894.22,
+          "width": 33.08,
+          "height": 35.36
+        },
+        "time": 21.778,
+        "rect": {
+          "left": 906.39,
+          "top": 894.22,
+          "right": 939.47,
+          "bottom": 929.58,
+          "width": 33.08,
+          "height": 35.36
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Zn",
+        "message": "<text> \"Zn\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 21.778,
+        "lastSeen": 21.778,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          21.778
+        ]
+      },
+      {
+        "selector": "#s3-metal-cu > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 1000.72,
+          "y": 894.22,
+          "width": 36.78,
+          "height": 35.36
+        },
+        "time": 21.778,
+        "rect": {
+          "left": 1000.72,
+          "top": 894.22,
+          "right": 1037.5,
+          "bottom": 929.58,
+          "width": 36.78,
+          "height": 35.36
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Cu",
+        "message": "<text> \"Cu\" is outside the safe area: TikTok (right edge), Instagram Reels (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 21.778,
+        "lastSeen": 21.778,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          21.778
+        ]
+      },
+      {
+        "selector": "#s4-call-zn > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": -94.71,
+          "y": 901.92,
+          "width": 79.12,
+          "height": 38.9
+        },
+        "time": 34.222,
+        "rect": {
+          "left": -94.71,
+          "top": 901.92,
+          "right": -15.59,
+          "bottom": 940.82,
+          "width": 79.12,
+          "height": 38.9
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SENG",
+        "message": "<text> \"SENG\" is outside the safe area: TikTok (left edge), Instagram Reels (left edge), YouTube Shorts (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 34.222,
+        "lastSeen": 34.222,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          34.222
+        ]
+      },
+      {
+        "selector": "#s5-dev-watch > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 469.01,
+          "y": -45.48,
+          "width": 65.98,
+          "height": 34.32
+        },
+        "time": 52.889,
+        "rect": {
+          "left": 469.01,
+          "top": -45.48,
+          "right": 534.99,
+          "bottom": -11.16,
+          "width": 65.98,
+          "height": 34.32
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "09:41",
+        "message": "<text> \"09:41\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 52.889,
+        "lastSeen": 52.889,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          52.889
+        ]
+      }
+    ],
+    "duration": 56,
+    "samples": [
+      3.111,
+      9.333,
+      15.556,
+      21.778,
+      28,
+      34.222,
+      40.444,
+      46.667,
+      52.889
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 11,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 3.43:1; WCAG AA requires 4.5:1.",
+        "text": "Cu",
+        "fg": "rgb(255,251,235)",
+        "bg": "rgb(234,88,12)",
+        "ratio": 3.43,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(34,33,31)",
+        "large": false,
+        "selector": "div > div:nth-of-type(4) > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > svg > g:nth-of-type(2) > g:nth-of-type(2) > text",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 624.40625,
+          "y": 813.4375,
+          "width": 25.1875,
+          "height": 24.21875
+        },
+        "time": 28,
+        "times": [
+          28
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      3.111,
+      15.556,
+      28,
+      40.444,
+      52.889
+    ],
+    "checked": 40,
+    "passed": 39
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"ITALIA — 1780-AN\" renders at 26 px for 5.50 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "ITALIA — 1780-AN",
+        "selector": "div.s2-era-badge",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 309.94,
+          "y": 486.6,
+          "width": 280.12,
+          "height": 36
+        },
+        "time": 6,
+        "times": [
+          6
+        ],
+        "fontPx": 26,
+        "floorPx": 28,
+        "seconds": 5.5,
+        "elements": [
+          {
+            "selector": "div.s2-era-badge",
+            "text": "ITALIA — 1780-AN",
+            "fontPx": 26,
+            "time": 6,
+            "seconds": 5.5
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 5 text elements stay under it for 0.5 s or more, the smallest \"PENGHANTAR LEMBAP\" at 16 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "PENGHANTAR LEMBAP",
+        "selector": "svg.s3-diagram > g:nth-of-type(2) > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 844.1,
+          "y": 981.91,
+          "width": 235.9,
+          "height": 32.53
+        },
+        "time": 22.375,
+        "times": [
+          22.375,
+          22.375,
+          22.375,
+          27.25,
+          27.625
+        ],
+        "fontPx": 15.5,
+        "floorPx": 28,
+        "seconds": 8.125,
+        "elements": [
+          {
+            "selector": "svg.s3-diagram > g:nth-of-type(2) > text:nth-of-type(1)",
+            "text": "PENGHANTAR LEMBAP",
+            "fontPx": 15.5,
+            "time": 22.375,
+            "seconds": 8.125
+          },
+          {
+            "selector": "#s3-metal-zn > text:nth-of-type(1)",
+            "text": "Zn",
+            "fontPx": 17.44,
+            "time": 22.375,
+            "seconds": 8.125
+          },
+          {
+            "selector": "#s3-metal-cu > text:nth-of-type(1)",
+            "text": "Cu",
+            "fontPx": 17.44,
+            "time": 22.375,
+            "seconds": 8.125
+          },
+          {
+            "selector": "div.s3-sub-bold",
+            "text": "PERAN DUA LOGAM",
+            "fontPx": 22,
+            "time": 27.25,
+            "seconds": 3.25
+          },
+          {
+            "selector": "#s3-pill-compare > span:nth-of-type(2)",
+            "text": "DUA PENJELASAN, SATU FENOMENA",
+            "fontPx": 26,
+            "time": 27.625,
+            "seconds": 2.375
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"SENG\" (1 word) is on screen 0.10 s (±0.01 s), under its 0.40 s floor: hold it about 0.5 s + 0.3 s a word (0.80 s here) before it leaves or changes; see references/motion.md.",
+        "text": "SENG",
+        "selector": "#s4-call-zn > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 0,
+          "y": 902.2,
+          "width": 42.74,
+          "height": 38.72000000000003
+        },
+        "time": 33.172,
+        "words": 1,
+        "seconds": 0.102,
+        "floorSeconds": 0.4,
+        "measured": [
+          {
+            "time": 32.875,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 33,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 33.125,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 33.25,
+            "opacity": 0.93,
+            "heightPx": 39
+          },
+          {
+            "time": 33.375,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 33.5,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 33.625,
+            "opacity": null,
+            "heightPx": null
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 3 text elements stay under it for 0.5 s or more, the smallest \"ARUS\" at 16 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "ARUS",
+        "selector": "#s4-meter > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 640.57,
+          "y": 680.93,
+          "width": 43.57,
+          "height": 22.02
+        },
+        "time": 41.25,
+        "times": [
+          34.375,
+          35.875,
+          41.25
+        ],
+        "fontPx": 15.85,
+        "floorPx": 28,
+        "seconds": 4.125,
+        "elements": [
+          {
+            "selector": "#s4-meter > text:nth-of-type(1)",
+            "text": "ARUS",
+            "fontPx": 15.85,
+            "time": 41.25,
+            "seconds": 4.125
+          },
+          {
+            "selector": "#s4-call-pad > text:nth-of-type(1)",
+            "text": "KARTON LEMBAP",
+            "fontPx": 23.99,
+            "time": 34.375,
+            "seconds": 2.375
+          },
+          {
+            "selector": "#s4-call-cu > text:nth-of-type(1)",
+            "text": "TEMBAGA",
+            "fontPx": 27.41,
+            "time": 35.875,
+            "seconds": 0.875
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 3 text elements stay under it for 0.5 s or more, the smallest \"1800\" at 21 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "1800",
+        "selector": "#s5-old-pile > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 180.42,
+          "y": 753.45,
+          "width": 59.56,
+          "height": 35.65
+        },
+        "time": 45.375,
+        "times": [
+          45.375,
+          45.75,
+          49.125
+        ],
+        "fontPx": 21.09,
+        "floorPx": 28,
+        "seconds": 8.25,
+        "elements": [
+          {
+            "selector": "#s5-old-pile > text:nth-of-type(1)",
+            "text": "1800",
+            "fontPx": 21.09,
+            "time": 45.375,
+            "seconds": 8.25
+          },
+          {
+            "selector": "#s5-pill-2 > span:nth-of-type(2)",
+            "text": "MENUJU TEKNOLOGI MODERN",
+            "fontPx": 24.33,
+            "time": 49.125,
+            "seconds": 4.5
+          },
+          {
+            "selector": "#s5-pill-1 > span:nth-of-type(2)",
+            "text": "DARI EKSPERIMEN...",
+            "fontPx": 26,
+            "time": 45.75,
+            "seconds": 3.125
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"EPISODE SELESAI\" renders at 26 px for 2.00 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "EPISODE SELESAI",
+        "selector": "div.s6-kicker",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-06.html",
+        "bbox": {
+          "x": 311.14,
+          "y": 482.09,
+          "width": 277.72,
+          "height": 36.07
+        },
+        "time": 54,
+        "times": [
+          54
+        ],
+        "fontPx": 26,
+        "floorPx": 28,
+        "seconds": 2,
+        "elements": [
+          {
+            "selector": "div.s6-kicker",
+            "text": "EPISODE SELESAI",
+            "fontPx": 26,
+            "time": 54,
+            "seconds": 2
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 448
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

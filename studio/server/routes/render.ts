@@ -1,15 +1,16 @@
 import { spawn } from "node:child_process";
+import fs from "node:fs/promises";
 import path from "node:path";
 import { Router, type Response } from "express";
 import type { RenderRecord } from "../../shared/types";
 import { analyzeRenderedMedia, probeMedia } from "../lib/ffmpeg";
-import { ROOT_DIR, resolveProjectDir } from "../lib/pathGuard";
+import { stopHyperframesPreview } from "../lib/hyperframesCli";
+import { resolveEpisodeDir } from "../lib/pathGuard";
 import {
-  ensureProjectFolders,
+  ensureEpisodeFolders,
   readProject,
   writeProject,
 } from "../lib/projectStore";
-import { syncProjectToRemotion } from "../lib/remotionSync";
 
 type RenderJob = {
   readonly id: string;
@@ -39,41 +40,33 @@ export const renderRouter = Router();
 renderRouter.post("/:slug/render", async (req, res) => {
   try {
     const project = await readProject(req.params.slug);
-    if (project.scenes.length === 0) {
-      res.status(400).json({ error: "Belum ada scene di storyboard." });
-      return;
-    }
-    const allApproved = project.scenes.every((s) => s.status === "disetujui");
-    if (!allApproved) {
+    const episodeDir = await ensureEpisodeFolders(project.slug);
+
+    try {
+      await fs.access(path.join(episodeDir, "index.html"));
+    } catch {
       res.status(400).json({
-        error: "Semua scene harus berstatus 'Disetujui' sebelum render.",
-      });
-      return;
-    }
-    if (!project.voiceover) {
-      res.status(400).json({
-        error: "Voiceover harus diunggah terlebih dahulu sebelum render.",
+        error:
+          "Komposisi HyperFrames (index.html) belum dibuat. Salin prompt ke agent terlebih dahulu untuk membangun scene.",
       });
       return;
     }
 
-    const totalSec = Math.ceil(project.voiceover.durationSeconds + 2.5);
-    if (totalSec > 60) {
-      res.status(400).json({
-        error: `Durasi video (${totalSec} detik) melebihi batas maksimal 60 detik.`,
-      });
-      return;
+    if (project.voiceover) {
+      const totalSec = Math.ceil(project.voiceover.durationSeconds + 2.5);
+      if (totalSec > 60) {
+        res.status(400).json({
+          error: `Durasi video (${totalSec} detik) melebihi batas maksimal 60 detik.`,
+        });
+        return;
+      }
     }
 
-    const { totalDurationSeconds } = await syncProjectToRemotion(project);
-    const projectDir = await ensureProjectFolders(project.slug);
-    const timestamp = new Date()
-      .toISOString()
-      .replace(/[:.]/g, "-")
-      .slice(0, 19);
-    const fileName = `kapsul-fakta-${timestamp}.mp4`;
-    const relativePath = `out/${fileName}`;
-    const outAbsPath = path.join(projectDir, relativePath);
+    await stopHyperframesPreview(episodeDir);
+
+    const fileName = `${project.slug}.mp4`;
+    const relativePath = `renders/${fileName}`;
+    const outAbsPath = path.join(episodeDir, relativePath);
 
     const jobId = `render-${Date.now()}`;
     const job: RenderJob = {
@@ -82,8 +75,7 @@ renderRouter.post("/:slug/render", async (req, res) => {
       status: "running",
       progress: 0,
       logs: [
-        `Menyinkronkan proyek "${project.title}" (${totalDurationSeconds}s, 1080x1920 @ 30fps)...`,
-        `Menjalankan: npx remotion render src/index.ts KapsulFakta ${outAbsPath} --width=1080 --height=1920 --fps=30`,
+        `Menjalankan: npx hyperframes render --quality delivery --output ${relativePath}`,
       ],
       clients: new Set(),
     };
@@ -92,17 +84,15 @@ renderRouter.post("/:slug/render", async (req, res) => {
     const child = spawn(
       "npx",
       [
-        "remotion",
+        "hyperframes",
         "render",
-        "src/index.ts",
-        "KapsulFakta",
-        outAbsPath,
-        "--width=1080",
-        "--height=1920",
-        "--fps=30",
+        "--quality",
+        "delivery",
+        "--output",
+        relativePath,
       ],
       {
-        cwd: ROOT_DIR,
+        cwd: episodeDir,
         env: process.env,
       },
     );
@@ -133,7 +123,7 @@ renderRouter.post("/:slug/render", async (req, res) => {
     child.on("close", async (code) => {
       if (code !== 0) {
         job.status = "error";
-        job.error = `Proses render berhenti dengan kode ${code}.`;
+        job.error = `Proses render HyperFrames berhenti dengan kode ${code}.`;
         broadcast(job, "render_error", { error: job.error });
         return;
       }
@@ -179,9 +169,12 @@ renderRouter.post("/:slug/render", async (req, res) => {
         };
 
         const latestProject = await readProject(project.slug);
+        const filtered = latestProject.renders.filter(
+          (r) => r.relativePath !== relativePath,
+        );
         const saved = await writeProject({
           ...latestProject,
-          renders: [record, ...latestProject.renders],
+          renders: [record, ...filtered],
         });
 
         job.status = "done";
@@ -214,9 +207,8 @@ renderRouter.get("/:slug/render/stream/:jobId", (req, res) => {
     return;
   }
 
-  // Ensure slug is validated
   try {
-    resolveProjectDir(req.params.slug);
+    resolveEpisodeDir(req.params.slug);
   } catch {
     res.status(400).json({ error: "Slug tidak valid." });
     return;
@@ -246,4 +238,3 @@ renderRouter.get("/:slug/render/stream/:jobId", (req, res) => {
     job.clients.delete(res);
   });
 });
-

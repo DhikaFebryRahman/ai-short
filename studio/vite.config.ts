@@ -11,7 +11,7 @@ export default defineConfig({
         target: "http://localhost:3100",
         changeOrigin: true,
       },
-      "/projects-media": {
+      "/episodes-media": {
         target: "http://localhost:3100",
         changeOrigin: true,
       },

@@ -2,14 +2,12 @@ import type React from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
   Clapperboard,
-  Droplets,
   FileText,
   FolderKanban,
   MessageSquareCode,
   Moon,
   Music2,
   Settings,
-  Square,
   Sun,
 } from "lucide-react";
 import type { ProjectData, ProjectSummary } from "../../shared/types";
@@ -35,7 +33,7 @@ const SIDE_TABS: readonly {
   readonly icon: React.ComponentType<{ size?: number }>;
   readonly requiresProject?: boolean;
 }[] = [
-  { id: "proyek", label: "Proyek", icon: FolderKanban },
+  { id: "proyek", label: "Episode", icon: FolderKanban },
   {
     id: "storyboard",
     label: "Naskah & Storyboard",
@@ -45,7 +43,7 @@ const SIDE_TABS: readonly {
   { id: "aset", label: "Aset", icon: Music2, requiresProject: true },
   {
     id: "prompt",
-    label: "Prompt untuk Agent",
+    label: "Prompt & Revisi Agent",
     icon: MessageSquareCode,
     requiresProject: true,
   },
@@ -59,9 +57,7 @@ const SIDE_TABS: readonly {
 ];
 
 type ThemeMode = "light" | "dark";
-type GlassMode = "on" | "off";
 const THEME_STORAGE_KEY = "kapsul-fakta-theme";
-const GLASS_STORAGE_KEY = "kapsul-fakta-glass";
 
 const readInitialTheme = (): ThemeMode => {
   try {
@@ -73,19 +69,8 @@ const readInitialTheme = (): ThemeMode => {
   }
 };
 
-const readInitialGlass = (): GlassMode => {
-  try {
-    return window.localStorage.getItem(GLASS_STORAGE_KEY) === "off"
-      ? "off"
-      : "on";
-  } catch {
-    return "on";
-  }
-};
-
 export const App: React.FC = () => {
   const [theme, setTheme] = useState<ThemeMode>(readInitialTheme);
-  const [glass, setGlass] = useState<GlassMode>(readInitialGlass);
   const [activeTab, setActiveTab] = useState<TabId>("proyek");
   const [projects, setProjects] = useState<ProjectSummary[]>([]);
   const [activeProject, setActiveProject] = useState<ProjectData | null>(null);
@@ -104,14 +89,6 @@ export const App: React.FC = () => {
     }
   }, [theme]);
 
-  useEffect(() => {
-    document.documentElement.dataset.glass = glass;
-    try {
-      window.localStorage.setItem(GLASS_STORAGE_KEY, glass);
-    } catch {
-      // Abaikan jika penyimpanan lokal dibatasi
-    }
-  }, [glass]);
 
   const refreshProjects = useCallback(async () => {
     setLoadingList(true);
@@ -214,27 +191,6 @@ export const App: React.FC = () => {
               <span>Gelap</span>
             </button>
           </div>
-
-          <div className="theme-switch" role="group" aria-label="Gaya permukaan">
-            <button
-              type="button"
-              className={`theme-switch-btn ${glass === "on" ? "active" : ""}`}
-              aria-pressed={glass === "on"}
-              onClick={() => setGlass("on")}
-            >
-              <Droplets size={13} />
-              <span>Liquid Glass</span>
-            </button>
-            <button
-              type="button"
-              className={`theme-switch-btn ${glass === "off" ? "active" : ""}`}
-              aria-pressed={glass === "off"}
-              onClick={() => setGlass("off")}
-            >
-              <Square size={13} />
-              <span>Solid</span>
-            </button>
-          </div>
         </div>
 
         <nav className="nav-list" aria-label="Menu utama">
@@ -318,6 +274,7 @@ export const App: React.FC = () => {
           <PromptAgentTab
             project={activeProject}
             onUpdate={handleProjectUpdate}
+            onProjectReplaced={handleProjectReplaced}
           />
         ) : null}
 

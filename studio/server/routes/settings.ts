@@ -1,9 +1,8 @@
 import { execFile } from "node:child_process";
-import path from "node:path";
 import { promisify } from "node:util";
 import { Router } from "express";
 import type { ToolCheckItem } from "../../shared/types";
-import { PROJECTS_DIR, ROOT_DIR } from "../lib/pathGuard";
+import { EPISODES_DIR, ROOT_DIR } from "../lib/pathGuard";
 
 const execFileAsync = promisify(execFile);
 
@@ -19,7 +18,7 @@ const checkTool = async (
   try {
     const { stdout, stderr } = await execFileAsync(cmd, [...args], {
       cwd,
-      timeout: 8000,
+      timeout: 10000,
     });
     const combined = `${stdout}\n${stderr}`.trim();
     const firstLine = pickLine
@@ -80,22 +79,22 @@ settingsRouter.get("/status", async (_req, res) => {
       "Biasanya terpasang bersama FFmpeg: sudo apt install -y ffmpeg",
     ),
     checkTool(
-      "remotion",
-      "Remotion CLI",
-      path.join(ROOT_DIR, "node_modules", ".bin", "remotion"),
-      ["versions"],
+      "hyperframes",
+      "HyperFrames CLI",
+      "npx",
+      ["hyperframes", "--version"],
       ROOT_DIR,
-      "Jalankan `npm install` di folder root proyek untuk memasang @remotion/cli.",
+      "Jalankan `npm install` atau `npx hyperframes --version` di workspace.",
       (output) => {
-        const match = output.match(/On version:\s*([^\r\n]+)/);
-        return match ? `@remotion/cli ${match[1].trim()}` : "Terpasang";
+        const ver = output.match(/\d+\.\d+\.\d+/)?.[0];
+        return ver ? `hyperframes v${ver}` : "Terpasang";
       },
     ),
   ]);
 
   res.json({
     rootDir: ROOT_DIR,
-    projectsDir: PROJECTS_DIR,
+    episodesDir: EPISODES_DIR,
     tools,
   });
 });

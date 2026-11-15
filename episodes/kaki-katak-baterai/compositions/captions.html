@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Captions Kinetik — Kisah Kaki Katak &amp; Baterai</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="captions" data-duration="56" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: visible;
+            pointer-events: none;
+            font-family: "Poppins", sans-serif;
+          }
+
+          .cap-band {
+            position: absolute;
+            top: 1345px;
+            left: 60px;
+            width: 960px;
+            height: 148px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+          }
+
+          .cap-group {
+            position: absolute;
+            width: 100%;
+            padding: 10px 18px;
+            border-radius: 30px;
+            background: radial-gradient(ellipse at center, rgba(255, 250, 242, 0.92) 0%, rgba(255, 250, 242, 0.72) 66%, transparent 100%);
+            text-align: center;
+            line-height: 1.24;
+            overflow: visible;
+            opacity: 0;
+            visibility: hidden;
+          }
+
+          .cap-word {
+            display: inline-block;
+            margin: 0 5px;
+            vertical-align: baseline;
+          }
+
+          .cap-word--intro {
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 42px;
+            color: #243b6b;
+          }
+
+          .cap-word--keyword {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-size: 46px;
+          }
+
+          .cap-color--muted { color: #243b6b; text-shadow: 0 2px 12px rgba(255, 252, 246, 0.96); }
+          .cap-color--ink { color: #142244; text-shadow: 0 2px 12px rgba(255, 252, 246, 0.96); }
+          .cap-color--amber { color: #9a3412; text-shadow: 0 2px 14px rgba(255, 248, 232, 0.96); }
+          .cap-color--cyan { color: #0369a1; text-shadow: 0 2px 14px rgba(255, 252, 248, 0.96); }
+          .cap-color--green { color: #047857; text-shadow: 0 2px 14px rgba(255, 252, 248, 0.96); }
+          .cap-color--red { color: #be123c; text-shadow: 0 2px 14px rgba(255, 252, 248, 0.96); }
+        </style>
+
+        <div id="cap-clip" class="cap-band clip" data-start="0" data-duration="56" data-track-index="0"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var band = root.querySelector("#cap-clip");
+            var groups = [
+              { start: 0.95, end: 2.95, words: [{ k: "Pernah", j: "intro", c: "muted", t: 1.0 }, { k: "membayangkan", j: "intro", c: "muted", t: 1.38 }, { k: "bahwa", j: "intro", c: "muted", t: 1.85 }, { k: "gerakan", j: "keyword", c: "cyan", t: 2.2 }, { k: "kaki", j: "keyword", c: "green", t: 2.52 }, { k: "katak", j: "keyword", c: "green", t: 2.75 }] },
+              { start: 2.95, end: 5.35, words: [{ k: "membantu", j: "intro", c: "muted", t: 3.05 }, { k: "manusia", j: "intro", c: "muted", t: 3.52 }, { k: "mengembangkan", j: "intro", c: "muted", t: 4.02 }, { k: "baterai?", j: "keyword", c: "amber", t: 4.62 }] },
+              { start: 5.74, end: 7.82, words: [{ k: "Pada", j: "intro", c: "muted", t: 5.8 }, { k: "1780-an,", j: "keyword", c: "amber", t: 6.32 }] },
+              { start: 7.82, end: 10.35, words: [{ k: "dokter", j: "intro", c: "muted", t: 7.92 }, { k: "Italia", j: "intro", c: "muted", t: 8.42 }, { k: "Luigi", j: "keyword", c: "cyan", t: 9.02 }, { k: "Galvani", j: "keyword", c: "cyan", t: 9.55 }] },
+              { start: 10.35, end: 11.88, words: [{ k: "meneliti", j: "intro", c: "muted", t: 10.42 }, { k: "kaki", j: "keyword", c: "green", t: 10.95 }, { k: "katak", j: "keyword", c: "green", t: 11.4 }] },
+              { start: 11.88, end: 13.45, words: [{ k: "yang", j: "intro", c: "muted", t: 11.92 }, { k: "telah", j: "intro", c: "muted", t: 12.18 }, { k: "dipersiapkan", j: "intro", c: "muted", t: 12.46 }, { k: "untuk", j: "intro", c: "muted", t: 12.84 }, { k: "eksperimen.", j: "keyword", c: "amber", t: 13.05 }] },
+              { start: 13.72, end: 15.65, words: [{ k: "Ia", j: "intro", c: "muted", t: 13.78 }, { k: "melihat", j: "intro", c: "muted", t: 14.1 }, { k: "ototnya", j: "keyword", c: "red", t: 14.58 }, { k: "berkontraksi", j: "keyword", c: "red", t: 15.08 }] },
+              { start: 15.65, end: 17.3, words: [{ k: "ketika", j: "intro", c: "muted", t: 15.72 }, { k: "sarafnya", j: "keyword", c: "cyan", t: 16.12 }, { k: "tersentuh", j: "intro", c: "muted", t: 16.55 }, { k: "logam", j: "keyword", c: "amber", t: 16.95 }] },
+              { start: 17.3, end: 18.78, words: [{ k: "dalam", j: "intro", c: "muted", t: 17.36 }, { k: "kondisi", j: "intro", c: "muted", t: 17.78 }, { k: "tertentu.", j: "intro", c: "muted", t: 18.22 }] },
+              { start: 19.08, end: 20.65, words: [{ k: "Galvani", j: "keyword", c: "red", t: 19.14 }, { k: "mengira", j: "intro", c: "muted", t: 19.6 }, { k: "tubuh", j: "intro", c: "muted", t: 20.02 }, { k: "hewan", j: "intro", c: "muted", t: 20.36 }] },
+              { start: 20.65, end: 22.48, words: [{ k: "menghasilkan", j: "intro", c: "muted", t: 20.72 }, { k: "listrik", j: "keyword", c: "amber", t: 21.35 }, { k: "sendiri.", j: "keyword", c: "amber", t: 21.85 }] },
+              { start: 22.68, end: 24.48, words: [{ k: "Namun,", j: "intro", c: "muted", t: 22.75 }, { k: "fisikawan", j: "intro", c: "muted", t: 23.18 }, { k: "Alessandro", j: "keyword", c: "cyan", t: 23.72 }, { k: "Volta", j: "keyword", c: "cyan", t: 24.15 }] },
+              { start: 24.48, end: 26.42, words: [{ k: "punya", j: "intro", c: "muted", t: 24.55 }, { k: "penjelasan", j: "intro", c: "muted", t: 25.05 }, { k: "berbeda:", j: "keyword", c: "amber", t: 25.68 }] },
+              { start: 26.62, end: 28.48, words: [{ k: "dua", j: "keyword", c: "cyan", t: 26.69 }, { k: "jenis", j: "keyword", c: "cyan", t: 27.02 }, { k: "logam", j: "keyword", c: "amber", t: 27.38 }, { k: "yang", j: "intro", c: "muted", t: 27.78 }, { k: "bersentuhan", j: "intro", c: "muted", t: 28.05 }] },
+              { start: 28.48, end: 30.42, words: [{ k: "dapat", j: "intro", c: "muted", t: 28.54 }, { k: "menghasilkan", j: "intro", c: "muted", t: 28.92 }, { k: "arus", j: "keyword", c: "green", t: 29.48 }, { k: "listrik.", j: "keyword", c: "green", t: 29.88 }] },
+              { start: 30.65, end: 33.4, words: [{ k: "Perdebatan", j: "intro", c: "muted", t: 30.71 }, { k: "itu", j: "intro", c: "muted", t: 31.22 }, { k: "mendorong", j: "intro", c: "muted", t: 31.58 }, { k: "Volta", j: "keyword", c: "cyan", t: 32.15 }, { k: "bereksperimen.", j: "intro", c: "muted", t: 32.6 }] },
+              { start: 33.6, end: 35.85, words: [{ k: "Pada", j: "intro", c: "muted", t: 33.67 }, { k: "1800,", j: "keyword", c: "amber", t: 34.12 }, { k: "ia", j: "intro", c: "muted", t: 34.72 }, { k: "memperkenalkan", j: "intro", c: "muted", t: 35.08 }] },
+              { start: 35.85, end: 37.65, words: [{ k: "tumpukan", j: "keyword", c: "cyan", t: 35.92 }, { k: "keping", j: "intro", c: "muted", t: 36.35 }, { k: "logam", j: "keyword", c: "amber", t: 36.78 }, { k: "berbeda", j: "intro", c: "muted", t: 37.22 }] },
+              { start: 37.65, end: 39.32, words: [{ k: "yang", j: "intro", c: "muted", t: 37.7 }, { k: "dipisahkan", j: "intro", c: "muted", t: 38.05 }, { k: "bahan", j: "keyword", c: "cyan", t: 38.55 }, { k: "lembap.", j: "keyword", c: "cyan", t: 38.88 }] },
+              { start: 39.55, end: 41.75, words: [{ k: "Alat", j: "intro", c: "muted", t: 39.6 }, { k: "ini", j: "intro", c: "muted", t: 39.95 }, { k: "menghasilkan", j: "intro", c: "muted", t: 40.28 }, { k: "arus", j: "keyword", c: "green", t: 40.82 }, { k: "terus-menerus", j: "keyword", c: "green", t: 41.22 }] },
+              { start: 41.75, end: 44.05, words: [{ k: "dan", j: "intro", c: "muted", t: 41.82 }, { k: "dikenal", j: "intro", c: "muted", t: 42.15 }, { k: "sebagai", j: "intro", c: "muted", t: 42.62 }, { k: "tumpukan", j: "keyword", c: "amber", t: 43.05 }, { k: "volta,", j: "keyword", c: "amber", t: 43.48 }] },
+              { start: 44.12, end: 45.28, words: [{ k: "baterai", j: "keyword", c: "green", t: 44.23 }, { k: "pertama.", j: "keyword", c: "green", t: 44.68 }] },
+              { start: 45.55, end: 48.45, words: [{ k: "Jadi,", j: "intro", c: "muted", t: 45.62 }, { k: "kaki", j: "keyword", c: "red", t: 46.35 }, { k: "katak", j: "keyword", c: "red", t: 46.72 }, { k: "bukan", j: "keyword", c: "red", t: 47.12 }, { k: "menemukan", j: "intro", c: "muted", t: 47.48 }, { k: "listrik,", j: "intro", c: "muted", t: 47.92 }] },
+              { start: 48.55, end: 50.85, words: [{ k: "tetapi", j: "intro", c: "muted", t: 48.63 }, { k: "membantu", j: "intro", c: "muted", t: 49.02 }, { k: "membuka", j: "intro", c: "muted", t: 49.45 }, { k: "jalan", j: "intro", c: "muted", t: 49.88 }, { k: "menuju", j: "intro", c: "muted", t: 50.24 }, { k: "baterai", j: "keyword", c: "green", t: 50.56 }] },
+              { start: 50.85, end: 53.78, words: [{ k: "yang", j: "intro", c: "muted", t: 50.95 }, { k: "kelak", j: "intro", c: "muted", t: 51.35 }, { k: "mengubah", j: "intro", c: "muted", t: 51.82 }, { k: "teknologi", j: "keyword", c: "cyan", t: 52.38 }, { k: "sehari-hari.", j: "keyword", c: "amber", t: 53.02 }] },
+            ];
+
+            var tl = gsap.timeline({ paused: true });
+            for (var g = 0; g < groups.length; g++) {
+              var grp = groups[g];
+              var grpEl = document.createElement("div");
+              grpEl.className = "cap-group";
+              grpEl.id = "cap-group-" + g;
+
+              var wordEls = [];
+              for (var w = 0; w < grp.words.length; w++) {
+                var item = grp.words[w];
+                var span = document.createElement("span");
+                span.className = "cap-word cap-word--" + item.j + " cap-color--" + item.c;
+                span.textContent = item.k;
+                grpEl.appendChild(span);
+                wordEls.push({ el: span, t: item.t });
+              }
+              band.appendChild(grpEl);
+
+              tl.set(grpEl, { visibility: "visible", opacity: 1 }, grp.start);
+              for (var k = 0; k < wordEls.length; k++) {
+                var wt = Math.max(grp.start, wordEls[k].t);
+                tl.fromTo(wordEls[k].el, { opacity: 0.18, y: 10 }, { opacity: 1, y: 0, duration: 0.16, ease: "power3.out" }, wt);
+              }
+              tl.to(grpEl, { opacity: 0, duration: 0.12, ease: "power2.in", immediateRender: false }, grp.end - 0.12);
+              tl.set(grpEl, { visibility: "hidden" }, grp.end);
+            }
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["captions"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>
