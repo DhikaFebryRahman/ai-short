@@ -12,6 +12,11 @@
 - Objek dan karakter utama bergerak halus mengikuti narasi dengan gerakan kamera (pan/zoom) dan chip label kecil di bawah aksi utama.
 - Zona aman platform vertikal: konten teks, HUD, dan caption berada di area aman agar tidak tertutup UI Shorts/Reels/TikTok.
 ## Proses (wajib)
+0. **Audit & aktivasi skills sebelum generate (WAJIB):** Sebelum menulis kode video atau naskah visual baru, periksa daftar skill di `.agents/skills/` (dan skill global yang relevan), baca `SKILL.md` dari seluruh skill yang dibutuhkan, lalu sebutkan singkat skill mana saja yang dipakai:
+   - *Kontrak & CLI HyperFrames:* `hyperframes`, `hyperframes-cli`, `hyperframes-registry`
+   - *Gaya 2D, Karakter & Animasi:* `kapsul-2d-character-rig`, `hyperframes-lottie-svg`, `style-sampling`, `awesome-opus5-5-videos`
+   - *Aset, Audio, SFX & Pemrosesan:* `media-use`, `kapsul-sfx-sound-design`, `ffmpeg`
+   - *Bila relevan dengan input user:* `figma` (desain Figma), `reverse-any-video` (tiru video referensi), `motion-graphics-by-nalarka` (alur naskah/VO), `remotion-to-hyperframes` (porting kode lama)
 1. Ukur durasi & jeda voiceover (`ffmpeg` / `ffprobe`); selaraskan batas scene dan caption dengan jeda kalimat.
 2. Bangun atau edit komposisi di `index.html` + `compositions/`, jalankan `npx hyperframes check --json` dan periksa snapshot frame dengan `npx hyperframes snapshot --at ...` sebelum lanjut.
 3. Jalankan Studio Preview (`npx hyperframes preview --background`) untuk review dan tunggu persetujuan saya sebelum render MP4 penuh. Gunakan `npx hyperframes preview --stop` saat review selesai.
