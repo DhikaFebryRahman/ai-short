@@ -1,0 +1,968 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 438 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/dkaary/Documents/Code/ai-short/episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/compositions/scene-04.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split this sub-composition further into smaller .html files, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      },
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 354 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/dkaary/Documents/Code/ai-short/episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/compositions/scene-05.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split this sub-composition further into smaller .html files, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      }
+    ],
+    "filesScanned": 9
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 13,
+    "infoCount": 0,
+    "findings": [
+      {
+        "selector": "#s1-pill-1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-01.html",
+        "bbox": {
+          "x": 356.63,
+          "y": 1257,
+          "width": 305.73,
+          "height": 37
+        },
+        "time": 3,
+        "rect": {
+          "left": 356.63,
+          "top": 1257,
+          "right": 662.36,
+          "bottom": 1294,
+          "width": 305.73,
+          "height": 37
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "UBUR-UBUR ABADI?",
+        "message": "<span> \"UBUR-UBUR ABADI?\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3,
+        "lastSeen": 3,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3
+        ]
+      },
+      {
+        "selector": "div.hud-series",
+        "dataAttributes": {
+          "data-var-text": "series_label"
+        },
+        "sourceFile": "compositions/hud.html",
+        "bbox": {
+          "x": 36,
+          "y": 85,
+          "width": 209.8,
+          "height": 31
+        },
+        "time": 3,
+        "rect": {
+          "left": 36,
+          "top": 85,
+          "right": 245.8,
+          "bottom": 116,
+          "width": 209.8,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "KAPSUL FAKTA",
+        "message": "<div> \"KAPSUL FAKTA\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3,
+        "lastSeen": 51,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          3,
+          9,
+          15,
+          21,
+          27,
+          33,
+          39,
+          45,
+          51
+        ]
+      },
+      {
+        "selector": "#hud-counter",
+        "dataAttributes": {},
+        "sourceFile": "compositions/hud.html",
+        "bbox": {
+          "x": 955.91,
+          "y": 85,
+          "width": 88.09,
+          "height": 31
+        },
+        "time": 3,
+        "rect": {
+          "left": 955.91,
+          "top": 85,
+          "right": 1044,
+          "bottom": 116,
+          "width": 88.09,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "01 / 05",
+        "message": "<div> \"01 / 05\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3,
+        "lastSeen": 51,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          3,
+          9,
+          15,
+          21,
+          27,
+          33,
+          39,
+          45,
+          51
+        ]
+      },
+      {
+        "selector": "#captions",
+        "dataAttributes": {
+          "data-composition-file": "compositions/captions.html",
+          "data-composition-id": "captions",
+          "data-track-kind": "captions",
+          "data-track-index": "3",
+          "data-start": "0",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-hf-authored-duration": "54"
+        },
+        "sourceFile": "compositions/captions.html",
+        "bbox": {
+          "x": 139.19,
+          "y": 1388.72,
+          "width": 717.61,
+          "height": 61
+        },
+        "time": 3,
+        "rect": {
+          "left": 139.19,
+          "top": 1388.72,
+          "right": 856.8,
+          "bottom": 1449.72,
+          "width": 717.61,
+          "height": 61
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Ada ubur-ubur yang dijuluki abadi",
+        "message": "<div> \"Ada ubur-ubur yang dijuluki abadi\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3,
+        "lastSeen": 45,
+        "occurrences": 7,
+        "heldMs": 0,
+        "times": [
+          3,
+          15,
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      {
+        "selector": "#s2-pointers > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 781.41,
+          "y": 521,
+          "width": 107.18,
+          "height": 31
+        },
+        "time": 9,
+        "rect": {
+          "left": 781.41,
+          "top": 521,
+          "right": 888.59,
+          "bottom": 552,
+          "width": 107.18,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "LONCENG",
+        "message": "<text> \"LONCENG\" is outside the safe area: YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 9,
+        "lastSeen": 9,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9
+        ]
+      },
+      {
+        "selector": "#s2-pill-1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 348.95,
+          "y": 1257.5,
+          "width": 321.08,
+          "height": 36
+        },
+        "time": 9,
+        "rect": {
+          "left": 348.95,
+          "top": 1257.5,
+          "right": 670.03,
+          "bottom": 1293.5,
+          "width": 321.08,
+          "height": 36
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TURRITOPSIS DOHRNII",
+        "message": "<span> \"TURRITOPSIS DOHRNII\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 9,
+        "lastSeen": 9,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9
+        ]
+      },
+      {
+        "selector": "#s2-pill-3 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 327.2,
+          "y": 1257.5,
+          "width": 364.58,
+          "height": 36
+        },
+        "time": 15,
+        "rect": {
+          "left": 327.2,
+          "top": 1257.5,
+          "right": 691.78,
+          "bottom": 1293.5,
+          "width": 364.58,
+          "height": 36
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TUBUH MULAI MENYUSUT",
+        "message": "<span> \"TUBUH MULAI MENYUSUT\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 15,
+        "lastSeen": 15,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          15
+        ]
+      },
+      {
+        "selector": "#s2-pill-4 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 260.09,
+          "y": 1257.5,
+          "width": 498.8,
+          "height": 36
+        },
+        "time": 21,
+        "rect": {
+          "left": 260.09,
+          "top": 1257.5,
+          "right": 758.89,
+          "bottom": 1293.5,
+          "width": 498.8,
+          "height": 36
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TAHAP KISTA • KONDISI TERTENTU",
+        "message": "<span> \"TAHAP KISTA • KONDISI TERTENTU\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 21,
+        "lastSeen": 21,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          21
+        ]
+      },
+      {
+        "selector": "#s3-pill-2 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 356.23,
+          "y": 1257.5,
+          "width": 306.52,
+          "height": 36
+        },
+        "time": 27,
+        "rect": {
+          "left": 356.23,
+          "top": 1257.5,
+          "right": 662.75,
+          "bottom": 1293.5,
+          "width": 306.52,
+          "height": 36
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TAHAP AWAL SIKLUS",
+        "message": "<span> \"TAHAP AWAL SIKLUS\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 27,
+        "lastSeen": 27,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          27
+        ]
+      },
+      {
+        "selector": "div.s4-kicker",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 370.17,
+          "y": 276,
+          "width": 255.64,
+          "height": 28
+        },
+        "time": 33,
+        "rect": {
+          "left": 370.17,
+          "top": 276,
+          "right": 625.81,
+          "bottom": 304,
+          "width": 255.64,
+          "height": 28
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "MEKANISME SELULER",
+        "message": "<div> \"MEKANISME SELULER\" is outside the safe area: YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 33,
+        "lastSeen": 39,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          33,
+          39
+        ]
+      },
+      {
+        "selector": "#s4-pill-1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 346.92,
+          "y": 1259.5,
+          "width": 328.14,
+          "height": 33
+        },
+        "time": 33,
+        "rect": {
+          "left": 346.92,
+          "top": 1259.5,
+          "right": 675.06,
+          "bottom": 1292.5,
+          "width": 328.14,
+          "height": 33
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TRANSDIFERENSIASI SEL",
+        "message": "<span> \"TRANSDIFERENSIASI SEL\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 33,
+        "lastSeen": 33,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          33
+        ]
+      },
+      {
+        "selector": "#s4-pill-3 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 300.36,
+          "y": 1259.5,
+          "width": 421.28,
+          "height": 33
+        },
+        "time": 39,
+        "rect": {
+          "left": 300.36,
+          "top": 1259.5,
+          "right": 721.64,
+          "bottom": 1292.5,
+          "width": 421.28,
+          "height": 33
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "STUDI REGENERASI & PENUAAN",
+        "message": "<span> \"STUDI REGENERASI & PENUAAN\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 39,
+        "lastSeen": 39,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          39
+        ]
+      },
+      {
+        "selector": "#s5-pill-1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 306.95,
+          "y": 1259.5,
+          "width": 408.08,
+          "height": 33
+        },
+        "time": 45,
+        "rect": {
+          "left": 306.95,
+          "top": 1259.5,
+          "right": 715.03,
+          "bottom": 1292.5,
+          "width": 408.08,
+          "height": 33
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TETAP BISA DIMANGSA / MATI",
+        "message": "<span> \"TETAP BISA DIMANGSA / MATI\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 45,
+        "lastSeen": 45,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          45
+        ]
+      }
+    ],
+    "duration": 54,
+    "samples": [
+      3,
+      9,
+      15,
+      21,
+      27,
+      33,
+      39,
+      45,
+      51
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 13,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      3,
+      15,
+      27,
+      39,
+      51
+    ],
+    "checked": 46,
+    "passed": 46
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 2 text elements stay under it for 0.5 s or more, the smallest \"KAPSUL FAKTA\" at 22 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "KAPSUL FAKTA",
+        "selector": "div.hud-series",
+        "dataAttributes": {},
+        "sourceFile": "compositions/hud.html",
+        "bbox": {
+          "x": 36,
+          "y": 85,
+          "width": 209.8,
+          "height": 31
+        },
+        "time": 0,
+        "times": [
+          0,
+          0
+        ],
+        "fontPx": 22,
+        "floorPx": 28,
+        "seconds": 54,
+        "elements": [
+          {
+            "selector": "div.hud-series",
+            "text": "KAPSUL FAKTA",
+            "fontPx": 22,
+            "time": 0,
+            "seconds": 54
+          },
+          {
+            "selector": "#hud-counter",
+            "text": "01 / 05",
+            "fontPx": 22,
+            "time": 0,
+            "seconds": 54
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 2 text elements stay under it for 0.5 s or more, the smallest \"UBUR-UBUR ABADI?\" at 27 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "UBUR-UBUR ABADI?",
+        "selector": "#s1-pill-1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-01.html",
+        "bbox": {
+          "x": 356.63,
+          "y": 1257.09,
+          "width": 305.73,
+          "height": 37
+        },
+        "time": 1.375,
+        "times": [
+          1.375,
+          4.125
+        ],
+        "fontPx": 27,
+        "floorPx": 28,
+        "seconds": 2.75,
+        "elements": [
+          {
+            "selector": "#s1-pill-1 > span:nth-of-type(2)",
+            "text": "UBUR-UBUR ABADI?",
+            "fontPx": 27,
+            "time": 1.375,
+            "seconds": 2.75
+          },
+          {
+            "selector": "#s1-pill-2 > span:nth-of-type(2)",
+            "text": "BISA KEMBALI MUDA",
+            "fontPx": 27,
+            "time": 4.125,
+            "seconds": 2.375
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 6 text elements stay under it for 0.5 s or more, the smallest \"LONCENG\" at 22 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "LONCENG",
+        "selector": "#s2-pointers > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 783.27,
+          "y": 519.55,
+          "width": 108,
+          "height": 31.23
+        },
+        "time": 7.125,
+        "times": [
+          6.875,
+          7.125,
+          7.125,
+          9.375,
+          13.125,
+          16.875
+        ],
+        "fontPx": 22,
+        "floorPx": 28,
+        "seconds": 1.875,
+        "elements": [
+          {
+            "selector": "#s2-pointers > text:nth-of-type(1)",
+            "text": "LONCENG",
+            "fontPx": 22,
+            "time": 7.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "#s2-pointers > text:nth-of-type(2)",
+            "text": "TENTAKEL",
+            "fontPx": 22,
+            "time": 7.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "#s2-pill-1 > span:nth-of-type(2)",
+            "text": "TURRITOPSIS DOHRNII",
+            "fontPx": 26,
+            "time": 6.875,
+            "seconds": 2.375
+          },
+          {
+            "selector": "#s2-pill-2 > span:nth-of-type(2)",
+            "text": "TERLUKA / KONDISI BURUK",
+            "fontPx": 26,
+            "time": 9.375,
+            "seconds": 3.625
+          },
+          {
+            "selector": "#s2-pill-3 > span:nth-of-type(2)",
+            "text": "TUBUH MULAI MENYUSUT",
+            "fontPx": 26,
+            "time": 13.125,
+            "seconds": 3.625
+          },
+          {
+            "selector": "#s2-pill-4 > span:nth-of-type(2)",
+            "text": "TAHAP KISTA • KONDISI TERTENTU",
+            "fontPx": 26,
+            "time": 16.875,
+            "seconds": 5
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 6 text elements stay under it for 0.5 s or more, the smallest \"KISTA\" at 22 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "KISTA",
+        "selector": "#s3-step-1",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 219.69,
+          "y": 291.43,
+          "width": 72.89,
+          "height": 31
+        },
+        "time": 22.125,
+        "times": [
+          22.125,
+          22.125,
+          22.125,
+          22.125,
+          25.875,
+          28.375
+        ],
+        "fontPx": 22,
+        "floorPx": 28,
+        "seconds": 8.875,
+        "elements": [
+          {
+            "selector": "#s3-step-1",
+            "text": "KISTA",
+            "fontPx": 22,
+            "time": 22.125,
+            "seconds": 8.875
+          },
+          {
+            "selector": "#s3-step-2",
+            "text": "POLIP",
+            "fontPx": 22,
+            "time": 22.125,
+            "seconds": 8.875
+          },
+          {
+            "selector": "#s3-step-3",
+            "text": "UBUR-UBUR BARU",
+            "fontPx": 22,
+            "time": 22.125,
+            "seconds": 8.875
+          },
+          {
+            "selector": "#s3-pill-1 > span:nth-of-type(2)",
+            "text": "KISTA -> POLIP",
+            "fontPx": 26,
+            "time": 22.125,
+            "seconds": 3.625
+          },
+          {
+            "selector": "#s3-pill-2 > span:nth-of-type(2)",
+            "text": "TAHAP AWAL SIKLUS",
+            "fontPx": 26,
+            "time": 25.875,
+            "seconds": 2.375
+          },
+          {
+            "selector": "#s3-pill-3 > span:nth-of-type(2)",
+            "text": "UBUR-UBUR BARU TERLEPAS",
+            "fontPx": 26,
+            "time": 28.375,
+            "seconds": 2.625
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 8 text elements stay under it for 0.5 s or more, the smallest \"Sel otot / jaringan lama\" at 19 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Sel otot / jaringan lama",
+        "selector": "#s4-cell-labels > div:nth-of-type(1) > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 169.81,
+          "y": 943,
+          "width": 172.38,
+          "height": 56
+        },
+        "time": 34.25,
+        "times": [
+          31.25,
+          31.375,
+          34.25,
+          34.25,
+          34.25,
+          34.25,
+          34.25,
+          37.5
+        ],
+        "fontPx": 19,
+        "floorPx": 28,
+        "seconds": 3,
+        "elements": [
+          {
+            "selector": "#s4-cell-labels > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Sel otot / jaringan lama",
+            "fontPx": 19,
+            "time": 34.25,
+            "seconds": 3
+          },
+          {
+            "selector": "div.s4-cell-tag.is-new > span:nth-of-type(1)",
+            "text": "Membentuk jaringan baru",
+            "fontPx": 19,
+            "time": 34.25,
+            "seconds": 3
+          },
+          {
+            "selector": "div.s4-kicker",
+            "text": "MEKANISME SELULER",
+            "fontPx": 20,
+            "time": 31.25,
+            "seconds": 9.75
+          },
+          {
+            "selector": "#s4-pill-1 > span:nth-of-type(2)",
+            "text": "TRANSDIFERENSIASI SEL",
+            "fontPx": 24,
+            "time": 31.375,
+            "seconds": 2.625
+          },
+          {
+            "selector": "#s4-pill-2 > span:nth-of-type(2)",
+            "text": "PERUBAHAN IDENTITAS SEL",
+            "fontPx": 24,
+            "time": 34.25,
+            "seconds": 3
+          },
+          {
+            "selector": "#s4-pill-3 > span:nth-of-type(2)",
+            "text": "STUDI REGENERASI & PENUAAN",
+            "fontPx": 24,
+            "time": 37.5,
+            "seconds": 3.5
+          },
+          {
+            "selector": "#s4-cell-labels > div:nth-of-type(1) > strong:nth-of-type(1)",
+            "text": "SEL MATANG",
+            "fontPx": 26,
+            "time": 34.25,
+            "seconds": 3
+          },
+          {
+            "selector": "div.s4-cell-tag.is-new > strong:nth-of-type(1)",
+            "text": "SEL JENIS BARU",
+            "fontPx": 26,
+            "time": 34.25,
+            "seconds": 3
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 7 text elements stay under it for 0.5 s or more, the smallest \"TURRITOPSIS DOHRNII\" at 20 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "TURRITOPSIS DOHRNII",
+        "selector": "#s5-cycle-title > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 368.8,
+          "y": 341.04,
+          "width": 258.39,
+          "height": 28
+        },
+        "time": 49.5,
+        "times": [
+          41.375,
+          49.5,
+          49.625,
+          49.625,
+          49.625,
+          49.625,
+          49.75
+        ],
+        "fontPx": 20,
+        "floorPx": 28,
+        "seconds": 4.5,
+        "elements": [
+          {
+            "selector": "#s5-cycle-title > span:nth-of-type(1)",
+            "text": "TURRITOPSIS DOHRNII",
+            "fontPx": 20,
+            "time": 49.5,
+            "seconds": 4.5
+          },
+          {
+            "selector": "#s5-stage-labels > div:nth-of-type(1)",
+            "text": "MEDUSA DEWASA",
+            "fontPx": 20,
+            "time": 49.625,
+            "seconds": 4.375
+          },
+          {
+            "selector": "div.s5-node-label.is-amber",
+            "text": "KISTA",
+            "fontPx": 20,
+            "time": 49.625,
+            "seconds": 4.375
+          },
+          {
+            "selector": "div.s5-node-label.is-green",
+            "text": "POLIP",
+            "fontPx": 20,
+            "time": 49.625,
+            "seconds": 4.375
+          },
+          {
+            "selector": "#s5-stage-labels > div:nth-of-type(4)",
+            "text": "UBUR-UBUR BARU",
+            "fontPx": 20,
+            "time": 49.625,
+            "seconds": 4.375
+          },
+          {
+            "selector": "#s5-pill-1 > span:nth-of-type(2)",
+            "text": "TETAP BISA DIMANGSA / MATI",
+            "fontPx": 24,
+            "time": 41.375,
+            "seconds": 8
+          },
+          {
+            "selector": "#s5-pill-2 > span:nth-of-type(2)",
+            "text": "MAMPU MEMBALIK SIKLUS HIDUP",
+            "fontPx": 24,
+            "time": 49.75,
+            "seconds": 4.25
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 432
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

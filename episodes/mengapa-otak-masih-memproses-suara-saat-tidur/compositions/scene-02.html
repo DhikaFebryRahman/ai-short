@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 02 — Kepala, Telinga, Otak &amp; Penyaringan Sinyal</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-02" data-duration="14.58" data-fps="30">
+        <style>
+          #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", sans-serif; color: #f8fafc; }
+          .s2-stage { position: absolute; inset: 0; opacity: 0; }
+          .s2-svg { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: visible; }
+          .s2-header { position: absolute; top: 204px; left: 140px; width: 800px; text-align: center; }
+          .s2-eyebrow {
+            display: inline-block; padding: 7px 22px; border-radius: 999px;
+            background: rgba(11, 22, 48, 0.92); border: 2px solid #38bdf8; color: #7dd3fc;
+            font-size: 20px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;
+          }
+          .s2-title { font-size: 44px; font-weight: 900; line-height: 1.1; color: #f8fafc; text-shadow: 0 4px 18px rgba(2,6,23,0.9); }
+          .s2-pill-bar { position: absolute; top: 1245px; left: 130px; width: 820px; height: 62px; display: flex; align-items: center; justify-content: center; }
+          .s2-pill {
+            position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 12px 24px;
+            border-radius: 999px; background: rgba(11, 22, 48, 0.94); border: 2.5px solid #38bdf8;
+            box-shadow: 0 10px 26px rgba(2, 6, 23, 0.55); color: #7dd3fc;
+            font-size: 22px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0;
+          }
+          .s2-pill.is-amber { border-color: #fbbf24; color: #fde68a; }
+          .s2-pill.is-green { border-color: #34d399; color: #6ee7b7; }
+          .s2-pill-dot { width: 14px; height: 14px; border-radius: 50%; background: #38bdf8; }
+          .s2-pill.is-amber .s2-pill-dot { background: #fbbf24; }
+          .s2-pill.is-green .s2-pill-dot { background: #34d399; }
+        </style>
+
+        <div id="s2-clip" class="s2-stage clip" data-start="0" data-duration="14.58" data-track-index="0">
+          <svg class="s2-svg" viewBox="0 0 1080 1920" fill="none">
+            <defs>
+              <linearGradient id="s2HeadGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#334e85" />
+                <stop offset="1" stop-color="#1e3461" />
+              </linearGradient>
+              <linearGradient id="s2BrainGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#fda4af" />
+                <stop offset="0.6" stop-color="#f472b6" />
+                <stop offset="1" stop-color="#fb7185" />
+              </linearGradient>
+              <linearGradient id="s2Deck" x1="540" y1="1540" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#142852" />
+                <stop offset="0.5" stop-color="#0b1636" />
+                <stop offset="1" stop-color="#060c1f" />
+              </linearGradient>
+            </defs>
+
+            <!-- PART 1: Clear Detailed Human Side-Profile Head + Ear + Detailed Brain -->
+            <g id="s2-pathway-stage">
+              <g transform="translate(565 735)">
+                <g id="s2-head-group">
+                  <!-- Clear Anatomical Human Head Side Profile (forehead, nose, lips, chin, neck, hair silhouette) -->
+                  <path d="M-125 315 L-125 220 C-178 188 -212 108 -212 -18 C-212 -175 -112 -272 28 -272 C158 -272 232 -182 238 -75 L258 -18 C264 -6 254 8 238 10 L240 34 C246 42 238 50 228 54 L232 76 C236 90 220 102 198 106 L192 146 C188 185 152 210 92 214 L78 315 Z" fill="url(#s2HeadGrad)" stroke="#93c5fd" stroke-width="5.5" stroke-linejoin="round" />
+                  <!-- Hair Crown Accent -->
+                  <path d="M-212 -22 C-222 -180 -114 -282 32 -282 C142 -282 212 -218 230 -138 C165 -192 52 -212 -62 -176 C-138 -150 -168 -74 -158 18 C-185 16 -208 2 -212 -22 Z" fill="#0f172a" stroke="#7dd3fc" stroke-width="4" />
+                  <!-- Sleeping Closed Eye + Eyelashes + Eyebrow -->
+                  <path d="M134 -84 Q172 -102 204 -84" stroke="#cbd5e1" stroke-width="5" stroke-linecap="round" fill="none" />
+                  <path d="M138 -48 Q168 -30 198 -48" stroke="#f8fafc" stroke-width="5" stroke-linecap="round" fill="none" />
+
+                  <!-- Detailed Outer Ear + Ear Canal + Eardrum + Cochlea -->
+                  <g transform="translate(-85 48)">
+                    <ellipse cx="0" cy="0" rx="34" ry="48" fill="#475569" stroke="#fbbf24" stroke-width="4.5" />
+                    <path d="M-10 -22 C14 -24 16 24 -10 22" stroke="#fde68a" stroke-width="4" stroke-linecap="round" fill="none" />
+                    <!-- Auditory Canal & Vibrating Eardrum -->
+                    <path d="M6 -4 L54 -14" stroke="#fde68a" stroke-width="8" stroke-linecap="round" opacity="0.55" />
+                    <ellipse id="s2-eardrum" cx="56" cy="-14" rx="5" ry="12" fill="#fbbf24" />
+                    <!-- Tiny Cochlea Spiral -->
+                    <path d="M62 -14 C74 -24 84 -10 72 0 C64 6 58 -4 64 -10" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" fill="none" />
+                  </g>
+
+                  <!-- CLEAR DETAILED 2D BRAIN (Folded Cerebral Lobes + Cerebellum + Brainstem) -->
+                  <g transform="translate(8 -78)">
+                    <!-- Brainstem -->
+                    <path d="M-34 84 C-32 118 -20 144 -6 154 L14 150 C6 130 6 108 10 82 Z" fill="#fda4af" stroke="#fef3c7" stroke-width="3" />
+                    <!-- Cerebellum -->
+                    <ellipse cx="-66" cy="72" rx="44" ry="28" fill="#fb7185" stroke="#fef3c7" stroke-width="3.5" />
+                    <path d="M-98 72 L-34 72 M-90 60 L-42 60 M-90 84 L-42 84" stroke="#831843" stroke-width="2.5" opacity="0.65" />
+                    <!-- Main Folded Cerebrum -->
+                    <path d="M-136 16 C-146 -68 -74 -128 24 -128 C122 -128 168 -56 150 26 C132 96 52 104 -18 96 C-88 90 -130 64 -136 16 Z" fill="url(#s2BrainGrad)" stroke="#fef3c7" stroke-width="4.5" />
+                    <!-- Rich Gyri & Sulci Brain Folds -->
+                    <path d="M-104 -26 Q-58 -68 -8 -36 T92 -42 T132 -12 M-106 14 Q-54 -14 2 18 T112 10 M-58 -88 Q-12 -52 -24 22 T12 72 M42 -96 Q68 -48 44 26" stroke="#831843" stroke-width="4.2" stroke-linecap="round" fill="none" />
+                    <!-- Glowing Auditory Cortex Highlight -->
+                    <circle id="s2-cortex-glow" cx="-22" cy="18" r="36" fill="#fbbf24" fill-opacity="0.32" stroke="#fef08a" stroke-width="4" />
+                    <circle id="s2-cortex-ring" cx="-22" cy="18" r="24" fill="none" stroke="#38bdf8" stroke-width="3.5" opacity="0" />
+                    <rect x="-66" y="-44" width="88" height="24" rx="12" fill="#09132b" stroke="#fde68a" stroke-width="2" />
+                    <text x="-22" y="-27" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="14" fill="#fde68a">KORTEKS</text>
+                  </g>
+
+                  <!-- Auditory Neural Pathway from Cochlea (-18, 34) -> Auditory Cortex (-14, -60) -->
+                  <path id="s2-nerve-path" d="M-18 34 C-18 8 -16 -24 -14 -60" stroke="#34d399" stroke-width="7.5" stroke-linecap="round" stroke-dasharray="110" stroke-dashoffset="110" />
+                  <circle id="s2-sig-1" cx="-18" cy="34" r="10" fill="#fbbf24" opacity="0" />
+                  <circle id="s2-sig-2" cx="-18" cy="34" r="9" fill="#38bdf8" opacity="0" />
+                </g>
+              </g>
+
+              <!-- Incoming Acoustic Waves approaching Ear from Left -->
+              <g id="s2-in-waves">
+                <path id="s2-w1" d="M190 725 Q225 782 190 840" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" fill="none" />
+                <path id="s2-w2" d="M245 710 Q285 782 245 854" stroke="#7dd3fc" stroke-width="5.5" stroke-linecap="round" fill="none" />
+                <path id="s2-w3" d="M300 698 Q342 782 300 866" stroke="#fbbf24" stroke-width="5" stroke-linecap="round" fill="none" />
+              </g>
+            </g>
+
+            <!-- PART 2: Brain Filtering Illustration (NOT an off-switch) -->
+            <g id="s2-filter-stage" opacity="0">
+              <rect x="145" y="425" width="790" height="585" rx="34" fill="#091632" fill-opacity="0.94" stroke="#38bdf8" stroke-width="4" />
+              <text x="540" y="476" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="22" fill="#fde68a">PENYARINGAN RANGSANGAN (BUKAN SAKELAR MATI)</text>
+
+              <g transform="translate(520 715)">
+                <rect id="s2-gate-box" x="-24" y="-185" width="48" height="370" rx="24" fill="#0f254f" stroke="#34d399" stroke-width="4" stroke-dasharray="14 8" />
+                <text x="0" y="-202" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#6ee7b7">FILTER OTAK</text>
+              </g>
+
+              <g transform="translate(0 585)">
+                <path d="M195 0 L485 0" stroke="#fbbf24" stroke-width="6" stroke-dasharray="12 8" />
+                <path d="M555 0 L740 0" stroke="#fbbf24" stroke-width="7" stroke-linecap="round" />
+                <circle id="s2-pass-orb" cx="215" cy="0" r="14" fill="#fbbf24" stroke="#fef3c7" stroke-width="3" />
+                <circle cx="805" cy="0" r="46" fill="#0d1e42" stroke="#fbbf24" stroke-width="4.5" />
+                <text x="805" y="6" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="16" fill="#fde68a">RESPON</text>
+              </g>
+
+              <g transform="translate(0 745)">
+                <path d="M195 0 L485 0" stroke="#38bdf8" stroke-width="5" stroke-dasharray="10 8" opacity="0.7" />
+                <path d="M555 0 L740 0" stroke="#38bdf8" stroke-width="3" stroke-dasharray="6 10" opacity="0.28" />
+                <circle id="s2-dim-orb" cx="215" cy="0" r="11" fill="#38bdf8" opacity="0.75" />
+                <circle cx="805" cy="0" r="40" fill="#0d1e42" stroke="#64748b" stroke-width="3.5" />
+                <text x="805" y="6" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="15" fill="#94a3b8">DIREDAM</text>
+              </g>
+
+              <g transform="translate(0 890)">
+                <path d="M195 0 L485 0" stroke="#7dd3fc" stroke-width="5" stroke-dasharray="10 8" opacity="0.65" />
+                <path d="M555 0 L740 0" stroke="#7dd3fc" stroke-width="2.5" stroke-dasharray="6 10" opacity="0.24" />
+                <circle id="s2-dim-orb2" cx="215" cy="0" r="10" fill="#7dd3fc" opacity="0.7" />
+                <circle cx="805" cy="0" r="38" fill="#0d1e42" stroke="#64748b" stroke-width="3.5" />
+                <text x="805" y="6" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="15" fill="#94a3b8">DISARING</text>
+              </g>
+            </g>
+
+            <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920): Awake vs Asleep Comparison Console -->
+            <g id="s2-foreground">
+              <rect x="0" y="1560" width="1080" height="365" fill="url(#s2Deck)" stroke="#38bdf8" stroke-width="4" />
+              <g transform="translate(540 1658)">
+                <rect x="-320" y="-54" width="640" height="108" rx="24" fill="#09132b" stroke="#38bdf8" stroke-width="3.5" />
+                <text x="-285" y="-14" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#7dd3fc">TERJAGA</text>
+                <rect x="-130" y="-28" width="405" height="20" rx="10" fill="#1e293b" />
+                <rect x="-130" y="-28" width="380" height="20" rx="10" fill="#38bdf8" />
+                <text x="-285" y="34" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#fde68a">SAAT TIDUR</text>
+                <rect x="-130" y="18" width="405" height="20" rx="10" fill="#1e293b" />
+                <rect id="s2-sleep-bar" x="-130" y="18" width="210" height="20" rx="10" fill="#fbbf24" />
+              </g>
+            </g>
+          </svg>
+
+          <div class="s2-header">
+            <div class="s2-eyebrow">SISTEM PENDENGARAN</div>
+            <h2 class="s2-title">Hubungan Tidak Diputus Total</h2>
+          </div>
+
+          <div class="s2-pill-bar">
+            <div class="s2-pill" id="s2-pill-1"><span class="s2-pill-dot"></span><span>SUARA MASIH DAPAT MASUK</span></div>
+            <div class="s2-pill is-amber" id="s2-pill-2"><span class="s2-pill-dot"></span><span>SISTEM PENDENGARAN AKTIF</span></div>
+            <div class="s2-pill is-green" id="s2-pill-3"><span class="s2-pill-dot"></span><span>OTAK MENYARING RANGSANGAN</span></div>
+            <div class="s2-pill" id="s2-pill-4"><span class="s2-pill-dot"></span><span>TIDAK SEPENUHNYA DIMATIKAN</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+            var stage = q("#s2-clip"), pathStage = q("#s2-pathway-stage"), headGroup = q("#s2-head-group");
+            var nervePath = q("#s2-nerve-path"), sig1 = q("#s2-sig-1"), sig2 = q("#s2-sig-2");
+            var w1 = q("#s2-w1"), w2 = q("#s2-w2"), w3 = q("#s2-w3"), eardrum = q("#s2-eardrum");
+            var cortex = q("#s2-cortex-glow"), cRing = q("#s2-cortex-ring");
+            var filterStage = q("#s2-filter-stage"), gateBox = q("#s2-gate-box"), passOrb = q("#s2-pass-orb"), dimOrb1 = q("#s2-dim-orb"), dimOrb2 = q("#s2-dim-orb2");
+            var sBar = q("#s2-sleep-bar");
+            var p1 = q("#s2-pill-1"), p2 = q("#s2-pill-2"), p3 = q("#s2-pill-3"), p4 = q("#s2-pill-4");
+
+            gsap.set(stage, { opacity: 0 });
+            gsap.set(headGroup, { scale: 0.92, transformOrigin: "50% 50%" });
+            gsap.set(filterStage, { opacity: 0, scale: 0.94, svgOrigin: "540 715" });
+
+            var len = nervePath.getTotalLength();
+            gsap.set(nervePath, { strokeDasharray: len, strokeDashoffset: len });
+            var sp1 = { t: 0 }, sp2 = { t: 0 };
+            function moveSig(obj, el) {
+              var pt = nervePath.getPointAtLength(obj.t * len);
+              gsap.set(el, { attr: { cx: pt.x.toFixed(1), cy: pt.y.toFixed(1) }, opacity: obj.t > 0.02 && obj.t < 0.98 ? 1 : 0 });
+            }
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(stage, { opacity: 1, duration: 0.48, ease: "power2.out" }, 0)
+              .fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 0.45)
+              .fromTo([w1, w2, w3], { x: -30, opacity: 0.95 }, { x: 75, opacity: 0.2, duration: 1.0, stagger: 0.15, repeat: 5, ease: "power2.out" }, 0.35)
+              .to(eardrum, { scaleX: 1.5, scaleY: 1.15, transformOrigin: "50% 50%", duration: 0.25, repeat: 18, yoyo: true }, 1.2)
+              .to(headGroup, { scale: 1.07, x: 34, duration: 4.5, ease: "power2.inOut" }, 1.0)
+              .to(nervePath, { strokeDashoffset: 0, duration: 1.5, ease: "power2.out" }, 2.1)
+              .to(sp1, { t: 1, duration: 1.25, repeat: 3, ease: "power1.inOut", onUpdate: function () { moveSig(sp1, sig1); } }, 2.2)
+              .to(sp2, { t: 1, duration: 1.25, repeat: 3, ease: "power1.inOut", onUpdate: function () { moveSig(sp2, sig2); } }, 2.8)
+              .to(cortex, { fillOpacity: 0.85, scale: 1.18, transformOrigin: "50% 50%", duration: 0.5, repeat: 6, yoyo: true, ease: "sine.inOut" }, 3.1)
+              .fromTo(cRing, { attr: { r: 22 }, opacity: 0.9 }, { attr: { r: 62 }, opacity: 0, duration: 1.1, repeat: 3, ease: "power2.out" }, 3.2)
+              .to(sBar, { attr: { width: 255 }, duration: 2.2, repeat: 2, yoyo: true, ease: "sine.inOut" }, 1.0)
+              .to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 3.8)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 4.0);
+
+            tl.to(pathStage, { opacity: 0, scale: 0.92, svgOrigin: "540 715", duration: 0.5, ease: "power2.in", immediateRender: false }, 6.7)
+              .to(filterStage, { opacity: 1, scale: 1, duration: 0.55, ease: "power2.out", immediateRender: false }, 7.0)
+              .to(gateBox, { strokeWidth: 6, duration: 0.7, repeat: 8, yoyo: true }, 7.1)
+              .to(p2, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 7.2)
+              .fromTo(p3, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 7.4)
+              .fromTo(passOrb, { attr: { cx: 215 }, opacity: 1 }, { attr: { cx: 745 }, opacity: 0.95, duration: 1.65, repeat: 3, ease: "power1.inOut" }, 7.3)
+              .fromTo(dimOrb1, { attr: { cx: 215 }, opacity: 0.85 }, { attr: { cx: 488 }, opacity: 0.15, duration: 1.5, repeat: 3, ease: "power2.out" }, 7.4)
+              .fromTo(dimOrb2, { attr: { cx: 215 }, opacity: 0.85 }, { attr: { cx: 488 }, opacity: 0.12, duration: 1.6, repeat: 3, ease: "power2.out" }, 7.6)
+              .to(p3, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 10.7)
+              .fromTo(p4, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 10.9)
+              .to(stage, { opacity: 0, duration: 0.48, ease: "power2.inOut", immediateRender: false }, 14.10);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-02"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 04 — Tidur Dalam N3 &amp; Animasi Otak + Zzz</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-04" data-duration="14.98" data-fps="30">
+        <style>
+          #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", sans-serif; color: #f8fafc; }
+          .s4-stage { position: absolute; inset: 0; opacity: 0; }
+          .s4-svg { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: visible; }
+          .s4-header { position: absolute; top: 204px; left: 140px; width: 800px; text-align: center; }
+          .s4-eyebrow {
+            display: inline-block; padding: 7px 22px; border-radius: 999px;
+            background: rgba(11, 22, 48, 0.92); border: 2px solid #fbbf24; color: #fde68a;
+            font-size: 20px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;
+          }
+          .s4-title { font-size: 44px; font-weight: 900; line-height: 1.1; color: #f8fafc; text-shadow: 0 4px 18px rgba(2,6,23,0.9); }
+          .s4-pill-bar { position: absolute; top: 1245px; left: 130px; width: 820px; height: 62px; display: flex; align-items: center; justify-content: center; }
+          .s4-pill {
+            position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 12px 24px;
+            border-radius: 999px; background: rgba(11, 22, 48, 0.94); border: 2.5px solid #38bdf8;
+            box-shadow: 0 10px 26px rgba(2, 6, 23, 0.55); color: #7dd3fc;
+            font-size: 22px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0;
+          }
+          .s4-pill.is-amber { border-color: #fbbf24; color: #fde68a; }
+          .s4-pill.is-green { border-color: #34d399; color: #6ee7b7; }
+          .s4-pill.is-red { border-color: #fb7185; color: #fda4af; }
+          .s4-pill-dot { width: 14px; height: 14px; border-radius: 50%; background: #38bdf8; }
+          .s4-pill.is-amber .s4-pill-dot { background: #fbbf24; }
+          .s4-pill.is-green .s4-pill-dot { background: #34d399; }
+          .s4-pill.is-red .s4-pill-dot { background: #fb7185; }
+        </style>
+
+        <div id="s4-clip" class="s4-stage clip" data-start="0" data-duration="14.98" data-track-index="0">
+          <svg class="s4-svg" viewBox="0 0 1080 1920" fill="none">
+            <defs>
+              <linearGradient id="s4BrainGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#fda4af" />
+                <stop offset="1" stop-color="#f472b6" />
+              </linearGradient>
+              <linearGradient id="s4Deck" x1="540" y1="1540" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#142852" />
+                <stop offset="0.5" stop-color="#0b1636" />
+                <stop offset="1" stop-color="#060c1f" />
+              </linearGradient>
+              <clipPath id="s4EegClip">
+                <rect x="200" y="510" width="680" height="125" rx="16" />
+              </clipPath>
+            </defs>
+
+            <!-- Sleep Stage Bar + Conceptual Slow EEG Monitor -->
+            <g id="s4-eeg-panel">
+              <rect x="155" y="420" width="770" height="245" rx="30" fill="#091632" fill-opacity="0.95" stroke="#38bdf8" stroke-width="4" />
+              <rect x="195" y="448" width="210" height="44" rx="22" fill="#1e293b" stroke="#64748b" stroke-width="2.5" />
+              <text x="300" y="476" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="16" fill="#94a3b8">TIDUR RINGAN</text>
+              <path d="M420 470 L468 470 M454 458 L468 470 L454 482" stroke="#fbbf24" stroke-width="4" stroke-linecap="round" />
+              <g transform="translate(615 470)">
+                <g id="s4-n3-badge">
+                  <rect x="-130" y="-22" width="260" height="44" rx="22" fill="#78350f" stroke="#fbbf24" stroke-width="3" />
+                  <text x="0" y="6" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="17" fill="#fde68a">DEEP SLEEP — N3</text>
+                </g>
+              </g>
+
+              <rect x="195" y="510" width="690" height="125" rx="18" fill="#050d20" stroke="#1e3a8a" stroke-width="3" />
+              <g clip-path="url(#s4EegClip)">
+                <line x1="195" y1="572" x2="885" y2="572" stroke="#1e3a8a" stroke-width="1.5" stroke-dasharray="6 8" />
+                <g id="s4-eeg-track">
+                  <path id="s4-eeg-wave" d="M80 572 C125 495 165 495 210 572 C255 648 295 648 340 572 C385 495 425 495 470 572 C515 648 555 648 600 572 C645 495 685 495 730 572 C775 648 815 648 860 572 C905 495 945 495 990 572" stroke="#fbbf24" stroke-width="5.5" stroke-linecap="round" fill="none" />
+                  <circle id="s4-eeg-dot" cx="210" cy="572" r="9" fill="#38bdf8" stroke="#f8fafc" stroke-width="2.5" />
+                </g>
+              </g>
+              <text x="540" y="655" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="14" fill="#7dd3fc">ILUSTRASI KONSEPTUAL GELOMBANG EEG LAMBAT (N3)</text>
+            </g>
+
+            <!-- CARD 1: TERJAGA (Detailed Brain Full Network Activation) -->
+            <g transform="translate(345 920)">
+              <g id="s4-card-awake">
+                <rect x="-175" y="-175" width="350" height="350" rx="30" fill="#062c2b" fill-opacity="0.94" stroke="#34d399" stroke-width="4.5" />
+                <text x="0" y="-132" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="22" fill="#6ee7b7">TERJAGA</text>
+                <!-- Open Eye Icon -->
+                <path d="M-42 -88 Q0 -118 42 -88 Q0 -58 -42 -88 Z" fill="#e0f2fe" stroke="#0f172a" stroke-width="3.5" />
+                <circle cx="0" cy="-88" r="11" fill="#0284c7" />
+                <!-- Detailed Folded Brain Inside Awake Card -->
+                <g transform="translate(0 8)">
+                  <path d="M-84 8 C-90 -42 -42 -66 10 -66 C64 -66 90 -30 80 14 C70 50 22 56 -16 52 C-54 48 -78 34 -84 8 Z" fill="url(#s4BrainGrad)" stroke="#6ee7b7" stroke-width="4" />
+                  <path d="M-56 -14 Q-24 -36 6 -16 T58 -12 M-54 14 Q-20 -4 12 16 T62 10" stroke="#831843" stroke-width="3" fill="none" />
+                  <circle id="s4-awake-core" cx="-28" cy="4" r="20" fill="#38bdf8" fill-opacity="0.75" />
+                  <path d="M-2 4 L36 4 M26 -6 L38 4 L26 14" stroke="#6ee7b7" stroke-width="4.5" stroke-linecap="round" />
+                  <circle id="s4-awake-higher" cx="46" cy="4" r="18" fill="#34d399" fill-opacity="0.85" />
+                </g>
+                <rect x="-140" y="92" width="280" height="58" rx="18" fill="#064e3b" stroke="#6ee7b7" stroke-width="3" />
+                <text x="0" y="117" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="16" fill="#ffffff">MENDENGAR &amp; PAHAM</text>
+                <text x="0" y="139" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="15" fill="#6ee7b7">KESADARAN PENUH</text>
+              </g>
+            </g>
+
+            <!-- CARD 2: TIDUR DALAM N3 (Detailed Brain + Animated Floating Zzz) -->
+            <g transform="translate(735 920)">
+              <g id="s4-card-n3">
+                <rect x="-175" y="-175" width="350" height="350" rx="30" fill="#17102a" fill-opacity="0.96" stroke="#fb7185" stroke-width="4.5" />
+                <text x="0" y="-132" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="22" fill="#fda4af">TIDUR DALAM N3</text>
+                <!-- Closed Eye Icon -->
+                <path d="M-38 -88 Q0 -68 38 -88" stroke="#cbd5e1" stroke-width="5" stroke-linecap="round" fill="none" />
+                <!-- Animated Zzz next to N3 Sleeping Eye -->
+                <g data-layout-ignore fill="#7dd3fc" font-family="Poppins, sans-serif" font-weight="900">
+                  <g transform="translate(86 -68)"><text id="s4-z1" x="0" y="0" font-size="22" opacity="0">Z</text></g>
+                  <g transform="translate(106 -84)"><text id="s4-z2" x="0" y="0" font-size="24" opacity="0">z</text></g>
+                  <g transform="translate(124 -100)"><text id="s4-z3" x="0" y="0" font-size="19" opacity="0">z</text></g>
+                </g>
+                <!-- Detailed Folded Brain (only local auditory core flickers; higher link dimmed) -->
+                <g transform="translate(0 8)">
+                  <path d="M-84 8 C-90 -42 -42 -66 10 -66 C64 -66 90 -30 80 14 C70 50 22 56 -16 52 C-54 48 -78 34 -84 8 Z" fill="#4c1d95" stroke="#fbbf24" stroke-width="4" />
+                  <path d="M-56 -14 Q-24 -36 6 -16 T58 -12 M-54 14 Q-20 -4 12 16 T62 10" stroke="#c4b5fd" stroke-width="2.5" opacity="0.45" fill="none" />
+                  <circle id="s4-n3-core" cx="-28" cy="4" r="20" fill="#fbbf24" />
+                  <line x1="-2" y1="4" x2="24" y2="4" stroke="#fb7185" stroke-width="4" stroke-dasharray="5 5" />
+                  <circle cx="46" cy="4" r="18" fill="#1e293b" stroke="#64748b" stroke-width="3" />
+                  <path d="M36 -6 L56 14 M56 -6 L36 14" stroke="#fb7185" stroke-width="4" stroke-linecap="round" />
+                </g>
+                <rect x="-140" y="92" width="280" height="58" rx="18" fill="#4c0519" stroke="#fb7185" stroke-width="3" />
+                <text x="0" y="117" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="16" fill="#ffffff">ADA AKTIVITAS OTAK</text>
+                <text x="0" y="139" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="15" fill="#fda4af">TIDAK OTOMATIS SADAR</text>
+              </g>
+            </g>
+
+            <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920): EEG Sleep Lab Console -->
+            <g id="s4-foreground">
+              <rect x="0" y="1560" width="1080" height="365" fill="url(#s4Deck)" stroke="#fbbf24" stroke-width="4" />
+              <g transform="translate(540 1665)">
+                <rect x="-285" y="-32" width="570" height="64" rx="32" fill="#09132b" stroke="#fbbf24" stroke-width="4" />
+                <text x="0" y="8" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="21" fill="#fde68a" letter-spacing="1">RESPONS OTAK ≠ KESADARAN PENUH</text>
+              </g>
+            </g>
+          </svg>
+
+          <div class="s4-header">
+            <div class="s4-eyebrow">TAHAP TIDUR DALAM • N3</div>
+            <h2 class="s4-title">Aktivitas Otak vs Sadar</h2>
+          </div>
+
+          <div class="s4-pill-bar">
+            <div class="s4-pill is-amber" id="s4-pill-1"><span class="s4-pill-dot"></span><span>DEEP SLEEP — N3</span></div>
+            <div class="s4-pill" id="s4-pill-2"><span class="s4-pill-dot"></span><span>RESPONS SUARA LEBIH TERBATAS</span></div>
+            <div class="s4-pill is-green" id="s4-pill-3"><span class="s4-pill-dot"></span><span>AKTIVITAS OTAK MASIH ADA</span></div>
+            <div class="s4-pill is-red" id="s4-pill-4"><span class="s4-pill-dot"></span><span>RESPONS OTAK ≠ SADAR PENUH</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+            var stage = q("#s4-clip"), n3Badge = q("#s4-n3-badge"), eegTrack = q("#s4-eeg-track"), eegWave = q("#s4-eeg-wave"), eegDot = q("#s4-eeg-dot");
+            var cardAwake = q("#s4-card-awake"), cardN3 = q("#s4-card-n3");
+            var awakeCore = q("#s4-awake-core"), awakeHigher = q("#s4-awake-higher"), n3Core = q("#s4-n3-core");
+            var z1 = q("#s4-z1"), z2 = q("#s4-z2"), z3 = q("#s4-z3");
+            var p1 = q("#s4-pill-1"), p2 = q("#s4-pill-2"), p3 = q("#s4-pill-3"), p4 = q("#s4-pill-4");
+
+            gsap.set(stage, { opacity: 0 });
+            gsap.set([cardAwake, cardN3], { opacity: 0.35, scale: 0.94, transformOrigin: "50% 50%" });
+
+            var wLen = eegWave.getTotalLength();
+            var wObj = { t: 0.16 };
+            function moveEegDot() {
+              var pt = eegWave.getPointAtLength(wObj.t * wLen);
+              gsap.set(eegDot, { attr: { cx: pt.x.toFixed(1), cy: pt.y.toFixed(1) } });
+            }
+            moveEegDot();
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(stage, { opacity: 1, duration: 0.48, ease: "power2.out" }, 0)
+              .fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 0.45)
+              .to(n3Badge, { scale: 1.08, transformOrigin: "50% 50%", duration: 0.55, repeat: 4, yoyo: true, ease: "sine.inOut" }, 0.8)
+              .fromTo(eegTrack, { x: 0 }, { x: -130, duration: 14.0, ease: "none" }, 0.2)
+              .to(wObj, { t: 0.88, duration: 7.0, repeat: 1, yoyo: true, ease: "none", onUpdate: moveEegDot }, 0.2)
+              .to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 3.2)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 3.4)
+              .to(p2, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 6.1)
+              .fromTo(p3, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 6.3)
+              .to(cardAwake, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.4)" }, 6.5)
+              .to(cardN3, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.4)" }, 6.8)
+              .to([awakeCore, awakeHigher], { scale: 1.25, transformOrigin: "50% 50%", duration: 0.6, repeat: 8, yoyo: true, ease: "sine.inOut" }, 7.0)
+              .to(n3Core, { scale: 1.18, opacity: 0.55, transformOrigin: "50% 50%", duration: 0.7, repeat: 7, yoyo: true, ease: "sine.inOut" }, 7.1)
+              .to(p3, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 10.1)
+              .fromTo(p4, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 10.3)
+              .to(stage, { opacity: 0, duration: 0.48, ease: "power2.inOut", immediateRender: false }, 14.50);
+
+            // Animated Zzz rising smoothly inside N3 card
+            [{ el: z1, t: 6.9, dx: 12 }, { el: z2, t: 7.6, dx: 16 }, { el: z3, t: 8.3, dx: 20 }].forEach(function (z) {
+              tl.fromTo(z.el, { opacity: 0, y: 8, x: 0, scale: 0.7 }, { opacity: 0.95, y: -42, x: z.dx, scale: 1.15, duration: 2.0, repeat: 3, ease: "sine.out" }, z.t);
+            });
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-04"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

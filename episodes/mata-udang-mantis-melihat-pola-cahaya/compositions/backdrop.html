@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Backdrop Bawah Laut Terumbu Kontras Tinggi</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="backdrop" data-duration="87" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            background: linear-gradient(180deg, #0a345c 0%, #071e36 46%, #05162b 82%, #030e1c 100%);
+          }
+
+          .bg-layer { position: absolute; inset: 0; overflow: hidden; }
+
+          .bg-surface-rays {
+            position: absolute;
+            top: -140px;
+            left: -80px;
+            width: 1240px;
+            height: 620px;
+            background: radial-gradient(
+              ellipse at 50% 0%,
+              rgba(56, 189, 248, 0.28) 0%,
+              rgba(34, 211, 238, 0.14) 45%,
+              transparent 74%
+            );
+          }
+
+          .bg-uv-glow {
+            position: absolute;
+            top: 420px;
+            right: -180px;
+            width: 820px;
+            height: 820px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(192, 132, 252, 0.16) 0%,
+              rgba(56, 189, 248, 0.10) 48%,
+              transparent 74%
+            );
+          }
+
+          .bg-reef-glow {
+            position: absolute;
+            bottom: 80px;
+            left: -140px;
+            width: 860px;
+            height: 760px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(52, 211, 153, 0.14) 0%,
+              rgba(251, 113, 133, 0.09) 48%,
+              transparent 74%
+            );
+          }
+
+          .bg-bubbles { position: absolute; inset: 0; }
+          .bg-bub {
+            position: absolute;
+            border-radius: 50%;
+            border: 1.5px solid rgba(125, 211, 252, 0.65);
+            background: rgba(56, 189, 248, 0.18);
+          }
+          .bg-speck {
+            position: absolute;
+            border-radius: 50%;
+            background: #bae6fd;
+          }
+        </style>
+
+        <div id="backdrop-clip" class="bg-layer clip" data-start="0" data-duration="87" data-layout-ignore data-track-index="0">
+          <div class="bg-surface-rays" id="bg-surface-rays"></div>
+          <div class="bg-uv-glow" id="bg-uv-glow"></div>
+          <div class="bg-reef-glow" id="bg-reef-glow"></div>
+          <div class="bg-bubbles" id="bg-bubbles"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var bubEl = root.querySelector("#bg-bubbles");
+            var rays = root.querySelector("#bg-surface-rays"), uvGlow = root.querySelector("#bg-uv-glow"), reefGlow = root.querySelector("#bg-reef-glow");
+
+            var items = [];
+            for (var i = 0; i < 32; i++) {
+              var el = document.createElement("div");
+              var isBub = i % 2 === 0;
+              el.className = isBub ? "bg-bub" : "bg-speck";
+              var sz = isBub ? 8 + ((i * 5) % 14) : 3 + (i % 3);
+              el.style.width = sz + "px";
+              el.style.height = sz + "px";
+              el.style.left = (45 + ((i * 193) % 990)) + "px";
+              el.style.top = (160 + ((i * 257) % 1620)) + "px";
+              el.style.opacity = String(isBub ? 0.34 + (i % 3) * 0.14 : 0.28 + (i % 4) * 0.1);
+              bubEl.appendChild(el);
+              items.push({ el: el, idx: i, isBub: isBub });
+            }
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(rays, { x: 48, scaleX: 1.08, duration: 29, repeat: 2, yoyo: true, ease: "sine.inOut" }, 0)
+              .to(uvGlow, { x: -46, y: 38, scale: 1.07, duration: 43, yoyo: true, repeat: 1, ease: "sine.inOut" }, 0)
+              .to(reefGlow, { x: 44, y: -30, scale: 1.06, duration: 43, yoyo: true, repeat: 1, ease: "sine.inOut" }, 0);
+
+            items.forEach(function (it) {
+              var dy = it.isBub ? -160 - (it.idx % 4) * 28 : -48 - (it.idx % 3) * 14;
+              var dx = ((it.idx % 3) - 1) * 22;
+              tl.to(it.el, {
+                x: dx, y: dy, opacity: it.isBub ? 0.72 : 0.65,
+                duration: 21 + (it.idx % 5) * 3, repeat: 2, yoyo: true, ease: "sine.inOut"
+              }, (it.idx % 7) * 0.45);
+            });
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["backdrop"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 02 — Hingga 12 Jenis Reseptor Cahaya &amp; Midband</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-02" data-duration="15.08" data-fps="30">
+        <style>
+          #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", sans-serif; color: #f8fafc; }
+          .s2-stage { position: absolute; inset: 0; opacity: 0; }
+          .s2-svg { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: visible; }
+          .s2-header { position: absolute; top: 204px; left: 140px; width: 800px; text-align: center; }
+          .s2-eyebrow {
+            display: inline-block; padding: 7px 22px; border-radius: 999px;
+            background: rgba(5, 22, 43, 0.92); border: 2px solid #22d3ee; color: #67e8f9;
+            font-size: 20px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;
+          }
+          .s2-title { font-size: 44px; font-weight: 900; line-height: 1.1; color: #f8fafc; text-shadow: 0 4px 18px rgba(2,6,23,0.9); }
+          .s2-pill-bar { position: absolute; top: 1245px; left: 130px; width: 820px; height: 62px; display: flex; align-items: center; justify-content: center; }
+          .s2-pill {
+            position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 12px 24px;
+            border-radius: 999px; background: rgba(5, 22, 43, 0.94); border: 2.5px solid #fbbf24;
+            box-shadow: 0 10px 26px rgba(2, 6, 23, 0.55); color: #fde68a;
+            font-size: 22px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0;
+          }
+          .s2-pill.is-uv { border-color: #c084fc; color: #e9d5ff; }
+          .s2-pill-dot { width: 14px; height: 14px; border-radius: 50%; background: #fbbf24; }
+          .s2-pill.is-uv .s2-pill-dot { background: #c084fc; }
+        </style>
+
+        <div id="s2-clip" class="s2-stage clip" data-start="0" data-duration="15.08" data-track-index="0">
+          <svg class="s2-svg" viewBox="0 0 1080 1920" fill="none">
+            <defs>
+              <linearGradient id="s2Deck" x1="540" y1="1540" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#0b3b59" />
+                <stop offset="0.55" stop-color="#072238" />
+                <stop offset="1" stop-color="#041222" />
+              </linearGradient>
+            </defs>
+
+            <!-- Compound Stalked Eye Cross-Section (shows Dorsal/Ventral Hemispheres + Central MIDBAND!) -->
+            <g transform="translate(540 650)">
+              <g id="s2-eye-dome">
+              <!-- Eye Stalk -->
+              <rect x="-32" y="145" width="64" height="90" rx="20" fill="#10b981" stroke="#7dd3fc" stroke-width="4" />
+              <!-- Outer Faceted Dome -->
+              <ellipse cx="0" cy="0" rx="225" ry="175" fill="#06213c" stroke="#22d3ee" stroke-width="5.5" />
+              <!-- Dorsal & Ventral Ommatidia Cells -->
+              <path id="s2-facet-top" d="M-195 -45 Q0 -110 195 -45" stroke="#34d399" stroke-width="3" stroke-dasharray="10 8" opacity="0.65" />
+              <path id="s2-facet-bot" d="M-195 45 Q0 110 195 45" stroke="#34d399" stroke-width="3" stroke-dasharray="10 8" opacity="0.65" />
+
+              <!-- Signature CENTRAL MIDBAND (6 rows holding up to 12 Spectral Photoreceptors!) -->
+              <g id="s2-midband">
+                <rect x="-210" y="-44" width="420" height="88" rx="24" fill="#0c1c3d" stroke="#fbbf24" stroke-width="4.5" />
+                <text x="0" y="-54" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="17" fill="#fde68a">AREA KHUSUS: MIDBAND</text>
+                <!-- 12 Photoreceptor Cells -->
+                <g id="s2-receptors">
+                  <rect id="s2-r0" x="-192" y="-28" width="26" height="56" rx="8" fill="#a855f7" stroke="#f8fafc" stroke-width="2" opacity="0.3" />
+                  <rect id="s2-r1" x="-160" y="-28" width="26" height="56" rx="8" fill="#9333ea" stroke="#f8fafc" stroke-width="2" opacity="0.3" />
+                  <rect id="s2-r2" x="-128" y="-28" width="26" height="56" rx="8" fill="#6366f1" stroke="#f8fafc" stroke-width="2" opacity="0.3" />
+                  <rect id="s2-r3" x="-96" y="-28" width="26" height="56" rx="8" fill="#3b82f6" stroke="#f8fafc" stroke-width="2" opacity="0.3" />
+                  <rect id="s2-r4" x="-64" y="-28" width="26" height="56" rx="8" fill="#0ea5e9" stroke="#f8fafc" stroke-width="2" opacity="0.3" />
+                  <rect id="s2-r5" x="-32" y="-28" width="26" height="56" rx="8" fill="#14b8a6" stroke="#f8fafc" stroke-width="2" opacity="0.3" />
+                  <rect id="s2-r6" x="0" y="-28" width="26" height="56" rx="8" fill="#10b981" stroke="#f8fafc" stroke-width="2" opacity="0.3" />
+                  <rect id="s2-r7" x="32" y="-28" width="26" height="56" rx="8" fill="#84cc16" stroke="#f8fafc" stroke-width="2" opacity="0.3" />
+                  <rect id="s2-r8" x="64" y="-28" width="26" height="56" rx="8" fill="#eab308" stroke="#f8fafc" stroke-width="2" opacity="0.3" />
+                  <rect id="s2-r9" x="96" y="-28" width="26" height="56" rx="8" fill="#f97316" stroke="#f8fafc" stroke-width="2" opacity="0.3" />
+                  <rect id="s2-r10" x="128" y="-28" width="26" height="56" rx="8" fill="#ef4444" stroke="#f8fafc" stroke-width="2" opacity="0.3" />
+                  <rect id="s2-r11" x="160" y="-28" width="26" height="56" rx="8" fill="#be123c" stroke="#f8fafc" stroke-width="2" opacity="0.3" />
+                </g>
+                <!-- Moving optical scan beam across the 12 photoreceptors -->
+                <rect id="s2-scan-beam" x="-196" y="-36" width="34" height="72" rx="10" fill="#ffffff" fill-opacity="0.18" stroke="#fbbf24" stroke-width="2.5" opacity="0" />
+              </g>
+              </g>
+            </g>
+
+            <!-- Incoming Multi-Wavelength Waves + Exact Curve Photons striking Midband -->
+            <g id="s2-in-waves" opacity="0.9">
+              <path id="s2-wv-uv" d="M265 405 Q325 460 365 565" stroke="#c084fc" stroke-width="5" stroke-dasharray="14 8" stroke-linecap="round" fill="none" />
+              <path id="s2-wv-vis" d="M540 395 L540 535" stroke="#34d399" stroke-width="5" stroke-dasharray="14 8" stroke-linecap="round" fill="none" />
+              <path id="s2-wv-red" d="M815 405 Q755 460 715 565" stroke="#fb7185" stroke-width="5" stroke-dasharray="14 8" stroke-linecap="round" fill="none" />
+              <circle id="s2-pt-uv" cx="265" cy="405" r="8" fill="#e9d5ff" stroke="#a855f7" stroke-width="2.5" />
+              <circle id="s2-pt-vis" cx="540" cy="395" r="8" fill="#a7f3d0" stroke="#10b981" stroke-width="2.5" />
+              <circle id="s2-pt-red" cx="815" cy="405" r="8" fill="#fecdd3" stroke="#f43f5e" stroke-width="2.5" />
+            </g>
+
+            <!-- Horizontal 12-Band Spectral Sensitivity Bar Below Eye -->
+            <g transform="translate(540 1015)">
+              <g id="s2-spec-panel" opacity="0">
+                <rect x="-350" y="-82" width="700" height="164" rx="28" fill="#05162b" stroke="#22d3ee" stroke-width="3.5" />
+                <text x="0" y="-42" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="19" fill="#fde68a">SPEKTRUM HINGGA 12 RESEPTOR FOTORESEPTOR</text>
+                <!-- 12 spectral peak bars -->
+                <g transform="translate(-286 24)">
+                  <rect id="s2-bar-0" x="0" y="-36" width="38" height="36" rx="8" fill="#a855f7" /><text x="19" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#e9d5ff">UV</text>
+                  <rect id="s2-bar-1" x="48" y="-44" width="38" height="44" rx="8" fill="#9333ea" /><text x="67" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#e9d5ff">2</text>
+                  <rect id="s2-bar-2" x="96" y="-48" width="38" height="48" rx="8" fill="#6366f1" /><text x="115" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#cbd5e1">3</text>
+                  <rect id="s2-bar-3" x="144" y="-52" width="38" height="52" rx="8" fill="#3b82f6" /><text x="163" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#cbd5e1">4</text>
+                  <rect id="s2-bar-4" x="192" y="-56" width="38" height="56" rx="8" fill="#0ea5e9" /><text x="211" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#cbd5e1">5</text>
+                  <rect id="s2-bar-5" x="240" y="-52" width="38" height="52" rx="8" fill="#14b8a6" /><text x="259" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#cbd5e1">6</text>
+                  <rect id="s2-bar-6" x="288" y="-56" width="38" height="56" rx="8" fill="#10b981" /><text x="307" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#cbd5e1">7</text>
+                  <rect id="s2-bar-7" x="336" y="-50" width="38" height="50" rx="8" fill="#84cc16" /><text x="355" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#cbd5e1">8</text>
+                  <rect id="s2-bar-8" x="384" y="-54" width="38" height="54" rx="8" fill="#eab308" /><text x="403" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#cbd5e1">9</text>
+                  <rect id="s2-bar-9" x="432" y="-48" width="38" height="48" rx="8" fill="#f97316" /><text x="451" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#cbd5e1">10</text>
+                  <rect id="s2-bar-10" x="480" y="-44" width="38" height="44" rx="8" fill="#ef4444" /><text x="499" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#cbd5e1">11</text>
+                  <rect id="s2-bar-11" x="528" y="-38" width="38" height="38" rx="8" fill="#be123c" /><text x="547" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#fda4af">12</text>
+                </g>
+              </g>
+            </g>
+
+            <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920) -->
+            <g id="s2-foreground">
+              <path d="M-40 1615 Q240 1550 540 1605 T1120 1580 L1120 1940 L-40 1940 Z" fill="#0b3b59" />
+              <path d="M-40 1665 Q260 1610 540 1660 T1120 1635 L1120 1940 L-40 1940 Z" fill="url(#s2Deck)" stroke="#22d3ee" stroke-width="4.5" />
+              <g transform="translate(540 1775)">
+                <rect x="-270" y="-32" width="540" height="64" rx="32" fill="#05162b" stroke="#fbbf24" stroke-width="3.5" />
+                <text x="0" y="8" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="20" fill="#fde68a" letter-spacing="1">STRUKTUR MATA MAJEMUK • MIDBAND</text>
+              </g>
+            </g>
+          </svg>
+
+          <div class="s2-header">
+            <div class="s2-eyebrow">ANATOMI MATA KHUSUS</div>
+            <h2 class="s2-title">Hingga 12 Jenis Reseptor</h2>
+          </div>
+
+          <div class="s2-pill-bar">
+            <div class="s2-pill" id="s2-pill-1"><span class="s2-pill-dot"></span><span>HINGGA 12 JENIS RESEPTOR</span></div>
+            <div class="s2-pill is-uv" id="s2-pill-2"><span class="s2-pill-dot"></span><span>TERMASUK SENSITIVITAS ULTRAVIOLET</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+            var stage = q("#s2-clip"), eyeDome = q("#s2-eye-dome"), midband = q("#s2-midband"), specPanel = q("#s2-spec-panel"), scanBeam = q("#s2-scan-beam");
+            var fTop = q("#s2-facet-top"), fBot = q("#s2-facet-bot");
+            var wUv = q("#s2-wv-uv"), wVis = q("#s2-wv-vis"), wRed = q("#s2-wv-red");
+            var ptUv = q("#s2-pt-uv"), ptVis = q("#s2-pt-vis"), ptRed = q("#s2-pt-red");
+            var recs = [], bars = [];
+            for (var i = 0; i < 12; i++) {
+              recs.push(q("#s2-r" + i));
+              bars.push(q("#s2-bar-" + i));
+            }
+            var p1 = q("#s2-pill-1"), p2 = q("#s2-pill-2");
+
+            gsap.set(stage, { opacity: 0 });
+            gsap.set(midband, { scale: 0.9, opacity: 0.4, transformOrigin: "50% 50%" });
+            gsap.set(specPanel, { opacity: 0, y: 18 });
+            gsap.set(bars, { scaleY: 0.25, transformOrigin: "50% 100%" });
+
+            function makeWaveSync(pathEl, dotEl) {
+              var len = pathEl.getTotalLength();
+              var obj = { p: 0 };
+              var update = function () {
+                var pt = pathEl.getPointAtLength(obj.p * len);
+                gsap.set(dotEl, { attr: { cx: pt.x.toFixed(1), cy: pt.y.toFixed(1) } });
+              };
+              update();
+              return { obj: obj, update: update };
+            }
+            var sUv = makeWaveSync(wUv, ptUv);
+            var sVis = makeWaveSync(wVis, ptVis);
+            var sRed = makeWaveSync(wRed, ptRed);
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(stage, { opacity: 1, duration: 0.48, ease: "power2.out" }, 0)
+              .fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 0.45)
+              .to(eyeDome, { y: -8, rotation: 2.5, transformOrigin: "50% 50%", duration: 3.4, repeat: 3, yoyo: true, ease: "sine.inOut" }, 0.2)
+              .to(midband, { scale: 1.04, opacity: 1, duration: 1.1, ease: "back.out(1.4)" }, 0.9)
+              // Incoming rays flow continuously + photon dots ride curves into Midband
+              .fromTo([wUv, wVis, wRed], { attr: { "stroke-dashoffset": 0 } }, { attr: { "stroke-dashoffset": -220 }, duration: 14.0, ease: "none" }, 0.2)
+              .fromTo([fTop, fBot], { attr: { "stroke-dashoffset": 0 } }, { attr: { "stroke-dashoffset": 180 }, duration: 14.0, ease: "none" }, 0.2)
+              .fromTo(sUv.obj, { p: 0 }, { p: 1, duration: 1.6, repeat: 8, ease: "power1.in", onUpdate: sUv.update }, 0.3)
+              .fromTo(sVis.obj, { p: 0 }, { p: 1, duration: 1.4, repeat: 9, ease: "power1.in", onUpdate: sVis.update }, 0.6)
+              .fromTo(sRed.obj, { p: 0 }, { p: 1, duration: 1.7, repeat: 7, ease: "power1.in", onUpdate: sRed.update }, 0.9)
+              // Scan beam sweeps across Midband & lights up 12 photoreceptors + 12 spectrum bars sequentially
+              .to(scanBeam, { opacity: 1, duration: 0.3 }, 4.2)
+              .fromTo(scanBeam, { x: 0 }, { x: 358, duration: 4.1, repeat: 1, yoyo: true, ease: "sine.inOut" }, 4.3)
+              .to(recs, { opacity: 1, scaleY: 1.16, transformOrigin: "50% 50%", duration: 0.35, stagger: 0.3, ease: "back.out(1.6)" }, 4.4)
+              .to(specPanel, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out", immediateRender: false }, 5.8)
+              .to(bars, { scaleY: 1.0, duration: 0.45, stagger: 0.2, ease: "back.out(1.4)" }, 6.1)
+              .to(bars, { scaleY: 1.14, duration: 0.5, stagger: 0.14, repeat: 1, yoyo: true, ease: "sine.inOut", immediateRender: false }, 9.2)
+              .to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 10.6)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 10.8)
+              .to(recs, { scaleY: 1.0, duration: 0.5, stagger: 0.08, immediateRender: false }, 11.4)
+              .to(stage, { opacity: 0, duration: 0.48, ease: "power2.inOut", immediateRender: false }, 14.60);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-02"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

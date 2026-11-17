@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 01 — Mata yang Melihat Lebih dari Manusia</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-01" data-duration="10.30" data-fps="30">
+        <style>
+          #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", sans-serif; color: #f8fafc; }
+          .s1-stage { position: absolute; inset: 0; opacity: 1; }
+          .s1-svg { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: visible; }
+          .s1-header { position: absolute; top: 204px; left: 140px; width: 800px; text-align: center; }
+          .s1-eyebrow {
+            display: inline-block; padding: 7px 22px; border-radius: 999px;
+            background: rgba(5, 22, 43, 0.92); border: 2px solid #c084fc; color: #e9d5ff;
+            font-size: 20px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;
+          }
+          .s1-title { font-size: 44px; font-weight: 900; line-height: 1.1; color: #f8fafc; text-shadow: 0 4px 18px rgba(2,6,23,0.9); }
+          .s1-pill-bar { position: absolute; top: 1245px; left: 130px; width: 820px; height: 62px; display: flex; align-items: center; justify-content: center; }
+          .s1-pill {
+            position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 12px 26px;
+            border-radius: 999px; background: rgba(5, 22, 43, 0.94); border: 2.5px solid #22d3ee;
+            box-shadow: 0 10px 26px rgba(2, 6, 23, 0.55); color: #67e8f9;
+            font-size: 22px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0;
+          }
+          .s1-pill.is-uv { border-color: #c084fc; color: #e9d5ff; }
+          .s1-pill-dot { width: 14px; height: 14px; border-radius: 50%; background: #22d3ee; }
+          .s1-pill.is-uv .s1-pill-dot { background: #c084fc; }
+        </style>
+
+        <div id="s1-clip" class="s1-stage clip" data-start="0" data-duration="10.30" data-track-index="0">
+          <svg class="s1-svg" viewBox="0 0 1080 1920" fill="none">
+            <defs>
+              <linearGradient id="s1ReefFloor" x1="540" y1="1540" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#0b3b59" />
+                <stop offset="0.55" stop-color="#072238" />
+                <stop offset="1" stop-color="#041222" />
+              </linearGradient>
+              <linearGradient id="s1SpecGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#9333ea" />
+                <stop offset="0.22" stop-color="#6366f1" />
+                <stop offset="0.4" stop-color="#38bdf8" />
+                <stop offset="0.58" stop-color="#34d399" />
+                <stop offset="0.76" stop-color="#fbbf24" />
+                <stop offset="1" stop-color="#ef4444" />
+              </linearGradient>
+            </defs>
+
+            <!-- Underwater Sunbeams & Rising Decorative Bubbles -->
+            <polygon id="s1-sunray-1" points="180,0 320,0 520,1080 280,1080" fill="#38bdf8" fill-opacity="0.06" />
+            <polygon id="s1-sunray-2" points="620,0 780,0 920,1080 680,1080" fill="#22d3ee" fill-opacity="0.05" />
+            <g data-layout-ignore fill="#7dd3fc" fill-opacity="0.32" stroke="#bae6fd" stroke-width="2">
+              <circle id="s1-b1" cx="220" cy="860" r="10" />
+              <circle id="s1-b2" cx="840" cy="880" r="14" />
+              <circle id="s1-b3" cx="310" cy="760" r="7" />
+              <circle id="s1-b4" cx="760" cy="730" r="9" />
+            </g>
+
+            <!-- Camera Push-in Container (Medium Reef Shot -> Close-up on Stalked Eyes) -->
+            <g id="s1-cam" transform-origin="540 700">
+              <!-- Underwater Portal Halo around Mantis Shrimp -->
+              <circle id="s1-halo" cx="540" cy="690" r="285" fill="#06213c" fill-opacity="0.75" stroke="#22d3ee" stroke-width="4" stroke-dasharray="14 10" />
+
+              <!-- UV Ultraviolet Light Waves coming toward Stalked Eyes -->
+              <g id="s1-uv-waves" opacity="0">
+                <path id="s1-uv-1" d="M220 570 Q265 520 310 570 T400 570 T460 585" stroke="#c084fc" stroke-width="6" stroke-dasharray="22 10" stroke-linecap="round" fill="none" />
+                <path id="s1-uv-2" d="M210 615 Q260 565 305 615 T395 615 T455 605" stroke="#a855f7" stroke-width="5.5" stroke-dasharray="20 10" stroke-linecap="round" fill="none" />
+                <circle id="s1-uv-orb" cx="220" cy="570" r="10.5" fill="#e9d5ff" stroke="#a855f7" stroke-width="3" />
+                <circle id="s1-uv-orb-2" cx="210" cy="615" r="8.5" fill="#d8b4fe" stroke="#9333ea" stroke-width="2.5" />
+                <g transform="translate(260 512)">
+                  <g id="s1-uv-tag">
+                    <rect x="-86" y="-22" width="172" height="44" rx="22" fill="#3b0764" stroke="#c084fc" stroke-width="3" />
+                    <text x="0" y="6" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="16" fill="#e9d5ff">SINAR UV</text>
+                  </g>
+                </g>
+              </g>
+
+              <!-- TRUE PEACOCK MANTIS SHRIMP (2D Armored Segments + Clubs + Tail Fan + 2 Independent Stalked Eyes!) -->
+              <g transform="translate(555 725)">
+                <g id="s1-shrimp">
+                  <ellipse cx="10" cy="86" rx="175" ry="22" fill="#020617" fill-opacity="0.48" />
+                  <!-- Vibrant Uropod Tail Fan (left side) -->
+                  <g id="s1-tail" transform="translate(-148 18)">
+                    <ellipse cx="-26" cy="-18" rx="34" ry="18" fill="#0ea5e9" stroke="#f8fafc" stroke-width="3.5" transform="rotate(-24 -26 -18)" />
+                    <ellipse cx="-32" cy="8" rx="38" ry="18" fill="#f43f5e" stroke="#f8fafc" stroke-width="3.5" transform="rotate(6 -32 8)" />
+                    <circle cx="-38" cy="8" r="8" fill="#1e1b4b" stroke="#fbbf24" stroke-width="2" />
+                    <ellipse cx="-22" cy="30" rx="32" ry="15" fill="#10b981" stroke="#f8fafc" stroke-width="3" transform="rotate(28 -22 30)" />
+                  </g>
+                  <!-- Armored Peacock Tergite Segments -->
+                  <ellipse cx="-104" cy="14" rx="46" ry="38" fill="#059669" stroke="#0f172a" stroke-width="4.5" />
+                  <ellipse cx="-56" cy="4" rx="52" ry="44" fill="#10b981" stroke="#0f172a" stroke-width="4.5" />
+                  <ellipse cx="-2" cy="-2" rx="56" ry="46" fill="#0d9488" stroke="#0f172a" stroke-width="4.5" />
+                  <ellipse cx="52" cy="0" rx="54" ry="44" fill="#34d399" stroke="#0f172a" stroke-width="4.5" />
+                  <!-- Peacock Leopardskin Carapace Spots -->
+                  <circle cx="-48" cy="-16" r="7" fill="#064e3b" stroke="#fbbf24" stroke-width="2" />
+                  <circle cx="8" cy="-18" r="8" fill="#064e3b" stroke="#fbbf24" stroke-width="2" />
+                  <!-- Orange Raptorial Smasher Clubs + Walking Legs -->
+                  <g id="s1-clubs" stroke="#fb923c" stroke-width="11" stroke-linecap="round">
+                    <path d="M58 26 L44 64 L78 58" fill="none" />
+                    <path d="M84 26 L74 68 L104 60" fill="none" />
+                  </g>
+                  <g id="s1-legs" stroke="#22d3ee" stroke-width="6" stroke-linecap="round">
+                    <path d="M-84 42 L-92 70" />
+                    <path d="M-40 44 L-44 74" />
+                    <path d="M4 42 L0 74" />
+                  </g>
+                  <!-- Antennules sweeping -->
+                  <path id="s1-ant-1" d="M108 -10 Q168 -42 212 -22" stroke="#f43f5e" stroke-width="5" stroke-linecap="round" fill="none" />
+                  <path id="s1-ant-2" d="M112 6 Q172 16 208 42" stroke="#fb923c" stroke-width="4.5" stroke-linecap="round" fill="none" />
+
+                  <!-- DUAL INDEPENDENTLY MOVING STALKED COMPOUND EYES (Signature Midband Stripe!) -->
+                  <!-- Left/Far Stalked Eye -->
+                  <g transform="translate(88 -42)">
+                    <g id="s1-eye-l">
+                      <line x1="0" y1="22" x2="-12" y2="-16" stroke="#22d3ee" stroke-width="12" stroke-linecap="round" />
+                      <ellipse cx="-14" cy="-24" rx="22" ry="28" fill="#a7f3d0" stroke="#0f172a" stroke-width="4" transform="rotate(-14 -14 -24)" />
+                      <!-- Midband Stripe -->
+                      <line x1="-34" y1="-28" x2="6" y2="-20" stroke="#4c1d95" stroke-width="6.5" />
+                      <circle cx="-16" cy="-34" r="4.5" fill="#0f172a" />
+                      <circle cx="-10" cy="-14" r="4.5" fill="#0f172a" />
+                    </g>
+                  </g>
+                  <!-- Right/Near Stalked Eye (pivots independently!) -->
+                  <g transform="translate(122 -32)">
+                    <g id="s1-eye-r">
+                      <line x1="0" y1="22" x2="12" y2="-16" stroke="#22d3ee" stroke-width="12" stroke-linecap="round" />
+                      <ellipse cx="14" cy="-24" rx="24" ry="30" fill="#6ee7b7" stroke="#0f172a" stroke-width="4" transform="rotate(14 14 -24)" />
+                      <!-- Signature Midband 6-Row Band -->
+                      <line x1="-8" y1="-20" x2="36" y2="-28" stroke="#c084fc" stroke-width="7.5" />
+                      <circle cx="14" cy="-36" r="5" fill="#0f172a" />
+                      <circle cx="16" cy="-12" r="5" fill="#0f172a" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+
+              <!-- Light Spectrum Comparison Bar (UV Outside Human Vision -> Surprise!) -->
+              <g transform="translate(540 1050)">
+                <g id="s1-spec-card" opacity="0">
+                  <rect x="-335" y="-56" width="670" height="112" rx="24" fill="#05162b" stroke="#22d3ee" stroke-width="3.5" />
+                  <rect x="-295" y="-12" width="590" height="24" rx="12" fill="url(#s1SpecGrad)" stroke="#f8fafc" stroke-width="2" />
+                  <!-- UV bracket highlight -->
+                  <rect x="-295" y="-16" width="128" height="32" rx="10" fill="none" stroke="#e9d5ff" stroke-width="3.5" stroke-dasharray="6 4" />
+                  <text x="-231" y="-26" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="15" fill="#e9d5ff">UV (MANTIS)</text>
+                  <text x="65" y="-26" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="15" fill="#7dd3fc">CAHAYA TAMPAK (MANUSIA)</text>
+                  <text x="0" y="38" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="16" fill="#fde68a">MANUSIA TIDAK BISA MELIHAT SINAR ULTRAVIOLET</text>
+                </g>
+              </g>
+            </g>
+
+            <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920): Coral Reef Seabed -->
+            <g id="s1-foreground">
+              <path d="M-40 1615 Q240 1550 540 1605 T1120 1580 L1120 1940 L-40 1940 Z" fill="#0b3b59" />
+              <path d="M-40 1665 Q260 1610 540 1660 T1120 1635 L1120 1940 L-40 1940 Z" fill="url(#s1ReefFloor)" stroke="#22d3ee" stroke-width="4.5" />
+              <!-- Swaying Sea Kelp & Brain Coral -->
+              <g id="s1-kelp-l" transform="translate(155 1670)">
+                <path d="M0 0 Q-24 -55 8 -105 Q32 -145 0 -185" stroke="#10b981" stroke-width="14" stroke-linecap="round" fill="none" />
+                <path d="M24 0 Q52 -45 20 -95" stroke="#34d399" stroke-width="11" stroke-linecap="round" fill="none" />
+              </g>
+              <g id="s1-kelp-r" transform="translate(915 1665)">
+                <path d="M0 0 Q26 -55 -10 -105 Q-30 -145 4 -180" stroke="#f43f5e" stroke-width="14" stroke-linecap="round" fill="none" />
+                <path d="M-26 0 Q-50 -45 -18 -90" stroke="#fb923c" stroke-width="11" stroke-linecap="round" fill="none" />
+              </g>
+              <g transform="translate(540 1775)">
+                <rect x="-215" y="-30" width="430" height="60" rx="30" fill="#05162b" stroke="#22d3ee" stroke-width="3.5" />
+                <text x="0" y="7" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="20" fill="#67e8f9" letter-spacing="1">TERUMBU KARANG • STOMATOPODA</text>
+              </g>
+            </g>
+          </svg>
+
+          <div class="s1-header">
+            <div class="s1-eyebrow">PENGLIHATAN BAWAH LAUT</div>
+            <h1 class="s1-title">Mata Udang Mantis</h1>
+          </div>
+
+          <div class="s1-pill-bar">
+            <div class="s1-pill" id="s1-pill-1"><span class="s1-pill-dot"></span><span>MATA UDANG MANTIS</span></div>
+            <div class="s1-pill is-uv" id="s1-pill-2"><span class="s1-pill-dot"></span><span>MENDETEKSI CAHAYA ULTRAVIOLET</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+            var stage = q("#s1-clip"), cam = q("#s1-cam"), halo = q("#s1-halo"), shrimp = q("#s1-shrimp");
+            var eyeL = q("#s1-eye-l"), eyeR = q("#s1-eye-r"), ant1 = q("#s1-ant-1"), ant2 = q("#s1-ant-2"), tail = q("#s1-tail");
+            var clubs = q("#s1-clubs"), legs = q("#s1-legs");
+            var uvWaves = q("#s1-uv-waves"), uv1 = q("#s1-uv-1"), uv2 = q("#s1-uv-2"), uvOrb = q("#s1-uv-orb"), uvOrb2 = q("#s1-uv-orb-2"), uvTag = q("#s1-uv-tag"), specCard = q("#s1-spec-card");
+            var b1 = q("#s1-b1"), b2 = q("#s1-b2"), b3 = q("#s1-b3"), b4 = q("#s1-b4");
+            var kl = q("#s1-kelp-l"), kr = q("#s1-kelp-r");
+            var p1 = q("#s1-pill-1"), p2 = q("#s1-pill-2");
+
+            gsap.set(stage, { opacity: 1 });
+            gsap.set(cam, { scale: 0.96, transformOrigin: "50% 60%" });
+            gsap.set(shrimp, { x: -45, y: 12 });
+            gsap.set(specCard, { opacity: 0, y: 18 });
+
+            var uvLen1 = uv1.getTotalLength();
+            var uvLen2 = uv2.getTotalLength();
+            var uvProg1 = { p: 0 }, uvProg2 = { p: 0.25 };
+            function syncUvOrb1() {
+              var pt = uv1.getPointAtLength(uvProg1.p * uvLen1);
+              gsap.set(uvOrb, { attr: { cx: pt.x.toFixed(1), cy: pt.y.toFixed(1) } });
+            }
+            function syncUvOrb2() {
+              var pt = uv2.getPointAtLength(uvProg2.p * uvLen2);
+              gsap.set(uvOrb2, { attr: { cx: pt.x.toFixed(1), cy: pt.y.toFixed(1) } });
+            }
+            syncUvOrb1();
+            syncUvOrb2();
+
+            var tl = gsap.timeline({ paused: true });
+            // Beat 1 (0 - 4s): Dense underwater life, shrimp gliding, eyes rotating INDEPENDENTLY, clubs/legs/kelp/halo & curved UV photons!
+            tl.to(shrimp, { x: 12, y: -6, duration: 4.5, ease: "sine.inOut" }, 0)
+              .to(shrimp, { y: 4, duration: 2.2, repeat: 2, yoyo: true, ease: "sine.inOut", immediateRender: false }, 4.6)
+              .to(cam, { scale: 1.09, x: -24, duration: 7.5, ease: "sine.inOut" }, 0.3)
+              .to(halo, { rotation: 36, svgOrigin: "540 690", duration: 10.0, ease: "none" }, 0)
+              .to(eyeL, { rotation: -24, transformOrigin: "50% 90%", duration: 1.2, repeat: 7, yoyo: true, ease: "sine.inOut" }, 0.1)
+              .to(eyeR, { rotation: 28, transformOrigin: "50% 90%", duration: 1.0, repeat: 8, yoyo: true, ease: "sine.inOut" }, 0.35)
+              .to([ant1, ant2], { rotation: 9, transformOrigin: "0% 50%", duration: 0.85, stagger: 0.2, repeat: 10, yoyo: true }, 0)
+              .to(tail, { rotation: -8, transformOrigin: "90% 50%", duration: 1.1, repeat: 8, yoyo: true }, 0)
+              .to(clubs, { rotation: -10, transformOrigin: "20% 0%", duration: 0.95, repeat: 9, yoyo: true, ease: "sine.inOut" }, 0.1)
+              .to(legs, { rotation: 10, transformOrigin: "50% 0%", duration: 0.75, repeat: 12, yoyo: true, ease: "sine.inOut" }, 0)
+              .to([kl, kr], { rotation: 8, transformOrigin: "50% 100%", duration: 2.0, stagger: 0.3, repeat: 4, yoyo: true, ease: "sine.inOut" }, 0)
+              .to([b1, b2, b3, b4], { y: -175, opacity: 0.1, duration: 3.4, stagger: 0.4, repeat: 2, ease: "sine.out" }, 0.05)
+              .fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 0.35);
+
+            // Beat 2 (0.6 - 10.3s): UV Waves enter early & photons ride exact sinusoidal path into eyes + Spectrum comparison bar
+            tl.to(uvWaves, { opacity: 1, duration: 0.6, ease: "power2.out" }, 0.6)
+              .fromTo([uv1, uv2], { attr: { "stroke-dashoffset": 0 } }, { attr: { "stroke-dashoffset": -192 }, duration: 9.0, ease: "none" }, 0.6)
+              .fromTo(uvProg1, { p: 0 }, { p: 1, duration: 1.65, repeat: 5, ease: "none", onUpdate: syncUvOrb1 }, 0.6)
+              .fromTo(uvProg2, { p: 0 }, { p: 1, duration: 1.9, repeat: 4, ease: "none", onUpdate: syncUvOrb2 }, 0.9)
+              .to(uvTag, { y: -7, duration: 1.1, repeat: 7, yoyo: true, ease: "sine.inOut" }, 0.8)
+              .to(specCard, { opacity: 1, y: 0, duration: 0.6, ease: "back.out(1.3)", immediateRender: false }, 4.6)
+              .to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 4.9)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 5.1)
+              .to(stage, { opacity: 0, duration: 0.48, ease: "power2.inOut", immediateRender: false }, 9.82);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-01"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

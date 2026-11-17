@@ -5,7 +5,7 @@
   "seri": "KAPSUL FAKTA",
   "archived": false,
   "createdAt": "2026-11-15T10:12:33.861Z",
-  "updatedAt": "2026-11-15T10:55:36.361Z",
+  "updatedAt": "2026-11-15T11:44:07.815Z",
   "topicBrief": "",
   "rawNaskahText": "",
   "rawStoryboardText": "",
@@ -143,7 +143,80 @@
       "tercentang": false
     }
   ],
-  "revisions": [],
+  "revisions": [
+    {
+      "id": "rev-1794743047459",
+      "target": "SCENE-05: Apakah Benar-Benar Abadi?",
+      "timestamp": "52",
+      "note": "kurang tengah, dan lingkaran garis putus putus nya kurang membentuk lingkaran",
+      "resolved": false,
+      "createdAt": "2026-11-15T11:44:07.459Z"
+    },
+    {
+      "id": "rev-1794742971995",
+      "target": "SCENE-05: Apakah Benar-Benar Abadi?",
+      "timestamp": "45",
+      "note": "arah ikan nya kebalik",
+      "resolved": false,
+      "createdAt": "2026-11-15T11:42:51.995Z"
+    },
+    {
+      "id": "rev-1794742951357",
+      "target": "SCENE-04: Rahasia pada Tingkat Sel",
+      "timestamp": "36",
+      "note": "untuk sel jenis baru harusnya juga berdenyut setelah sel matang berdenyut",
+      "resolved": false,
+      "createdAt": "2026-11-15T11:42:31.357Z"
+    },
+    {
+      "id": "rev-1794742858860",
+      "target": "SCENE-04: Rahasia pada Tingkat Sel",
+      "timestamp": "32",
+      "note": "bundarannya dan ubur saling menjauh",
+      "resolved": false,
+      "createdAt": "2026-11-15T11:40:58.860Z"
+    },
+    {
+      "id": "rev-1794742813996",
+      "target": "SCENE-03: Kembali ke Tahap Muda",
+      "timestamp": "24",
+      "note": "animasi munculnya dari bawah aja",
+      "resolved": false,
+      "createdAt": "2026-11-15T11:40:13.996Z"
+    },
+    {
+      "id": "rev-1794742761993",
+      "target": "SCENE-02: Rahasia di Balik Turritopsis dohrnii",
+      "timestamp": "15",
+      "note": "animasi mengecil nya ke tengah",
+      "resolved": false,
+      "createdAt": "2026-11-15T11:39:21.993Z"
+    },
+    {
+      "id": "rev-1794742737241",
+      "target": "SCENE-02: Rahasia di Balik Turritopsis dohrnii",
+      "timestamp": "11",
+      "note": "lingkaran dan ubur uburnya malah salih menjauh",
+      "resolved": false,
+      "createdAt": "2026-11-15T11:38:57.241Z"
+    },
+    {
+      "id": "rev-1794742646870",
+      "target": "Transisi Antar Scene",
+      "timestamp": "",
+      "note": "jadikan transisinya lebih halus",
+      "resolved": false,
+      "createdAt": "2026-11-15T11:37:26.870Z"
+    },
+    {
+      "id": "rev-1794742579125",
+      "target": "Umum",
+      "timestamp": "",
+      "note": "animasi nya kurang di tengah",
+      "resolved": false,
+      "createdAt": "2026-11-15T11:36:19.125Z"
+    }
+  ],
   "voiceover": {
     "fileName": "elevenlabs_2026-11-15t10_53_10_bagas---deep-relaxed_pvc_s50_sim75_v4-1.mp3",
     "relativePath": "assets/audio/vo.mp3",
@@ -333,7 +406,7 @@
     "voiceover": false,
     "referensi": false
   },
-  "hasComposition": false,
+  "hasComposition": true,
   "thumbnailPath": null,
   "lastCheck": null,
   "renders": [],

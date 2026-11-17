@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HUD Top Bar Malam Kontras Tinggi</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="hud" data-duration="68" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            font-family: "Poppins", sans-serif;
+          }
+
+          .hud-wrap {
+            position: absolute;
+            top: 64px;
+            left: 36px;
+            width: 1008px;
+          }
+
+          .hud-segments {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            height: 10px;
+            margin-bottom: 10px;
+          }
+
+          .hud-seg {
+            flex: 1;
+            height: 100%;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+          }
+
+          .hud-fill {
+            width: 100%;
+            height: 100%;
+            background: #fbbf24;
+            transform-origin: left center;
+          }
+
+          .hud-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+          .hud-series {
+            padding: 0;
+            background: transparent;
+            border: none;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            color: #f1f5f9;
+            text-transform: uppercase;
+          }
+
+          .hud-counter {
+            padding: 0;
+            background: transparent;
+            border: none;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            color: #fbbf24;
+            font-variant-numeric: tabular-nums;
+          }
+        </style>
+
+        <div
+          id="hud-clip"
+          class="hud-wrap clip"
+          data-start="0"
+          data-duration="68"
+          data-track-index="0"
+        >
+          <div class="hud-segments">
+            <div class="hud-seg"><div class="hud-fill" id="hud-fill-0"></div></div>
+            <div class="hud-seg"><div class="hud-fill" id="hud-fill-1"></div></div>
+            <div class="hud-seg"><div class="hud-fill" id="hud-fill-2"></div></div>
+            <div class="hud-seg"><div class="hud-fill" id="hud-fill-3"></div></div>
+            <div class="hud-seg"><div class="hud-fill" id="hud-fill-4"></div></div>
+          </div>
+          <div class="hud-meta">
+            <div class="hud-series" data-var-text="series_label">KAPSUL FAKTA</div>
+            <div class="hud-counter" id="hud-counter">01 / 05</div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var counterEl = root.querySelector("#hud-counter");
+            var fills = [
+              root.querySelector("#hud-fill-0"),
+              root.querySelector("#hud-fill-1"),
+              root.querySelector("#hud-fill-2"),
+              root.querySelector("#hud-fill-3"),
+              root.querySelector("#hud-fill-4"),
+            ];
+
+            var scenes = [
+              { start: 0, end: 9.41, label: "01 / 05" },
+              { start: 9.41, end: 23.51, label: "02 / 05" },
+              { start: 23.51, end: 40.66, label: "03 / 05" },
+              { start: 40.66, end: 55.16, label: "04 / 05" },
+              { start: 55.16, end: 68.0, label: "05 / 05" },
+            ];
+
+            var tl = gsap.timeline({ paused: true });
+            fills.forEach(function (fill, idx) {
+              var s = scenes[idx];
+              gsap.set(fill, { scaleX: 0 });
+              tl.fromTo(
+                fill,
+                { scaleX: 0 },
+                { scaleX: 1, duration: s.end - s.start, ease: "none", immediateRender: false },
+                s.start
+              );
+            });
+
+            scenes.forEach(function (s, idx) {
+              if (idx > 0) {
+                tl.call(function () { counterEl.textContent = s.label; }, null, s.start);
+              }
+            });
+
+            tl.eventCallback("onUpdate", function () {
+              var t = tl.time();
+              for (var i = scenes.length - 1; i >= 0; i--) {
+                if (t >= scenes[i].start - 0.001) {
+                  counterEl.textContent = scenes[i].label;
+                  break;
+                }
+              }
+            });
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["hud"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

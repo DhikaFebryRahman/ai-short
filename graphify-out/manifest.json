@@ -1,0 +1,2384 @@
+{
+  "episodes/deja-vu-2d/.hyperframes/artifacts/checks/42b2e658-798c-4f9f-918c-21a75318c184.json": {
+    "mtime": 1794712818.2030985,
+    "seen": 1794938843.356581,
+    "ast_hash": "a87f0a829e2804b803c1b933890f5079",
+    "semantic_hash": "a87f0a829e2804b803c1b933890f5079"
+  },
+  "episodes/deja-vu-2d/.hyperframes/artifacts/checks/46e9ff06-30f7-4c64-a468-7e8b8f31e4d4.json": {
+    "mtime": 1794720763.4731348,
+    "seen": 1794938843.3565884,
+    "ast_hash": "81c081e78ac1dba51a76b2bad1e1c11c",
+    "semantic_hash": "81c081e78ac1dba51a76b2bad1e1c11c"
+  },
+  "episodes/deja-vu-2d/.hyperframes/artifacts/checks/7e02ab02-51e6-4215-a626-9a3a4cdbc701.json": {
+    "mtime": 1794714088.3234243,
+    "seen": 1794938843.356591,
+    "ast_hash": "81c081e78ac1dba51a76b2bad1e1c11c",
+    "semantic_hash": "81c081e78ac1dba51a76b2bad1e1c11c"
+  },
+  "episodes/deja-vu-2d/.hyperframes/artifacts/checks/bc9be4b2-9164-4a0c-89a9-102d5a2c73aa.json": {
+    "mtime": 1794723299.9686303,
+    "seen": 1794938843.356593,
+    "ast_hash": "81c081e78ac1dba51a76b2bad1e1c11c",
+    "semantic_hash": "81c081e78ac1dba51a76b2bad1e1c11c"
+  },
+  "episodes/deja-vu-2d/.hyperframes/artifacts/snapshots/21cf612a-d6d6-4f81-9b3e-7ab2b5694d5e/.capture-owner.json": {
+    "mtime": 1794714094.0434053,
+    "seen": 1794938843.356594,
+    "ast_hash": "936040cb865cf96006eda1a16a26147c",
+    "semantic_hash": "936040cb865cf96006eda1a16a26147c"
+  },
+  "episodes/deja-vu-2d/.hyperframes/artifacts/snapshots/37e2619d-321d-4033-8e90-87a35e6414bb/.capture-owner.json": {
+    "mtime": 1794712998.9110117,
+    "seen": 1794938843.3565958,
+    "ast_hash": "a01dd65a85ea788cc309794dddb3801d",
+    "semantic_hash": "a01dd65a85ea788cc309794dddb3801d"
+  },
+  "episodes/deja-vu-2d/.hyperframes/artifacts/snapshots/83d301b4-93e7-4163-bef0-324d283b82f3/.capture-owner.json": {
+    "mtime": 1794713909.2330139,
+    "seen": 1794938843.3565972,
+    "ast_hash": "3b75713f16843211c761cd017c0a7a86",
+    "semantic_hash": "3b75713f16843211c761cd017c0a7a86"
+  },
+  "episodes/deja-vu-2d/.hyperframes/artifacts/snapshots/d3f78499-113f-4bca-b1a2-dc54c73f5e34/.capture-owner.json": {
+    "mtime": 1794712818.1996067,
+    "seen": 1794938843.3565986,
+    "ast_hash": "1bf658a8bdae00214ab5a322c3b9fc9a",
+    "semantic_hash": "1bf658a8bdae00214ab5a322c3b9fc9a"
+  },
+  "episodes/deja-vu-2d/.hyperframes/artifacts/snapshots/d81a3cfd-4d16-4c8c-a31a-bee3959ff489/.capture-owner.json": {
+    "mtime": 1794712943.6731935,
+    "seen": 1794938843.3566,
+    "ast_hash": "92dda8a099061692372034023224bba9",
+    "semantic_hash": "92dda8a099061692372034023224bba9"
+  },
+  "episodes/deja-vu-2d/.hyperframes/cache/check.json": {
+    "mtime": 1794723299.9856308,
+    "seen": 1794938843.3566012,
+    "ast_hash": "117ea4828c7b864e636ce703b4a3d515",
+    "semantic_hash": "117ea4828c7b864e636ce703b4a3d515"
+  },
+  "episodes/deja-vu-2d/.hyperframes/render-outputs.json": {
+    "mtime": 1794720039.7104151,
+    "seen": 1794938843.356603,
+    "ast_hash": "bff8ddd1499b6ef4e0cbde0769b4fd04",
+    "semantic_hash": "bff8ddd1499b6ef4e0cbde0769b4fd04"
+  },
+  "episodes/deja-vu-2d/.hyperframes/video-state.json": {
+    "mtime": 1794723299.9796379,
+    "seen": 1794938843.3566043,
+    "ast_hash": "3f2bf21736ef05bfd15c3ea08677d873",
+    "semantic_hash": "3f2bf21736ef05bfd15c3ea08677d873"
+  },
+  "episodes/deja-vu-2d/.waveform-cache/peaks-v2_assets_audio_bgm.wav_3969078-1794712615593.json": {
+    "mtime": 1794712957.517148,
+    "seen": 1794938843.3566058,
+    "ast_hash": "36acc51ead30a6184fd8c4faa1508878",
+    "semantic_hash": "36acc51ead30a6184fd8c4faa1508878"
+  },
+  "episodes/deja-vu-2d/.waveform-cache/peaks-v2_assets_audio_vo.mp3_784727-1794712615591.json": {
+    "mtime": 1794712957.709344,
+    "seen": 1794938843.356607,
+    "ast_hash": "d5cfbc1f03a0b606449c02d823a32f4c",
+    "semantic_hash": "d5cfbc1f03a0b606449c02d823a32f4c"
+  },
+  "episodes/deja-vu-2d/.waveform-cache/v2_assets_audio_bgm.wav_3969078-1794712615593.json": {
+    "mtime": 1794712957.473341,
+    "seen": 1794938843.3566086,
+    "ast_hash": "5564a0cead724bcdecddb7790c6cd1a8",
+    "semantic_hash": "5564a0cead724bcdecddb7790c6cd1a8"
+  },
+  "episodes/deja-vu-2d/.waveform-cache/v2_assets_audio_vo.mp3_784727-1794712615591.json": {
+    "mtime": 1794712957.521148,
+    "seen": 1794938843.3566098,
+    "ast_hash": "5ca5df82a00518d4cc92d6a161bcccbf",
+    "semantic_hash": "5ca5df82a00518d4cc92d6a161bcccbf"
+  },
+  "episodes/deja-vu-2d/hyperframes.json": {
+    "mtime": 1794712619.5622606,
+    "seen": 1794938843.3566113,
+    "ast_hash": "cd46bd96e4f4bd7820291e0e6b817627",
+    "semantic_hash": "cd46bd96e4f4bd7820291e0e6b817627"
+  },
+  "episodes/deja-vu-2d/hyperframes.lock.json": {
+    "mtime": 1794712619.5612607,
+    "seen": 1794938843.356613,
+    "ast_hash": "cab99cc9802b9c55c6324cf354e672e9",
+    "semantic_hash": "cab99cc9802b9c55c6324cf354e672e9"
+  },
+  "episodes/deja-vu-2d/meta.json": {
+    "mtime": 1794712608.9742956,
+    "seen": 1794938843.356614,
+    "ast_hash": "a0938aebae74d72d264b64ab8ccba463",
+    "semantic_hash": "a0938aebae74d72d264b64ab8ccba463"
+  },
+  "episodes/deja-vu-2d/package.json": {
+    "mtime": 1794723319.0192091,
+    "seen": 1794938843.3566158,
+    "ast_hash": "808c4f185943e22893d24dc129577f74",
+    "semantic_hash": "808c4f185943e22893d24dc129577f74"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/artifacts/checks/79d0d328-300e-464e-8cd5-0e27d68f9466.json": {
+    "mtime": 1794724284.5966077,
+    "seen": 1794938843.3566172,
+    "ast_hash": "cc9c04bae389d223be5a4b5efae3371b",
+    "semantic_hash": "cc9c04bae389d223be5a4b5efae3371b"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/artifacts/checks/86cc57a1-26b9-4529-9a58-494805011118.json": {
+    "mtime": 1794732492.2128515,
+    "seen": 1794938843.3566186,
+    "ast_hash": "a06d68bd8f47fc4ed6025b67ba635f5a",
+    "semantic_hash": "a06d68bd8f47fc4ed6025b67ba635f5a"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/artifacts/checks/a064013b-96b8-4d7b-bf2d-61cd42c51f0e.json": {
+    "mtime": 1794726803.2758324,
+    "seen": 1794938843.3566203,
+    "ast_hash": "a06d68bd8f47fc4ed6025b67ba635f5a",
+    "semantic_hash": "a06d68bd8f47fc4ed6025b67ba635f5a"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/artifacts/snapshots/0ca88c8c-372c-4f8d-88f6-f22a449bc61b/.capture-owner.json": {
+    "mtime": 1794725204.8884,
+    "seen": 1794938843.3566215,
+    "ast_hash": "edae782eebc8743447e4f0add1ff6193",
+    "semantic_hash": "edae782eebc8743447e4f0add1ff6193"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/artifacts/snapshots/3f19aafc-18c9-4ed3-a3cf-6ab3b2373257/.capture-owner.json": {
+    "mtime": 1794725890.0646257,
+    "seen": 1794938843.356623,
+    "ast_hash": "7627de47244b960b46240702dd768b73",
+    "semantic_hash": "7627de47244b960b46240702dd768b73"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/artifacts/snapshots/51003c37-a269-45cb-9642-8182437d93ef/.capture-owner.json": {
+    "mtime": 1794726574.5557826,
+    "seen": 1794938843.356624,
+    "ast_hash": "53b6d8f8681bb4191c4bcbaf4455a536",
+    "semantic_hash": "53b6d8f8681bb4191c4bcbaf4455a536"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/artifacts/snapshots/5dadc33d-4383-4b09-9cbd-9e0970013c39/.capture-owner.json": {
+    "mtime": 1794724594.4479082,
+    "seen": 1794938843.3566253,
+    "ast_hash": "e94a532f084b82c99bdea527ad4c3492",
+    "semantic_hash": "e94a532f084b82c99bdea527ad4c3492"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/artifacts/snapshots/662967ad-57d4-40ec-b9c5-a69423022011/.capture-owner.json": {
+    "mtime": 1794725249.7036154,
+    "seen": 1794938843.356627,
+    "ast_hash": "1241e2bcda049a688ab0550ca0f75a66",
+    "semantic_hash": "1241e2bcda049a688ab0550ca0f75a66"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/artifacts/snapshots/6b315f3c-a81f-4adc-81cb-b8a58d59d3fc/.capture-owner.json": {
+    "mtime": 1794726507.2785435,
+    "seen": 1794938843.356628,
+    "ast_hash": "996ded3390799844898cfe8d0e0df9a4",
+    "semantic_hash": "996ded3390799844898cfe8d0e0df9a4"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/artifacts/snapshots/bc2eba24-c2aa-437d-9c00-a6a1847c536e/.capture-owner.json": {
+    "mtime": 1794726813.397879,
+    "seen": 1794938843.3566296,
+    "ast_hash": "d03c5675882201e1d96fe28341b5cfdc",
+    "semantic_hash": "d03c5675882201e1d96fe28341b5cfdc"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/artifacts/snapshots/c750152f-4363-4581-847a-1561a80fbe1e/.capture-owner.json": {
+    "mtime": 1794724482.7681394,
+    "seen": 1794938843.3566308,
+    "ast_hash": "5436b3b8c3ab75aeeda020b189a61836",
+    "semantic_hash": "5436b3b8c3ab75aeeda020b189a61836"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/artifacts/snapshots/deba5c3f-1b06-42cd-92df-f72762d8a27b/.capture-owner.json": {
+    "mtime": 1794725779.8961139,
+    "seen": 1794938843.3566318,
+    "ast_hash": "32d3011bbd6e5bb0fdff8f504c00bb9b",
+    "semantic_hash": "32d3011bbd6e5bb0fdff8f504c00bb9b"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/cache/check.json": {
+    "mtime": 1794732492.2488515,
+    "seen": 1794938843.3566332,
+    "ast_hash": "7d8b99977f0516586da2eb8a845dc9f8",
+    "semantic_hash": "7d8b99977f0516586da2eb8a845dc9f8"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/render-outputs.json": {
+    "mtime": 1794727112.6464355,
+    "seen": 1794938843.3566346,
+    "ast_hash": "35b2ae3f544f75c55230b66591a9bcd6",
+    "semantic_hash": "35b2ae3f544f75c55230b66591a9bcd6"
+  },
+  "episodes/kaki-katak-baterai/.hyperframes/video-state.json": {
+    "mtime": 1794734078.7515318,
+    "seen": 1794938843.3566356,
+    "ast_hash": "600bbc8e9c9af0abbbc5252329da3ae4",
+    "semantic_hash": "600bbc8e9c9af0abbbc5252329da3ae4"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/peaks-v2_assets_audio_bgm.wav_4939244-1794724054071.json": {
+    "mtime": 1794724620.6458032,
+    "seen": 1794938843.3566368,
+    "ast_hash": "91ad8c9453ec2b777b9212f775a52837",
+    "semantic_hash": "91ad8c9453ec2b777b9212f775a52837"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/peaks-v2_assets_audio_sfx_discovery-chime.wav_97064-1794724054166.json": {
+    "mtime": 1794724620.9910831,
+    "seen": 1794938843.3566377,
+    "ast_hash": "5d31e8b6997ebcd60750795aa98be318",
+    "semantic_hash": "5d31e8b6997ebcd60750795aa98be318"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/peaks-v2_assets_audio_sfx_metal-clink.wav_39768-1794724054402.json": {
+    "mtime": 1794724620.647081,
+    "seen": 1794938843.356639,
+    "ast_hash": "b564264229fc3f9ba232e9fae604e205",
+    "semantic_hash": "b564264229fc3f9ba232e9fae604e205"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/peaks-v2_assets_audio_sfx_pop-soft.wav_24740-1794724054086.json": {
+    "mtime": 1794724620.9190826,
+    "seen": 1794938843.3566403,
+    "ast_hash": "6433d58a9a4c9d76fc0e8b659dfb2c59",
+    "semantic_hash": "6433d58a9a4c9d76fc0e8b659dfb2c59"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/peaks-v2_assets_audio_sfx_spark-zap.wav_114738-1794724054286.json": {
+    "mtime": 1794724620.8180819,
+    "seen": 1794938843.3566413,
+    "ast_hash": "531a664e4b730f0c4f71ea4bc1be13b9",
+    "semantic_hash": "531a664e4b730f0c4f71ea4bc1be13b9"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/peaks-v2_assets_audio_sfx_whoosh-soft.wav_132378-1794724054348.json": {
+    "mtime": 1794724620.838082,
+    "seen": 1794938843.3566422,
+    "ast_hash": "d791548e93b25e60ea6684b1a62eeed2",
+    "semantic_hash": "d791548e93b25e60ea6684b1a62eeed2"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/peaks-v2_assets_audio_vo.mp3_865393-1794723952122.json": {
+    "mtime": 1794724620.4620795,
+    "seen": 1794938843.3566437,
+    "ast_hash": "093b10b1511b9544efc1c023d4bfec64",
+    "semantic_hash": "093b10b1511b9544efc1c023d4bfec64"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/v2_assets_audio_bgm.wav_4939244-1794724054071.json": {
+    "mtime": 1794724620.2570782,
+    "seen": 1794938843.3566446,
+    "ast_hash": "f40628a6fa3e821acb441efc7f1f6f73",
+    "semantic_hash": "f40628a6fa3e821acb441efc7f1f6f73"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/v2_assets_audio_sfx_discovery-chime.wav_97064-1794724054166.json": {
+    "mtime": 1794724621.099084,
+    "seen": 1794938843.356647,
+    "ast_hash": "1d176fd2cf83ebd560d36bb9f6e73f04",
+    "semantic_hash": "1d176fd2cf83ebd560d36bb9f6e73f04"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/v2_assets_audio_sfx_metal-clink.wav_39768-1794724054402.json": {
+    "mtime": 1794724620.5502763,
+    "seen": 1794938843.3566482,
+    "ast_hash": "0dcfbcb5a0b66ab5149674cd654a7c5c",
+    "semantic_hash": "0dcfbcb5a0b66ab5149674cd654a7c5c"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/v2_assets_audio_sfx_pop-soft.wav_24740-1794724054086.json": {
+    "mtime": 1794724621.0690837,
+    "seen": 1794938843.3566492,
+    "ast_hash": "3487fd620f80ea346fa9c1440ef95b03",
+    "semantic_hash": "3487fd620f80ea346fa9c1440ef95b03"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/v2_assets_audio_sfx_spark-zap.wav_114738-1794724054286.json": {
+    "mtime": 1794724620.7530816,
+    "seen": 1794938843.3566506,
+    "ast_hash": "d150a745e12a16c4315d45dd652ff2a1",
+    "semantic_hash": "d150a745e12a16c4315d45dd652ff2a1"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/v2_assets_audio_sfx_whoosh-soft.wav_132378-1794724054348.json": {
+    "mtime": 1794724621.0320833,
+    "seen": 1794938843.3566515,
+    "ast_hash": "dfd00eb33ade19482451ebbb2e720a2f",
+    "semantic_hash": "dfd00eb33ade19482451ebbb2e720a2f"
+  },
+  "episodes/kaki-katak-baterai/.waveform-cache/v2_assets_audio_vo.mp3_865393-1794723952122.json": {
+    "mtime": 1794724620.3230786,
+    "seen": 1794938843.3566525,
+    "ast_hash": "4388c67d31db7498661e69498b19d7d9",
+    "semantic_hash": "4388c67d31db7498661e69498b19d7d9"
+  },
+  "episodes/kaki-katak-baterai/hyperframes.json": {
+    "mtime": 1794723952.0742977,
+    "seen": 1794938843.3566535,
+    "ast_hash": "7b33c6cb9ecfe380a4657c509ff8af33",
+    "semantic_hash": "7b33c6cb9ecfe380a4657c509ff8af33"
+  },
+  "episodes/kaki-katak-baterai/meta.json": {
+    "mtime": 1794723952.0712976,
+    "seen": 1794938843.356655,
+    "ast_hash": "f199e5c1ca34256ae79cd7bf3408fa92",
+    "semantic_hash": "f199e5c1ca34256ae79cd7bf3408fa92"
+  },
+  "episodes/kaki-katak-baterai/package.json": {
+    "mtime": 1794723952.0753603,
+    "seen": 1794938843.3566558,
+    "ast_hash": "3472a9fd065dcb5469bf6220f8654de1",
+    "semantic_hash": "3472a9fd065dcb5469bf6220f8654de1"
+  },
+  "episodes/kaki-katak-baterai/project.json": {
+    "mtime": 1794732492.323852,
+    "seen": 1794938843.3566568,
+    "ast_hash": "46f49538e9511c3c832aa537894a254e",
+    "semantic_hash": "46f49538e9511c3c832aa537894a254e"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.hyperframes/artifacts/checks/7bdcf1f2-5612-4e45-8c27-af0dc5dffd7a.json": {
+    "mtime": 1794934360.7924197,
+    "seen": 1794938843.3566582,
+    "ast_hash": "c2e6ae02ebe57743a6914487e09247ef",
+    "semantic_hash": "c2e6ae02ebe57743a6914487e09247ef"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.hyperframes/artifacts/snapshots/6b0ddced-fa46-4e81-9c78-e02ade82c438/.capture-owner.json": {
+    "mtime": 1794934329.8190005,
+    "seen": 1794938843.3566592,
+    "ast_hash": "d2eab2cc70938205d1940d7c34f10e64",
+    "semantic_hash": "d2eab2cc70938205d1940d7c34f10e64"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.hyperframes/artifacts/snapshots/94b1761c-7e61-4502-80d5-ae30b4ab2940/.capture-owner.json": {
+    "mtime": 1794915565.7178843,
+    "seen": 1794938843.3566601,
+    "ast_hash": "dd13e131a345f5fafd51b6c8f0be6f4d",
+    "semantic_hash": "dd13e131a345f5fafd51b6c8f0be6f4d"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.hyperframes/artifacts/snapshots/e44239f6-70ae-475a-8531-0996357a8ea9/.capture-owner.json": {
+    "mtime": 1794915680.0442064,
+    "seen": 1794938843.3566616,
+    "ast_hash": "339b86a2812883e6ae8b29d5ad429ecb",
+    "semantic_hash": "339b86a2812883e6ae8b29d5ad429ecb"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.hyperframes/artifacts/snapshots/e511e3e1-2b6b-4666-9a9d-620cea3155df/.capture-owner.json": {
+    "mtime": 1794934224.955843,
+    "seen": 1794938843.3566628,
+    "ast_hash": "c23f2fb977d33d0b1c2fe035124927aa",
+    "semantic_hash": "c23f2fb977d33d0b1c2fe035124927aa"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.hyperframes/cache/check.json": {
+    "mtime": 1794934360.8264198,
+    "seen": 1794938843.3566637,
+    "ast_hash": "61753e433ea6b4acfbf4e42b513d0c6c",
+    "semantic_hash": "61753e433ea6b4acfbf4e42b513d0c6c"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.hyperframes/render-outputs.json": {
+    "mtime": 1794934602.4068897,
+    "seen": 1794938843.3566651,
+    "ast_hash": "1536c6b1cc8c4e5a054afee4d6e8c045",
+    "semantic_hash": "1536c6b1cc8c4e5a054afee4d6e8c045"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.hyperframes/video-state.json": {
+    "mtime": 1794934726.5391533,
+    "seen": 1794938843.356666,
+    "ast_hash": "88e34c35858b83181e2ac797fe4cfa46",
+    "semantic_hash": "88e34c35858b83181e2ac797fe4cfa46"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/peaks-v2_assets_audio_bgm.wav_15346844-1794915233896.json": {
+    "mtime": 1794915748.6734424,
+    "seen": 1794938843.356667,
+    "ast_hash": "241ac76d9b37405042a835b2cd401ca3",
+    "semantic_hash": "241ac76d9b37405042a835b2cd401ca3"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/peaks-v2_assets_audio_sfx_gleam-chime.wav_132344-1794915234074.json": {
+    "mtime": 1794915748.7944372,
+    "seen": 1794938843.3566685,
+    "ast_hash": "6877c220c44aa67d196b127f34af5fed",
+    "semantic_hash": "6877c220c44aa67d196b127f34af5fed"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/peaks-v2_assets_audio_sfx_polar-pulse.wav_79424-1794915233999.json": {
+    "mtime": 1794915748.828436,
+    "seen": 1794938843.3566694,
+    "ast_hash": "cf097ee4028ad89c2f3a2d533d2c4346",
+    "semantic_hash": "cf097ee4028ad89c2f3a2d533d2c4346"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/peaks-v2_assets_audio_sfx_pop-bubble.wav_26504-1794915233916.json": {
+    "mtime": 1794915748.776438,
+    "seen": 1794938843.3566706,
+    "ast_hash": "dd30fedf21080a63a459b63d4acd8080",
+    "semantic_hash": "dd30fedf21080a63a459b63d4acd8080"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/peaks-v2_assets_audio_sfx_uv-shimmer.wav_75014-1794915233958.json": {
+    "mtime": 1794915748.4394524,
+    "seen": 1794938843.3566718,
+    "ast_hash": "b8e10435492a153b91825cc86cd08dac",
+    "semantic_hash": "b8e10435492a153b91825cc86cd08dac"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/peaks-v2_assets_audio_sfx_whoosh-soft.wav_83834-1794915234165.json": {
+    "mtime": 1794915748.638444,
+    "seen": 1794938843.3566728,
+    "ast_hash": "92813c4b49c5877fb62130d3ffc0ece5",
+    "semantic_hash": "92813c4b49c5877fb62130d3ffc0ece5"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/peaks-v2_assets_audio_vo.mp3_1360674-1794915102066.json": {
+    "mtime": 1794915748.2324612,
+    "seen": 1794938843.3566737,
+    "ast_hash": "70f74cc3e00d7aeb07dd3db431296840",
+    "semantic_hash": "70f74cc3e00d7aeb07dd3db431296840"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/v2_assets_audio_bgm.wav_15346844-1794915233896.json": {
+    "mtime": 1794915748.1654642,
+    "seen": 1794938843.3566751,
+    "ast_hash": "d9223def69cffd38972d6d7eda1bf84f",
+    "semantic_hash": "d9223def69cffd38972d6d7eda1bf84f"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/v2_assets_audio_sfx_gleam-chime.wav_132344-1794915234074.json": {
+    "mtime": 1794915748.9504306,
+    "seen": 1794938843.356676,
+    "ast_hash": "8cb3ba09a6dd80f0e69c164f293f3623",
+    "semantic_hash": "8cb3ba09a6dd80f0e69c164f293f3623"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/v2_assets_audio_sfx_polar-pulse.wav_79424-1794915233999.json": {
+    "mtime": 1794915748.9204319,
+    "seen": 1794938843.356677,
+    "ast_hash": "85121176df00ef14098d7ba5da72db34",
+    "semantic_hash": "85121176df00ef14098d7ba5da72db34"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/v2_assets_audio_sfx_pop-bubble.wav_26504-1794915233916.json": {
+    "mtime": 1794915748.8544347,
+    "seen": 1794938843.3566782,
+    "ast_hash": "de6ca06f31e14c8711b213fca8b83bec",
+    "semantic_hash": "de6ca06f31e14c8711b213fca8b83bec"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/v2_assets_audio_sfx_uv-shimmer.wav_75014-1794915233958.json": {
+    "mtime": 1794915748.376455,
+    "seen": 1794938843.3566794,
+    "ast_hash": "680e5bb3a46e942ed3abc48dfdfa0e38",
+    "semantic_hash": "680e5bb3a46e942ed3abc48dfdfa0e38"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/v2_assets_audio_sfx_whoosh-soft.wav_83834-1794915234165.json": {
+    "mtime": 1794915748.5774465,
+    "seen": 1794938843.3566806,
+    "ast_hash": "fa1db92547c48d96f5e43ff777d06691",
+    "semantic_hash": "fa1db92547c48d96f5e43ff777d06691"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/.waveform-cache/v2_assets_audio_vo.mp3_1360674-1794915102066.json": {
+    "mtime": 1794915748.0914674,
+    "seen": 1794938843.3566823,
+    "ast_hash": "f4b1a7c9aeacf1de14c0d9edbc5edbcc",
+    "semantic_hash": "f4b1a7c9aeacf1de14c0d9edbc5edbcc"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/assets/audio/transcript.json": {
+    "mtime": 1794915196.3582134,
+    "seen": 1794938843.3566835,
+    "ast_hash": "8d964db14a29331ce02c69abb49a1080",
+    "semantic_hash": "8d964db14a29331ce02c69abb49a1080"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/hyperframes.json": {
+    "mtime": 1794915102.0237224,
+    "seen": 1794938843.3566844,
+    "ast_hash": "9aba7af72c9a867a940b5ea847eb18da",
+    "semantic_hash": "9aba7af72c9a867a940b5ea847eb18da"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/meta.json": {
+    "mtime": 1794915102.018776,
+    "seen": 1794938843.3566856,
+    "ast_hash": "52aa48510a520afc94d4f34ad2ad2d92",
+    "semantic_hash": "52aa48510a520afc94d4f34ad2ad2d92"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/package.json": {
+    "mtime": 1794915102.0237224,
+    "seen": 1794938843.3566868,
+    "ast_hash": "eb3e158e93171c31e3b4c57c72e48fc4",
+    "semantic_hash": "eb3e158e93171c31e3b4c57c72e48fc4"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/artifacts/checks/74fb414c-9f68-4f11-a09a-6db75fb5ea0e.json": {
+    "mtime": 1794855686.627293,
+    "seen": 1794938843.3566878,
+    "ast_hash": "2c99eba68664177c8c04466fe17922b9",
+    "semantic_hash": "2c99eba68664177c8c04466fe17922b9"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/artifacts/checks/7c6e807f-bf4a-415d-9331-a0369afd5ab2.json": {
+    "mtime": 1794912992.233159,
+    "seen": 1794938843.3566892,
+    "ast_hash": "ab1ac0fc47a7decdee88cfdf5e85d269",
+    "semantic_hash": "ab1ac0fc47a7decdee88cfdf5e85d269"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/artifacts/snapshots/36cc51df-f09e-4d1b-8dc3-8d22ed35340f/.capture-owner.json": {
+    "mtime": 1794911971.1609128,
+    "seen": 1794938843.3566902,
+    "ast_hash": "dd704d0042a5df02b21fbeb15d8cbb9f",
+    "semantic_hash": "dd704d0042a5df02b21fbeb15d8cbb9f"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/artifacts/snapshots/4306fc57-9173-47cf-92fb-7854247cfcc8/.capture-owner.json": {
+    "mtime": 1794892183.6494071,
+    "seen": 1794938843.3566911,
+    "ast_hash": "6107b95fe3f35c9438c8daacb765baea",
+    "semantic_hash": "6107b95fe3f35c9438c8daacb765baea"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/artifacts/snapshots/4593e083-6a4f-4f12-80bb-14f92ffd7e6f/.capture-owner.json": {
+    "mtime": 1794892088.5848854,
+    "seen": 1794938843.3566923,
+    "ast_hash": "26c2c1cb20ad835081ddf63de96f9000",
+    "semantic_hash": "26c2c1cb20ad835081ddf63de96f9000"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/artifacts/snapshots/54d9c9ba-5bd2-49ba-911d-b8ff85039e1f/.capture-owner.json": {
+    "mtime": 1794856009.9477644,
+    "seen": 1794938843.3566935,
+    "ast_hash": "dd9dc91765cfb98da2f66b1ba444a90f",
+    "semantic_hash": "dd9dc91765cfb98da2f66b1ba444a90f"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/artifacts/snapshots/88fa8975-c676-45dc-a3e6-4f2976fecdaa/.capture-owner.json": {
+    "mtime": 1794892141.4959607,
+    "seen": 1794938843.3566947,
+    "ast_hash": "9e287cbfef81ecbeb72cec76e1bd7dbe",
+    "semantic_hash": "9e287cbfef81ecbeb72cec76e1bd7dbe"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/artifacts/snapshots/b865f69d-7b71-4152-a802-9eb0af34f020/.capture-owner.json": {
+    "mtime": 1794856060.3600156,
+    "seen": 1794938843.3566968,
+    "ast_hash": "7279f75303ad521bd6d7d2e8f8840a86",
+    "semantic_hash": "7279f75303ad521bd6d7d2e8f8840a86"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/artifacts/snapshots/cceb53aa-a06f-41c2-819b-dc55edf06a41/.capture-owner.json": {
+    "mtime": 1794912026.1637247,
+    "seen": 1794938843.3566978,
+    "ast_hash": "65ca29c0335b40137a0c1f7682c44cca",
+    "semantic_hash": "65ca29c0335b40137a0c1f7682c44cca"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/artifacts/snapshots/effe2414-4c57-4a13-8a06-05094ef00af1/.capture-owner.json": {
+    "mtime": 1794855875.983077,
+    "seen": 1794938843.3566992,
+    "ast_hash": "dfb8a489d7c97750387efa187e0be53c",
+    "semantic_hash": "dfb8a489d7c97750387efa187e0be53c"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/artifacts/snapshots/fb8803e1-289c-4bfd-ab9e-f86f833c271f/.capture-owner.json": {
+    "mtime": 1794912948.7855458,
+    "seen": 1794938843.3567002,
+    "ast_hash": "0335b62e54048a5a6e98f28bdf3998a3",
+    "semantic_hash": "0335b62e54048a5a6e98f28bdf3998a3"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/cache/check.json": {
+    "mtime": 1794912992.2781599,
+    "seen": 1794938843.3567014,
+    "ast_hash": "f5dc239ec790bd371a247a8d20d2add1",
+    "semantic_hash": "f5dc239ec790bd371a247a8d20d2add1"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/render-outputs.json": {
+    "mtime": 1794913121.5509276,
+    "seen": 1794938843.3567028,
+    "ast_hash": "7e6a116de2c9486094e20e8e62589c9b",
+    "semantic_hash": "7e6a116de2c9486094e20e8e62589c9b"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.hyperframes/video-state.json": {
+    "mtime": 1794913213.5171895,
+    "seen": 1794938843.3567038,
+    "ast_hash": "44f7e453e700c14ae50192282649bd69",
+    "semantic_hash": "44f7e453e700c14ae50192282649bd69"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_bgm.wav_11995244-1794891838839.json": {
+    "mtime": 1794892284.2869942,
+    "seen": 1794938843.3567047,
+    "ast_hash": "b507744d6208b7b5cba6845f1bc26db2",
+    "semantic_hash": "b507744d6208b7b5cba6845f1bc26db2"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_bgm.wav_5997644-1794855390465.json": {
+    "mtime": 1794856104.5827515,
+    "seen": 1794938843.3567061,
+    "ast_hash": "2b526803e9496819645480c48467c5ec",
+    "semantic_hash": "2b526803e9496819645480c48467c5ec"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_alarm-ping.wav_48554-1794891838936.json": {
+    "mtime": 1794892284.6033502,
+    "seen": 1794938843.3567073,
+    "ast_hash": "dbca0fc949a4b9b5f2e62f3520d60cbd",
+    "semantic_hash": "dbca0fc949a4b9b5f2e62f3520d60cbd"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_bell-call.wav_652902-1794855390969.json": {
+    "mtime": 1794856104.462994,
+    "seen": 1794938843.3567085,
+    "ast_hash": "fb6f6da1a0e733c69f0b042a95f0cf1f",
+    "semantic_hash": "fb6f6da1a0e733c69f0b042a95f0cf1f"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_eeg-pulse.wav_57374-1794855390537.json": {
+    "mtime": 1794856104.6820397,
+    "seen": 1794938843.3567097,
+    "ast_hash": "8271030ab409b6b91c704f0ceb80d96f",
+    "semantic_hash": "8271030ab409b6b91c704f0ceb80d96f"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_eeg-pulse.wav_79424-1794891838971.json": {
+    "mtime": 1794892284.7033517,
+    "seen": 1794938843.3567107,
+    "ast_hash": "2bb2d414bec3829e50721a299472e10c",
+    "semantic_hash": "2bb2d414bec3829e50721a299472e10c"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_filter-soft.wav_39734-1794855390553.json": {
+    "mtime": 1794856104.948996,
+    "seen": 1794938843.3567119,
+    "ast_hash": "c991301674df040ab7998c050483ddec",
+    "semantic_hash": "c991301674df040ab7998c050483ddec"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_gleam-chime.wav_1141038-1794855711545.json": {
+    "mtime": 1794856104.8839958,
+    "seen": 1794938843.356713,
+    "ast_hash": "45833220db8f8fe0f5e634cfa564f738",
+    "semantic_hash": "45833220db8f8fe0f5e634cfa564f738"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_gleam-chime.wav_148220-1794892232549.json": {
+    "mtime": 1794892284.5403492,
+    "seen": 1794938843.356714,
+    "ast_hash": "29c7ddf89fa9188addc352b0fab037a2",
+    "semantic_hash": "29c7ddf89fa9188addc352b0fab037a2"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_pop-bubble.wav_24740-1794891838872.json": {
+    "mtime": 1794892284.4783485,
+    "seen": 1794938843.356715,
+    "ast_hash": "c9b7004270434c8f7fd6f0277322c515",
+    "semantic_hash": "c9b7004270434c8f7fd6f0277322c515"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_pop-soft.wav_21212-1794855390512.json": {
+    "mtime": 1794856104.7959955,
+    "seen": 1794938843.3567164,
+    "ast_hash": "a611663fee024fb7f2dce5b6d166af12",
+    "semantic_hash": "a611663fee024fb7f2dce5b6d166af12"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_voice-call.wav_66194-1794891838911.json": {
+    "mtime": 1794892284.3523467,
+    "seen": 1794938843.3567173,
+    "ast_hash": "9bb46e27e66708b4f0cf5cdd422699e7",
+    "semantic_hash": "9bb46e27e66708b4f0cf5cdd422699e7"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_water-drop.wav_537702-1794855391115.json": {
+    "mtime": 1794856104.9769962,
+    "seen": 1794938843.3567183,
+    "ast_hash": "b421987a2544a134c0c23549fd6ea15e",
+    "semantic_hash": "b421987a2544a134c0c23549fd6ea15e"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_whoosh-soft.wav_691302-1794855390643.json": {
+    "mtime": 1794856104.8299956,
+    "seen": 1794938843.3567197,
+    "ast_hash": "d6c4c61566330b1c93d2f7fa319d062d",
+    "semantic_hash": "d6c4c61566330b1c93d2f7fa319d062d"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_sfx_whoosh-soft.wav_84092-1794891839049.json": {
+    "mtime": 1794892284.5133488,
+    "seen": 1794938843.3567207,
+    "ast_hash": "af6a64491f36837769c67d4698099298",
+    "semantic_hash": "af6a64491f36837769c67d4698099298"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_vo.mp3_1055982-1794855216475.json": {
+    "mtime": 1794856104.1999931,
+    "seen": 1794938843.3567219,
+    "ast_hash": "e17df2a4a0e904195b398c33f82dea40",
+    "semantic_hash": "e17df2a4a0e904195b398c33f82dea40"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/peaks-v2_assets_audio_vo.mp3_1059744-1794891704360.json": {
+    "mtime": 1794892284.2053444,
+    "seen": 1794938843.3567228,
+    "ast_hash": "bdae2cf270b81ae5bfb7a87deb9f5cf4",
+    "semantic_hash": "bdae2cf270b81ae5bfb7a87deb9f5cf4"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_bgm.wav_11995244-1794891838839.json": {
+    "mtime": 1794892284.1373434,
+    "seen": 1794938843.3567243,
+    "ast_hash": "37b93cbeb74789c70277e9a36912f5d1",
+    "semantic_hash": "37b93cbeb74789c70277e9a36912f5d1"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_bgm.wav_5997644-1794855390465.json": {
+    "mtime": 1794856104.167993,
+    "seen": 1794938843.3567252,
+    "ast_hash": "9aeb0970e87164790d77787fc27e89d2",
+    "semantic_hash": "9aeb0970e87164790d77787fc27e89d2"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_alarm-ping.wav_48554-1794891838936.json": {
+    "mtime": 1794892284.8413537,
+    "seen": 1794938843.3567262,
+    "ast_hash": "cc4e36be34c42a2aea9281b8ce1add16",
+    "semantic_hash": "cc4e36be34c42a2aea9281b8ce1add16"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_bell-call.wav_652902-1794855390969.json": {
+    "mtime": 1794856104.443994,
+    "seen": 1794938843.3567276,
+    "ast_hash": "c348d4abfe3537a015c5e592e124cba5",
+    "semantic_hash": "c348d4abfe3537a015c5e592e124cba5"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_eeg-pulse.wav_57374-1794855390537.json": {
+    "mtime": 1794856104.634995,
+    "seen": 1794938843.3567286,
+    "ast_hash": "b0ed2d87b2fe403b6b2a3918b5d5410c",
+    "semantic_hash": "b0ed2d87b2fe403b6b2a3918b5d5410c"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_eeg-pulse.wav_79424-1794891838971.json": {
+    "mtime": 1794892284.8553538,
+    "seen": 1794938843.3567297,
+    "ast_hash": "7767db2814337045530df1ecd09e7dce",
+    "semantic_hash": "7767db2814337045530df1ecd09e7dce"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_filter-soft.wav_39734-1794855390553.json": {
+    "mtime": 1794856105.061519,
+    "seen": 1794938843.356731,
+    "ast_hash": "987bd904e1d993e4c749750a59a8da10",
+    "semantic_hash": "987bd904e1d993e4c749750a59a8da10"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_gleam-chime.wav_1141038-1794855711545.json": {
+    "mtime": 1794856105.3009975,
+    "seen": 1794938843.356732,
+    "ast_hash": "a0aba41b646a07237c1d0faa9ec6b6e4",
+    "semantic_hash": "a0aba41b646a07237c1d0faa9ec6b6e4"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_gleam-chime.wav_148220-1794892232549.json": {
+    "mtime": 1794892285.0163562,
+    "seen": 1794938843.3567328,
+    "ast_hash": "f2a749015d23a147003128a07cff0769",
+    "semantic_hash": "f2a749015d23a147003128a07cff0769"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_pop-bubble.wav_24740-1794891838872.json": {
+    "mtime": 1794892284.4123476,
+    "seen": 1794938843.356734,
+    "ast_hash": "17d3e4aa51cde74a8b0ac12a1d89794e",
+    "semantic_hash": "17d3e4aa51cde74a8b0ac12a1d89794e"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_pop-soft.wav_21212-1794855390512.json": {
+    "mtime": 1794856105.1299968,
+    "seen": 1794938843.3567352,
+    "ast_hash": "97ee986ee445cd92e332a62e804c2857",
+    "semantic_hash": "97ee986ee445cd92e332a62e804c2857"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_voice-call.wav_66194-1794891838911.json": {
+    "mtime": 1794892284.3296041,
+    "seen": 1794938843.3567362,
+    "ast_hash": "b268b6ac3b7e22a7ac4857a0581a6364",
+    "semantic_hash": "b268b6ac3b7e22a7ac4857a0581a6364"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_water-drop.wav_537702-1794855391115.json": {
+    "mtime": 1794856105.0219965,
+    "seen": 1794938843.3567374,
+    "ast_hash": "04f249b15db8ec2241594620bb4d7211",
+    "semantic_hash": "04f249b15db8ec2241594620bb4d7211"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_whoosh-soft.wav_691302-1794855390643.json": {
+    "mtime": 1794856105.179997,
+    "seen": 1794938843.3567386,
+    "ast_hash": "8718ab8df46244e9c4525701816b4d17",
+    "semantic_hash": "8718ab8df46244e9c4525701816b4d17"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_sfx_whoosh-soft.wav_84092-1794891839049.json": {
+    "mtime": 1794892284.8833542,
+    "seen": 1794938843.3567395,
+    "ast_hash": "a3bc7109919e2913ad59f787a199a2c3",
+    "semantic_hash": "a3bc7109919e2913ad59f787a199a2c3"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_vo.mp3_1055982-1794855216475.json": {
+    "mtime": 1794856104.1606305,
+    "seen": 1794938843.3567407,
+    "ast_hash": "dbd2d74c608f3eb591b2bba942c8315c",
+    "semantic_hash": "dbd2d74c608f3eb591b2bba942c8315c"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.waveform-cache/v2_assets_audio_vo.mp3_1059744-1794891704360.json": {
+    "mtime": 1794892284.1263433,
+    "seen": 1794938843.3567417,
+    "ast_hash": "f9df73f9e36b05dade55a92da0607d8f",
+    "semantic_hash": "f9df73f9e36b05dade55a92da0607d8f"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/transcript.json": {
+    "mtime": 1794891744.2702966,
+    "seen": 1794938843.3567429,
+    "ast_hash": "5fcd8ba7e1bc3b4861e6fa0a9c7fd912",
+    "semantic_hash": "5fcd8ba7e1bc3b4861e6fa0a9c7fd912"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/hyperframes.json": {
+    "mtime": 1794855216.4271772,
+    "seen": 1794938843.356744,
+    "ast_hash": "9aba7af72c9a867a940b5ea847eb18da",
+    "semantic_hash": "9aba7af72c9a867a940b5ea847eb18da"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/meta.json": {
+    "mtime": 1794855216.4240627,
+    "seen": 1794938843.3567452,
+    "ast_hash": "3c946429b2315e916a373abd93433c7f",
+    "semantic_hash": "3c946429b2315e916a373abd93433c7f"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/package.json": {
+    "mtime": 1794855216.4271772,
+    "seen": 1794938843.3567462,
+    "ast_hash": "3532aa2a1cdcde9700f2f3b96acd2a54",
+    "semantic_hash": "3532aa2a1cdcde9700f2f3b96acd2a54"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/checks/5c615892-54e5-4f5d-ad49-c1efe57f4d1b.json": {
+    "mtime": 1794848506.371891,
+    "seen": 1794938843.3567472,
+    "ast_hash": "62acc45574a8b1938c056ffb89ac1777",
+    "semantic_hash": "62acc45574a8b1938c056ffb89ac1777"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/checks/6413a036-0ecf-4fbb-8372-1c852a7d22b3.json": {
+    "mtime": 1794855642.5481067,
+    "seen": 1794938843.3567486,
+    "ast_hash": "f5e5301d4fb044e9deb75b64b6284714",
+    "semantic_hash": "f5e5301d4fb044e9deb75b64b6284714"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/checks/6d8372fc-42d3-498b-aa76-82caafc9fc93.json": {
+    "mtime": 1794854098.5269663,
+    "seen": 1794938843.3567495,
+    "ast_hash": "28e304532257a27929e35316c3fd24b1",
+    "semantic_hash": "28e304532257a27929e35316c3fd24b1"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/75189f73-1339-4f1f-9e61-b7bdac942022/.capture-owner.json": {
+    "mtime": 1794855611.7084472,
+    "seen": 1794938843.3567505,
+    "ast_hash": "696717a29cff57e081f8db42bae1ed63",
+    "semantic_hash": "696717a29cff57e081f8db42bae1ed63"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/8d8bd010-b68f-4553-b766-cfc1d2e3ae0a/.capture-owner.json": {
+    "mtime": 1794853986.735672,
+    "seen": 1794938843.3567517,
+    "ast_hash": "38ebda4a9e8f675ac3f1e71fff2022d8",
+    "semantic_hash": "38ebda4a9e8f675ac3f1e71fff2022d8"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/918081ba-9042-467a-a5ff-015b03e83332/.capture-owner.json": {
+    "mtime": 1794855453.5639462,
+    "seen": 1794938843.3567529,
+    "ast_hash": "128ec41236166c87aef577879530e866",
+    "semantic_hash": "128ec41236166c87aef577879530e866"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/9b385704-524d-4f59-8826-fe03f7b4c4e9/.capture-owner.json": {
+    "mtime": 1794848699.3763113,
+    "seen": 1794938843.3567538,
+    "ast_hash": "0b9abdc3108088b83ee773b1506036da",
+    "semantic_hash": "0b9abdc3108088b83ee773b1506036da"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/a07ae2fd-aea2-4702-a023-d2c53583418b/.capture-owner.json": {
+    "mtime": 1794854070.028403,
+    "seen": 1794938843.3567553,
+    "ast_hash": "b7cd82a83c30bdac9d6b9dd6ffe1524d",
+    "semantic_hash": "b7cd82a83c30bdac9d6b9dd6ffe1524d"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/.capture-owner.json": {
+    "mtime": 1794848536.1903708,
+    "seen": 1794938843.3567562,
+    "ast_hash": "c37624115f5a891eabb672447af79a6f",
+    "semantic_hash": "c37624115f5a891eabb672447af79a6f"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/d9c3d7fa-0410-4d4f-b5bf-8dd428496650/.capture-owner.json": {
+    "mtime": 1794855526.277605,
+    "seen": 1794938843.3567572,
+    "ast_hash": "e438b3811cc94371c0d3bf6f536177e7",
+    "semantic_hash": "e438b3811cc94371c0d3bf6f536177e7"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/cache/check.json": {
+    "mtime": 1794855642.5921068,
+    "seen": 1794938843.3567586,
+    "ast_hash": "6106849e46b73266a2df33a5b55fc891",
+    "semantic_hash": "6106849e46b73266a2df33a5b55fc891"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/render-outputs.json": {
+    "mtime": 1794854389.8807473,
+    "seen": 1794938843.3567595,
+    "ast_hash": "51ec33a9635a6751e9f8f21db42ef0a9",
+    "semantic_hash": "51ec33a9635a6751e9f8f21db42ef0a9"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/video-state.json": {
+    "mtime": 1794855663.0851936,
+    "seen": 1794938843.3567605,
+    "ast_hash": "fe3dacef8e3000277675b8cece140bfb",
+    "semantic_hash": "fe3dacef8e3000277675b8cece140bfb"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/peaks-v2_assets_audio_bgm.wav_13632044-1794848198558.json": {
+    "mtime": 1794848748.8189752,
+    "seen": 1794938843.356762,
+    "ast_hash": "f66d66a9a441d7339f8347e844ffd9ce",
+    "semantic_hash": "f66d66a9a441d7339f8347e844ffd9ce"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/peaks-v2_assets_audio_sfx_gleam-chime.wav_322638-1794848566489.json": {
+    "mtime": 1794848748.955218,
+    "seen": 1794938843.356763,
+    "ast_hash": "29f2cccc30ad857ff0ee32bf68a344ea",
+    "semantic_hash": "29f2cccc30ad857ff0ee32bf68a344ea"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/peaks-v2_assets_audio_sfx_laser-beam.wav_211244-1794848182565.json": {
+    "mtime": 1794848749.2992198,
+    "seen": 1794938843.3567638,
+    "ast_hash": "04729580e9f15d3ea95fda8af6550e58",
+    "semantic_hash": "04729580e9f15d3ea95fda8af6550e58"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/peaks-v2_assets_audio_sfx_lightning-zap.wav_163278-1794848182386.json": {
+    "mtime": 1794848749.155219,
+    "seen": 1794938843.356765,
+    "ast_hash": "fbcfdd87fb4ee9c29994cf1eea389c83",
+    "semantic_hash": "fbcfdd87fb4ee9c29994cf1eea389c83"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/peaks-v2_assets_audio_sfx_pop-bubble.wav_53804-1794848182437.json": {
+    "mtime": 1794848749.1262822,
+    "seen": 1794938843.3567662,
+    "ast_hash": "1a206d243e7fcccab79dda3ee24562e7",
+    "semantic_hash": "1a206d243e7fcccab79dda3ee24562e7"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/peaks-v2_assets_audio_sfx_water-drop.wav_172878-1794848182287.json": {
+    "mtime": 1794848749.2362196,
+    "seen": 1794938843.3567674,
+    "ast_hash": "ca92d6cca11e0650fe32ca4c61918b13",
+    "semantic_hash": "ca92d6cca11e0650fe32ca4c61918b13"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/peaks-v2_assets_audio_sfx_whoosh-soft.wav_182966-1794848182063.json": {
+    "mtime": 1794848749.088219,
+    "seen": 1794938843.3567686,
+    "ast_hash": "7f909cc49361d76b574f3d12bcbea775",
+    "semantic_hash": "7f909cc49361d76b574f3d12bcbea775"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/peaks-v2_assets_audio_vo.mp3_1111153-1794848025594.json": {
+    "mtime": 1794848748.908218,
+    "seen": 1794938843.3567698,
+    "ast_hash": "0ce66bce93851e6713e00a0eff0da1af",
+    "semantic_hash": "0ce66bce93851e6713e00a0eff0da1af"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/v2_assets_audio_bgm.wav_13632044-1794848198558.json": {
+    "mtime": 1794848748.7053838,
+    "seen": 1794938843.3567708,
+    "ast_hash": "a193f2e7e25f24ca7a40228317126965",
+    "semantic_hash": "a193f2e7e25f24ca7a40228317126965"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/v2_assets_audio_sfx_gleam-chime.wav_322638-1794848566489.json": {
+    "mtime": 1794848748.936218,
+    "seen": 1794938843.356772,
+    "ast_hash": "914bf19a9f00ca1602797940f7a15169",
+    "semantic_hash": "914bf19a9f00ca1602797940f7a15169"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/v2_assets_audio_sfx_laser-beam.wav_211244-1794848182565.json": {
+    "mtime": 1794848749.500221,
+    "seen": 1794938843.3567731,
+    "ast_hash": "a75bbbcb4731466ff852871c3387fe55",
+    "semantic_hash": "a75bbbcb4731466ff852871c3387fe55"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/v2_assets_audio_sfx_lightning-zap.wav_163278-1794848182386.json": {
+    "mtime": 1794848749.481221,
+    "seen": 1794938843.356774,
+    "ast_hash": "cda89254923a8472b8174d6c42ea3cdb",
+    "semantic_hash": "cda89254923a8472b8174d6c42ea3cdb"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/v2_assets_audio_sfx_pop-bubble.wav_53804-1794848182437.json": {
+    "mtime": 1794848749.497221,
+    "seen": 1794938843.3567753,
+    "ast_hash": "9e41b410067a1cedd6b4bd527abe00a1",
+    "semantic_hash": "9e41b410067a1cedd6b4bd527abe00a1"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/v2_assets_audio_sfx_water-drop.wav_172878-1794848182287.json": {
+    "mtime": 1794848749.7022219,
+    "seen": 1794938843.3567765,
+    "ast_hash": "2dfe455e22572836c7e5d5ae8dcfaca7",
+    "semantic_hash": "2dfe455e22572836c7e5d5ae8dcfaca7"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/v2_assets_audio_sfx_whoosh-soft.wav_182966-1794848182063.json": {
+    "mtime": 1794848749.0122185,
+    "seen": 1794938843.3567774,
+    "ast_hash": "da4e94ee2fef3e760044af4bc405d65f",
+    "semantic_hash": "da4e94ee2fef3e760044af4bc405d65f"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.waveform-cache/v2_assets_audio_vo.mp3_1111153-1794848025594.json": {
+    "mtime": 1794848748.713217,
+    "seen": 1794938843.3567784,
+    "ast_hash": "2ae0f29d7a8032a6d8fc5b6593ffd3c1",
+    "semantic_hash": "2ae0f29d7a8032a6d8fc5b6593ffd3c1"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/assets/vendor/three.min.js": {
+    "mtime": 1794855384.4299707,
+    "seen": 1794938843.3567798,
+    "ast_hash": "f76d110bdfafaa99cdabf2df3968369c",
+    "semantic_hash": "f76d110bdfafaa99cdabf2df3968369c"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/hyperframes.json": {
+    "mtime": 1794848011.4873176,
+    "seen": 1794938843.3567808,
+    "ast_hash": "7b33c6cb9ecfe380a4657c509ff8af33",
+    "semantic_hash": "7b33c6cb9ecfe380a4657c509ff8af33"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/meta.json": {
+    "mtime": 1794848011.484407,
+    "seen": 1794938843.3567817,
+    "ast_hash": "7045fd8f2b9f7c32e84d6ffafce6cfc4",
+    "semantic_hash": "7045fd8f2b9f7c32e84d6ffafce6cfc4"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/package.json": {
+    "mtime": 1794848011.4883177,
+    "seen": 1794938843.3567832,
+    "ast_hash": "75dbb977c8dd1b2d3bb6b0c39a64bc49",
+    "semantic_hash": "75dbb977c8dd1b2d3bb6b0c39a64bc49"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/checks/f390519f-f44f-42df-861c-d40ec81f203d.json": {
+    "mtime": 1794889443.3297231,
+    "seen": 1794938843.356784,
+    "ast_hash": "2fb46903b6593daea24ac4bb61afd62c",
+    "semantic_hash": "2fb46903b6593daea24ac4bb61afd62c"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/01f76983-ac42-4705-bcec-ba44f71b5007/.capture-owner.json": {
+    "mtime": 1794889346.959586,
+    "seen": 1794938843.356785,
+    "ast_hash": "1f68a7e0fe0e13544e07125fa3469398",
+    "semantic_hash": "1f68a7e0fe0e13544e07125fa3469398"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/3e9be25e-3607-4e5a-9c78-2080308c6690/.capture-owner.json": {
+    "mtime": 1794857635.6276963,
+    "seen": 1794938843.3567865,
+    "ast_hash": "1b75a05cf8b5b6edc76d7cf24483b499",
+    "semantic_hash": "1b75a05cf8b5b6edc76d7cf24483b499"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/.capture-owner.json": {
+    "mtime": 1794857498.2952378,
+    "seen": 1794938843.3567874,
+    "ast_hash": "5f03bfd36f62bdaaadeeb20f72a166ae",
+    "semantic_hash": "5f03bfd36f62bdaaadeeb20f72a166ae"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/7b4d1dd2-bb21-4974-9143-7b1ecaed37bd/.capture-owner.json": {
+    "mtime": 1794889379.971678,
+    "seen": 1794938843.3567886,
+    "ast_hash": "224b7cb05d03cad737817a15bbf8dcfd",
+    "semantic_hash": "224b7cb05d03cad737817a15bbf8dcfd"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/86b8a08b-e49c-47d9-bda8-2f8fd33423fc/.capture-owner.json": {
+    "mtime": 1794889410.2790358,
+    "seen": 1794938843.3567898,
+    "ast_hash": "3d2ccf660db14fea097c452158ad455f",
+    "semantic_hash": "3d2ccf660db14fea097c452158ad455f"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/cache/check.json": {
+    "mtime": 1794889443.3677227,
+    "seen": 1794938843.356791,
+    "ast_hash": "da03d4edbc823c4b52a7dd5102708933",
+    "semantic_hash": "da03d4edbc823c4b52a7dd5102708933"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/render-outputs.json": {
+    "mtime": 1794889992.4034455,
+    "seen": 1794938843.3567939,
+    "ast_hash": "d67c7deaff828ad5af27745d3645de8f",
+    "semantic_hash": "d67c7deaff828ad5af27745d3645de8f"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/video-state.json": {
+    "mtime": 1794890097.1687865,
+    "seen": 1794938843.3567948,
+    "ast_hash": "dc9bfcdc95241f300b6725583d8c2fe1",
+    "semantic_hash": "dc9bfcdc95241f300b6725583d8c2fe1"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/peaks-v2_assets_audio_bgm.wav_14208044-1794857253422.json": {
+    "mtime": 1794857705.2859313,
+    "seen": 1794938843.3567963,
+    "ast_hash": "dee865526835ab49da66404ea05f5aa2",
+    "semantic_hash": "dee865526835ab49da66404ea05f5aa2"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/peaks-v2_assets_audio_sfx_gleam-chime.wav_322638-1794857237822.json": {
+    "mtime": 1794857705.6779327,
+    "seen": 1794938843.3567975,
+    "ast_hash": "29f2cccc30ad857ff0ee32bf68a344ea",
+    "semantic_hash": "29f2cccc30ad857ff0ee32bf68a344ea"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/peaks-v2_assets_audio_sfx_pop-bubble.wav_53804-1794857237982.json": {
+    "mtime": 1794857705.6809328,
+    "seen": 1794938843.3567984,
+    "ast_hash": "1a206d243e7fcccab79dda3ee24562e7",
+    "semantic_hash": "1a206d243e7fcccab79dda3ee24562e7"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/peaks-v2_assets_audio_sfx_uv-zap.wav_144044-1794857238055.json": {
+    "mtime": 1794857705.8349333,
+    "seen": 1794938843.3567998,
+    "ast_hash": "83154a3b02ec1be6c5bfbe481b874f7f",
+    "semantic_hash": "83154a3b02ec1be6c5bfbe481b874f7f"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/peaks-v2_assets_audio_sfx_water-drop.wav_172878-1794857237931.json": {
+    "mtime": 1794857705.505932,
+    "seen": 1794938843.3568008,
+    "ast_hash": "ca92d6cca11e0650fe32ca4c61918b13",
+    "semantic_hash": "ca92d6cca11e0650fe32ca4c61918b13"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/peaks-v2_assets_audio_sfx_whoosh-soft.wav_182966-1794857237688.json": {
+    "mtime": 1794857705.681959,
+    "seen": 1794938843.3568017,
+    "ast_hash": "7f909cc49361d76b574f3d12bcbea775",
+    "semantic_hash": "7f909cc49361d76b574f3d12bcbea775"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/peaks-v2_assets_audio_vo.mp3_1152113-1794857200953.json": {
+    "mtime": 1794857705.466932,
+    "seen": 1794938843.3568032,
+    "ast_hash": "1a9eee5fc762444b5b2c4b8ee64b643f",
+    "semantic_hash": "1a9eee5fc762444b5b2c4b8ee64b643f"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/v2_assets_audio_bgm.wav_14208044-1794857253422.json": {
+    "mtime": 1794857705.3199315,
+    "seen": 1794938843.3568044,
+    "ast_hash": "e2e12c648776f13a09577288cf9698d3",
+    "semantic_hash": "e2e12c648776f13a09577288cf9698d3"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/v2_assets_audio_sfx_gleam-chime.wav_322638-1794857237822.json": {
+    "mtime": 1794857705.5427442,
+    "seen": 1794938843.3568053,
+    "ast_hash": "914bf19a9f00ca1602797940f7a15169",
+    "semantic_hash": "914bf19a9f00ca1602797940f7a15169"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/v2_assets_audio_sfx_pop-bubble.wav_53804-1794857237982.json": {
+    "mtime": 1794857706.0109339,
+    "seen": 1794938843.3568065,
+    "ast_hash": "9e41b410067a1cedd6b4bd527abe00a1",
+    "semantic_hash": "9e41b410067a1cedd6b4bd527abe00a1"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/v2_assets_audio_sfx_uv-zap.wav_144044-1794857238055.json": {
+    "mtime": 1794857706.0309339,
+    "seen": 1794938843.3568075,
+    "ast_hash": "566810c9fb38401e387982652209d51a",
+    "semantic_hash": "566810c9fb38401e387982652209d51a"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/v2_assets_audio_sfx_water-drop.wav_172878-1794857237931.json": {
+    "mtime": 1794857705.469932,
+    "seen": 1794938843.3568084,
+    "ast_hash": "2dfe455e22572836c7e5d5ae8dcfaca7",
+    "semantic_hash": "2dfe455e22572836c7e5d5ae8dcfaca7"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/v2_assets_audio_sfx_whoosh-soft.wav_182966-1794857237688.json": {
+    "mtime": 1794857706.045934,
+    "seen": 1794938843.3568094,
+    "ast_hash": "da4e94ee2fef3e760044af4bc405d65f",
+    "semantic_hash": "da4e94ee2fef3e760044af4bc405d65f"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.waveform-cache/v2_assets_audio_vo.mp3_1152113-1794857200953.json": {
+    "mtime": 1794857705.2442923,
+    "seen": 1794938843.3568108,
+    "ast_hash": "729192d3c6611d7f508b1a848fc27c93",
+    "semantic_hash": "729192d3c6611d7f508b1a848fc27c93"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/hyperframes.json": {
+    "mtime": 1794857200.9062774,
+    "seen": 1794938843.3568118,
+    "ast_hash": "7b33c6cb9ecfe380a4657c509ff8af33",
+    "semantic_hash": "7b33c6cb9ecfe380a4657c509ff8af33"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/meta.json": {
+    "mtime": 1794857200.9033947,
+    "seen": 1794938843.3568127,
+    "ast_hash": "fc659b02420e33a8943dcaf2f5a06334",
+    "semantic_hash": "fc659b02420e33a8943dcaf2f5a06334"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/package.json": {
+    "mtime": 1794857200.9062774,
+    "seen": 1794938843.356814,
+    "ast_hash": "8e8726af348d74e1b682ff464aa9686d",
+    "semantic_hash": "8e8726af348d74e1b682ff464aa9686d"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/artifacts/checks/0b752603-68fc-41ae-a662-eea38b224562.json": {
+    "mtime": 1794743876.4313068,
+    "seen": 1794938843.356815,
+    "ast_hash": "971fe7b3a41682dcdfa3f006fc404569",
+    "semantic_hash": "971fe7b3a41682dcdfa3f006fc404569"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/artifacts/checks/af83fba7-1817-41cc-afc1-8ee85b197c9d.json": {
+    "mtime": 1794741245.2666495,
+    "seen": 1794938843.356816,
+    "ast_hash": "5def34de52b4901a48064a5f20ac06ec",
+    "semantic_hash": "5def34de52b4901a48064a5f20ac06ec"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/artifacts/snapshots/047a86fc-2887-4d49-b291-a17a8833530d/.capture-owner.json": {
+    "mtime": 1794741417.3322108,
+    "seen": 1794938843.3568172,
+    "ast_hash": "ee3feb0bb7be40621c382f022780ca67",
+    "semantic_hash": "ee3feb0bb7be40621c382f022780ca67"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/artifacts/snapshots/170f44b0-b984-441a-8553-c3c230adf32e/.capture-owner.json": {
+    "mtime": 1794743412.709161,
+    "seen": 1794938843.3568182,
+    "ast_hash": "5e460576c024fe4f84c32bd2d6f6ae6d",
+    "semantic_hash": "5e460576c024fe4f84c32bd2d6f6ae6d"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/artifacts/snapshots/595b4281-a8fa-47c3-969a-4ab7cdae4175/.capture-owner.json": {
+    "mtime": 1794743373.6787322,
+    "seen": 1794938843.3568194,
+    "ast_hash": "125e7eaedf89593922ba582b50faac71",
+    "semantic_hash": "125e7eaedf89593922ba582b50faac71"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/artifacts/snapshots/5f52f98d-ea43-4021-b67a-cf369713f3e2/.capture-owner.json": {
+    "mtime": 1794743852.5613718,
+    "seen": 1794938843.3568206,
+    "ast_hash": "18ac8ec7217bf0a6a3b02ae289440b0e",
+    "semantic_hash": "18ac8ec7217bf0a6a3b02ae289440b0e"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/artifacts/snapshots/66ee5fbe-ea46-43f4-be37-390eab18beed/.capture-owner.json": {
+    "mtime": 1794741468.5562394,
+    "seen": 1794938843.3568215,
+    "ast_hash": "68d64f4314a8ce927b911505d32c6961",
+    "semantic_hash": "68d64f4314a8ce927b911505d32c6961"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/artifacts/snapshots/a3b1534b-d430-4879-9e9a-4136a188a336/.capture-owner.json": {
+    "mtime": 1794741289.2450376,
+    "seen": 1794938843.3568225,
+    "ast_hash": "4519db845ffa2afaf6735e7f0b3e05f5",
+    "semantic_hash": "4519db845ffa2afaf6735e7f0b3e05f5"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/artifacts/snapshots/af9c962b-f56d-425c-b533-6cd0f84d6636/.capture-owner.json": {
+    "mtime": 1794741442.8020597,
+    "seen": 1794938843.356824,
+    "ast_hash": "a0541adbb609df6b7dc19e7e9a1eac3d",
+    "semantic_hash": "a0541adbb609df6b7dc19e7e9a1eac3d"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/artifacts/snapshots/ca0e08d9-237b-4fb6-94b5-803b5d5719a1/.capture-owner.json": {
+    "mtime": 1794743741.1099765,
+    "seen": 1794938843.3568249,
+    "ast_hash": "dbaefaa68b3176536178472847521d88",
+    "semantic_hash": "dbaefaa68b3176536178472847521d88"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/cache/check.json": {
+    "mtime": 1794743876.4683065,
+    "seen": 1794938843.3568258,
+    "ast_hash": "e87c3810bf8461878b114ef7b0fc0ebd",
+    "semantic_hash": "e87c3810bf8461878b114ef7b0fc0ebd"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/render-outputs.json": {
+    "mtime": 1794751757.1590366,
+    "seen": 1794938843.3568268,
+    "ast_hash": "b0105676dfbc18d37bdec2b2de160707",
+    "semantic_hash": "b0105676dfbc18d37bdec2b2de160707"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.hyperframes/video-state.json": {
+    "mtime": 1794751836.7451336,
+    "seen": 1794938843.3568282,
+    "ast_hash": "bab398b3a396261008a37e606fe9264b",
+    "semantic_hash": "bab398b3a396261008a37e606fe9264b"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/peaks-v2_assets_audio_bgm.wav_9878444-1794740910112.json": {
+    "mtime": 1794741505.6581154,
+    "seen": 1794938843.3568292,
+    "ast_hash": "0076303c8c82ed46a6bfc561be7c229f",
+    "semantic_hash": "0076303c8c82ed46a6bfc561be7c229f"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/peaks-v2_assets_audio_sfx_gleam-chime.wav_316878-1794740931600.json": {
+    "mtime": 1794741506.1191163,
+    "seen": 1794938843.3568301,
+    "ast_hash": "50fa11b27565765d755ea9a30263fc64",
+    "semantic_hash": "50fa11b27565765d755ea9a30263fc64"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/peaks-v2_assets_audio_sfx_morph-shimmer.wav_167624-1794740910126.json": {
+    "mtime": 1794741505.878116,
+    "seen": 1794938843.3568316,
+    "ast_hash": "db6e24969daabf81a0e349f0349e2328",
+    "semantic_hash": "db6e24969daabf81a0e349f0349e2328"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/peaks-v2_assets_audio_sfx_pop-bubble.wav_49436-1794740910120.json": {
+    "mtime": 1794741505.8001158,
+    "seen": 1794938843.3568325,
+    "ast_hash": "7add9f6a781f0ead0098c2d5c46ed857",
+    "semantic_hash": "7add9f6a781f0ead0098c2d5c46ed857"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/peaks-v2_assets_audio_sfx_pulse-soft.wav_97064-1794740910121.json": {
+    "mtime": 1794741505.9931161,
+    "seen": 1794938843.3568335,
+    "ast_hash": "3b2b406d42d317741f29da8369f52ee4",
+    "semantic_hash": "3b2b406d42d317741f29da8369f52ee4"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/peaks-v2_assets_audio_sfx_water-drop.wav_63582-1794740910251.json": {
+    "mtime": 1794741506.0431163,
+    "seen": 1794938843.3568347,
+    "ast_hash": "6d43195364d44be618d2faf4fbc67169",
+    "semantic_hash": "6d43195364d44be618d2faf4fbc67169"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/peaks-v2_assets_audio_sfx_whoosh-soft.wav_137670-1794740910196.json": {
+    "mtime": 1794741505.964116,
+    "seen": 1794938843.3568358,
+    "ast_hash": "24e74009b703aef0c7a3f6cd4bec3498",
+    "semantic_hash": "24e74009b703aef0c7a3f6cd4bec3498"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/peaks-v2_assets_audio_vo.mp3_828194-1794740136149.json": {
+    "mtime": 1794741505.66939,
+    "seen": 1794938843.3568368,
+    "ast_hash": "667ec9942a38c0c5e34362f00a43064e",
+    "semantic_hash": "667ec9942a38c0c5e34362f00a43064e"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/v2_assets_audio_bgm.wav_9878444-1794740910112.json": {
+    "mtime": 1794741505.5641153,
+    "seen": 1794938843.356838,
+    "ast_hash": "1d2856a9e50b58f97b1318206d7a3d17",
+    "semantic_hash": "1d2856a9e50b58f97b1318206d7a3d17"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/v2_assets_audio_sfx_gleam-chime.wav_316878-1794740931600.json": {
+    "mtime": 1794741506.4418402,
+    "seen": 1794938843.3568392,
+    "ast_hash": "3afab6397d86a0970a3fa8e58b7fd217",
+    "semantic_hash": "3afab6397d86a0970a3fa8e58b7fd217"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/v2_assets_audio_sfx_morph-shimmer.wav_167624-1794740910126.json": {
+    "mtime": 1794741505.874116,
+    "seen": 1794938843.3568401,
+    "ast_hash": "0e7f7103e7ffb47604dfbdd99ee0bebf",
+    "semantic_hash": "0e7f7103e7ffb47604dfbdd99ee0bebf"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/v2_assets_audio_sfx_pop-bubble.wav_49436-1794740910120.json": {
+    "mtime": 1794741505.7931159,
+    "seen": 1794938843.3568416,
+    "ast_hash": "65c92fc952d3c0f7adfe62b21927ff01",
+    "semantic_hash": "65c92fc952d3c0f7adfe62b21927ff01"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/v2_assets_audio_sfx_pulse-soft.wav_97064-1794740910121.json": {
+    "mtime": 1794741506.2951167,
+    "seen": 1794938843.3568425,
+    "ast_hash": "008e0046f7b2934d2e0d87ce3f437d68",
+    "semantic_hash": "008e0046f7b2934d2e0d87ce3f437d68"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/v2_assets_audio_sfx_water-drop.wav_63582-1794740910251.json": {
+    "mtime": 1794741506.291763,
+    "seen": 1794938843.3568435,
+    "ast_hash": "3bdab5ec5abe77af206a55fd15733f5c",
+    "semantic_hash": "3bdab5ec5abe77af206a55fd15733f5c"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/v2_assets_audio_sfx_whoosh-soft.wav_137670-1794740910196.json": {
+    "mtime": 1794741506.2761166,
+    "seen": 1794938843.356845,
+    "ast_hash": "94bad89bc7062959c8392e075cef9d71",
+    "semantic_hash": "94bad89bc7062959c8392e075cef9d71"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.waveform-cache/v2_assets_audio_vo.mp3_828194-1794740136149.json": {
+    "mtime": 1794741505.5572765,
+    "seen": 1794938843.356846,
+    "ast_hash": "1b3920eefe433cc069376cc949c2be52",
+    "semantic_hash": "1b3920eefe433cc069376cc949c2be52"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/hyperframes.json": {
+    "mtime": 1794737553.8238385,
+    "seen": 1794938843.356847,
+    "ast_hash": "9aba7af72c9a867a940b5ea847eb18da",
+    "semantic_hash": "9aba7af72c9a867a940b5ea847eb18da"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/meta.json": {
+    "mtime": 1794737553.8214414,
+    "seen": 1794938843.3568482,
+    "ast_hash": "3ff58a43d82b902ad8f25f49db4b0bfe",
+    "semantic_hash": "3ff58a43d82b902ad8f25f49db4b0bfe"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/package.json": {
+    "mtime": 1794737553.8238385,
+    "seen": 1794938843.3568492,
+    "ast_hash": "e730e172f014f6aef423936973e5fe06",
+    "semantic_hash": "e730e172f014f6aef423936973e5fe06"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/project.json": {
+    "mtime": 1794743047.8152618,
+    "seen": 1794938843.3568501,
+    "ast_hash": "796630737eb34f81717adc6f332a7e98",
+    "semantic_hash": "796630737eb34f81717adc6f332a7e98"
+  },
+  "episodes/deja-vu-2d/CLAUDE.md": {
+    "mtime": 1794712608.9799452,
+    "seen": 1794938843.3568513,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/deja-vu-2d/compositions/backdrop.html": {
+    "mtime": 1794713731.524599,
+    "seen": 1794938843.3568528,
+    "ast_hash": "0c45c4bc3a3a793565f2da4a43d5d633",
+    "semantic_hash": "0c45c4bc3a3a793565f2da4a43d5d633"
+  },
+  "episodes/deja-vu-2d/compositions/captions.html": {
+    "mtime": 1794713950.7968771,
+    "seen": 1794938843.3568537,
+    "ast_hash": "54a49d1932c88ca3e58f9ddce2b11b2f",
+    "semantic_hash": "54a49d1932c88ca3e58f9ddce2b11b2f"
+  },
+  "episodes/deja-vu-2d/compositions/components/caption-editorial-emphasis.html": {
+    "mtime": 1794712619.5532608,
+    "seen": 1794938843.3568547,
+    "ast_hash": "2c08267615b88d76b7e43d130b017500",
+    "semantic_hash": "2c08267615b88d76b7e43d130b017500"
+  },
+  "episodes/deja-vu-2d/compositions/components/constellation-hub.html": {
+    "mtime": 1794712618.264265,
+    "seen": 1794938843.356856,
+    "ast_hash": "0d29fd571a5146f50cc5f54898bb2c13",
+    "semantic_hash": "0d29fd571a5146f50cc5f54898bb2c13"
+  },
+  "episodes/deja-vu-2d/compositions/components/grain-field.html": {
+    "mtime": 1794712616.8172698,
+    "seen": 1794938843.356857,
+    "ast_hash": "a0679732584b3b78805f42e070dbb8ac",
+    "semantic_hash": "a0679732584b3b78805f42e070dbb8ac"
+  },
+  "episodes/deja-vu-2d/compositions/hud.html": {
+    "mtime": 1794713934.7909298,
+    "seen": 1794938843.3568583,
+    "ast_hash": "3d474c8f611934e313421196745b6311",
+    "semantic_hash": "3d474c8f611934e313421196745b6311"
+  },
+  "episodes/deja-vu-2d/compositions/scene-01.html": {
+    "mtime": 1794714065.5974991,
+    "seen": 1794938843.3568594,
+    "ast_hash": "b2076452c9c2201b581f374ebe9f4266",
+    "semantic_hash": "b2076452c9c2201b581f374ebe9f4266"
+  },
+  "episodes/deja-vu-2d/compositions/scene-02.html": {
+    "mtime": 1794714019.3886511,
+    "seen": 1794938843.3568604,
+    "ast_hash": "4b3ababf2bf4df466c8040481956854a",
+    "semantic_hash": "4b3ababf2bf4df466c8040481956854a"
+  },
+  "episodes/deja-vu-2d/compositions/scene-03.html": {
+    "mtime": 1794714021.1686454,
+    "seen": 1794938843.3568614,
+    "ast_hash": "2bba7338fa55e40e1460c393bfa8a7de",
+    "semantic_hash": "2bba7338fa55e40e1460c393bfa8a7de"
+  },
+  "episodes/deja-vu-2d/compositions/scene-04.html": {
+    "mtime": 1794714022.7126403,
+    "seen": 1794938843.3568625,
+    "ast_hash": "12df49641c03ba87c33b97e3cab0acf8",
+    "semantic_hash": "12df49641c03ba87c33b97e3cab0acf8"
+  },
+  "episodes/deja-vu-2d/compositions/scene-05.html": {
+    "mtime": 1794714067.5934925,
+    "seen": 1794938843.3568637,
+    "ast_hash": "ec3c56c9172db980a0dd125b4cbd5329",
+    "semantic_hash": "ec3c56c9172db980a0dd125b4cbd5329"
+  },
+  "episodes/deja-vu-2d/compositions/scene-06.html": {
+    "mtime": 1794713871.0851395,
+    "seen": 1794938843.3568647,
+    "ast_hash": "40e9359eb6730b762e3d50c552aabf3a",
+    "semantic_hash": "40e9359eb6730b762e3d50c552aabf3a"
+  },
+  "episodes/deja-vu-2d/index.html": {
+    "mtime": 1794713729.7096052,
+    "seen": 1794938843.356866,
+    "ast_hash": "421bdb8102f10bb31f0b0c509a2755ea",
+    "semantic_hash": "421bdb8102f10bb31f0b0c509a2755ea"
+  },
+  "episodes/kaki-katak-baterai/.media/audio/sfx/CREDITS.md": {
+    "mtime": 1794723988.8873446,
+    "seen": 1794938843.3568668,
+    "ast_hash": "5f16e21fd0f36497c64ea509fcb974c5",
+    "semantic_hash": "5f16e21fd0f36497c64ea509fcb974c5"
+  },
+  "episodes/kaki-katak-baterai/.media/index.md": {
+    "mtime": 1794724009.6889606,
+    "seen": 1794938843.3568678,
+    "ast_hash": "511ac558bf9c7a7fd789b86b6468ac8f",
+    "semantic_hash": "511ac558bf9c7a7fd789b86b6468ac8f"
+  },
+  "episodes/kaki-katak-baterai/AGENTS.md": {
+    "mtime": 1794723952.0764675,
+    "seen": 1794938843.3568692,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/kaki-katak-baterai/CLAUDE.md": {
+    "mtime": 1794723952.076777,
+    "seen": 1794938843.3568702,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/kaki-katak-baterai/assets/audio/sfx/CREDITS.md": {
+    "mtime": 1794724054.2320926,
+    "seen": 1794938843.3568711,
+    "ast_hash": "5f16e21fd0f36497c64ea509fcb974c5",
+    "semantic_hash": "5f16e21fd0f36497c64ea509fcb974c5"
+  },
+  "episodes/kaki-katak-baterai/compositions/backdrop.html": {
+    "mtime": 1794724284.9326105,
+    "seen": 1794938843.3568726,
+    "ast_hash": "94b5766c97b5aa99abc4ff5c158f26a1",
+    "semantic_hash": "94b5766c97b5aa99abc4ff5c158f26a1"
+  },
+  "episodes/kaki-katak-baterai/compositions/captions.html": {
+    "mtime": 1794725032.8515172,
+    "seen": 1794938843.3568735,
+    "ast_hash": "888bc8739a55c02c9f217c9efb1d51ef",
+    "semantic_hash": "888bc8739a55c02c9f217c9efb1d51ef"
+  },
+  "episodes/kaki-katak-baterai/compositions/hud.html": {
+    "mtime": 1794726544.2526433,
+    "seen": 1794938843.3568747,
+    "ast_hash": "44ce8ac19e27e6b21a356d16fb255738",
+    "semantic_hash": "44ce8ac19e27e6b21a356d16fb255738"
+  },
+  "episodes/kaki-katak-baterai/compositions/scene-01.html": {
+    "mtime": 1794726773.070694,
+    "seen": 1794938843.3568757,
+    "ast_hash": "12cdea53b526f82668f2eab4ee030d55",
+    "semantic_hash": "12cdea53b526f82668f2eab4ee030d55"
+  },
+  "episodes/kaki-katak-baterai/compositions/scene-02.html": {
+    "mtime": 1794726774.3366997,
+    "seen": 1794938843.3568769,
+    "ast_hash": "9da4670a90081a620435e3baa6ccb9b4",
+    "semantic_hash": "9da4670a90081a620435e3baa6ccb9b4"
+  },
+  "episodes/kaki-katak-baterai/compositions/scene-03.html": {
+    "mtime": 1794726775.8317065,
+    "seen": 1794938843.356878,
+    "ast_hash": "aff07b606dee95fc304fb444bf4cf455",
+    "semantic_hash": "aff07b606dee95fc304fb444bf4cf455"
+  },
+  "episodes/kaki-katak-baterai/compositions/scene-04.html": {
+    "mtime": 1794726777.862716,
+    "seen": 1794938843.356879,
+    "ast_hash": "c99508c6fabcd6daadb7efcd5c8d6584",
+    "semantic_hash": "c99508c6fabcd6daadb7efcd5c8d6584"
+  },
+  "episodes/kaki-katak-baterai/compositions/scene-05.html": {
+    "mtime": 1794726779.0977216,
+    "seen": 1794938843.3568802,
+    "ast_hash": "d16b114679e448cfe2cc7b7361d472db",
+    "semantic_hash": "d16b114679e448cfe2cc7b7361d472db"
+  },
+  "episodes/kaki-katak-baterai/index.html": {
+    "mtime": 1794725847.247427,
+    "seen": 1794938843.3568811,
+    "ast_hash": "1719271eb98d987992f3cb445e1c6ce5",
+    "semantic_hash": "1719271eb98d987992f3cb445e1c6ce5"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/AGENTS.md": {
+    "mtime": 1794915102.025181,
+    "seen": 1794938843.356882,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/CLAUDE.md": {
+    "mtime": 1794915102.0255148,
+    "seen": 1794938843.3568833,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/assets/audio/sfx/CREDITS.md": {
+    "mtime": 1794915256.5678177,
+    "seen": 1794938843.3568842,
+    "ast_hash": "f8c94c37b153500be49807c4a172d311",
+    "semantic_hash": "f8c94c37b153500be49807c4a172d311"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/compositions/backdrop.html": {
+    "mtime": 1794915370.2438726,
+    "seen": 1794938843.3568854,
+    "ast_hash": "814052849765f8481dedfbe9abdffd13",
+    "semantic_hash": "814052849765f8481dedfbe9abdffd13"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/compositions/captions.html": {
+    "mtime": 1794915632.4921436,
+    "seen": 1794938843.3568866,
+    "ast_hash": "4fbb458c288cda7a2af0a0415fa331d8",
+    "semantic_hash": "4fbb458c288cda7a2af0a0415fa331d8"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/compositions/hud.html": {
+    "mtime": 1794915371.7429132,
+    "seen": 1794938843.3568876,
+    "ast_hash": "965c6e1e8487e6d0d822f09b6f1f69b8",
+    "semantic_hash": "965c6e1e8487e6d0d822f09b6f1f69b8"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/compositions/scene-01.html": {
+    "mtime": 1794934300.8791595,
+    "seen": 1794938843.3568885,
+    "ast_hash": "4f685f51c5774b7d184037a697830a1c",
+    "semantic_hash": "4f685f51c5774b7d184037a697830a1c"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/compositions/scene-02.html": {
+    "mtime": 1794934304.6431756,
+    "seen": 1794938843.35689,
+    "ast_hash": "eb080f0ffbe31328ab8fca439089a107",
+    "semantic_hash": "eb080f0ffbe31328ab8fca439089a107"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/compositions/scene-03.html": {
+    "mtime": 1794934132.8864822,
+    "seen": 1794938843.356891,
+    "ast_hash": "604952d967ad39152ecd91e279c133e9",
+    "semantic_hash": "604952d967ad39152ecd91e279c133e9"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/compositions/scene-04.html": {
+    "mtime": 1794934198.3000002,
+    "seen": 1794938843.3568919,
+    "ast_hash": "8c71854eaa3d5951dc45e8f5e113ac2e",
+    "semantic_hash": "8c71854eaa3d5951dc45e8f5e113ac2e"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/compositions/scene-05.html": {
+    "mtime": 1794934306.5361836,
+    "seen": 1794938843.3568928,
+    "ast_hash": "40e1065872dc5ff59ba29a9f0b62c3b4",
+    "semantic_hash": "40e1065872dc5ff59ba29a9f0b62c3b4"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/compositions/scene-06.html": {
+    "mtime": 1794934206.390768,
+    "seen": 1794938843.356894,
+    "ast_hash": "47fb17fb3a287b8b8ab0412f47a33716",
+    "semantic_hash": "47fb17fb3a287b8b8ab0412f47a33716"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/index.html": {
+    "mtime": 1794915368.6418295,
+    "seen": 1794938843.356895,
+    "ast_hash": "3af059b47a06e6462c6ceda29219ad04",
+    "semantic_hash": "3af059b47a06e6462c6ceda29219ad04"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.media/index.md": {
+    "mtime": 1794855342.6001406,
+    "seen": 1794938843.3568962,
+    "ast_hash": "3123c67bab905cf9e5e139d44d0af0e8",
+    "semantic_hash": "3123c67bab905cf9e5e139d44d0af0e8"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/AGENTS.md": {
+    "mtime": 1794855216.429132,
+    "seen": 1794938843.3568974,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/CLAUDE.md": {
+    "mtime": 1794855216.429438,
+    "seen": 1794938843.3568985,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/REVIEW.md": {
+    "mtime": 1794856098.6709712,
+    "seen": 1794938843.3568997,
+    "ast_hash": "fcf8faa73737e5bc692f97f63e6da7c2",
+    "semantic_hash": "fcf8faa73737e5bc692f97f63e6da7c2"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/sfx/CREDITS.md": {
+    "mtime": 1794892245.894771,
+    "seen": 1794938843.356901,
+    "ast_hash": "1c5bd97ba3865dc6f835bccc21a3ad23",
+    "semantic_hash": "1c5bd97ba3865dc6f835bccc21a3ad23"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/compositions/backdrop.html": {
+    "mtime": 1794891927.5148067,
+    "seen": 1794938843.356902,
+    "ast_hash": "c13d0aeb99fbac5b366f9118f9b385ac",
+    "semantic_hash": "c13d0aeb99fbac5b366f9118f9b385ac"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/compositions/captions.html": {
+    "mtime": 1794891931.5939271,
+    "seen": 1794938843.3569028,
+    "ast_hash": "a2e228656d6a9b6648e07708de261dcb",
+    "semantic_hash": "a2e228656d6a9b6648e07708de261dcb"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/compositions/hud.html": {
+    "mtime": 1794891929.714872,
+    "seen": 1794938843.356904,
+    "ast_hash": "ba0ab22349d4823fe6bf253507efa97d",
+    "semantic_hash": "ba0ab22349d4823fe6bf253507efa97d"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/compositions/scene-01.html": {
+    "mtime": 1794912119.5103915,
+    "seen": 1794938843.3569052,
+    "ast_hash": "488c6191fc7a088d166bf9e58b22cfda",
+    "semantic_hash": "488c6191fc7a088d166bf9e58b22cfda"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/compositions/scene-02.html": {
+    "mtime": 1794912009.3882961,
+    "seen": 1794938843.3569062,
+    "ast_hash": "1de8ef0036618d82bf97998afe70a92b",
+    "semantic_hash": "1de8ef0036618d82bf97998afe70a92b"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/compositions/scene-03.html": {
+    "mtime": 1794912120.9244843,
+    "seen": 1794938843.3569076,
+    "ast_hash": "ea702e5b2f10f3262088468c07ac8a72",
+    "semantic_hash": "ea702e5b2f10f3262088468c07ac8a72"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/compositions/scene-04.html": {
+    "mtime": 1794912924.3992383,
+    "seen": 1794938843.3569086,
+    "ast_hash": "0cd250de1d95fddc4d8ae98e34275b92",
+    "semantic_hash": "0cd250de1d95fddc4d8ae98e34275b92"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/compositions/scene-05.html": {
+    "mtime": 1794912124.4877186,
+    "seen": 1794938843.3569098,
+    "ast_hash": "d9e0f5b0ec85a37f17c376bb059e5404",
+    "semantic_hash": "d9e0f5b0ec85a37f17c376bb059e5404"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/index.html": {
+    "mtime": 1794891925.1447365,
+    "seen": 1794938843.356911,
+    "ast_hash": "0dce10ea6ffb9d1a70242e2047bbe1d8",
+    "semantic_hash": "0dce10ea6ffb9d1a70242e2047bbe1d8"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.media/audio/sfx/CREDITS.md": {
+    "mtime": 1794848142.2037222,
+    "seen": 1794938843.356912,
+    "ast_hash": "499f7823982a8a4ee0375dab0b1305c4",
+    "semantic_hash": "499f7823982a8a4ee0375dab0b1305c4"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.media/index.md": {
+    "mtime": 1794848142.2027223,
+    "seen": 1794938843.356913,
+    "ast_hash": "dd608c2bcea99b43a64d2530f920f938",
+    "semantic_hash": "dd608c2bcea99b43a64d2530f920f938"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/AGENTS.md": {
+    "mtime": 1794848011.4892282,
+    "seen": 1794938843.3569143,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/CLAUDE.md": {
+    "mtime": 1794848011.4893658,
+    "seen": 1794938843.3569152,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/assets/audio/sfx/CREDITS.md": {
+    "mtime": 1794848201.611906,
+    "seen": 1794938843.3569162,
+    "ast_hash": "7f4cd538a642184892f7f7c685cfcaab",
+    "semantic_hash": "7f4cd538a642184892f7f7c685cfcaab"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/compositions/backdrop.html": {
+    "mtime": 1794848265.4213274,
+    "seen": 1794938843.3569176,
+    "ast_hash": "a6b206166108396c0ac742cdebeb59a4",
+    "semantic_hash": "a6b206166108396c0ac742cdebeb59a4"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/compositions/captions.html": {
+    "mtime": 1794848317.5306928,
+    "seen": 1794938843.3569186,
+    "ast_hash": "39416f69a64140c8e5964efdfa425081",
+    "semantic_hash": "39416f69a64140c8e5964efdfa425081"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/compositions/hud.html": {
+    "mtime": 1794848267.4153419,
+    "seen": 1794938843.3569198,
+    "ast_hash": "7736c1258f7a0f789b8ebccec551fb4f",
+    "semantic_hash": "7736c1258f7a0f789b8ebccec551fb4f"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/compositions/scene-01.html": {
+    "mtime": 1794853849.010312,
+    "seen": 1794938843.3569207,
+    "ast_hash": "4dfce07e6f89a0415d43a7f131251164",
+    "semantic_hash": "4dfce07e6f89a0415d43a7f131251164"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/compositions/scene-02.html": {
+    "mtime": 1794853850.8193166,
+    "seen": 1794938843.356922,
+    "ast_hash": "f1543ab4c408f3dec353928d188307fe",
+    "semantic_hash": "f1543ab4c408f3dec353928d188307fe"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/compositions/scene-03.html": {
+    "mtime": 1794855593.1928954,
+    "seen": 1794938843.356923,
+    "ast_hash": "a09e18da8a97c88cded9852774193d04",
+    "semantic_hash": "a09e18da8a97c88cded9852774193d04"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/compositions/scene-04.html": {
+    "mtime": 1794854047.8958328,
+    "seen": 1794938843.356924,
+    "ast_hash": "f98a06d3595cb457c38fdde57b9e80a6",
+    "semantic_hash": "f98a06d3595cb457c38fdde57b9e80a6"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/compositions/scene-05.html": {
+    "mtime": 1794853958.900599,
+    "seen": 1794938843.3569252,
+    "ast_hash": "a2dc6ef0841b977c1a98324c4d81bea8",
+    "semantic_hash": "a2dc6ef0841b977c1a98324c4d81bea8"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/index.html": {
+    "mtime": 1794848263.3413124,
+    "seen": 1794938843.3569262,
+    "ast_hash": "423dddf65de2500d170378edcf4fa4a1",
+    "semantic_hash": "423dddf65de2500d170378edcf4fa4a1"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.media/index.md": {
+    "mtime": 1794857234.5476909,
+    "seen": 1794938843.3569274,
+    "ast_hash": "2e09dca4acd942838ff31c0d49f935c2",
+    "semantic_hash": "2e09dca4acd942838ff31c0d49f935c2"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/AGENTS.md": {
+    "mtime": 1794857200.9078984,
+    "seen": 1794938843.3569286,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/CLAUDE.md": {
+    "mtime": 1794857200.9080443,
+    "seen": 1794938843.3569295,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/assets/audio/sfx/CREDITS.md": {
+    "mtime": 1794857267.647488,
+    "seen": 1794938843.3569305,
+    "ast_hash": "52988b533d7f0289318e9d04d972aff8",
+    "semantic_hash": "52988b533d7f0289318e9d04d972aff8"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/compositions/backdrop.html": {
+    "mtime": 1794889168.0256376,
+    "seen": 1794938843.3569317,
+    "ast_hash": "2d234eee79892841995f75c4f6e44799",
+    "semantic_hash": "2d234eee79892841995f75c4f6e44799"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/compositions/captions.html": {
+    "mtime": 1794889172.0426252,
+    "seen": 1794938843.3569329,
+    "ast_hash": "02a4f6b29e955bc9a6cdc75fb01d1a73",
+    "semantic_hash": "02a4f6b29e955bc9a6cdc75fb01d1a73"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/compositions/hud.html": {
+    "mtime": 1794889169.9856317,
+    "seen": 1794938843.3569338,
+    "ast_hash": "4398db692dddd571b57be91932a480a7",
+    "semantic_hash": "4398db692dddd571b57be91932a480a7"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/compositions/scene-01.html": {
+    "mtime": 1794889267.9551594,
+    "seen": 1794938843.356935,
+    "ast_hash": "e849f5f37e2ad35e9e7fdd8600a54b0b",
+    "semantic_hash": "e849f5f37e2ad35e9e7fdd8600a54b0b"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/compositions/scene-02.html": {
+    "mtime": 1794889270.239145,
+    "seen": 1794938843.3569362,
+    "ast_hash": "191191edbb6f63635608cac7153f3dfa",
+    "semantic_hash": "191191edbb6f63635608cac7153f3dfa"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/compositions/scene-03.html": {
+    "mtime": 1794889396.5061612,
+    "seen": 1794938843.356937,
+    "ast_hash": "1a4056503dc0a125978c6df7b896127a",
+    "semantic_hash": "1a4056503dc0a125978c6df7b896127a"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/compositions/scene-04.html": {
+    "mtime": 1794889327.016744,
+    "seen": 1794938843.3569381,
+    "ast_hash": "8a64ef5ac293f6fd79587ae3aaa64856",
+    "semantic_hash": "8a64ef5ac293f6fd79587ae3aaa64856"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/compositions/scene-05.html": {
+    "mtime": 1794889397.972148,
+    "seen": 1794938843.3569393,
+    "ast_hash": "15f6b0bf173880a346e839ada8a32893",
+    "semantic_hash": "15f6b0bf173880a346e839ada8a32893"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/index.html": {
+    "mtime": 1794889166.3576427,
+    "seen": 1794938843.3569403,
+    "ast_hash": "7005899d70b10882af7920ee84fce8dc",
+    "semantic_hash": "7005899d70b10882af7920ee84fce8dc"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.media/index.md": {
+    "mtime": 1794740839.062268,
+    "seen": 1794938843.3569412,
+    "ast_hash": "2af1fc11dbd0daba77e742641b6c345c",
+    "semantic_hash": "2af1fc11dbd0daba77e742641b6c345c"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/AGENTS.md": {
+    "mtime": 1794737553.8254032,
+    "seen": 1794938843.3569424,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/CLAUDE.md": {
+    "mtime": 1794737553.8255296,
+    "seen": 1794938843.3569436,
+    "ast_hash": "363a865d078ba5e928a962eef7fe4a3f",
+    "semantic_hash": "363a865d078ba5e928a962eef7fe4a3f"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/assets/audio/sfx/CREDITS.md": {
+    "mtime": 1794741245.9326506,
+    "seen": 1794938843.3569446,
+    "ast_hash": "98a8782927d238de1e99f8dfd6a2300d",
+    "semantic_hash": "98a8782927d238de1e99f8dfd6a2300d"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/compositions/backdrop.html": {
+    "mtime": 1794741245.9876506,
+    "seen": 1794938843.3569458,
+    "ast_hash": "005ee22961ae72f039f9f50c3f1c9898",
+    "semantic_hash": "005ee22961ae72f039f9f50c3f1c9898"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/compositions/captions.html": {
+    "mtime": 1794743135.2059166,
+    "seen": 1794938843.356947,
+    "ast_hash": "a709978ab6e1967cf48838be199b8b3b",
+    "semantic_hash": "a709978ab6e1967cf48838be199b8b3b"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/compositions/hud.html": {
+    "mtime": 1794741246.1526508,
+    "seen": 1794938843.356948,
+    "ast_hash": "b439d0f5ed99963b5a90a5734ee04599",
+    "semantic_hash": "b439d0f5ed99963b5a90a5734ee04599"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/compositions/scene-01.html": {
+    "mtime": 1794743805.0855265,
+    "seen": 1794938843.356949,
+    "ast_hash": "266c4b819512b66760c38dfb08fd1d8d",
+    "semantic_hash": "266c4b819512b66760c38dfb08fd1d8d"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/compositions/scene-02.html": {
+    "mtime": 1794743807.6255174,
+    "seen": 1794938843.35695,
+    "ast_hash": "79e0d966bc981f9557cd389ccf0b9d23",
+    "semantic_hash": "79e0d966bc981f9557cd389ccf0b9d23"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/compositions/scene-03.html": {
+    "mtime": 1794743809.0595121,
+    "seen": 1794938843.3569512,
+    "ast_hash": "5fb1e79212d3f8dd40275b3ca8a26e10",
+    "semantic_hash": "5fb1e79212d3f8dd40275b3ca8a26e10"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/compositions/scene-04.html": {
+    "mtime": 1794743811.928502,
+    "seen": 1794938843.3569527,
+    "ast_hash": "5706b11811ecd2c7d095bbc192a053ab",
+    "semantic_hash": "5706b11811ecd2c7d095bbc192a053ab"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/compositions/scene-05.html": {
+    "mtime": 1794743816.0014877,
+    "seen": 1794938843.3569536,
+    "ast_hash": "e31f505bc703e7034309db47e5ba1e13",
+    "semantic_hash": "e31f505bc703e7034309db47e5ba1e13"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/index.html": {
+    "mtime": 1794743133.7169056,
+    "seen": 1794938843.3569546,
+    "ast_hash": "80ccb9bfc9499ffa5bc7da243381637b",
+    "semantic_hash": "80ccb9bfc9499ffa5bc7da243381637b"
+  },
+  "episodes/deja-vu-2d/assets/audio/bgm.wav": {
+    "mtime": 1794712615.5932739,
+    "seen": 1794938843.3569558,
+    "ast_hash": "da39e908934d916d9f09b185900707b0",
+    "semantic_hash": "da39e908934d916d9f09b185900707b0"
+  },
+  "episodes/deja-vu-2d/assets/audio/vo.mp3": {
+    "mtime": 1794712615.5911787,
+    "seen": 1794938843.3569567,
+    "ast_hash": "f6a4dd7234a4c32dac787f03f5aaf6ce",
+    "semantic_hash": "f6a4dd7234a4c32dac787f03f5aaf6ce"
+  },
+  "episodes/deja-vu-2d/assets/reference/ref.mp4": {
+    "mtime": 1794723799.8593016,
+    "seen": 1794938843.356958,
+    "ast_hash": "c535e6a8ca70a2113f3ed98f7df2b7b9",
+    "semantic_hash": "c535e6a8ca70a2113f3ed98f7df2b7b9"
+  },
+  "episodes/deja-vu-2d/renders/deja-vu-2d.mp4": {
+    "mtime": 1794720099.1956978,
+    "seen": 1794938843.3569589,
+    "ast_hash": "92060283aca2f8e55fd864522c1ae4fb",
+    "semantic_hash": "92060283aca2f8e55fd864522c1ae4fb"
+  },
+  "episodes/kaki-katak-baterai/.media/audio/sfx/sfx_001.mp3": {
+    "mtime": 1794723988.8847263,
+    "seen": 1794938843.3569603,
+    "ast_hash": "7705263b21fe34c210fc405fc1423db5",
+    "semantic_hash": "7705263b21fe34c210fc405fc1423db5"
+  },
+  "episodes/kaki-katak-baterai/.media/audio/sfx/sfx_002.mp3": {
+    "mtime": 1794723995.6678033,
+    "seen": 1794938843.3569613,
+    "ast_hash": "b4afe3c92a350575bc129f97bd3eaa62",
+    "semantic_hash": "b4afe3c92a350575bc129f97bd3eaa62"
+  },
+  "episodes/kaki-katak-baterai/.media/audio/sfx/sfx_003.mp3": {
+    "mtime": 1794724002.667882,
+    "seen": 1794938843.3569622,
+    "ast_hash": "b006df9b2509d43686f0a3a25529f9ce",
+    "semantic_hash": "b006df9b2509d43686f0a3a25529f9ce"
+  },
+  "episodes/kaki-katak-baterai/.media/audio/sfx/sfx_004.mp3": {
+    "mtime": 1794724009.6879604,
+    "seen": 1794938843.3569634,
+    "ast_hash": "a9871cba9dc47b6ae0e0904a3d108369",
+    "semantic_hash": "a9871cba9dc47b6ae0e0904a3d108369"
+  },
+  "episodes/kaki-katak-baterai/assets/audio/bgm.wav": {
+    "mtime": 1794724054.0714417,
+    "seen": 1794938843.3569646,
+    "ast_hash": "f9556a664c7342e6a1b4e05ff6bcf4f4",
+    "semantic_hash": "f9556a664c7342e6a1b4e05ff6bcf4f4"
+  },
+  "episodes/kaki-katak-baterai/assets/audio/sfx/discovery-chime.wav": {
+    "mtime": 1794724054.1664426,
+    "seen": 1794938843.3569655,
+    "ast_hash": "974d3f2938680a600faedc8afad7cdc2",
+    "semantic_hash": "974d3f2938680a600faedc8afad7cdc2"
+  },
+  "episodes/kaki-katak-baterai/assets/audio/sfx/metal-clink.wav": {
+    "mtime": 1794724054.402445,
+    "seen": 1794938843.3569667,
+    "ast_hash": "d410fafeb912047da6f0a62e0d5b7558",
+    "semantic_hash": "d410fafeb912047da6f0a62e0d5b7558"
+  },
+  "episodes/kaki-katak-baterai/assets/audio/sfx/pop-soft.wav": {
+    "mtime": 1794724054.0864418,
+    "seen": 1794938843.356968,
+    "ast_hash": "b5b4c2f65496235c52490d05c7aee164",
+    "semantic_hash": "b5b4c2f65496235c52490d05c7aee164"
+  },
+  "episodes/kaki-katak-baterai/assets/audio/sfx/spark-zap.wav": {
+    "mtime": 1794724054.286444,
+    "seen": 1794938843.356969,
+    "ast_hash": "befa789614fe74bfc35e236415352f17",
+    "semantic_hash": "befa789614fe74bfc35e236415352f17"
+  },
+  "episodes/kaki-katak-baterai/assets/audio/sfx/whoosh-soft.wav": {
+    "mtime": 1794724054.3484445,
+    "seen": 1794938843.3569703,
+    "ast_hash": "87e55b56c43ac4a4e5a05e82b8e21b25",
+    "semantic_hash": "87e55b56c43ac4a4e5a05e82b8e21b25"
+  },
+  "episodes/kaki-katak-baterai/assets/audio/vo.mp3": {
+    "mtime": 1794723952.1220198,
+    "seen": 1794938843.3569715,
+    "ast_hash": "13bd50a0e2ca2e16acc9db63365a8015",
+    "semantic_hash": "13bd50a0e2ca2e16acc9db63365a8015"
+  },
+  "episodes/kaki-katak-baterai/renders/kaki-katak-baterai.mp4": {
+    "mtime": 1794727185.1280062,
+    "seen": 1794938843.3569725,
+    "ast_hash": "14c93d883037213a27ff1284ea8d746e",
+    "semantic_hash": "14c93d883037213a27ff1284ea8d746e"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/assets/audio/bgm.wav": {
+    "mtime": 1794915233.8962123,
+    "seen": 1794938843.3569736,
+    "ast_hash": "30bc9d34b029a6ebe464c7188a1fcdac",
+    "semantic_hash": "30bc9d34b029a6ebe464c7188a1fcdac"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/assets/audio/sfx/gleam-chime.wav": {
+    "mtime": 1794915234.074217,
+    "seen": 1794938843.3569746,
+    "ast_hash": "e9298fc281ef718eef34098361411987",
+    "semantic_hash": "e9298fc281ef718eef34098361411987"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/assets/audio/sfx/polar-pulse.wav": {
+    "mtime": 1794915233.9992151,
+    "seen": 1794938843.3569758,
+    "ast_hash": "b1d64cd611271a52f612979947e3c2ee",
+    "semantic_hash": "b1d64cd611271a52f612979947e3c2ee"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/assets/audio/sfx/pop-bubble.wav": {
+    "mtime": 1794915233.916213,
+    "seen": 1794938843.356977,
+    "ast_hash": "5c1176900eabc59375f3e8e3789f3c64",
+    "semantic_hash": "5c1176900eabc59375f3e8e3789f3c64"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/assets/audio/sfx/uv-shimmer.wav": {
+    "mtime": 1794915233.958214,
+    "seen": 1794938843.356978,
+    "ast_hash": "b4433adbecb0a67b8e0b0b59c7e9620b",
+    "semantic_hash": "b4433adbecb0a67b8e0b0b59c7e9620b"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/assets/audio/sfx/whoosh-soft.wav": {
+    "mtime": 1794915234.1652195,
+    "seen": 1794938843.3569791,
+    "ast_hash": "0177e35ca82311f9b6af4c2e594233f4",
+    "semantic_hash": "0177e35ca82311f9b6af4c2e594233f4"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/assets/audio/vo.mp3": {
+    "mtime": 1794915102.0661058,
+    "seen": 1794938843.3569803,
+    "ast_hash": "06a37060164d049e83184980ef9bc393",
+    "semantic_hash": "06a37060164d049e83184980ef9bc393"
+  },
+  "episodes/mata-udang-mantis-melihat-pola-cahaya/renders/mata-udang-mantis-melihat-pola-cahaya.mp4": {
+    "mtime": 1794934726.3531525,
+    "seen": 1794938843.3569813,
+    "ast_hash": "9a8de13c812cdd9ae710686006ecf3e8",
+    "semantic_hash": "9a8de13c812cdd9ae710686006ecf3e8"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.media/audio/sfx/sfx_001.mp3": {
+    "mtime": 1794855291.81054,
+    "seen": 1794938843.3569856,
+    "ast_hash": "b5aed869dc7df19bcc7452c7d44ca1f2",
+    "semantic_hash": "b5aed869dc7df19bcc7452c7d44ca1f2"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.media/audio/sfx/sfx_002.mp3": {
+    "mtime": 1794855300.4655807,
+    "seen": 1794938843.3569865,
+    "ast_hash": "2e34101523873c9f5f654bdb8102d12e",
+    "semantic_hash": "2e34101523873c9f5f654bdb8102d12e"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.media/audio/sfx/sfx_003.mp3": {
+    "mtime": 1794855315.28274,
+    "seen": 1794938843.356988,
+    "ast_hash": "b4afe3c92a350575bc129f97bd3eaa62",
+    "semantic_hash": "b4afe3c92a350575bc129f97bd3eaa62"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.media/audio/sfx/sfx_004.mp3": {
+    "mtime": 1794855319.1486685,
+    "seen": 1794938843.356989,
+    "ast_hash": "e1c72dbbc560d705006662ac80ad8db1",
+    "semantic_hash": "e1c72dbbc560d705006662ac80ad8db1"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.media/audio/sfx/sfx_005.mp3": {
+    "mtime": 1794855323.3678234,
+    "seen": 1794938843.35699,
+    "ast_hash": "a9871cba9dc47b6ae0e0904a3d108369",
+    "semantic_hash": "a9871cba9dc47b6ae0e0904a3d108369"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/.media/audio/sfx/sfx_006.mp3": {
+    "mtime": 1794855342.6001406,
+    "seen": 1794938843.3569913,
+    "ast_hash": "286f517b02317ea1150bbe40bf071a45",
+    "semantic_hash": "286f517b02317ea1150bbe40bf071a45"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/bgm.wav": {
+    "mtime": 1794891838.8389308,
+    "seen": 1794938843.3569922,
+    "ast_hash": "3388ce4d7047d108e2176e0e3ec8a9de",
+    "semantic_hash": "3388ce4d7047d108e2176e0e3ec8a9de"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/sfx/alarm-ping.wav": {
+    "mtime": 1794891838.9359343,
+    "seen": 1794938843.3569932,
+    "ast_hash": "99cd3c83e3eb82fba89b79d41eb20a69",
+    "semantic_hash": "99cd3c83e3eb82fba89b79d41eb20a69"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/sfx/bell-call.wav": {
+    "mtime": 1794855390.9690006,
+    "seen": 1794938843.3569944,
+    "ast_hash": "7f682f860ea3eb98655f5a35d61c1cf8",
+    "semantic_hash": "7f682f860ea3eb98655f5a35d61c1cf8"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/sfx/eeg-pulse.wav": {
+    "mtime": 1794891838.9709353,
+    "seen": 1794938843.3569953,
+    "ast_hash": "1135240f54b193c5e69e9e9c58ca7f4e",
+    "semantic_hash": "1135240f54b193c5e69e9e9c58ca7f4e"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/sfx/filter-soft.wav": {
+    "mtime": 1794855390.5529988,
+    "seen": 1794938843.3569965,
+    "ast_hash": "cc56818c9424a292ef8f09d79159ea66",
+    "semantic_hash": "cc56818c9424a292ef8f09d79159ea66"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/sfx/gleam-chime.wav": {
+    "mtime": 1794892232.5485606,
+    "seen": 1794938843.3569977,
+    "ast_hash": "248a422ff7c7f80e564b16e2f3f45968",
+    "semantic_hash": "248a422ff7c7f80e564b16e2f3f45968"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/sfx/pop-bubble.wav": {
+    "mtime": 1794891838.871932,
+    "seen": 1794938843.3569987,
+    "ast_hash": "9a057f42b53cbcd4646717cd6bbbd7e4",
+    "semantic_hash": "9a057f42b53cbcd4646717cd6bbbd7e4"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/sfx/pop-soft.wav": {
+    "mtime": 1794855390.5119984,
+    "seen": 1794938843.3569996,
+    "ast_hash": "4047fddec19c96e5c340c4cf4e2788b5",
+    "semantic_hash": "4047fddec19c96e5c340c4cf4e2788b5"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/sfx/voice-call.wav": {
+    "mtime": 1794891838.9109333,
+    "seen": 1794938843.3570006,
+    "ast_hash": "906790838737046398c51eaeafa5ddf1",
+    "semantic_hash": "906790838737046398c51eaeafa5ddf1"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/sfx/water-drop.wav": {
+    "mtime": 1794855391.1150012,
+    "seen": 1794938843.3570018,
+    "ast_hash": "74562a554636c824cdbb514e25f21ba4",
+    "semantic_hash": "74562a554636c824cdbb514e25f21ba4"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/sfx/whoosh-soft.wav": {
+    "mtime": 1794891839.0489383,
+    "seen": 1794938843.3570027,
+    "ast_hash": "878313e4a8fc123df06b3c62124ee20d",
+    "semantic_hash": "878313e4a8fc123df06b3c62124ee20d"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/assets/audio/vo.mp3": {
+    "mtime": 1794891704.3603437,
+    "seen": 1794938843.357004,
+    "ast_hash": "ec59e75fec0b86a43f8dad991c8e04ea",
+    "semantic_hash": "ec59e75fec0b86a43f8dad991c8e04ea"
+  },
+  "episodes/mengapa-otak-masih-memproses-suara-saat-tidur/renders/mengapa-otak-masih-memproses-suara-saat-tidur.mp4": {
+    "mtime": 1794913213.1931806,
+    "seen": 1794938843.3570051,
+    "ast_hash": "aa6b41d944f57d6c67f5339f41cec51b",
+    "semantic_hash": "aa6b41d944f57d6c67f5339f41cec51b"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.media/audio/sfx/sfx_001.mp3": {
+    "mtime": 1794848130.7079306,
+    "seen": 1794938843.357006,
+    "ast_hash": "b4afe3c92a350575bc129f97bd3eaa62",
+    "semantic_hash": "b4afe3c92a350575bc129f97bd3eaa62"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.media/audio/sfx/sfx_002.mp3": {
+    "mtime": 1794848134.5266986,
+    "seen": 1794938843.3570073,
+    "ast_hash": "e1c72dbbc560d705006662ac80ad8db1",
+    "semantic_hash": "e1c72dbbc560d705006662ac80ad8db1"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.media/audio/sfx/sfx_003.mp3": {
+    "mtime": 1794848138.3587103,
+    "seen": 1794938843.3570085,
+    "ast_hash": "286f517b02317ea1150bbe40bf071a45",
+    "semantic_hash": "286f517b02317ea1150bbe40bf071a45"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.media/audio/sfx/sfx_004.mp3": {
+    "mtime": 1794848142.2027223,
+    "seen": 1794938843.3570096,
+    "ast_hash": "7705263b21fe34c210fc405fc1423db5",
+    "semantic_hash": "7705263b21fe34c210fc405fc1423db5"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/assets/audio/bgm.wav": {
+    "mtime": 1794848198.5578966,
+    "seen": 1794938843.3570106,
+    "ast_hash": "2091f9dea2d47f2aa4a9ce162d058277",
+    "semantic_hash": "2091f9dea2d47f2aa4a9ce162d058277"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/assets/audio/sfx/gleam-chime.wav": {
+    "mtime": 1794848566.4892387,
+    "seen": 1794938843.3570118,
+    "ast_hash": "e84f9352573bfb03219cbbf9dae766c5",
+    "semantic_hash": "e84f9352573bfb03219cbbf9dae766c5"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/assets/audio/sfx/laser-beam.wav": {
+    "mtime": 1794848182.564847,
+    "seen": 1794938843.3570127,
+    "ast_hash": "1919e666a52071860981ad23db854517",
+    "semantic_hash": "1919e666a52071860981ad23db854517"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/assets/audio/sfx/lightning-zap.wav": {
+    "mtime": 1794848182.3858466,
+    "seen": 1794938843.357014,
+    "ast_hash": "43fbd5c2bb592a88e2801c8aa7fe97f5",
+    "semantic_hash": "43fbd5c2bb592a88e2801c8aa7fe97f5"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/assets/audio/sfx/pop-bubble.wav": {
+    "mtime": 1794848182.4368467,
+    "seen": 1794938843.3570151,
+    "ast_hash": "a904ef376ab52379a8d1d7a0542850ed",
+    "semantic_hash": "a904ef376ab52379a8d1d7a0542850ed"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/assets/audio/sfx/water-drop.wav": {
+    "mtime": 1794848182.2868462,
+    "seen": 1794938843.357016,
+    "ast_hash": "dabe6c22d39cda2209f9de323ca775b2",
+    "semantic_hash": "dabe6c22d39cda2209f9de323ca775b2"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/assets/audio/sfx/whoosh-soft.wav": {
+    "mtime": 1794848182.0628455,
+    "seen": 1794938843.357017,
+    "ast_hash": "1a97455176629741737cbc1392133480",
+    "semantic_hash": "1a97455176629741737cbc1392133480"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/assets/audio/vo.mp3": {
+    "mtime": 1794848025.5944824,
+    "seen": 1794938843.357018,
+    "ast_hash": "3c1e9e2e8d5235774164eb31f62795d5",
+    "semantic_hash": "3c1e9e2e8d5235774164eb31f62795d5"
+  },
+  "episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/renders/misteri-hujan-berlian-di-jupiter-dan-saturnus.mp4": {
+    "mtime": 1794854503.9087546,
+    "seen": 1794938843.3570192,
+    "ast_hash": "873e8f023a13007858ccc8c13f7b5407",
+    "semantic_hash": "873e8f023a13007858ccc8c13f7b5407"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.media/audio/sfx/sfx_001.mp3": {
+    "mtime": 1794857226.4274786,
+    "seen": 1794938843.3570204,
+    "ast_hash": "b4afe3c92a350575bc129f97bd3eaa62",
+    "semantic_hash": "b4afe3c92a350575bc129f97bd3eaa62"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.media/audio/sfx/sfx_002.mp3": {
+    "mtime": 1794857230.5698073,
+    "seen": 1794938843.3570213,
+    "ast_hash": "e1c72dbbc560d705006662ac80ad8db1",
+    "semantic_hash": "e1c72dbbc560d705006662ac80ad8db1"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.media/audio/sfx/sfx_003.mp3": {
+    "mtime": 1794857234.5476909,
+    "seen": 1794938843.3570225,
+    "ast_hash": "286f517b02317ea1150bbe40bf071a45",
+    "semantic_hash": "286f517b02317ea1150bbe40bf071a45"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/assets/audio/bgm.wav": {
+    "mtime": 1794857253.422443,
+    "seen": 1794938843.3570235,
+    "ast_hash": "f14e5c4c4124d1b27a217058362d068a",
+    "semantic_hash": "f14e5c4c4124d1b27a217058362d068a"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/assets/audio/sfx/gleam-chime.wav": {
+    "mtime": 1794857237.8223937,
+    "seen": 1794938843.3570247,
+    "ast_hash": "e84f9352573bfb03219cbbf9dae766c5",
+    "semantic_hash": "e84f9352573bfb03219cbbf9dae766c5"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/assets/audio/sfx/pop-bubble.wav": {
+    "mtime": 1794857237.9823942,
+    "seen": 1794938843.3570259,
+    "ast_hash": "a904ef376ab52379a8d1d7a0542850ed",
+    "semantic_hash": "a904ef376ab52379a8d1d7a0542850ed"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/assets/audio/sfx/uv-zap.wav": {
+    "mtime": 1794857238.0553944,
+    "seen": 1794938843.3570268,
+    "ast_hash": "abd4c8518d2ee9c8a62a44111d74e13e",
+    "semantic_hash": "abd4c8518d2ee9c8a62a44111d74e13e"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/assets/audio/sfx/water-drop.wav": {
+    "mtime": 1794857237.9313939,
+    "seen": 1794938843.3570278,
+    "ast_hash": "dabe6c22d39cda2209f9de323ca775b2",
+    "semantic_hash": "dabe6c22d39cda2209f9de323ca775b2"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/assets/audio/sfx/whoosh-soft.wav": {
+    "mtime": 1794857237.688393,
+    "seen": 1794938843.3570292,
+    "ast_hash": "1a97455176629741737cbc1392133480",
+    "semantic_hash": "1a97455176629741737cbc1392133480"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/assets/audio/vo.mp3": {
+    "mtime": 1794857200.952592,
+    "seen": 1794938843.3570302,
+    "ast_hash": "0b385f3715f1667fc6578f0bf6c27aa3",
+    "semantic_hash": "0b385f3715f1667fc6578f0bf6c27aa3"
+  },
+  "episodes/misteri-tardigrade-bertahan-di-ruang-hampa/renders/misteri-tardigrade-bertahan-di-ruang-hampa.mp4": {
+    "mtime": 1794890096.980784,
+    "seen": 1794938843.357031,
+    "ast_hash": "92323ee3678ad63296c349afb02811c2",
+    "semantic_hash": "92323ee3678ad63296c349afb02811c2"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.media/audio/sfx/sfx_001.mp3": {
+    "mtime": 1794740814.728682,
+    "seen": 1794938843.3570323,
+    "ast_hash": "b4afe3c92a350575bc129f97bd3eaa62",
+    "semantic_hash": "b4afe3c92a350575bc129f97bd3eaa62"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.media/audio/sfx/sfx_002.mp3": {
+    "mtime": 1794740828.8412669,
+    "seen": 1794938843.3570333,
+    "ast_hash": "286f517b02317ea1150bbe40bf071a45",
+    "semantic_hash": "286f517b02317ea1150bbe40bf071a45"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/.media/audio/sfx/sfx_003.mp3": {
+    "mtime": 1794740839.061268,
+    "seen": 1794938843.3570344,
+    "ast_hash": "e1c72dbbc560d705006662ac80ad8db1",
+    "semantic_hash": "e1c72dbbc560d705006662ac80ad8db1"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/assets/audio/bgm.wav": {
+    "mtime": 1794740910.112291,
+    "seen": 1794938843.3570356,
+    "ast_hash": "c87953810de74bc93c3a041d7dd38cef",
+    "semantic_hash": "c87953810de74bc93c3a041d7dd38cef"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/assets/audio/sfx/gleam-chime.wav": {
+    "mtime": 1794740931.6003025,
+    "seen": 1794938843.3570368,
+    "ast_hash": "8bb54dc12628e9d6f87b59712a06bf21",
+    "semantic_hash": "8bb54dc12628e9d6f87b59712a06bf21"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/assets/audio/sfx/morph-shimmer.wav": {
+    "mtime": 1794740910.1263373,
+    "seen": 1794938843.3570452,
+    "ast_hash": "77e754b204634a5672820e4048df0244",
+    "semantic_hash": "77e754b204634a5672820e4048df0244"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/assets/audio/sfx/pop-bubble.wav": {
+    "mtime": 1794740910.1200588,
+    "seen": 1794938843.3570464,
+    "ast_hash": "2244d2b9454b43a19cd4666a67fd9f36",
+    "semantic_hash": "2244d2b9454b43a19cd4666a67fd9f36"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/assets/audio/sfx/pulse-soft.wav": {
+    "mtime": 1794740910.1212645,
+    "seen": 1794938843.3570473,
+    "ast_hash": "73c37844d424437ad9dee2a08c229aa0",
+    "semantic_hash": "73c37844d424437ad9dee2a08c229aa0"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/assets/audio/sfx/water-drop.wav": {
+    "mtime": 1794740910.251291,
+    "seen": 1794938843.3570483,
+    "ast_hash": "672055e1d11bc8d1d02f639ef979150f",
+    "semantic_hash": "672055e1d11bc8d1d02f639ef979150f"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/assets/audio/sfx/whoosh-soft.wav": {
+    "mtime": 1794740910.196291,
+    "seen": 1794938843.3570497,
+    "ast_hash": "c2442f08352aafe70899681ef1ba2387",
+    "semantic_hash": "c2442f08352aafe70899681ef1ba2387"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/assets/audio/vo.mp3": {
+    "mtime": 1794740136.1492028,
+    "seen": 1794938843.3570507,
+    "ast_hash": "31fd82d91c968dc850fbde897cfa0f96",
+    "semantic_hash": "31fd82d91c968dc850fbde897cfa0f96"
+  },
+  "episodes/rahasia-ubur-ubur-yang-bisa-kembali-muda/renders/rahasia-ubur-ubur-yang-bisa-kembali-muda.mp4": {
+    "mtime": 1794751836.5257638,
+    "seen": 1794938843.3570516,
+    "ast_hash": "354caee3eaab52313377a0142177a62d",
+    "semantic_hash": "354caee3eaab52313377a0142177a62d"
+  }
+}

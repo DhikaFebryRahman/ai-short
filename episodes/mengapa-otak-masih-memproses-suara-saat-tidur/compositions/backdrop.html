@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Backdrop Kamar Malam Tenang &amp; Neurosains Tidur</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="backdrop" data-duration="68" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            background: linear-gradient(180deg, #060c1f 0%, #0b1636 48%, #102046 82%, #152a56 100%);
+          }
+
+          .bg-layer {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+          }
+
+          .bg-moon-glow {
+            position: absolute;
+            top: -150px;
+            right: -120px;
+            width: 820px;
+            height: 820px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(56, 189, 248, 0.16) 0%,
+              rgba(99, 102, 241, 0.13) 48%,
+              transparent 75%
+            );
+          }
+
+          .bg-lamp-glow {
+            position: absolute;
+            bottom: 160px;
+            left: -140px;
+            width: 840px;
+            height: 760px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(251, 191, 36, 0.15) 0%,
+              rgba(245, 158, 11, 0.08) 46%,
+              transparent 74%
+            );
+          }
+
+          .bg-dream-glow {
+            position: absolute;
+            top: 480px;
+            left: 160px;
+            width: 780px;
+            height: 760px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(129, 140, 248, 0.12) 0%,
+              rgba(56, 189, 248, 0.08) 50%,
+              transparent 74%
+            );
+          }
+
+          .bg-stars {
+            position: absolute;
+            inset: 0;
+          }
+
+          .bg-star {
+            position: absolute;
+            border-radius: 50%;
+            background: #f8fafc;
+            box-shadow: 0 0 8px rgba(186, 230, 253, 0.8);
+          }
+
+          .bg-mote {
+            position: absolute;
+            border-radius: 50%;
+            border: 1.5px solid rgba(253, 230, 138, 0.48);
+            background: rgba(251, 191, 36, 0.14);
+          }
+        </style>
+
+        <div
+          id="backdrop-clip"
+          class="bg-layer clip"
+          data-start="0"
+          data-duration="68"
+          data-layout-ignore
+          data-track-index="0"
+        >
+          <div class="bg-moon-glow" id="bg-moon-glow"></div>
+          <div class="bg-lamp-glow" id="bg-lamp-glow"></div>
+          <div class="bg-dream-glow" id="bg-dream-glow"></div>
+          <div class="bg-stars" id="bg-stars"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var starsEl = root.querySelector("#bg-stars");
+            var mGlow = root.querySelector("#bg-moon-glow");
+            var lGlow = root.querySelector("#bg-lamp-glow");
+            var dGlow = root.querySelector("#bg-dream-glow");
+
+            var stars = [];
+            for (var i = 0; i < 34; i++) {
+              var star = document.createElement("div");
+              var isMote = i % 3 === 0;
+              star.className = isMote ? "bg-mote" : "bg-star";
+              var size = isMote ? 7 + ((i * 3) % 9) : 2 + (i % 3) * 1.4;
+              star.style.width = size + "px";
+              star.style.height = size + "px";
+              star.style.left = (48 + ((i * 199) % 984)) + "px";
+              star.style.top = (90 + ((i * 263) % 1700)) + "px";
+              star.style.opacity = String(isMote ? 0.3 + (i % 3) * 0.12 : 0.32 + (i % 5) * 0.13);
+              starsEl.appendChild(star);
+              stars.push({ el: star, idx: i, isMote: isMote });
+            }
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(mGlow, { x: -45, y: 36, scale: 1.07, duration: 34, ease: "sine.inOut" }, 0)
+              .to(mGlow, { x: 0, y: 0, scale: 1, duration: 34, ease: "sine.inOut" }, 34)
+              .to(lGlow, { x: 46, y: -32, scale: 1.06, duration: 34, ease: "sine.inOut" }, 0)
+              .to(lGlow, { x: 0, y: 0, scale: 1, duration: 34, ease: "sine.inOut" }, 34)
+              .to(dGlow, { x: -32, y: 24, scale: 1.05, duration: 34, ease: "sine.inOut" }, 0)
+              .to(dGlow, { x: 0, y: 0, scale: 1, duration: 34, ease: "sine.inOut" }, 34);
+
+            stars.forEach(function (item) {
+              var dy = item.isMote ? -64 : -18 - (item.idx % 3) * 8;
+              var dx = ((item.idx % 3) - 1) * 16;
+              tl.to(item.el, {
+                x: dx,
+                y: dy,
+                opacity: item.isMote ? 0.68 : 0.9,
+                duration: 17 + (item.idx % 4) * 2,
+                repeat: 2,
+                yoyo: true,
+                ease: "sine.inOut"
+              }, (item.idx % 6) * 0.4);
+            });
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["backdrop"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

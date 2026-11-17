@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 01 — Hujan Berlian di Planet Raksasa?</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-01" data-duration="10.40" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            color: #142244;
+          }
+
+          .s1-stage {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+          }
+
+          .s1-svg {
+            position: absolute;
+            inset: 0;
+            width: 1080px;
+            height: 1920px;
+            overflow: visible;
+          }
+
+          .s1-header {
+            position: absolute;
+            top: 204px;
+            left: 140px;
+            width: 800px;
+            text-align: center;
+          }
+
+          .s1-eyebrow {
+            display: inline-block;
+            padding: 7px 22px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.94);
+            border: 2.5px solid #0ea5e9;
+            color: #0369a1;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+          }
+
+          .s1-title {
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1.1;
+            color: #142244;
+            text-shadow: 0 3px 0 rgba(255, 255, 255, 0.85);
+          }
+
+          .s1-pill-bar {
+            position: absolute;
+            top: 1245px;
+            left: 130px;
+            width: 820px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .s1-pill {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 28px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 3px solid #0ea5e9;
+            box-shadow: 0 10px 24px rgba(20, 34, 68, 0.14);
+            color: #0369a1;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            opacity: 0;
+          }
+
+          .s1-pill-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #38bdf8;
+          }
+
+          .s1-pill.is-amber {
+            border-color: #d97706;
+            color: #9a3412;
+          }
+          .s1-pill.is-amber .s1-pill-dot {
+            background: #ffb703;
+          }
+        </style>
+
+        <div id="s1-clip" class="s1-stage clip" data-start="0" data-duration="10.40" data-track-index="0">
+          <div id="s1-camera" style="position: absolute; inset: 0" data-layout-allow-overflow>
+            <svg class="s1-svg" viewBox="0 0 1080 1920" fill="none">
+              <defs>
+                <radialGradient id="s1Halo" cx="50%" cy="50%" r="50%">
+                  <stop offset="0" stop-color="#ffffff" stop-opacity="0.92" />
+                  <stop offset="0.58" stop-color="#bae6fd" stop-opacity="0.48" />
+                  <stop offset="1" stop-color="#bae6fd" stop-opacity="0" />
+                </radialGradient>
+                <linearGradient id="s1DiamondTop" x1="-100" y1="-120" x2="100" y2="120" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#ffffff" />
+                  <stop offset="0.5" stop-color="#7dd3fc" />
+                  <stop offset="1" stop-color="#0ea5e9" />
+                </linearGradient>
+                <linearGradient id="s1JupiterBody" x1="0" y1="-180" x2="0" y2="180" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#fde68a" />
+                  <stop offset="0.28" stop-color="#f59e0b" />
+                  <stop offset="0.5" stop-color="#fef3c7" />
+                  <stop offset="0.72" stop-color="#fb7185" />
+                  <stop offset="1" stop-color="#d97706" />
+                </linearGradient>
+                <clipPath id="s1JupiterClip">
+                  <circle cx="0" cy="0" r="172" />
+                </clipPath>
+                <clipPath id="s1SaturnClip">
+                  <circle cx="0" cy="0" r="132" />
+                </clipPath>
+                <linearGradient id="s1Hills" x1="540" y1="1520" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#a7f3d0" />
+                  <stop offset="0.55" stop-color="#6ee7b7" />
+                  <stop offset="1" stop-color="#34d399" />
+                </linearGradient>
+              </defs>
+
+              <!-- Orbit Guide Rings -->
+              <circle cx="540" cy="740" r="320" fill="url(#s1Halo)" />
+
+              <!-- BEAT 1: Small Jewelry Diamond Close-Up (centered 540, 740) -->
+              <g id="s1-diamond-group">
+                <!-- Air Raindrop Comparison Hints -->
+                <g id="s1-rain-hints" opacity="0.88">
+                  <path d="M330 620 C318 652 318 674 330 682 C342 674 342 652 330 620 Z" fill="#38bdf8" stroke="#142244" stroke-width="3.5" />
+                  <path d="M750 645 C738 677 738 699 750 707 C762 699 762 677 750 645 Z" fill="#38bdf8" stroke="#142244" stroke-width="3.5" />
+                  <line x1="365" y1="665" x2="405" y2="682" stroke="#0369a1" stroke-width="4" stroke-dasharray="7 7" stroke-linecap="round" />
+                </g>
+
+                <!-- Faceted Diamond Crystal centered at (540, 740) -->
+                <g id="s1-diamond-spin">
+                  <polygon points="462,640 618,640 668,708 540,864 412,708" fill="url(#s1DiamondTop)" stroke="#142244" stroke-width="6" stroke-linejoin="round" />
+                  <polygon points="462,640 618,640 584,708 496,708" fill="#ffffff" fill-opacity="0.72" stroke="#142244" stroke-width="4" stroke-linejoin="round" />
+                  <polygon points="412,708 496,708 540,864" fill="#bae6fd" fill-opacity="0.75" stroke="#142244" stroke-width="4" stroke-linejoin="round" />
+                  <polygon points="668,708 584,708 540,864" fill="#38bdf8" fill-opacity="0.72" stroke="#142244" stroke-width="4" stroke-linejoin="round" />
+                  <line x1="496" y1="708" x2="540" y2="864" stroke="#142244" stroke-width="4" />
+                  <line x1="584" y1="708" x2="540" y2="864" stroke="#142244" stroke-width="4" />
+                  <line x1="412" y1="708" x2="668" y2="708" stroke="#142244" stroke-width="4" />
+                  <!-- Specular Star Sparkles -->
+                  <path d="M652 604 L659 624 L679 631 L659 638 L652 658 L645 638 L625 631 L645 624 Z" fill="#ffb703" stroke="#142244" stroke-width="3" stroke-linejoin="round" />
+                  <path d="M424 774 L429 788 L443 793 L429 798 L424 812 L419 798 L405 793 L419 788 Z" fill="#ffffff" stroke="#0369a1" stroke-width="3" stroke-linejoin="round" />
+                </g>
+              </g>
+
+              <!-- BEAT 2 & 3: JUPITER & SATURNUS SIDE BY SIDE -->
+              <!-- Jupiter (starts centered 540,740 then pans left to 345,765) -->
+              <g id="s1-jupiter-pos" transform="translate(540 740)">
+                <g id="s1-jupiter-anim" opacity="0">
+                  <circle cx="0" cy="0" r="198" fill="#fef3c7" fill-opacity="0.55" />
+                  <g clip-path="url(#s1JupiterClip)">
+                    <circle cx="0" cy="0" r="172" fill="url(#s1JupiterBody)" />
+                    <g id="s1-jupiter-bands">
+                      <path d="M-240 -95 Q-120 -115 0 -92 T240 -96 L240 -52 Q120 -36 0 -55 T-240 -50 Z" fill="#fde68a" fill-opacity="0.88" />
+                      <path d="M-240 -22 Q-110 -4 0 -24 T240 -18 L240 24 Q110 42 0 22 T-240 26 Z" fill="#fffbeb" fill-opacity="0.82" />
+                      <path d="M-240 52 Q-120 72 0 50 T240 54 L240 94 Q120 112 0 90 T-240 96 Z" fill="#f59e0b" fill-opacity="0.65" />
+                      <!-- Iconic Great Red Spot -->
+                      <ellipse cx="48" cy="56" rx="44" ry="26" fill="#fb7185" stroke="#be123c" stroke-width="3.5" />
+                      <ellipse cx="48" cy="56" rx="22" ry="12" fill="#fda4af" />
+                    </g>
+                  </g>
+                  <circle cx="0" cy="0" r="172" fill="none" stroke="#142244" stroke-width="6" />
+                  <path d="M-112 -98 C-78 -134 -24 -146 18 -138" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.68" />
+                  <g transform="translate(0 218)">
+                    <rect x="-82" y="-20" width="164" height="40" rx="20" fill="#fffcf5" stroke="#142244" stroke-width="3.5" />
+                    <text x="0" y="7" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="21" fill="#9a3412" letter-spacing="1.4">JUPITER</text>
+                  </g>
+                </g>
+              </g>
+
+              <!-- Saturnus (appears at x=735, y=735) -->
+              <g id="s1-saturn-pos" transform="translate(745 735)">
+                <g id="s1-saturn-anim" opacity="0">
+                  <!-- Back half of ring -->
+                  <path
+                    d="M-218 -10 C-198 -68 198 -68 218 -10"
+                    stroke="#f59e0b"
+                    stroke-width="26"
+                    stroke-linecap="round"
+                    transform="rotate(-18)"
+                    opacity="0.72"
+                  />
+                  <path
+                    d="M-218 -10 C-198 -68 198 -68 218 -10"
+                    stroke="#142244"
+                    stroke-width="4.5"
+                    stroke-linecap="round"
+                    transform="rotate(-18)"
+                  />
+                  <!-- Planet Sphere -->
+                  <g clip-path="url(#s1SaturnClip)">
+                    <circle cx="0" cy="0" r="132" fill="#fde68a" />
+                    <rect x="-140" y="-74" width="280" height="32" fill="#fcd34d" opacity="0.8" />
+                    <rect x="-140" y="-14" width="280" height="36" fill="#fffbeb" opacity="0.82" />
+                    <rect x="-140" y="42" width="280" height="38" fill="#f59e0b" opacity="0.6" />
+                  </g>
+                  <circle cx="0" cy="0" r="132" fill="none" stroke="#142244" stroke-width="6" />
+                  <!-- Front half of ring -->
+                  <path
+                    d="M-225 4 C-185 74 185 74 225 4"
+                    stroke="#fef08a"
+                    stroke-width="26"
+                    stroke-linecap="round"
+                    transform="rotate(-18)"
+                  />
+                  <path
+                    d="M-225 4 C-185 74 185 74 225 4"
+                    stroke="#142244"
+                    stroke-width="4.5"
+                    stroke-linecap="round"
+                    transform="rotate(-18)"
+                  />
+                  <g transform="translate(0 223)">
+                    <rect x="-86" y="-20" width="172" height="40" rx="20" fill="#fffcf5" stroke="#142244" stroke-width="3.5" />
+                    <text x="0" y="7" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="21" fill="#0369a1" letter-spacing="1.4">SATURNUS</text>
+                  </g>
+                </g>
+              </g>
+
+              <!-- 2 Clear Diamond Crystals for Jupiter & Saturnus (Hypothesis clue) -->
+              <g id="s1-diam-jupiter" transform="translate(540 535)">
+                <g id="s1-diam-jup-anim" opacity="0">
+                  <polygon points="0,-38 28,-8 0,38 -28,-8" fill="#7dd3fc" stroke="#142244" stroke-width="4" stroke-linejoin="round" />
+                  <polygon points="0,-38 28,-8 0,-4" fill="#ffffff" fill-opacity="0.78" stroke="#142244" stroke-width="2.5" />
+                  <line x1="-28" y1="-8" x2="28" y2="-8" stroke="#142244" stroke-width="2.5" />
+                  <path d="M36 -38 L40 -26 L52 -22 L40 -18 L36 -6 L32 -18 L20 -22 L32 -26 Z" fill="#ffb703" stroke="#142244" stroke-width="2.2" />
+                </g>
+              </g>
+              <g id="s1-diam-saturn" transform="translate(745 520)">
+                <g id="s1-diam-sat-anim" opacity="0">
+                  <polygon points="0,-38 28,-8 0,38 -28,-8" fill="#7dd3fc" stroke="#142244" stroke-width="4" stroke-linejoin="round" />
+                  <polygon points="0,-38 28,-8 0,-4" fill="#ffffff" fill-opacity="0.78" stroke="#142244" stroke-width="2.5" />
+                  <line x1="-28" y1="-8" x2="28" y2="-8" stroke="#142244" stroke-width="2.5" />
+                  <path d="M-36 -36 L-32 -25 L-21 -21 L-32 -17 L-36 -6 L-40 -17 L-51 -21 L-40 -25 Z" fill="#ffb703" stroke="#142244" stroke-width="2.2" />
+                </g>
+              </g>
+
+              <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920): Observatory Hill & Telescope -->
+              <g id="s1-foreground">
+                <path d="M-40 1635 Q240 1545 540 1605 T1120 1580 L1120 1940 L-40 1940 Z" fill="#d1fae5" />
+                <path d="M-40 1675 Q270 1615 540 1665 T1120 1640 L1120 1940 L-40 1940 Z" fill="url(#s1Hills)" stroke="#142244" stroke-width="5.5" />
+                <!-- Brass Observatory Telescope at Left -->
+                <g transform="translate(215 1690)">
+                  <line x1="0" y1="-25" x2="-38" y2="115" stroke="#142244" stroke-width="10" stroke-linecap="round" />
+                  <line x1="0" y1="-25" x2="36" y2="115" stroke="#142244" stroke-width="10" stroke-linecap="round" />
+                  <line x1="0" y1="-25" x2="0" y2="120" stroke="#0369a1" stroke-width="7" stroke-linecap="round" />
+                  <g transform="rotate(-28)">
+                    <rect x="-65" y="-52" width="146" height="32" rx="10" fill="#ffb703" stroke="#142244" stroke-width="4.5" />
+                    <rect x="65" y="-58" width="24" height="44" rx="6" fill="#38bdf8" stroke="#142244" stroke-width="4.5" />
+                  </g>
+                </g>
+                <!-- Star Chart & Small Gemstone Notebook at Right -->
+                <g transform="translate(835 1740) rotate(5)">
+                  <rect x="-86" y="-48" width="172" height="106" rx="14" fill="#fffcf5" stroke="#142244" stroke-width="4.5" />
+                  <circle cx="-28" cy="-4" r="20" fill="#fde68a" stroke="#142244" stroke-width="3" />
+                  <circle cx="34" cy="6" r="14" fill="#7dd3fc" stroke="#142244" stroke-width="3" />
+                  <path d="M-28 -4 Q4 -26 34 6" stroke="#0369a1" stroke-width="3" stroke-dasharray="5 5" />
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <div class="s1-header">
+            <div class="s1-eyebrow">LUAR ANGKASA • HIPOTESIS</div>
+            <h1 class="s1-title" id="s1-title">Hujan Berlian di Planet Raksasa?</h1>
+          </div>
+
+          <div class="s1-pill-bar">
+            <div class="s1-pill" id="s1-pill-1"><span class="s1-pill-dot"></span><span>HUJAN BERLIAN?</span></div>
+            <div class="s1-pill is-amber" id="s1-pill-2"><span class="s1-pill-dot"></span><span>JUPITER &amp; SATURNUS</span></div>
+            <div class="s1-pill" id="s1-pill-3"><span class="s1-pill-dot"></span><span>BENARKAH TERJADI?</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+
+            var stage = q("#s1-clip");
+            var camera = q("#s1-camera");
+            var diamondGrp = q("#s1-diamond-group");
+            var diamondSpin = q("#s1-diamond-spin");
+            var jupPos = q("#s1-jupiter-pos");
+            var jupAnim = q("#s1-jupiter-anim");
+            var jupBands = q("#s1-jupiter-bands");
+            var satPos = q("#s1-saturn-pos");
+            var satAnim = q("#s1-saturn-anim");
+            var diamJupPos = q("#s1-diam-jupiter");
+            var diamJupAnim = q("#s1-diam-jup-anim");
+            var diamSatPos = q("#s1-diam-saturn");
+            var diamSatAnim = q("#s1-diam-sat-anim");
+            var p1 = q("#s1-pill-1"), p2 = q("#s1-pill-2"), p3 = q("#s1-pill-3");
+
+            gsap.set(stage, { opacity: 1 });
+            gsap.set(camera, { scale: 1.06, y: 0, transformOrigin: "50% 40%" });
+            gsap.set(diamondGrp, { opacity: 1, scale: 1, svgOrigin: "540 740" });
+            gsap.set(diamondSpin, { rotation: -6, svgOrigin: "540 740" });
+            gsap.set(jupAnim, { opacity: 0, scale: 0.72, transformOrigin: "50% 50%" });
+            gsap.set(satAnim, { opacity: 0, scale: 0.74, x: 90, transformOrigin: "50% 50%" });
+            gsap.set(diamJupAnim, { opacity: 0, y: -18, scale: 0.7, transformOrigin: "50% 50%" });
+            gsap.set(diamSatAnim, { opacity: 0, y: -18, scale: 0.7, transformOrigin: "50% 50%" });
+
+            var tl = gsap.timeline({ paused: true });
+
+            // Beat 1 (0 - 3.65s): Sparkling diamond close-up rotates smoothly
+            tl.to(camera, { scale: 1.0, duration: 3.4, ease: "power2.out" }, 0)
+              .to(diamondSpin, { rotation: 8, duration: 3.5, ease: "sine.inOut" }, 0)
+              .fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 0.25);
+
+            // Beat 2 (3.65 - 6.75s): Diamond transforms into Jupiter + 1 diamond above Jupiter
+            tl.to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 3.55)
+              .to(diamondGrp, { opacity: 0, scale: 0.22, duration: 0.55, ease: "power2.in", immediateRender: false }, 3.65)
+              .to(jupAnim, { opacity: 1, scale: 1, duration: 0.75, ease: "back.out(1.3)", immediateRender: false }, 3.85)
+              .to(jupBands, { x: -42, duration: 5.5, ease: "sine.inOut" }, 4.0)
+              .to(diamJupAnim, { opacity: 1, y: 0, scale: 1, duration: 0.65, ease: "back.out(1.4)", immediateRender: false }, 4.35)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 4.25);
+
+            // Beat 3 (6.75 - 10.40s): Jupiter + diamond pan left & Saturn enters beside it with its own diamond
+            tl.to(jupPos, { attr: { transform: "translate(325 760)" }, duration: 1.1, ease: "power2.inOut" }, 6.65)
+              .to(diamJupPos, { attr: { transform: "translate(325 548)" }, duration: 1.1, ease: "power2.inOut" }, 6.65)
+              .to(jupAnim, { scale: 0.88, duration: 1.1, ease: "power2.inOut", immediateRender: false }, 6.65)
+              .to(satAnim, { opacity: 1, scale: 1, x: 0, duration: 0.85, ease: "back.out(1.25)", immediateRender: false }, 6.9)
+              .to(diamSatAnim, { opacity: 1, y: 0, scale: 1, duration: 0.65, ease: "back.out(1.4)", immediateRender: false }, 7.35)
+              .to([diamJupAnim, diamSatAnim], { y: 16, duration: 2.0, ease: "sine.inOut", immediateRender: false }, 7.9)
+              .to(p2, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 7.65)
+              .fromTo(p3, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 7.85);
+
+            // Smooth transition into Jupiter's atmosphere for Scene 2
+            tl.to(camera, { scale: 1.14, x: 85, duration: 0.65, ease: "power2.in", immediateRender: false }, 9.75)
+              .to(stage, { opacity: 0, duration: 0.48, ease: "power2.inOut", immediateRender: false }, 9.90);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-01"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

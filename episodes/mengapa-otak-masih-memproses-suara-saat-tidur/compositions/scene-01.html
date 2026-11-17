@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 01 — Otak yang Tetap Merespons Saat Tidur</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-01" data-duration="9.65" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            color: #f8fafc;
+          }
+          .s1-stage { position: absolute; inset: 0; opacity: 1; }
+          .s1-svg { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: visible; }
+          .s1-header { position: absolute; top: 204px; left: 140px; width: 800px; text-align: center; }
+          .s1-eyebrow {
+            display: inline-block; padding: 7px 22px; border-radius: 999px;
+            background: rgba(11, 22, 48, 0.92); border: 2px solid #fbbf24; color: #fde68a;
+            font-size: 20px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;
+          }
+          .s1-title { font-size: 44px; font-weight: 900; line-height: 1.1; color: #f8fafc; text-shadow: 0 4px 18px rgba(2,6,23,0.9); }
+          .s1-pill-bar { position: absolute; top: 1245px; left: 130px; width: 820px; height: 62px; display: flex; align-items: center; justify-content: center; }
+          .s1-pill {
+            position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 12px 26px;
+            border-radius: 999px; background: rgba(11, 22, 48, 0.94); border: 2.5px solid #38bdf8;
+            box-shadow: 0 10px 26px rgba(2, 6, 23, 0.55); color: #7dd3fc;
+            font-size: 23px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0;
+          }
+          .s1-pill.is-red { border-color: #fb7185; color: #fda4af; }
+          .s1-pill-dot { width: 14px; height: 14px; border-radius: 50%; background: #38bdf8; }
+          .s1-pill.is-red .s1-pill-dot { background: #fb7185; }
+        </style>
+
+        <div id="s1-clip" class="s1-stage clip" data-start="0" data-duration="9.65" data-track-index="0">
+          <svg class="s1-svg" viewBox="0 0 1080 1920" fill="none">
+            <defs>
+              <radialGradient id="s1LampHalo" cx="50%" cy="50%" r="50%">
+                <stop offset="0" stop-color="#fbbf24" stop-opacity="0.38" />
+                <stop offset="1" stop-color="#fbbf24" stop-opacity="0" />
+              </radialGradient>
+              <linearGradient id="s1BrainGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#fda4af" />
+                <stop offset="1" stop-color="#f472b6" />
+              </linearGradient>
+              <linearGradient id="s1Floor" x1="540" y1="1540" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#17274d" />
+                <stop offset="0.5" stop-color="#0d1936" />
+                <stop offset="1" stop-color="#060c1f" />
+              </linearGradient>
+            </defs>
+
+            <!-- Camera Zoom Layer -->
+            <g id="s1-cam">
+              <!-- Quiet Night Window (Crescent Moon + Twinkling Stars) -->
+              <g transform="translate(805 565)">
+                <rect x="-92" y="-102" width="184" height="204" rx="22" fill="#07122a" stroke="#38bdf8" stroke-width="4" />
+                <line x1="0" y1="-102" x2="0" y2="102" stroke="#1e3a8a" stroke-width="3" />
+                <line x1="-92" y1="0" x2="92" y2="0" stroke="#1e3a8a" stroke-width="3" />
+                <path d="M-38 -52 A32 32 0 1 0 6 -22 A25 25 0 1 1 -38 -52 Z" fill="#fde68a" />
+                <circle id="s1-star-1" cx="46" cy="-50" r="4.5" fill="#f8fafc" />
+                <circle id="s1-star-2" cx="34" cy="44" r="3.5" fill="#7dd3fc" />
+              </g>
+
+              <!-- Outside Doorway Call Speech Bubble: "KEVIN!" positioned lower & clean (2-layer wrapper) -->
+              <g transform="translate(215 775)">
+                <g id="s1-caller" opacity="0">
+                  <rect x="-76" y="-32" width="152" height="60" rx="30" fill="#fbbf24" stroke="#fef3c7" stroke-width="3.5" />
+                  <circle cx="92" cy="14" r="9" fill="#fbbf24" stroke="#fef3c7" stroke-width="2.5" />
+                  <circle cx="112" cy="24" r="5.5" fill="#fbbf24" />
+                  <text x="0" y="7" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="24" fill="#0f172a">"KEVIN!"</text>
+                </g>
+              </g>
+
+              <!-- Incoming Sound Wave Arcs traveling smoothly from "KEVIN!" toward ear -->
+              <g id="s1-call-waves" opacity="0">
+                <path id="s1-cw-1" d="M336 745 Q358 785 336 825" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" fill="none" />
+                <path id="s1-cw-2" d="M376 732 Q402 785 376 838" stroke="#38bdf8" stroke-width="5.5" stroke-linecap="round" fill="none" />
+                <path id="s1-cw-3" d="M416 722 Q446 785 416 848" stroke="#7dd3fc" stroke-width="5" stroke-linecap="round" fill="none" />
+              </g>
+
+              <!-- Cozy Bed, Blanket, Pillow & Sleeping Character (stays peacefully asleep!) -->
+              <g transform="translate(540 885)">
+                <!-- Bed Frame & Mattress -->
+                <rect x="-310" y="65" width="620" height="88" rx="22" fill="#1e293b" stroke="#7dd3fc" stroke-width="4" />
+                <rect x="-320" y="-55" width="46" height="212" rx="14" fill="#334155" stroke="#7dd3fc" stroke-width="4" />
+                <!-- Soft Pillow -->
+                <ellipse cx="-165" cy="18" rx="108" ry="44" fill="#e2e8f0" stroke="#0f172a" stroke-width="4.5" />
+                <!-- Blanket with Gentle Breathing Chest Motion -->
+                <g id="s1-chest">
+                  <path d="M-80 8 C60 -42 225 -10 292 65 L-80 65 Z" fill="#0284c7" stroke="#0f172a" stroke-width="4.5" />
+                  <path d="M-80 8 Q20 -8 105 22" stroke="#7dd3fc" stroke-width="6" stroke-linecap="round" opacity="0.65" />
+                </g>
+
+                <!-- Sleeper Head resting on pillow (with CLEAR detailed Brain inside!) -->
+                <g id="s1-head" transform="translate(-145 -24)">
+                  <circle cx="0" cy="0" r="70" fill="#fcd5b5" stroke="#0f172a" stroke-width="5" />
+                  <!-- Hair cap -->
+                  <path d="M-70 -8 C-74 -66 -12 -88 46 -60 C66 -50 72 -18 68 -2 C32 -30 -28 -26 -70 -8 Z" fill="#1e293b" stroke="#0f172a" stroke-width="4" />
+                  <!-- Peaceful Closed Eye + Subtle Nose Bridge -->
+                  <path d="M12 4 Q26 15 40 4" stroke="#0f172a" stroke-width="4.5" stroke-linecap="round" fill="none" />
+                  <!-- Outer Ear receiving sound -->
+                  <ellipse cx="-24" cy="16" rx="13" ry="18" fill="#f7b98f" stroke="#0f172a" stroke-width="4" />
+                  <path d="M-24 10 Q-17 16 -24 22" stroke="#0f172a" stroke-width="2.5" fill="none" />
+
+                  <!-- Detailed Anatomical 2D Brain Inside Head (gyri folds + cerebellum + pulse) -->
+                  <g id="s1-brain-glow" opacity="0.58" transform="translate(-2 -24)">
+                    <!-- Cerebrum Lobes -->
+                    <path d="M-42 6 C-46 -20 -24 -36 4 -36 C32 -36 46 -18 42 6 C38 22 18 26 -4 24 C-28 24 -40 18 -42 6 Z" fill="url(#s1BrainGrad)" stroke="#fef3c7" stroke-width="2.8" />
+                    <!-- Cerebellum -->
+                    <ellipse cx="-24" cy="24" rx="14" ry="9" fill="#fb7185" stroke="#fef3c7" stroke-width="2" />
+                    <!-- Brain Gyri / Folds -->
+                    <path d="M-26 -14 Q-12 -26 2 -14 T28 -12 M-28 2 Q-10 -8 8 4 T30 2 M-6 -28 L-6 18" stroke="#831843" stroke-width="2.5" stroke-linecap="round" fill="none" />
+                    <!-- Neural Activity Pulse -->
+                    <circle id="s1-brain-spark" cx="4" cy="0" r="14" fill="#38bdf8" opacity="0" />
+                  </g>
+                </g>
+              </g>
+
+              <!-- Rich Multi-Wave Animated Sleep "Z z z" -->
+              <g id="s1-zzz" data-layout-ignore fill="#7dd3fc" font-family="Poppins, sans-serif" font-weight="900">
+                <g transform="translate(430 785)"><text id="s1-z1" x="0" y="0" font-size="30" opacity="0">Z</text></g>
+                <g transform="translate(465 755)"><text id="s1-z2" x="0" y="0" font-size="36" opacity="0">z</text></g>
+                <g transform="translate(505 725)"><text id="s1-z3" x="0" y="0" font-size="28" opacity="0">z</text></g>
+                <g transform="translate(442 785)"><text id="s1-z4" x="0" y="0" font-size="28" opacity="0">Z</text></g>
+                <g transform="translate(480 752)"><text id="s1-z5" x="0" y="0" font-size="34" opacity="0">z</text></g>
+              </g>
+
+              <!-- Callout Enlarged Detailed Brain Activity Card (centered cleanly clear of window!) -->
+              <g transform="translate(470 505)">
+                <g id="s1-brain-card" opacity="0">
+                  <rect x="-220" y="-72" width="440" height="144" rx="28" fill="#0b1836" stroke="#fbbf24" stroke-width="4" />
+                  <!-- Clear Enlarged Folded 2D Brain Icon -->
+                  <g transform="translate(-138 -2)">
+                    <path d="M-46 8 C-50 -24 -26 -42 4 -42 C36 -42 52 -20 46 8 C42 26 20 30 -6 28 C-32 28 -44 20 -46 8 Z" fill="url(#s1BrainGrad)" stroke="#fef3c7" stroke-width="3" />
+                    <ellipse cx="-26" cy="26" rx="16" ry="10" fill="#fb7185" stroke="#fef3c7" stroke-width="2.5" />
+                    <path d="M-30 -16 Q-14 -30 2 -16 T32 -14 M-32 2 Q-12 -10 8 4 T34 2 M-4 -34 L-4 20" stroke="#831843" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle id="s1-card-pulse" cx="4" cy="-4" r="18" fill="#38bdf8" fill-opacity="0.45" />
+                  </g>
+                  <text x="58" y="-12" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="23" fill="#fde68a">OTAK AKTIF</text>
+                  <text x="58" y="18" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#f8fafc">MERESPONS SUARA</text>
+                  <path id="s1-card-eeg" d="M-45 42 L-25 42 L-15 28 L-3 52 L10 24 L22 46 L35 42 L155 42" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round" fill="none" />
+                </g>
+              </g>
+            </g>
+
+            <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920): Warm Bedside Lamp & Nightstand -->
+            <g id="s1-foreground">
+              <rect x="0" y="1565" width="1080" height="360" fill="url(#s1Floor)" stroke="#38bdf8" stroke-width="4" />
+              <circle id="s1-lamp-halo" cx="200" cy="1610" r="120" fill="url(#s1LampHalo)" />
+              <g transform="translate(200 1640)">
+                <rect x="-32" y="28" width="64" height="16" rx="6" fill="#475569" stroke="#f8fafc" stroke-width="3" />
+                <rect x="-7" y="-22" width="14" height="50" fill="#94a3b8" />
+                <polygon points="-42,-16 42,-16 26,-62 -26,-62" fill="#fbbf24" stroke="#fef3c7" stroke-width="3.5" />
+              </g>
+              <g transform="translate(540 1665)">
+                <rect x="-175" y="-28" width="350" height="56" rx="28" fill="#09132b" stroke="#fbbf24" stroke-width="3.5" />
+                <text x="0" y="7" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="20" fill="#fde68a" letter-spacing="1">02:15 • TIDUR MALAM HARI</text>
+              </g>
+              <g transform="translate(880 1650)">
+                <rect x="-46" y="-26" width="92" height="52" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-width="3.5" />
+                <text id="s1-clock-txt" x="0" y="8" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="20" fill="#38bdf8">02:15</text>
+              </g>
+            </g>
+          </svg>
+
+          <div class="s1-header">
+            <div class="s1-eyebrow">SAAT KITA TIDUR...</div>
+            <h1 class="s1-title">Otak Tetap Merespons Suara?</h1>
+          </div>
+
+          <div class="s1-pill-bar">
+            <div class="s1-pill" id="s1-pill-1"><span class="s1-pill-dot"></span><span>SAAT KITA TIDUR...</span></div>
+            <div class="s1-pill is-red" id="s1-pill-2"><span class="s1-pill-dot"></span><span>APAKAH OTAK BENAR-BENAR BERHENTI?</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+            var stage = q("#s1-clip"), cam = q("#s1-cam"), chest = q("#s1-chest"), head = q("#s1-head");
+            var st1 = q("#s1-star-1"), st2 = q("#s1-star-2"), halo = q("#s1-lamp-halo"), clk = q("#s1-clock-txt");
+            var z1 = q("#s1-z1"), z2 = q("#s1-z2"), z3 = q("#s1-z3"), z4 = q("#s1-z4"), z5 = q("#s1-z5");
+            var caller = q("#s1-caller"), waves = q("#s1-call-waves"), cw1 = q("#s1-cw-1"), cw2 = q("#s1-cw-2"), cw3 = q("#s1-cw-3");
+            var brainGlow = q("#s1-brain-glow"), spark = q("#s1-brain-spark"), brainCard = q("#s1-brain-card"), cardPulse = q("#s1-card-pulse");
+            var p1 = q("#s1-pill-1"), p2 = q("#s1-pill-2");
+
+            gsap.set(stage, { opacity: 1 });
+            gsap.set(cam, { scale: 0.96, transformOrigin: "50% 60%" });
+            gsap.set(brainCard, { opacity: 0, scale: 0.85, transformOrigin: "50% 50%" });
+
+            var tl = gsap.timeline({ paused: true });
+
+            // Rich continuous sleep animations: camera push-in, breathing chest, subtle head tilt, twinkling stars & bedside lamp
+            tl.to(cam, { scale: 1.07, x: 34, duration: 6.2, ease: "sine.inOut" }, 0)
+              .to(chest, { y: -9, scaleY: 1.05, transformOrigin: "50% 100%", duration: 1.8, repeat: 4, yoyo: true, ease: "sine.inOut" }, 0)
+              .to(head, { y: -3, rotation: 1.8, transformOrigin: "50% 50%", duration: 1.8, repeat: 4, yoyo: true, ease: "sine.inOut" }, 0.15)
+              .to([st1, st2], { scale: 1.5, opacity: 0.35, transformOrigin: "50% 50%", duration: 1.1, stagger: 0.4, repeat: 6, yoyo: true }, 0)
+              .to(halo, { scale: 1.15, opacity: 0.72, transformOrigin: "50% 50%", duration: 1.8, repeat: 4, yoyo: true }, 0)
+              .to(clk, { opacity: 0.5, duration: 0.8, repeat: 9, yoyo: true }, 0)
+              .fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 0.3);
+
+            // Multi-wave floating Zzz cycle (continuous across entire scene!)
+            [
+              { el: z1, t: 0.1, dx: 22, rot: -10 },
+              { el: z2, t: 0.9, dx: 28, rot: 12 },
+              { el: z3, t: 1.7, dx: 34, rot: -8 },
+              { el: z4, t: 2.6, dx: 24, rot: 10 },
+              { el: z5, t: 3.4, dx: 32, rot: -12 }
+            ].forEach(function (z) {
+              tl.fromTo(z.el,
+                { opacity: 0, y: 12, x: 0, scale: 0.65, rotation: 0 },
+                { opacity: 0.95, y: -95, x: z.dx, scale: 1.15, rotation: z.rot, duration: 2.6, repeat: 2, ease: "sine.out" },
+                z.t
+              ).to(z.el, { opacity: 0, duration: 0.5, immediateRender: false }, z.t + 2.1);
+            });
+
+            // Beat 2 (~3.2s): "KEVIN!" speech callout + waves -> Detailed Brain inside head lights up brightly!
+            tl.fromTo(caller, { opacity: 0, scale: 0.8, y: 12 }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "back.out(1.6)" }, 3.1)
+              .to(caller, { scale: 1.05, duration: 0.45, repeat: 4, yoyo: true, ease: "sine.inOut", immediateRender: false }, 3.6)
+              .to(waves, { opacity: 1, duration: 0.25 }, 3.3)
+              .fromTo([cw1, cw2, cw3], { x: -20, opacity: 0.95 }, { x: 42, opacity: 0.18, duration: 0.85, stagger: 0.14, repeat: 3, ease: "power2.out" }, 3.35)
+              .to(brainGlow, { opacity: 1, scale: 1.14, transformOrigin: "50% 50%", duration: 0.55, ease: "back.out(1.6)" }, 4.2)
+              .to(spark, { opacity: 0.9, scale: 1.45, transformOrigin: "50% 50%", duration: 0.42, repeat: 7, yoyo: true }, 4.3);
+
+            // Beat 3 (~5.8s): Top detailed Brain Card + Question pill
+            tl.to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 5.7)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 5.9)
+              .to(brainCard, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.4)" }, 6.0)
+              .to(cardPulse, { scale: 1.35, opacity: 0.8, transformOrigin: "50% 50%", duration: 0.5, repeat: 4, yoyo: true }, 6.4)
+              .to(stage, { opacity: 0, duration: 0.48, ease: "power2.inOut", immediateRender: false }, 9.17);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-01"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

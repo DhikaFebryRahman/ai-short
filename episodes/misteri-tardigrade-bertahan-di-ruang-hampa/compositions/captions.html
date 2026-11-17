@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Captions Kinetik — Misteri Tardigrade di Ruang Hampa</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="captions" data-duration="74" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: visible;
+            pointer-events: none;
+            font-family: "Poppins", sans-serif;
+          }
+
+          .cap-band {
+            position: absolute;
+            top: 1340px;
+            left: 130px;
+            width: 820px;
+            height: 165px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+          }
+
+          .cap-group {
+            position: absolute;
+            width: 100%;
+            padding: 14px 26px;
+            border-radius: 30px;
+            background: rgba(9, 19, 43, 0.92);
+            border: 2px solid rgba(56, 189, 248, 0.42);
+            box-shadow: 0 12px 32px rgba(2, 6, 23, 0.65);
+            text-align: center;
+            line-height: 1.24;
+            overflow: visible;
+            opacity: 0;
+            visibility: hidden;
+          }
+
+          .cap-word { display: inline-block; margin: 0 5px; vertical-align: baseline; }
+          .cap-word--intro { font-family: "Playfair Display", serif; font-style: italic; font-weight: 700; font-size: 36px; color: #e2e8f0; }
+          .cap-word--keyword { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 40px; }
+          .cap-color--muted { color: #e2e8f0; }
+          .cap-color--ink { color: #ffffff; }
+          .cap-color--amber { color: #fbbf24; }
+          .cap-color--cyan { color: #38bdf8; }
+          .cap-color--green { color: #34d399; }
+          .cap-color--red { color: #fb7185; }
+        </style>
+
+        <div id="cap-clip" class="cap-band clip" data-start="0" data-duration="74" data-track-index="0"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var band = root.querySelector("#cap-clip");
+
+            // Exact verbatim narration mapped to vo.mp3 silencedetect bursts (+1.00s VO start)
+            var groups = [
+              // SCENE 1 (1.00 - 8.11s)
+              { start: 0.96, end: 5.15, words: [
+                { k: "Hewan", j: "intro", c: "muted", t: 1.00 }, { k: "mikroskopis", j: "keyword", c: "green", t: 1.38 },
+                { k: "ini", j: "intro", c: "muted", t: 2.02 }, { k: "pernah", j: "intro", c: "muted", t: 2.26 },
+                { k: "terpapar", j: "intro", c: "muted", t: 2.66 }, { k: "ruang", j: "keyword", c: "cyan", t: 3.16 },
+                { k: "hampa", j: "keyword", c: "cyan", t: 3.54 }, { k: "luar", j: "intro", c: "muted", t: 4.00 },
+                { k: "angkasa.", j: "keyword", c: "ink", t: 4.34 }
+              ]},
+              { start: 5.15, end: 8.28, words: [
+                { k: "Setelah", j: "intro", c: "muted", t: 5.42 }, { k: "diberi", j: "intro", c: "muted", t: 5.84 },
+                { k: "air,", j: "keyword", c: "cyan", t: 6.22 }, { k: "sebagian", j: "intro", c: "muted", t: 6.66 },
+                { k: "kembali", j: "keyword", c: "green", t: 7.16 }, { k: "aktif.", j: "keyword", c: "green", t: 7.64 }
+              ]},
+
+              // SCENE 2 (8.76 - 18.66s)
+              { start: 8.68, end: 13.65, words: [
+                { k: "Pada", j: "intro", c: "muted", t: 8.76 }, { k: "2007,", j: "keyword", c: "amber", t: 9.10 },
+                { k: "eksperimen", j: "intro", c: "muted", t: 10.06 }, { k: "TARDIS", j: "keyword", c: "cyan", t: 10.74 },
+                { k: "membawa", j: "intro", c: "muted", t: 11.24 }, { k: "tardigrade", j: "keyword", c: "green", t: 11.72 },
+                { k: "ke", j: "intro", c: "muted", t: 12.34 }, { k: "orbit", j: "keyword", c: "cyan", t: 12.52 },
+                { k: "rendah", j: "intro", c: "muted", t: 12.90 }, { k: "Bumi.", j: "keyword", c: "cyan", t: 13.18 }
+              ]},
+              { start: 13.65, end: 16.35, words: [
+                { k: "Sebagian", j: "intro", c: "muted", t: 13.93 }, { k: "sampel", j: "keyword", c: "ink", t: 14.42 },
+                { k: "dikeringkan", j: "keyword", c: "amber", t: 14.88 }, { k: "dan", j: "intro", c: "muted", t: 15.56 },
+                { k: "ditempatkan", j: "intro", c: "muted", t: 15.78 }
+              ]},
+              { start: 16.35, end: 18.85, words: [
+                { k: "di", j: "intro", c: "muted", t: 16.40 }, { k: "luar", j: "intro", c: "muted", t: 16.58 },
+                { k: "wahana", j: "keyword", c: "cyan", t: 16.86 }, { k: "selama", j: "intro", c: "muted", t: 17.32 },
+                { k: "sekitar", j: "intro", c: "muted", t: 17.68 }, { k: "sepuluh", j: "keyword", c: "amber", t: 18.06 },
+                { k: "hari.", j: "keyword", c: "amber", t: 18.38 }
+              ]},
+
+              // SCENE 3 (19.21 - 42.19s)
+              { start: 19.12, end: 21.90, words: [
+                { k: "Rahasianya", j: "intro", c: "muted", t: 19.21 }, { k: "adalah", j: "intro", c: "muted", t: 19.86 },
+                { k: "anhidrobiosis.", j: "keyword", c: "amber", t: 20.34 }
+              ]},
+              { start: 21.90, end: 24.50, words: [
+                { k: "Saat", j: "intro", c: "muted", t: 22.13 }, { k: "kehilangan", j: "intro", c: "muted", t: 22.44 },
+                { k: "hampir", j: "intro", c: "muted", t: 22.98 }, { k: "seluruh", j: "intro", c: "muted", t: 23.36 },
+                { k: "air", j: "keyword", c: "cyan", t: 23.78 }, { k: "tubuh,", j: "keyword", c: "ink", t: 24.04 }
+              ]},
+              { start: 24.50, end: 28.85, words: [
+                { k: "tardigrade", j: "keyword", c: "green", t: 24.63 }, { k: "mengerut", j: "keyword", c: "amber", t: 25.24 },
+                { k: "menjadi", j: "intro", c: "muted", t: 25.74 }, { k: "bentuk", j: "intro", c: "muted", t: 26.14 },
+                { k: "kecil", j: "intro", c: "muted", t: 26.52 }, { k: "seperti", j: "intro", c: "muted", t: 26.84 },
+                { k: "tong,", j: "keyword", c: "ink", t: 27.22 }, { k: "disebut", j: "intro", c: "muted", t: 27.74 },
+                { k: "tun.", j: "keyword", c: "amber", t: 28.38 }
+              ]},
+              { start: 28.85, end: 31.65, words: [
+                { k: "Metabolismenya", j: "keyword", c: "cyan", t: 29.12 }, { k: "turun", j: "keyword", c: "red", t: 29.96 },
+                { k: "hampir", j: "intro", c: "muted", t: 30.38 }, { k: "sepenuhnya.", j: "keyword", c: "ink", t: 30.82 }
+              ]},
+              { start: 31.65, end: 35.10, words: [
+                { k: "Protein", j: "keyword", c: "green", t: 31.97 }, { k: "khusus", j: "keyword", c: "green", t: 32.50 },
+                { k: "membantu", j: "intro", c: "muted", t: 32.98 }, { k: "menstabilkan", j: "intro", c: "muted", t: 33.48 },
+                { k: "struktur", j: "intro", c: "muted", t: 34.18 }, { k: "sel", j: "keyword", c: "cyan", t: 34.62 }
+              ]},
+              { start: 35.10, end: 37.68, words: [
+                { k: "dan", j: "intro", c: "muted", t: 35.14 }, { k: "melindungi", j: "keyword", c: "green", t: 35.38 },
+                { k: "komponen", j: "intro", c: "muted", t: 35.94 }, { k: "penting,", j: "intro", c: "muted", t: 36.40 },
+                { k: "termasuk", j: "intro", c: "muted", t: 36.68 }, { k: "DNA,", j: "keyword", c: "cyan", t: 37.12 }
+              ]},
+              { start: 37.68, end: 42.32, words: [
+                { k: "dari", j: "intro", c: "muted", t: 37.78 }, { k: "kerusakan", j: "keyword", c: "red", t: 38.06 },
+                { k: "akibat", j: "intro", c: "muted", t: 38.62 }, { k: "kekeringan.", j: "keyword", c: "amber", t: 38.98 },
+                { k: "Mekanismenya", j: "intro", c: "muted", t: 40.00 }, { k: "berbeda", j: "keyword", c: "ink", t: 40.76 },
+                { k: "antarspesies.", j: "keyword", c: "cyan", t: 41.32 }
+              ]},
+
+              // SCENE 4 (42.66 - 60.01s)
+              { start: 42.55, end: 45.05, words: [
+                { k: "Namun,", j: "keyword", c: "red", t: 42.66 }, { k: "mereka", j: "intro", c: "muted", t: 43.34 },
+                { k: "bukan", j: "keyword", c: "red", t: 43.76 }, { k: "makhluk", j: "intro", c: "muted", t: 44.14 },
+                { k: "kebal.", j: "keyword", c: "red", t: 44.52 }
+              ]},
+              { start: 45.05, end: 48.32, words: [
+                { k: "Kelompok", j: "intro", c: "muted", t: 45.31 }, { k: "yang", j: "intro", c: "muted", t: 45.76 },
+                { k: "hanya", j: "intro", c: "muted", t: 45.98 }, { k: "terpapar", j: "intro", c: "muted", t: 46.30 },
+                { k: "vakum", j: "keyword", c: "cyan", t: 46.78 }, { k: "bertahan", j: "keyword", c: "green", t: 47.22 },
+                { k: "dengan", j: "intro", c: "muted", t: 47.66 }, { k: "baik,", j: "keyword", c: "green", t: 47.92 }
+              ]},
+              { start: 48.32, end: 51.18, words: [
+                { k: "tetapi", j: "intro", c: "muted", t: 48.49 }, { k: "ultraviolet", j: "keyword", c: "amber", t: 48.92 },
+                { k: "Matahari", j: "keyword", c: "amber", t: 49.58 }, { k: "yang", j: "intro", c: "muted", t: 50.10 },
+                { k: "tidak", j: "intro", c: "muted", t: 50.34 }, { k: "tersaring", j: "intro", c: "muted", t: 50.68 }
+              ]},
+              { start: 51.18, end: 53.95, words: [
+                { k: "menurunkan", j: "keyword", c: "red", t: 51.24 }, { k: "kelangsungan", j: "intro", c: "muted", t: 51.84 },
+                { k: "hidup", j: "intro", c: "muted", t: 52.48 }, { k: "secara", j: "intro", c: "muted", t: 52.86 },
+                { k: "tajam.", j: "keyword", c: "red", t: 53.28 }
+              ]},
+              { start: 53.95, end: 57.40, words: [
+                { k: "Paparan", j: "intro", c: "muted", t: 54.15 }, { k: "seluruh", j: "intro", c: "muted", t: 54.62 },
+                { k: "spektrum", j: "intro", c: "muted", t: 55.04 }, { k: "UV", j: "keyword", c: "amber", t: 55.56 },
+                { k: "bahkan", j: "intro", c: "muted", t: 55.92 }, { k: "membuat", j: "intro", c: "muted", t: 56.34 },
+                { k: "hampir", j: "intro", c: "muted", t: 56.76 }, { k: "semua", j: "intro", c: "muted", t: 57.12 }
+              ]},
+              { start: 57.40, end: 60.22, words: [
+                { k: "sampel", j: "keyword", c: "ink", t: 57.48 }, { k: "gagal", j: "keyword", c: "red", t: 57.88 },
+                { k: "pulih", j: "keyword", c: "red", t: 58.26 }, { k: "setelah", j: "intro", c: "muted", t: 58.64 },
+                { k: "kembali", j: "intro", c: "muted", t: 59.04 }, { k: "dibasahi.", j: "keyword", c: "cyan", t: 59.46 }
+              ]},
+
+              // SCENE 5 (60.54 - 71.61s)
+              { start: 60.45, end: 64.68, words: [
+                { k: "Jadi,", j: "intro", c: "muted", t: 60.54 }, { k: "mereka", j: "intro", c: "muted", t: 61.29 },
+                { k: "bukan", j: "keyword", c: "red", t: 61.68 }, { k: "mampu", j: "intro", c: "muted", t: 62.08 },
+                { k: "hidup", j: "keyword", c: "ink", t: 62.48 }, { k: "bebas", j: "intro", c: "muted", t: 62.88 },
+                { k: "selamanya", j: "intro", c: "muted", t: 63.26 }, { k: "di", j: "intro", c: "muted", t: 63.76 },
+                { k: "luar", j: "intro", c: "muted", t: 63.94 }, { k: "angkasa.", j: "keyword", c: "cyan", t: 64.18 }
+              ]},
+              { start: 64.68, end: 68.75, words: [
+                { k: "Kehebatan", j: "intro", c: "muted", t: 64.91 }, { k: "tardigrade", j: "keyword", c: "green", t: 65.48 },
+                { k: "terletak", j: "intro", c: "muted", t: 66.12 }, { k: "pada", j: "intro", c: "muted", t: 66.58 },
+                { k: "kemampuan", j: "intro", c: "muted", t: 66.86 }, { k: "memasuki", j: "intro", c: "muted", t: 67.48 },
+                { k: "keadaan", j: "intro", c: "muted", t: 68.02 }, { k: "kering", j: "keyword", c: "amber", t: 68.38 }
+              ]},
+              { start: 68.75, end: 72.10, words: [
+                { k: "ekstrem", j: "keyword", c: "amber", t: 68.78 }, { k: "dan", j: "intro", c: "muted", t: 69.28 },
+                { k: "pulih", j: "keyword", c: "green", t: 69.52 }, { k: "kembali", j: "keyword", c: "green", t: 69.92 },
+                { k: "ketika", j: "intro", c: "muted", t: 70.40 }, { k: "air", j: "keyword", c: "cyan", t: 70.82 },
+                { k: "tersedia.", j: "keyword", c: "cyan", t: 71.14 }
+              ]}
+            ];
+
+            var tl = gsap.timeline({ paused: true });
+            groups.forEach(function (g) {
+              var gEl = document.createElement("div");
+              gEl.className = "cap-group";
+              var wordEls = g.words.map(function (w) {
+                var span = document.createElement("span");
+                span.className = "cap-word cap-word--" + w.j + " cap-color--" + w.c;
+                span.textContent = w.k;
+                gEl.appendChild(span);
+                return { el: span, t: w.t, isKw: w.j === "keyword" };
+              });
+              band.appendChild(gEl);
+
+              gsap.set(gEl, { opacity: 0, visibility: "hidden", y: 14, scale: 0.96 });
+              wordEls.forEach(function (item) {
+                gsap.set(item.el, { opacity: 0.55, y: item.isKw ? 6 : 4, scale: item.isKw ? 0.94 : 0.97 });
+              });
+
+              tl.set(gEl, { visibility: "visible" }, g.start)
+                .to(gEl, { opacity: 1, y: 0, scale: 1, duration: 0.16, ease: "power2.out", immediateRender: false }, g.start);
+              wordEls.forEach(function (item) {
+                tl.to(item.el, {
+                  opacity: 1, y: 0, scale: 1,
+                  duration: item.isKw ? 0.18 : 0.14,
+                  ease: item.isKw ? "back.out(1.6)" : "power2.out",
+                  immediateRender: false
+                }, item.t);
+              });
+              tl.to(gEl, { opacity: 0, y: -10, duration: 0.12, ease: "power2.in", immediateRender: false }, g.end - 0.12)
+                .set(gEl, { opacity: 0, visibility: "hidden" }, g.end);
+            });
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["captions"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

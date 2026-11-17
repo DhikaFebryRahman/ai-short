@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 03 — Karbon Berubah Menjadi Berlian (Three.js 3D)</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-03" data-duration="13.50" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            color: #142244;
+          }
+
+          .s3-stage {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+          }
+
+          .s3-header {
+            position: absolute;
+            top: 204px;
+            left: 140px;
+            width: 800px;
+            text-align: center;
+            z-index: 6;
+          }
+
+          .s3-eyebrow {
+            display: inline-block;
+            padding: 7px 22px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 2.5px solid #0369a1;
+            color: #0369a1;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+          }
+
+          .s3-title {
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 1.1;
+            color: #142244;
+            text-shadow: 0 3px 0 rgba(255, 255, 255, 0.85);
+          }
+
+          #s3-webgl {
+            position: absolute;
+            top: 345px;
+            left: 125px;
+            width: 760px;
+            height: 760px;
+            z-index: 3;
+            pointer-events: none;
+          }
+
+          .s3-svg {
+            position: absolute;
+            inset: 0;
+            width: 1080px;
+            height: 1920px;
+            overflow: visible;
+            z-index: 4;
+          }
+
+          .s3-layer-tag {
+            position: absolute;
+            right: 54px;
+            padding: 6px 16px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 3px solid #142244;
+            box-shadow: 0 6px 14px rgba(20, 34, 68, 0.12);
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            color: #142244;
+            z-index: 6;
+          }
+
+          .s3-pill-bar {
+            position: absolute;
+            top: 1245px;
+            left: 130px;
+            width: 820px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 6;
+          }
+
+          .s3-pill {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 26px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 3px solid #d97706;
+            box-shadow: 0 10px 24px rgba(20, 34, 68, 0.14);
+            color: #9a3412;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            opacity: 0;
+          }
+
+          .s3-pill.is-ink { border-color: #142244; color: #142244; }
+          .s3-pill.is-cyan { border-color: #0369a1; color: #0369a1; }
+          .s3-pill.is-red { border-color: #be123c; color: #be123c; }
+          .s3-pill-dot { width: 14px; height: 14px; border-radius: 50%; background: #ffb703; }
+          .s3-pill.is-ink .s3-pill-dot { background: #334155; }
+          .s3-pill.is-cyan .s3-pill-dot { background: #0ea5e9; }
+          .s3-pill.is-red .s3-pill-dot { background: #fb7185; }
+        </style>
+
+        <div id="s3-clip" class="s3-stage clip" data-start="0" data-duration="13.50" data-track-index="0">
+          <!-- True 3D Three.js Canvas -->
+          <canvas id="s3-webgl" width="760" height="760"></canvas>
+
+          <!-- Layer Callouts -->
+          <div class="s3-layer-tag" style="top: 410px; right: 44px; border-color: #0369a1; color: #0369a1">1. ATMOSFER GAS</div>
+          <div class="s3-layer-tag" style="top: 565px; right: 44px; border-color: #d97706; color: #9a3412">2. TEKANAN TINGGI</div>
+          <div class="s3-layer-tag" style="top: 735px; right: 44px; border-color: #0ea5e9; color: #0369a1">3. ZONA BERLIAN</div>
+          <div class="s3-layer-tag" style="top: 910px; right: 44px; border-color: #be123c; color: #be123c">4. INTI PANAS EKSTREM</div>
+
+          <!-- Gauge & Foreground Ledge SVG Overlay -->
+          <svg class="s3-svg" viewBox="0 0 1080 1920" fill="none">
+            <defs>
+              <linearGradient id="s3GaugeFill" x1="0" y1="980" x2="0" y2="440" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#f43f5e" />
+                <stop offset="0.5" stop-color="#ffb703" />
+                <stop offset="1" stop-color="#38bdf8" />
+              </linearGradient>
+              <linearGradient id="s3Floor" x1="540" y1="1520" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#fed7aa" />
+                <stop offset="0.55" stop-color="#fb923c" />
+                <stop offset="1" stop-color="#ea580c" />
+              </linearGradient>
+            </defs>
+
+            <!-- Left Pressure & Temperature Vertical Gauge -->
+            <g id="s3-gauge">
+              <rect x="86" y="430" width="44" height="560" rx="22" fill="#fffcf5" stroke="#142244" stroke-width="5" />
+              <rect x="95" y="442" width="26" height="536" rx="13" fill="url(#s3GaugeFill)" />
+              <text x="108" y="405" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#142244">BAR / °C</text>
+              <g id="s3-gauge-knob" transform="translate(108 460)">
+                <circle cx="0" cy="0" r="18" fill="#ffb703" stroke="#142244" stroke-width="4.5" />
+              </g>
+            </g>
+
+            <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920): Core Thermal Ledge -->
+            <g id="s3-foreground">
+              <path d="M-40 1615 Q260 1555 540 1605 T1120 1585 L1120 1940 L-40 1940 Z" fill="#fde68a" />
+              <path d="M-40 1658 Q260 1605 540 1655 T1120 1630 L1120 1940 L-40 1940 Z" fill="url(#s3Floor)" stroke="#142244" stroke-width="5.5" />
+              <g transform="translate(540 1775)">
+                <rect x="-250" y="-30" width="500" height="60" rx="30" fill="#fffcf5" stroke="#142244" stroke-width="4.5" />
+                <text x="0" y="7" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="20" fill="#142244" letter-spacing="1">
+                  PENAMPANG MODEL TEORETIS PLANET
+                </text>
+              </g>
+            </g>
+          </svg>
+
+          <div class="s3-header">
+            <div class="s3-eyebrow">ILUSTRASI MODEL ILMIAH • 3D</div>
+            <h2 class="s3-title">Karbon Berubah Menjadi Berlian</h2>
+          </div>
+
+          <div class="s3-pill-bar">
+            <div class="s3-pill" id="s3-pill-1"><span class="s3-pill-dot"></span><span>TEKANAN MENINGKAT</span></div>
+            <div class="s3-pill is-ink" id="s3-pill-2"><span class="s3-pill-dot"></span><span>KARBON → GRAFIT</span></div>
+            <div class="s3-pill is-cyan" id="s3-pill-3"><span class="s3-pill-dot"></span><span>GRAFIT → BERLIAN</span></div>
+            <div class="s3-pill is-red" id="s3-pill-4"><span class="s3-pill-dot"></span><span>PANAS EKSTREM: BERLIAN DAPAT MELELEH</span></div>
+          </div>
+        </div>
+
+        <script src="assets/vendor/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+            var stage = q("#s3-clip");
+            var knob = q("#s3-gauge-knob");
+            var p1 = q("#s3-pill-1"), p2 = q("#s3-pill-2"), p3 = q("#s3-pill-3"), p4 = q("#s3-pill-4");
+            var canvas = q("#s3-webgl");
+
+            // --- Build Bright Toon/Cel-Shaded Three.js Planet Cutaway ---
+            var renderer = new THREE.WebGLRenderer({
+              canvas: canvas,
+              alpha: true,
+              antialias: true,
+              preserveDrawingBuffer: true
+            });
+            renderer.setSize(760, 760, false);
+            renderer.setPixelRatio(1);
+            renderer.outputEncoding = THREE.sRGBEncoding;
+
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(36, 1, 0.1, 40);
+            camera.position.set(4.5, 2.6, 7.6);
+
+            // Balanced Daylight Lighting (preserves saturated toon bands & crystal highlights)
+            scene.add(new THREE.AmbientLight(0xffffff, 0.56));
+            var keyLight = new THREE.DirectionalLight(0xfff7e6, 0.78);
+            keyLight.position.set(5, 8, 6);
+            scene.add(keyLight);
+            var rimLight = new THREE.DirectionalLight(0x38bdf8, 0.42);
+            rimLight.position.set(-6, 3, -4);
+            scene.add(rimLight);
+
+            // Procedural banded Jupiter texture on 2D canvas
+            function makeBandTexture() {
+              var c = document.createElement("canvas");
+              c.width = 256;
+              c.height = 128;
+              var ctx = c.getContext("2d");
+              var bands = ["#fde68a", "#f59e0b", "#fef3c7", "#fb923c", "#fb7185", "#fde68a", "#d97706"];
+              var h = c.height / bands.length;
+              bands.forEach(function (col, idx) {
+                ctx.fillStyle = col;
+                ctx.fillRect(0, idx * h, c.width, h + 1);
+              });
+              ctx.fillStyle = "#e11d48";
+              ctx.beginPath();
+              ctx.ellipse(90, 84, 22, 12, 0, 0, Math.PI * 2);
+              ctx.fill();
+              var tex = new THREE.CanvasTexture(c);
+              tex.encoding = THREE.sRGBEncoding;
+              return tex;
+            }
+
+            var planetGroup = new THREE.Group();
+            planetGroup.position.set(-0.22, -0.05, 0);
+            scene.add(planetGroup);
+
+            // Outer Ink Silhouette Rim (subtle Kapsul Fakta 2D outline feel)
+            var rimPts = [];
+            for (var rIdx = 0; rIdx <= 64; rIdx++) {
+              var ang = (Math.PI * 2 * rIdx) / 64;
+              rimPts.push(new THREE.Vector3(Math.cos(ang) * 2.18, Math.sin(ang) * 2.18, 0));
+            }
+            var outerRim = new THREE.Line(
+              new THREE.BufferGeometry().setFromPoints(rimPts),
+              new THREE.LineBasicMaterial({ color: 0x142244 })
+            );
+
+            // 4 Concentric Cutaway Shells (open front-right wedge phi in [0.5*PI, PI] -> +X,+Z!)
+            var shells = [
+              { rIn: 1.66, rOut: 2.15, color: 0x7dd3fc, sideColor: 0xbae6fd, tex: true },
+              { rIn: 1.18, rOut: 1.66, color: 0xfbbf24, sideColor: 0xfde68a, tex: false },
+              { rIn: 0.70, rOut: 1.18, color: 0x0ea5e9, sideColor: 0x67e8f9, tex: false },
+              { rIn: 0.00, rOut: 0.70, color: 0xf43f5e, sideColor: 0xfb7185, tex: false }
+            ];
+
+            var phiStart = Math.PI;
+            var phiLen = Math.PI * 1.5;
+
+            shells.forEach(function (sh, idx) {
+              var matOuter = new THREE.MeshLambertMaterial({
+                color: sh.tex ? 0xffffff : sh.color,
+                map: sh.tex ? makeBandTexture() : null,
+                emissive: idx === 3 ? 0xe11d48 : 0x000000,
+                emissiveIntensity: idx === 3 ? 0.22 : 0
+              });
+              var geom = new THREE.SphereGeometry(sh.rOut, 40, 28, phiStart, phiLen, 0, Math.PI);
+              var mesh = new THREE.Mesh(geom, matOuter);
+              planetGroup.add(mesh);
+
+              // Two Cutaway Cross-Section Faces closing phi=PI (+X) & phi=0.5*PI (+Z) with subtle 3D shading
+              var wallMatA = new THREE.MeshLambertMaterial({ color: sh.sideColor, emissive: sh.sideColor, emissiveIntensity: 0.45, side: THREE.DoubleSide });
+              var wallMatB = new THREE.MeshLambertMaterial({ color: sh.color, emissive: sh.sideColor, emissiveIntensity: 0.35, side: THREE.DoubleSide });
+              var ringGeo1 = sh.rIn > 0
+                ? new THREE.RingGeometry(sh.rIn, sh.rOut, 32, 1, -Math.PI / 2, Math.PI)
+                : new THREE.CircleGeometry(sh.rOut, 32, -Math.PI / 2, Math.PI);
+              var wallA = new THREE.Mesh(ringGeo1, wallMatA);
+              wallA.rotation.y = 0; // faces +X cutaway wall (phi = PI)
+              planetGroup.add(wallA);
+
+              var ringGeo2 = sh.rIn > 0
+                ? new THREE.RingGeometry(sh.rIn, sh.rOut, 32, 1, -Math.PI / 2, Math.PI)
+                : new THREE.CircleGeometry(sh.rOut, 32, -Math.PI / 2, Math.PI);
+              var wallB = new THREE.Mesh(ringGeo2, wallMatB);
+              wallB.rotation.y = -Math.PI / 2; // rotates +X onto +Z cutaway wall (phi = 0.5*PI)
+              planetGroup.add(wallB);
+
+              // Bold Cartoon Ink Seam Arc (#142244) along cutaway boundaries
+              var pts = [];
+              for (var i = 0; i <= 32; i++) {
+                var a = -Math.PI / 2 + (Math.PI * i) / 32;
+                pts.push(new THREE.Vector3(Math.cos(a) * sh.rOut, Math.sin(a) * sh.rOut, 0));
+              }
+              var arcGeo = new THREE.BufferGeometry().setFromPoints(pts);
+              var arcMat = new THREE.LineBasicMaterial({ color: 0x142244 });
+              planetGroup.add(new THREE.Line(arcGeo, arcMat));
+              var arcB = new THREE.Line(arcGeo.clone(), arcMat);
+              arcB.rotation.y = -Math.PI / 2;
+              planetGroup.add(arcB);
+            });
+
+            // Transforming Material Group sitting cleanly in open front-right pocket (+X, +Z)
+            var heroGroup = new THREE.Group();
+            planetGroup.add(heroGroup);
+
+            // Stage A: Carbon Soot Spheres
+            var sootGroup = new THREE.Group();
+            var sootMat = new THREE.MeshLambertMaterial({ color: 0x1e293b });
+            [[0, 0.16, 0], [-0.26, -0.06, 0.16], [0.26, -0.02, -0.14], [-0.12, -0.25, -0.18]].forEach(function (pos) {
+              var m = new THREE.Mesh(new THREE.IcosahedronGeometry(0.17, 1), sootMat);
+              m.position.set(pos[0], pos[1], pos[2]);
+              sootGroup.add(m);
+            });
+            heroGroup.add(sootGroup);
+
+            // Stage B: Stacked Hexagonal Graphite Sheets
+            var graphiteGroup = new THREE.Group();
+            var graphMat = new THREE.MeshLambertMaterial({ color: 0x475569 });
+            [-0.16, 0, 0.16].forEach(function (yy) {
+              var hex = new THREE.Mesh(new THREE.CylinderGeometry(0.38, 0.38, 0.09, 6), graphMat);
+              hex.position.y = yy;
+              hex.add(new THREE.LineSegments(new THREE.EdgesGeometry(hex.geometry), new THREE.LineBasicMaterial({ color: 0x142244 })));
+              graphiteGroup.add(hex);
+            });
+            heroGroup.add(graphiteGroup);
+
+            // Stage C: Faceted 3D Octahedron Diamond Crystals
+            var diamondGroup = new THREE.Group();
+            var diamMat = new THREE.MeshPhongMaterial({
+              color: 0x38bdf8,
+              emissive: 0x0284c7,
+              emissiveIntensity: 0.25,
+              shininess: 140,
+              specular: 0xffffff,
+              transparent: true,
+              opacity: 0.94
+            });
+            [{ pos: [0, 0, 0], s: 0.44 }, { pos: [-0.42, -0.14, 0.22], s: 0.25 }, { pos: [0.40, 0.16, -0.18], s: 0.26 }].forEach(function (d) {
+              var gem = new THREE.Mesh(new THREE.OctahedronGeometry(d.s, 0), diamMat);
+              gem.position.set(d.pos[0], d.pos[1], d.pos[2]);
+              gem.add(new THREE.LineSegments(new THREE.EdgesGeometry(gem.geometry), new THREE.LineBasicMaterial({ color: 0x142244 })));
+              diamondGroup.add(gem);
+            });
+            heroGroup.add(diamondGroup);
+
+            // Stage D: Molten Glowing Liquid Drops in Core Heat
+            var meltGroup = new THREE.Group();
+            var meltMat = new THREE.MeshPhongMaterial({ color: 0xfef08a, emissive: 0xf59e0b, emissiveIntensity: 0.62, shininess: 110, specular: 0xffffff });
+            [[0, 0.08, 0, 0.27], [-0.32, -0.14, 0.18, 0.18], [0.30, -0.10, -0.16, 0.19]].forEach(function (m) {
+              var drop = new THREE.Mesh(new THREE.SphereGeometry(m[3], 24, 18), meltMat);
+              drop.scale.set(0.85, 1.38, 0.85);
+              drop.position.set(m[0], m[1], m[2]);
+              meltGroup.add(drop);
+            });
+            heroGroup.add(meltGroup);
+
+            function smoothstep(a, b, x) {
+              var u = Math.max(0, Math.min(1, (x - a) / (b - a)));
+              return u * u * (3 - 2 * u);
+            }
+
+            function render3D(t) {
+              // Subtle rotation keeping the open cutaway squarely facing the camera
+              planetGroup.rotation.y = -0.14 + smoothstep(0, 13.5, t) * 0.28;
+
+              // Camera stays safely framed inside 760x760 canvas while diving smoothly into cutaway
+              var dive = smoothstep(0.5, 9.0, t);
+              var pull = smoothstep(10.6, 13.0, t);
+              var camZ = 7.6 - 0.95 * dive + 1.15 * pull;
+              var camY = 2.6 - 0.85 * dive + 0.75 * pull;
+              var camX = 4.7 - 0.45 * dive + 0.45 * pull;
+              camera.position.set(camX, camY, camZ);
+              camera.lookAt(0.15, 0.15 - 0.25 * dive + 0.2 * pull, 0.15);
+
+              // Descend hero particles clearly inside open front-right pocket (+X, +Z)
+              var depthP = smoothstep(0.4, 11.2, t);
+              var radial = 2.05 - 1.32 * depthP;
+              heroGroup.position.set(radial * 0.68, radial * 0.55, radial * 0.68);
+
+              // Stage visibility & 3D spin
+              sootGroup.visible = t < 4.7;
+              sootGroup.scale.setScalar(1 - 0.5 * smoothstep(4.0, 4.7, t));
+              sootGroup.rotation.y = t * 1.1;
+
+              graphiteGroup.visible = t >= 4.0 && t < 7.1;
+              var gIn = smoothstep(4.0, 4.7, t);
+              var gOut = 1 - smoothstep(6.4, 7.1, t);
+              graphiteGroup.scale.setScalar(Math.max(0.01, gIn * gOut));
+              graphiteGroup.rotation.y = t * 1.4;
+              graphiteGroup.rotation.x = 0.25 * Math.sin(t);
+
+              diamondGroup.visible = t >= 6.4 && t < 10.6;
+              var dIn = smoothstep(6.4, 7.1, t);
+              var dOut = 1 - smoothstep(9.8, 10.6, t);
+              diamondGroup.scale.setScalar(Math.max(0.01, dIn * dOut));
+              diamondGroup.rotation.y = t * 2.1;
+              diamondGroup.rotation.z = 0.22 * Math.sin(t * 1.3);
+
+              meltGroup.visible = t >= 9.8;
+              meltGroup.scale.setScalar(Math.max(0.01, smoothstep(9.8, 10.6, t)));
+              meltGroup.rotation.y = t * 0.8;
+
+              renderer.render(scene, camera);
+            }
+
+            // Initial states
+            gsap.set(stage, { opacity: 0 });
+            var state3D = { t: 0 };
+            render3D(0);
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(stage, { opacity: 1, duration: 0.48, ease: "power2.out" }, 0)
+              .to(state3D, { t: 13.5, duration: 13.5, ease: "none", onUpdate: function () { render3D(state3D.t); } }, 0)
+              .to(knob, { attr: { transform: "translate(108 960)" }, duration: 10.6, ease: "power1.inOut" }, 0.6);
+
+            // Action pills synced cleanly to VO
+            tl.fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 0.55)
+              .to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 3.85)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 4.05)
+              .to(p2, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 6.55)
+              .fromTo(p3, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 6.75)
+              .to(p3, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 9.45)
+              .fromTo(p4, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 9.65)
+              .to(stage, { opacity: 0, duration: 0.48, ease: "power2.inOut", immediateRender: false }, 13.02);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-03"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

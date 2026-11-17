@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 03 — Otak Memilah Suara Penting &amp; Animasi Zzz</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-03" data-duration="17.63" data-fps="30">
+        <style>
+          #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", sans-serif; color: #f8fafc; }
+          .s3-stage { position: absolute; inset: 0; opacity: 0; }
+          .s3-svg { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: visible; }
+          .s3-header { position: absolute; top: 204px; left: 140px; width: 800px; text-align: center; }
+          .s3-eyebrow {
+            display: inline-block; padding: 7px 22px; border-radius: 999px;
+            background: rgba(11, 22, 48, 0.92); border: 2px solid #fbbf24; color: #fde68a;
+            font-size: 20px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;
+          }
+          .s3-title { font-size: 44px; font-weight: 900; line-height: 1.1; color: #f8fafc; text-shadow: 0 4px 18px rgba(2,6,23,0.9); }
+          .s3-pill-bar { position: absolute; top: 1245px; left: 130px; width: 820px; height: 62px; display: flex; align-items: center; justify-content: center; }
+          .s3-pill {
+            position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 12px 24px;
+            border-radius: 999px; background: rgba(11, 22, 48, 0.94); border: 2.5px solid #94a3b8;
+            box-shadow: 0 10px 26px rgba(2, 6, 23, 0.55); color: #e2e8f0;
+            font-size: 22px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0;
+          }
+          .s3-pill.is-amber { border-color: #fbbf24; color: #fde68a; }
+          .s3-pill.is-red { border-color: #fb7185; color: #fda4af; }
+          .s3-pill.is-green { border-color: #34d399; color: #6ee7b7; }
+          .s3-pill-dot { width: 14px; height: 14px; border-radius: 50%; background: #94a3b8; }
+          .s3-pill.is-amber .s3-pill-dot { background: #fbbf24; }
+          .s3-pill.is-red .s3-pill-dot { background: #fb7185; }
+          .s3-pill.is-green .s3-pill-dot { background: #34d399; }
+        </style>
+
+        <div id="s3-clip" class="s3-stage clip" data-start="0" data-duration="17.63" data-track-index="0">
+          <svg class="s3-svg" viewBox="0 0 1080 1920" fill="none">
+            <defs>
+              <linearGradient id="s3BrainGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#fda4af" />
+                <stop offset="1" stop-color="#f472b6" />
+              </linearGradient>
+              <linearGradient id="s3Deck" x1="540" y1="1540" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#142852" />
+                <stop offset="0.5" stop-color="#0b1636" />
+                <stop offset="1" stop-color="#060c1f" />
+              </linearGradient>
+            </defs>
+
+            <!-- Top Center Detailed Folded 2D Brain Monitor -->
+            <g transform="translate(540 520)">
+              <circle cx="0" cy="0" r="134" fill="#0b1836" stroke="#38bdf8" stroke-width="4.5" />
+              <circle id="s3-brain-shield" cx="0" cy="0" r="154" fill="none" stroke="#34d399" stroke-width="5" stroke-dasharray="12 10" opacity="0.28" />
+              <!-- Detailed Folded 2D Brain + Cerebellum + Brainstem -->
+              <g transform="translate(0 -10)">
+                <path d="M-16 44 L-12 72 L4 70 L6 44 Z" fill="#fda4af" stroke="#fef3c7" stroke-width="2.5" />
+                <ellipse cx="-38" cy="40" rx="22" ry="14" fill="#fb7185" stroke="#fef3c7" stroke-width="2.5" />
+                <path d="M-76 10 C-82 -44 -38 -76 14 -76 C68 -76 94 -32 82 14 C72 54 24 60 -16 56 C-56 52 -72 36 -76 10 Z" fill="url(#s3BrainGrad)" stroke="#fef3c7" stroke-width="4" />
+                <path d="M-54 -16 Q-24 -40 4 -20 T58 -18 M-56 12 Q-22 -6 10 14 T64 8 M-14 -58 Q6 -24 -4 34" stroke="#831843" stroke-width="3.2" stroke-linecap="round" fill="none" />
+                <!-- Active Auditory Response Glow Ring Inside Brain -->
+                <circle id="s3-brain-pulse" cx="-10" cy="4" r="32" fill="#94a3b8" fill-opacity="0.22" stroke="#94a3b8" stroke-width="4" />
+              </g>
+              <text x="0" y="102" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="16" fill="#cbd5e1">OTAK TIDUR</text>
+            </g>
+
+            <!-- SOURCE 1: Kipas Angin / Suara Lingkungan Biasa -->
+            <g transform="translate(260 660)">
+              <g id="s3-src-fan">
+                <rect x="-112" y="-76" width="224" height="152" rx="26" fill="#0d1e42" stroke="#64748b" stroke-width="4" />
+                <g transform="translate(-44 -8)">
+                  <circle cx="0" cy="0" r="36" fill="#1e293b" stroke="#94a3b8" stroke-width="3" />
+                  <g id="s3-fan-blades" fill="#94a3b8">
+                    <ellipse cx="0" cy="-18" rx="8" ry="18" />
+                    <ellipse cx="0" cy="18" rx="8" ry="18" />
+                    <ellipse cx="-18" cy="0" rx="18" ry="8" />
+                    <ellipse cx="18" cy="0" rx="18" ry="8" />
+                  </g>
+                </g>
+                <text x="48" y="-12" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="17" fill="#cbd5e1">KIPAS</text>
+                <text x="48" y="14" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="14" fill="#94a3b8">SUARA BIASA</text>
+                <text x="0" y="54" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="14" fill="#94a3b8">RESPONS MINIMAL</text>
+              </g>
+            </g>
+            <path id="s3-w-fan" d="M350 610 Q385 570 420 555" stroke="#94a3b8" stroke-width="4" stroke-dasharray="8 8" opacity="0.5" />
+
+            <!-- SOURCE 2: Nama Sendiri (Amber Response) -->
+            <g transform="translate(820 660)">
+              <g id="s3-src-name" opacity="0.35">
+                <rect x="-112" y="-76" width="224" height="152" rx="26" fill="#0d1e42" stroke="#fbbf24" stroke-width="4" />
+                <circle cx="-48" cy="-10" r="24" fill="#fbbf24" />
+                <path d="M-16 -22 Q-2 -10 -16 2" stroke="#fde68a" stroke-width="4" stroke-linecap="round" fill="none" />
+                <text x="44" y="-12" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="17" fill="#fde68a">NAMA</text>
+                <text x="44" y="14" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="14" fill="#fbbf24">SENDIRI</text>
+                <text x="0" y="54" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="14" fill="#fde68a">PICU RESPONS</text>
+              </g>
+            </g>
+            <path id="s3-w-name" d="M730 610 Q695 570 660 555" stroke="#fbbf24" stroke-width="6" stroke-dasharray="10 8" opacity="0" />
+
+            <!-- SOURCE 3: Suara Baru / Mendadak (Coral Alert Pulse) -->
+            <g transform="translate(260 950)">
+              <g id="s3-src-new" opacity="0.35">
+                <rect x="-112" y="-76" width="224" height="152" rx="26" fill="#0d1e42" stroke="#fb7185" stroke-width="4" />
+                <circle cx="-48" cy="-10" r="24" fill="#fb7185" />
+                <text x="-48" y="-2" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="24" fill="#0f172a">!</text>
+                <text x="42" y="-12" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="17" fill="#fda4af">SUARA</text>
+                <text x="42" y="14" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="14" fill="#fb7185">MENDADAK</text>
+                <text x="0" y="54" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="14" fill="#fda4af">RESPONS BARU</text>
+              </g>
+            </g>
+            <path id="s3-w-new" d="M350 890 L410 760 L440 640" stroke="#fb7185" stroke-width="5.5" stroke-dasharray="10 8" opacity="0" />
+
+            <!-- SOURCE 4: Sistem Filter Aktif -->
+            <g transform="translate(820 950)">
+              <g id="s3-src-filter" opacity="0.35">
+                <rect x="-112" y="-76" width="224" height="152" rx="26" fill="#064e3b" fill-opacity="0.7" stroke="#34d399" stroke-width="4" />
+                <text x="0" y="-12" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="18" fill="#6ee7b7">FILTER AKTIF</text>
+                <text x="0" y="16" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="15" fill="#e2e8f0">BANYAK SUARA</text>
+                <text x="0" y="42" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="15" fill="#34d399">DISARING TIDUR</text>
+              </g>
+            </g>
+
+            <!-- Sleeping Character Resting Peacefully Below Brain + RICH ANIMATED ZZZ -->
+            <g transform="translate(540 935)">
+              <ellipse cx="0" cy="48" rx="94" ry="26" fill="#020617" fill-opacity="0.45" />
+              <ellipse cx="-24" cy="26" rx="74" ry="28" fill="#e2e8f0" stroke="#0f172a" stroke-width="4" />
+              <g id="s3-sleeper-head">
+                <circle cx="-10" cy="-2" r="46" fill="#fcd5b5" stroke="#0f172a" stroke-width="4.5" />
+                <path d="M-56 -6 C-58 -44 -16 -58 24 -42 C38 -36 42 -12 38 0 C16 -18 -26 -18 -56 -6 Z" fill="#1e293b" />
+                <path d="M4 -2 Q16 8 28 -2" stroke="#0f172a" stroke-width="4" stroke-linecap="round" fill="none" />
+              </g>
+            </g>
+            <!-- Continuous Staggered Rising Zzz Letters -->
+            <g data-layout-ignore fill="#7dd3fc" font-family="Poppins, sans-serif" font-weight="900">
+              <g transform="translate(572 900)"><text id="s3-z1" x="0" y="0" font-size="28" opacity="0">Z</text></g>
+              <g transform="translate(600 875)"><text id="s3-z2" x="0" y="0" font-size="32" opacity="0">z</text></g>
+              <g transform="translate(628 852)"><text id="s3-z3" x="0" y="0" font-size="24" opacity="0">z</text></g>
+              <g transform="translate(580 900)"><text id="s3-z4" x="0" y="0" font-size="26" opacity="0">Z</text></g>
+              <g transform="translate(612 872)"><text id="s3-z5" x="0" y="0" font-size="30" opacity="0">z</text></g>
+            </g>
+
+            <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920): 3-Channel Sound Console -->
+            <g id="s3-foreground">
+              <rect x="0" y="1560" width="1080" height="365" fill="url(#s3Deck)" stroke="#38bdf8" stroke-width="4" />
+              <g transform="translate(540 1662)">
+                <rect x="-340" y="-58" width="680" height="116" rx="24" fill="#09132b" stroke="#fbbf24" stroke-width="3.5" />
+                <text x="-305" y="-22" font-family="Poppins, sans-serif" font-weight="800" font-size="16" fill="#94a3b8">KIPAS (BIASA)</text>
+                <rect x="-125" y="-36" width="420" height="16" rx="8" fill="#1e293b" />
+                <rect id="s3-bar-fan" x="-125" y="-36" width="90" height="16" rx="8" fill="#64748b" />
+                <text x="-305" y="10" font-family="Poppins, sans-serif" font-weight="800" font-size="16" fill="#fde68a">NAMA SENDIRI</text>
+                <rect x="-125" y="-4" width="420" height="16" rx="8" fill="#1e293b" />
+                <rect id="s3-bar-name" x="-125" y="-4" width="24" height="16" rx="8" fill="#fbbf24" />
+                <text x="-305" y="42" font-family="Poppins, sans-serif" font-weight="800" font-size="16" fill="#fda4af">SUARA BARU</text>
+                <rect x="-125" y="28" width="420" height="16" rx="8" fill="#1e293b" />
+                <rect id="s3-bar-new" x="-125" y="28" width="24" height="16" rx="8" fill="#fb7185" />
+              </g>
+            </g>
+          </svg>
+
+          <div class="s3-header">
+            <div class="s3-eyebrow">SELEKSI SUARA PENTING</div>
+            <h2 class="s3-title">Tidak Semua Suara Sama</h2>
+          </div>
+
+          <div class="s3-pill-bar">
+            <div class="s3-pill" id="s3-pill-1"><span class="s3-pill-dot"></span><span>SUARA BIASA</span></div>
+            <div class="s3-pill is-amber" id="s3-pill-2"><span class="s3-pill-dot"></span><span>NAMA SENDIRI</span></div>
+            <div class="s3-pill is-red" id="s3-pill-3"><span class="s3-pill-dot"></span><span>SUARA BARU</span></div>
+            <div class="s3-pill is-green" id="s3-pill-4"><span class="s3-pill-dot"></span><span>OTAK MEMILAH INFORMASI</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+            var stage = q("#s3-clip");
+            var fanBlades = q("#s3-fan-blades"), brainPulse = q("#s3-brain-pulse"), brainShield = q("#s3-brain-shield");
+            var slHead = q("#s3-sleeper-head");
+            var z1 = q("#s3-z1"), z2 = q("#s3-z2"), z3 = q("#s3-z3"), z4 = q("#s3-z4"), z5 = q("#s3-z5");
+            var srcFan = q("#s3-src-fan"), srcName = q("#s3-src-name"), srcNew = q("#s3-src-new"), srcFilter = q("#s3-src-filter");
+            var wFan = q("#s3-w-fan"), wName = q("#s3-w-name"), wNew = q("#s3-w-new");
+            var bName = q("#s3-bar-name"), bNew = q("#s3-bar-new");
+            var p1 = q("#s3-pill-1"), p2 = q("#s3-pill-2"), p3 = q("#s3-pill-3"), p4 = q("#s3-pill-4");
+
+            gsap.set(stage, { opacity: 0 });
+            gsap.set(srcFan, { scale: 1.05, transformOrigin: "50% 50%" });
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(stage, { opacity: 1, duration: 0.48, ease: "power2.out" }, 0)
+              .to(fanBlades, { rotation: 1440, transformOrigin: "50% 50%", duration: 17.2, ease: "none" }, 0)
+              .to(slHead, { y: -4, rotation: 1.5, transformOrigin: "50% 50%", duration: 2.0, repeat: 7, yoyo: true, ease: "sine.inOut" }, 0)
+              .fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 0.45)
+              .to(wFan, { opacity: 0.9, duration: 0.6, repeat: 5, yoyo: true }, 0.6);
+
+            // Continuous rich animated Zzz rising peacefully from the sleeper across entire 17.6s
+            [
+              { el: z1, t: 0.2, dx: 20, rot: -10 },
+              { el: z2, t: 1.1, dx: 26, rot: 12 },
+              { el: z3, t: 2.0, dx: 32, rot: -8 },
+              { el: z4, t: 3.0, dx: 22, rot: 10 },
+              { el: z5, t: 3.9, dx: 28, rot: -12 }
+            ].forEach(function (z) {
+              tl.fromTo(z.el,
+                { opacity: 0, y: 8, x: 0, scale: 0.65, rotation: 0 },
+                { opacity: 0.95, y: -76, x: z.dx, scale: 1.15, rotation: z.rot, duration: 2.5, repeat: 5, ease: "sine.out" },
+                z.t
+              );
+            });
+
+            // Beat 2: Nama Sendiri
+            tl.to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 5.0)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 5.2)
+              .to(srcFan, { opacity: 0.5, scale: 0.96, duration: 0.4 }, 5.2)
+              .to(srcName, { opacity: 1, scale: 1.06, transformOrigin: "50% 50%", duration: 0.5, ease: "back.out(1.5)" }, 5.3)
+              .to(wName, { opacity: 1, duration: 0.35 }, 5.5)
+              .to(brainPulse, { fill: "#fbbf24", stroke: "#fde68a", fillOpacity: 0.65, scale: 1.24, transformOrigin: "50% 50%", duration: 0.45, repeat: 4, yoyo: true }, 5.6)
+              .to(bName, { attr: { width: 325 }, duration: 1.2, ease: "power2.out" }, 5.7)
+              // Beat 3: Suara Baru / Mendadak
+              .to(p2, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 8.7)
+              .fromTo(p3, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 8.9)
+              .to(srcNew, { opacity: 1, scale: 1.06, transformOrigin: "50% 50%", duration: 0.45, ease: "back.out(1.6)" }, 9.0)
+              .to(wNew, { opacity: 1, duration: 0.3 }, 9.1)
+              .to(brainPulse, { fill: "#fb7185", stroke: "#fda4af", fillOpacity: 0.72, scale: 1.28, duration: 0.38, repeat: 4, yoyo: true, immediateRender: false }, 9.2)
+              .to(bNew, { attr: { width: 300 }, duration: 1.1, ease: "power2.out" }, 9.3)
+              // Beat 4: Filter Tidur
+              .to(p3, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 12.3)
+              .fromTo(p4, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 12.5)
+              .to(srcFilter, { opacity: 1, scale: 1.06, transformOrigin: "50% 50%", duration: 0.5, ease: "back.out(1.4)" }, 12.6)
+              .to(brainShield, { opacity: 0.92, scale: 1.08, rotation: 36, transformOrigin: "50% 50%", duration: 1.2, repeat: 2, yoyo: true }, 12.7)
+              .to([wFan, wName, wNew], { opacity: 0.22, duration: 0.9, immediateRender: false }, 13.0)
+              .to(brainPulse, { fill: "#34d399", stroke: "#6ee7b7", fillOpacity: 0.35, scale: 1.0, duration: 0.8, immediateRender: false }, 13.2)
+              .to(stage, { opacity: 0, duration: 0.48, ease: "power2.inOut", immediateRender: false }, 17.15);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-03"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

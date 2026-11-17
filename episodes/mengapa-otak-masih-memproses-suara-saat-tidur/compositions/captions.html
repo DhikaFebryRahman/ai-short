@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Captions Kinetik — Otak Memproses Suara Saat Tidur</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="captions" data-duration="68" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: visible;
+            pointer-events: none;
+            font-family: "Poppins", sans-serif;
+          }
+
+          .cap-band {
+            position: absolute;
+            top: 1340px;
+            left: 130px;
+            width: 820px;
+            height: 165px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+          }
+
+          .cap-group {
+            position: absolute;
+            width: 100%;
+            padding: 14px 26px;
+            border-radius: 30px;
+            background: rgba(9, 19, 43, 0.92);
+            border: 2px solid rgba(251, 191, 36, 0.38);
+            box-shadow: 0 12px 32px rgba(2, 6, 23, 0.65);
+            text-align: center;
+            line-height: 1.24;
+            overflow: visible;
+            opacity: 0;
+            visibility: hidden;
+          }
+
+          .cap-word { display: inline-block; margin: 0 5px; vertical-align: baseline; }
+          .cap-word--intro { font-family: "Playfair Display", serif; font-style: italic; font-weight: 700; font-size: 36px; color: #e2e8f0; }
+          .cap-word--keyword { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 40px; }
+          .cap-color--muted { color: #e2e8f0; }
+          .cap-color--ink { color: #ffffff; }
+          .cap-color--amber { color: #fbbf24; }
+          .cap-color--cyan { color: #38bdf8; }
+          .cap-color--green { color: #34d399; }
+          .cap-color--red { color: #fb7185; }
+        </style>
+
+        <div id="cap-clip" class="cap-band clip" data-start="0" data-duration="68" data-track-index="0"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var band = root.querySelector("#cap-clip");
+
+            // Exact verbatim 141 words mapped 1-to-1 to vo.mp3 Whisper timestamps (+1.00s VO start)
+            var groups = [
+              // SCENE 1 (1.11 - 9.50s)
+              { start: 1.02, end: 6.02, words: [
+                { k: "Saat", j: "intro", c: "muted", t: 1.11 }, { k: "tidur", j: "keyword", c: "cyan", t: 1.34 },
+                { k: "nyenyak,", j: "keyword", c: "cyan", t: 2.02 }, { k: "kamu", j: "intro", c: "muted", t: 2.75 },
+                { k: "mungkin", j: "intro", c: "muted", t: 2.93 }, { k: "tetap", j: "intro", c: "muted", t: 3.41 },
+                { k: "bereaksi", j: "keyword", c: "amber", t: 3.67 }, { k: "ketika", j: "intro", c: "muted", t: 4.25 },
+                { k: "namamu", j: "keyword", c: "amber", t: 4.70 }, { k: "dipanggil.", j: "keyword", c: "ink", t: 5.22 }
+              ]},
+              { start: 6.02, end: 9.52, words: [
+                { k: "Tapi", j: "intro", c: "muted", t: 6.12 }, { k: "apakah", j: "intro", c: "muted", t: 6.32 },
+                { k: "itu", j: "intro", c: "muted", t: 6.80 }, { k: "berarti", j: "intro", c: "muted", t: 7.04 },
+                { k: "kamu", j: "intro", c: "muted", t: 7.75 }, { k: "benar-benar", j: "keyword", c: "red", t: 7.92 },
+                { k: "sadar?", j: "keyword", c: "red", t: 8.80 }
+              ]},
+
+              // SCENE 2 (9.56 - 23.50s)
+              { start: 9.52, end: 14.02, words: [
+                { k: "Ketika", j: "intro", c: "muted", t: 9.56 }, { k: "kita", j: "intro", c: "muted", t: 9.92 },
+                { k: "tidur,", j: "keyword", c: "cyan", t: 10.20 }, { k: "otak", j: "keyword", c: "amber", t: 10.69 },
+                { k: "tidak", j: "keyword", c: "red", t: 11.22 }, { k: "memutus", j: "keyword", c: "red", t: 11.32 },
+                { k: "semua", j: "intro", c: "muted", t: 11.81 }, { k: "hubungan", j: "intro", c: "muted", t: 12.16 },
+                { k: "dengan", j: "intro", c: "muted", t: 12.75 }, { k: "dunia", j: "intro", c: "muted", t: 13.14 },
+                { k: "luar.", j: "keyword", c: "ink", t: 13.49 }
+              ]},
+              { start: 14.02, end: 16.85, words: [
+                { k: "Suara", j: "keyword", c: "cyan", t: 14.10 }, { k: "masih", j: "intro", c: "muted", t: 14.33 },
+                { k: "dapat", j: "intro", c: "muted", t: 14.67 }, { k: "masuk", j: "keyword", c: "green", t: 15.01 },
+                { k: "ke", j: "intro", c: "muted", t: 15.32 }, { k: "sistem", j: "intro", c: "muted", t: 15.75 },
+                { k: "pendengaran,", j: "keyword", c: "cyan", t: 15.89 }
+              ]},
+              { start: 16.85, end: 20.04, words: [
+                { k: "tetapi", j: "intro", c: "muted", t: 16.85 }, { k: "respons", j: "keyword", c: "amber", t: 17.35 },
+                { k: "otak", j: "keyword", c: "amber", t: 17.85 }, { k: "berubah", j: "intro", c: "muted", t: 18.22 },
+                { k: "sesuai", j: "intro", c: "muted", t: 18.60 }, { k: "tahap", j: "keyword", c: "cyan", t: 19.18 },
+                { k: "tidur.", j: "keyword", c: "cyan", t: 19.51 }
+              ]},
+              { start: 20.04, end: 23.54, words: [
+                { k: "Sebagian", j: "intro", c: "muted", t: 20.10 }, { k: "sinyal", j: "keyword", c: "cyan", t: 20.63 },
+                { k: "disaring,", j: "keyword", c: "green", t: 20.93 }, { k: "bukan", j: "keyword", c: "red", t: 21.75 },
+                { k: "dimatikan", j: "keyword", c: "red", t: 21.94 }, { k: "sepenuhnya.", j: "keyword", c: "ink", t: 22.54 }
+              ]},
+
+              // SCENE 3 (23.62 - 40.70s)
+              { start: 23.54, end: 28.85, words: [
+                { k: "Penelitian", j: "intro", c: "muted", t: 23.62 }, { k: "menemukan", j: "intro", c: "muted", t: 24.26 },
+                { k: "otak", j: "keyword", c: "amber", t: 24.92 }, { k: "yang", j: "intro", c: "muted", t: 25.25 },
+                { k: "tidur", j: "intro", c: "muted", t: 25.56 }, { k: "masih", j: "intro", c: "muted", t: 26.00 },
+                { k: "bisa", j: "intro", c: "muted", t: 26.32 }, { k: "membedakan", j: "keyword", c: "cyan", t: 26.58 },
+                { k: "suara", j: "intro", c: "muted", t: 27.22 }, { k: "yang", j: "intro", c: "muted", t: 27.54 },
+                { k: "dianggap", j: "intro", c: "muted", t: 27.80 }, { k: "penting,", j: "keyword", c: "amber", t: 28.57 }
+              ]},
+              { start: 28.85, end: 32.14, words: [
+                { k: "seperti", j: "intro", c: "muted", t: 28.91 }, { k: "nama", j: "keyword", c: "amber", t: 29.37 },
+                { k: "sendiri", j: "keyword", c: "amber", t: 29.58 }, { k: "atau", j: "intro", c: "muted", t: 30.08 },
+                { k: "suara", j: "intro", c: "muted", t: 30.50 }, { k: "yang", j: "intro", c: "muted", t: 30.71 },
+                { k: "tidak", j: "keyword", c: "cyan", t: 30.99 }, { k: "dikenal.", j: "keyword", c: "cyan", t: 31.34 }
+              ]},
+              { start: 32.14, end: 35.64, words: [
+                { k: "Suara", j: "intro", c: "muted", t: 32.21 }, { k: "baru", j: "keyword", c: "red", t: 32.48 },
+                { k: "atau", j: "intro", c: "muted", t: 32.79 }, { k: "mendadak", j: "keyword", c: "red", t: 33.10 },
+                { k: "juga", j: "intro", c: "muted", t: 33.85 }, { k: "bisa", j: "intro", c: "muted", t: 34.02 },
+                { k: "memicu", j: "keyword", c: "amber", t: 34.33 }, { k: "respons.", j: "keyword", c: "amber", t: 34.78 }
+              ]},
+              { start: 35.64, end: 40.72, words: [
+                { k: "Namun,", j: "intro", c: "muted", t: 35.72 }, { k: "otak", j: "keyword", c: "amber", t: 36.23 },
+                { k: "tetap", j: "intro", c: "muted", t: 36.37 }, { k: "menyaring", j: "keyword", c: "green", t: 36.72 },
+                { k: "banyak", j: "intro", c: "muted", t: 37.35 }, { k: "rangsangan", j: "intro", c: "muted", t: 37.77 },
+                { k: "agar", j: "intro", c: "muted", t: 38.55 }, { k: "tidur", j: "keyword", c: "cyan", t: 38.75 },
+                { k: "tidak", j: "intro", c: "muted", t: 39.10 }, { k: "mudah", j: "intro", c: "muted", t: 39.45 },
+                { k: "terganggu.", j: "keyword", c: "ink", t: 39.82 }
+              ]},
+
+              // SCENE 4 (40.77 - 55.20s)
+              { start: 40.72, end: 46.40, words: [
+                { k: "Pada", j: "intro", c: "muted", t: 40.77 }, { k: "tidur", j: "keyword", c: "cyan", t: 41.07 },
+                { k: "dalam,", j: "keyword", c: "cyan", t: 41.53 }, { k: "tahap", j: "intro", c: "muted", t: 42.42 },
+                { k: "N3,", j: "keyword", c: "amber", t: 42.64 }, { k: "respons", j: "intro", c: "muted", t: 43.24 },
+                { k: "terhadap", j: "intro", c: "muted", t: 43.73 }, { k: "suara", j: "intro", c: "muted", t: 44.30 },
+                { k: "biasanya", j: "intro", c: "muted", t: 44.65 }, { k: "lebih", j: "intro", c: "muted", t: 45.21 },
+                { k: "terbatas.", j: "keyword", c: "amber", t: 45.77 }
+              ]},
+              { start: 46.40, end: 49.00, words: [
+                { k: "Sinyal", j: "keyword", c: "cyan", t: 46.52 }, { k: "masih", j: "intro", c: "muted", t: 46.82 },
+                { k: "dapat", j: "intro", c: "muted", t: 47.17 }, { k: "memicu", j: "intro", c: "muted", t: 47.52 },
+                { k: "aktivitas", j: "keyword", c: "green", t: 48.15 }, { k: "otak,", j: "keyword", c: "green", t: 48.57 }
+              ]},
+              { start: 49.00, end: 52.04, words: [
+                { k: "tetapi", j: "intro", c: "muted", t: 49.02 }, { k: "itu", j: "intro", c: "muted", t: 49.32 },
+                { k: "tidak", j: "keyword", c: "red", t: 49.53 }, { k: "otomatis", j: "keyword", c: "red", t: 49.88 },
+                { k: "berarti", j: "intro", c: "muted", t: 50.62 }, { k: "kita", j: "intro", c: "muted", t: 50.93 },
+                { k: "mendengar,", j: "keyword", c: "ink", t: 51.21 }
+              ]},
+              { start: 52.04, end: 55.25, words: [
+                { k: "memahami,", j: "keyword", c: "ink", t: 52.00 }, { k: "atau", j: "intro", c: "muted", t: 52.66 },
+                { k: "sadar", j: "keyword", c: "amber", t: 52.99 }, { k: "seperti", j: "intro", c: "muted", t: 53.40 },
+                { k: "saat", j: "intro", c: "muted", t: 54.08 }, { k: "terjaga.", j: "keyword", c: "cyan", t: 54.31 }
+              ]},
+
+              // SCENE 5 (55.32 - 66.30s)
+              { start: 55.25, end: 59.38, words: [
+                { k: "Jadi,", j: "intro", c: "muted", t: 55.32 }, { k: "saat", j: "intro", c: "muted", t: 55.83 },
+                { k: "kita", j: "intro", c: "muted", t: 56.00 }, { k: "tidur,", j: "keyword", c: "cyan", t: 56.32 },
+                { k: "otak", j: "keyword", c: "amber", t: 56.95 }, { k: "bukan", j: "keyword", c: "red", t: 57.20 },
+                { k: "sepenuhnya", j: "intro", c: "muted", t: 57.61 }, { k: "mati", j: "keyword", c: "red", t: 58.45 },
+                { k: "rasa.", j: "keyword", c: "red", t: 58.73 }
+              ]},
+              { start: 59.38, end: 61.96, words: [
+                { k: "Ia", j: "intro", c: "muted", t: 59.46 }, { k: "mengurangi", j: "keyword", c: "cyan", t: 59.53 },
+                { k: "respons", j: "keyword", c: "cyan", t: 60.20 }, { k: "terhadap", j: "intro", c: "muted", t: 60.68 },
+                { k: "dunia", j: "intro", c: "muted", t: 61.21 }, { k: "luar,", j: "keyword", c: "ink", t: 61.57 }
+              ]},
+              { start: 61.96, end: 66.45, words: [
+                { k: "sambil", j: "intro", c: "muted", t: 62.02 }, { k: "tetap", j: "intro", c: "muted", t: 62.30 },
+                { k: "menyisakan", j: "keyword", c: "green", t: 62.63 }, { k: "kemampuan", j: "intro", c: "muted", t: 63.32 },
+                { k: "mendeteksi", j: "keyword", c: "amber", t: 63.95 }, { k: "hal", j: "intro", c: "muted", t: 64.61 },
+                { k: "yang", j: "intro", c: "muted", t: 64.85 }, { k: "mungkin", j: "intro", c: "muted", t: 65.08 },
+                { k: "penting.", j: "keyword", c: "green", t: 65.55 }
+              ]}
+            ];
+
+            var tl = gsap.timeline({ paused: true });
+            groups.forEach(function (g) {
+              var gEl = document.createElement("div");
+              gEl.className = "cap-group";
+              var wordEls = g.words.map(function (w) {
+                var span = document.createElement("span");
+                span.className = "cap-word cap-word--" + w.j + " cap-color--" + w.c;
+                span.textContent = w.k;
+                gEl.appendChild(span);
+                return { el: span, t: w.t, isKw: w.j === "keyword" };
+              });
+              band.appendChild(gEl);
+
+              gsap.set(gEl, { opacity: 0, visibility: "hidden", y: 14, scale: 0.96 });
+              wordEls.forEach(function (item) {
+                gsap.set(item.el, { opacity: 0.56, y: item.isKw ? 6 : 4, scale: item.isKw ? 0.94 : 0.97 });
+              });
+
+              tl.set(gEl, { visibility: "visible" }, g.start)
+                .to(gEl, { opacity: 1, y: 0, scale: 1, duration: 0.16, ease: "power2.out", immediateRender: false }, g.start);
+              wordEls.forEach(function (item) {
+                tl.to(item.el, {
+                  opacity: 1, y: 0, scale: 1,
+                  duration: item.isKw ? 0.18 : 0.14,
+                  ease: item.isKw ? "back.out(1.6)" : "power2.out",
+                  immediateRender: false
+                }, item.t);
+              });
+              tl.to(gEl, { opacity: 0, y: -10, duration: 0.12, ease: "power2.in", immediateRender: false }, g.end - 0.12)
+                .set(gEl, { opacity: 0, visibility: "hidden" }, g.end);
+            });
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["captions"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

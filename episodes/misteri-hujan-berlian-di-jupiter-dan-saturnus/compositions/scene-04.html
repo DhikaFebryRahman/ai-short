@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 04 — Apakah Ilmuwan Pernah Membuktikannya?</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-04" data-duration="17.93" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            color: #142244;
+          }
+
+          .s4-stage {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+          }
+
+          .s4-svg {
+            position: absolute;
+            inset: 0;
+            width: 1080px;
+            height: 1920px;
+            overflow: visible;
+          }
+
+          .s4-header {
+            position: absolute;
+            top: 204px;
+            left: 140px;
+            width: 800px;
+            text-align: center;
+          }
+
+          .s4-eyebrow {
+            display: inline-block;
+            padding: 7px 22px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 2.5px solid #0ea5e9;
+            color: #0369a1;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+          }
+
+          .s4-title {
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 1.1;
+            color: #142244;
+            text-shadow: 0 3px 0 rgba(255, 255, 255, 0.85);
+          }
+
+          .s4-pill-bar {
+            position: absolute;
+            top: 1245px;
+            left: 130px;
+            width: 820px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .s4-pill {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 24px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 3px solid #be123c;
+            box-shadow: 0 10px 24px rgba(20, 34, 68, 0.14);
+            color: #be123c;
+            font-size: 23px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            opacity: 0;
+          }
+
+          .s4-pill.is-cyan { border-color: #0369a1; color: #0369a1; }
+          .s4-pill.is-green { border-color: #047857; color: #047857; }
+          .s4-pill-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #fb7185;
+          }
+          .s4-pill.is-cyan .s4-pill-dot { background: #0ea5e9; }
+          .s4-pill.is-green .s4-pill-dot { background: #10b981; }
+        </style>
+
+        <div id="s4-clip" class="s4-stage clip" data-start="0" data-duration="17.93" data-track-index="0">
+          <svg class="s4-svg" viewBox="0 0 1080 1920" fill="none">
+            <defs>
+              <linearGradient id="s4LabWood" x1="540" y1="1540" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#f3c68f" />
+                <stop offset="0.35" stop-color="#e5ae6e" />
+                <stop offset="1" stop-color="#b4753d" />
+              </linearGradient>
+            </defs>
+
+            <!-- BEAT 1: Space Probe Scanning Jupiter & Saturn with Dynamic Planet & Radar Motion (0 - 8.2s) -->
+            <g id="s4-probe-scene">
+              <circle cx="540" cy="730" r="285" fill="#ffffff" fill-opacity="0.52" />
+              <circle id="s4-orbit-ring" cx="540" cy="765" r="245" fill="none" stroke="#0ea5e9" stroke-width="3" stroke-dasharray="10 12" opacity="0.55" />
+
+              <!-- Jupiter (2-layer wrapper + moving cloud bands + radar ping ripple) -->
+              <g id="s4-jup-pos" transform="translate(345 790)">
+                <g id="s4-jup-anim">
+                  <circle id="s4-jup-ping" cx="0" cy="0" r="108" fill="none" stroke="#0ea5e9" stroke-width="4.5" opacity="0" />
+                  <circle cx="0" cy="0" r="95" fill="#fde68a" stroke="#142244" stroke-width="5" />
+                  <g id="s4-jup-stripes">
+                    <path d="M-92 -18 H92 M-94 18 H94" stroke="#f59e0b" stroke-width="14" opacity="0.72" />
+                    <ellipse cx="26" cy="24" rx="22" ry="13" fill="#fb7185" stroke="#be123c" stroke-width="2.5" />
+                  </g>
+                  <circle cx="0" cy="0" r="95" fill="none" stroke="#142244" stroke-width="5" />
+                  <text x="0" y="128" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#9a3412">JUPITER</text>
+                </g>
+              </g>
+
+              <!-- Saturn (2-layer wrapper + ring tilt + orbiting moon + radar ping) -->
+              <g id="s4-sat-pos" transform="translate(725 795)">
+                <g id="s4-sat-anim">
+                  <circle id="s4-sat-ping" cx="0" cy="0" r="105" fill="none" stroke="#0ea5e9" stroke-width="4.5" opacity="0" />
+                  <ellipse cx="0" cy="0" rx="135" ry="26" fill="none" stroke="#f59e0b" stroke-width="14" transform="rotate(-16)" />
+                  <circle cx="0" cy="0" r="78" fill="#fef08a" stroke="#142244" stroke-width="5" />
+                  <ellipse cx="0" cy="0" rx="135" ry="26" fill="none" stroke="#142244" stroke-width="3.5" transform="rotate(-16)" />
+                  <circle id="s4-sat-moon" cx="-118" cy="-42" r="11" fill="#bae6fd" stroke="#142244" stroke-width="3" />
+                  <text x="0" y="123" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#0369a1">SATURNUS</text>
+                </g>
+              </g>
+
+              <!-- Faint "?" Hypothesis Badge Pulsing Above Planets (2-layer wrapper) -->
+              <g id="s4-q-badge-pos" transform="translate(540 690)">
+                <g id="s4-q-badge">
+                  <circle cx="0" cy="0" r="34" fill="#fffcf5" stroke="#be123c" stroke-width="4" stroke-dasharray="6 5" />
+                  <text x="0" y="12" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="34" fill="#be123c">?</text>
+                </g>
+              </g>
+
+              <!-- Space Probe (Juno/Cassini stylized, 2-layer wrapper for GSAP safety!) -->
+              <g id="s4-probe-pos" transform="translate(540 520)">
+                <g id="s4-probe">
+                  <rect x="-155" y="-12" width="110" height="24" rx="6" fill="#0ea5e9" stroke="#142244" stroke-width="4" />
+                  <rect x="45" y="-12" width="110" height="24" rx="6" fill="#0ea5e9" stroke="#142244" stroke-width="4" />
+                  <polygon points="-40,-24 40,-24 50,20 -50,20" fill="#ffb703" stroke="#142244" stroke-width="4.5" stroke-linejoin="round" />
+                  <circle cx="0" cy="-2" r="10" fill="#fffcf5" stroke="#142244" stroke-width="3.5" />
+                  <path id="s4-probe-beam" d="M-28 24 L-110 185 M28 24 L110 185" stroke="#0ea5e9" stroke-width="4.5" stroke-dasharray="10 8" opacity="0.88" />
+                </g>
+              </g>
+
+              <!-- No Direct Observation Badge -->
+              <g id="s4-unseen-tag" transform="translate(540 1005)">
+                <rect x="-245" y="-28" width="490" height="56" rx="28" fill="#fffcf5" stroke="#be123c" stroke-width="4" />
+                <text x="0" y="8" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="22" fill="#be123c" letter-spacing="1">
+                  BELUM DIAMATI LANGSUNG WAHANA
+                </text>
+              </g>
+            </g>
+
+            <!-- BEAT 2: Laser & X-Ray Lab Experiment with Nara (8.2 - 13.0s) -->
+            <g id="s4-lab-scene" opacity="0">
+              <!-- Nara Researcher at Left -->
+              <g id="s4-nara-pos" transform="translate(215 655)">
+                <g id="s4-nara-anim">
+                  <ellipse cx="0" cy="298" rx="54" ry="12" fill="#142244" fill-opacity="0.14" />
+                  <line x1="-12" y1="175" x2="-20" y2="285" stroke="#1e3a8a" stroke-width="22" stroke-linecap="round" />
+                  <line x1="14" y1="175" x2="22" y2="285" stroke="#2563eb" stroke-width="22" stroke-linecap="round" />
+                  <rect x="-38" y="64" width="76" height="128" rx="24" fill="#ffffff" stroke="#142244" stroke-width="4.5" />
+                  <path d="M-16 66 L0 94 L16 66 Z" fill="#38bdf8" stroke="#142244" stroke-width="3" />
+                  <line x1="-34" y1="88" x2="-54" y2="152" stroke="#ffffff" stroke-width="18" stroke-linecap="round" />
+                  <line x1="34" y1="88" x2="68" y2="132" stroke="#ffffff" stroke-width="18" stroke-linecap="round" />
+                  <circle cx="0" cy="22" r="36" fill="#fad2b4" stroke="#142244" stroke-width="4.5" />
+                  <path d="M-36 16 C-36 -18 38 -22 36 14 C18 2 -14 2 -36 16 Z" fill="#142244" />
+                  <rect x="-26" y="10" width="52" height="18" rx="8" fill="#bae6fd" fill-opacity="0.72" stroke="#0369a1" stroke-width="3" />
+                  <circle cx="-11" cy="19" r="3.5" fill="#142244" />
+                  <circle cx="13" cy="19" r="3.5" fill="#142244" />
+                </g>
+              </g>
+
+              <!-- Vacuum Chamber & Laser / X-Ray Rig at (640, 740) -->
+              <g id="s4-chamber">
+                <circle cx="640" cy="740" r="215" fill="#ffffff" fill-opacity="0.72" stroke="#142244" stroke-width="5.5" />
+                <!-- Laser Emitters -->
+                <rect x="405" y="610" width="66" height="32" rx="10" fill="#334155" stroke="#142244" stroke-width="4" transform="rotate(28 438 626)" />
+                <rect x="809" y="610" width="66" height="32" rx="10" fill="#334155" stroke="#142244" stroke-width="4" transform="rotate(-28 842 626)" />
+                <!-- Laser Beams (drawn by strokeDashoffset) -->
+                <line id="s4-laser-l" x1="466" y1="642" x2="640" y2="740" stroke="#f43f5e" stroke-width="10" stroke-linecap="round" />
+                <line id="s4-laser-r" x1="814" y1="642" x2="640" y2="740" stroke="#f43f5e" stroke-width="10" stroke-linecap="round" />
+                <!-- X-Ray Diagnostic Scan Beam -->
+                <g id="s4-xray" opacity="0">
+                  <line x1="640" y1="538" x2="640" y2="740" stroke="#0ea5e9" stroke-width="6" stroke-dasharray="10 8" />
+                  <rect x="654" y="560" width="88" height="30" rx="15" fill="#e0f2fe" stroke="#0369a1" stroke-width="3" />
+                  <text x="698" y="581" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="17" fill="#0369a1">X-RAY</text>
+                </g>
+                <!-- Shockwave Ring -->
+                <circle id="s4-shockwave" cx="640" cy="740" r="40" fill="none" stroke="#ffb703" stroke-width="6" opacity="0" />
+                <!-- Carbon Target -> Nano Diamond Crystals -->
+                <circle id="s4-sample" cx="640" cy="740" r="28" fill="#334155" stroke="#142244" stroke-width="4.5" />
+                <g id="s4-lab-diamonds" opacity="0">
+                  <polygon points="640,704 662,734 640,774 618,734" fill="#7dd3fc" stroke="#142244" stroke-width="4" />
+                  <polygon points="596,730 610,748 596,770 582,748" fill="#ffffff" stroke="#0369a1" stroke-width="3" />
+                  <polygon points="684,730 698,748 684,770 670,748" fill="#bae6fd" stroke="#0369a1" stroke-width="3" />
+                </g>
+              </g>
+            </g>
+
+            <!-- BEAT 3: 4-Planet Comparison Split (12.6 - 17.93s) -->
+            <g id="s4-planets-compare" opacity="0">
+              <!-- Top Group: Jupiter & Saturnus (Unproven) -->
+              <g id="s4-cmp-top">
+                <rect x="165" y="425" width="750" height="250" rx="34" fill="#fffcf5" fill-opacity="0.92" stroke="#d97706" stroke-width="4.5" stroke-dasharray="12 10" />
+                <g id="s4-cmp-jup" transform="translate(335 532)">
+                  <g id="s4-cmp-jup-anim">
+                    <circle cx="0" cy="0" r="66" fill="#fde68a" stroke="#142244" stroke-width="5" />
+                    <path d="M-63 -10 H63 M-63 16 H63" stroke="#f59e0b" stroke-width="11" opacity="0.7" />
+                    <circle cx="0" cy="0" r="66" fill="none" stroke="#142244" stroke-width="5" />
+                  </g>
+                </g>
+                <text x="335" y="632" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#9a3412">JUPITER</text>
+
+                <g id="s4-cmp-sat" transform="translate(555 532)">
+                  <g id="s4-cmp-sat-anim">
+                    <ellipse cx="0" cy="0" rx="100" ry="20" fill="none" stroke="#f59e0b" stroke-width="11" transform="rotate(-15)" />
+                    <circle cx="0" cy="0" r="56" fill="#fef08a" stroke="#142244" stroke-width="5" />
+                    <ellipse cx="0" cy="0" rx="100" ry="20" fill="none" stroke="#142244" stroke-width="3" transform="rotate(-15)" />
+                  </g>
+                </g>
+                <text x="555" y="632" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#0369a1">SATURNUS</text>
+                <circle id="s4-cmp-warn-ring" cx="770" cy="548" r="58" fill="none" stroke="#be123c" stroke-width="3.5" stroke-dasharray="8 8" opacity="0.65" />
+                <text x="770" y="541" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="21" fill="#be123c">BELUM</text>
+                <text x="770" y="569" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="21" fill="#be123c">TERBUKTI</text>
+              </g>
+
+              <!-- Animated Connector Arrow from Lab Match -->
+              <path id="s4-cmp-arrow" d="M540 680 L540 738" stroke="#10b981" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 8" />
+
+              <!-- Bottom Group: Uranus & Neptunus (Matches Lab Experiment!) -->
+              <g id="s4-cmp-bot">
+                <rect x="165" y="745" width="750" height="270" rx="34" fill="#ecfdf5" fill-opacity="0.96" stroke="#10b981" stroke-width="5.5" />
+                <g id="s4-cmp-uranus" transform="translate(335 862)">
+                  <g id="s4-cmp-uranus-anim">
+                    <circle cx="0" cy="0" r="62" fill="#a5f3fc" stroke="#142244" stroke-width="5" />
+                    <ellipse cx="0" cy="0" rx="18" ry="80" fill="none" stroke="#0369a1" stroke-width="4" transform="rotate(14)" />
+                  </g>
+                </g>
+                <text x="335" y="968" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#0369a1">URANUS</text>
+                <g id="s4-cmp-neptune" transform="translate(555 862)">
+                  <g id="s4-cmp-neptune-anim">
+                    <circle cx="0" cy="0" r="62" fill="#38bdf8" stroke="#142244" stroke-width="5" />
+                    <path d="M-59 -8 Q0 -24 59 -6" stroke="#0369a1" stroke-width="8" stroke-linecap="round" />
+                  </g>
+                </g>
+                <text x="555" y="968" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#0369a1">NEPTUNUS</text>
+                <g id="s4-cmp-diamond">
+                  <polygon points="755,826 777,854 755,892 733,854" fill="#7dd3fc" stroke="#142244" stroke-width="4" />
+                  <path d="M788 818 L792 830 L804 834 L792 838 L788 850 L784 838 L772 834 L784 830 Z" fill="#ffb703" stroke="#142244" stroke-width="2" />
+                </g>
+                <text x="755" y="938" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#047857">KONDISI LAB</text>
+                <text x="755" y="964" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#047857">LEBIH RELEVAN</text>
+              </g>
+            </g>
+
+            <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920): Oak Lab Bench -->
+            <g id="s4-foreground">
+              <rect x="0" y="1555" width="1080" height="205" fill="url(#s4LabWood)" stroke="#142244" stroke-width="5" />
+              <rect x="0" y="1760" width="1080" height="165" fill="#9a5c28" stroke="#142244" stroke-width="5" />
+              <!-- Erlenmeyer Flask & Data Slate -->
+              <g transform="translate(260 1630)">
+                <rect x="-86" y="-42" width="172" height="92" rx="14" fill="#fffcf5" stroke="#142244" stroke-width="4.5" />
+                <line x1="-58" y1="-12" x2="20" y2="-12" stroke="#94a3b8" stroke-width="6" stroke-linecap="round" />
+                <line x1="-58" y1="14" x2="48" y2="14" stroke="#0ea5e9" stroke-width="6" stroke-linecap="round" />
+              </g>
+              <g transform="translate(800 1625)">
+                <polygon points="-36,48 36,48 14,-24 -14,-24" fill="#bae6fd" stroke="#142244" stroke-width="4.5" stroke-linejoin="round" />
+                <rect x="-18" y="-42" width="36" height="18" rx="4" fill="#0369a1" stroke="#142244" stroke-width="4" />
+              </g>
+            </g>
+          </svg>
+
+          <div class="s4-header">
+            <div class="s4-eyebrow">BUKTI &amp; EKSPERIMEN LAB</div>
+            <h2 class="s4-title">Apakah Pernah Dibuktikan?</h2>
+          </div>
+
+          <div class="s4-pill-bar">
+            <div class="s4-pill" id="s4-pill-1"><span class="s4-pill-dot"></span><span>BELUM DIAMATI LANGSUNG</span></div>
+            <div class="s4-pill is-cyan" id="s4-pill-2"><span class="s4-pill-dot"></span><span>EKSPERIMEN LASER</span></div>
+            <div class="s4-pill is-green" id="s4-pill-3"><span class="s4-pill-dot"></span><span>BERLIAN BERHASIL DIBENTUK</span></div>
+            <div class="s4-pill is-green" id="s4-pill-4"><span class="s4-pill-dot"></span><span>KONDISI MIRIP URANUS &amp; NEPTUNUS</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+
+            var stage = q("#s4-clip");
+            var probeScene = q("#s4-probe-scene");
+            var probe = q("#s4-probe");
+            var orbitRing = q("#s4-orbit-ring");
+            var jupAnim = q("#s4-jup-anim"), jupStripes = q("#s4-jup-stripes"), jupPing = q("#s4-jup-ping");
+            var satAnim = q("#s4-sat-anim"), satMoon = q("#s4-sat-moon"), satPing = q("#s4-sat-ping");
+            var qBadge = q("#s4-q-badge");
+            var labScene = q("#s4-lab-scene");
+            var naraAnim = q("#s4-nara-anim");
+            var laserL = q("#s4-laser-l");
+            var laserR = q("#s4-laser-r");
+            var xray = q("#s4-xray");
+            var shockwave = q("#s4-shockwave");
+            var sample = q("#s4-sample");
+            var labDiamonds = q("#s4-lab-diamonds");
+            var compare = q("#s4-planets-compare");
+            var cmpTop = q("#s4-cmp-top"), cmpBot = q("#s4-cmp-bot"), cmpArrow = q("#s4-cmp-arrow");
+            var cmpJup = q("#s4-cmp-jup-anim"), cmpSat = q("#s4-cmp-sat-anim"), cmpWarnRing = q("#s4-cmp-warn-ring");
+            var cmpUranus = q("#s4-cmp-uranus-anim"), cmpNeptune = q("#s4-cmp-neptune-anim"), cmpDiam = q("#s4-cmp-diamond");
+            var p1 = q("#s4-pill-1"), p2 = q("#s4-pill-2"), p3 = q("#s4-pill-3"), p4 = q("#s4-pill-4");
+
+            var lenL = laserL.getTotalLength();
+            var lenR = laserR.getTotalLength();
+            gsap.set(stage, { opacity: 0 });
+            gsap.set(orbitRing, { rotation: 0, svgOrigin: "540 765" });
+            gsap.set([jupAnim, satAnim], { transformOrigin: "50% 50%" });
+            gsap.set([jupPing, satPing], { opacity: 0, scale: 0.9, transformOrigin: "50% 50%" });
+            gsap.set(laserL, { strokeDasharray: lenL, strokeDashoffset: lenL });
+            gsap.set(laserR, { strokeDasharray: lenR, strokeDashoffset: lenR });
+            gsap.set(shockwave, { opacity: 0, scale: 0.4, svgOrigin: "640 740" });
+            gsap.set(labDiamonds, { opacity: 0, scale: 0.5, svgOrigin: "640 740" });
+            gsap.set(compare, { opacity: 0, y: 18 });
+            gsap.set(cmpWarnRing, { rotation: 0, svgOrigin: "770 548" });
+            gsap.set(cmpDiam, { scale: 0.4, opacity: 0, svgOrigin: "755 858" });
+
+            var tl = gsap.timeline({ paused: true });
+
+            // Beat 1 (0 - 8.1s local = 35.12 - 43.22s): Dynamic Probe Orbit + Planets + Radar Pings
+            tl.to(stage, { opacity: 1, duration: 0.48, ease: "power2.out" }, 0)
+              .to(orbitRing, { rotation: 48, duration: 7.8, ease: "none" }, 0.2)
+              .fromTo(probe, { x: -105, y: 14, rotation: -7, transformOrigin: "50% 50%" }, { x: 105, y: -12, rotation: 6, duration: 7.4, ease: "sine.inOut" }, 0.3)
+              .to(jupAnim, { y: -14, scale: 1.05, duration: 3.6, ease: "sine.inOut" }, 0.3)
+              .to(jupAnim, { y: 0, scale: 1, duration: 3.6, ease: "sine.inOut", immediateRender: false }, 3.9)
+              .to(jupStripes, { x: 14, duration: 7.2, ease: "sine.inOut" }, 0.3)
+              .to(satAnim, { y: 12, rotation: 5, duration: 3.6, ease: "sine.inOut" }, 0.3)
+              .to(satAnim, { y: -6, rotation: -3, duration: 3.6, ease: "sine.inOut", immediateRender: false }, 3.9)
+              .to(satMoon, { attr: { cx: 118, cy: 32 }, duration: 7.2, ease: "sine.inOut" }, 0.3)
+              .fromTo(jupPing, { opacity: 0.9, scale: 0.95 }, { opacity: 0, scale: 1.45, duration: 1.4, ease: "power2.out" }, 1.6)
+              .fromTo(satPing, { opacity: 0.9, scale: 0.95 }, { opacity: 0, scale: 1.45, duration: 1.4, ease: "power2.out" }, 4.6)
+              .to(qBadge, { y: -12, scale: 1.12, duration: 1.8, ease: "sine.inOut" }, 1.2)
+              .to(qBadge, { y: 0, scale: 0.96, duration: 1.8, ease: "sine.inOut", immediateRender: false }, 3.0)
+              .to(qBadge, { y: -10, scale: 1.1, duration: 1.8, ease: "sine.inOut", immediateRender: false }, 4.8)
+              .fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 0.65);
+
+            // Beat 2 (8.1 - 12.8s local = 43.22 - 47.92s): Lab Laser Experiment
+            tl.to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 7.9)
+              .to(probeScene, { opacity: 0, duration: 0.4, ease: "power2.in" }, 8.0)
+              .to(labScene, { opacity: 1, duration: 0.45, ease: "power2.out" }, 8.2)
+              .fromTo(naraAnim, { y: 10 }, { y: 0, duration: 0.5, ease: "power2.out" }, 8.3)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 8.4)
+              // Laser & X-Ray hit target at ~8.7s local (43.85s vid = sfx-s4-laser)
+              .to([laserL, laserR], { strokeDashoffset: 0, duration: 0.45, ease: "power2.out" }, 8.7)
+              .to(xray, { opacity: 0.9, duration: 0.35, ease: "power2.out" }, 9.0)
+              .to(shockwave, { opacity: 1, scale: 2.3, duration: 0.7, ease: "power2.out", immediateRender: false }, 9.1)
+              .to(shockwave, { opacity: 0, duration: 0.35, ease: "power2.in", immediateRender: false }, 9.6)
+              // Carbon transforms to nano-diamonds (~10.68s = 45.80s vid = sfx-s4-crystal)
+              .to(sample, { opacity: 0, duration: 0.25, ease: "power2.in" }, 10.45)
+              .to(labDiamonds, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.6)", immediateRender: false }, 10.65)
+              .to(p2, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 10.4)
+              .fromTo(p3, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 10.6);
+
+            // Beat 3 (12.8 - 17.93s local = 47.92 - 53.05s): Animated 4-Planet Comparison
+            tl.to(labScene, { opacity: 0, duration: 0.4, ease: "power2.in", immediateRender: false }, 12.7)
+              .to(compare, { opacity: 1, y: 0, duration: 0.55, ease: "power2.out", immediateRender: false }, 12.95)
+              .fromTo(cmpTop, { x: -28, opacity: 0.2 }, { x: 0, opacity: 1, duration: 0.65, ease: "power2.out" }, 13.0)
+              .fromTo(cmpBot, { x: 28, opacity: 0.2 }, { x: 0, opacity: 1, duration: 0.65, ease: "power2.out" }, 13.35)
+              .fromTo(cmpArrow, { y: -12, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 13.6)
+              .to(cmpWarnRing, { rotation: 65, scale: 1.08, duration: 3.6, ease: "sine.inOut" }, 13.5)
+              .to(cmpJup, { y: -8, duration: 1.9, ease: "sine.inOut" }, 13.5)
+              .to(cmpJup, { y: 0, duration: 1.9, ease: "sine.inOut", immediateRender: false }, 15.4)
+              .to(cmpSat, { rotation: 7, duration: 1.9, ease: "sine.inOut", transformOrigin: "50% 50%" }, 13.5)
+              .to(cmpSat, { rotation: -4, duration: 1.9, ease: "sine.inOut", immediateRender: false }, 15.4)
+              .to(cmpUranus, { rotation: 18, scale: 1.08, duration: 3.4, ease: "sine.inOut", transformOrigin: "50% 50%" }, 13.7)
+              .to(cmpNeptune, { y: -10, scale: 1.07, duration: 1.7, ease: "sine.inOut", transformOrigin: "50% 50%" }, 13.7)
+              .to(cmpNeptune, { y: 0, scale: 1, duration: 1.7, ease: "sine.inOut", immediateRender: false }, 15.4)
+              .to(cmpDiam, { opacity: 1, scale: 1.1, duration: 0.6, ease: "back.out(1.7)", immediateRender: false }, 14.2)
+              .to(cmpDiam, { scale: 1, duration: 1.2, ease: "sine.inOut", immediateRender: false }, 14.9)
+              .to(p3, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 13.5)
+              .fromTo(p4, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 13.7)
+              .to(stage, { opacity: 0, duration: 0.48, ease: "power2.inOut", immediateRender: false }, 17.45);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-04"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

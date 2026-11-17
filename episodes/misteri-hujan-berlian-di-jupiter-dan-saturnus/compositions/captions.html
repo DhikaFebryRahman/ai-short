@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Captions Kinetik — Misteri Hujan Berlian di Jupiter dan Saturnus</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="captions" data-duration="71" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: visible;
+            pointer-events: none;
+            font-family: "Poppins", sans-serif;
+          }
+
+          .cap-band {
+            position: absolute;
+            top: 1340px;
+            left: 130px;
+            width: 820px;
+            height: 165px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+          }
+
+          .cap-group {
+            position: absolute;
+            width: 100%;
+            padding: 12px 22px;
+            border-radius: 30px;
+            background: radial-gradient(
+              ellipse at center,
+              rgba(255, 250, 242, 0.94) 0%,
+              rgba(255, 250, 242, 0.76) 68%,
+              transparent 100%
+            );
+            text-align: center;
+            line-height: 1.24;
+            overflow: visible;
+            opacity: 0;
+            visibility: hidden;
+          }
+
+          .cap-word {
+            display: inline-block;
+            margin: 0 5px;
+            vertical-align: baseline;
+          }
+
+          .cap-word--intro {
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 36px;
+            color: #243b6b;
+          }
+
+          .cap-word--keyword {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-size: 40px;
+          }
+
+          .cap-color--muted { color: #243b6b; text-shadow: 0 2px 12px rgba(255, 252, 246, 0.96); }
+          .cap-color--ink { color: #142244; text-shadow: 0 2px 12px rgba(255, 252, 246, 0.96); }
+          .cap-color--amber { color: #9a3412; text-shadow: 0 2px 14px rgba(255, 248, 232, 0.96); }
+          .cap-color--cyan { color: #0369a1; text-shadow: 0 2px 14px rgba(255, 252, 248, 0.96); }
+          .cap-color--green { color: #047857; text-shadow: 0 2px 14px rgba(255, 252, 248, 0.96); }
+          .cap-color--red { color: #be123c; text-shadow: 0 2px 14px rgba(255, 252, 248, 0.96); }
+        </style>
+
+        <div id="cap-clip" class="cap-band clip" data-start="0" data-duration="71" data-track-index="0"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var band = root.querySelector("#cap-clip");
+
+            // Narasi persis verbatim, disinkronkan ke jeda silencedetect vo.mp3 (+1.00s VO start)
+            var groups = [
+              // SCENE 1: Hook (1.00s - 9.92s)
+              {
+                start: 0.96,
+                end: 3.48,
+                words: [
+                  { k: "Bayangkan", j: "intro", c: "muted", t: 1.00 },
+                  { k: "langit", j: "keyword", c: "cyan", t: 1.44 },
+                  { k: "yang", j: "intro", c: "muted", t: 1.82 },
+                  { k: "tidak", j: "intro", c: "muted", t: 2.08 },
+                  { k: "menurunkan", j: "intro", c: "muted", t: 2.42 },
+                  { k: "air,", j: "keyword", c: "ink", t: 2.98 },
+                ],
+              },
+              {
+                start: 3.48,
+                end: 5.58,
+                words: [
+                  { k: "tetapi", j: "intro", c: "muted", t: 3.73 },
+                  { k: "butiran", j: "intro", c: "muted", t: 4.18 },
+                  { k: "berlian.", j: "keyword", c: "cyan", t: 4.72 },
+                ],
+              },
+              {
+                start: 5.58,
+                end: 7.95,
+                words: [
+                  { k: "Itulah", j: "intro", c: "muted", t: 5.92 },
+                  { k: "salah", j: "intro", c: "muted", t: 6.32 },
+                  { k: "satu", j: "intro", c: "muted", t: 6.62 },
+                  { k: "hipotesis", j: "keyword", c: "amber", t: 6.94 },
+                  { k: "mengejutkan", j: "keyword", c: "ink", t: 7.42 },
+                ],
+              },
+              {
+                start: 7.95,
+                end: 10.05,
+                words: [
+                  { k: "tentang", j: "intro", c: "muted", t: 8.15 },
+                  { k: "Jupiter", j: "keyword", c: "amber", t: 8.58 },
+                  { k: "dan", j: "intro", c: "muted", t: 9.12 },
+                  { k: "Saturnus.", j: "keyword", c: "amber", t: 9.38 },
+                ],
+              },
+
+              // SCENE 2: Inti 1 (10.43s - 22.08s)
+              {
+                start: 10.35,
+                end: 13.45,
+                words: [
+                  { k: "Pada", j: "intro", c: "muted", t: 10.43 },
+                  { k: "2013,", j: "keyword", c: "amber", t: 10.88 },
+                  { k: "ilmuwan", j: "keyword", c: "ink", t: 11.86 },
+                  { k: "mengusulkan", j: "intro", c: "muted", t: 12.46 },
+                  { k: "bahwa", j: "intro", c: "muted", t: 13.06 },
+                ],
+              },
+              {
+                start: 13.45,
+                end: 16.25,
+                words: [
+                  { k: "kilat", j: "keyword", c: "amber", t: 13.48 },
+                  { k: "dalam", j: "intro", c: "muted", t: 13.86 },
+                  { k: "badai", j: "keyword", c: "ink", t: 14.18 },
+                  { k: "planet", j: "intro", c: "muted", t: 14.56 },
+                  { k: "dapat", j: "intro", c: "muted", t: 14.94 },
+                  { k: "memecah", j: "keyword", c: "red", t: 15.26 },
+                  { k: "metana,", j: "keyword", c: "cyan", t: 15.66 },
+                ],
+              },
+              {
+                start: 16.25,
+                end: 18.65,
+                words: [
+                  { k: "gas", j: "intro", c: "muted", t: 16.45 },
+                  { k: "yang", j: "intro", c: "muted", t: 16.72 },
+                  { k: "mengandung", j: "intro", c: "muted", t: 16.96 },
+                  { k: "karbon", j: "keyword", c: "ink", t: 17.46 },
+                  { k: "dan", j: "intro", c: "muted", t: 17.88 },
+                  { k: "hidrogen.", j: "keyword", c: "cyan", t: 18.08 },
+                ],
+              },
+              {
+                start: 18.65,
+                end: 22.25,
+                words: [
+                  { k: "Karbon", j: "keyword", c: "ink", t: 18.93 },
+                  { k: "yang", j: "intro", c: "muted", t: 19.34 },
+                  { k: "terlepas", j: "keyword", c: "amber", t: 19.60 },
+                  { k: "bisa", j: "intro", c: "muted", t: 20.12 },
+                  { k: "berkumpul", j: "intro", c: "muted", t: 20.42 },
+                  { k: "menjadi", j: "intro", c: "muted", t: 20.92 },
+                  { k: "partikel", j: "keyword", c: "ink", t: 21.28 },
+                  { k: "jelaga.", j: "keyword", c: "ink", t: 21.68 },
+                ],
+              },
+
+              // SCENE 3: Inti 2 (22.58s - 35.09s)
+              {
+                start: 22.45,
+                end: 25.75,
+                words: [
+                  { k: "Partikel", j: "keyword", c: "ink", t: 22.58 },
+                  { k: "itu", j: "intro", c: "muted", t: 23.02 },
+                  { k: "diperkirakan", j: "intro", c: "muted", t: 23.26 },
+                  { k: "tenggelam", j: "keyword", c: "amber", t: 23.86 },
+                  { k: "ke", j: "intro", c: "muted", t: 24.36 },
+                  { k: "lapisan", j: "intro", c: "muted", t: 24.54 },
+                  { k: "lebih", j: "intro", c: "muted", t: 24.96 },
+                  { k: "dalam.", j: "keyword", c: "amber", t: 25.24 },
+                ],
+              },
+              {
+                start: 25.75,
+                end: 29.20,
+                words: [
+                  { k: "Tekanan", j: "keyword", c: "amber", t: 26.03 },
+                  { k: "yang", j: "intro", c: "muted", t: 26.44 },
+                  { k: "makin", j: "intro", c: "muted", t: 26.68 },
+                  { k: "besar", j: "keyword", c: "amber", t: 26.98 },
+                  { k: "dapat", j: "intro", c: "muted", t: 27.34 },
+                  { k: "mengubah", j: "intro", c: "muted", t: 27.64 },
+                  { k: "karbon", j: "keyword", c: "ink", t: 28.08 },
+                  { k: "menjadi", j: "intro", c: "muted", t: 28.44 },
+                  { k: "grafit,", j: "keyword", c: "ink", t: 28.74 },
+                ],
+              },
+              {
+                start: 29.20,
+                end: 30.95,
+                words: [
+                  { k: "lalu", j: "intro", c: "muted", t: 29.43 },
+                  { k: "kristal", j: "keyword", c: "cyan", t: 29.98 },
+                  { k: "berlian.", j: "keyword", c: "cyan", t: 30.38 },
+                ],
+              },
+              {
+                start: 30.95,
+                end: 35.25,
+                words: [
+                  { k: "Di", j: "intro", c: "muted", t: 31.16 },
+                  { k: "kedalaman", j: "intro", c: "muted", t: 31.34 },
+                  { k: "yang", j: "intro", c: "muted", t: 31.82 },
+                  { k: "lebih", j: "intro", c: "muted", t: 32.04 },
+                  { k: "panas,", j: "keyword", c: "red", t: 32.32 },
+                  { k: "berlian", j: "keyword", c: "cyan", t: 32.76 },
+                  { k: "bahkan", j: "intro", c: "muted", t: 33.24 },
+                  { k: "diperkirakan", j: "intro", c: "muted", t: 33.64 },
+                  { k: "dapat", j: "intro", c: "muted", t: 34.24 },
+                  { k: "meleleh.", j: "keyword", c: "red", t: 34.56 },
+                ],
+              },
+
+              // SCENE 4: Inti 3 (35.62s - 52.62s)
+              {
+                start: 35.45,
+                end: 39.20,
+                words: [
+                  { k: "Namun,", j: "keyword", c: "red", t: 35.62 },
+                  { k: "ini", j: "intro", c: "muted", t: 36.33 },
+                  { k: "bukan", j: "keyword", c: "red", t: 36.56 },
+                  { k: "hujan", j: "intro", c: "muted", t: 36.94 },
+                  { k: "yang", j: "intro", c: "muted", t: 37.24 },
+                  { k: "pernah", j: "intro", c: "muted", t: 37.48 },
+                  { k: "dilihat", j: "intro", c: "muted", t: 37.84 },
+                  { k: "wahana", j: "keyword", c: "cyan", t: 38.22 },
+                  { k: "antariksa.", j: "keyword", c: "cyan", t: 38.62 },
+                ],
+              },
+              {
+                start: 39.20,
+                end: 43.65,
+                words: [
+                  { k: "Hujan", j: "keyword", c: "ink", t: 39.43 },
+                  { k: "berlian", j: "keyword", c: "cyan", t: 39.78 },
+                  { k: "di", j: "intro", c: "muted", t: 40.20 },
+                  { k: "Jupiter", j: "keyword", c: "amber", t: 40.38 },
+                  { k: "dan", j: "intro", c: "muted", t: 40.82 },
+                  { k: "Saturnus", j: "keyword", c: "amber", t: 41.04 },
+                  { k: "masih", j: "intro", c: "muted", t: 41.58 },
+                  { k: "berupa", j: "intro", c: "muted", t: 41.90 },
+                  { k: "model", j: "keyword", c: "amber", t: 42.32 },
+                  { k: "yang", j: "intro", c: "muted", t: 42.68 },
+                  { k: "diperdebatkan.", j: "keyword", c: "red", t: 42.90 },
+                ],
+              },
+              {
+                start: 43.65,
+                end: 47.68,
+                words: [
+                  { k: "Eksperimen", j: "keyword", c: "cyan", t: 43.82 },
+                  { k: "laser", j: "keyword", c: "red", t: 44.36 },
+                  { k: "memang", j: "intro", c: "muted", t: 44.74 },
+                  { k: "berhasil", j: "keyword", c: "green", t: 45.08 },
+                  { k: "membentuk", j: "intro", c: "muted", t: 45.54 },
+                  { k: "berlian", j: "keyword", c: "cyan", t: 46.02 },
+                  { k: "dari", j: "intro", c: "muted", t: 46.46 },
+                  { k: "bahan", j: "intro", c: "muted", t: 46.72 },
+                  { k: "kaya", j: "intro", c: "muted", t: 47.00 },
+                  { k: "karbon,", j: "keyword", c: "ink", t: 47.26 },
+                ],
+              },
+              {
+                start: 47.68,
+                end: 52.78,
+                words: [
+                  { k: "tetapi", j: "intro", c: "muted", t: 47.82 },
+                  { k: "kondisi", j: "intro", c: "muted", t: 48.22 },
+                  { k: "yang", j: "intro", c: "muted", t: 48.66 },
+                  { k: "diuji", j: "intro", c: "muted", t: 48.92 },
+                  { k: "terutama", j: "intro", c: "muted", t: 49.30 },
+                  { k: "menyerupai", j: "intro", c: "muted", t: 49.84 },
+                  { k: "bagian", j: "intro", c: "muted", t: 50.42 },
+                  { k: "dalam", j: "intro", c: "muted", t: 50.80 },
+                  { k: "Uranus", j: "keyword", c: "green", t: 51.14 },
+                  { k: "dan", j: "intro", c: "muted", t: 51.68 },
+                  { k: "Neptunus.", j: "keyword", c: "green", t: 51.96 },
+                ],
+              },
+
+              // SCENE 5: Penutup (53.02s - 69.12s)
+              {
+                start: 52.90,
+                end: 54.68,
+                words: [
+                  { k: "Untuk", j: "intro", c: "muted", t: 53.02 },
+                  { k: "Jupiter", j: "keyword", c: "amber", t: 53.36 },
+                  { k: "dan", j: "intro", c: "muted", t: 53.88 },
+                  { k: "Saturnus,", j: "keyword", c: "amber", t: 54.08 },
+                ],
+              },
+              {
+                start: 54.68,
+                end: 58.18,
+                words: [
+                  { k: "hujan", j: "keyword", c: "amber", t: 54.78 },
+                  { k: "helium", j: "keyword", c: "amber", t: 55.20 },
+                  { k: "justru", j: "intro", c: "muted", t: 55.68 },
+                  { k: "memiliki", j: "intro", c: "muted", t: 56.08 },
+                  { k: "dukungan", j: "intro", c: "muted", t: 56.56 },
+                  { k: "eksperimen", j: "keyword", c: "green", t: 57.02 },
+                  { k: "lebih", j: "intro", c: "muted", t: 57.54 },
+                  { k: "kuat:", j: "keyword", c: "green", t: 57.78 },
+                ],
+              },
+              {
+                start: 58.18,
+                end: 61.70,
+                words: [
+                  { k: "hidrogen", j: "keyword", c: "cyan", t: 58.37 },
+                  { k: "dan", j: "intro", c: "muted", t: 58.92 },
+                  { k: "helium", j: "keyword", c: "amber", t: 59.16 },
+                  { k: "bisa", j: "intro", c: "muted", t: 59.66 },
+                  { k: "terpisah", j: "keyword", c: "green", t: 59.98 },
+                  { k: "dalam", j: "intro", c: "muted", t: 60.56 },
+                  { k: "kondisi", j: "intro", c: "muted", t: 60.90 },
+                  { k: "ekstrem.", j: "keyword", c: "red", t: 61.26 },
+                ],
+              },
+              {
+                start: 61.70,
+                end: 65.45,
+                words: [
+                  { k: "Jadi,", j: "intro", c: "muted", t: 61.90 },
+                  { k: "hujan", j: "keyword", c: "ink", t: 62.64 },
+                  { k: "berlian", j: "keyword", c: "cyan", t: 63.02 },
+                  { k: "belum", j: "keyword", c: "red", t: 63.52 },
+                  { k: "terbukti", j: "keyword", c: "red", t: 63.92 },
+                  { k: "turun", j: "intro", c: "muted", t: 64.42 },
+                  { k: "tanpa", j: "intro", c: "muted", t: 64.76 },
+                  { k: "henti;", j: "keyword", c: "ink", t: 65.04 },
+                ],
+              },
+              {
+                start: 65.45,
+                end: 69.55,
+                words: [
+                  { k: "misterinya,", j: "keyword", c: "amber", t: 65.67 },
+                  { k: "apakah", j: "intro", c: "muted", t: 66.63 },
+                  { k: "proses", j: "intro", c: "muted", t: 67.12 },
+                  { k: "itu", j: "intro", c: "muted", t: 67.56 },
+                  { k: "sungguh", j: "keyword", c: "ink", t: 67.84 },
+                  { k: "terjadi", j: "keyword", c: "cyan", t: 68.32 },
+                  { k: "di", j: "intro", c: "muted", t: 68.78 },
+                  { k: "sana.", j: "keyword", c: "amber", t: 68.94 },
+                ],
+              },
+            ];
+
+            var tl = gsap.timeline({ paused: true });
+
+            groups.forEach(function (g) {
+              var gEl = document.createElement("div");
+              gEl.className = "cap-group";
+
+              var wordEls = g.words.map(function (w) {
+                var span = document.createElement("span");
+                span.className = "cap-word cap-word--" + w.j + " cap-color--" + w.c;
+                span.textContent = w.k;
+                gEl.appendChild(span);
+                return { el: span, t: w.t, isKw: w.j === "keyword" };
+              });
+
+              band.appendChild(gEl);
+
+              gsap.set(gEl, { opacity: 0, visibility: "hidden", y: 14, scale: 0.96 });
+              wordEls.forEach(function (item) {
+                gsap.set(item.el, {
+                  opacity: 0.12,
+                  y: item.isKw ? 14 : 8,
+                  scale: item.isKw ? 0.86 : 0.95,
+                });
+              });
+
+              tl.set(gEl, { visibility: "visible" }, g.start)
+                .to(
+                  gEl,
+                  { opacity: 1, y: 0, scale: 1, duration: 0.16, ease: "power2.out", immediateRender: false },
+                  g.start
+                );
+
+              wordEls.forEach(function (item) {
+                tl.to(
+                  item.el,
+                  {
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    duration: item.isKw ? 0.18 : 0.14,
+                    ease: item.isKw ? "back.out(1.6)" : "power2.out",
+                    immediateRender: false,
+                  },
+                  item.t
+                );
+              });
+
+              tl.to(
+                gEl,
+                { opacity: 0, y: -10, duration: 0.12, ease: "power2.in", immediateRender: false },
+                g.end - 0.12
+              ).set(gEl, { opacity: 0, visibility: "hidden" }, g.end);
+            });
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["captions"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

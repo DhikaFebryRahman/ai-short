@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Backdrop Daylight Laut Dangkal</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="backdrop" data-duration="54" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            background: linear-gradient(180deg, #8ad8ff 0%, #c8eeff 38%, #eef9ff 68%, #fde7c4 100%);
+          }
+
+          .bg-layer {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+          }
+
+          .bg-sun-glow {
+            position: absolute;
+            top: -190px;
+            left: 160px;
+            width: 780px;
+            height: 780px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(255, 241, 173, 0.56) 0%,
+              rgba(255, 248, 214, 0.24) 48%,
+              transparent 76%
+            );
+          }
+
+          .bg-aqua-glow {
+            position: absolute;
+            bottom: 120px;
+            right: -140px;
+            width: 840px;
+            height: 760px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(56, 189, 248, 0.22) 0%,
+              rgba(167, 243, 208, 0.16) 52%,
+              transparent 75%
+            );
+          }
+
+          .bg-motes {
+            position: absolute;
+            inset: 0;
+          }
+
+          .bg-mote {
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.72);
+            background: rgba(255, 255, 255, 0.26);
+          }
+        </style>
+
+        <div
+          id="backdrop-clip"
+          class="bg-layer clip"
+          data-start="0"
+          data-duration="54"
+          data-layout-ignore
+          data-track-index="0"
+        >
+          <div class="bg-sun-glow" id="bg-sun-glow"></div>
+          <div class="bg-aqua-glow" id="bg-aqua-glow"></div>
+          <div class="bg-motes" id="bg-motes"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var motesEl = root.querySelector("#bg-motes");
+            var sunGlow = root.querySelector("#bg-sun-glow");
+            var aquaGlow = root.querySelector("#bg-aqua-glow");
+
+            var motes = [];
+            for (var i = 0; i < 20; i++) {
+              var bubble = document.createElement("div");
+              bubble.className = "bg-mote";
+              var size = 10 + ((i * 5) % 18);
+              bubble.style.width = size + "px";
+              bubble.style.height = size + "px";
+              bubble.style.left = (75 + ((i * 149) % 930)) + "px";
+              bubble.style.top = (160 + ((i * 211) % 1480)) + "px";
+              bubble.style.opacity = String(0.32 + (i % 4) * 0.1);
+              motesEl.appendChild(bubble);
+              motes.push(bubble);
+            }
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(sunGlow, { x: 48, y: 34, scale: 1.06, duration: 27, ease: "sine.inOut" }, 0)
+              .to(sunGlow, { x: 0, y: 0, scale: 1, duration: 27, ease: "sine.inOut" }, 27)
+              .to(aquaGlow, { x: -55, y: -36, scale: 1.07, duration: 27, ease: "sine.inOut" }, 0)
+              .to(aquaGlow, { x: 0, y: 0, scale: 1, duration: 27, ease: "sine.inOut" }, 27);
+
+            motes.forEach(function (dot, idx) {
+              var dy = -78 - (idx % 3) * 18;
+              var dx = ((idx % 3) - 1) * 28;
+              tl.to(dot, { x: dx, y: dy, duration: 27, ease: "sine.inOut" }, 0)
+                .to(dot, { x: 0, y: 0, duration: 27, ease: "sine.inOut" }, 27);
+            });
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["backdrop"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>
+

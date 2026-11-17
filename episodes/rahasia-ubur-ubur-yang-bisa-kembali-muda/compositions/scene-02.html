@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 02 — Rahasia di Balik Turritopsis dohrnii</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-02" data-duration="15.75" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            pointer-events: none;
+          }
+
+          .s2-stage {
+            position: absolute;
+            inset: 0;
+          }
+
+          .s2-camera {
+            position: absolute;
+            inset: 0;
+            transform-origin: 50% 50%;
+          }
+
+          .s2-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+
+          .s2-species-card {
+            position: absolute;
+            top: 280px;
+            left: 150px;
+            width: 780px;
+            text-align: center;
+            opacity: 0;
+          }
+
+          .s2-species-title {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 20px;
+            background: rgba(255, 252, 245, 0.95);
+            border: 3px solid #0ea5e9;
+            color: #0369a1;
+            font-size: 34px;
+            font-weight: 800;
+            font-style: italic;
+            letter-spacing: 0.04em;
+            box-shadow: 0 12px 26px rgba(20, 34, 68, 0.14);
+          }
+
+          .s2-pill-bar {
+            position: absolute;
+            top: 1245px;
+            left: 130px;
+            width: 820px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .s2-pill {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 26px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            box-shadow: 0 12px 28px rgba(20, 34, 68, 0.14);
+            opacity: 0;
+          }
+
+          .s2-pill--cyan { border: 2.5px solid #0ea5e9; color: #0369a1; }
+          .s2-pill--red { border: 2.5px solid #f43f5e; color: #be123c; }
+          .s2-pill--amber { border: 2.5px solid #f59e0b; color: #9a3412; }
+          .s2-pill--green { border: 2.5px solid #10b981; color: #047857; }
+
+          .s2-dot {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: currentColor;
+          }
+        </style>
+
+        <div id="s2-clip" class="clip" data-start="0" data-duration="15.75" data-track-index="0">
+          <div class="s2-stage" id="s2-stage">
+          <div class="s2-camera" id="s2-camera" data-layout-allow-overflow>
+            <svg class="s2-svg" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="s2-rock" x1="540" y1="980" x2="540" y2="1460" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#D6B58E" />
+                  <stop offset="1" stop-color="#B88E63" />
+                </linearGradient>
+                <linearGradient id="s2-sand" x1="540" y1="1520" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#F8D8A4" />
+                  <stop offset="1" stop-color="#DDA661" />
+                </linearGradient>
+              </defs>
+
+              <!-- Environmental Stress Ripple Overlay (Soft Warm Tint) -->
+              <rect id="s2-stress-wash" x="-120" y="-120" width="1320" height="2160" fill="#FDA4AF" opacity="0" />
+
+              <!-- Anchored Reef Substrate Rock (Target Surface for Cyst Attachment, centered x=540) -->
+              <g id="s2-rock-group" transform="translate(540, 1070)">
+                <ellipse cx="0" cy="70" rx="235" ry="42" fill="#142244" fill-opacity="0.14" />
+                <path
+                  d="M-215 62 C-205 -12 -128 -48 -18 -46 C94 -44 198 -6 218 62 C110 84 -108 86 -215 62 Z"
+                  fill="url(#s2-rock)"
+                  stroke="#142244"
+                  stroke-width="5.5"
+                  stroke-linejoin="round"
+                />
+                <path d="M-135 28 Q-45 8 55 24" stroke="#9C734B" stroke-width="4" stroke-linecap="round" opacity="0.55" />
+                <circle cx="-115" cy="48" r="14" fill="#A3E635" opacity="0.5" />
+                <circle cx="130" cy="46" r="18" fill="#34D399" opacity="0.45" />
+              </g>
+
+              <!-- Adult Medusa Transforming into Shrinking State (centered x=540) -->
+              <g id="s2-medusa-pos" transform="translate(540, 680)">
+                <g id="s2-medusa-anim">
+                  <!-- Tentacles -->
+                  <g id="s2-tentacles" stroke-linecap="round">
+                    <path d="M-104 20 Q-128 96 -110 176" stroke="#0369A1" stroke-width="5" />
+                    <path d="M-66 28 Q-78 110 -64 198" stroke="#142244" stroke-width="5" />
+                    <path d="M-24 32 Q-30 118 -18 210" stroke="#0EA5E9" stroke-width="5" />
+                    <path d="M24 32 Q32 118 20 210" stroke="#0EA5E9" stroke-width="5" />
+                    <path d="M66 28 Q82 110 64 198" stroke="#142244" stroke-width="5" />
+                    <path d="M104 20 Q128 96 108 176" stroke="#0369A1" stroke-width="5" />
+                  </g>
+                  <!-- Bell -->
+                  <g id="s2-bell">
+                    <path
+                      d="M-132 12 C-134 -116 -68 -178 0 -178 C68 -178 134 -116 132 12 C88 38 -88 38 -132 12 Z"
+                      fill="#CBEFFF"
+                      fill-opacity="0.82"
+                      stroke="#142244"
+                      stroke-width="6"
+                    />
+                    <path
+                      d="M-40 -20 C-42 -84 -18 -120 0 -120 C18 -120 42 -84 40 -20 C18 -6 -18 -6 -40 -20 Z"
+                      fill="#FB7185"
+                      stroke="#142244"
+                      stroke-width="4.5"
+                    />
+                    <path d="M-84 -14 C-78 -92 -42 -136 -10 -150" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" opacity="0.8" />
+                    <circle cx="-20" cy="-56" r="5" fill="#142244" />
+                    <circle cx="20" cy="-56" r="5" fill="#142244" />
+                  </g>
+                </g>
+              </g>
+
+              <!-- Anatomical Pointer Lines (Bell + Tentacle, centered x=540) -->
+              <g id="s2-pointers" opacity="0">
+                <line x1="655" y1="600" x2="702" y2="545" stroke="#142244" stroke-width="4" stroke-linecap="round" />
+                <circle cx="655" cy="600" r="7" fill="#0EA5E9" stroke="#142244" stroke-width="3" />
+                <rect x="672" y="512" width="166" height="48" rx="24" fill="#FFFDF7" stroke="#0EA5E9" stroke-width="3" />
+                <text x="755" y="544" text-anchor="middle" font-size="22" font-weight="800" fill="#0369A1">LONCENG</text>
+
+                <line x1="402" y1="775" x2="288" y2="805" stroke="#142244" stroke-width="4" stroke-linecap="round" />
+                <circle cx="402" cy="775" r="7" fill="#FFB703" stroke="#142244" stroke-width="3" />
+                <rect x="116" y="782" width="182" height="48" rx="24" fill="#FFFDF7" stroke="#F59E0B" stroke-width="3" />
+                <text x="207" y="814" text-anchor="middle" font-size="22" font-weight="800" fill="#9A3412">TENTAKEL</text>
+              </g>
+
+              <!-- Stylized Non-Graphic Stress Waves & Sparks (canvas coords around 540, 615 + GSAP svgOrigin: "540 615") -->
+              <g id="s2-stress-rings" opacity="0">
+                <circle cx="540" cy="615" r="195" stroke="#F43F5E" stroke-width="6" stroke-dasharray="16 14" />
+                <circle cx="540" cy="615" r="240" stroke="#F59E0B" stroke-width="5" stroke-dasharray="10 18" />
+                <g transform="translate(330, 505)">
+                  <circle cx="0" cy="0" r="34" fill="#FFF1F2" stroke="#F43F5E" stroke-width="4" />
+                  <path d="M-12 -10 L12 10 M12 -10 L-12 10" stroke="#BE123C" stroke-width="5" stroke-linecap="round" />
+                </g>
+                <g transform="translate(755, 520)">
+                  <circle cx="0" cy="0" r="34" fill="#FEF3C7" stroke="#F59E0B" stroke-width="4" />
+                  <path d="M-14 6 Q-4 -10 6 4 T18 -6" stroke="#9A3412" stroke-width="4.5" stroke-linecap="round" fill="none" />
+                </g>
+              </g>
+
+              <!-- Anchored Cyst Structure on Reef Rock (centered x=540) -->
+              <g id="s2-cyst-pos" transform="translate(540, 1020)">
+                <g id="s2-cyst-anim" opacity="0">
+                  <!-- Soft attachment shadow -->
+                  <ellipse cx="0" cy="24" rx="84" ry="18" fill="#142244" fill-opacity="0.18" />
+                  <!-- Protective Cyst Capsule -->
+                  <path
+                    d="M-66 18 C-74 -34 -40 -74 0 -74 C40 -74 74 -34 66 18 C46 32 -46 32 -66 18 Z"
+                    fill="#FDE68A"
+                    stroke="#142244"
+                    stroke-width="5.5"
+                    stroke-linejoin="round"
+                  />
+                  <ellipse cx="0" cy="-22" rx="34" ry="26" fill="#F59E0B" fill-opacity="0.72" stroke="#9A3412" stroke-width="3.5" />
+                  <!-- Internal Cellular Reorganization Dots -->
+                  <circle cx="-12" cy="-28" r="7" fill="#FFFDF7" />
+                  <circle cx="14" cy="-20" r="6" fill="#FFFDF7" />
+                  <circle cx="-2" cy="-12" r="5" fill="#FB7185" />
+                </g>
+              </g>
+
+              <!-- Foreground Seabed (y = 1525..1920) -->
+              <g id="s2-foreground">
+                <path d="M-80 1645 Q280 1585 560 1635 T1180 1615 L1180 1980 L-80 1980 Z" fill="url(#s2-sand)" stroke="#142244" stroke-width="5.5" />
+                <g transform="translate(150, 1665)">
+                  <path d="M-25 120 C-45 45 -18 -38 -36 -108" stroke="#10B981" stroke-width="24" stroke-linecap="round" />
+                  <path d="M-25 120 C-45 45 -18 -38 -36 -108" stroke="#142244" stroke-width="5" stroke-linecap="round" />
+                  <circle cx="48" cy="118" r="30" fill="#FB7185" stroke="#142244" stroke-width="4.5" />
+                </g>
+                <g transform="translate(880, 1650)">
+                  <path d="M18 125 C42 52 14 -30 34 -98" stroke="#34D399" stroke-width="22" stroke-linecap="round" />
+                  <path d="M18 125 C42 52 14 -30 34 -98" stroke="#142244" stroke-width="5" stroke-linecap="round" />
+                  <ellipse cx="-60" cy="128" rx="64" ry="22" fill="#D4A373" stroke="#142244" stroke-width="4.5" />
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <div class="s2-species-card" id="s2-species-card">
+            <div class="s2-species-title">Turritopsis dohrnii</div>
+          </div>
+
+          <div class="s2-pill-bar">
+            <div class="s2-pill s2-pill--cyan" id="s2-pill-1"><span class="s2-dot"></span><span>TURRITOPSIS DOHRNII</span></div>
+            <div class="s2-pill s2-pill--red" id="s2-pill-2"><span class="s2-dot"></span><span>TERLUKA / KONDISI BURUK</span></div>
+            <div class="s2-pill s2-pill--amber" id="s2-pill-3"><span class="s2-dot"></span><span>TUBUH MULAI MENYUSUT</span></div>
+            <div class="s2-pill s2-pill--green" id="s2-pill-4"><span class="s2-dot"></span><span>TAHAP KISTA • KONDISI TERTENTU</span></div>
+          </div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var stage = root.querySelector("#s2-stage");
+            var camera = root.querySelector("#s2-camera");
+            var speciesCard = root.querySelector("#s2-species-card");
+            var pointers = root.querySelector("#s2-pointers");
+            var medusaPos = root.querySelector("#s2-medusa-pos");
+            var medusaAnim = root.querySelector("#s2-medusa-anim");
+            var bell = root.querySelector("#s2-bell");
+            var tentacles = root.querySelector("#s2-tentacles");
+            var stressWash = root.querySelector("#s2-stress-wash");
+            var stressRings = root.querySelector("#s2-stress-rings");
+            var cystAnim = root.querySelector("#s2-cyst-anim");
+            var pill1 = root.querySelector("#s2-pill-1");
+            var pill2 = root.querySelector("#s2-pill-2");
+            var pill3 = root.querySelector("#s2-pill-3");
+            var pill4 = root.querySelector("#s2-pill-4");
+
+            gsap.set(stage, { opacity: 0 });
+            gsap.set(camera, { scale: 1.06, y: 16 });
+            gsap.set(bell, { transformOrigin: "50% 50%" });
+            gsap.set(tentacles, { transformOrigin: "50% 0%" });
+            gsap.set(medusaAnim, { scale: 1, opacity: 1, transformOrigin: "50% 28%" });
+            gsap.set(stressRings, { scale: 0.85, rotation: 0, opacity: 0, svgOrigin: "540 615" });
+            gsap.set(cystAnim, { scale: 0.35, opacity: 0, transformOrigin: "50% 50%" });
+
+            // Swim phase 0..2.5s then slow down & sink toward rock
+            var swim = { p: 0 };
+            function syncSwim() {
+              var s = Math.sin(swim.p * Math.PI * 2);
+              gsap.set(bell, { scaleX: 1 + s * 0.05, scaleY: 1 - s * 0.06 });
+              gsap.set(tentacles, { skewX: s * 3 });
+            }
+
+            var tl = gsap.timeline({ paused: true });
+
+            // Smooth cross-dissolve in (0..0.45s) & out (15.30..15.75s)
+            tl.to(stage, { opacity: 1, duration: 0.45, ease: "sine.inOut" }, 0);
+            tl.to(stage, { opacity: 0, duration: 0.45, ease: "sine.inOut" }, 15.30);
+
+            // Beat 1: Species intro + anatomical callouts (0.2..2.7s -> abs 6.45..8.95s)
+            tl.to(camera, { scale: 1.0, y: 0, duration: 1.2, ease: "power2.out" }, 0.1);
+            tl.to(swim, { p: 1.5, duration: 2.8, ease: "power1.out", onUpdate: syncSwim }, 0.2);
+            tl.fromTo(speciesCard, { opacity: 0, y: -14 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.6)" }, 0.45);
+            tl.fromTo(pointers, { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0.75);
+            tl.fromTo(pill1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "back.out(1.6)" }, 0.55);
+
+            // Beat 2: Injury / Aging / Bad environmental condition (2.7..6.6s -> abs 8.95..12.85s)
+            tl.to(pointers, { opacity: 0, duration: 0.3, immediateRender: false }, 2.65);
+            tl.to(speciesCard, { opacity: 0, y: -10, duration: 0.3, immediateRender: false }, 2.75);
+            tl.to(pill1, { opacity: 0, y: -10, duration: 0.22, immediateRender: false }, 2.85);
+            tl.fromTo(pill2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.32, ease: "back.out(1.6)" }, 3.05);
+            tl.to(stressWash, { opacity: 0.24, duration: 0.6, ease: "power2.out" }, 3.05);
+            tl.to(stressRings, { opacity: 0.92, scale: 1, duration: 0.5, ease: "power2.out" }, 3.2);
+            tl.to(stressRings, { rotation: 36, scale: 1.04, duration: 2.6, ease: "sine.inOut", immediateRender: false }, 3.75);
+            tl.to(medusaAnim, { rotation: -8, duration: 1.2, ease: "sine.inOut" }, 3.5);
+
+            // Beat 3: Shrink radially into center while settling to rock surface -> Kista (6.6..12.2s)
+            tl.to(pill2, { opacity: 0, y: -10, duration: 0.22, immediateRender: false }, 6.6);
+            tl.fromTo(pill3, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.32, ease: "back.out(1.6)" }, 6.8);
+            tl.to([stressWash, stressRings], { opacity: 0, duration: 0.8, immediateRender: false }, 6.7);
+
+            // Reset tilt first and shrink into bell center (0px -68px) while descending to (540, 1020)
+            var sinkPos = { y: 680 };
+            tl.to(sinkPos, {
+              y: 1035,
+              duration: 3.3,
+              ease: "power2.inOut",
+              onUpdate: function () {
+                gsap.set(medusaPos, { attr: { transform: "translate(540, " + sinkPos.y.toFixed(1) + ")" } });
+              },
+            }, 6.8);
+
+            // Tentacles retract cleanly toward center; bell shrinks centered into a compact orb
+            tl.to(tentacles, { scaleY: 0.05, opacity: 0, duration: 1.9, ease: "power2.in", immediateRender: false }, 6.8);
+            tl.to(medusaAnim, { scale: 0.36, rotation: 0, duration: 2.9, ease: "power2.inOut", immediateRender: false }, 6.9);
+
+            // Cyst forms cleanly on centered rock surface around 9.4..10.4s
+            tl.to(medusaAnim, { opacity: 0, duration: 0.5, ease: "power2.in", immediateRender: false }, 9.4);
+            tl.to(cystAnim, { opacity: 1, scale: 1, duration: 0.85, ease: "back.out(1.5)" }, 9.35);
+
+            // Beat 4: Close-up on Cyst + Conditional badge (10.7..15.30s)
+            tl.to(pill3, { opacity: 0, y: -10, duration: 0.22, immediateRender: false }, 10.3);
+            tl.fromTo(pill4, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.34, ease: "back.out(1.6)" }, 10.55);
+            tl.to(camera, { scale: 1.24, x: 0, y: -70, duration: 2.2, ease: "power2.inOut", immediateRender: false }, 10.6);
+            tl.to(cystAnim, { scale: 1.05, duration: 1.6, ease: "sine.inOut", immediateRender: false }, 13.0);
+
+            syncSwim();
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-02"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>
+

@@ -1,0 +1,1312 @@
+{
+  "version": 1,
+  "historyId": "f6f8ff96-bce0-42b7-bade-2c2f5a77f880",
+  "currentRevision": "1b81f31a-ab70-4d45-998a-c4e5383e8754",
+  "pendingChanges": false,
+  "files": {
+    ".media/manifest.jsonl": {
+      "hash": "58d33186b65ab58eed8aa3aecd2b98a78eb095f5a9e6efc2d495153eec7226b8",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/58/58d33186b65ab58eed8aa3aecd2b98a78eb095f5a9e6efc2d495153eec7226b8"
+    },
+    "AGENTS.md": {
+      "hash": "268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/26/268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a"
+    },
+    "CLAUDE.md": {
+      "hash": "268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/26/268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a"
+    },
+    "assets/audio/sfx/CREDITS.md": {
+      "hash": "1847df343678a9b0a14e11f67418ede61bdd7d0e3b5d6fb61e9e25a248fe606a",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/18/1847df343678a9b0a14e11f67418ede61bdd7d0e3b5d6fb61e9e25a248fe606a"
+    },
+    "assets/audio/sfx/gleam-chime.wav": {
+      "hash": "e0dd400a2c51cb2a19f9c98f9a19e2ff9dc2992b0d0d7e0089f586b5ee4d13df",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/e0/e0dd400a2c51cb2a19f9c98f9a19e2ff9dc2992b0d0d7e0089f586b5ee4d13df"
+    },
+    "assets/audio/sfx/pop-bubble.wav": {
+      "hash": "dc4e470d4fc62b5964fcfd231b772fce9cea3543ff2556ed22889d92b1c2a15f",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/dc/dc4e470d4fc62b5964fcfd231b772fce9cea3543ff2556ed22889d92b1c2a15f"
+    },
+    "assets/audio/sfx/uv-zap.wav": {
+      "hash": "2308073f33500468793197e075e310ec32dee778a3541bf1f79379f8d909d0b8",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/23/2308073f33500468793197e075e310ec32dee778a3541bf1f79379f8d909d0b8"
+    },
+    "assets/audio/sfx/water-drop.wav": {
+      "hash": "d2199c22eb219014ca58dce2ed9d9515b8f08a54d08b26bb8a9f3ff111d9a377",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/d2/d2199c22eb219014ca58dce2ed9d9515b8f08a54d08b26bb8a9f3ff111d9a377"
+    },
+    "assets/audio/sfx/whoosh-soft.wav": {
+      "hash": "5e57400b0af873de54028a8af327f0050d5a67dfd1ae7733c328d8b51ae2bc97",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/5e/5e57400b0af873de54028a8af327f0050d5a67dfd1ae7733c328d8b51ae2bc97"
+    },
+    "compositions/backdrop.html": {
+      "hash": "b98356440034f5fa56c306ff5b141297fd440130dddde5d7bd854e6afe464de2",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/b9/b98356440034f5fa56c306ff5b141297fd440130dddde5d7bd854e6afe464de2"
+    },
+    "compositions/captions.html": {
+      "hash": "6cac9ed0687df9ed1c325ed25d633cc95f4ed20adaf9ee60f8d708ded1ff5365",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/6c/6cac9ed0687df9ed1c325ed25d633cc95f4ed20adaf9ee60f8d708ded1ff5365"
+    },
+    "compositions/hud.html": {
+      "hash": "36e9cd2360531c37f5a06bb7dbc14aabc5a2d8cbeb356baf477c125ee6b26504",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/36/36e9cd2360531c37f5a06bb7dbc14aabc5a2d8cbeb356baf477c125ee6b26504"
+    },
+    "compositions/scene-01.html": {
+      "hash": "85f3b0d220733740b9681b446e6ca4d699207b190b2b242f4bfd19b82df61bf5",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/85/85f3b0d220733740b9681b446e6ca4d699207b190b2b242f4bfd19b82df61bf5"
+    },
+    "compositions/scene-02.html": {
+      "hash": "b56f7b8ba31ba90fdb822476950ef0203d256f50fd9e3a026ea43448cd432954",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/b5/b56f7b8ba31ba90fdb822476950ef0203d256f50fd9e3a026ea43448cd432954"
+    },
+    "compositions/scene-03.html": {
+      "hash": "748f97716f5dd92547ecca6514be3f82df84bc1946bfcce1977a794466243630",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/74/748f97716f5dd92547ecca6514be3f82df84bc1946bfcce1977a794466243630"
+    },
+    "compositions/scene-04.html": {
+      "hash": "89a49bfac74a2a4d842ec6b40542e1d4582692d24976b3a3f34811d00f589f82",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/89/89a49bfac74a2a4d842ec6b40542e1d4582692d24976b3a3f34811d00f589f82"
+    },
+    "compositions/scene-05.html": {
+      "hash": "f59e3c2e6699b0890d5cad2f4735ee1d45b6a97682a8574f9a5b377695554ccc",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/f5/f59e3c2e6699b0890d5cad2f4735ee1d45b6a97682a8574f9a5b377695554ccc"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "594b339c908ab79b807a155c933df4ab19f1e0e0070248d2aac031c0a299c905",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/59/594b339c908ab79b807a155c933df4ab19f1e0e0070248d2aac031c0a299c905"
+    },
+    "meta.json": {
+      "hash": "cb16fe224da0767b0d97fbf80d83cec8beb2df17a4c0868cc3d5702d86ed6526",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/cb/cb16fe224da0767b0d97fbf80d83cec8beb2df17a4c0868cc3d5702d86ed6526"
+    },
+    "package.json": {
+      "hash": "60c64953d161a79767f095ee1dd906908b4bcd5bc74ad789fff3016076e073ac",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/60/60c64953d161a79767f095ee1dd906908b4bcd5bc74ad789fff3016076e073ac"
+    },
+    "assets/audio/bgm.wav": {
+      "hash": "4784b0cbeb2e903d4b445046911f1212fde2811bce355452baa6014e1221aca7",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/47/4784b0cbeb2e903d4b445046911f1212fde2811bce355452baa6014e1221aca7"
+    },
+    "assets/audio/vo.mp3": {
+      "hash": "3fab93ce525012cc01a813f9812d291a2d7833c18ca42371f16e25beb3c570e2",
+      "content": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/3f/3fab93ce525012cc01a813f9812d291a2d7833c18ca42371f16e25beb3c570e2"
+    }
+  },
+  "revisions": {
+    "6490aa18-5a7f-4e19-b531-ff6f2dd36403": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794857629270,
+      "endedAt": 1794857629296,
+      "files": {
+        "compositions/captions.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/a4/a4638676fadad1bd1bb6868bd6ab53880b6d9a06ee7aee7691268a263e94dbe6",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/ad/ad05767fc534d2b6452ecd580cda25d5c5c7d60eeac64070fd27dbfe19a5a910"
+        },
+        "compositions/scene-01.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/8e/8e4ff156cc68b9e71f92a26c35c9fed7dd61065c512c45cd3bc4997361fa1c51",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/75/755212d1ee4b5a2a3961af915b36d9a47e7d018e7f8cfd3124f3ec4079b55deb"
+        },
+        "compositions/scene-02.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/2f/2fb44a9a1e96ddd308aa3b7dbb80828703080e9475098f4ee96c4f6ed4308c2c",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/35/35cd29323b92b2cdf05971f638eb30642446e6dd028323c726f24cf198aea430"
+        },
+        "compositions/scene-03.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/fd/fd63d78c0a009801a98894eb0f9fb641c481bbfb868e979199df089a80e92704",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/fb/fb569e8932de27f92e7feb5058d387d3bd38603ed9f46b66762153080c157d44"
+        },
+        "compositions/scene-04.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/3e/3e7d7fa5015e905342ae9b21696746f27dc3888b688d2bc27115de9669c7f484",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/af/af01d2e89bfc0df2f5701e1dacb970f029511e4ddbd606ba6b01336c5c17f515"
+        },
+        "compositions/scene-05.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/06/0620d68977215f3a4f08a22f31523ec0b28738e1b9a37227416a3735b6242e28",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/28/28b9a57914a62f9e06ceb19bc278764ab0847d39246f203d2b219c3294f3fb9e"
+        }
+      }
+    },
+    "a40b63ed-bfd3-4e56-8e65-4388ab3aec91": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794889166417,
+      "endedAt": 1794889172043,
+      "files": {
+        "compositions/backdrop.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/5b/5bf40e0deebfff889bd3e8d4450458b347537c8fc411e7dda1368b3fbfe18119",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/b9/b98356440034f5fa56c306ff5b141297fd440130dddde5d7bd854e6afe464de2"
+        },
+        "compositions/hud.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/45/45b04d2d4dbc386bc4016b34a589dec1d5e3ab5a9385eb57adc9d5b9e6dd4386",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/36/36e9cd2360531c37f5a06bb7dbc14aabc5a2d8cbeb356baf477c125ee6b26504"
+        },
+        "index.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/11/1180c20da95c67ffa91a338f76fb52019c306e3ca9a689e54f879a11be8c12eb",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/59/594b339c908ab79b807a155c933df4ab19f1e0e0070248d2aac031c0a299c905"
+        }
+      }
+    },
+    "fd870e54-b9b6-45b6-b3ed-f1ee725486bc": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794889172102,
+      "endedAt": 1794889174103,
+      "files": {
+        "compositions/captions.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/ad/ad05767fc534d2b6452ecd580cda25d5c5c7d60eeac64070fd27dbfe19a5a910",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/6c/6cac9ed0687df9ed1c325ed25d633cc95f4ed20adaf9ee60f8d708ded1ff5365"
+        }
+      }
+    },
+    "1cb3664d-a527-4c10-adac-9bb5a31cdaba": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794889268021,
+      "endedAt": 1794889270021,
+      "files": {
+        "compositions/scene-01.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/75/755212d1ee4b5a2a3961af915b36d9a47e7d018e7f8cfd3124f3ec4079b55deb",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/85/85f3b0d220733740b9681b446e6ca4d699207b190b2b242f4bfd19b82df61bf5"
+        }
+      }
+    },
+    "367f7ea6-77d1-4d4c-9e03-90f1e4048798": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794889270298,
+      "endedAt": 1794889274045,
+      "files": {
+        "compositions/scene-02.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/35/35cd29323b92b2cdf05971f638eb30642446e6dd028323c726f24cf198aea430",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/b5/b56f7b8ba31ba90fdb822476950ef0203d256f50fd9e3a026ea43448cd432954"
+        },
+        "compositions/scene-03.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/fb/fb569e8932de27f92e7feb5058d387d3bd38603ed9f46b66762153080c157d44",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/2b/2b8fce47060127b4ac8dd0958d4922da05e05068ddfab79efe8fc7e3b4db26f8"
+        }
+      }
+    },
+    "a76160ff-8072-4a5e-965f-798c5d99f45f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794889327084,
+      "endedAt": 1794889329084,
+      "files": {
+        "compositions/scene-04.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/af/af01d2e89bfc0df2f5701e1dacb970f029511e4ddbd606ba6b01336c5c17f515",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/89/89a49bfac74a2a4d842ec6b40542e1d4582692d24976b3a3f34811d00f589f82"
+        }
+      }
+    },
+    "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794889329631,
+      "endedAt": 1794889331631,
+      "files": {
+        "compositions/scene-05.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/28/28b9a57914a62f9e06ceb19bc278764ab0847d39246f203d2b219c3294f3fb9e",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/33/33dfa548895346870ad33ad08dc332be627d399c11fed253fae3e1aab8e240a2"
+        }
+      }
+    },
+    "7fbb7406-1e85-4f77-a04d-8dc6ecb9898f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794889367951,
+      "endedAt": 1794889369951,
+      "files": {
+        "compositions/scene-05.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/33/33dfa548895346870ad33ad08dc332be627d399c11fed253fae3e1aab8e240a2",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/2d/2d4f0128e7b658df3d5b029ff8059547d8e6d2db9dc3bf7719997864df40276e"
+        }
+      }
+    },
+    "1b81f31a-ab70-4d45-998a-c4e5383e8754": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794889396566,
+      "endedAt": 1794889400238,
+      "files": {
+        "compositions/scene-03.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/2b/2b8fce47060127b4ac8dd0958d4922da05e05068ddfab79efe8fc7e3b4db26f8",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/74/748f97716f5dd92547ecca6514be3f82df84bc1946bfcce1977a794466243630"
+        },
+        "compositions/scene-05.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/2d/2d4f0128e7b658df3d5b029ff8059547d8e6d2db9dc3bf7719997864df40276e",
+          "after": "/home/dkaary/.cache/hyperframes/history/f6f8ff96-bce0-42b7-bade-2c2f5a77f880/blobs/f5/f59e3c2e6699b0890d5cad2f4735ee1d45b6a97682a8574f9a5b377695554ccc"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "1b81f31a-ab70-4d45-998a-c4e5383e8754",
+      "id": "f390519f-f44f-42df-861c-d40ec81f203d"
+    },
+    "revisions": {
+      "6490aa18-5a7f-4e19-b531-ff6f2dd36403": [
+        {
+          "id": "a8a92777-22fb-493d-9eb6-8c1046f9ec42",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794857665190,
+          "contentHash": "7088aec655f2c4387d13325855728984f8ac2649bcdb25f50006531f3cacdae4",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "id": "c30dc9cf-8316-4356-b0e2-49e53404244a",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794888343827,
+          "contentHash": "7088aec655f2c4387d13325855728984f8ac2649bcdb25f50006531f3cacdae4",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        }
+      ],
+      "1b81f31a-ab70-4d45-998a-c4e5383e8754": [
+        {
+          "id": "f390519f-f44f-42df-861c-d40ec81f203d",
+          "scope": "project",
+          "report": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/checks/f390519f-f44f-42df-861c-d40ec81f203d.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794889443358,
+          "contentHash": "9188e0bbbe44ac3b52286f5412323d628e405906c19b96ec7693731bef03d11f",
+          "revision": "1b81f31a-ab70-4d45-998a-c4e5383e8754",
+          "inputFingerprint": "612e94fe933b32c595f9ee0dd9dd718a16205ad829809dbd33ebc9018ebe2691",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "1b81f31a-ab70-4d45-998a-c4e5383e8754",
+      "id": "8a00c77e-0fb5-4bc5-bb96-20403abde704-2"
+    },
+    "revisions": {
+      "6490aa18-5a7f-4e19-b531-ff6f2dd36403": [
+        {
+          "scope": "full",
+          "id": "ac371fcb-4f68-425a-bac3-409066c281c5-0",
+          "time": 2.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794857634844,
+          "contentHash": "1988b8d38d15d49f88729c20be21952581631018c93003c081462a5d650d5206",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ac371fcb-4f68-425a-bac3-409066c281c5-1",
+          "time": 5.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794857634845,
+          "contentHash": "7c84888d12be71f447d9749625ea77c0d97f804cebf279057d561c8dc0607ed6",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ac371fcb-4f68-425a-bac3-409066c281c5-2",
+          "time": 11.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794857634845,
+          "contentHash": "ba8d7f8cde9ec0b16ba70ba88adbca744e1ace132313d0b10175c4003566d9fe",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ac371fcb-4f68-425a-bac3-409066c281c5-3",
+          "time": 15.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794857634845,
+          "contentHash": "e7c6318655776e406d5c29ffb8cf7e92ccfaf7b53aa53b2cc0b5425bf0adc1f1",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ac371fcb-4f68-425a-bac3-409066c281c5-4",
+          "time": 23,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794857634845,
+          "contentHash": "e09eb87d43883b32466d22bd6ca810cde6f603c3389ceda7daf1b4c5f10478aa",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ac371fcb-4f68-425a-bac3-409066c281c5-5",
+          "time": 28.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794857634845,
+          "contentHash": "df12cf8afabd7defa7242e16a2bdef43a95398782637473a65f72300e3adc1ae",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ac371fcb-4f68-425a-bac3-409066c281c5-6",
+          "time": 36,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794857634845,
+          "contentHash": "cbb5ad321fd83bcc5e74194c45b4d5a33af102a9933d66532f66811f9b8f0ac2",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ac371fcb-4f68-425a-bac3-409066c281c5-7",
+          "time": 46.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794857634845,
+          "contentHash": "0a648bbc21edf9aa7ebaf381a2036d055ac79b920999889da52999ab85329f1a",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ac371fcb-4f68-425a-bac3-409066c281c5-8",
+          "time": 55.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794857634845,
+          "contentHash": "9af82ba368d638dafa93bf233b0906a91ceee206933b5d18ae87a6dd31961b47",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ac371fcb-4f68-425a-bac3-409066c281c5-9",
+          "time": 64.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794857634845,
+          "contentHash": "075600615f1951efc12ad3af326a88f0bc2d961584a8563ba4e9506fb5cc20c7",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ac371fcb-4f68-425a-bac3-409066c281c5-10",
+          "time": 72.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794857634845,
+          "contentHash": "6bed997ab1dc19d048a8dee3a18b8a4be3d9d6d00ac94dda0da52d46acb3372b",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ac371fcb-4f68-425a-bac3-409066c281c5-11",
+          "time": 73.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794857634845,
+          "contentHash": "ba975fe752ddc10762299921e09eb923b7a40809689d81eaf4438b33da213e39",
+          "revision": "6490aa18-5a7f-4e19-b531-ff6f2dd36403",
+          "inputFingerprint": "6296f5f6d4d1c825bb1b74e53179d55bbeaa1099720623c9088d9076adace12c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        }
+      ],
+      "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4": [
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-0",
+          "time": 1.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346019,
+          "contentHash": "3bfa5f61ae3106929ecb4fdbfe68479400807c559e09e5d36e0f1168fbb07417",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-1",
+          "time": 2.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346020,
+          "contentHash": "a1d6562d44c8d2baee0c89c099342c37ed85ee312fe28cf2a1aef1f782ff204a",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-2",
+          "time": 5.9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346020,
+          "contentHash": "9f9e06633874ecc6e91b3cc560183c99af14293b99b5db717e9a1bdbaec7ac90",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-3",
+          "time": 11.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346020,
+          "contentHash": "0539abd848659633f494fc9327c3b0d8118f1515bf13dc162c258d8b8333ebd8",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-4",
+          "time": 15.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346020,
+          "contentHash": "492a0878973d49baac85bf09c5519a0371323362f35b4cd090b23048a6a4bbac",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-5",
+          "time": 23,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346020,
+          "contentHash": "57dabdb0f00acb4e18399e01e923d293a213ef633db6ae8cbc36fffefb9d6f82",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-6",
+          "time": 32,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346020,
+          "contentHash": "cb4112767648bf3407729971294aaa5bcc3d06ac016378ed782109dd6b8e52b5",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-7",
+          "time": 34.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346020,
+          "contentHash": "b6ac40fc5c255e08446e5e2f3009db29730a6fda3c077cf5f9b2c812ef024bbf",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-8",
+          "time": 46.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346020,
+          "contentHash": "c2cc3958571d97ffa9693a1816298d4cd0cb6da3b3520931fd22d975f72ca129",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-9",
+          "time": 55.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346020,
+          "contentHash": "343299bcf0d0afb50426e5d5d7edea003836918fc2ab831f43ce5bb7977dfb21",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-10",
+          "time": 62.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346020,
+          "contentHash": "2d190036d28979ee9cc617915079cdbbbf8e32201440af55f4da73aa02d001b0",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-11",
+          "time": 72.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346021,
+          "contentHash": "39f56fb52cc9be4024017159a823a25baa2381cdf78d8d1c5b8d85f35ac65126",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "c237697d-e2ee-4fe3-951f-88bfb4e0709a-12",
+          "time": 73.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889346021,
+          "contentHash": "a15be99b311bda885bb1c3a65259b4c007c1e24783e36eeb77b5e6b1b5296a96",
+          "revision": "dfa59b78-d32d-44e0-a17b-a0cba75cdcd4",
+          "inputFingerprint": "60c6884eeb1fae9eb41be13e488009dbef680653343b6dda36c8c1f65638fea9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        }
+      ],
+      "7fbb7406-1e85-4f77-a04d-8dc6ecb9898f": [
+        {
+          "scope": "full",
+          "id": "ce97de9d-bae7-475e-90dd-eb67e19e10d5-0",
+          "time": 39.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889379740,
+          "contentHash": "727d5fea30fbc8083f3916a0562f21a81064a12a6be2c1ecce2cfb41fbe7d56c",
+          "revision": "7fbb7406-1e85-4f77-a04d-8dc6ecb9898f",
+          "inputFingerprint": "76fa68a833cd79d04f60600a3a84f48510031bb3c996634de110c0521a89811e",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ce97de9d-bae7-475e-90dd-eb67e19e10d5-1",
+          "time": 62.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889379741,
+          "contentHash": "deb49771a90508a263a1bd9124b2dd42f29675270b2a6e1a30759ff50d0258da",
+          "revision": "7fbb7406-1e85-4f77-a04d-8dc6ecb9898f",
+          "inputFingerprint": "76fa68a833cd79d04f60600a3a84f48510031bb3c996634de110c0521a89811e",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        },
+        {
+          "scope": "full",
+          "id": "ce97de9d-bae7-475e-90dd-eb67e19e10d5-2",
+          "time": 73.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889379741,
+          "contentHash": "a15be99b311bda885bb1c3a65259b4c007c1e24783e36eeb77b5e6b1b5296a96",
+          "revision": "7fbb7406-1e85-4f77-a04d-8dc6ecb9898f",
+          "inputFingerprint": "76fa68a833cd79d04f60600a3a84f48510031bb3c996634de110c0521a89811e",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c1040f97-4c26-4c5f-9f85-a2a489db19dc"
+        }
+      ],
+      "1b81f31a-ab70-4d45-998a-c4e5383e8754": [
+        {
+          "scope": "full",
+          "id": "8a00c77e-0fb5-4bc5-bb96-20403abde704-0",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/86b8a08b-e49c-47d9-bda8-2f8fd33423fc/frame-00-at-39.5s.png",
+          "time": 39.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889410042,
+          "contentHash": "d39e0a1370a20f76ac99632cf6d07ddc4d19665f3f36a053bc618ed77cb2273e",
+          "revision": "1b81f31a-ab70-4d45-998a-c4e5383e8754",
+          "inputFingerprint": "612e94fe933b32c595f9ee0dd9dd718a16205ad829809dbd33ebc9018ebe2691",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "8a00c77e-0fb5-4bc5-bb96-20403abde704-1",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/86b8a08b-e49c-47d9-bda8-2f8fd33423fc/frame-01-at-62.5s.png",
+          "time": 62.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889410042,
+          "contentHash": "62224b71b93dcef25930d069af82b91f846f589a22f1909a5d47289920bd8660",
+          "revision": "1b81f31a-ab70-4d45-998a-c4e5383e8754",
+          "inputFingerprint": "612e94fe933b32c595f9ee0dd9dd718a16205ad829809dbd33ebc9018ebe2691",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "8a00c77e-0fb5-4bc5-bb96-20403abde704-2",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/86b8a08b-e49c-47d9-bda8-2f8fd33423fc/frame-02-at-73.75s.png",
+          "time": 73.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794889410042,
+          "contentHash": "a15be99b311bda885bb1c3a65259b4c007c1e24783e36eeb77b5e6b1b5296a96",
+          "revision": "1b81f31a-ab70-4d45-998a-c4e5383e8754",
+          "inputFingerprint": "612e94fe933b32c595f9ee0dd9dd718a16205ad829809dbd33ebc9018ebe2691",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "c32014bd-d100-431c-8c7c-2b0892323a2d-0",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/frame-00-at-2.5s.png",
+        "time": 2.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794857497561,
+        "contentHash": "bfbc5260c56bd0d3c3f47a1963dd179ced3b39f7176b3c3688d38eff28b7b670",
+        "revision": null,
+        "inputFingerprint": "690c0267d5ad19e4459b443877e007fdecda41401fb747081bda4d02c7e3a4d7",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "c32014bd-d100-431c-8c7c-2b0892323a2d-1",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/frame-01-at-6.2s.png",
+        "time": 6.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794857497561,
+        "contentHash": "8aee0c70d092ea520788ca8659fe50efbe6f5bd04336e7b3c258b2f1f5d80f26",
+        "revision": null,
+        "inputFingerprint": "690c0267d5ad19e4459b443877e007fdecda41401fb747081bda4d02c7e3a4d7",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "c32014bd-d100-431c-8c7c-2b0892323a2d-2",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/frame-02-at-11.5s.png",
+        "time": 11.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794857497561,
+        "contentHash": "c4ad7af4ee8e8310999be42785e01884d868e40062ed61a439114830b8941063",
+        "revision": null,
+        "inputFingerprint": "690c0267d5ad19e4459b443877e007fdecda41401fb747081bda4d02c7e3a4d7",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "c32014bd-d100-431c-8c7c-2b0892323a2d-3",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/frame-03-at-15.5s.png",
+        "time": 15.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794857497561,
+        "contentHash": "9d05babf8cfb9df7bf6a676dae3e877dc7e897db1b3c6e9ed5a6873b11879d74",
+        "revision": null,
+        "inputFingerprint": "690c0267d5ad19e4459b443877e007fdecda41401fb747081bda4d02c7e3a4d7",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "c32014bd-d100-431c-8c7c-2b0892323a2d-4",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/frame-04-at-23s.png",
+        "time": 23,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794857497561,
+        "contentHash": "1568fd96f25397b46455bb6a4e5dcb5ba64db5b089288190f7cbb962bbfb66ff",
+        "revision": null,
+        "inputFingerprint": "690c0267d5ad19e4459b443877e007fdecda41401fb747081bda4d02c7e3a4d7",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "c32014bd-d100-431c-8c7c-2b0892323a2d-5",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/frame-05-at-28.5s.png",
+        "time": 28.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794857497561,
+        "contentHash": "a893621290f6b197254d844f7faf1253bb62b493d86beb6014560ac3dbdfc833",
+        "revision": null,
+        "inputFingerprint": "690c0267d5ad19e4459b443877e007fdecda41401fb747081bda4d02c7e3a4d7",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "c32014bd-d100-431c-8c7c-2b0892323a2d-6",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/frame-06-at-36s.png",
+        "time": 36,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794857497561,
+        "contentHash": "e462ce7bf69a89df41bf529be0443e6047b126772b3597ff4ba1108bea54864a",
+        "revision": null,
+        "inputFingerprint": "690c0267d5ad19e4459b443877e007fdecda41401fb747081bda4d02c7e3a4d7",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "c32014bd-d100-431c-8c7c-2b0892323a2d-7",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/frame-07-at-46.5s.png",
+        "time": 46.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794857497562,
+        "contentHash": "3bfac97c0e9e25aa5420b9aab73b98c064d0ab25ebc85689f21e5115e47ab2fe",
+        "revision": null,
+        "inputFingerprint": "690c0267d5ad19e4459b443877e007fdecda41401fb747081bda4d02c7e3a4d7",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "c32014bd-d100-431c-8c7c-2b0892323a2d-8",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/frame-08-at-55.5s.png",
+        "time": 55.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794857497562,
+        "contentHash": "e720269a32cfa0b638204bc5e3b340cbf3c851f4bb40af65aa31fac62aa9eda1",
+        "revision": null,
+        "inputFingerprint": "690c0267d5ad19e4459b443877e007fdecda41401fb747081bda4d02c7e3a4d7",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "c32014bd-d100-431c-8c7c-2b0892323a2d-9",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/frame-09-at-64.5s.png",
+        "time": 64.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794857497562,
+        "contentHash": "94ee411be9ba95f4b635631570addf12fc82c5dd4dcc07d50c55666505a92a70",
+        "revision": null,
+        "inputFingerprint": "690c0267d5ad19e4459b443877e007fdecda41401fb747081bda4d02c7e3a4d7",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "c32014bd-d100-431c-8c7c-2b0892323a2d-10",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/frame-10-at-72.5s.png",
+        "time": 72.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794857497562,
+        "contentHash": "6bed997ab1dc19d048a8dee3a18b8a4be3d9d6d00ac94dda0da52d46acb3372b",
+        "revision": null,
+        "inputFingerprint": "690c0267d5ad19e4459b443877e007fdecda41401fb747081bda4d02c7e3a4d7",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "c32014bd-d100-431c-8c7c-2b0892323a2d-11",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/.hyperframes/artifacts/snapshots/598650d2-8d8c-4bfd-9540-8042b7175a70/frame-11-at-73.75s.png",
+        "time": 73.75,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794857497562,
+        "contentHash": "ba975fe752ddc10762299921e09eb923b7a40809689d81eaf4438b33da213e39",
+        "revision": null,
+        "inputFingerprint": "690c0267d5ad19e4459b443877e007fdecda41401fb747081bda4d02c7e3a4d7",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "c1040f97-4c26-4c5f-9f85-a2a489db19dc",
+      "completedAt": 1794890097124,
+      "output": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-tardigrade-bertahan-di-ruang-hampa/renders/misteri-tardigrade-bertahan-di-ruang-hampa.mp4",
+      "status": "completed",
+      "revision": "1b81f31a-ab70-4d45-998a-c4e5383e8754"
+    },
+    "retainedRevisions": [
+      "1b81f31a-ab70-4d45-998a-c4e5383e8754"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

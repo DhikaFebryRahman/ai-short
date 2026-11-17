@@ -1,0 +1,2537 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 9
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 41,
+    "infoCount": 11,
+    "findings": [
+      {
+        "selector": "#s1-foreground > g:nth-of-type(2) > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-01.html",
+        "bbox": {
+          "x": 395.88,
+          "y": 1651,
+          "width": 288.24,
+          "height": 28
+        },
+        "time": 3.778,
+        "rect": {
+          "left": 395.88,
+          "top": 1651,
+          "right": 684.12,
+          "bottom": 1679,
+          "width": 288.24,
+          "height": 28
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "02:15 • TIDUR MALAM HARI",
+        "message": "<text> \"02:15 • TIDUR MALAM HARI\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.778,
+        "lastSeen": 3.778,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.778
+        ]
+      },
+      {
+        "selector": "#s1-clock-txt",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-01.html",
+        "bbox": {
+          "x": 853.94,
+          "y": 1637,
+          "width": 52.12,
+          "height": 28
+        },
+        "time": 3.778,
+        "rect": {
+          "left": 853.94,
+          "top": 1637,
+          "right": 906.06,
+          "bottom": 1665,
+          "width": 52.12,
+          "height": 28
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "02:15",
+        "message": "<text> \"02:15\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.778,
+        "lastSeen": 3.778,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.778
+        ]
+      },
+      {
+        "selector": "div.s1-header",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-01.html",
+        "bbox": {
+          "x": 420.47,
+          "y": 214,
+          "width": 239.05,
+          "height": 28
+        },
+        "time": 3.778,
+        "rect": {
+          "left": 420.47,
+          "top": 214,
+          "right": 659.52,
+          "bottom": 242,
+          "width": 239.05,
+          "height": 28
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SAAT KITA TIDUR...",
+        "message": "<div> \"SAAT KITA TIDUR...\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.778,
+        "lastSeen": 3.778,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.778
+        ]
+      },
+      {
+        "selector": "h1.s1-title",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-01.html",
+        "bbox": {
+          "x": 196.22,
+          "y": 255,
+          "width": 687.55,
+          "height": 61
+        },
+        "time": 3.778,
+        "rect": {
+          "left": 196.22,
+          "top": 255,
+          "right": 883.77,
+          "bottom": 316,
+          "width": 687.55,
+          "height": 61
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Otak Tetap Merespons Suara?",
+        "message": "<h1> \"Otak Tetap Merespons Suara?\" is outside the safe area: Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.778,
+        "lastSeen": 3.778,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.778
+        ]
+      },
+      {
+        "selector": "#s1-pill-1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-01.html",
+        "bbox": {
+          "x": 432.11,
+          "y": 1260,
+          "width": 241.78,
+          "height": 32
+        },
+        "time": 3.778,
+        "rect": {
+          "left": 432.11,
+          "top": 1260,
+          "right": 673.89,
+          "bottom": 1292,
+          "width": 241.78,
+          "height": 32
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SAAT KITA TIDUR...",
+        "message": "<span> \"SAAT KITA TIDUR...\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.778,
+        "lastSeen": 3.778,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.778
+        ]
+      },
+      {
+        "selector": "div.hud-series",
+        "dataAttributes": {
+          "data-var-text": "series_label"
+        },
+        "sourceFile": "compositions/hud.html",
+        "bbox": {
+          "x": 36,
+          "y": 85,
+          "width": 209.8,
+          "height": 31
+        },
+        "time": 3.778,
+        "rect": {
+          "left": 36,
+          "top": 85,
+          "right": 245.8,
+          "bottom": 116,
+          "width": 209.8,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "KAPSUL FAKTA",
+        "message": "<div> \"KAPSUL FAKTA\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.778,
+        "lastSeen": 64.222,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          3.778,
+          11.333,
+          18.889,
+          26.444,
+          34,
+          41.556,
+          49.111,
+          56.667,
+          64.222
+        ]
+      },
+      {
+        "selector": "#hud-counter",
+        "dataAttributes": {},
+        "sourceFile": "compositions/hud.html",
+        "bbox": {
+          "x": 955.91,
+          "y": 85,
+          "width": 88.09,
+          "height": 31
+        },
+        "time": 3.778,
+        "rect": {
+          "left": 955.91,
+          "top": 85,
+          "right": 1044,
+          "bottom": 116,
+          "width": 88.09,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "01 / 05",
+        "message": "<div> \"01 / 05\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.778,
+        "lastSeen": 64.222,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          3.778,
+          11.333,
+          18.889,
+          26.444,
+          34,
+          41.556,
+          49.111,
+          56.667,
+          64.222
+        ]
+      },
+      {
+        "selector": "#captions",
+        "dataAttributes": {
+          "data-composition-file": "compositions/captions.html",
+          "data-composition-id": "captions",
+          "data-track-kind": "captions",
+          "data-track-index": "3",
+          "data-start": "0",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-hf-authored-duration": "68"
+        },
+        "sourceFile": "compositions/captions.html",
+        "bbox": {
+          "x": 168.42,
+          "y": 1368.91,
+          "width": 743.14,
+          "height": 109.96
+        },
+        "time": 3.778,
+        "rect": {
+          "left": 168.42,
+          "top": 1368.91,
+          "right": 911.56,
+          "bottom": 1478.87,
+          "width": 743.14,
+          "height": 109.96
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Saat tidur nyenyak, kamu mungkin tetap bereaksi ",
+        "message": "<div> \"Saat tidur nyenyak, kamu mungkin tetap bereaksi \" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.778,
+        "lastSeen": 64.222,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          3.778,
+          11.333,
+          18.889,
+          26.444,
+          34,
+          41.556,
+          49.111,
+          56.667,
+          64.222
+        ]
+      },
+      {
+        "selector": "#s2-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 255,
+          "y": 1626,
+          "width": 83.95,
+          "height": 25
+        },
+        "time": 11.333,
+        "rect": {
+          "left": 255,
+          "top": 1626,
+          "right": 338.95,
+          "bottom": 1651,
+          "width": 83.95,
+          "height": 25
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TERJAGA",
+        "message": "<text> \"TERJAGA\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 11.333,
+        "lastSeen": 18.889,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          11.333,
+          18.889
+        ]
+      },
+      {
+        "selector": "#s2-foreground > g:nth-of-type(1) > text:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 255,
+          "y": 1674,
+          "width": 107.02,
+          "height": 25
+        },
+        "time": 11.333,
+        "rect": {
+          "left": 255,
+          "top": 1674,
+          "right": 362.02,
+          "bottom": 1699,
+          "width": 107.02,
+          "height": 25
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SAAT TIDUR",
+        "message": "<text> \"SAAT TIDUR\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 11.333,
+        "lastSeen": 18.889,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          11.333,
+          18.889
+        ]
+      },
+      {
+        "selector": "div.s2-header",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 399.63,
+          "y": 214,
+          "width": 280.73,
+          "height": 28
+        },
+        "time": 11.333,
+        "rect": {
+          "left": 399.63,
+          "top": 214,
+          "right": 680.36,
+          "bottom": 242,
+          "width": 280.73,
+          "height": 28
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SISTEM PENDENGARAN",
+        "message": "<div> \"SISTEM PENDENGARAN\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 11.333,
+        "lastSeen": 18.889,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          11.333,
+          18.889
+        ]
+      },
+      {
+        "selector": "h2.s2-title",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 189.95,
+          "y": 255,
+          "width": 700.1,
+          "height": 61
+        },
+        "time": 11.333,
+        "rect": {
+          "left": 189.95,
+          "top": 255,
+          "right": 890.05,
+          "bottom": 316,
+          "width": 700.1,
+          "height": 61
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Hubungan Tidak Diputus Total",
+        "message": "<h2> \"Hubungan Tidak Diputus Total\" is outside the safe area: Instagram Reels (top edge), YouTube Shorts (top and right edges).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 11.333,
+        "lastSeen": 18.889,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          11.333,
+          18.889
+        ]
+      },
+      {
+        "selector": "#s2-pill-1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 376.44,
+          "y": 1260.5,
+          "width": 353.11,
+          "height": 31
+        },
+        "time": 11.333,
+        "rect": {
+          "left": 376.44,
+          "top": 1260.5,
+          "right": 729.55,
+          "bottom": 1291.5,
+          "width": 353.11,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SUARA MASIH DAPAT MASUK",
+        "message": "<span> \"SUARA MASIH DAPAT MASUK\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 11.333,
+        "lastSeen": 11.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          11.333
+        ]
+      },
+      {
+        "selector": "#s2-filter-stage > g:nth-of-type(4) > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 768.18,
+          "y": 881,
+          "width": 73.64,
+          "height": 21
+        },
+        "time": 18.889,
+        "rect": {
+          "left": 768.18,
+          "top": 881,
+          "right": 841.82,
+          "bottom": 902,
+          "width": 73.64,
+          "height": 21
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "DISARING",
+        "message": "<text> \"DISARING\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 18.889,
+        "lastSeen": 18.889,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          18.889
+        ]
+      },
+      {
+        "selector": "#s2-pill-3 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 351.64,
+          "y": 1260.5,
+          "width": 402.7,
+          "height": 31
+        },
+        "time": 18.889,
+        "rect": {
+          "left": 351.64,
+          "top": 1260.5,
+          "right": 754.34,
+          "bottom": 1291.5,
+          "width": 402.7,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "OTAK MENYARING RANGSANGAN",
+        "message": "<span> \"OTAK MENYARING RANGSANGAN\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 18.889,
+        "lastSeen": 18.889,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          18.889
+        ]
+      },
+      {
+        "selector": "#s3-src-name > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 836.15,
+          "y": 630,
+          "width": 55.7,
+          "height": 24
+        },
+        "time": 26.444,
+        "rect": {
+          "left": 836.15,
+          "top": 630,
+          "right": 891.85,
+          "bottom": 654,
+          "width": 55.7,
+          "height": 24
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "NAMA",
+        "message": "<text> \"NAMA\" is outside the safe area: YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 26.444,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          26.444,
+          34
+        ]
+      },
+      {
+        "selector": "#s3-src-name > text:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 836.86,
+          "y": 659,
+          "width": 54.28,
+          "height": 20
+        },
+        "time": 26.444,
+        "rect": {
+          "left": 836.86,
+          "top": 659,
+          "right": 891.14,
+          "bottom": 679,
+          "width": 54.28,
+          "height": 20
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SENDIRI",
+        "message": "<text> \"SENDIRI\" is outside the safe area: YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 26.444,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          26.444,
+          34
+        ]
+      },
+      {
+        "selector": "#s3-src-filter > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 761.89,
+          "y": 920,
+          "width": 116.22,
+          "height": 25
+        },
+        "time": 26.444,
+        "rect": {
+          "left": 761.89,
+          "top": 920,
+          "right": 878.11,
+          "bottom": 945,
+          "width": 116.22,
+          "height": 25
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "FILTER AKTIF",
+        "message": "<text> \"FILTER AKTIF\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 26.444,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          26.444,
+          34
+        ]
+      },
+      {
+        "selector": "#s3-src-filter > text:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 760.66,
+          "y": 951,
+          "width": 118.68,
+          "height": 21
+        },
+        "time": 26.444,
+        "rect": {
+          "left": 760.66,
+          "top": 951,
+          "right": 879.34,
+          "bottom": 972,
+          "width": 118.68,
+          "height": 21
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "BANYAK SUARA",
+        "message": "<text> \"BANYAK SUARA\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 26.444,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          26.444,
+          34
+        ]
+      },
+      {
+        "selector": "#s3-src-filter > text:nth-of-type(3)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 759.09,
+          "y": 977,
+          "width": 121.82,
+          "height": 21
+        },
+        "time": 26.444,
+        "rect": {
+          "left": 759.09,
+          "top": 977,
+          "right": 880.91,
+          "bottom": 998,
+          "width": 121.82,
+          "height": 21
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "DISARING TIDUR",
+        "message": "<text> \"DISARING TIDUR\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 26.444,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          26.444,
+          34
+        ]
+      },
+      {
+        "selector": "#s3-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 235,
+          "y": 1623,
+          "width": 116.56,
+          "height": 23
+        },
+        "time": 26.444,
+        "rect": {
+          "left": 235,
+          "top": 1623,
+          "right": 351.56,
+          "bottom": 1646,
+          "width": 116.56,
+          "height": 23
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "KIPAS (BIASA)",
+        "message": "<text> \"KIPAS (BIASA)\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 26.444,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          26.444,
+          34
+        ]
+      },
+      {
+        "selector": "#s3-foreground > g:nth-of-type(1) > text:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 235,
+          "y": 1655,
+          "width": 117.55,
+          "height": 23
+        },
+        "time": 26.444,
+        "rect": {
+          "left": 235,
+          "top": 1655,
+          "right": 352.55,
+          "bottom": 1678,
+          "width": 117.55,
+          "height": 23
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "NAMA SENDIRI",
+        "message": "<text> \"NAMA SENDIRI\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 26.444,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          26.444,
+          34
+        ]
+      },
+      {
+        "selector": "#s3-foreground > g:nth-of-type(1) > text:nth-of-type(3)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 235,
+          "y": 1687,
+          "width": 103.89,
+          "height": 23
+        },
+        "time": 26.444,
+        "rect": {
+          "left": 235,
+          "top": 1687,
+          "right": 338.89,
+          "bottom": 1710,
+          "width": 103.89,
+          "height": 23
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SUARA BARU",
+        "message": "<text> \"SUARA BARU\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 26.444,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          26.444,
+          34
+        ]
+      },
+      {
+        "selector": "div.s3-header",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 389.3,
+          "y": 214,
+          "width": 301.39,
+          "height": 28
+        },
+        "time": 26.444,
+        "rect": {
+          "left": 389.3,
+          "top": 214,
+          "right": 690.69,
+          "bottom": 242,
+          "width": 301.39,
+          "height": 28
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SELEKSI SUARA PENTING",
+        "message": "<div> \"SELEKSI SUARA PENTING\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 26.444,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          26.444,
+          34
+        ]
+      },
+      {
+        "selector": "h2.s3-title",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 245.45,
+          "y": 255,
+          "width": 589.08,
+          "height": 61
+        },
+        "time": 26.444,
+        "rect": {
+          "left": 245.45,
+          "top": 255,
+          "right": 834.53,
+          "bottom": 316,
+          "width": 589.08,
+          "height": 61
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Tidak Semua Suara Sama",
+        "message": "<h2> \"Tidak Semua Suara Sama\" is outside the safe area: Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 26.444,
+        "lastSeen": 34,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          26.444,
+          34
+        ]
+      },
+      {
+        "selector": "#s3-pill-1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 470.91,
+          "y": 1260.5,
+          "width": 164.18,
+          "height": 31
+        },
+        "time": 26.444,
+        "rect": {
+          "left": 470.91,
+          "top": 1260.5,
+          "right": 635.09,
+          "bottom": 1291.5,
+          "width": 164.18,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SUARA BIASA",
+        "message": "<span> \"SUARA BIASA\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 26.444,
+        "lastSeen": 26.444,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          26.444
+        ]
+      },
+      {
+        "selector": "#s3-pill-3 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 474.97,
+          "y": 1260.5,
+          "width": 156.05,
+          "height": 31
+        },
+        "time": 34,
+        "rect": {
+          "left": 474.97,
+          "top": 1260.5,
+          "right": 631.02,
+          "bottom": 1291.5,
+          "width": 156.05,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SUARA BARU",
+        "message": "<span> \"SUARA BARU\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 34,
+        "lastSeen": 34,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          34
+        ]
+      },
+      {
+        "selector": "#s4-card-n3 > text:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 651.33,
+          "y": 1014,
+          "width": 167.34,
+          "height": 21.62
+        },
+        "time": 41.556,
+        "rect": {
+          "left": 651.33,
+          "top": 1014,
+          "right": 818.67,
+          "bottom": 1035.62,
+          "width": 167.34,
+          "height": 21.62
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "ADA AKTIVITAS OTAK",
+        "message": "<text> \"ADA AKTIVITAS OTAK\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 41.556,
+        "lastSeen": 49.111,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          41.556,
+          49.111
+        ]
+      },
+      {
+        "selector": "#s4-card-n3 > text:nth-of-type(3)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 647.32,
+          "y": 1036.56,
+          "width": 175.36,
+          "height": 19.74
+        },
+        "time": 41.556,
+        "rect": {
+          "left": 647.32,
+          "top": 1036.56,
+          "right": 822.68,
+          "bottom": 1056.3,
+          "width": 175.36,
+          "height": 19.74
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TIDAK OTOMATIS SADAR",
+        "message": "<text> \"TIDAK OTOMATIS SADAR\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 41.556,
+        "lastSeen": 49.111,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          41.556,
+          49.111
+        ]
+      },
+      {
+        "selector": "#s4-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 327.23,
+          "y": 1652,
+          "width": 425.54,
+          "height": 29
+        },
+        "time": 41.556,
+        "rect": {
+          "left": 327.23,
+          "top": 1652,
+          "right": 752.77,
+          "bottom": 1681,
+          "width": 425.54,
+          "height": 29
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "RESPONS OTAK ≠ KESADARAN PENUH",
+        "message": "<text> \"RESPONS OTAK ≠ KESADARAN PENUH\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 41.556,
+        "lastSeen": 49.111,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          41.556,
+          49.111
+        ]
+      },
+      {
+        "selector": "div.s4-header",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 380.77,
+          "y": 214,
+          "width": 318.45,
+          "height": 28
+        },
+        "time": 41.556,
+        "rect": {
+          "left": 380.77,
+          "top": 214,
+          "right": 699.22,
+          "bottom": 242,
+          "width": 318.45,
+          "height": 28
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TAHAP TIDUR DALAM • N3",
+        "message": "<div> \"TAHAP TIDUR DALAM • N3\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 41.556,
+        "lastSeen": 49.111,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          41.556,
+          49.111
+        ]
+      },
+      {
+        "selector": "h2.s4-title",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 267.92,
+          "y": 255,
+          "width": 544.16,
+          "height": 61
+        },
+        "time": 41.556,
+        "rect": {
+          "left": 267.92,
+          "top": 255,
+          "right": 812.08,
+          "bottom": 316,
+          "width": 544.16,
+          "height": 61
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Aktivitas Otak vs Sadar",
+        "message": "<h2> \"Aktivitas Otak vs Sadar\" is outside the safe area: Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 41.556,
+        "lastSeen": 49.111,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          41.556,
+          49.111
+        ]
+      },
+      {
+        "selector": "#s4-pill-1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 452.98,
+          "y": 1260.5,
+          "width": 200.02,
+          "height": 31
+        },
+        "time": 41.556,
+        "rect": {
+          "left": 452.98,
+          "top": 1260.5,
+          "right": 653,
+          "bottom": 1291.5,
+          "width": 200.02,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "DEEP SLEEP — N3",
+        "message": "<span> \"DEEP SLEEP — N3\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 41.556,
+        "lastSeen": 41.556,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          41.556
+        ]
+      },
+      {
+        "selector": "#s4-pill-3 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 377.89,
+          "y": 1260.5,
+          "width": 350.2,
+          "height": 31
+        },
+        "time": 49.111,
+        "rect": {
+          "left": 377.89,
+          "top": 1260.5,
+          "right": 728.09,
+          "bottom": 1291.5,
+          "width": 350.2,
+          "height": 31
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "AKTIVITAS OTAK MASIH ADA",
+        "message": "<span> \"AKTIVITAS OTAK MASIH ADA\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 49.111,
+        "lastSeen": 49.111,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          49.111
+        ]
+      },
+      {
+        "selector": "#s5-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 326.52,
+          "y": 1652,
+          "width": 426.96,
+          "height": 28
+        },
+        "time": 56.667,
+        "rect": {
+          "left": 326.52,
+          "top": 1652,
+          "right": 753.48,
+          "bottom": 1680,
+          "width": 426.96,
+          "height": 28
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "NEUROSAINS TIDUR • PENJAGA MALAM",
+        "message": "<text> \"NEUROSAINS TIDUR • PENJAGA MALAM\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 56.667,
+        "lastSeen": 64.222,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          56.667,
+          64.222
+        ]
+      },
+      {
+        "selector": "div.s5-header",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 413.92,
+          "y": 214,
+          "width": 252.14,
+          "height": 28
+        },
+        "time": 56.667,
+        "rect": {
+          "left": 413.92,
+          "top": 214,
+          "right": 666.06,
+          "bottom": 242,
+          "width": 252.14,
+          "height": 28
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "KESIMPULAN ILMIAH",
+        "message": "<div> \"KESIMPULAN ILMIAH\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 56.667,
+        "lastSeen": 64.222,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          56.667,
+          64.222
+        ]
+      },
+      {
+        "selector": "h2.s5-title",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 220.63,
+          "y": 255,
+          "width": 638.75,
+          "height": 109.39
+        },
+        "time": 56.667,
+        "rect": {
+          "left": 220.63,
+          "top": 255,
+          "right": 859.38,
+          "bottom": 364.39,
+          "width": 638.75,
+          "height": 109.39
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Otak Bekerja Bagai Penjaga Malam",
+        "message": "<h2> \"Otak Bekerja Bagai Penjaga Malam\" is outside the safe area: Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 56.667,
+        "lastSeen": 64.222,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          56.667,
+          64.222
+        ]
+      },
+      {
+        "selector": "#s5-pill-1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 412.72,
+          "y": 1261.5,
+          "width": 280.56,
+          "height": 29
+        },
+        "time": 56.667,
+        "rect": {
+          "left": 412.72,
+          "top": 1261.5,
+          "right": 693.28,
+          "bottom": 1290.5,
+          "width": 280.56,
+          "height": 29
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "OTAK TETAP MEMANTAU",
+        "message": "<span> \"OTAK TETAP MEMANTAU\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 56.667,
+        "lastSeen": 56.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          56.667
+        ]
+      },
+      {
+        "selector": "#s5-summary-cards > g:nth-of-type(2) > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 649.85,
+          "y": 1043.21,
+          "width": 150.56,
+          "height": 25.02
+        },
+        "time": 64.222,
+        "rect": {
+          "left": 649.85,
+          "top": 1043.21,
+          "right": 800.41,
+          "bottom": 1068.23,
+          "width": 150.56,
+          "height": 25.02
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SINYAL PENTING",
+        "message": "<text> \"SINYAL PENTING\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 64.222,
+        "lastSeen": 64.222,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          64.222
+        ]
+      },
+      {
+        "selector": "#s5-summary-cards > g:nth-of-type(2) > text:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 656.93,
+          "y": 1072.23,
+          "width": 136.4,
+          "height": 21.02
+        },
+        "time": 64.222,
+        "rect": {
+          "left": 656.93,
+          "top": 1072.23,
+          "right": 793.33,
+          "bottom": 1093.25,
+          "width": 136.4,
+          "height": 21.02
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TETAP TERDETEKSI",
+        "message": "<text> \"TETAP TERDETEKSI\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 64.222,
+        "lastSeen": 64.222,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          64.222
+        ]
+      },
+      {
+        "selector": "#s5-pill-3 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 362.91,
+          "y": 1261.5,
+          "width": 380.17,
+          "height": 29
+        },
+        "time": 64.222,
+        "rect": {
+          "left": 362.91,
+          "top": 1261.5,
+          "right": 743.08,
+          "bottom": 1290.5,
+          "width": 380.17,
+          "height": 29
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "TIDUR ≠ OTAK BERHENTI BEKERJA",
+        "message": "<span> \"TIDUR ≠ OTAK BERHENTI BEKERJA\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 64.222,
+        "lastSeen": 64.222,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          64.222
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 9.497,
+        "selector": "div.s1-eyebrow",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 420.47,
+          "top": 214,
+          "right": 659.52,
+          "bottom": 242,
+          "width": 239.05,
+          "height": 28
+        },
+        "containerSelector": "div.s2-eyebrow",
+        "text": "SAAT KITA TIDUR...",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-01.html",
+        "bbox": {
+          "x": 420.47,
+          "y": 214,
+          "width": 239.05,
+          "height": 28
+        },
+        "firstSeen": 9.497,
+        "lastSeen": 9.497,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.497
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 9.497,
+        "selector": "h1.s1-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 196.22,
+          "top": 255,
+          "right": 883.77,
+          "bottom": 316,
+          "width": 687.55,
+          "height": 61
+        },
+        "containerSelector": "h2.s2-title",
+        "text": "Otak Tetap Merespons Suara?",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-01.html",
+        "bbox": {
+          "x": 196.22,
+          "y": 255,
+          "width": 687.55,
+          "height": 61
+        },
+        "firstSeen": 9.497,
+        "lastSeen": 9.497,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.497
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.553,
+        "selector": "#s2-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 255,
+          "top": 1626,
+          "right": 338.95,
+          "bottom": 1651,
+          "width": 83.95,
+          "height": 25
+        },
+        "containerSelector": "#s3-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+        "text": "TERJAGA",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 255,
+          "y": 1626,
+          "width": 83.95,
+          "height": 25
+        },
+        "firstSeen": 23.553,
+        "lastSeen": 23.553,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.553
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.553,
+        "selector": "div.s2-eyebrow",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 399.63,
+          "top": 214,
+          "right": 680.36,
+          "bottom": 242,
+          "width": 280.73,
+          "height": 28
+        },
+        "containerSelector": "div.s3-eyebrow",
+        "text": "SISTEM PENDENGARAN",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 399.63,
+          "y": 214,
+          "width": 280.73,
+          "height": 28
+        },
+        "firstSeen": 23.553,
+        "lastSeen": 23.553,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.553
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.553,
+        "selector": "h2.s2-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 189.95,
+          "top": 255,
+          "right": 890.05,
+          "bottom": 316,
+          "width": 700.1,
+          "height": 61
+        },
+        "containerSelector": "h2.s3-title",
+        "text": "Hubungan Tidak Diputus Total",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 189.95,
+          "y": 255,
+          "width": 700.1,
+          "height": 61
+        },
+        "firstSeen": 23.553,
+        "lastSeen": 23.553,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.553
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.648,
+        "selector": "#s3-foreground > g:nth-of-type(1) > text:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 235,
+          "top": 1655,
+          "right": 352.55,
+          "bottom": 1678,
+          "width": 117.55,
+          "height": 23
+        },
+        "containerSelector": "#s4-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+        "text": "NAMA SENDIRI",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 235,
+          "y": 1655,
+          "width": 117.55,
+          "height": 23
+        },
+        "firstSeen": 40.648,
+        "lastSeen": 40.648,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.648
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.648,
+        "selector": "div.s3-eyebrow",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 389.3,
+          "top": 214,
+          "right": 690.69,
+          "bottom": 242,
+          "width": 301.39,
+          "height": 28
+        },
+        "containerSelector": "div.s4-eyebrow",
+        "text": "SELEKSI SUARA PENTING",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 389.3,
+          "y": 214,
+          "width": 301.39,
+          "height": 28
+        },
+        "firstSeen": 40.648,
+        "lastSeen": 40.648,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.648
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.648,
+        "selector": "h2.s3-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 245.45,
+          "top": 255,
+          "right": 834.53,
+          "bottom": 316,
+          "width": 589.08,
+          "height": 61
+        },
+        "containerSelector": "h2.s4-title",
+        "text": "Tidak Semua Suara Sama",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 245.45,
+          "y": 255,
+          "width": 589.08,
+          "height": 61
+        },
+        "firstSeen": 40.648,
+        "lastSeen": 40.648,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.648
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 55.084,
+        "selector": "#s4-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 327.23,
+          "top": 1652,
+          "right": 752.77,
+          "bottom": 1681,
+          "width": 425.54,
+          "height": 29
+        },
+        "containerSelector": "#s5-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+        "text": "RESPONS OTAK ≠ KESADARAN PENUH",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 327.23,
+          "y": 1652,
+          "width": 425.54,
+          "height": 29
+        },
+        "firstSeen": 55.084,
+        "lastSeen": 55.084,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          55.084
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 55.084,
+        "selector": "div.s4-eyebrow",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 380.77,
+          "top": 214,
+          "right": 699.22,
+          "bottom": 242,
+          "width": 318.45,
+          "height": 28
+        },
+        "containerSelector": "div.s5-eyebrow",
+        "text": "TAHAP TIDUR DALAM • N3",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 380.77,
+          "y": 214,
+          "width": 318.45,
+          "height": 28
+        },
+        "firstSeen": 55.084,
+        "lastSeen": 55.084,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          55.084
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 55.084,
+        "selector": "h2.s4-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 267.92,
+          "top": 255,
+          "right": 812.08,
+          "bottom": 316,
+          "width": 544.16,
+          "height": 61
+        },
+        "containerSelector": "h2.s5-title",
+        "text": "Aktivitas Otak vs Sadar",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply. Decoration nobody needs to read can take data-layout-ignore.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 267.92,
+          "y": 255,
+          "width": 544.16,
+          "height": 61
+        },
+        "firstSeen": 55.084,
+        "lastSeen": 55.084,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          55.084
+        ]
+      }
+    ],
+    "duration": 68,
+    "samples": [
+      3.778,
+      11.333,
+      18.889,
+      26.444,
+      34,
+      41.556,
+      49.111,
+      56.667,
+      64.222
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 52,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      3.778,
+      18.889,
+      34,
+      49.111,
+      64.222
+    ],
+    "checked": 111,
+    "passed": 111
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 2 text elements stay under it for 0.5 s or more, the smallest \"KAPSUL FAKTA\" at 22 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "KAPSUL FAKTA",
+        "selector": "div.hud-series",
+        "dataAttributes": {},
+        "sourceFile": "compositions/hud.html",
+        "bbox": {
+          "x": 36,
+          "y": 85,
+          "width": 209.8,
+          "height": 31
+        },
+        "time": 0,
+        "times": [
+          0,
+          0
+        ],
+        "fontPx": 22,
+        "floorPx": 28,
+        "seconds": 68,
+        "elements": [
+          {
+            "selector": "div.hud-series",
+            "text": "KAPSUL FAKTA",
+            "fontPx": 22,
+            "time": 0,
+            "seconds": 68
+          },
+          {
+            "selector": "#hud-counter",
+            "text": "01 / 05",
+            "fontPx": 22,
+            "time": 0,
+            "seconds": 68
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 8 text elements stay under it for 0.5 s or more, the smallest \"MERESPONS SUARA\" at 18 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "MERESPONS SUARA",
+        "selector": "#s1-brain-card > text:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-01.html",
+        "bbox": {
+          "x": 470.01,
+          "y": 484.49,
+          "width": 178.31,
+          "height": 25.23
+        },
+        "time": 6.125,
+        "times": [
+          0,
+          0,
+          0,
+          0.375,
+          3.25,
+          6,
+          6.125,
+          6.125
+        ],
+        "fontPx": 18.17,
+        "floorPx": 28,
+        "seconds": 3.375,
+        "elements": [
+          {
+            "selector": "#s1-brain-card > text:nth-of-type(2)",
+            "text": "MERESPONS SUARA",
+            "fontPx": 18.17,
+            "time": 6.125,
+            "seconds": 3.375
+          },
+          {
+            "selector": "#s1-foreground > g:nth-of-type(2) > text:nth-of-type(1)",
+            "text": "02:15 • TIDUR MALAM HARI",
+            "fontPx": 20,
+            "time": 0,
+            "seconds": 9.5
+          },
+          {
+            "selector": "#s1-clock-txt",
+            "text": "02:15",
+            "fontPx": 20,
+            "time": 0,
+            "seconds": 9.5
+          },
+          {
+            "selector": "div.s1-eyebrow",
+            "text": "SAAT KITA TIDUR...",
+            "fontPx": 20,
+            "time": 0,
+            "seconds": 9.5
+          },
+          {
+            "selector": "#s1-pill-1 > span:nth-of-type(2)",
+            "text": "SAAT KITA TIDUR...",
+            "fontPx": 23,
+            "time": 0.375,
+            "seconds": 5.625
+          },
+          {
+            "selector": "#s1-pill-2 > span:nth-of-type(2)",
+            "text": "APAKAH OTAK BENAR-BENAR BERHENTI?",
+            "fontPx": 23,
+            "time": 6,
+            "seconds": 3.5
+          },
+          {
+            "selector": "#s1-brain-card > text:nth-of-type(1)",
+            "text": "OTAK AKTIF",
+            "fontPx": 23.21,
+            "time": 6.125,
+            "seconds": 3.375
+          },
+          {
+            "selector": "#s1-caller > text:nth-of-type(1)",
+            "text": "\"KEVIN!\"",
+            "fontPx": 23.89,
+            "time": 3.25,
+            "seconds": 6.25
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 13 text elements stay under it for 0.5 s or more, the smallest \"KORTEKS\" at 13 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "KORTEKS",
+        "selector": "#s2-head-group > g:nth-of-type(2) > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-02.html",
+        "bbox": {
+          "x": 523.31,
+          "y": 625.92,
+          "width": 61.39,
+          "height": 18.4
+        },
+        "time": 9.375,
+        "times": [
+          9.375,
+          9.375,
+          9.375,
+          9.375,
+          9.75,
+          13.25,
+          16.375,
+          16.375,
+          16.375,
+          16.375,
+          16.375,
+          16.75,
+          20.25
+        ],
+        "fontPx": 12.88,
+        "floorPx": 28,
+        "seconds": 7,
+        "elements": [
+          {
+            "selector": "#s2-head-group > g:nth-of-type(2) > text:nth-of-type(1)",
+            "text": "KORTEKS",
+            "fontPx": 12.88,
+            "time": 9.375,
+            "seconds": 7
+          },
+          {
+            "selector": "#s2-filter-stage > g:nth-of-type(3) > text:nth-of-type(1)",
+            "text": "DIREDAM",
+            "fontPx": 14.76,
+            "time": 16.375,
+            "seconds": 7.25
+          },
+          {
+            "selector": "#s2-filter-stage > g:nth-of-type(4) > text:nth-of-type(1)",
+            "text": "DISARING",
+            "fontPx": 14.76,
+            "time": 16.375,
+            "seconds": 7.25
+          },
+          {
+            "selector": "#s2-filter-stage > g:nth-of-type(2) > text:nth-of-type(1)",
+            "text": "RESPON",
+            "fontPx": 15.75,
+            "time": 16.375,
+            "seconds": 7.25
+          },
+          {
+            "selector": "#s2-filter-stage > g:nth-of-type(1) > text:nth-of-type(1)",
+            "text": "FILTER OTAK",
+            "fontPx": 17.71,
+            "time": 16.375,
+            "seconds": 7.25
+          },
+          {
+            "selector": "#s2-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+            "text": "TERJAGA",
+            "fontPx": 18,
+            "time": 9.375,
+            "seconds": 14.25
+          },
+          {
+            "selector": "#s2-foreground > g:nth-of-type(1) > text:nth-of-type(2)",
+            "text": "SAAT TIDUR",
+            "fontPx": 18,
+            "time": 9.375,
+            "seconds": 14.25
+          },
+          {
+            "selector": "div.s2-eyebrow",
+            "text": "SISTEM PENDENGARAN",
+            "fontPx": 20,
+            "time": 9.375,
+            "seconds": 14.25
+          },
+          {
+            "selector": "#s2-filter-stage > text:nth-of-type(1)",
+            "text": "PENYARINGAN RANGSANGAN (BUKAN SAKELAR MATI)",
+            "fontPx": 21.65,
+            "time": 16.375,
+            "seconds": 7.25
+          },
+          {
+            "selector": "#s2-pill-1 > span:nth-of-type(2)",
+            "text": "SUARA MASIH DAPAT MASUK",
+            "fontPx": 22,
+            "time": 9.75,
+            "seconds": 3.5
+          },
+          {
+            "selector": "#s2-pill-2 > span:nth-of-type(2)",
+            "text": "SISTEM PENDENGARAN AKTIF",
+            "fontPx": 22,
+            "time": 13.25,
+            "seconds": 3.375
+          },
+          {
+            "selector": "#s2-pill-3 > span:nth-of-type(2)",
+            "text": "OTAK MENYARING RANGSANGAN",
+            "fontPx": 22,
+            "time": 16.75,
+            "seconds": 3.375
+          },
+          {
+            "selector": "#s2-pill-4 > span:nth-of-type(2)",
+            "text": "TIDAK SEPENUHNYA DIMATIKAN",
+            "fontPx": 22,
+            "time": 20.25,
+            "seconds": 3.375
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 21 text elements stay under it for 0.5 s or more, the smallest \"SUARA BIASA\" at 13 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "SUARA BIASA",
+        "selector": "#s3-src-fan > text:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-03.html",
+        "bbox": {
+          "x": 261.14,
+          "y": 658.95,
+          "width": 98.52,
+          "height": 21
+        },
+        "time": 23.5,
+        "times": [
+          23.5,
+          23.5,
+          23.5,
+          23.5,
+          23.5,
+          23.5,
+          23.5,
+          23.5,
+          23.875,
+          28.625,
+          28.625,
+          28.625,
+          28.625,
+          32.25,
+          32.375,
+          32.375,
+          32.375,
+          35.875,
+          36,
+          36,
+          36
+        ],
+        "fontPx": 13.44,
+        "floorPx": 28,
+        "seconds": 17,
+        "elements": [
+          {
+            "selector": "#s3-src-fan > text:nth-of-type(2)",
+            "text": "SUARA BIASA",
+            "fontPx": 13.44,
+            "time": 23.5,
+            "seconds": 17
+          },
+          {
+            "selector": "#s3-src-fan > text:nth-of-type(3)",
+            "text": "RESPONS MINIMAL",
+            "fontPx": 13.44,
+            "time": 23.5,
+            "seconds": 17
+          },
+          {
+            "selector": "#s3-src-name > text:nth-of-type(2)",
+            "text": "SENDIRI",
+            "fontPx": 14.21,
+            "time": 28.625,
+            "seconds": 12.125
+          },
+          {
+            "selector": "#s3-src-name > text:nth-of-type(3)",
+            "text": "PICU RESPONS",
+            "fontPx": 14.21,
+            "time": 28.625,
+            "seconds": 12.125
+          },
+          {
+            "selector": "#s3-src-new > text:nth-of-type(3)",
+            "text": "MENDADAK",
+            "fontPx": 14.61,
+            "time": 32.375,
+            "seconds": 8.375
+          },
+          {
+            "selector": "#s3-src-new > text:nth-of-type(4)",
+            "text": "RESPONS BARU",
+            "fontPx": 14.61,
+            "time": 32.375,
+            "seconds": 8.375
+          },
+          {
+            "selector": "#s3-src-filter > text:nth-of-type(2)",
+            "text": "BANYAK SUARA",
+            "fontPx": 15.71,
+            "time": 36,
+            "seconds": 4.75
+          },
+          {
+            "selector": "#s3-src-filter > text:nth-of-type(3)",
+            "text": "DISARING TIDUR",
+            "fontPx": 15.71,
+            "time": 36,
+            "seconds": 4.75
+          },
+          {
+            "selector": "svg.s3-svg > g:nth-of-type(1) > text:nth-of-type(1)",
+            "text": "OTAK TIDUR",
+            "fontPx": 16,
+            "time": 23.5,
+            "seconds": 17.25
+          },
+          {
+            "selector": "#s3-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+            "text": "KIPAS (BIASA)",
+            "fontPx": 16,
+            "time": 23.5,
+            "seconds": 17.25
+          },
+          {
+            "selector": "#s3-foreground > g:nth-of-type(1) > text:nth-of-type(2)",
+            "text": "NAMA SENDIRI",
+            "fontPx": 16,
+            "time": 23.5,
+            "seconds": 17.25
+          },
+          {
+            "selector": "#s3-foreground > g:nth-of-type(1) > text:nth-of-type(3)",
+            "text": "SUARA BARU",
+            "fontPx": 16,
+            "time": 23.5,
+            "seconds": 17.25
+          },
+          {
+            "selector": "#s3-src-fan > text:nth-of-type(1)",
+            "text": "KIPAS",
+            "fontPx": 16.32,
+            "time": 23.5,
+            "seconds": 17
+          },
+          {
+            "selector": "#s3-src-name > text:nth-of-type(1)",
+            "text": "NAMA",
+            "fontPx": 17.25,
+            "time": 28.625,
+            "seconds": 12.125
+          },
+          {
+            "selector": "#s3-src-new > text:nth-of-type(2)",
+            "text": "SUARA",
+            "fontPx": 17.74,
+            "time": 32.375,
+            "seconds": 8.375
+          },
+          {
+            "selector": "#s3-src-filter > text:nth-of-type(1)",
+            "text": "FILTER AKTIF",
+            "fontPx": 18.86,
+            "time": 36,
+            "seconds": 4.75
+          },
+          {
+            "selector": "div.s3-eyebrow",
+            "text": "SELEKSI SUARA PENTING",
+            "fontPx": 20,
+            "time": 23.5,
+            "seconds": 17.25
+          },
+          {
+            "selector": "#s3-pill-1 > span:nth-of-type(2)",
+            "text": "SUARA BIASA",
+            "fontPx": 22,
+            "time": 23.875,
+            "seconds": 4.625
+          },
+          {
+            "selector": "#s3-pill-2 > span:nth-of-type(2)",
+            "text": "NAMA SENDIRI",
+            "fontPx": 22,
+            "time": 28.625,
+            "seconds": 3.625
+          },
+          {
+            "selector": "#s3-pill-3 > span:nth-of-type(2)",
+            "text": "SUARA BARU",
+            "fontPx": 22,
+            "time": 32.25,
+            "seconds": 3.625
+          },
+          {
+            "selector": "#s3-pill-4 > span:nth-of-type(2)",
+            "text": "OTAK MEMILAH INFORMASI",
+            "fontPx": 22,
+            "time": 35.875,
+            "seconds": 4.875
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 15 text elements stay under it for 0.5 s or more, the smallest \"ILUSTRASI KONSEPTUAL GELOMBANG EEG LA...\" at 14 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "ILUSTRASI KONSEPTUAL GELOMBANG EEG LAMBAT (N3)",
+        "selector": "#s4-eeg-panel > text:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-04.html",
+        "bbox": {
+          "x": 349.35,
+          "y": 640,
+          "width": 381.3,
+          "height": 20
+        },
+        "time": 40.625,
+        "times": [
+          40.625,
+          40.625,
+          40.625,
+          40.625,
+          40.625,
+          41,
+          44,
+          46.875,
+          47,
+          47,
+          47,
+          47.375,
+          47.375,
+          47.375,
+          50.875
+        ],
+        "fontPx": 14,
+        "floorPx": 28,
+        "seconds": 14.625,
+        "elements": [
+          {
+            "selector": "#s4-eeg-panel > text:nth-of-type(2)",
+            "text": "ILUSTRASI KONSEPTUAL GELOMBANG EEG LAMBAT (N3)",
+            "fontPx": 14,
+            "time": 40.625,
+            "seconds": 14.625
+          },
+          {
+            "selector": "#s4-card-awake > text:nth-of-type(3)",
+            "text": "KESADARAN PENUH",
+            "fontPx": 14.57,
+            "time": 47,
+            "seconds": 8.25
+          },
+          {
+            "selector": "#s4-card-n3 > text:nth-of-type(3)",
+            "text": "TIDAK OTOMATIS SADAR",
+            "fontPx": 14.83,
+            "time": 47.375,
+            "seconds": 7.875
+          },
+          {
+            "selector": "#s4-card-awake > text:nth-of-type(2)",
+            "text": "MENDENGAR & PAHAM",
+            "fontPx": 15.54,
+            "time": 47,
+            "seconds": 8.25
+          },
+          {
+            "selector": "#s4-card-n3 > text:nth-of-type(2)",
+            "text": "ADA AKTIVITAS OTAK",
+            "fontPx": 15.81,
+            "time": 47.375,
+            "seconds": 7.875
+          },
+          {
+            "selector": "#s4-eeg-panel > text:nth-of-type(1)",
+            "text": "TIDUR RINGAN",
+            "fontPx": 16,
+            "time": 40.625,
+            "seconds": 14.625
+          },
+          {
+            "selector": "#s4-n3-badge > text:nth-of-type(1)",
+            "text": "DEEP SLEEP — N3",
+            "fontPx": 17,
+            "time": 40.625,
+            "seconds": 14.625
+          },
+          {
+            "selector": "div.s4-eyebrow",
+            "text": "TAHAP TIDUR DALAM • N3",
+            "fontPx": 20,
+            "time": 40.625,
+            "seconds": 14.625
+          },
+          {
+            "selector": "#s4-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+            "text": "RESPONS OTAK ≠ KESADARAN PENUH",
+            "fontPx": 21,
+            "time": 40.625,
+            "seconds": 14.625
+          },
+          {
+            "selector": "#s4-card-awake > text:nth-of-type(1)",
+            "text": "TERJAGA",
+            "fontPx": 21.37,
+            "time": 47,
+            "seconds": 8.25
+          },
+          {
+            "selector": "#s4-card-n3 > text:nth-of-type(1)",
+            "text": "TIDUR DALAM N3",
+            "fontPx": 21.74,
+            "time": 47.375,
+            "seconds": 7.875
+          },
+          {
+            "selector": "#s4-pill-1 > span:nth-of-type(2)",
+            "text": "DEEP SLEEP — N3",
+            "fontPx": 22,
+            "time": 41,
+            "seconds": 2.875
+          },
+          {
+            "selector": "#s4-pill-2 > span:nth-of-type(2)",
+            "text": "RESPONS SUARA LEBIH TERBATAS",
+            "fontPx": 22,
+            "time": 44,
+            "seconds": 2.75
+          },
+          {
+            "selector": "#s4-pill-3 > span:nth-of-type(2)",
+            "text": "AKTIVITAS OTAK MASIH ADA",
+            "fontPx": 22,
+            "time": 46.875,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#s4-pill-4 > span:nth-of-type(2)",
+            "text": "RESPONS OTAK ≠ SADAR PENUH",
+            "fontPx": 22,
+            "time": 50.875,
+            "seconds": 4.375
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 12 text elements stay under it for 0.5 s or more, the smallest \"DIKURANGI / DISARING\" at 14 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "DIKURANGI / DISARING",
+        "selector": "#s5-summary-cards > g:nth-of-type(1) > text:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene-05.html",
+        "bbox": {
+          "x": 259.19,
+          "y": 1088.58,
+          "width": 176.82,
+          "height": 21.84
+        },
+        "time": 62.375,
+        "times": [
+          55.125,
+          55.125,
+          55.125,
+          55.125,
+          55.5,
+          59.5,
+          61.25,
+          62.375,
+          62.375,
+          62.375,
+          62.375,
+          63.875
+        ],
+        "fontPx": 14.4,
+        "floorPx": 28,
+        "seconds": 5.625,
+        "elements": [
+          {
+            "selector": "#s5-summary-cards > g:nth-of-type(1) > text:nth-of-type(2)",
+            "text": "DIKURANGI / DISARING",
+            "fontPx": 14.4,
+            "time": 62.375,
+            "seconds": 5.625
+          },
+          {
+            "selector": "#s5-summary-cards > g:nth-of-type(2) > text:nth-of-type(2)",
+            "text": "TETAP TERDETEKSI",
+            "fontPx": 14.4,
+            "time": 62.375,
+            "seconds": 5.625
+          },
+          {
+            "selector": "#s5-important-wave > text:nth-of-type(1)",
+            "text": "PENTING!",
+            "fontPx": 15.36,
+            "time": 61.25,
+            "seconds": 6.75
+          },
+          {
+            "selector": "#s5-ambient-waves > text:nth-of-type(1)",
+            "text": "DISARING",
+            "fontPx": 15.6,
+            "time": 55.125,
+            "seconds": 2.875
+          },
+          {
+            "selector": "#s5-summary-cards > g:nth-of-type(1) > text:nth-of-type(1)",
+            "text": "SUARA BIASA",
+            "fontPx": 17.28,
+            "time": 62.375,
+            "seconds": 5.625
+          },
+          {
+            "selector": "#s5-summary-cards > g:nth-of-type(2) > text:nth-of-type(1)",
+            "text": "SINYAL PENTING",
+            "fontPx": 17.28,
+            "time": 62.375,
+            "seconds": 5.625
+          },
+          {
+            "selector": "#s5-watchman > text:nth-of-type(1)",
+            "text": "PENJAGA MALAM OTAK",
+            "fontPx": 18.24,
+            "time": 55.125,
+            "seconds": 12.875
+          },
+          {
+            "selector": "#s5-foreground > g:nth-of-type(1) > text:nth-of-type(1)",
+            "text": "NEUROSAINS TIDUR • PENJAGA MALAM",
+            "fontPx": 20,
+            "time": 55.125,
+            "seconds": 12.875
+          },
+          {
+            "selector": "div.s5-eyebrow",
+            "text": "KESIMPULAN ILMIAH",
+            "fontPx": 20,
+            "time": 55.125,
+            "seconds": 12.875
+          },
+          {
+            "selector": "#s5-pill-1 > span:nth-of-type(2)",
+            "text": "OTAK TETAP MEMANTAU",
+            "fontPx": 21,
+            "time": 55.5,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#s5-pill-2 > span:nth-of-type(2)",
+            "text": "MENYARING SEBAGIAN SUARA",
+            "fontPx": 21,
+            "time": 59.5,
+            "seconds": 4.25
+          },
+          {
+            "selector": "#s5-pill-3 > span:nth-of-type(2)",
+            "text": "TIDUR ≠ OTAK BERHENTI BEKERJA",
+            "fontPx": 21,
+            "time": 63.875,
+            "seconds": 4.125
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 544
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

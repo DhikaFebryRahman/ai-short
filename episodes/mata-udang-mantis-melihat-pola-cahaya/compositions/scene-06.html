@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 06 — Cara Berbeda Melihat Dunia Bawah Laut (Penutup)</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-06" data-duration="16.78" data-fps="30">
+        <style>
+          #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", sans-serif; color: #f8fafc; }
+          .s6-stage { position: absolute; inset: 0; opacity: 0; }
+          .s6-svg { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: visible; }
+          .s6-header { position: absolute; top: 204px; left: 140px; width: 800px; text-align: center; }
+          .s6-eyebrow {
+            display: inline-block; padding: 7px 22px; border-radius: 999px;
+            background: rgba(5, 22, 43, 0.92); border: 2px solid #34d399; color: #6ee7b7;
+            font-size: 20px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;
+          }
+          .s6-title { font-size: 42px; font-weight: 900; line-height: 1.1; color: #f8fafc; text-shadow: 0 4px 18px rgba(2,6,23,0.9); }
+          .s6-pill-bar { position: absolute; top: 1245px; left: 130px; width: 820px; height: 62px; display: flex; align-items: center; justify-content: center; }
+          .s6-pill {
+            position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 12px 24px;
+            border-radius: 999px; background: rgba(5, 22, 43, 0.94); border: 2.5px solid #22d3ee;
+            box-shadow: 0 10px 26px rgba(2, 6, 23, 0.55); color: #67e8f9;
+            font-size: 21px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; opacity: 0;
+          }
+          .s6-pill.is-uv { border-color: #c084fc; color: #e9d5ff; }
+          .s6-pill-dot { width: 14px; height: 14px; border-radius: 50%; background: #22d3ee; }
+          .s6-pill.is-uv .s6-pill-dot { background: #c084fc; }
+        </style>
+
+        <div id="s6-clip" class="s6-stage clip" data-start="0" data-duration="16.78" data-track-index="0">
+          <svg class="s6-svg" viewBox="0 0 1080 1920" fill="none">
+            <defs>
+              <linearGradient id="s6ReefFloor" x1="540" y1="1540" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#0b3b59" />
+                <stop offset="0.55" stop-color="#072238" />
+                <stop offset="1" stop-color="#041222" />
+              </linearGradient>
+              <linearGradient id="s6SpecGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#a855f7" />
+                <stop offset="0.33" stop-color="#22d3ee" />
+                <stop offset="0.66" stop-color="#fbbf24" />
+                <stop offset="1" stop-color="#fb7185" />
+              </linearGradient>
+            </defs>
+
+            <!-- Rising Coral Reef Bubbles -->
+            <g data-layout-ignore fill="#7dd3fc" fill-opacity="0.3" stroke="#bae6fd" stroke-width="2">
+              <circle id="s6-b1" cx="240" cy="880" r="10" />
+              <circle id="s6-b2" cx="835" cy="840" r="13" />
+              <circle id="s6-b3" cx="350" cy="790" r="8" />
+            </g>
+
+            <!-- Camera container zooms gently from wide reef shot to Mantis Eyes (stays in scene, NO End Card!) -->
+            <g id="s6-cam">
+              <!-- Spectrum Ring & Polarization Halo Shimmering Around Reef -->
+              <circle id="s6-spec-ring" cx="540" cy="705" r="295" fill="#06213c" fill-opacity="0.72" stroke="url(#s6SpecGrad)" stroke-width="6" />
+              <circle id="s6-polar-ring" cx="540" cy="705" r="264" fill="none" stroke="#c084fc" stroke-width="4" stroke-dasharray="14 10" opacity="0.7" />
+
+              <!-- Swimming Peacock Mantis Shrimp scanning underwater coral reef -->
+              <g transform="translate(555 715)">
+                <g id="s6-shrimp">
+                  <ellipse cx="10" cy="86" rx="175" ry="22" fill="#020617" fill-opacity="0.48" />
+                  <g id="s6-tail" transform="translate(-148 18)">
+                    <ellipse cx="-26" cy="-18" rx="34" ry="18" fill="#0ea5e9" stroke="#f8fafc" stroke-width="3.5" transform="rotate(-24 -26 -18)" />
+                    <ellipse cx="-32" cy="8" rx="38" ry="18" fill="#f43f5e" stroke="#f8fafc" stroke-width="3.5" transform="rotate(6 -32 8)" />
+                    <circle cx="-38" cy="8" r="8" fill="#1e1b4b" stroke="#fbbf24" stroke-width="2" />
+                    <ellipse cx="-22" cy="30" rx="32" ry="15" fill="#10b981" stroke="#f8fafc" stroke-width="3" transform="rotate(28 -22 30)" />
+                  </g>
+                  <ellipse cx="-104" cy="14" rx="46" ry="38" fill="#059669" stroke="#0f172a" stroke-width="4.5" />
+                  <ellipse cx="-56" cy="4" rx="52" ry="44" fill="#10b981" stroke="#0f172a" stroke-width="4.5" />
+                  <ellipse cx="-2" cy="-2" rx="56" ry="46" fill="#0d9488" stroke="#0f172a" stroke-width="4.5" />
+                  <ellipse cx="52" cy="0" rx="54" ry="44" fill="#34d399" stroke="#0f172a" stroke-width="4.5" />
+                  <g id="s6-clubs" stroke="#fb923c" stroke-width="11" stroke-linecap="round">
+                    <path d="M58 26 L44 64 L78 58" fill="none" />
+                    <path d="M84 26 L74 68 L104 60" fill="none" />
+                  </g>
+                  <path id="s6-ant-1" d="M108 -10 Q168 -42 212 -22" stroke="#f43f5e" stroke-width="5" stroke-linecap="round" fill="none" />
+                  <path id="s6-ant-2" d="M112 6 Q172 16 208 42" stroke="#fb923c" stroke-width="4.5" stroke-linecap="round" fill="none" />
+                  <!-- Two Independent Compound Eyes -->
+                  <g transform="translate(88 -42)"><g id="s6-eye-l">
+                    <line x1="0" y1="22" x2="-12" y2="-16" stroke="#22d3ee" stroke-width="12" stroke-linecap="round" />
+                    <ellipse cx="-14" cy="-24" rx="22" ry="28" fill="#a7f3d0" stroke="#0f172a" stroke-width="4" transform="rotate(-14 -14 -24)" />
+                    <line x1="-34" y1="-28" x2="6" y2="-20" stroke="#4c1d95" stroke-width="6.5" />
+                  </g></g>
+                  <g transform="translate(122 -32)"><g id="s6-eye-r">
+                    <line x1="0" y1="22" x2="12" y2="-16" stroke="#22d3ee" stroke-width="12" stroke-linecap="round" />
+                    <ellipse cx="14" cy="-24" rx="24" ry="30" fill="#6ee7b7" stroke="#0f172a" stroke-width="4" transform="rotate(14 14 -24)" />
+                    <line x1="-8" y1="-20" x2="36" y2="-28" stroke="#c084fc" stroke-width="7.5" />
+                  </g></g>
+                </g>
+              </g>
+
+              <!-- Summary Dual Icons inside Reef Scene -->
+              <g id="s6-summary" opacity="0">
+                <g transform="translate(355 1045)">
+                  <rect x="-160" y="-42" width="320" height="84" rx="22" fill="#05162b" stroke="#22d3ee" stroke-width="3.5" />
+                  <text x="0" y="-4" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="18" fill="#67e8f9">SPEKTRUM WARNA</text>
+                  <text x="0" y="22" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="15" fill="#cbd5e1">HINGGA UV (12 RESEPTOR)</text>
+                </g>
+                <g transform="translate(725 1045)">
+                  <rect x="-160" y="-42" width="320" height="84" rx="22" fill="#05162b" stroke="#c084fc" stroke-width="3.5" />
+                  <text x="0" y="-4" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="18" fill="#e9d5ff">POLA CAHAYA</text>
+                  <text x="0" y="22" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="15" fill="#cbd5e1">LINEAR &amp; MELINGKAR</text>
+                </g>
+              </g>
+            </g>
+
+            <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920): Coral Reef Floor -->
+            <g id="s6-foreground">
+              <path d="M-40 1615 Q240 1550 540 1605 T1120 1580 L1120 1940 L-40 1940 Z" fill="#0b3b59" />
+              <path d="M-40 1665 Q260 1610 540 1660 T1120 1635 L1120 1940 L-40 1940 Z" fill="url(#s6ReefFloor)" stroke="#34d399" stroke-width="4.5" />
+              <g transform="translate(540 1775)">
+                <rect x="-295" y="-30" width="590" height="60" rx="30" fill="#05162b" stroke="#34d399" stroke-width="3.5" />
+                <text x="0" y="7" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="20" fill="#6ee7b7" letter-spacing="1">EKOSISTEM TERUMBU KARANG • STOMATOPODA</text>
+              </g>
+            </g>
+          </svg>
+
+          <div class="s6-header">
+            <div class="s6-eyebrow">KESIMPULAN ILMIAH</div>
+            <h2 class="s6-title">Membaca Pola Cahaya Bawah Laut</h2>
+          </div>
+
+          <div class="s6-pill-bar">
+            <div class="s6-pill" id="s6-pill-1"><span class="s6-pill-dot"></span><span>BUKAN HANYA MELIHAT WARNA</span></div>
+            <div class="s6-pill is-uv" id="s6-pill-2"><span class="s6-pill-dot"></span><span>TETAPI JUGA MEMBACA POLA CAHAYA</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+            var stage = q("#s6-clip"), cam = q("#s6-cam"), shrimp = q("#s6-shrimp");
+            var eyeL = q("#s6-eye-l"), eyeR = q("#s6-eye-r"), ant1 = q("#s6-ant-1"), ant2 = q("#s6-ant-2"), tail = q("#s6-tail"), clubs = q("#s6-clubs");
+            var sRing = q("#s6-spec-ring"), pRing = q("#s6-polar-ring"), summary = q("#s6-summary");
+            var b1 = q("#s6-b1"), b2 = q("#s6-b2"), b3 = q("#s6-b3");
+            var p1 = q("#s6-pill-1"), p2 = q("#s6-pill-2");
+
+            gsap.set(stage, { opacity: 0 });
+            gsap.set(cam, { scale: 0.96, transformOrigin: "50% 60%" });
+            gsap.set(shrimp, { x: -30 });
+            gsap.set(summary, { opacity: 0, y: 16 });
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(stage, { opacity: 1, duration: 0.48, ease: "power2.out" }, 0)
+              .fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 0.45)
+              .to(shrimp, { x: 18, y: -10, duration: 7.5, ease: "sine.inOut" }, 0)
+              .to(shrimp, { y: 4, duration: 2.8, repeat: 2, yoyo: true, ease: "sine.inOut", immediateRender: false }, 7.6)
+              .to(cam, { scale: 1.07, duration: 9.0, ease: "sine.inOut" }, 1.2)
+              .to(eyeL, { rotation: -22, transformOrigin: "50% 90%", duration: 1.25, repeat: 11, yoyo: true, ease: "sine.inOut" }, 0.2)
+              .to(eyeR, { rotation: 26, transformOrigin: "50% 90%", duration: 1.05, repeat: 13, yoyo: true, ease: "sine.inOut" }, 0.4)
+              .to([ant1, ant2], { rotation: 9, transformOrigin: "0% 50%", duration: 0.9, stagger: 0.2, repeat: 15, yoyo: true }, 0.1)
+              .to(tail, { rotation: -8, transformOrigin: "90% 50%", duration: 1.2, repeat: 11, yoyo: true }, 0.1)
+              .to(clubs, { rotation: -9, transformOrigin: "20% 0%", duration: 1.0, repeat: 13, yoyo: true }, 0.2)
+              .to(sRing, { rotation: 18, svgOrigin: "540 705", duration: 14.5, ease: "sine.inOut" }, 0)
+              .to(pRing, { rotation: -72, svgOrigin: "540 705", duration: 14.5, ease: "sine.inOut" }, 0)
+              .to([b1, b2, b3], { y: -150, opacity: 0.1, duration: 4.5, stagger: 0.5, repeat: 2 }, 0.2)
+              .to(summary, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out", immediateRender: false }, 5.6)
+              .to(summary, { y: -6, duration: 2.2, repeat: 3, yoyo: true, ease: "sine.inOut", immediateRender: false }, 6.3)
+              .to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 8.0)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 8.2)
+              // Calm 2.02s hold through 87.00s (NO End Card!)
+              .to({}, { duration: 2.05 }, 14.73);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-06"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

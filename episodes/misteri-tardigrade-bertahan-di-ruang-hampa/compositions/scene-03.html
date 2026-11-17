@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 03 — Rahasia Anhidrobiosis, Tun &amp; Protein Pelindung Sel/DNA</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-03" data-duration="23.99" data-fps="30">
+        <style>
+          #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", sans-serif; color: #f8fafc; }
+          .s3-stage { position: absolute; inset: 0; opacity: 0; }
+          .s3-svg { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: visible; }
+          .s3-header { position: absolute; top: 204px; left: 140px; width: 800px; text-align: center; }
+          .s3-eyebrow {
+            display: inline-block; padding: 7px 22px; border-radius: 999px;
+            background: rgba(11, 22, 48, 0.92); border: 2px solid #fbbf24; color: #fde68a;
+            font-size: 20px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;
+          }
+          .s3-title { font-size: 44px; font-weight: 900; line-height: 1.1; color: #f8fafc; text-shadow: 0 4px 18px rgba(2,6,23,0.9); }
+          .s3-pill-bar { position: absolute; top: 1245px; left: 130px; width: 820px; height: 62px; display: flex; align-items: center; justify-content: center; }
+          .s3-pill {
+            position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 12px 24px;
+            border-radius: 999px; background: rgba(11, 22, 48, 0.94); border: 2.5px solid #fbbf24;
+            box-shadow: 0 10px 26px rgba(2, 6, 23, 0.55); color: #fde68a;
+            font-size: 22px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0;
+          }
+          .s3-pill.is-cyan { border-color: #38bdf8; color: #7dd3fc; }
+          .s3-pill.is-green { border-color: #34d399; color: #6ee7b7; }
+          .s3-pill-dot { width: 14px; height: 14px; border-radius: 50%; background: #fbbf24; }
+          .s3-pill.is-cyan .s3-pill-dot { background: #38bdf8; }
+          .s3-pill.is-green .s3-pill-dot { background: #34d399; }
+        </style>
+
+        <div id="s3-clip" class="s3-stage clip" data-start="0" data-duration="23.99" data-track-index="0">
+          <svg class="s3-svg" viewBox="0 0 1080 1920" fill="none">
+            <defs>
+              <linearGradient id="s3SpaceFloor" x1="540" y1="1540" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#112a46" />
+                <stop offset="0.5" stop-color="#091834" />
+                <stop offset="1" stop-color="#050b1c" />
+              </linearGradient>
+            </defs>
+
+            <!-- BEAT 1: Active Tardigrade Drying -> Compact Barrel Tun (0 - 12.2s local = 18.68 - 30.88s vid) -->
+            <g id="s3-anhy-stage">
+              <circle cx="540" cy="705" r="285" fill="#091938" fill-opacity="0.86" stroke="#38bdf8" stroke-width="4" stroke-dasharray="10 10" />
+              <circle id="s3-tun-aura" cx="540" cy="705" r="140" fill="none" stroke="#fbbf24" stroke-width="6" opacity="0" />
+              <!-- Evaporating H2O Droplets floating upward -->
+              <g id="s3-evap-drops">
+                <g transform="translate(385 605)"><g id="s3-h2o-1"><circle cx="0" cy="0" r="22" fill="#38bdf8" stroke="#e0f2fe" stroke-width="3" /><text x="0" y="5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="13" fill="#09132b">H₂O</text></g></g>
+                <g transform="translate(695 595)"><g id="s3-h2o-2"><circle cx="0" cy="0" r="22" fill="#38bdf8" stroke="#e0f2fe" stroke-width="3" /><text x="0" y="5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="13" fill="#09132b">H₂O</text></g></g>
+                <g transform="translate(350 745)"><g id="s3-h2o-3"><circle cx="0" cy="0" r="18" fill="#7dd3fc" stroke="#e0f2fe" stroke-width="2.5" /></g></g>
+                <g transform="translate(725 755)"><g id="s3-h2o-4"><circle cx="0" cy="0" r="18" fill="#7dd3fc" stroke="#e0f2fe" stroke-width="2.5" /></g></g>
+              </g>
+
+              <!-- Active Tardigrade curling inward into golden Tun -->
+              <g id="s3-active-tardi" transform="translate(540 695)">
+                <path id="s3-tardi-legs" d="M-86 38 L-96 72 M-32 46 L-36 78 M32 46 L28 78 M86 38 L96 72" stroke="#6ee7b7" stroke-width="8" stroke-linecap="round" />
+                <ellipse cx="-78" cy="0" rx="58" ry="48" fill="#a7f3d0" stroke="#0f172a" stroke-width="5" />
+                <ellipse cx="-22" cy="-6" rx="64" ry="54" fill="#6ee7b7" stroke="#0f172a" stroke-width="5" />
+                <ellipse cx="38" cy="-4" rx="62" ry="52" fill="#a7f3d0" stroke="#0f172a" stroke-width="5" />
+                <ellipse cx="94" cy="4" rx="48" ry="42" fill="#6ee7b7" stroke="#0f172a" stroke-width="5" />
+                <circle cx="106" cy="-8" r="4.5" fill="#0f172a" />
+                <circle cx="122" cy="-4" r="4.5" fill="#0f172a" />
+              </g>
+
+              <!-- Compact Golden Barrel-Shaped Tun -->
+              <g transform="translate(540 705)">
+                <g id="s3-tun-body" opacity="0">
+                  <ellipse cx="0" cy="0" rx="102" ry="74" fill="#f59e0b" stroke="#fde68a" stroke-width="5" />
+                  <path d="M-56 -62 Q-66 0 -56 62 M-18 -72 Q-28 0 -18 72 M22 -72 Q12 0 22 72 M60 -62 Q50 0 60 62" stroke="#78350f" stroke-width="5" fill="none" />
+                  <rect x="-72" y="96" width="144" height="38" rx="19" fill="#09132b" stroke="#fbbf24" stroke-width="3.5" />
+                  <text x="0" y="121" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="19" fill="#fde68a">BENTUK TUN</text>
+                </g>
+              </g>
+
+              <!-- Metabolism Drop Bar (y=975) -->
+              <g id="s3-metab-bar" transform="translate(540 975)">
+                <rect x="-255" y="-36" width="510" height="72" rx="22" fill="#0b1836" stroke="#38bdf8" stroke-width="4" />
+                <text x="-225" y="-7" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#e2e8f0">METABOLISME</text>
+                <rect x="-225" y="7" width="450" height="16" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2" />
+                <rect id="s3-metab-fill" x="-223" y="9" width="446" height="12" rx="6" fill="#34d399" />
+                <text id="s3-metab-pct" x="225" y="-7" text-anchor="end" font-family="Poppins, sans-serif" font-weight="900" font-size="18" fill="#6ee7b7">100% ➔ &lt;0.1%</text>
+              </g>
+            </g>
+
+            <!-- BEAT 2 (12.2 - 23.99s local = 30.88 - 42.67s vid, right at detik 32!):
+                 CLEAR VISUAL MECHANISM: Desiccation Stress -> Protein Shield Matrix Locking Around Cell & DNA -> Interspecies Difference -->
+            <g id="s3-cell-stage" opacity="0">
+              <!-- Step Banner at top of Beat 2 -->
+              <g transform="translate(540 432)">
+                <rect x="-260" y="-24" width="520" height="48" rx="24" fill="#0b1836" stroke="#fbbf24" stroke-width="3" />
+                <text id="s3-mech-label" x="0" y="6" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="18" fill="#fde68a">PERISAI PROTEIN MELINDUNGI SEL &amp; DNA</text>
+              </g>
+
+              <!-- Inward Desiccation Stress Arrows (press cell before proteins stabilize it!) -->
+              <g id="s3-stress-arrows" stroke="#fb7185" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0">
+                <path d="M180 715 L268 715 M252 700 L270 715 L252 730" />
+                <path d="M900 715 L812 715 M828 700 L810 715 L828 730" />
+                <path d="M540 475 L540 508 M526 494 L540 510 L554 494" />
+                <path d="M540 955 L540 922 M526 936 L540 920 L554 936" />
+              </g>
+
+              <!-- Outer Cell Membrane (shrinks under drying stress, then snaps back & glows green once stabilized!) -->
+              <g transform="translate(540 715)">
+                <g id="s3-cell-membrane">
+                  <circle cx="0" cy="0" r="220" fill="#091f38" fill-opacity="0.92" stroke="#34d399" stroke-width="9" />
+                  <circle id="s3-shield-halo" cx="0" cy="0" r="236" fill="none" stroke="#fbbf24" stroke-width="6" stroke-dasharray="18 10" opacity="0" />
+                  <circle cx="0" cy="0" r="196" fill="none" stroke="#7dd3fc" stroke-width="3" stroke-dasharray="10 10" opacity="0.45" />
+                </g>
+              </g>
+
+              <!-- DNA Double Helix Inside Protective Nucleus (2-layer wrapper) -->
+              <g transform="translate(540 715)">
+                <g id="s3-dna">
+                  <circle cx="0" cy="0" r="102" fill="#06142e" stroke="#38bdf8" stroke-width="4.5" />
+                  <circle id="s3-dna-shield" cx="0" cy="0" r="114" fill="none" stroke="#fbbf24" stroke-width="5" stroke-dasharray="12 8" opacity="0" />
+                  <path d="M-54 -52 Q-18 -22 0 -52 T54 -52" stroke="#38bdf8" stroke-width="6" fill="none" />
+                  <path d="M-54 -14 Q-18 16 0 -14 T54 -14" stroke="#34d399" stroke-width="6" fill="none" />
+                  <path d="M-54 24 Q-18 -6 0 24 T54 24" stroke="#7dd3fc" stroke-width="6" fill="none" />
+                  <line x1="-32" y1="-48" x2="-32" y2="22" stroke="#fb7185" stroke-width="4" />
+                  <line x1="0" y1="-48" x2="0" y2="22" stroke="#fbbf24" stroke-width="4" />
+                  <line x1="32" y1="-48" x2="32" y2="22" stroke="#34d399" stroke-width="4" />
+                  <text x="0" y="68" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="18" fill="#7dd3fc">DNA &amp; INTI SEL</text>
+                </g>
+              </g>
+
+              <!-- Protective Proteins Forming Interlocking Gel Matrix Around Membrane & DNA -->
+              <g id="s3-proteins">
+                <!-- Outer Cushion Proteins -->
+                <g id="s3-p-top" transform="translate(540 500)"><rect x="-60" y="-20" width="120" height="40" rx="20" fill="#fbbf24" stroke="#0f172a" stroke-width="3.5" /><text x="0" y="6" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="16" fill="#0f172a">PROTEIN</text></g>
+                <g id="s3-p-left" transform="translate(328 715)"><rect x="-48" y="-20" width="96" height="40" rx="20" fill="#34d399" stroke="#0f172a" stroke-width="3.5" /><text x="0" y="6" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="15" fill="#0f172a">PERISAI</text></g>
+                <g id="s3-p-right" transform="translate(752 715)"><rect x="-48" y="-20" width="96" height="40" rx="20" fill="#34d399" stroke="#0f172a" stroke-width="3.5" /><text x="0" y="6" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="15" fill="#0f172a">PERISAI</text></g>
+                <!-- Inner DNA Matrix Cushions -->
+                <g id="s3-p-c1" transform="translate(415 602)"><circle cx="0" cy="0" r="22" fill="#fbbf24" stroke="#0f172a" stroke-width="3.5" /><text x="0" y="5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="13" fill="#0f172a">P</text></g>
+                <g id="s3-p-c2" transform="translate(665 602)"><circle cx="0" cy="0" r="22" fill="#fbbf24" stroke="#0f172a" stroke-width="3.5" /><text x="0" y="5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="13" fill="#0f172a">P</text></g>
+                <g id="s3-p-c3" transform="translate(415 828)"><circle cx="0" cy="0" r="22" fill="#34d399" stroke="#0f172a" stroke-width="3.5" /><text x="0" y="5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="13" fill="#0f172a">P</text></g>
+                <g id="s3-p-c4" transform="translate(665 828)"><circle cx="0" cy="0" r="22" fill="#34d399" stroke="#0f172a" stroke-width="3.5" /><text x="0" y="5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="13" fill="#0f172a">P</text></g>
+                <!-- Connecting Stabilizer Bridges -->
+                <circle cx="540" cy="715" r="158" fill="none" stroke="#fbbf24" stroke-width="3" stroke-dasharray="8 8" opacity="0.65" />
+              </g>
+
+              <!-- Interspecies Variation Comparison Cards (lights up at ~37.5s vid) -->
+              <g id="s3-species-diff" opacity="0">
+                <g transform="translate(345 1030)">
+                  <rect x="-165" y="-34" width="330" height="68" rx="22" fill="#0b1836" stroke="#38bdf8" stroke-width="3.5" />
+                  <text x="0" y="-4" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="17" fill="#7dd3fc">SPESIES A</text>
+                  <text x="0" y="20" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="15" fill="#e2e8f0">PROTEIN CAHS KHUSUS</text>
+                </g>
+                <g transform="translate(735 1030)">
+                  <rect x="-165" y="-34" width="330" height="68" rx="22" fill="#0b1836" stroke="#fbbf24" stroke-width="3.5" />
+                  <text x="0" y="-4" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="17" fill="#fde68a">SPESIES B</text>
+                  <text x="0" y="20" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="15" fill="#e2e8f0">MEKANISME BERBEDA</text>
+                </g>
+              </g>
+            </g>
+
+            <!-- Water Droplet Preview before Scene 4 (2-layer wrapper) -->
+            <g transform="translate(540 420)">
+              <g id="s3-rehydrate-hint" opacity="0">
+                <path d="M0 -34 C-22 2 -24 26 0 32 C24 26 22 2 0 -34 Z" fill="#38bdf8" stroke="#e0f2fe" stroke-width="3.5" />
+              </g>
+            </g>
+
+            <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920): Bioluminescent Cosmic Moss Terrain -->
+            <g id="s3-foreground">
+              <path d="M-40 1625 Q240 1545 540 1605 T1120 1580 L1120 1940 L-40 1940 Z" fill="#0c2444" />
+              <path d="M-40 1670 Q260 1610 540 1660 T1120 1635 L1120 1940 L-40 1940 Z" fill="url(#s3SpaceFloor)" stroke="#34d399" stroke-width="4.5" />
+              <g transform="translate(540 1780)">
+                <rect x="-245" y="-30" width="490" height="60" rx="30" fill="#09132b" stroke="#34d399" stroke-width="4" />
+                <text x="0" y="7" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="20" fill="#6ee7b7" letter-spacing="1">PERLINDUNGAN BIOLOGIS ANHIDROBIOSIS</text>
+              </g>
+            </g>
+          </svg>
+
+          <div class="s3-header">
+            <div class="s3-eyebrow">MEKANISME BERTAHAN HIDUP</div>
+            <h2 class="s3-title">Rahasia Anhidrobiosis &amp; Tun</h2>
+          </div>
+
+          <div class="s3-pill-bar">
+            <div class="s3-pill" id="s3-pill-1"><span class="s3-pill-dot"></span><span>ANHIDROBIOSIS • KEHILANGAN AIR</span></div>
+            <div class="s3-pill" id="s3-pill-2"><span class="s3-pill-dot"></span><span>TUN STATE • METABOLISME TURUN</span></div>
+            <div class="s3-pill is-green" id="s3-pill-3"><span class="s3-pill-dot"></span><span>PROTEIN PELINDUNG SEL &amp; DNA</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+            var stage = q("#s3-clip");
+            var anhy = q("#s3-anhy-stage"), h1 = q("#s3-h2o-1"), h2 = q("#s3-h2o-2"), h3 = q("#s3-h2o-3"), h4 = q("#s3-h2o-4");
+            var actT = q("#s3-active-tardi"), tunB = q("#s3-tun-body"), tunAura = q("#s3-tun-aura");
+            var metabFill = q("#s3-metab-fill");
+            var cellStage = q("#s3-cell-stage"), cellMem = q("#s3-cell-membrane"), stress = q("#s3-stress-arrows");
+            var shieldHalo = q("#s3-shield-halo"), dnaShield = q("#s3-dna-shield"), prot = q("#s3-proteins"), dna = q("#s3-dna");
+            var pc1 = q("#s3-p-c1"), pc2 = q("#s3-p-c2"), pc3 = q("#s3-p-c3"), pc4 = q("#s3-p-c4");
+            var spDiff = q("#s3-species-diff"), rehyd = q("#s3-rehydrate-hint");
+            var p1 = q("#s3-pill-1"), p2 = q("#s3-pill-2"), p3 = q("#s3-pill-3");
+
+            gsap.set(stage, { opacity: 0 });
+            gsap.set(actT, { scale: 1, opacity: 1, svgOrigin: "540 695" });
+            gsap.set(tunB, { scale: 0.7, opacity: 0, transformOrigin: "50% 50%" });
+            gsap.set(cellStage, { opacity: 0, scale: 0.9, svgOrigin: "540 715" });
+            gsap.set(cellMem, { scale: 1, transformOrigin: "50% 50%" });
+            gsap.set(prot, { scale: 1.35, opacity: 0, svgOrigin: "540 715" });
+            gsap.set(spDiff, { opacity: 0, y: 16 });
+
+            var tl = gsap.timeline({ paused: true });
+            // Beat 1: Evaporation -> Compression into Tun -> Metabolism drops to <0.1%
+            tl.to(stage, { opacity: 1, duration: 0.48, ease: "power2.out" }, 0)
+              .fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 0.45)
+              .to([h1, h2], { y: -115, scale: 0.6, opacity: 0, duration: 3.4, stagger: 0.35, ease: "power2.in" }, 1.6)
+              .to([h3, h4], { y: -95, scale: 0.65, opacity: 0, duration: 3.2, stagger: 0.35, ease: "power2.in" }, 2.1)
+              .to(actT, { scaleX: 0.56, scaleY: 0.72, opacity: 0, duration: 2.0, ease: "power2.inOut" }, 5.4)
+              .to(tunB, { opacity: 1, scale: 1, duration: 1.0, ease: "back.out(1.45)", immediateRender: false }, 6.9)
+              .to(tunAura, { opacity: 0.85, scale: 1.08, svgOrigin: "540 705", duration: 0.9, repeat: 4, yoyo: true, ease: "sine.inOut" }, 7.2)
+              .to(metabFill, { attr: { width: 22 }, duration: 2.2, ease: "power2.out" }, 7.0)
+              .to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 8.6)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 8.8);
+
+            // Beat 2 (12.2 - 23.99s local = detik 30.88 - 42.67s):
+            // Step 1: Desiccation stress pushes inward -> Step 2: Protective Proteins lock around Cell & DNA -> Step 3: Interspecies difference
+            tl.to(anhy, { opacity: 0, scale: 0.88, svgOrigin: "540 705", duration: 0.52, ease: "power2.in", immediateRender: false }, 12.2)
+              .to(cellStage, { opacity: 1, scale: 1, duration: 0.58, ease: "power2.out", immediateRender: false }, 12.55)
+              .to(p2, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 12.7)
+              .fromTo(p3, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 12.9)
+              // Stress arrows squeeze membrane inward slightly (t = 12.8 - 14.3s = detik 31.5 - 33.0s)
+              .to(stress, { opacity: 1, duration: 0.45, ease: "power2.out" }, 12.8)
+              .to(cellMem, { scale: 0.92, duration: 0.75, ease: "power2.inOut" }, 12.9)
+              // Proteins fly in and lock into protective matrix around membrane & DNA! (t = 13.5 - 16.5s = detik 32.2 - 35.2s)
+              .to(prot, { opacity: 1, scale: 1, duration: 0.85, ease: "back.out(1.45)", immediateRender: false }, 13.5)
+              .to([shieldHalo, dnaShield], { opacity: 0.92, duration: 0.6, ease: "power2.out" }, 14.0)
+              .to(cellMem, { scale: 1.0, duration: 0.65, ease: "elastic.out(1, 0.5)", immediateRender: false }, 14.1)
+              .to(stress, { opacity: 0, scale: 1.18, svgOrigin: "540 715", duration: 0.55, ease: "power2.out", immediateRender: false }, 14.2)
+              .to([pc1, pc2, pc3, pc4], { scale: 1.18, transformOrigin: "50% 50%", duration: 0.7, repeat: 6, yoyo: true, ease: "sine.inOut" }, 14.6)
+              .to(shieldHalo, { rotation: 36, transformOrigin: "50% 50%", duration: 6.5, ease: "sine.inOut" }, 14.5)
+              .to(dna, { rotation: 8, transformOrigin: "50% 50%", duration: 3.2, ease: "sine.inOut" }, 13.8)
+              .to(dna, { rotation: -6, duration: 3.4, ease: "sine.inOut", immediateRender: false }, 17.0)
+              // Interspecies comparison cards appear cleanly when VO explains "Mekanismenya berbeda antarspesies" (~18.8s local = 37.5s vid)
+              .to(spDiff, { opacity: 1, y: 0, duration: 0.55, ease: "power2.out", immediateRender: false }, 18.8)
+              .fromTo(rehyd, { opacity: 0, y: -20 }, { opacity: 1, y: 78, duration: 1.05, ease: "power2.in" }, 22.0)
+              .to(stage, { opacity: 0, duration: 0.48, ease: "power2.inOut", immediateRender: false }, 23.51);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-03"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

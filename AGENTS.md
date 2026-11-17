@@ -21,7 +21,7 @@
    - *Kontrak & CLI HyperFrames:* `hyperframes`, `hyperframes-cli`, `hyperframes-registry`
    - *Koreografi & Prinsip Animasi:* `motion-design` (Three Pillars, layer Primary/Secondary/Ambient, Motion Personality, aturan 1/3)
    - *Arsitektur & Performa GSAP:* `gsap-core` (transform aliases `x`/`y`/`scale`/`rotation`, `immediateRender: false` untuk multi-tween pada properti sama), `gsap-timeline` (labels, `<`/`>` placement, defaults), `gsap-plugins` (`SplitText`, `DrawSVG`/`MorphSVG`/`MotionPath` gratis via CDN/npm), `gsap-performance` (properti compositor saja, batch reads/writes), `gsap-utils` (`clamp`, `mapRange`, `interpolate`, `snap`)
-   - *Gaya 2D, Karakter & SVG:* `kapsul-2d-character-rig`, `hyperframes-lottie-svg`, `style-sampling`, `awesome-opus5-5-videos`
+   - *Gaya 2D, Karakter, SVG & Anti-Revisi QA:* `kapsul-2d-character-rig`, `hyperframes-lottie-svg`, `kapsul-pre-preview-qa`, `style-sampling`, `awesome-opus5-5-videos`
    - *Aset, Audio, BGM, SFX & Pemrosesan:* `media-use`, `kapsul-sfx-sound-design`, `ffmpeg`
    - *Desain & Input Eksternal (bila relevan):* `canva-cli`, `canva-edit-design`, `canva-resize-for-social-media`, `figma`, `reverse-any-video`, `motion-graphics-by-nalarka`, `remotion-to-hyperframes`
 1. Ukur durasi & jeda voiceover (`ffmpeg` / `ffprobe`); selaraskan batas scene dan caption dengan jeda kalimat. Siapkan/generate BGM & cue SFX di `episodes/<nama-proyek>/assets/`.

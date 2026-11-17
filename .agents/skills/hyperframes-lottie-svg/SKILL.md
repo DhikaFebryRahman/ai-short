@@ -56,12 +56,16 @@ function syncSpark() {
   var pt = pathEl.getPointAtLength(spark.p * len);
   gsap.set(dotEl, { attr: { cx: pt.x.toFixed(1), cy: pt.y.toFixed(1) }, opacity: 1 });
 }
+syncSpark(); // wajib panggil di init agar posisi awal langsung di atas kurva!
 tl.to(pathEl, { strokeDashoffset: 0, duration: 1.4, ease: "power2.out" }, 0.5);
 tl.to(spark, { p: 1, duration: 1.4, ease: "power2.out", onUpdate: syncSpark }, 0.5);
 ```
 
+> **WAJIB — Shared-Container Rule saat Kurva Ikut Bergeser:** Jika `<path>` gelombang (mis. kurva EEG) digeser/di-scroll (`x`, `y`, `scale`), **jangan animasikan `pathEl` langsung!** Bungkus `pathEl` dan `dotEl` di dalam satu `<g id="wave-track">` yang sama lalu animasikan `x`/`y` pada `#wave-track`. Dengan begitu koordinat lokal `getPointAtLength()` dan `dotEl` selalu terkunci 100% di atas kurva di setiap frame!
+
 ## 3. Checklist Anti-Error
 - Tidak ada CSS `@keyframes` atau `transition` di luar GSAP/HyperFrames timeline.
 - Seluruh `<svg>` yang beranimasi zoom/pan di luar viewport memakai atribut `data-layout-allow-overflow` pada wrapper kameranya.
-- Jalankan `npx hyperframes check --json` + `npx hyperframes snapshot --at ...` setelah mengubah timeline untuk memastikan tidak ada frame freeze atau flicker.
+- Partikel teks dekoratif bergerak (seperti `Zzz`, angka/huruf melayang) wajib diberi `data-layout-ignore` pada grup pembungkus `<g>` agar tidak memicu *false-positive* `content_overlap` di `hyperframes check`.
+- Jalankan `npx hyperframes check --json` + `npx hyperframes snapshot --at ...` setelah mengubah timeline untuk memastikan tidak ada frame freeze, flicker, atau dot terlepas dari kurva.
 

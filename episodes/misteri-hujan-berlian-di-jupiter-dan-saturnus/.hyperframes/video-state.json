@@ -1,0 +1,1723 @@
+{
+  "version": 1,
+  "historyId": "baa22226-ba47-4ada-84f9-0b1e017eae99",
+  "currentRevision": "3da0752b-c68c-4acb-ac1b-af126074ce70",
+  "pendingChanges": false,
+  "files": {
+    ".media/manifest.jsonl": {
+      "hash": "a419082781b46bb96d15233b0f19123aba0fd380c10085e2fd872e3efd2078a0",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/a4/a419082781b46bb96d15233b0f19123aba0fd380c10085e2fd872e3efd2078a0"
+    },
+    "AGENTS.md": {
+      "hash": "268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/26/268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a"
+    },
+    "CLAUDE.md": {
+      "hash": "268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/26/268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a"
+    },
+    "assets/audio/sfx/CREDITS.md": {
+      "hash": "614bf593329bfb37c7532266c26e27038a439e1f771465fd93586d68bbdc030e",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/61/614bf593329bfb37c7532266c26e27038a439e1f771465fd93586d68bbdc030e"
+    },
+    "assets/audio/sfx/gleam-chime.wav": {
+      "hash": "e0dd400a2c51cb2a19f9c98f9a19e2ff9dc2992b0d0d7e0089f586b5ee4d13df",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/e0/e0dd400a2c51cb2a19f9c98f9a19e2ff9dc2992b0d0d7e0089f586b5ee4d13df"
+    },
+    "assets/audio/sfx/laser-beam.wav": {
+      "hash": "4aa69400ea04effc1ca4cd710a47116c0ed76472d5ac1c710b41b682d6c63e7b",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/4a/4aa69400ea04effc1ca4cd710a47116c0ed76472d5ac1c710b41b682d6c63e7b"
+    },
+    "assets/audio/sfx/lightning-zap.wav": {
+      "hash": "a974c6b556a5da162323971506394848cda75ff046edfca60fcc7cb2592c42ff",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/a9/a974c6b556a5da162323971506394848cda75ff046edfca60fcc7cb2592c42ff"
+    },
+    "assets/audio/sfx/pop-bubble.wav": {
+      "hash": "dc4e470d4fc62b5964fcfd231b772fce9cea3543ff2556ed22889d92b1c2a15f",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/dc/dc4e470d4fc62b5964fcfd231b772fce9cea3543ff2556ed22889d92b1c2a15f"
+    },
+    "assets/audio/sfx/water-drop.wav": {
+      "hash": "d2199c22eb219014ca58dce2ed9d9515b8f08a54d08b26bb8a9f3ff111d9a377",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/d2/d2199c22eb219014ca58dce2ed9d9515b8f08a54d08b26bb8a9f3ff111d9a377"
+    },
+    "assets/audio/sfx/whoosh-soft.wav": {
+      "hash": "5e57400b0af873de54028a8af327f0050d5a67dfd1ae7733c328d8b51ae2bc97",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/5e/5e57400b0af873de54028a8af327f0050d5a67dfd1ae7733c328d8b51ae2bc97"
+    },
+    "compositions/backdrop.html": {
+      "hash": "71d6a0a4ed661ee893c906f340f24428d1dfca85011cd2524f79c7402d7c52c9",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/71/71d6a0a4ed661ee893c906f340f24428d1dfca85011cd2524f79c7402d7c52c9"
+    },
+    "compositions/captions.html": {
+      "hash": "4babcf06bff0877decfd09950c7aa84cde5dba198af2a9e36a4ac7981ac49db6",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/4b/4babcf06bff0877decfd09950c7aa84cde5dba198af2a9e36a4ac7981ac49db6"
+    },
+    "compositions/hud.html": {
+      "hash": "ff82dd0f0b39aaf426d96da90a004b68b8c3ae468c5e52cab1e6a229cf73958d",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/ff/ff82dd0f0b39aaf426d96da90a004b68b8c3ae468c5e52cab1e6a229cf73958d"
+    },
+    "compositions/scene-01.html": {
+      "hash": "df0ed3108d6a2a3ed012760e490605e72d8e83a0a3bd152045864cfe96938d95",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/df/df0ed3108d6a2a3ed012760e490605e72d8e83a0a3bd152045864cfe96938d95"
+    },
+    "compositions/scene-02.html": {
+      "hash": "ccb51c7cf56e49e79b15f338adabc8221b8c9e351214d0df8057d92ec0b9e7b6",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/cc/ccb51c7cf56e49e79b15f338adabc8221b8c9e351214d0df8057d92ec0b9e7b6"
+    },
+    "compositions/scene-03.html": {
+      "hash": "744f279d02e6329e68f1727d20813209d6752f3d246891188ea713e6c18fe930",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/74/744f279d02e6329e68f1727d20813209d6752f3d246891188ea713e6c18fe930"
+    },
+    "compositions/scene-04.html": {
+      "hash": "555bd51065e8b77521cdb7bc554bfe7102491166d6bc5dc7a5bfc18656cf94b4",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/55/555bd51065e8b77521cdb7bc554bfe7102491166d6bc5dc7a5bfc18656cf94b4"
+    },
+    "compositions/scene-05.html": {
+      "hash": "a29dd1a8e1ab37d99e05a5200f3b66ddc636bbe3b23cd32a3811bb8b6bc897f1",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/a2/a29dd1a8e1ab37d99e05a5200f3b66ddc636bbe3b23cd32a3811bb8b6bc897f1"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "d48d0e3a546f4e5128fe1c624c8fea19a153960fa58c3c0d873b5d971abd1b83",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/d4/d48d0e3a546f4e5128fe1c624c8fea19a153960fa58c3c0d873b5d971abd1b83"
+    },
+    "meta.json": {
+      "hash": "d8637970592201e172a4f12c15de989ae2a5423a7e0bdc97e6016efee2b0d8a7",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/d8/d8637970592201e172a4f12c15de989ae2a5423a7e0bdc97e6016efee2b0d8a7"
+    },
+    "package.json": {
+      "hash": "00efabc6e05824122dba224248911079bd4e58dd1d97dec9898dada700a5e927",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/00/00efabc6e05824122dba224248911079bd4e58dd1d97dec9898dada700a5e927"
+    },
+    "assets/audio/bgm.wav": {
+      "hash": "a3d5e6e2ea17d8589b588ab553f51b8e65dd72c30376216f07a9937b609c8d44",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/a3/a3d5e6e2ea17d8589b588ab553f51b8e65dd72c30376216f07a9937b609c8d44"
+    },
+    "assets/audio/vo.mp3": {
+      "hash": "a929ed666a2f5ce8d2b0d9864165a1efc3d36bd53b7849814da38a706941f5dd",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/a9/a929ed666a2f5ce8d2b0d9864165a1efc3d36bd53b7849814da38a706941f5dd"
+    },
+    "assets/vendor/three.min.js": {
+      "hash": "8a5f7249903b54d30f79f708699d2fed2d6a1d0741a4cd41377d1f01bb5a2271",
+      "content": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/8a/8a5f7249903b54d30f79f708699d2fed2d6a1d0741a4cd41377d1f01bb5a2271"
+    }
+  },
+  "revisions": {
+    "31961cb9-0283-497a-bd9d-9c6f676ebe0f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794848694739,
+      "endedAt": 1794848694752,
+      "files": {
+        "assets/audio/sfx/gleam-chime.wav": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/c9/c91a0136bbe44980e2efb6c32abec54d4b6a11b0cf7ee17eb13e11c1ad07cb2d",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/e0/e0dd400a2c51cb2a19f9c98f9a19e2ff9dc2992b0d0d7e0089f586b5ee4d13df"
+        },
+        "compositions/scene-01.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/6e/6ebadf5e639b3e6dadf1ee59b0d0b2a8162ec4ddc0535ee344e147426f68a812",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/15/15e2b11aa49d4268a0f8403aab563a6ba155de221572ec541f34d55b5d3f5327"
+        },
+        "compositions/scene-02.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/a1/a19caf034dba29a643530809fba44b6542b449bdd251cb8e4bc25286dda58154",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/e8/e828450517e8bb2a0338cd25a6f3ad31d686b3e6473ecd2240b036f68dba5caf"
+        },
+        "compositions/scene-03.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/96/96ab71550d47540bfe502463f881897e1733a7db10650e51c74c9407c5e7c2e3",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/d4/d4a15f73fdaae9b2d7b2c52241059260b439397fdcbca79a1794780d4ce18c8a"
+        },
+        "compositions/scene-04.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/34/34c32d071b2e627b4b8faaab08c9d044a8c8e1bb8d63c63d48573996553ff795",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/bc/bcb91f19b8edb2ba4a010e209161684a3eab6b3918d7b3cc54346f5e4d480d48"
+        },
+        "compositions/scene-05.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/3d/3dc0087aedb9e9877e68f5b49b2c6bd1bf5fff0996060e08263329db9c6747ee",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/06/06067831316731cd4c5723e46be9f8bb4961b406c773c77cdf74af9904486156"
+        }
+      }
+    },
+    "136212b5-e57a-4285-8010-4b5a446e5879": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794853801309,
+      "endedAt": 1794853803311,
+      "files": {
+        "compositions/scene-01.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/15/15e2b11aa49d4268a0f8403aab563a6ba155de221572ec541f34d55b5d3f5327",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/fb/fbb6e3658a1edff5ad565f6464932064ca5c53731c7e9cebbf4dd5f75290f775"
+        }
+      }
+    },
+    "deca6dcb-3824-4c33-8580-c93239376d35": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794853803504,
+      "endedAt": 1794853805504,
+      "files": {
+        "compositions/scene-02.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/e8/e828450517e8bb2a0338cd25a6f3ad31d686b3e6473ecd2240b036f68dba5caf",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/96/9655c5a54fe31f461870c331505049f7368dc512eb2148e52378b00382e0126a"
+        }
+      }
+    },
+    "a1974465-1883-4eac-a8c5-1547b76f3f7b": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794853849069,
+      "endedAt": 1794853852878,
+      "files": {
+        "compositions/scene-01.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/fb/fbb6e3658a1edff5ad565f6464932064ca5c53731c7e9cebbf4dd5f75290f775",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/df/df0ed3108d6a2a3ed012760e490605e72d8e83a0a3bd152045864cfe96938d95"
+        },
+        "compositions/scene-02.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/96/9655c5a54fe31f461870c331505049f7368dc512eb2148e52378b00382e0126a",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/cc/ccb51c7cf56e49e79b15f338adabc8221b8c9e351214d0df8057d92ec0b9e7b6"
+        }
+      }
+    },
+    "3b5e8877-c122-4516-8ccf-9abd8a8688ce": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794853875429,
+      "endedAt": 1794853879219,
+      "files": {
+        "compositions/scene-04.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/bc/bcb91f19b8edb2ba4a010e209161684a3eab6b3918d7b3cc54346f5e4d480d48",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/52/52abea8812ad6649cdccc25e0576968fa98530894129b70f092848da52a3729c"
+        },
+        "compositions/scene-05.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/06/06067831316731cd4c5723e46be9f8bb4961b406c773c77cdf74af9904486156",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/f2/f216af45d6727203f99b69617d7c42ead61196db5397e435c739558c884d5c24"
+        }
+      }
+    },
+    "37e7ae31-34ee-47da-96fb-27108126a33c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794853914802,
+      "endedAt": 1794853916802,
+      "files": {
+        "compositions/scene-04.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/52/52abea8812ad6649cdccc25e0576968fa98530894129b70f092848da52a3729c",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/92/92e57f67d1db602c127de44563bcdbcc2225a8deebbcbdae7ae2561d6eff8dac"
+        }
+      }
+    },
+    "c4b34719-d1e7-4931-99cb-375b77730483": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794853917183,
+      "endedAt": 1794853919184,
+      "files": {
+        "compositions/scene-05.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/f2/f216af45d6727203f99b69617d7c42ead61196db5397e435c739558c884d5c24",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/05/05e4a8e350496d3ec45efb83b93fd3cf81d4b99fbfad35013c425685c9ebe5b7"
+        }
+      }
+    },
+    "4a798bd7-5eb9-414f-be44-4302161dbf9c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794853956922,
+      "endedAt": 1794853958923,
+      "files": {
+        "compositions/scene-04.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/92/92e57f67d1db602c127de44563bcdbcc2225a8deebbcbdae7ae2561d6eff8dac",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/23/2389044c4b01f673b9481adf4e79f95ca55ce5d5db466157a1d5869e2b490d1d"
+        }
+      }
+    },
+    "ed17e713-740a-43e3-ab31-6d59cdc12b8c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794853958960,
+      "endedAt": 1794853960960,
+      "files": {
+        "compositions/scene-05.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/05/05e4a8e350496d3ec45efb83b93fd3cf81d4b99fbfad35013c425685c9ebe5b7",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/a2/a29dd1a8e1ab37d99e05a5200f3b66ddc636bbe3b23cd32a3811bb8b6bc897f1"
+        }
+      }
+    },
+    "771bb237-acaf-470e-b3f4-c9dc5f2354d5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794854047952,
+      "endedAt": 1794854049954,
+      "files": {
+        "compositions/scene-04.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/23/2389044c4b01f673b9481adf4e79f95ca55ce5d5db466157a1d5869e2b490d1d",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/55/555bd51065e8b77521cdb7bc554bfe7102491166d6bc5dc7a5bfc18656cf94b4"
+        }
+      }
+    },
+    "16c7c81e-7dc9-4098-b060-7d3ac3423c41": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794855448249,
+      "endedAt": 1794855448258,
+      "files": {
+        "assets/vendor/three.min.js": {
+          "before": null,
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/8a/8a5f7249903b54d30f79f708699d2fed2d6a1d0741a4cd41377d1f01bb5a2271"
+        },
+        "compositions/scene-03.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/d4/d4a15f73fdaae9b2d7b2c52241059260b439397fdcbca79a1794780d4ce18c8a",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/2b/2bead1c5c75de68742dec2f79bc1ce447c1cbe94015c6331534b7fcd60258479"
+        }
+      }
+    },
+    "50c22d10-d3bf-4f48-a898-e48a08cfcac8": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794855521002,
+      "endedAt": 1794855521003,
+      "files": {
+        "compositions/scene-03.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/2b/2bead1c5c75de68742dec2f79bc1ce447c1cbe94015c6331534b7fcd60258479",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/a1/a118865db92f2b7a3c27838e686d8664ea804d04fca27ec7ab00351c51dbcfd6"
+        }
+      }
+    },
+    "3da0752b-c68c-4acb-ac1b-af126074ce70": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794855606501,
+      "endedAt": 1794855606502,
+      "files": {
+        "compositions/scene-03.html": {
+          "before": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/a1/a118865db92f2b7a3c27838e686d8664ea804d04fca27ec7ab00351c51dbcfd6",
+          "after": "/home/dkaary/.cache/hyperframes/history/baa22226-ba47-4ada-84f9-0b1e017eae99/blobs/74/744f279d02e6329e68f1727d20813209d6752f3d246891188ea713e6c18fe930"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "3da0752b-c68c-4acb-ac1b-af126074ce70",
+      "id": "6413a036-0ecf-4fbb-8372-1c852a7d22b3"
+    },
+    "revisions": {
+      "31961cb9-0283-497a-bd9d-9c6f676ebe0f": [
+        {
+          "id": "dd6fb34a-72dd-4857-9301-e85ff3601d20",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794848725032,
+          "contentHash": "1b444fe4ce864f25282c2808348a30c5736fd13f7564cc76c31102c6a664151d",
+          "revision": "31961cb9-0283-497a-bd9d-9c6f676ebe0f",
+          "inputFingerprint": "ab18fee7fe80bb9cd2abbc904be7f21f2a44cecc3c6743fb5279207e8ddb6212",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        }
+      ],
+      "ed17e713-740a-43e3-ab31-6d59cdc12b8c": [
+        {
+          "id": "07637fc0-14bf-43d4-b17c-bf08d1d34c61",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794854016947,
+          "contentHash": "b049baa4fc3204d99f4e228173caefb2cce5f6a5909846f9bf655a4c7c448a32",
+          "revision": "ed17e713-740a-43e3-ab31-6d59cdc12b8c",
+          "inputFingerprint": "f959568472ce0fcb1ed9773a6e3a9944559ef686c29ca4cd3abb4e00b87e913c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        }
+      ],
+      "771bb237-acaf-470e-b3f4-c9dc5f2354d5": [
+        {
+          "id": "6d8372fc-42d3-498b-aa76-82caafc9fc93",
+          "scope": "project",
+          "report": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/checks/6d8372fc-42d3-498b-aa76-82caafc9fc93.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794854098564,
+          "contentHash": "3c7b25e9fa76cd672b77ca1dfe319398145cf04f7ecca6968d6ccbfded9bec2f",
+          "revision": "771bb237-acaf-470e-b3f4-c9dc5f2354d5",
+          "inputFingerprint": "5380029a2cc240af39611e80396c188906d36a8fa8d5065cce2da5bebf96b82f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "3da0752b-c68c-4acb-ac1b-af126074ce70": [
+        {
+          "id": "6413a036-0ecf-4fbb-8372-1c852a7d22b3",
+          "scope": "project",
+          "report": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/checks/6413a036-0ecf-4fbb-8372-1c852a7d22b3.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794855642579,
+          "contentHash": "bcfbecff54ce070170aa31cc2550b60daa0fe8cb1a1c10ff74ebf1f659e74e5f",
+          "revision": "3da0752b-c68c-4acb-ac1b-af126074ce70",
+          "inputFingerprint": "9994f4cc67c0e9b70f8e5d2e96fca533d57b66a8723cbfe6ec0468acdbfbe21d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "5c615892-54e5-4f5d-ad49-c1efe57f4d1b",
+        "scope": "project",
+        "report": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/checks/5c615892-54e5-4f5d-ad49-c1efe57f4d1b.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "safeZones": [
+              "tiktok",
+              "reels",
+              "shorts"
+            ],
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1794848506396,
+        "contentHash": "d336d657bc0e0af3c232fec5c1b52de1aaca83c86f1fcdd87278217ee166d01c",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "3da0752b-c68c-4acb-ac1b-af126074ce70",
+      "id": "c0029cdc-9f31-4359-a826-186b5e7a7a46-5"
+    },
+    "revisions": {
+      "31961cb9-0283-497a-bd9d-9c6f676ebe0f": [
+        {
+          "scope": "full",
+          "id": "f2393dbb-556b-428a-a223-e4486bc6c981-0",
+          "time": 12.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794848698885,
+          "contentHash": "8f5a429a33cc154e4dac496ad7b89d2e9287c28c0fb3277779480bf7dd888b21",
+          "revision": "31961cb9-0283-497a-bd9d-9c6f676ebe0f",
+          "inputFingerprint": "ab18fee7fe80bb9cd2abbc904be7f21f2a44cecc3c6743fb5279207e8ddb6212",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "f2393dbb-556b-428a-a223-e4486bc6c981-1",
+          "time": 29.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794848698885,
+          "contentHash": "31f42183d362f99c23ceca27cb409540d917b06fbcf9dfa386b88cad9c16bd67",
+          "revision": "31961cb9-0283-497a-bd9d-9c6f676ebe0f",
+          "inputFingerprint": "ab18fee7fe80bb9cd2abbc904be7f21f2a44cecc3c6743fb5279207e8ddb6212",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "f2393dbb-556b-428a-a223-e4486bc6c981-2",
+          "time": 38,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794848698885,
+          "contentHash": "49e0cc82d02707d2551392d0f27953c44d0e3e83520144a08dea0b53cd83c065",
+          "revision": "31961cb9-0283-497a-bd9d-9c6f676ebe0f",
+          "inputFingerprint": "ab18fee7fe80bb9cd2abbc904be7f21f2a44cecc3c6743fb5279207e8ddb6212",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "f2393dbb-556b-428a-a223-e4486bc6c981-3",
+          "time": 45,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794848698885,
+          "contentHash": "b4d280b7a49c774b7675f79772675c3031c259ac4e072329452c986acdf52bdc",
+          "revision": "31961cb9-0283-497a-bd9d-9c6f676ebe0f",
+          "inputFingerprint": "ab18fee7fe80bb9cd2abbc904be7f21f2a44cecc3c6743fb5279207e8ddb6212",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "f2393dbb-556b-428a-a223-e4486bc6c981-4",
+          "time": 50.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794848698885,
+          "contentHash": "8cc0a4b7ade6a215c9d749796216e30f2b77add0e8ad30a95e2fc0c7cb8d22ac",
+          "revision": "31961cb9-0283-497a-bd9d-9c6f676ebe0f",
+          "inputFingerprint": "ab18fee7fe80bb9cd2abbc904be7f21f2a44cecc3c6743fb5279207e8ddb6212",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "f2393dbb-556b-428a-a223-e4486bc6c981-5",
+          "time": 56,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794848698885,
+          "contentHash": "135df0898a5663ce47cd78a75d0238bf834faef0c9f1c13ed684064cbd7e5797",
+          "revision": "31961cb9-0283-497a-bd9d-9c6f676ebe0f",
+          "inputFingerprint": "ab18fee7fe80bb9cd2abbc904be7f21f2a44cecc3c6743fb5279207e8ddb6212",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "f2393dbb-556b-428a-a223-e4486bc6c981-6",
+          "time": 70.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794848698885,
+          "contentHash": "e06b2f20fe309f8bdaeb5e7a89924bedf589502f8537caa85d556ec1fb3aefbf",
+          "revision": "31961cb9-0283-497a-bd9d-9c6f676ebe0f",
+          "inputFingerprint": "ab18fee7fe80bb9cd2abbc904be7f21f2a44cecc3c6743fb5279207e8ddb6212",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        }
+      ],
+      "ed17e713-740a-43e3-ab31-6d59cdc12b8c": [
+        {
+          "scope": "full",
+          "id": "46e367f9-5247-49e2-a316-2399c67fabdb-0",
+          "time": 9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794853986077,
+          "contentHash": "d91b4aaa4e970dc91072efcae5a670b2c7c7aa3cf17ca807d5d91f69dbae3bb0",
+          "revision": "ed17e713-740a-43e3-ab31-6d59cdc12b8c",
+          "inputFingerprint": "f959568472ce0fcb1ed9773a6e3a9944559ef686c29ca4cd3abb4e00b87e913c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "46e367f9-5247-49e2-a316-2399c67fabdb-1",
+          "time": 12.1,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794853986077,
+          "contentHash": "8c3d18348a7a0af9cdc761bf2c02ac91ed7ec26f639357a2bfa8b30968428894",
+          "revision": "ed17e713-740a-43e3-ab31-6d59cdc12b8c",
+          "inputFingerprint": "f959568472ce0fcb1ed9773a6e3a9944559ef686c29ca4cd3abb4e00b87e913c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "46e367f9-5247-49e2-a316-2399c67fabdb-2",
+          "time": 37.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794853986077,
+          "contentHash": "3f22b5b8294fe50249e350697e8292964a25fd0987e0ea0bfe3e9a7be9302b52",
+          "revision": "ed17e713-740a-43e3-ab31-6d59cdc12b8c",
+          "inputFingerprint": "f959568472ce0fcb1ed9773a6e3a9944559ef686c29ca4cd3abb4e00b87e913c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "46e367f9-5247-49e2-a316-2399c67fabdb-3",
+          "time": 41,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794853986077,
+          "contentHash": "badce8b3756f7a2c3bad208540af6f2d6c4c4588caa2450ecc28304b352dbba5",
+          "revision": "ed17e713-740a-43e3-ab31-6d59cdc12b8c",
+          "inputFingerprint": "f959568472ce0fcb1ed9773a6e3a9944559ef686c29ca4cd3abb4e00b87e913c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "46e367f9-5247-49e2-a316-2399c67fabdb-4",
+          "time": 49.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794853986077,
+          "contentHash": "b74bee7e1cf37b4214807735cd4104b07fb88e91a0beb1bd40421792379b7f78",
+          "revision": "ed17e713-740a-43e3-ab31-6d59cdc12b8c",
+          "inputFingerprint": "f959568472ce0fcb1ed9773a6e3a9944559ef686c29ca4cd3abb4e00b87e913c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "46e367f9-5247-49e2-a316-2399c67fabdb-5",
+          "time": 51.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794853986077,
+          "contentHash": "7530963d4d29da3cd2e9fead5c90e7aaa7853f0182e741e888e19d590f294421",
+          "revision": "ed17e713-740a-43e3-ab31-6d59cdc12b8c",
+          "inputFingerprint": "f959568472ce0fcb1ed9773a6e3a9944559ef686c29ca4cd3abb4e00b87e913c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "46e367f9-5247-49e2-a316-2399c67fabdb-6",
+          "time": 67.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794853986077,
+          "contentHash": "dde2f41d1524dc6ab3ae6cdb3064c0fd54f5d33acee4771239ce838ff0ee171b",
+          "revision": "ed17e713-740a-43e3-ab31-6d59cdc12b8c",
+          "inputFingerprint": "f959568472ce0fcb1ed9773a6e3a9944559ef686c29ca4cd3abb4e00b87e913c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "46e367f9-5247-49e2-a316-2399c67fabdb-7",
+          "time": 70.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794853986077,
+          "contentHash": "450b73fd70211911aa9ed0e14672546afab6bf0f16d67c2dfcca1bf6c447b378",
+          "revision": "ed17e713-740a-43e3-ab31-6d59cdc12b8c",
+          "inputFingerprint": "f959568472ce0fcb1ed9773a6e3a9944559ef686c29ca4cd3abb4e00b87e913c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        },
+        {
+          "scope": "full",
+          "id": "46e367f9-5247-49e2-a316-2399c67fabdb-8",
+          "time": 70.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794853986077,
+          "contentHash": "d7cdbfa92f48f12c35afa9fa7ce67faaee469ee588aab05e7a7d55d3ad862fba",
+          "revision": "ed17e713-740a-43e3-ab31-6d59cdc12b8c",
+          "inputFingerprint": "f959568472ce0fcb1ed9773a6e3a9944559ef686c29ca4cd3abb4e00b87e913c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5c05429f-de69-4d15-afef-71c966fc05af"
+        }
+      ],
+      "771bb237-acaf-470e-b3f4-c9dc5f2354d5": [
+        {
+          "scope": "full",
+          "id": "d085dc45-78c6-4c8c-89f7-6dd97af3516b-0",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/a07ae2fd-aea2-4702-a023-d2c53583418b/frame-00-at-9s.png",
+          "time": 9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794854069443,
+          "contentHash": "d91b4aaa4e970dc91072efcae5a670b2c7c7aa3cf17ca807d5d91f69dbae3bb0",
+          "revision": "771bb237-acaf-470e-b3f4-c9dc5f2354d5",
+          "inputFingerprint": "5380029a2cc240af39611e80396c188906d36a8fa8d5065cce2da5bebf96b82f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "d085dc45-78c6-4c8c-89f7-6dd97af3516b-1",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/a07ae2fd-aea2-4702-a023-d2c53583418b/frame-01-at-12.1s.png",
+          "time": 12.1,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794854069443,
+          "contentHash": "8c3d18348a7a0af9cdc761bf2c02ac91ed7ec26f639357a2bfa8b30968428894",
+          "revision": "771bb237-acaf-470e-b3f4-c9dc5f2354d5",
+          "inputFingerprint": "5380029a2cc240af39611e80396c188906d36a8fa8d5065cce2da5bebf96b82f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "d085dc45-78c6-4c8c-89f7-6dd97af3516b-2",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/a07ae2fd-aea2-4702-a023-d2c53583418b/frame-02-at-37.5s.png",
+          "time": 37.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794854069443,
+          "contentHash": "92838e3530213a532afb675358d230059c79e65729164397404acd003daeb47f",
+          "revision": "771bb237-acaf-470e-b3f4-c9dc5f2354d5",
+          "inputFingerprint": "5380029a2cc240af39611e80396c188906d36a8fa8d5065cce2da5bebf96b82f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "d085dc45-78c6-4c8c-89f7-6dd97af3516b-3",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/a07ae2fd-aea2-4702-a023-d2c53583418b/frame-03-at-41s.png",
+          "time": 41,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794854069444,
+          "contentHash": "c7fa4128cf527d2263e4ec903f0d61a5c9e3d1cc4c1d436b79a19ee4d47c45ef",
+          "revision": "771bb237-acaf-470e-b3f4-c9dc5f2354d5",
+          "inputFingerprint": "5380029a2cc240af39611e80396c188906d36a8fa8d5065cce2da5bebf96b82f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "d085dc45-78c6-4c8c-89f7-6dd97af3516b-4",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/a07ae2fd-aea2-4702-a023-d2c53583418b/frame-04-at-49.8s.png",
+          "time": 49.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794854069444,
+          "contentHash": "b74bee7e1cf37b4214807735cd4104b07fb88e91a0beb1bd40421792379b7f78",
+          "revision": "771bb237-acaf-470e-b3f4-c9dc5f2354d5",
+          "inputFingerprint": "5380029a2cc240af39611e80396c188906d36a8fa8d5065cce2da5bebf96b82f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "d085dc45-78c6-4c8c-89f7-6dd97af3516b-5",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/a07ae2fd-aea2-4702-a023-d2c53583418b/frame-05-at-51.8s.png",
+          "time": 51.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794854069444,
+          "contentHash": "7530963d4d29da3cd2e9fead5c90e7aaa7853f0182e741e888e19d590f294421",
+          "revision": "771bb237-acaf-470e-b3f4-c9dc5f2354d5",
+          "inputFingerprint": "5380029a2cc240af39611e80396c188906d36a8fa8d5065cce2da5bebf96b82f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "d085dc45-78c6-4c8c-89f7-6dd97af3516b-6",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/a07ae2fd-aea2-4702-a023-d2c53583418b/frame-06-at-67.5s.png",
+          "time": 67.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794854069444,
+          "contentHash": "dde2f41d1524dc6ab3ae6cdb3064c0fd54f5d33acee4771239ce838ff0ee171b",
+          "revision": "771bb237-acaf-470e-b3f4-c9dc5f2354d5",
+          "inputFingerprint": "5380029a2cc240af39611e80396c188906d36a8fa8d5065cce2da5bebf96b82f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "d085dc45-78c6-4c8c-89f7-6dd97af3516b-7",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/a07ae2fd-aea2-4702-a023-d2c53583418b/frame-07-at-70.2s.png",
+          "time": 70.2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794854069444,
+          "contentHash": "450b73fd70211911aa9ed0e14672546afab6bf0f16d67c2dfcca1bf6c447b378",
+          "revision": "771bb237-acaf-470e-b3f4-c9dc5f2354d5",
+          "inputFingerprint": "5380029a2cc240af39611e80396c188906d36a8fa8d5065cce2da5bebf96b82f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "d085dc45-78c6-4c8c-89f7-6dd97af3516b-8",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/a07ae2fd-aea2-4702-a023-d2c53583418b/frame-08-at-70.75s.png",
+          "time": 70.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794854069444,
+          "contentHash": "d7cdbfa92f48f12c35afa9fa7ce67faaee469ee588aab05e7a7d55d3ad862fba",
+          "revision": "771bb237-acaf-470e-b3f4-c9dc5f2354d5",
+          "inputFingerprint": "5380029a2cc240af39611e80396c188906d36a8fa8d5065cce2da5bebf96b82f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "16c7c81e-7dc9-4098-b060-7d3ac3423c41": [
+        {
+          "scope": "full",
+          "id": "4baa12a5-0adf-4dcb-90fd-52d2045937ea-0",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/918081ba-9042-467a-a5ff-015b03e83332/frame-00-at-23.5s.png",
+          "time": 23.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855453149,
+          "contentHash": "454737f167cf010490b1f49a116d0ba992b85b1b2c8a6853c5ef5d83acfa8f71",
+          "revision": "16c7c81e-7dc9-4098-b060-7d3ac3423c41",
+          "inputFingerprint": "e142cbab9faf730a8bd46f728a4ec39c9049d045b91c605c43954adb35a793d0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "4baa12a5-0adf-4dcb-90fd-52d2045937ea-1",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/918081ba-9042-467a-a5ff-015b03e83332/frame-01-at-27s.png",
+          "time": 27,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855453149,
+          "contentHash": "df827e4b12e0edfed1d55537dcde04cfc3ae85acc396020566736e80b6e3f512",
+          "revision": "16c7c81e-7dc9-4098-b060-7d3ac3423c41",
+          "inputFingerprint": "e142cbab9faf730a8bd46f728a4ec39c9049d045b91c605c43954adb35a793d0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "4baa12a5-0adf-4dcb-90fd-52d2045937ea-2",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/918081ba-9042-467a-a5ff-015b03e83332/frame-02-at-29.5s.png",
+          "time": 29.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855453149,
+          "contentHash": "f8ba7c2fa73e15e2673b0f74248180f018d718ff16ecc1b0ef87c0dc7b87212b",
+          "revision": "16c7c81e-7dc9-4098-b060-7d3ac3423c41",
+          "inputFingerprint": "e142cbab9faf730a8bd46f728a4ec39c9049d045b91c605c43954adb35a793d0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "4baa12a5-0adf-4dcb-90fd-52d2045937ea-3",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/918081ba-9042-467a-a5ff-015b03e83332/frame-03-at-32.5s.png",
+          "time": 32.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855453149,
+          "contentHash": "1d695028b74190bc37c5b5bb491ef360d098b88c447f72c5234ca99b416d080a",
+          "revision": "16c7c81e-7dc9-4098-b060-7d3ac3423c41",
+          "inputFingerprint": "e142cbab9faf730a8bd46f728a4ec39c9049d045b91c605c43954adb35a793d0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "4baa12a5-0adf-4dcb-90fd-52d2045937ea-4",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/918081ba-9042-467a-a5ff-015b03e83332/frame-04-at-34.8s.png",
+          "time": 34.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855453149,
+          "contentHash": "6485e8a584b69998a02e202253b541c571a90a83cc6ad35509977a582650305f",
+          "revision": "16c7c81e-7dc9-4098-b060-7d3ac3423c41",
+          "inputFingerprint": "e142cbab9faf730a8bd46f728a4ec39c9049d045b91c605c43954adb35a793d0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "4baa12a5-0adf-4dcb-90fd-52d2045937ea-5",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/918081ba-9042-467a-a5ff-015b03e83332/frame-05-at-70.75s.png",
+          "time": 70.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855453149,
+          "contentHash": "d7cdbfa92f48f12c35afa9fa7ce67faaee469ee588aab05e7a7d55d3ad862fba",
+          "revision": "16c7c81e-7dc9-4098-b060-7d3ac3423c41",
+          "inputFingerprint": "e142cbab9faf730a8bd46f728a4ec39c9049d045b91c605c43954adb35a793d0",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "50c22d10-d3bf-4f48-a898-e48a08cfcac8": [
+        {
+          "scope": "full",
+          "id": "086f3566-0552-4d9f-89b9-f16f23cd5adf-0",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/d9c3d7fa-0410-4d4f-b5bf-8dd428496650/frame-00-at-23.5s.png",
+          "time": 23.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855525833,
+          "contentHash": "5026b4c1f25044c750381abeddaefeecc6ba860e5d1242539ba05c3f5b3f8f24",
+          "revision": "50c22d10-d3bf-4f48-a898-e48a08cfcac8",
+          "inputFingerprint": "eb945372cbcefd615cbebdbfc06eefabc9b3a9a8084c8e948aa33637d896c85a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "086f3566-0552-4d9f-89b9-f16f23cd5adf-1",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/d9c3d7fa-0410-4d4f-b5bf-8dd428496650/frame-01-at-27s.png",
+          "time": 27,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855525833,
+          "contentHash": "69a16b4f26cfda111247520c75e306529fd83b41dc4cd2943fddbcbe3904fe05",
+          "revision": "50c22d10-d3bf-4f48-a898-e48a08cfcac8",
+          "inputFingerprint": "eb945372cbcefd615cbebdbfc06eefabc9b3a9a8084c8e948aa33637d896c85a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "086f3566-0552-4d9f-89b9-f16f23cd5adf-2",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/d9c3d7fa-0410-4d4f-b5bf-8dd428496650/frame-02-at-29.5s.png",
+          "time": 29.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855525833,
+          "contentHash": "98d856ffa803e3f503ae1549c9329894b66cd1476b5fb6a54d2708f6f1b5ec77",
+          "revision": "50c22d10-d3bf-4f48-a898-e48a08cfcac8",
+          "inputFingerprint": "eb945372cbcefd615cbebdbfc06eefabc9b3a9a8084c8e948aa33637d896c85a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "086f3566-0552-4d9f-89b9-f16f23cd5adf-3",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/d9c3d7fa-0410-4d4f-b5bf-8dd428496650/frame-03-at-32.5s.png",
+          "time": 32.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855525833,
+          "contentHash": "68d9c72eaf7f5e7062856854b6ee1d2efa0ebc9424f85ea7c4ef53b82c0fb1f2",
+          "revision": "50c22d10-d3bf-4f48-a898-e48a08cfcac8",
+          "inputFingerprint": "eb945372cbcefd615cbebdbfc06eefabc9b3a9a8084c8e948aa33637d896c85a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "086f3566-0552-4d9f-89b9-f16f23cd5adf-4",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/d9c3d7fa-0410-4d4f-b5bf-8dd428496650/frame-04-at-34.8s.png",
+          "time": 34.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855525833,
+          "contentHash": "bd0b62c542186e0dc709769ed2cc5c87d7a73bde4dff10ba0a8ff3c4be6a0b26",
+          "revision": "50c22d10-d3bf-4f48-a898-e48a08cfcac8",
+          "inputFingerprint": "eb945372cbcefd615cbebdbfc06eefabc9b3a9a8084c8e948aa33637d896c85a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "086f3566-0552-4d9f-89b9-f16f23cd5adf-5",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/d9c3d7fa-0410-4d4f-b5bf-8dd428496650/frame-05-at-70.75s.png",
+          "time": 70.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855525834,
+          "contentHash": "d7cdbfa92f48f12c35afa9fa7ce67faaee469ee588aab05e7a7d55d3ad862fba",
+          "revision": "50c22d10-d3bf-4f48-a898-e48a08cfcac8",
+          "inputFingerprint": "eb945372cbcefd615cbebdbfc06eefabc9b3a9a8084c8e948aa33637d896c85a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "3da0752b-c68c-4acb-ac1b-af126074ce70": [
+        {
+          "scope": "full",
+          "id": "c0029cdc-9f31-4359-a826-186b5e7a7a46-0",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/75189f73-1339-4f1f-9e61-b7bdac942022/frame-00-at-23.5s.png",
+          "time": 23.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855611302,
+          "contentHash": "a37fd87464d491ac1c0fca07502531cdf3124d84b9d6051ceb938b7fd752b2a1",
+          "revision": "3da0752b-c68c-4acb-ac1b-af126074ce70",
+          "inputFingerprint": "9994f4cc67c0e9b70f8e5d2e96fca533d57b66a8723cbfe6ec0468acdbfbe21d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c0029cdc-9f31-4359-a826-186b5e7a7a46-1",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/75189f73-1339-4f1f-9e61-b7bdac942022/frame-01-at-27s.png",
+          "time": 27,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855611302,
+          "contentHash": "6f1cd9d05ec0617630a25e4621f8f6096ca7cee7e216f8f749ede28b4cb687a3",
+          "revision": "3da0752b-c68c-4acb-ac1b-af126074ce70",
+          "inputFingerprint": "9994f4cc67c0e9b70f8e5d2e96fca533d57b66a8723cbfe6ec0468acdbfbe21d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c0029cdc-9f31-4359-a826-186b5e7a7a46-2",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/75189f73-1339-4f1f-9e61-b7bdac942022/frame-02-at-29.5s.png",
+          "time": 29.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855611302,
+          "contentHash": "d85e63ed3b2cf5f7d681b15c73ee90b2145488a5d91f7381322005a10b1ef365",
+          "revision": "3da0752b-c68c-4acb-ac1b-af126074ce70",
+          "inputFingerprint": "9994f4cc67c0e9b70f8e5d2e96fca533d57b66a8723cbfe6ec0468acdbfbe21d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c0029cdc-9f31-4359-a826-186b5e7a7a46-3",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/75189f73-1339-4f1f-9e61-b7bdac942022/frame-03-at-32.5s.png",
+          "time": 32.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855611302,
+          "contentHash": "78ab338368ce07aa265339ee4cabcf3db076eee431fdf9b9d4e4cad8e9839afa",
+          "revision": "3da0752b-c68c-4acb-ac1b-af126074ce70",
+          "inputFingerprint": "9994f4cc67c0e9b70f8e5d2e96fca533d57b66a8723cbfe6ec0468acdbfbe21d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c0029cdc-9f31-4359-a826-186b5e7a7a46-4",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/75189f73-1339-4f1f-9e61-b7bdac942022/frame-04-at-34.8s.png",
+          "time": 34.8,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855611303,
+          "contentHash": "647f1d676c9f3c74030ad65030744cfa971a4ababb1e3a42616ec3451e6ad582",
+          "revision": "3da0752b-c68c-4acb-ac1b-af126074ce70",
+          "inputFingerprint": "9994f4cc67c0e9b70f8e5d2e96fca533d57b66a8723cbfe6ec0468acdbfbe21d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c0029cdc-9f31-4359-a826-186b5e7a7a46-5",
+          "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/75189f73-1339-4f1f-9e61-b7bdac942022/frame-05-at-70.75s.png",
+          "time": 70.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794855611303,
+          "contentHash": "d7cdbfa92f48f12c35afa9fa7ce67faaee469ee588aab05e7a7d55d3ad862fba",
+          "revision": "3da0752b-c68c-4acb-ac1b-af126074ce70",
+          "inputFingerprint": "9994f4cc67c0e9b70f8e5d2e96fca533d57b66a8723cbfe6ec0468acdbfbe21d",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-0",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-00-at-2s.png",
+        "time": 2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "0ee64275cdab9b334f0b48f5dc5fe9b54ab3ad8fa4965161607db5cefd8de31d",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-1",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-01-at-7.8s.png",
+        "time": 7.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "c96050e6ff57978f3713d865dc536ef0eae3a039880115739fb3c29fa6174986",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-2",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-02-at-12.5s.png",
+        "time": 12.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "6023b03fe11fb90e7c9dd9af3bc48084336b3265825113574a45f6dcbcf81398",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-3",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-03-at-16.5s.png",
+        "time": 16.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "7c45758ad0de37357c928358f00e50b4275b29c2317f915f37698dee9925cb54",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-4",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-04-at-24.5s.png",
+        "time": 24.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "36c82cf6e4112ce6980eacc3daa50895739898d0095aabf2e9259ed9ed7e556f",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-5",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-05-at-29.5s.png",
+        "time": 29.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "30c590b4ad2b96b1c4f6a52201c5cdc2b98be38bd7506d729c151cb1cdd4adda",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-6",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-06-at-33.5s.png",
+        "time": 33.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "cb05fc855fa6460e9ef739845ebb3af06a6afe0da679617a3295a924b2c1e4a3",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-7",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-07-at-38s.png",
+        "time": 38,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "cc5611c16d2c80c8527df7906d1c138254b4bb4cb8002856a72966ac2f5dbc69",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-8",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-08-at-45s.png",
+        "time": 45,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "7bb76c4ebaaf8e9e70d429625638154e81fa3b9fafe6d2f6aefe06fa709bbacf",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-9",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-09-at-50.5s.png",
+        "time": 50.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "4de9a865ecb8387f89cbf545bfedfc335cce4d09afbb4d0128b4c670f4533f63",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-10",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-10-at-56s.png",
+        "time": 56,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "b62499477c1f5d7399af6e1c01cf4a94654ead9e2bc6f6a2fa8dda4625b717b5",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-11",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-11-at-60.5s.png",
+        "time": 60.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "98b538864e0af020337f1552c40dafff5e10ff93577cb7110fa42bef3d8c98c2",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-12",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-12-at-67.5s.png",
+        "time": 67.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "9f5d181acfb4ee4cbe2d5eadca819c97f19b65b412ff8fcf7887e756419c4ee0",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "50b9e4f6-df92-4f79-935a-422f31d7dffc-13",
+        "image": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/.hyperframes/artifacts/snapshots/af2608f8-474f-4a8f-bea5-28cea7e8513a/frame-13-at-70.75s.png",
+        "time": 70.75,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794848535294,
+        "contentHash": "6d800e1608645119e52a54318bdb521946d7b2b048ca16c1cbfdf8dedfd31051",
+        "revision": null,
+        "inputFingerprint": "93f832c6b6b583bd39ed20ae957e55eef5916e44accaf39becbffbb86ad807d1",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "5c05429f-de69-4d15-afef-71c966fc05af",
+      "completedAt": 1794854504041,
+      "output": "/home/dkaary/Documents/Code/ai-short/episodes/misteri-hujan-berlian-di-jupiter-dan-saturnus/renders/misteri-hujan-berlian-di-jupiter-dan-saturnus.mp4",
+      "status": "completed",
+      "revision": "771bb237-acaf-470e-b3f4-c9dc5f2354d5"
+    },
+    "retainedRevisions": [
+      "771bb237-acaf-470e-b3f4-c9dc5f2354d5"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

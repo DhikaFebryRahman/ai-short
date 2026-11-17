@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 03 — Kembali ke Tahap Muda (Kista -> Polip -> Ubur-Ubur Baru)</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-03" data-duration="9.68" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            pointer-events: none;
+          }
+
+          .s3-stage {
+            position: absolute;
+            inset: 0;
+          }
+
+          .s3-camera {
+            position: absolute;
+            inset: 0;
+            transform-origin: 50% 56%;
+          }
+
+          .s3-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+
+          .s3-stage-bar {
+            position: absolute;
+            top: 280px;
+            left: 130px;
+            width: 820px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            opacity: 0;
+          }
+
+          .s3-step {
+            padding: 10px 20px;
+            border-radius: 16px;
+            background: rgba(255, 252, 245, 0.94);
+            border: 2.5px solid #94a3b8;
+            color: #475569;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+          }
+
+          .s3-step.is-amber { border-color: #f59e0b; color: #9a3412; background: #fef3c7; }
+          .s3-step.is-green { border-color: #10b981; color: #047857; background: #d1fae5; }
+          .s3-step.is-cyan { border-color: #0ea5e9; color: #0369a1; background: #e0f2fe; }
+
+          .s3-arrow {
+            font-size: 26px;
+            font-weight: 900;
+            color: #142244;
+          }
+
+          .s3-pill-bar {
+            position: absolute;
+            top: 1245px;
+            left: 130px;
+            width: 820px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .s3-pill {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 26px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            box-shadow: 0 12px 28px rgba(20, 34, 68, 0.14);
+            opacity: 0;
+          }
+
+          .s3-pill--amber { border: 2.5px solid #f59e0b; color: #9a3412; }
+          .s3-pill--green { border: 2.5px solid #10b981; color: #047857; }
+          .s3-pill--cyan { border: 2.5px solid #0ea5e9; color: #0369a1; }
+
+          .s3-dot {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: currentColor;
+          }
+        </style>
+
+        <div id="s3-clip" class="clip" data-start="0" data-duration="9.68" data-track-index="0">
+          <div class="s3-stage" id="s3-stage">
+          <div class="s3-camera" id="s3-camera" data-layout-allow-overflow>
+            <svg class="s3-svg" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="s3-rock" x1="540" y1="980" x2="540" y2="1320" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#D6B58E" />
+                  <stop offset="1" stop-color="#B88E63" />
+                </linearGradient>
+                <linearGradient id="s3-sand" x1="540" y1="1520" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#F8D8A4" />
+                  <stop offset="1" stop-color="#DDA661" />
+                </linearGradient>
+              </defs>
+
+              <!-- Anchored Reef Substrate Rock (centered x=540) -->
+              <g transform="translate(540, 1080)">
+                <ellipse cx="0" cy="68" rx="260" ry="44" fill="#142244" fill-opacity="0.14" />
+                <path
+                  d="M-240 60 C-225 -15 -140 -52 -15 -48 C115 -44 218 -4 242 60 C122 86 -120 88 -240 60 Z"
+                  fill="url(#s3-rock)"
+                  stroke="#142244"
+                  stroke-width="5.5"
+                  stroke-linejoin="round"
+                />
+              </g>
+
+              <!-- 1. Initial Anchored Cyst on Rock (centered x=540) -->
+              <g id="s3-cyst-pos" transform="translate(540, 1020)">
+                <g id="s3-cyst-anim">
+                  <path
+                    d="M-66 18 C-74 -34 -40 -74 0 -74 C40 -74 74 -34 66 18 C46 32 -46 32 -66 18 Z"
+                    fill="#FDE68A"
+                    stroke="#142244"
+                    stroke-width="5.5"
+                  />
+                  <ellipse cx="0" cy="-22" rx="34" ry="26" fill="#F59E0B" fill-opacity="0.72" stroke="#9A3412" stroke-width="3.5" />
+                  <circle cx="-12" cy="-26" r="8" fill="#10B981" />
+                  <circle cx="14" cy="-18" r="7" fill="#0EA5E9" />
+                  <circle cx="2" cy="-34" r="6" fill="#FB7185" />
+                </g>
+              </g>
+
+              <!-- 2. Rooted Polyp Colony Emerging Upward from Bottom Rock Base (centered x=540) -->
+              <g id="s3-polyp-pos" transform="translate(540, 1030)">
+                <g id="s3-polyp-anim" opacity="0">
+                  <!-- Root Stolon on Rock -->
+                  <path d="M-125 6 C-60 2 60 2 130 8" stroke="#059669" stroke-width="14" stroke-linecap="round" />
+                  <path d="M-125 6 C-60 2 60 2 130 8" stroke="#142244" stroke-width="4" stroke-linecap="round" />
+
+                  <!-- Main Central Polyp Stalk -->
+                  <path d="M-14 4 L-12 -180 L12 -180 L14 4 Z" fill="#6EE7B7" stroke="#142244" stroke-width="5" stroke-linejoin="round" />
+                  <!-- Polyp Crown Head + Tentacles -->
+                  <ellipse cx="0" cy="-196" rx="30" ry="22" fill="#34D399" stroke="#142244" stroke-width="5" />
+                  <g stroke="#047857" stroke-width="5.5" stroke-linecap="round">
+                    <path d="M-24 -206 Q-64 -244 -72 -286" />
+                    <path d="M-12 -214 Q-32 -264 -28 -304" />
+                    <path d="M0 -218 Q4 -268 2 -310" />
+                    <path d="M14 -214 Q34 -262 32 -302" />
+                    <path d="M24 -206 Q64 -244 74 -284" />
+                  </g>
+
+                  <!-- Side Polyp Branch (Shows Colony Growth) -->
+                  <path d="M-12 -65 Q-64 -102 -84 -158" stroke="#6EE7B7" stroke-width="18" stroke-linecap="round" />
+                  <path d="M-12 -65 Q-64 -102 -84 -158" stroke="#142244" stroke-width="4.5" stroke-linecap="round" fill="none" />
+                  <ellipse cx="-86" cy="-168" rx="22" ry="16" fill="#34D399" stroke="#142244" stroke-width="4.5" />
+                  <path d="M-98 -180 Q-122 -212 -118 -238 M-86 -184 Q-88 -220 -82 -246 M-72 -180 Q-48 -210 -46 -236" stroke="#047857" stroke-width="4.5" stroke-linecap="round" />
+
+                  <!-- Right Budding Branch Producing New Jellyfish -->
+                  <path d="M12 -92 Q58 -124 88 -164" stroke="#6EE7B7" stroke-width="16" stroke-linecap="round" />
+                  <path d="M12 -92 Q58 -124 88 -164" stroke="#142244" stroke-width="4.5" stroke-linecap="round" fill="none" />
+                  <circle id="s3-bud" cx="96" cy="-178" r="22" fill="#BAE6FD" stroke="#142244" stroke-width="4.5" />
+                </g>
+              </g>
+
+              <!-- 3. Newly Released Juvenile Medusa Swimming Upward toward x=540 -->
+              <g id="s3-new-pos" transform="translate(636, 845)">
+                <g id="s3-new-anim" opacity="0">
+                  <circle cx="0" cy="-18" r="95" fill="#FFFFFF" fill-opacity="0.34" />
+                  <path
+                    d="M-76 6 C-78 -68 -40 -106 0 -106 C40 -106 78 -68 76 6 C52 24 -52 24 -76 6 Z"
+                    fill="#BAE6FD"
+                    fill-opacity="0.88"
+                    stroke="#142244"
+                    stroke-width="5"
+                  />
+                  <ellipse cx="0" cy="-32" rx="22" ry="26" fill="#FB7185" stroke="#142244" stroke-width="4" />
+                  <path d="M-44 -16 C-38 -62 -18 -86 -4 -92" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
+                  <circle cx="-11" cy="-42" r="3.5" fill="#142244" />
+                  <circle cx="11" cy="-42" r="3.5" fill="#142244" />
+                  <path d="M-46 14 Q-54 58 -42 96 M-16 18 Q-20 66 -12 108 M16 18 Q22 66 12 108 M46 14 Q56 58 42 96" stroke="#0369A1" stroke-width="4.5" stroke-linecap="round" />
+                </g>
+              </g>
+
+              <!-- Foreground Seabed (y = 1525..1920) -->
+              <g id="s3-foreground">
+                <path d="M-80 1645 Q280 1585 560 1635 T1180 1615 L1180 1980 L-80 1980 Z" fill="url(#s3-sand)" stroke="#142244" stroke-width="5.5" />
+                <g transform="translate(150, 1665)">
+                  <path d="M-25 120 C-45 45 -18 -38 -36 -108" stroke="#10B981" stroke-width="24" stroke-linecap="round" />
+                  <path d="M-25 120 C-45 45 -18 -38 -36 -108" stroke="#142244" stroke-width="5" stroke-linecap="round" />
+                  <circle cx="48" cy="118" r="30" fill="#FB7185" stroke="#142244" stroke-width="4.5" />
+                </g>
+                <g transform="translate(880, 1650)">
+                  <path d="M18 125 C42 52 14 -30 34 -98" stroke="#34D399" stroke-width="22" stroke-linecap="round" />
+                  <path d="M18 125 C42 52 14 -30 34 -98" stroke="#142244" stroke-width="5" stroke-linecap="round" />
+                  <ellipse cx="-60" cy="128" rx="64" ry="22" fill="#D4A373" stroke="#142244" stroke-width="4.5" />
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <div class="s3-stage-bar" id="s3-stage-bar">
+            <span class="s3-step is-amber" id="s3-step-1">KISTA</span>
+            <span class="s3-arrow">→</span>
+            <span class="s3-step" id="s3-step-2">POLIP</span>
+            <span class="s3-arrow">→</span>
+            <span class="s3-step" id="s3-step-3">UBUR-UBUR BARU</span>
+          </div>
+
+          <div class="s3-pill-bar">
+            <div class="s3-pill s3-pill--amber" id="s3-pill-1"><span class="s3-dot"></span><span>KISTA -> POLIP</span></div>
+            <div class="s3-pill s3-pill--green" id="s3-pill-2"><span class="s3-dot"></span><span>TAHAP AWAL SIKLUS</span></div>
+            <div class="s3-pill s3-pill--cyan" id="s3-pill-3"><span class="s3-dot"></span><span>UBUR-UBUR BARU TERLEPAS</span></div>
+          </div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var stage = root.querySelector("#s3-stage");
+            var camera = root.querySelector("#s3-camera");
+            var cystAnim = root.querySelector("#s3-cyst-anim");
+            var polypAnim = root.querySelector("#s3-polyp-anim");
+            var bud = root.querySelector("#s3-bud");
+            var newPos = root.querySelector("#s3-new-pos");
+            var newAnim = root.querySelector("#s3-new-anim");
+            var stageBar = root.querySelector("#s3-stage-bar");
+            var step2 = root.querySelector("#s3-step-2");
+            var step3 = root.querySelector("#s3-step-3");
+            var pill1 = root.querySelector("#s3-pill-1");
+            var pill2 = root.querySelector("#s3-pill-2");
+            var pill3 = root.querySelector("#s3-pill-3");
+
+            gsap.set(stage, { opacity: 0 });
+            gsap.set(camera, { scale: 1.22, y: -65 });
+            gsap.set(cystAnim, { scale: 1, y: 0, opacity: 1, transformOrigin: "50% 80%" });
+            gsap.set(polypAnim, { scaleY: 0.05, y: 42, opacity: 0, transformOrigin: "50% 97%" });
+            gsap.set(bud, { scale: 0, transformOrigin: "50% 50%" });
+            gsap.set(newAnim, { scale: 0.35, opacity: 0, transformOrigin: "50% 35%" });
+
+            var tl = gsap.timeline({ paused: true });
+
+            // Smooth cross-dissolve in (0..0.45s) & out (9.23..9.68s)
+            tl.to(stage, { opacity: 1, duration: 0.45, ease: "sine.inOut" }, 0);
+            tl.to(stage, { opacity: 0, duration: 0.45, ease: "sine.inOut" }, 9.23);
+
+            // Beat 1: Cyst settles & Polyp emerges upward from bottom rock surface (0.2..4.1s)
+            tl.fromTo(stageBar, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 0.35);
+            tl.fromTo(pill1, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 0.35);
+            tl.to(cystAnim, { scale: 1.06, duration: 0.65, ease: "sine.inOut" }, 0.55);
+            tl.to(cystAnim, { opacity: 0, scaleY: 0.45, y: 24, duration: 0.55, ease: "power2.in", immediateRender: false }, 2.05);
+            tl.to(polypAnim, { opacity: 1, scaleY: 1, y: 0, duration: 1.35, ease: "power3.out" }, 2.1);
+            tl.call(function () { step2.className = "s3-step is-green"; }, [], 3.05);
+
+            // Beat 2: Pull back + colony polyp & budding sprout (3.9..6.6s)
+            tl.to(camera, { scale: 1.0, y: 0, duration: 1.2, ease: "power2.inOut", immediateRender: false }, 3.9);
+            tl.to(pill1, { opacity: 0, y: -10, duration: 0.22, immediateRender: false }, 4.0);
+            tl.fromTo(pill2, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.32, ease: "power2.out" }, 4.25);
+            tl.to(bud, { scale: 1, duration: 0.9, ease: "back.out(1.7)" }, 4.7);
+
+            // Beat 3: Bud releases tiny new Medusa swimming upward to center x=540 (6.6..9.43s)
+            tl.to(pill2, { opacity: 0, y: -10, duration: 0.22, immediateRender: false }, 6.55);
+            tl.fromTo(pill3, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.32, ease: "power2.out" }, 6.75);
+            tl.to(bud, { scale: 0.2, opacity: 0, duration: 0.35, ease: "power2.in", immediateRender: false }, 6.65);
+            tl.call(function () { step3.className = "s3-step is-cyan"; }, [], 6.9);
+
+            var swimNew = { p: 0 };
+            tl.to(newAnim, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.6)" }, 6.7);
+            tl.to(swimNew, {
+              p: 1,
+              duration: 2.5,
+              ease: "power2.out",
+              onUpdate: function () {
+                var nx = 636 - swimNew.p * 96;
+                var ny = 845 - swimNew.p * 275 + Math.sin(swimNew.p * Math.PI * 3) * 14;
+                gsap.set(newPos, { attr: { transform: "translate(" + nx.toFixed(1) + ", " + ny.toFixed(1) + ")" } });
+              },
+            }, 6.75);
+            tl.to(camera, { scale: 1.12, x: 0, y: 55, duration: 1.4, ease: "power2.inOut", immediateRender: false }, 7.9);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-03"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>
+

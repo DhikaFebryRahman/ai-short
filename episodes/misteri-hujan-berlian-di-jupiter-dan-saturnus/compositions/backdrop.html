@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Backdrop Daylight Kosmik</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="backdrop" data-duration="71" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            background: linear-gradient(180deg, #9edbff 0%, #d4eeff 42%, #eef8ff 72%, #fff3da 100%);
+          }
+
+          .bg-layer {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+          }
+
+          .bg-sun-glow {
+            position: absolute;
+            top: -180px;
+            left: 140px;
+            width: 820px;
+            height: 820px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(255, 241, 173, 0.56) 0%,
+              rgba(255, 248, 214, 0.22) 50%,
+              transparent 76%
+            );
+          }
+
+          .bg-sky-glow {
+            position: absolute;
+            bottom: 140px;
+            right: -130px;
+            width: 860px;
+            height: 780px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(56, 189, 248, 0.2) 0%,
+              rgba(167, 243, 208, 0.14) 52%,
+              transparent 75%
+            );
+          }
+
+          .bg-orbit-svg {
+            position: absolute;
+            inset: 0;
+            width: 1080px;
+            height: 1920px;
+            opacity: 0.34;
+          }
+
+          .bg-motes {
+            position: absolute;
+            inset: 0;
+          }
+
+          .bg-mote {
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.78);
+            background: rgba(255, 255, 255, 0.32);
+          }
+        </style>
+
+        <div
+          id="backdrop-clip"
+          class="bg-layer clip"
+          data-start="0"
+          data-duration="71"
+          data-layout-ignore
+          data-track-index="0"
+        >
+          <div class="bg-sun-glow" id="bg-sun-glow"></div>
+          <div class="bg-sky-glow" id="bg-sky-glow"></div>
+          <svg class="bg-orbit-svg" viewBox="0 0 1080 1920" fill="none">
+            <circle cx="540" cy="760" r="460" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="10 14" />
+            <circle cx="540" cy="760" r="640" stroke="#ffffff" stroke-width="2" stroke-dasharray="6 18" />
+          </svg>
+          <div class="bg-motes" id="bg-motes"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var motesEl = root.querySelector("#bg-motes");
+            var sunGlow = root.querySelector("#bg-sun-glow");
+            var skyGlow = root.querySelector("#bg-sky-glow");
+
+            var motes = [];
+            for (var i = 0; i < 22; i++) {
+              var star = document.createElement("div");
+              star.className = "bg-mote";
+              var size = 8 + ((i * 5) % 16);
+              star.style.width = size + "px";
+              star.style.height = size + "px";
+              star.style.left = (70 + ((i * 157) % 940)) + "px";
+              star.style.top = (150 + ((i * 223) % 1480)) + "px";
+              star.style.opacity = String(0.32 + (i % 4) * 0.12);
+              motesEl.appendChild(star);
+              motes.push(star);
+            }
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(sunGlow, { x: 46, y: 32, scale: 1.06, duration: 35.5, ease: "sine.inOut" }, 0)
+              .to(sunGlow, { x: 0, y: 0, scale: 1, duration: 35.5, ease: "sine.inOut" }, 35.5)
+              .to(skyGlow, { x: -52, y: -34, scale: 1.07, duration: 35.5, ease: "sine.inOut" }, 0)
+              .to(skyGlow, { x: 0, y: 0, scale: 1, duration: 35.5, ease: "sine.inOut" }, 35.5);
+
+            motes.forEach(function (dot, idx) {
+              var dy = -72 - (idx % 3) * 18;
+              var dx = ((idx % 3) - 1) * 24;
+              tl.to(dot, { x: dx, y: dy, duration: 35.5, ease: "sine.inOut" }, 0)
+                .to(dot, { x: 0, y: 0, duration: 35.5, ease: "sine.inOut" }, 35.5);
+            });
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["backdrop"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Backdrop Kosmos Gelap — Ruang Hampa &amp; Astrobiologi</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="backdrop" data-duration="74" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            background: linear-gradient(180deg, #040814 0%, #09132b 48%, #0e1e42 82%, #132852 100%);
+          }
+
+          .bg-layer {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+          }
+
+          .bg-nebula-top {
+            position: absolute;
+            top: -160px;
+            left: -120px;
+            width: 920px;
+            height: 820px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(56, 189, 248, 0.2) 0%,
+              rgba(99, 102, 241, 0.14) 45%,
+              transparent 74%
+            );
+          }
+
+          .bg-nebula-mid {
+            position: absolute;
+            top: 520px;
+            right: -180px;
+            width: 820px;
+            height: 820px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(168, 85, 247, 0.16) 0%,
+              rgba(16, 185, 129, 0.12) 48%,
+              transparent 74%
+            );
+          }
+
+          .bg-nebula-bot {
+            position: absolute;
+            bottom: 80px;
+            left: 120px;
+            width: 880px;
+            height: 760px;
+            border-radius: 50%;
+            background: radial-gradient(
+              circle,
+              rgba(14, 165, 233, 0.18) 0%,
+              rgba(16, 185, 129, 0.11) 48%,
+              transparent 75%
+            );
+          }
+
+          .bg-stars {
+            position: absolute;
+            inset: 0;
+          }
+
+          .bg-star {
+            position: absolute;
+            border-radius: 50%;
+            background: #f8fafc;
+            box-shadow: 0 0 8px rgba(186, 230, 253, 0.85);
+          }
+
+          .bg-mote {
+            position: absolute;
+            border-radius: 50%;
+            border: 1.5px solid rgba(125, 211, 252, 0.55);
+            background: rgba(56, 189, 248, 0.16);
+          }
+        </style>
+
+        <div
+          id="backdrop-clip"
+          class="bg-layer clip"
+          data-start="0"
+          data-duration="74"
+          data-layout-ignore
+          data-track-index="0"
+        >
+          <div class="bg-nebula-top" id="bg-nebula-top"></div>
+          <div class="bg-nebula-mid" id="bg-nebula-mid"></div>
+          <div class="bg-nebula-bot" id="bg-nebula-bot"></div>
+          <div class="bg-stars" id="bg-stars"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var starsEl = root.querySelector("#bg-stars");
+            var nTop = root.querySelector("#bg-nebula-top");
+            var nMid = root.querySelector("#bg-nebula-mid");
+            var nBot = root.querySelector("#bg-nebula-bot");
+
+            var stars = [];
+            for (var i = 0; i < 42; i++) {
+              var star = document.createElement("div");
+              var isMote = i % 4 === 0;
+              star.className = isMote ? "bg-mote" : "bg-star";
+              var size = isMote ? 8 + ((i * 3) % 10) : 2 + (i % 4) * 1.3;
+              star.style.width = size + "px";
+              star.style.height = size + "px";
+              star.style.left = (36 + ((i * 193) % 1008)) + "px";
+              star.style.top = (80 + ((i * 271) % 1720)) + "px";
+              star.style.opacity = String(isMote ? 0.35 + (i % 3) * 0.12 : 0.35 + (i % 5) * 0.13);
+              starsEl.appendChild(star);
+              stars.push({ el: star, idx: i, isMote: isMote });
+            }
+
+            var tl = gsap.timeline({ paused: true });
+            tl.to(nTop, { x: 54, y: 36, scale: 1.08, duration: 37, ease: "sine.inOut" }, 0)
+              .to(nTop, { x: 0, y: 0, scale: 1, duration: 37, ease: "sine.inOut" }, 37)
+              .to(nMid, { x: -48, y: -42, scale: 1.07, duration: 37, ease: "sine.inOut" }, 0)
+              .to(nMid, { x: 0, y: 0, scale: 1, duration: 37, ease: "sine.inOut" }, 37)
+              .to(nBot, { x: 38, y: -28, scale: 1.05, duration: 37, ease: "sine.inOut" }, 0)
+              .to(nBot, { x: 0, y: 0, scale: 1, duration: 37, ease: "sine.inOut" }, 37);
+
+            stars.forEach(function (item) {
+              var phase = (item.idx % 7) * 1.4;
+              var dy = item.isMote ? -78 : -24 - (item.idx % 4) * 8;
+              var dx = ((item.idx % 3) - 1) * 18;
+              tl.to(item.el, {
+                x: dx,
+                y: dy,
+                opacity: item.isMote ? 0.72 : 0.95,
+                scale: item.isMote ? 1.15 : 1.35,
+                duration: 18 + (item.idx % 5) * 2,
+                repeat: 2,
+                yoyo: true,
+                ease: "sine.inOut"
+              }, phase * 0.3);
+            });
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["backdrop"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

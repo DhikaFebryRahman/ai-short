@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 02 — Dari Petir Menjadi Karbon</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-02" data-duration="12.68" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            color: #142244;
+          }
+
+          .s2-stage {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+          }
+
+          .s2-svg {
+            position: absolute;
+            inset: 0;
+            width: 1080px;
+            height: 1920px;
+            overflow: visible;
+          }
+
+          .s2-header {
+            position: absolute;
+            top: 204px;
+            left: 140px;
+            width: 800px;
+            text-align: center;
+          }
+
+          .s2-eyebrow {
+            display: inline-block;
+            padding: 7px 22px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.94);
+            border: 2.5px solid #d97706;
+            color: #9a3412;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+          }
+
+          .s2-title {
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 1.1;
+            color: #142244;
+            text-shadow: 0 3px 0 rgba(255, 255, 255, 0.85);
+          }
+
+          .s2-pill-bar {
+            position: absolute;
+            top: 1245px;
+            left: 130px;
+            width: 820px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .s2-pill {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 26px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 3px solid #d97706;
+            box-shadow: 0 10px 24px rgba(20, 34, 68, 0.14);
+            color: #9a3412;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            opacity: 0;
+          }
+
+          .s2-pill.is-cyan { border-color: #0369a1; color: #0369a1; }
+          .s2-pill.is-ink { border-color: #142244; color: #142244; }
+          .s2-pill-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #ffb703;
+          }
+          .s2-pill.is-cyan .s2-pill-dot { background: #0ea5e9; }
+          .s2-pill.is-ink .s2-pill-dot { background: #334155; }
+        </style>
+
+        <div id="s2-clip" class="s2-stage clip" data-start="0" data-duration="12.68" data-track-index="0">
+          <div id="s2-camera" style="position: absolute; inset: 0" data-layout-allow-overflow>
+            <svg class="s2-svg" viewBox="0 0 1080 1920" fill="none">
+              <defs>
+                <radialGradient id="s2Glow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0" stop-color="#fef08a" stop-opacity="0.72" />
+                  <stop offset="0.6" stop-color="#bae6fd" stop-opacity="0.28" />
+                  <stop offset="1" stop-color="#bae6fd" stop-opacity="0" />
+                </radialGradient>
+                <linearGradient id="s2StormCloud" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#fff7ed" />
+                  <stop offset="1" stop-color="#fed7aa" />
+                </linearGradient>
+              </defs>
+
+              <circle cx="540" cy="730" r="320" fill="url(#s2Glow)" />
+
+              <!-- Storm Clouds of Jupiter Atmosphere (bolts anchored directly underneath each cloud) -->
+              <g id="s2-clouds-left">
+                <polygon
+                  id="s2-bolt-left"
+                  points="238,538 196,648 242,648 206,762 292,620 244,620"
+                  fill="#ffb703"
+                  stroke="#142244"
+                  stroke-width="5"
+                  stroke-linejoin="round"
+                  opacity="0"
+                />
+                <path
+                  d="M70 500 Q110 435 190 450 Q245 405 320 445 Q385 435 405 495 Q395 545 320 550 L110 550 Q55 540 70 500 Z"
+                  fill="url(#s2StormCloud)"
+                  stroke="#142244"
+                  stroke-width="5"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <g id="s2-clouds-right">
+                <polygon
+                  id="s2-bolt-right"
+                  points="828,532 786,642 832,642 796,756 882,614 834,614"
+                  fill="#fde047"
+                  stroke="#142244"
+                  stroke-width="5"
+                  stroke-linejoin="round"
+                  opacity="0"
+                />
+                <path
+                  d="M655 485 Q695 420 775 438 Q835 390 915 432 Q980 424 1002 486 Q990 536 912 542 L700 542 Q642 532 655 485 Z"
+                  fill="url(#s2StormCloud)"
+                  stroke="#142244"
+                  stroke-width="5"
+                  stroke-linejoin="round"
+                />
+              </g>
+
+              <!-- Center Storm Puff + Bolt for CH4 dissociation (Beat 3) -->
+              <g id="s2-center-storm" opacity="0">
+                <polygon
+                  id="s2-bolt-center"
+                  points="546,522 504,618 548,618 516,704 594,590 548,590"
+                  fill="#fde047"
+                  stroke="#142244"
+                  stroke-width="5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M412 496 Q442 444 504 456 Q548 422 598 456 Q652 448 668 496 Q658 534 598 538 L452 538 Q404 530 412 496 Z"
+                  fill="url(#s2StormCloud)"
+                  stroke="#142244"
+                  stroke-width="5"
+                  stroke-linejoin="round"
+                />
+              </g>
+
+              <!-- CH4 METHANE MOLECULE centered at (540, 740) -->
+              <g id="s2-ch4-group" opacity="0">
+                <!-- 4 Covalent Bond Rods -->
+                <g id="s2-bonds" stroke="#142244" stroke-width="8" stroke-linecap="round">
+                  <line x1="540" y1="740" x2="418" y2="635" />
+                  <line x1="540" y1="740" x2="662" y2="635" />
+                  <line x1="540" y1="740" x2="418" y2="845" />
+                  <line x1="540" y1="740" x2="662" y2="845" />
+                </g>
+
+                <!-- 4 Hydrogen Atoms (H) -->
+                <g id="s2-h1">
+                  <circle cx="418" cy="635" r="34" fill="#7dd3fc" stroke="#142244" stroke-width="5" />
+                  <text x="418" y="644" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="26" fill="#142244">H</text>
+                </g>
+                <g id="s2-h2">
+                  <circle cx="662" cy="635" r="34" fill="#7dd3fc" stroke="#142244" stroke-width="5" />
+                  <text x="662" y="644" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="26" fill="#142244">H</text>
+                </g>
+                <g id="s2-h3">
+                  <circle cx="418" cy="845" r="34" fill="#7dd3fc" stroke="#142244" stroke-width="5" />
+                  <text x="418" y="854" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="26" fill="#142244">H</text>
+                </g>
+                <g id="s2-h4">
+                  <circle cx="662" cy="845" r="34" fill="#7dd3fc" stroke="#142244" stroke-width="5" />
+                  <text x="662" y="854" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="26" fill="#142244">H</text>
+                </g>
+
+                <!-- Central Carbon Atom (C) -->
+                <g id="s2-carbon-main">
+                  <circle cx="540" cy="740" r="56" fill="#334155" stroke="#142244" stroke-width="6" />
+                  <circle cx="523" cy="722" r="14" fill="#64748b" />
+                  <text x="540" y="751" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="36" fill="#ffffff">C</text>
+                </g>
+              </g>
+
+              <!-- RELEASED CARBON PARTICLES GATHERING INTO SOOT (JELAGA) -->
+              <g id="s2-soot-cluster" opacity="0">
+                <circle id="s2-c-a" cx="385" cy="705" r="24" fill="#1e293b" stroke="#0f172a" stroke-width="4" />
+                <circle id="s2-c-b" cx="695" cy="695" r="22" fill="#334155" stroke="#0f172a" stroke-width="4" />
+                <circle id="s2-c-c" cx="420" cy="835" r="20" fill="#1e293b" stroke="#0f172a" stroke-width="4" />
+                <circle id="s2-c-d" cx="665" cy="840" r="24" fill="#334155" stroke="#0f172a" stroke-width="4" />
+                <circle id="s2-c-e" cx="540" cy="750" r="30" fill="#0f172a" stroke="#142244" stroke-width="4.5" />
+                <circle id="s2-c-f" cx="510" cy="785" r="20" fill="#334155" stroke="#0f172a" stroke-width="4" />
+                <circle id="s2-c-g" cx="572" cy="778" r="22" fill="#1e293b" stroke="#0f172a" stroke-width="4" />
+              </g>
+
+              <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920): Lower Atmospheric Cloud Strata -->
+              <g id="s2-foreground">
+                <path d="M-40 1605 Q220 1545 500 1600 T1120 1585 L1120 1940 L-40 1940 Z" fill="#fed7aa" />
+                <path d="M-40 1650 Q260 1590 540 1645 T1120 1620 L1120 1940 L-40 1940 Z" fill="#fdba74" stroke="#142244" stroke-width="5.5" />
+                <!-- Atmospheric Layer Depth Gauge -->
+                <g transform="translate(540 1775)">
+                  <rect x="-315" y="-34" width="630" height="68" rx="34" fill="#fffcf5" stroke="#142244" stroke-width="4.5" />
+                  <text x="-195" y="7" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="19" fill="#0369a1">ATMOSFER LUAR</text>
+                  <path d="M-55 0 L45 0" stroke="#142244" stroke-width="4" stroke-linecap="round" />
+                  <polygon points="56,0 40,-9 40,9" fill="#d97706" />
+                  <text x="190" y="7" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="19" fill="#9a3412">LAPISAN DALAM</text>
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <div class="s2-header">
+            <div class="s2-eyebrow">MODEL ILMIAH • 2013</div>
+            <h2 class="s2-title">Dari Petir Menjadi Karbon</h2>
+          </div>
+
+          <div class="s2-pill-bar">
+            <div class="s2-pill" id="s2-pill-1"><span class="s2-pill-dot"></span><span>ENERGI PETIR</span></div>
+            <div class="s2-pill is-cyan" id="s2-pill-2"><span class="s2-pill-dot"></span><span>METANA (CH₄)</span></div>
+            <div class="s2-pill" id="s2-pill-3"><span class="s2-pill-dot"></span><span>KARBON TERLEPAS</span></div>
+            <div class="s2-pill is-ink" id="s2-pill-4"><span class="s2-pill-dot"></span><span>PARTIKEL JELAGA</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+
+            var stage = q("#s2-clip");
+            var camera = q("#s2-camera");
+            var cloudsL = q("#s2-clouds-left");
+            var cloudsR = q("#s2-clouds-right");
+            var boltL = q("#s2-bolt-left");
+            var boltR = q("#s2-bolt-right");
+            var centerStorm = q("#s2-center-storm");
+            var ch4 = q("#s2-ch4-group");
+            var bonds = q("#s2-bonds");
+            var h1 = q("#s2-h1"), h2 = q("#s2-h2"), h3 = q("#s2-h3"), h4 = q("#s2-h4");
+            var soot = q("#s2-soot-cluster");
+            var p1 = q("#s2-pill-1"), p2 = q("#s2-pill-2"), p3 = q("#s2-pill-3"), p4 = q("#s2-pill-4");
+
+            gsap.set(stage, { opacity: 0 });
+            gsap.set(camera, { scale: 1, transformOrigin: "50% 42%" });
+            gsap.set(ch4, { opacity: 0, scale: 0.8, svgOrigin: "540 740" });
+            gsap.set(soot, { opacity: 0, scale: 1, y: 0, svgOrigin: "540 760" });
+
+            var tl = gsap.timeline({ paused: true });
+
+            // Entrance fade + clouds drift continuously
+            tl.to(stage, { opacity: 1, duration: 0.48, ease: "power2.out" }, 0)
+              .to(cloudsL, { x: 45, duration: 12.2, ease: "sine.inOut" }, 0)
+              .to(cloudsR, { x: -45, duration: 12.2, ease: "sine.inOut" }, 0);
+
+            // Beat 1 (0 - 4.4s local = 9.90 - 14.30s vid): Bolts flash directly beneath each storm cloud (1.85s - 3.35s local = ~12s vid)
+            tl.fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 0.5)
+              .fromTo(boltL, { opacity: 0, scaleY: 0.4, transformOrigin: "50% 0%" }, { opacity: 1, scaleY: 1, duration: 0.16, ease: "power2.out" }, 1.85)
+              .to(boltL, { opacity: 0, duration: 0.42, ease: "power2.in", immediateRender: false }, 2.35)
+              .fromTo(boltR, { opacity: 0, scaleY: 0.4, transformOrigin: "50% 0%" }, { opacity: 1, scaleY: 1, duration: 0.16, ease: "power2.out" }, 2.25)
+              .to(boltR, { opacity: 0, duration: 0.42, ease: "power2.in", immediateRender: false }, 2.85);
+
+            // Beat 2 (4.4 - 8.2s local = 14.30 - 18.10s vid): CH4 Molecule close-up
+            tl.to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 4.25)
+              .to(ch4, { opacity: 1, scale: 1, duration: 0.65, ease: "back.out(1.3)", immediateRender: false }, 4.55)
+              .to(camera, { scale: 1.06, duration: 2.8, ease: "power2.inOut", immediateRender: false }, 4.7)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 4.75);
+
+            // Beat 3 (8.2 - 12.68s local = 18.10 - 22.58s vid): Centered storm cloud + bolt splits CH4 -> Carbon soot sinks
+            tl.fromTo(centerStorm, { opacity: 0, y: -18 }, { opacity: 1, y: 0, duration: 0.24, ease: "power2.out" }, 8.05)
+              .to(centerStorm, { opacity: 0, duration: 0.36, ease: "power2.in", immediateRender: false }, 8.55)
+              .to(bonds, { opacity: 0, duration: 0.35, ease: "power2.in" }, 8.25)
+              .to(h1, { x: -115, y: -95, opacity: 0, duration: 0.85, ease: "power2.out" }, 8.25)
+              .to(h2, { x: 115, y: -95, opacity: 0, duration: 0.85, ease: "power2.out" }, 8.25)
+              .to(h3, { x: -115, y: 95, opacity: 0, duration: 0.85, ease: "power2.out" }, 8.25)
+              .to(h4, { x: 115, y: 95, opacity: 0, duration: 0.85, ease: "power2.out" }, 8.25)
+              .to(p2, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 8.45)
+              .fromTo(p3, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 8.65)
+              .to(ch4, { opacity: 0, scale: 0.7, duration: 0.45, ease: "power2.in", immediateRender: false }, 9.15)
+              .to(soot, { opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false }, 9.25)
+              // Gather particles tightly to center
+              .to(q("#s2-c-a"), { attr: { cx: 515, cy: 735 }, duration: 0.95, ease: "power2.inOut" }, 9.4)
+              .to(q("#s2-c-b"), { attr: { cx: 565, cy: 730 }, duration: 0.95, ease: "power2.inOut" }, 9.4)
+              .to(q("#s2-c-c"), { attr: { cx: 525, cy: 785 }, duration: 0.95, ease: "power2.inOut" }, 9.4)
+              .to(q("#s2-c-d"), { attr: { cx: 560, cy: 782 }, duration: 0.95, ease: "power2.inOut" }, 9.4)
+              .to(p3, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 10.3)
+              .fromTo(p4, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 10.5)
+              // Sink downward into planet layers
+              .to(soot, { y: 240, scale: 0.82, duration: 1.9, ease: "power2.in", immediateRender: false }, 10.65)
+              .to(camera, { scale: 1.0, y: -30, duration: 1.5, ease: "power2.inOut", immediateRender: false }, 10.7)
+              .to(stage, { opacity: 0, duration: 0.48, ease: "power2.inOut", immediateRender: false }, 12.20);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-02"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 05 — Bukan Hanya Hujan Berlian</title>
+  </head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="scene-05" data-duration="18.43" data-fps="30">
+        <style>
+          #root {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            color: #142244;
+          }
+
+          .s5-stage {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+          }
+
+          .s5-svg {
+            position: absolute;
+            inset: 0;
+            width: 1080px;
+            height: 1920px;
+            overflow: visible;
+          }
+
+          .s5-header {
+            position: absolute;
+            top: 204px;
+            left: 140px;
+            width: 800px;
+            text-align: center;
+          }
+
+          .s5-eyebrow {
+            display: inline-block;
+            padding: 7px 22px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 2.5px solid #d97706;
+            color: #9a3412;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+          }
+
+          .s5-title {
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 1.1;
+            color: #142244;
+            text-shadow: 0 3px 0 rgba(255, 255, 255, 0.85);
+          }
+
+          .s5-pill-bar {
+            position: absolute;
+            top: 1245px;
+            left: 130px;
+            width: 820px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .s5-pill {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 24px;
+            border-radius: 999px;
+            background: rgba(255, 252, 245, 0.96);
+            border: 3px solid #0369a1;
+            box-shadow: 0 10px 24px rgba(20, 34, 68, 0.14);
+            color: #0369a1;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            opacity: 0;
+          }
+
+          .s5-pill.is-amber { border-color: #d97706; color: #9a3412; }
+          .s5-pill.is-green { border-color: #047857; color: #047857; }
+          .s5-pill-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #0ea5e9;
+          }
+          .s5-pill.is-amber .s5-pill-dot { background: #ffb703; }
+          .s5-pill.is-green .s5-pill-dot { background: #10b981; }
+        </style>
+
+        <div id="s5-clip" class="s5-stage clip" data-start="0" data-duration="18.43" data-track-index="0">
+          <svg class="s5-svg" viewBox="0 0 1080 1920" fill="none">
+            <defs>
+              <linearGradient id="s5Horizon" x1="540" y1="1520" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#fde68a" />
+                <stop offset="0.55" stop-color="#f59e0b" />
+                <stop offset="1" stop-color="#d97706" />
+              </linearGradient>
+            </defs>
+
+            <!-- Top Planet Pair (visible throughout scene, animated with gentle orbital bob) -->
+            <g id="s5-planets-pair" transform="translate(540 500)">
+              <!-- Jupiter -->
+              <g id="s5-top-jup-pos" transform="translate(-175 0)">
+                <g id="s5-top-jup-anim">
+                  <circle cx="0" cy="0" r="102" fill="#fde68a" stroke="#142244" stroke-width="5.5" />
+                  <path d="M-96 -22 H96 M-100 18 H100" stroke="#f59e0b" stroke-width="14" opacity="0.7" />
+                  <circle cx="0" cy="0" r="102" fill="none" stroke="#142244" stroke-width="5.5" />
+                  <text x="0" y="138" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="21" fill="#9a3412">JUPITER</text>
+                </g>
+              </g>
+              <!-- Saturnus -->
+              <g id="s5-top-sat-pos" transform="translate(175 0)">
+                <g id="s5-top-sat-anim">
+                  <ellipse cx="0" cy="0" rx="140" ry="28" fill="none" stroke="#f59e0b" stroke-width="14" transform="rotate(-16)" />
+                  <circle cx="0" cy="0" r="82" fill="#fef08a" stroke="#142244" stroke-width="5.5" />
+                  <ellipse cx="0" cy="0" rx="140" ry="28" fill="none" stroke="#142244" stroke-width="4" transform="rotate(-16)" />
+                  <text x="0" y="138" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="21" fill="#0369a1">SATURNUS</text>
+                </g>
+              </g>
+            </g>
+
+            <!-- BEAT 1: Fading Diamond Hypothesis Badge (0 - 4.8s local) -->
+            <g id="s5-diamond-hyp" transform="translate(540 875)">
+              <circle cx="0" cy="-16" r="120" fill="#ffffff" fill-opacity="0.9" stroke="#0ea5e9" stroke-width="5" stroke-dasharray="12 10" />
+              <polygon points="0,-74 44,-22 0,48 -44,-22" fill="#bae6fd" stroke="#142244" stroke-width="5" stroke-linejoin="round" />
+              <rect x="-185" y="122" width="370" height="44" rx="22" fill="#fffcf5" stroke="#0369a1" stroke-width="3.5" />
+              <text x="0" y="151" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="20" fill="#0369a1">HUJAN BERLIAN: HIPOTESIS</text>
+            </g>
+
+            <!-- BEAT 2: Hydrogen + Helium Phase Separation & Helium Rain (4.4 - 13.0s local) -->
+            <g id="s5-helium-chamber" opacity="0">
+              <circle cx="540" cy="870" r="225" fill="#fffcf5" fill-opacity="0.94" stroke="#142244" stroke-width="5.5" />
+              <circle cx="540" cy="870" r="204" fill="#e0f2fe" fill-opacity="0.58" />
+
+              <!-- Hydrogen Molecules (stay upper/suspended) -->
+              <g id="s5-h-layer">
+                <circle cx="435" cy="790" r="24" fill="#38bdf8" stroke="#142244" stroke-width="4" />
+                <text x="435" y="798" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="18" fill="#142244">H</text>
+                <circle cx="540" cy="762" r="24" fill="#38bdf8" stroke="#142244" stroke-width="4" />
+                <text x="540" y="770" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="18" fill="#142244">H</text>
+                <circle cx="645" cy="792" r="24" fill="#38bdf8" stroke="#142244" stroke-width="4" />
+                <text x="645" y="800" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="18" fill="#142244">H</text>
+              </g>
+
+              <!-- Helium Droplets (start mixed, then separate & rain down) -->
+              <g id="s5-he-drops">
+                <g id="s5-he-1" transform="translate(465 820)">
+                  <path d="M0 -28 C-20 4 -24 26 0 32 C24 26 20 4 0 -28 Z" fill="#ffb703" stroke="#142244" stroke-width="4" />
+                  <text x="0" y="16" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="18" fill="#142244">He</text>
+                </g>
+                <g id="s5-he-2" transform="translate(545 835)">
+                  <path d="M0 -30 C-22 4 -26 28 0 34 C26 28 22 4 0 -30 Z" fill="#f59e0b" stroke="#142244" stroke-width="4" />
+                  <text x="0" y="18" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="18" fill="#142244">He</text>
+                </g>
+                <g id="s5-he-3" transform="translate(618 815)">
+                  <path d="M0 -28 C-20 4 -24 26 0 32 C24 26 20 4 0 -28 Z" fill="#ffb703" stroke="#142244" stroke-width="4" />
+                  <text x="0" y="16" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="18" fill="#142244">He</text>
+                </g>
+              </g>
+            </g>
+
+            <!-- BEAT 3: Final Balanced Mystery Summary Cards (12.8 - 18.43s local) -->
+            <g id="s5-final-compare" opacity="0">
+              <!-- Left Card: Hujan Helium (Stronger Experimental Support) -->
+              <g id="s5-card-helium" transform="translate(335 885)">
+                <rect x="-155" y="-120" width="310" height="240" rx="30" fill="#ecfdf5" stroke="#10b981" stroke-width="5" />
+                <circle id="s5-he-halo" cx="0" cy="-34" r="56" fill="#bbf7d0" fill-opacity="0.72" />
+                <g id="s5-final-drops">
+                  <path id="s5-fd-1" d="M-36 -66 C-52 -36 -54 -14 -36 -8 C-18 -14 -20 -36 -36 -66 Z" fill="#ffb703" stroke="#142244" stroke-width="3.5" />
+                  <path id="s5-fd-2" d="M0 -80 C-24 -38 -28 -10 0 0 C28 -10 24 -38 0 -80 Z" fill="#f59e0b" stroke="#142244" stroke-width="4.5" />
+                  <path id="s5-fd-3" d="M36 -62 C20 -34 18 -12 36 -6 C54 -12 52 -34 36 -62 Z" fill="#ffb703" stroke="#142244" stroke-width="3.5" />
+                </g>
+                <text x="0" y="54" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="24" fill="#047857">HUJAN HELIUM</text>
+                <text x="0" y="86" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="19" fill="#142244">DIDUKUNG EKSPERIMEN</text>
+              </g>
+
+              <!-- Right Card: Hujan Berlian (Open Mystery) -->
+              <g id="s5-card-diamond" transform="translate(745 885)">
+                <rect x="-155" y="-120" width="310" height="240" rx="30" fill="#fffcf5" stroke="#0ea5e9" stroke-width="5" stroke-dasharray="12 8" />
+                <circle id="s5-q-ring" cx="0" cy="-34" r="54" fill="none" stroke="#be123c" stroke-width="3" stroke-dasharray="8 8" opacity="0.65" />
+                <g id="s5-final-diam">
+                  <polygon points="0,-78 36,-32 0,14 -36,-32" fill="#bae6fd" stroke="#142244" stroke-width="4.5" />
+                  <text x="48" y="-32" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="38" fill="#be123c">?</text>
+                </g>
+                <text x="0" y="54" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="900" font-size="24" fill="#0369a1">HUJAN BERLIAN</text>
+                <text x="0" y="86" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="19" fill="#be123c">BELUM TERBUKTI PASTI</text>
+              </g>
+            </g>
+
+            <!-- MANDATORY CONTEXTUAL FOREGROUND (y = 1530..1920): Sunlit Horizon Deck -->
+            <g id="s5-foreground">
+              <path d="M-40 1610 Q260 1550 540 1605 T1120 1585 L1120 1940 L-40 1940 Z" fill="#fef3c7" />
+              <path d="M-40 1655 Q260 1598 540 1650 T1120 1628 L1120 1940 L-40 1940 Z" fill="url(#s5Horizon)" stroke="#142244" stroke-width="5.5" />
+              <g transform="translate(540 1775)">
+                <rect x="-235" y="-30" width="470" height="60" rx="30" fill="#fffcf5" stroke="#142244" stroke-width="4.5" />
+                <text x="0" y="7" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="20" fill="#142244" letter-spacing="1.2">
+                  SAINS TERUS MENYELIDIKI
+                </text>
+              </g>
+            </g>
+          </svg>
+
+          <div class="s5-header">
+            <div class="s5-eyebrow">PERBANDINGAN &amp; KESIMPULAN</div>
+            <h2 class="s5-title">Bukan Hanya Hujan Berlian</h2>
+          </div>
+
+          <div class="s5-pill-bar">
+            <div class="s5-pill" id="s5-pill-1"><span class="s5-pill-dot"></span><span>HUJAN BERLIAN: HIPOTESIS</span></div>
+            <div class="s5-pill is-amber" id="s5-pill-2"><span class="s5-pill-dot"></span><span>HIDROGEN + HELIUM TERPISAH</span></div>
+            <div class="s5-pill is-green" id="s5-pill-3"><span class="s5-pill-dot"></span><span>HUJAN HELIUM: DIDUKUNG EKSPERIMEN</span></div>
+            <div class="s5-pill is-amber" id="s5-pill-4"><span class="s5-pill-dot"></span><span>MISTERI HUJAN BERLIAN MASIH TERBUKA</span></div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+        <script>
+          (function () {
+            "use strict";
+            var root = document.getElementById("root");
+            var q = function (s) { return root.querySelector(s); };
+
+            var stage = q("#s5-clip");
+            var topJup = q("#s5-top-jup-anim"), topSat = q("#s5-top-sat-anim");
+            var diamondHyp = q("#s5-diamond-hyp");
+            var chamber = q("#s5-helium-chamber");
+            var hLayer = q("#s5-h-layer");
+            var he1 = q("#s5-he-1"), he2 = q("#s5-he-2"), he3 = q("#s5-he-3");
+            var finalCmp = q("#s5-final-compare");
+            var heHalo = q("#s5-he-halo");
+            var fd1 = q("#s5-fd-1"), fd2 = q("#s5-fd-2"), fd3 = q("#s5-fd-3");
+            var qRing = q("#s5-q-ring"), finalDiam = q("#s5-final-diam");
+            var p1 = q("#s5-pill-1"), p2 = q("#s5-pill-2"), p3 = q("#s5-pill-3"), p4 = q("#s5-pill-4");
+
+            gsap.set(stage, { opacity: 0 });
+            gsap.set([topJup, topSat], { transformOrigin: "50% 50%" });
+            gsap.set(diamondHyp, { opacity: 1, scale: 1, svgOrigin: "540 875" });
+            gsap.set(chamber, { opacity: 0, scale: 0.88, svgOrigin: "540 870" });
+            gsap.set(finalCmp, { opacity: 0, y: 20 });
+            gsap.set(heHalo, { scale: 0.75, opacity: 0.4, transformOrigin: "50% 50%" });
+            gsap.set(qRing, { rotation: 0, transformOrigin: "50% 50%" });
+            gsap.set(finalDiam, { y: 0, transformOrigin: "50% 50%" });
+
+            var tl = gsap.timeline({ paused: true });
+
+            // Top Jupiter & Saturn continuous gentle orbital drift across entire scene
+            tl.to(topJup, { y: -10, duration: 4.5, ease: "sine.inOut" }, 0.3)
+              .to(topJup, { y: 6, duration: 4.5, ease: "sine.inOut", immediateRender: false }, 4.8)
+              .to(topJup, { y: -8, duration: 4.5, ease: "sine.inOut", immediateRender: false }, 9.3)
+              .to(topJup, { y: 0, duration: 3.2, ease: "sine.inOut", immediateRender: false }, 13.8)
+              .to(topSat, { y: 8, rotation: 5, duration: 4.5, ease: "sine.inOut" }, 0.3)
+              .to(topSat, { y: -8, rotation: -4, duration: 4.5, ease: "sine.inOut", immediateRender: false }, 4.8)
+              .to(topSat, { y: 6, rotation: 4, duration: 4.5, ease: "sine.inOut", immediateRender: false }, 9.3)
+              .to(topSat, { y: 0, rotation: 0, duration: 3.2, ease: "sine.inOut", immediateRender: false }, 13.8);
+
+            // Beat 1 (0 - 4.4s local = 52.57 - 56.97s): Diamond Hypothesis fades out cleanly
+            tl.to(stage, { opacity: 1, duration: 0.48, ease: "power2.out" }, 0)
+              .fromTo(p1, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 0.45)
+              .to(diamondHyp, { opacity: 0, scale: 0.72, duration: 0.65, ease: "power2.in", immediateRender: false }, 3.85);
+
+            // Beat 2 (4.4 - 12.6s local = 56.97 - 65.17s): H + He separation & Helium rain drops
+            tl.to(p1, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 4.3)
+              .to(chamber, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.2)", immediateRender: false }, 4.45)
+              .fromTo(p2, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 4.7)
+              // Hydrogen lifts upward while Helium separates downward into golden raindrops
+              .to(hLayer, { y: -38, duration: 2.0, ease: "power2.out" }, 5.7)
+              .to(he1, { attr: { transform: "translate(465 968)" }, duration: 2.1, ease: "power2.in" }, 6.0)
+              .to(he2, { attr: { transform: "translate(545 992)" }, duration: 2.3, ease: "power2.in" }, 6.3)
+              .to(he3, { attr: { transform: "translate(618 962)" }, duration: 2.0, ease: "power2.in" }, 6.6)
+              .to(p2, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 8.6)
+              .fromTo(p3, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 8.8);
+
+            // Beat 3 (12.6 - 18.43s local = 65.17 - 71.00s): Lively final animation across 1:07 - 1:11, settling cleanly at 70s
+            tl.to(chamber, { opacity: 0, scale: 0.9, duration: 0.45, ease: "power2.in", immediateRender: false }, 12.4)
+              .to(finalCmp, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out", immediateRender: false }, 12.7)
+              .to(heHalo, { scale: 1.15, opacity: 0.9, duration: 1.8, ease: "sine.inOut" }, 13.2)
+              .to(heHalo, { scale: 0.95, opacity: 0.65, duration: 1.8, ease: "sine.inOut", immediateRender: false }, 15.0)
+              .fromTo(fd1, { y: -14, opacity: 0.4 }, { y: 14, opacity: 1, duration: 1.9, ease: "sine.inOut" }, 13.3)
+              .fromTo(fd2, { y: -10, scale: 0.92 }, { y: 10, scale: 1.08, duration: 1.8, ease: "sine.inOut" }, 13.5)
+              .fromTo(fd3, { y: -16, opacity: 0.4 }, { y: 12, opacity: 1, duration: 1.9, ease: "sine.inOut" }, 13.7)
+              .to([fd1, fd2, fd3], { y: 0, scale: 1, duration: 1.4, ease: "power2.out", immediateRender: false }, 15.6)
+              .to(qRing, { rotation: 85, scale: 1.1, duration: 3.6, ease: "sine.inOut" }, 13.4)
+              .to(finalDiam, { y: -10, scale: 0.94, duration: 1.8, ease: "sine.inOut" }, 13.4)
+              .to(finalDiam, { y: 0, scale: 1, duration: 1.8, ease: "power2.out", immediateRender: false }, 15.2)
+              .to(p3, { opacity: 0, y: -10, duration: 0.22, ease: "power2.in", immediateRender: false }, 13.0)
+              .fromTo(p4, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 13.2)
+              // Hold cleanly settled at end (70.0 -> 71.00s)
+              .to({}, { duration: 1.2 }, 17.2);
+
+            tl.seek(0);
+            window.__timelines = window.__timelines || {};
+            window.__timelines["scene-05"] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

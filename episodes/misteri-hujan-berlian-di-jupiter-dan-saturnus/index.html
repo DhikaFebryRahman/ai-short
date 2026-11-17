@@ -1,0 +1,224 @@
+<!doctype html>
+<html
+  lang="id"
+  data-resolution="portrait"
+  data-composition-variables='[
+    { "id": "series_label", "type": "string", "label": "Label Seri", "default": "KAPSUL FAKTA" },
+    { "id": "accent_amber", "type": "color", "label": "Aksen Amber", "default": "#FFB703" },
+    { "id": "accent_cyan", "type": "color", "label": "Aksen Cyan", "default": "#0EA5E9" }
+  ]'
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Kapsul Fakta: Misteri Hujan Berlian di Jupiter dan Saturnus</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --sky-top: #9edbff;
+        --sky-mid: #e1f3ff;
+        --horizon-warm: #fff3da;
+        --ink: #142244;
+        --muted: #243b6b;
+        --amber: #ffb703;
+        --amber-ink: #9a3412;
+        --cyan: #0ea5e9;
+        --cyan-ink: #0369a1;
+        --green: #10b981;
+        --green-ink: #047857;
+        --coral: #fb7185;
+        --coral-ink: #be123c;
+        --font-display: "Poppins", sans-serif;
+        --font-serif: "Playfair Display", serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--sky-mid);
+        font-family: var(--font-display);
+        color: var(--ink);
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: linear-gradient(180deg, #9edbff 0%, #e1f3ff 56%, #fff3da 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="71"
+      data-fps="30"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div
+        id="backdrop"
+        data-composition-id="backdrop"
+        data-composition-src="compositions/backdrop.html"
+        data-track-kind="graphics"
+        data-track-index="0"
+        data-start="0"
+        data-duration="71"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 1"
+      ></div>
+      <div
+        id="scene-01"
+        data-composition-id="scene-01"
+        data-composition-src="compositions/scene-01.html"
+        data-track-kind="graphics"
+        data-track-index="1"
+        data-start="0"
+        data-duration="10.40"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 10"
+      ></div>
+      <div
+        id="scene-02"
+        data-composition-id="scene-02"
+        data-composition-src="compositions/scene-02.html"
+        data-track-kind="graphics"
+        data-track-index="1"
+        data-start="9.90"
+        data-duration="12.68"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 11"
+      ></div>
+      <div
+        id="scene-03"
+        data-composition-id="scene-03"
+        data-composition-src="compositions/scene-03.html"
+        data-track-kind="graphics"
+        data-track-index="1"
+        data-start="22.10"
+        data-duration="13.50"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 12"
+      ></div>
+      <div
+        id="scene-04"
+        data-composition-id="scene-04"
+        data-composition-src="compositions/scene-04.html"
+        data-track-kind="graphics"
+        data-track-index="1"
+        data-start="35.12"
+        data-duration="17.93"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 13"
+      ></div>
+      <div
+        id="scene-05"
+        data-composition-id="scene-05"
+        data-composition-src="compositions/scene-05.html"
+        data-track-kind="graphics"
+        data-track-index="1"
+        data-start="52.57"
+        data-duration="18.43"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 14"
+      ></div>
+      <div
+        id="hud"
+        data-composition-id="hud"
+        data-composition-src="compositions/hud.html"
+        data-track-kind="graphics"
+        data-track-index="2"
+        data-start="0"
+        data-duration="71"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 30"
+      ></div>
+      <div
+        id="captions"
+        data-composition-id="captions"
+        data-composition-src="compositions/captions.html"
+        data-track-kind="captions"
+        data-track-index="3"
+        data-start="0"
+        data-duration="71"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 40"
+      ></div>
+
+      <!-- VOICEOVER UTAMA (dimulai di detik 1.0, durasi utuh 68.36s + 1.5s penutup -> 71s) -->
+      <audio
+        id="vo"
+        class="clip"
+        src="assets/audio/vo.mp3"
+        data-start="1"
+        data-duration="68.36"
+        data-volume="1"
+        data-track-index="4"
+      ></audio>
+
+      <!-- BGM DETERMINISTIK -->
+      <audio
+        id="bgm"
+        class="clip"
+        src="assets/audio/bgm.wav"
+        data-start="0"
+        data-duration="71"
+        data-volume="0.28"
+        data-fade-in="1.0"
+        data-fade-out="2.0"
+        data-track-index="5"
+      ></audio>
+
+      <!-- SFX CUES (tersebar rapi di bawah VO, bebas clipping) -->
+      <audio id="sfx-s1-gleam" class="clip" src="assets/audio/sfx/gleam-chime.wav" data-start="0.35" data-duration="1.60" data-volume="0.32" data-track-index="6"></audio>
+      <audio id="sfx-s1-whoosh" class="clip" src="assets/audio/sfx/whoosh-soft.wav" data-start="3.55" data-duration="0.95" data-volume="0.24" data-track-index="6"></audio>
+      <audio id="sfx-s1-saturn" class="clip" src="assets/audio/sfx/pop-bubble.wav" data-start="6.60" data-duration="0.28" data-volume="0.28" data-track-index="6"></audio>
+
+      <audio id="sfx-s2-whoosh" class="clip" src="assets/audio/sfx/whoosh-soft.wav" data-start="9.90" data-duration="0.95" data-volume="0.24" data-track-index="6"></audio>
+      <audio id="sfx-s2-zap1" class="clip" src="assets/audio/sfx/lightning-zap.wav" data-start="12.05" data-duration="0.85" data-volume="0.28" data-track-index="6"></audio>
+      <audio id="sfx-s2-ch4" class="clip" src="assets/audio/sfx/pop-bubble.wav" data-start="14.70" data-duration="0.28" data-volume="0.26" data-track-index="6"></audio>
+      <audio id="sfx-s2-zap2" class="clip" src="assets/audio/sfx/lightning-zap.wav" data-start="18.10" data-duration="0.85" data-volume="0.28" data-track-index="6"></audio>
+
+      <audio id="sfx-s3-whoosh" class="clip" src="assets/audio/sfx/whoosh-soft.wav" data-start="22.10" data-duration="0.95" data-volume="0.24" data-track-index="6"></audio>
+      <audio id="sfx-s3-grafit" class="clip" src="assets/audio/sfx/pop-bubble.wav" data-start="27.20" data-duration="0.28" data-volume="0.26" data-track-index="6"></audio>
+      <audio id="sfx-s3-berlian" class="clip" src="assets/audio/sfx/gleam-chime.wav" data-start="29.60" data-duration="1.60" data-volume="0.30" data-track-index="6"></audio>
+      <audio id="sfx-s3-melt" class="clip" src="assets/audio/sfx/water-drop.wav" data-start="32.90" data-duration="0.90" data-volume="0.26" data-track-index="6"></audio>
+
+      <audio id="sfx-s4-whoosh" class="clip" src="assets/audio/sfx/whoosh-soft.wav" data-start="35.12" data-duration="0.95" data-volume="0.24" data-track-index="6"></audio>
+      <audio id="sfx-s4-laser" class="clip" src="assets/audio/sfx/laser-beam.wav" data-start="43.85" data-duration="1.10" data-volume="0.28" data-track-index="6"></audio>
+      <audio id="sfx-s4-crystal" class="clip" src="assets/audio/sfx/gleam-chime.wav" data-start="45.80" data-duration="1.60" data-volume="0.28" data-track-index="6"></audio>
+      <audio id="sfx-s4-compare" class="clip" src="assets/audio/sfx/pop-bubble.wav" data-start="49.20" data-duration="0.28" data-volume="0.26" data-track-index="6"></audio>
+
+      <audio id="sfx-s5-whoosh" class="clip" src="assets/audio/sfx/whoosh-soft.wav" data-start="52.57" data-duration="0.95" data-volume="0.24" data-track-index="6"></audio>
+      <audio id="sfx-s5-drop1" class="clip" src="assets/audio/sfx/water-drop.wav" data-start="58.65" data-duration="0.90" data-volume="0.28" data-track-index="6"></audio>
+      <audio id="sfx-s5-drop2" class="clip" src="assets/audio/sfx/water-drop.wav" data-start="60.60" data-duration="0.90" data-volume="0.26" data-track-index="6"></audio>
+      <audio id="sfx-s5-close" class="clip" src="assets/audio/sfx/gleam-chime.wav" data-start="67.80" data-duration="1.60" data-volume="0.26" data-track-index="6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        "use strict";
+        var tl = gsap.timeline({ paused: true });
+        tl.to({}, { duration: 71 }, 0);
+        window.__timelines = window.__timelines || {};
+        window.__timelines["main"] = tl;
+      })();
+    </script>
+  </body>
+</html>
